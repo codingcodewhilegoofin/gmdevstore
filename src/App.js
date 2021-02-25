@@ -1,24 +1,48 @@
+//Standard imports 
 import React, { Component } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 
+//Custom imports 
+import MagicButton from './components/Buttons/magicButton.js'
+import HomePage from './components/Pages/HomePage';
+import AboutPage from './components/Pages/AboutPage';
+
+
+// Main component 
 function App() {
+
+
+
+  //Send to DOM 
   return (
-    <HashRouter basename='/'>
+    
+    <HashRouter basename='/'> {/*Hash routing  */ }
+
+    {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */ }
     <div>
-     <ul>
+
+      {/*Custom Menu button */ }
+      <MagicButton label="click-me"></MagicButton>
+
+     <ul>{/*Link pages */ }
+
       <li><Link to="/">Home</Link></li>
       <li><Link to="/about">About</Link></li>
+
      </ul>
-     <hr />
-     <Route exact path="/" component={Home} />
-     <Route path="/about" component={About} />
+
+     <hr />{/*Route URL */ }
+     <Route exact path="/" component={HomePage} />
+     <Route path="/about" component={AboutPage} />
+
     </div>
+
    </HashRouter>
+
   );
+
+  //Endof APP() 
 }
 
 
-const Home = () => <div><h2>Home</h2></div>
-const About = () => <div><h2>About</h2></div>
-
-export default App;
+export default App;//Export the component to index.js 

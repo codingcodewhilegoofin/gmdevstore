@@ -1,6 +1,10 @@
-
 //Basic imports
 import React from 'react';
+
+//Custom IMPORTS: 
+
+//Menu import
+import MenuButton from '../Buttons/MenuButton/MenuButton.js';
 
 
 
@@ -9,8 +13,12 @@ const HomePage = () => {
     
     return (
 
-        <div className="App">
+        <div className="Home">
         
+        <h1>Yo</h1>
+
+        <MenuButton/>
+
         </div>
       
        

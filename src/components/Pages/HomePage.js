@@ -15,7 +15,7 @@ const HomePage = () => {
 
         <div className="Home">
         
-        <h1>Yo</h1>
+        <h1>Your mom</h1>
 
         <MenuButton/>
 

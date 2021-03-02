@@ -10,7 +10,7 @@ const MenuButton = () => {
 
         <div className="MenuButton">
         
-        <h1>Menu button </h1>
+        <h1>Meenu </h1>
 
         </div>
       

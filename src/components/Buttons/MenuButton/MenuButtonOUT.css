@@ -1,0 +1,262 @@
+.MenuButtonOUT{
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: inline-block;
+
+  border: 1px solid green;
+  
+  margin-top: 0px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+
+
+}
+.MenuButtonLEFT{
+  border: 2px solid red;
+  height: 2.5vh;
+  width: 45vw;
+  display: inline-block;
+
+  margin-top: 0px;
+
+  
+  margin-right: 2vw;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+ 
+  
+  
+
+}
+.MenuButtonRIGHT{
+  border: 2px solid red;
+  height: 2.5vh;
+  width: 42.5vw;
+  display: inline-block;
+
+  margin-top: 0px;
+  
+  margin-left: 8.5vw;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+ 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .MenuButtonOUT{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: inline-block;
+
+    border: 1px solid purple;
+    
+    margin-top: 5px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  
+  
+  
+  }
+  .MenuButtonLEFT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 40vw;
+    display: inline-block;
+  
+    
+    margin-right: 2.8vw;
+   
+    
+    
+  
+  }
+  .MenuButtonRIGHT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 40vw;
+    display: inline-block;
+    
+    margin-left: 14.1vw;
+   
+  }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .MenuButtonOUT{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: inline-block;
+
+    border: 1px solid blue;
+    
+    margin-top: 5px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  
+  
+  
+  }
+  .MenuButtonLEFT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 45vw;
+    display: inline-block;
+  
+    
+    margin-right: 5vw;
+   
+    
+    
+  
+  }
+  .MenuButtonRIGHT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 40.8vw;
+    display: inline-block;
+    
+    margin-left: 12.8vw;
+   
+  }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .MenuButtonOUT{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: inline-block;
+
+    border: 1px solid pink;
+    
+    margin-top: 5px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  
+  
+  
+  }
+  .MenuButtonLEFT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 45vw;
+    display: inline-block;
+  
+    
+    margin-right: 5vw;
+   
+    
+    
+  
+  }
+  .MenuButtonRIGHT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 41.2vw;
+    display: inline-block;
+    
+    margin-left: 11.5vw;
+   
+  }
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .MenuButtonOUT{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: inline-block;
+
+    border: 1px solid green;
+    
+    margin-top: 5px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  
+  
+  
+  }
+  .MenuButtonLEFT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 45vw;
+    display: inline-block;
+  
+    
+    margin-right: 3vw;
+   
+    
+    
+  
+  }
+  .MenuButtonRIGHT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 44.1vw;
+    display: inline-block;
+    
+    margin-left: 8vw;
+   
+  }
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .MenuButtonOUT{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: inline-block;
+
+    border: 1px solid orange;
+    
+    margin-top: 5px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    
+  
+  
+  
+  }
+  .MenuButtonLEFT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 45vw;
+    display: inline-block;
+  
+    
+    margin-right: 2vw;
+   
+  
+    
+    
+  
+  }
+  .MenuButtonRIGHT{
+    border: 2px solid red;
+    height: 2.5vh;
+    width: 45vw;
+    display: inline-block;
+    
+    margin-left: 6.4vw;
+
+    
+  }
+}

@@ -17,7 +17,7 @@ const HomePage = () => {
         
         <h1>Your dad</h1>
 
-        <MenuButton/>
+       
 
         </div>
       

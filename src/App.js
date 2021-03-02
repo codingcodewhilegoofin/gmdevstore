@@ -3,9 +3,12 @@ import React, { Component } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 
 //Custom imports 
-import MagicButton from './components/Buttons/magicButton.js'
+import MagicButton from './components/Buttons/MagicButton/magicButton.js'
 import HomePage from './components/Pages/HomePage';
 import AboutPage from './components/Pages/AboutPage';
+
+//Menu import
+import MenuButton from './components/Buttons/MenuButton/MenuButton.js';
 
 
 // Main component 
@@ -22,7 +25,8 @@ function App() {
     <div>
 
       {/*Custom Menu button */ }
-      <MagicButton label="click-me"></MagicButton>
+      <MenuButton/>
+
 
      <ul>{/*Link pages */ }
 

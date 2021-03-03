@@ -12,13 +12,15 @@ const MenuButton = () => {
     return (
         <div> 
 
-            <div >
+            <div className="MenuButtonLEFT">
+
+                <div className="MenuButtonLEFTSIDE">
+           
+                </div>
                 
             </div>
 
-            <div className="MenuButtonLEFT">
-                
-            </div>
+           
 
             <div className="MenuButtonOUT">
         
@@ -26,70 +28,42 @@ const MenuButton = () => {
 
                     
 
-            </div>
+                 </div>
 
             <div className="MenuButtonRIGHT">
+
+                <div className="MenuButtonRIGHTSIDE">
+           
+                </div>
            
             </div>
-    
         
-
-        </div>
+            </div>
         
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-
-
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
-        <h1> Hello </h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
+            <h1> Hi</h1>
 
         </div>
       
-       
     )
-
 };
 
 export default MenuButton;

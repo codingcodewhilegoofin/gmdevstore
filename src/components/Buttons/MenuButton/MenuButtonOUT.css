@@ -76,7 +76,7 @@
     display: inline-block;
   
     
-    margin-right: 2.8vw;
+    margin-right: 2vw;
    
     
     
@@ -85,10 +85,10 @@
   .MenuButtonRIGHT{
     border: 2px solid red;
     height: 2.5vh;
-    width: 40vw;
+    width: 37vw;
     display: inline-block;
     
-    margin-left: 14.1vw;
+    margin-left: 15vw;
    
   }
 }

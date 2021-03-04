@@ -14,9 +14,7 @@ const MenuButton = () => {
 
             <div className="MenuButtonLEFT">
 
-                <div className="MenuButtonLEFTSIDE">
-           
-                </div>
+               
                 
             </div>
 
@@ -26,40 +24,21 @@ const MenuButton = () => {
         
                 <div className="MenuButtonInner">
 
-                    
+               
 
                  </div>
 
             <div className="MenuButtonRIGHT">
 
-                <div className="MenuButtonRIGHTSIDE">
-           
-                </div>
+                
            
             </div>
+            
         
             </div>
         
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
-            <h1> Hi</h1>
+            
+            
 
         </div>
       

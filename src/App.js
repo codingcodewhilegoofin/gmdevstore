@@ -23,6 +23,8 @@ import { ReactComponent as GithubSymbol} from './icons/github.svg';
 // Main component 
 function App() {
 
+  var githublink = 'https://github.com/codingcodewhilegoofin';
+  var linkedinlink = 'https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/';
 
 
   //Send to DOM 
@@ -38,27 +40,39 @@ function App() {
      {/*Link pages */ }
      <Navbar>
 
+  
+      <Link className="nav-item" to="/github">
+        <NavItem icon={<GithubSymbol/>} />
+      </Link>
+
+      <Link className="nav-item" to="/linkedin">
+        <NavItem icon={<LinkedinSymbol/>}/> 
+      </Link>
+
+      <Link className="nav-item" to="/">
+        <NavItem icon="💻" />
+      </Link>
+
+      <Link className="nav-item" to="/about">
+        <NavItem icon="🧠" />
+      </Link>
+    
+      <Link className="nav-item" to="/contact">
+        <NavItem icon="✉️" />
+      </Link>
+    
+      <Link className="nav-item" to="/download">
+        <NavItem icon={<DownloadSymbol/>}/> 
+      </Link>
       
-      <NavItem icon={<LinkedinSymbol/>}/> 
-      <NavItem icon={<GithubSymbol/>}/> 
-      <NavItem icon="💻"/>
-      <NavItem icon="🧠"/>
-      <NavItem icon="✉️"/>
+      {/*
       <NavItem icon={<DownloadSymbol/>}>
-        {/*Dropdown*/}
+        
         <Dropdown/>
 
       </NavItem>
-
+      */}
       
-
-      <ul> 
-
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-
-      </ul>
-
      </Navbar>
 
      
@@ -66,6 +80,14 @@ function App() {
      <hr />{/*Route URL */ }
      <Route exact path="/" component={HomePage} />
      <Route path="/about" component={AboutPage} />
+     <Route path='/github' component={() => { 
+     window.location.href = githublink; 
+     return null;
+     }}/>
+     <Route path='/linkedin' component={() => { 
+     window.location.href = linkedinlink; 
+     return null;
+     }}/>
 
     </div>
 
@@ -99,8 +121,6 @@ function NavItem(props) {
     <div className="icon-bg">
       <a href="#" className="icon-button" onClick={ () => setOpen(!open)}>
         {props.icon}
-        
-
       </a>
       </div>
       {open && props.children}

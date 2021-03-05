@@ -58,7 +58,7 @@ h1 {
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 1);
+    width: calc(var(--nav-size) * .8);
     display: flex;
     align-items: center;
     justify-content: center;

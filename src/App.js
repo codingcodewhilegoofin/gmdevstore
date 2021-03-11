@@ -75,6 +75,39 @@ function App() {
       
      </Navbar>
 
+     <UnderNav>
+      
+      
+      
+
+
+      <Link className="nav-item" to="/github">
+        <UnderText> Github </UnderText>
+      </Link>
+
+      <Link className="nav-item" to="/linkedin">
+        <UnderText> Linkedin </UnderText> 
+      </Link>
+
+      <Link className="nav-item" to="/">
+        <UnderText> Home </UnderText>
+      </Link>
+
+      <Link className="nav-item" to="/about">
+        <UnderText> Skills & Information </UnderText>
+      </Link>
+    
+      <Link className="nav-item" to="/contact">
+        <UnderText> Contact </UnderText>
+      </Link>
+    
+      <Link className="nav-item" to="/download">
+        <UnderText> Download Resume </UnderText> 
+      </Link>
+
+     </UnderNav>
+     
+
      
 
      <hr />{/*Route URL */ }
@@ -177,5 +210,33 @@ function Dropdown() {
     </div>
   );
 }
+
+function UnderNav(props) {
+
+  
+  return (
+    <nav className="navbar-2">
+      <ul className="navbar-nav"> 
+        <li className="nav-item-li">
+          {props.children}
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+function UnderText(props) {
+
+  
+  return (
+   
+    <h6 className="navbar-nav-under-text">
+      {props.children}
+    </h6>
+    
+    
+  );
+}
+
 
 export default App;//Export the component to index.js 

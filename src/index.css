@@ -48,6 +48,9 @@ h1 {
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
   
   .navbar-nav{
@@ -74,9 +77,15 @@ h1 {
     justify-content: center;
     border-color: white;
     transition: filter 300ms;
+    transition: background-color red 2s;
+    transition: transform 10s;
+   
   }
   .icon-button:hover{
     filter: brightness(1);
+    height: 28px;
+    width: 28px;
+    transform: rotate(30deg);
   }
   .icon-bg {
     --button-size: calc(var(--nav-size) * .39);
@@ -90,10 +99,14 @@ h1 {
     justify-content: center;
     border: 1px inset #660708;
     transition: filter 300ms;
+    transition-timing-function: ease-out;
+    
     
   }
   .icon-bg:hover{
     filter: brightness(1.5);
+    height: 50px;
+    width: 50px;
   }
   .icon-button svg{
     fill: var(--text-color);
@@ -158,6 +171,32 @@ h1 {
     transform: translateX(110%);
     transition: all var(--speed) ease;
   }
+  .navbar-2 {
+    height: var(--nav-size);
+    background-color: var(--bg-2);
+    padding: 0 1rem;
+    border-bottom: var(--border);
+    border: 4px solid var(--bg);
+    top: 0;
+    
+    
+  }
+  .navbar-2:hover
+  {
+    background-color: var(--bg)
+  }
+  .nav-item-li{
+    width: calc(var(--nav-size) * 5.4);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+   
+  }
+  
+  .navbar-nav-under-text{
+    color: var(--text-color);
+    font-size: 9px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -167,6 +206,9 @@ h1 {
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
   
   .navbar-nav{
@@ -193,9 +235,15 @@ h1 {
     justify-content: center;
     border-color: white;
     transition: filter 300ms;
+    transition: background-color red 2s;
+    transition: transform 10s;
+   
   }
   .icon-button:hover{
     filter: brightness(1);
+    height: 28px;
+    width: 28px;
+    transform: rotate(30deg);
   }
   .icon-bg {
     --button-size: calc(var(--nav-size) * .39);
@@ -209,10 +257,14 @@ h1 {
     justify-content: center;
     border: 1px inset #660708;
     transition: filter 300ms;
+    transition-timing-function: ease-out;
+    
     
   }
   .icon-bg:hover{
     filter: brightness(1.5);
+    height: 50px;
+    width: 50px;
   }
   .icon-button svg{
     fill: var(--text-color);
@@ -276,6 +328,31 @@ h1 {
     transform: translateX(110%);
     transition: all var(--speed) ease;
   }
+  .navbar-2 {
+    height: var(--nav-size);
+    background-color: var(--bg-2);
+    padding: 0 1rem;
+    border-bottom: var(--border);
+    border: 3px solid var(--bg);
+    top: 0;
+    
+  }
+  .navbar-2:hover
+  {
+    background-color: var(--bg)
+  }
+  .nav-item-li{
+    width: calc(var(--nav-size) * 10);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+   
+  }
+  
+  .navbar-nav-under-text{
+    color: var(--text-color);
+    font-size: 13px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -285,6 +362,9 @@ h1 {
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
   
   .navbar-nav{
@@ -311,9 +391,15 @@ h1 {
     justify-content: center;
     border-color: white;
     transition: filter 300ms;
+    transition: background-color red 2s;
+    transition: transform 10s;
+   
   }
   .icon-button:hover{
     filter: brightness(1);
+    height: 28px;
+    width: 28px;
+    transform: rotate(30deg);
   }
   .icon-bg {
     --button-size: calc(var(--nav-size) * .39);
@@ -327,10 +413,14 @@ h1 {
     justify-content: center;
     border: 1px inset #660708;
     transition: filter 300ms;
+    transition-timing-function: ease-out;
+    
     
   }
   .icon-bg:hover{
     filter: brightness(1.5);
+    height: 50px;
+    width: 50px;
   }
   .icon-button svg{
     fill: var(--text-color);
@@ -395,6 +485,31 @@ h1 {
     transform: translateX(110%);
     transition: all var(--speed) ease;
   }
+  .navbar-2 {
+    height: var(--nav-size);
+    background-color: var(--bg-2);
+    padding: 0 1rem;
+    border-bottom: var(--border);
+    border: 1px solid var(--bg);
+    top: 0;
+    
+  }
+  .navbar-2:hover
+  {
+    background-color: var(--bg)
+  }
+  .nav-item-li{
+    width: calc(var(--nav-size) * 14);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+   
+  }
+  
+  .navbar-nav-under-text{
+    color: var(--text-color);
+    font-size: 14px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -404,6 +519,9 @@ h1 {
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
   
   .navbar-nav{
@@ -430,9 +548,15 @@ h1 {
     justify-content: center;
     border-color: white;
     transition: filter 300ms;
+    transition: background-color red 2s;
+    transition: transform 10s;
+   
   }
   .icon-button:hover{
     filter: brightness(1);
+    height: 28px;
+    width: 28px;
+    transform: rotate(30deg);
   }
   .icon-bg {
     --button-size: calc(var(--nav-size) * .39);
@@ -446,10 +570,14 @@ h1 {
     justify-content: center;
     border: 1px inset #660708;
     transition: filter 300ms;
+    transition-timing-function: ease-out;
+    
     
   }
   .icon-bg:hover{
     filter: brightness(1.5);
+    height: 50px;
+    width: 50px;
   }
   .icon-button svg{
     fill: var(--text-color);
@@ -514,6 +642,31 @@ h1 {
     transform: translateX(110%);
     transition: all var(--speed) ease;
   }
+  .navbar-2 {
+    height: var(--nav-size);
+    background-color: var(--bg-2);
+    padding: 0 1rem;
+    border-bottom: var(--border);
+    border: 1px solid var(--bg);
+    top: 0;
+    
+  }
+  .navbar-2:hover
+  {
+    background-color: var(--bg)
+  }
+  .nav-item-li{
+    width: calc(var(--nav-size) * 18);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+   
+  }
+  
+  .navbar-nav-under-text{
+    color: var(--text-color);
+    font-size: 14px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -523,6 +676,9 @@ h1 {
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
   
   .navbar-nav{
@@ -533,7 +689,7 @@ h1 {
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 3.4);
+    width: calc(var(--nav-size) * 3.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -549,9 +705,15 @@ h1 {
     justify-content: center;
     border-color: white;
     transition: filter 300ms;
+    transition: background-color red 2s;
+    transition: transform 10s;
+   
   }
   .icon-button:hover{
     filter: brightness(1);
+    height: 28px;
+    width: 28px;
+    transform: rotate(30deg);
   }
   .icon-bg {
     --button-size: calc(var(--nav-size) * .39);
@@ -565,10 +727,14 @@ h1 {
     justify-content: center;
     border: 1px inset #660708;
     transition: filter 300ms;
+    transition-timing-function: ease-out;
+    
     
   }
   .icon-bg:hover{
     filter: brightness(1.5);
+    height: 50px;
+    width: 50px;
   }
   .icon-button svg{
     fill: var(--text-color);
@@ -632,29 +798,69 @@ h1 {
     transform: translateX(110%);
     transition: all var(--speed) ease;
   }
+  .navbar-2 {
+    height: var(--nav-size);
+    background-color: var(--bg-2);
+    padding: 0 1rem;
+    border-bottom: var(--border);
+    border: 1px solid var(--bg);
+    top: 0;
+    
+  }
+  .navbar-2:hover
+  {
+    background-color: var(--bg)
+  }
+  .nav-item-li{
+    width: calc(var(--nav-size) * 25);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+   
+  }
+  
+  .navbar-nav-under-text{
+    color: var(--text-color);
+    font-size: 14px;
+  }
 }
 
-/* Extra EXTRA large devices  */
+/* Extra EXTRA large devices , 1800px */
 @media only screen and (min-width: 1800px) {
   .navbar {
     height: var(--nav-size);
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
+    border: 1px solid var(--bg);
+    transition: border 2s;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    
   }
+  .navbar:hover
+  {
+    transition: border 10s;
+   
+    border: 1px solid #BA181B;
+  }
+ 
   
   .navbar-nav{
     max-width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
+    
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 5);
+    width: calc(var(--nav-size) * 5.2);
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   .icon-button {
     --button-size: calc(var(--nav-size) * .45);
@@ -667,9 +873,15 @@ h1 {
     justify-content: center;
     border-color: white;
     transition: filter 300ms;
+    transition: background-color red 2s;
+    transition: transform 10s;
+   
   }
   .icon-button:hover{
     filter: brightness(1);
+    height: 28px;
+    width: 28px;
+    transform: rotate(30deg);
   }
   .icon-bg {
     --button-size: calc(var(--nav-size) * .39);
@@ -683,10 +895,14 @@ h1 {
     justify-content: center;
     border: 1px inset #660708;
     transition: filter 300ms;
+    transition-timing-function: ease-out;
+    
     
   }
   .icon-bg:hover{
     filter: brightness(1.5);
+    height: 50px;
+    width: 50px;
   }
   .icon-button svg{
     fill: var(--text-color);
@@ -750,4 +966,32 @@ h1 {
     transform: translateX(110%);
     transition: all var(--speed) ease;
   }
+
+  .navbar-2 {
+    height: var(--nav-size);
+    background-color: var(--bg-2);
+    padding: 0 1rem;
+    border-bottom: var(--border);
+    border: 1px solid var(--bg);
+    top: 0;
+    
+  }
+  .navbar-2:hover
+  {
+    background-color: var(--bg)
+  }
+  .nav-item-li{
+    width: calc(var(--nav-size) * 35);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+   
+  }
+  
+  .navbar-nav-under-text{
+    color: var(--text-color);
+    font-size: 14px;
+  }
 }
+
+

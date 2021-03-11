@@ -15,7 +15,7 @@ const HomePage = () => {
 
         <div className="Home">
         
-        <h1>Your dad</h1>
+        <h1>Home page under construction</h1>
 
         <h1> Hi</h1>
             <h1> Hi</h1>

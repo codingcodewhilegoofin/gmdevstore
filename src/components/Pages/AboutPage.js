@@ -11,7 +11,7 @@ const AboutPage = () => {
 
         <div className="App">
         
-            <h1> Hi </h1>
+            <h1> About page under construction</h1>
             <h1> Hi</h1>
             <h1> Hi</h1>
             <h1> Hi</h1>
@@ -32,7 +32,7 @@ const AboutPage = () => {
             <h1> Hi</h1>
             <h1> Hi</h1>
             <h1> Hi</h1>
-
+            <h1> About page under construction</h1>
             <h1> Hi</h1>
             <h1> Hi</h1>
             <h1> Hi</h1>

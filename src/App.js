@@ -108,9 +108,6 @@ function App() {
      </UnderNav>
      
 
-     
-
-     <hr />{/*Route URL */ }
      <Route exact path="/" component={HomePage} />
      <Route path="/about" component={AboutPage} />
      <Route path='/github' component={() => { 

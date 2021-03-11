@@ -58,7 +58,7 @@ h1 {
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * .8);
+    width: calc(var(--nav-size) * .9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,9 +153,7 @@ h1 {
     transform: translateX(0%);
     transition: all var(--speed) ease;
   }
-  .menu-secondary-exit {
-  
-  }
+ 
   .menu-secondary-exit-active {
     transform: translateX(110%);
     transition: all var(--speed) ease;
@@ -273,9 +271,6 @@ h1 {
   .menu-secondary-enter-active {
     transform: translateX(0%);
     transition: all var(--speed) ease;
-  }
-  .menu-secondary-exit {
-  
   }
   .menu-secondary-exit-active {
     transform: translateX(110%);
@@ -395,9 +390,7 @@ h1 {
     transform: translateX(0%);
     transition: all var(--speed) ease;
   }
-  .menu-secondary-exit {
   
-  }
   .menu-secondary-exit-active {
     transform: translateX(110%);
     transition: all var(--speed) ease;
@@ -516,9 +509,7 @@ h1 {
     transform: translateX(0%);
     transition: all var(--speed) ease;
   }
-  .menu-secondary-exit {
-  
-  }
+ 
   .menu-secondary-exit-active {
     transform: translateX(110%);
     transition: all var(--speed) ease;
@@ -542,7 +533,7 @@ h1 {
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 3.7);
+    width: calc(var(--nav-size) * 3.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -637,9 +628,6 @@ h1 {
     transform: translateX(0%);
     transition: all var(--speed) ease;
   }
-  .menu-secondary-exit {
-  
-  }
   .menu-secondary-exit-active {
     transform: translateX(110%);
     transition: all var(--speed) ease;
@@ -647,7 +635,7 @@ h1 {
 }
 
 /* Extra EXTRA large devices  */
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1800px) {
   .navbar {
     height: var(--nav-size);
     background-color: var(--bg-2);
@@ -757,9 +745,6 @@ h1 {
   .menu-secondary-enter-active {
     transform: translateX(0%);
     transition: all var(--speed) ease;
-  }
-  .menu-secondary-exit {
-  
   }
   .menu-secondary-exit-active {
     transform: translateX(110%);

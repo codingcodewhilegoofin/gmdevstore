@@ -25,6 +25,7 @@ function App() {
 
   var githublink = 'https://github.com/codingcodewhilegoofin';
   var linkedinlink = 'https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/';
+  var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/6866d59050e7d2e18ffc8743b841f269d3d55b2e/src/components/Resume/Giovanni%20J%20Moscato.pdf';
 
 
   //Send to DOM 
@@ -118,6 +119,10 @@ function App() {
      }}/>
      <Route path='/linkedin' component={() => { 
      window.location.href = linkedinlink; 
+     return null;
+     }}/>
+     <Route path='/download' component={() => { 
+     window.location.href = downloadres; 
      return null;
      }}/>
 

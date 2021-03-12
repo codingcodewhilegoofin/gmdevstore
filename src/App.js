@@ -106,6 +106,8 @@ function App() {
       </Link>
 
      </UnderNav>
+
+    
      
 
      <Route exact path="/" component={HomePage} />

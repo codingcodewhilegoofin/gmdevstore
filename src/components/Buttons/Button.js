@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Buttons/Button.css';
 import { Link } from 'react-router-dom';
+import '../Resume/Giovanni J Moscato.pdf';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
@@ -20,14 +21,9 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to='/sign-up' className='btn-mobile'>
-      <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onClick}
-        type={type}
-      >
-        {children}
-      </button>
-    </Link>
+    
+    <a href="C:\Users\Yupim\Desktop\giomoscatoweb\src\components\Resume\Giovanni J Moscato.pdf" className={`btn ${checkButtonStyle} ${checkButtonSize}`} download="GioMoscatoResume.pdf">
+      <img src="C:\Users\Yupim\Desktop\giomoscatoweb\src\components\Resume\Giovanni J Moscato.pdf" alt="Giovanni Moscato Resume 📝"/>
+    </a>
   );
 };

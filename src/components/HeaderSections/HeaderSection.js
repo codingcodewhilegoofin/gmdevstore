@@ -73,8 +73,29 @@ function HeaderSection() {
           <li> Given email ( No I will not open your spam , nice try tho)</li>
         </ul>
       </div>
+
+      <div className='gio-container-4'>
+        <h1>Personal Projects 💻: </h1>
+        <p>
+            Here are some of my favorite and most impressive projects I've aready completed.
+            Most of the source code is publicaly available on my github. 
+        </p>
+        <h4> Converter : </h4>
+        <iframe 
+        height="400px" 
+        width="100%" 
+        src="https://replit.com/@codingcodewhile/IntelligentBurdensomeAdaware?lite=true" 
+        scrolling="no" 
+        frameborder="no" 
+        allowtransparency="true" 
+        allowfullscreen="true" 
+        sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
+        </iframe>
+      </div>
+
+
+
     </div>
-  
   );
 }
 

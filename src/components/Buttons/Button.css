@@ -29,7 +29,7 @@
     background-color: transparent;
     color: var(--text-color);
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+  
     transition: all 2s ease-out;
   }
   

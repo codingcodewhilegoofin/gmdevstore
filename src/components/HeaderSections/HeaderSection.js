@@ -86,10 +86,10 @@ function HeaderSection() {
         <h4> C++ Compiler for IEEE 754 float converter : </h4>
         <iframe 
         height="600px" 
-        width="96%" 
+        width="100%" 
         src="https://replit.com/@codingcodewhile/IntelligentBurdensomeAdaware?lite=true" 
-        scrolling="no" 
-        frameborder="no" 
+        scrolling="yes" 
+        frameborder="yes" 
         allowtransparency="true" 
         allowfullscreen="true" 
         sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
@@ -108,7 +108,7 @@ function HeaderSection() {
             <br></br>You have to keep pressing the move keys to gain enough momentum to reach the end zone! Watch out for cubes they will slow you down.  
         </p>
 
-        <iframe src="https://itch.io/embed-upload/2795508?color=E5383B" allowfullscreen="" width="75%" height="1000px" frameborder="0">
+        <iframe src="https://itch.io/embed-upload/2795508?color=E5383B" allowfullscreen="" width="100%" height="1000px" frameborder="0">
           <a href="https://yupimaperson101.itch.io/pink-balls">Play Pink Balls on itch.io</a>
         </iframe>
 

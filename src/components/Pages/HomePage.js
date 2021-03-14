@@ -20,6 +20,8 @@ const HomePage = () => {
     return (
 
         <HeroSection />
+        
+        
     )
 
 };

@@ -4,13 +4,14 @@ import '../../App.css';
 import { Button } from '../Buttons/Button.js';
 import '../Buttons/Button.css';
 import '../PageCss/HeaderSection.css';
+
 import '../../icons/gio.jpg';
 
 
 function HeaderSection() {
   return (
-    <div>
-      <div className='hero-container'>
+    <div className='gio-main'>
+      <div className='gio-container'>
       <video src='/videos/space.mp4' autoPlay loop muted />
       <h1>YAY! 🥳 You've made it to giomoscato.com</h1>
       <h4>Who is Giovanni Moscato? </h4>
@@ -118,6 +119,27 @@ function HeaderSection() {
         </p>
         
         </div>
+
+        
+
+        <div className="end-div">
+          <h2> Want to know how I made this website ? ✨ </h2>
+          <ol>
+            <li> React </li>
+            <li> NPM</li>
+            <li> HTML/CSS/JAVA/JSX </li>
+            <li> Githubpages </li>
+            <li> GoogleDomains(DNS)</li>
+            <li> React Router & Few other libraries</li>
+            <li> Github ( source control ) </li>
+          </ol>
+          <h3> Visit my github to find all the code!(please also folllow lol)
+            <br></br>🔥 
+            
+          </h3>
+        </div>
+
+
 
 
 

@@ -30,8 +30,29 @@
     max-width: 100%;
     height: auto;
   }
+  img:hover{
+    box-shadow: -20px -50px 50px 0 rgba(255, 185, 185, 0.5), 0 6px 20px 0 rgba(255, 114, 114, 0.19);
+    transition: box-shadow 1s ;
+  }
+  .end-div{
+    height: 30vh;
+    width: 99.9%;
+    border: 1px dashed rgb(255, 139, 139);
+    display: flex;
+    justify-content: center;
+  }
   
-  .hero-container {
+
+  .gio-main {
+    border: 1.4px solid #BA181B;
+
+  }
+  .gio-main:hover{
+    border: 1.4px solid white;
+    transition: border 10s;
+  }
+  
+  .gio-container {
     /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
     height: 100vh;
     width: 100%;
@@ -44,19 +65,19 @@
     background: rgba(0, 0, 0, 0.1);
     
   }
-  .hero-container > h1 {
+  .gio-container > h1 {
     color: var(--text-color);
     font-size: 100px;
     margin-top: -100px;
   }
-  .hero-container > h4 {
+  .gio-container > h4 {
     margin-top: 8px;
     color: var(--text-color);
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
-  .hero-container > p {
+  .gio-container > p {
     margin-top: 8px;
     color: var(--text-color);
     font-size: 15px;
@@ -237,95 +258,99 @@
  
   
   @media screen and (max-width: 960px) {
-    .hero-container > h1 {
-      font-size: 70px;
+    .gio-container > h1 {
+      font-size: 60px;
       margin-top: -150px;
     }
     .gio-container-2 > h1 {
-      font-size: 70px;
+      font-size: 60px;
      
     }
     .gio-container-2 > ul{
     
       color: var(--text-color);
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-2 > li {
       
       color: var(--text-color);
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-3 > h1 {
-      font-size: 70px;
+      font-size: 60px;
      
     }
     .gio-container-3 > ul{
     
       color: var(--text-color);
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-3 > li {
       
       color: var(--text-color);
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-4 > h1 {
-      font-size: 70px;
+      font-size: 60px;
      
     }
     .gio-container-4 > ul{
     
       color: var(--text-color);
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-4 > li {
       
       color: var(--text-color);
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-5 > h1 {
-      font-size: 70px;
+      font-size: 60px;
      
     }
     .gio-container-5 > ul{
     
       color: var(--text-color);
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-5 > li {
       
       color: var(--text-color);
-      font-size: 70px;
+      font-size: 50px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
   }
   
   @media screen and (max-width: 768px) {
-    .hero-container > h1 {
-      font-size: 20px;
-      margin-top: -100px;
+    .gio-container {
+      height: 90vh; 
     }
-    .hero-container > h4 {
+    .gio-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+      
+    }
+    .gio-container > h4 {
       font-size: 20px;
      
     }
-    .hero-container > p {
-      font-size: 10px;
+    .gio-container > p {
+      font-size: 15px;
     }
     .btn-mobile {
       display: block;
@@ -429,5 +454,17 @@
       font-size: 20px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
+    }
+  }
+
+  @keyframes bgchange {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
     }
   }

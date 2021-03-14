@@ -864,12 +864,14 @@ h6{
     position: sticky;
     top: 0;
     
+    
   }
   .navbar:hover
   {
     transition: border 10s;
    
     border: 1px solid #BA181B;
+   
   }
  
   
@@ -1006,7 +1008,8 @@ h6{
   }
   .navbar-2:hover
   {
-    background-color: var(--bg)
+    background-color: var(--bg);
+    border: 1px solid white;
   }
   .nav-item-li{
     width: calc(var(--nav-size) * 35);

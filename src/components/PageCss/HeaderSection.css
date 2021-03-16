@@ -98,6 +98,48 @@
     margin-left: 4px;
   }
 
+  .gio-container > ul{
+    
+    color: var(--text-color);
+    font-size: 20px;
+    list-style-type: circle;
+    align-items: left;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  .gio-container > li {
+    
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  .gio-container > dl{
+    
+    color: var(--text-color);
+    font-size: 20px;
+    list-style-type: circle;
+    align-items: left;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  .gio-container > dt {
+    
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  .gio-container > dd {
+    
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
   .gio-container-2 {
     height: 100vh;
     width: 100%;

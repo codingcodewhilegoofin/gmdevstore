@@ -8,6 +8,7 @@ import { CSSTransition } from 'react-transition-group';
 import MagicButton from './components/Buttons/MagicButton/magicButton.js'
 import HomePage from './components/Pages/HomePage';
 import AboutPage from './components/Pages/AboutPage';
+import ContactPage from './components/Pages/ContactPage';
 import './App.css';
 
 //Menu import
@@ -113,6 +114,7 @@ function App() {
 
      <Route exact path="/" component={HomePage} />
      <Route path="/about" component={AboutPage} />
+     <Route path="/contact" component={ContactPage} />
      <Route path='/github' component={() => { 
      window.location.href = githublink; 
      return null;

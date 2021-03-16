@@ -7,7 +7,7 @@ import React, { Component , useState} from 'react';
 import MenuButton from '../Buttons/MenuButton/MenuButton.js';
 import '../PageCss/homepage.css';
 import '../../icons/gio.jpg';
-import HeroSection from'../HeaderSections/HeaderSection.js'
+import HeaderSection from'../HeaderSections/HeaderSection.js'
 
 
 
@@ -19,7 +19,7 @@ const HomePage = () => {
     
     return (
 
-        <HeroSection />
+        <HeaderSection />
         
         
     )

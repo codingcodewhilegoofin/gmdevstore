@@ -35,12 +35,18 @@
     transition: box-shadow 1s ;
   }
   .end-div{
-    height: 30vh;
+    height: 35vh;
     width: 99.9%;
     border: 1px dashed rgb(255, 139, 139);
     display: flex;
     justify-content: center;
+    background-color: #161A1D;
   }
+  .end-div:hover{
+    background-color: #E5383B;
+  }
+ 
+  
  
 
   .gio-main {
@@ -261,6 +267,22 @@
   .gio-container-4 > p {
     margin-top: 8px;
     color: var(--bg-red2);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  .gio-container-4 > ul{
+    
+    color: var(--text-color);
+    font-size: 20px;
+    list-style-type: circle;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  .gio-container-4 > li {
+    
+    color: var(--text-color);
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;

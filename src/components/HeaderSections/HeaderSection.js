@@ -123,7 +123,9 @@ function HeaderSection() {
         
 
         <div className="end-div">
+          <a href="https://github.com/codingcodewhilegoofin/giowebsite">
           <h2> Want to know how I made this website ? ✨ </h2>
+          
           <ol>
             <li> React </li>
             <li> NPM</li>
@@ -137,8 +139,21 @@ function HeaderSection() {
             <br></br>🔥 
             
           </h3>
+          </a>
         </div>
-
+        
+        <div className="end-div">
+          <a href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/">
+          <h2> Having trouble viewing my website ? 💔 </h2>
+          
+          <h5> I tried to make my website desktop and mobile friendly as possible</h5>
+         
+          <h3> If you're having issues on mobile try switching to desktop view! 
+            <br></br>I'm currently working to fix these bugs sorry! 
+            
+          </h3>
+          </a>
+        </div>
 
 
 

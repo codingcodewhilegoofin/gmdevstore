@@ -140,10 +140,11 @@ function HeaderAbout() {
               <li>Branch management / Issue handling / AGILE methodology </li>
               <li>Githubpages / Github API experience</li>
           </ol>
+
+        </ul>
   
-        <br></br>
-        <br></br>
-        <br></br>
+     
+        <ul>
   
         <li>NPM / GRADLE :</li>
           <ol>
@@ -151,10 +152,20 @@ function HeaderAbout() {
               <li>Directory management for packages in different servers </li>
           </ol>
 
-
-      
         </ul>
 
+
+        <ul>
+
+          <li>DOCKER:</li>
+          <ol>
+              <li>Adding a dockerfile, to containerize a project</li>
+          </ol>
+
+        </ul>
+
+
+    
       </div>
 
         <div className='gio-container-5'>
@@ -200,7 +211,7 @@ function HeaderAbout() {
   
         <li>MLH ( Major Leauge Hacking):
           <ul>
-              <li>Attended 2 hackathons, Joined 1 international team ( India )</li>
+              <li>Attended 3 hackathons, Joined 1 international team ( India )</li>
           </ul>
         </li>
 
@@ -226,6 +237,14 @@ function HeaderAbout() {
           <ul>
               <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
               <li> Experience in Declarative: Database   </li>
+          </ul>
+        </li>
+
+        <br></br>
+
+        <li> Crypto/FinTech:
+          <ul>
+              <li> Understanding of theoretical basics of blockchain technology  </li>
           </ul>
         </li>
 

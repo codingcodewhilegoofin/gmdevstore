@@ -16,10 +16,14 @@ function HeaderSection() {
       <h1>YAY! 🥳 You've made it to giomoscato.com</h1>
       <h4>Who is Giovanni Moscato? </h4>
       <p>I started programming about 4 years ago at my community college and began to grow more interest in it as I progressed through school. 
+        <br></br>
         <br></br>Originally I was going to school for VFX or some kind of art program. 
         I have always had a love for art and music but I also wanted to work in the tech industry. 
+        <br></br>
         <br></br>My dream career would involve combing technology and art together to create experiences that users really love. 
         <br></br>At the moment I have a decent range of experience in programming and design aspects. 
+        <br></br>
+        <br></br>
         Currently I am trying to figure out what niche of programming I'd like to focus on. 
         Recently I have begun to explore Machine Learning and Web Dev! 
       </p>

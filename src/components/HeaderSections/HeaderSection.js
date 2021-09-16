@@ -61,7 +61,9 @@ function HeaderSection() {
         <h4> Quick summary of skillset : </h4>
         <ul>
           <li>Experience in Full-Stack development / Web Design</li>
+          <br></br>
           <li>Some experience in C++ , Java ,Python, Unix, Assembly, and other languages</li>
+          <br></br>
           <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
         </ul>
       </div>

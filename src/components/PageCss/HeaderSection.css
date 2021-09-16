@@ -251,7 +251,7 @@
   .gio-container-4 > h1 {
     color: var(--text-color);
     font-size: 100px;
-    font-size: 60px;
+    font-size: 59px;
     
    
    
@@ -259,7 +259,7 @@
   .gio-container-4 > h4 {
     margin-top: 16px;
     color: var(--text-color);
-    font-size: 40px;
+    font-size: 38px;
     background-color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
@@ -267,7 +267,7 @@
   .gio-container-4 > p {
     margin-top: 8px;
     color: var(--bg-red2);
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -300,7 +300,7 @@
   .gio-container-5 > h1 {
     color: var(--text-color);
     font-size: 100px;
-    font-size: 60px;
+    font-size: 58px;
     background-color: #F5B7B9;
    
    
@@ -308,14 +308,14 @@
   .gio-container-5 > h4 {
     margin-top: 16px;
     color: var(--text-color);
-    font-size: 40px;
+    font-size: 38px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
   .gio-container-5 > p {
     margin-top: 8px;
     color: var(--bg-red2);
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }

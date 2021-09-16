@@ -87,6 +87,9 @@ function HeaderSection() {
         <h1>Personal Projects 💻: </h1>
         <p>
             Here are some of my favorite and most impressive projects I've aready completed.
+
+            <br></br>
+            <br></br>
             Most of the source code is publicaly available on my github. 
         </p>
         <h4> C++ Compiler for IEEE 754 float converter : </h4>
@@ -103,6 +106,7 @@ function HeaderSection() {
 
         <p>I created a IEEE 754 standard converter to convert hexadecimal ( and decimal) numbers into floating point.</p>
         <p> This is my original code and It does have a few errors here and there discussed in DOC. 
+            <br></br>
             <br></br>Just press the green RUN arrow and then click next to the orange arrow when prompted. You may enter a hexadecimal number or decimal.
         </p>
         </div>
@@ -111,6 +115,7 @@ function HeaderSection() {
         <h1>Unity / C# video game Pink Balls: </h1>
         <p>
             The game is based on velocity. 
+            <br></br>
             <br></br>You have to keep pressing the move keys to gain enough momentum to reach the end zone! Watch out for cubes they will slow you down.  
         </p>
 
@@ -118,10 +123,10 @@ function HeaderSection() {
           <a href="https://yupimaperson101.itch.io/pink-balls">Play Pink Balls on itch.io</a>
         </iframe>
 
-        <p>I designed and developed this game completley on my own with some inspiration. I was going for a "monkey ball" type game.
-           This game although simple at first glance was extremely hard to make and has many, many bugs that I had to fix.  
-           The game is finished however and beatable. There is a menu, main gameplay loop, and end goal. 
-           Please reach out to me if you find a bug. Also, I plan to make more levels at some point.
+        <p>I designed and developed this game completley on my own with some inspiration.<br></br><br></br> I was going for a "monkey ball" type game.
+           This game although simple at first glance was extremely hard to make and has many, many bugs that I had to fix. <br></br><br></br> 
+           The game is finished however and beatable.<br></br><br></br> There is a menu, main gameplay loop, and end goal. 
+           Please reach out to me if you find a bug.<br></br><br></br> Also, I plan to make more levels at some point.
         </p>
         
         </div>

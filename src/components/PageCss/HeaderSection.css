@@ -7,6 +7,7 @@
    
   
   }
+ 
 
   :root {
     --bg: #0B090A;
@@ -30,9 +31,23 @@
     max-width: 100%;
     height: auto;
   }
-  img:hover{
-    box-shadow: -20px -50px 50px 0 rgba(255, 185, 185, 0.5), 0 6px 20px 0 rgba(255, 114, 114, 0.19);
-    transition: box-shadow 1s ;
+  .img-2{
+    border: 3px solid var(--bg-accent2);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(58, 31, 211, 0.5), 0 6px 20px 0 rgba(107, 14, 255, 0.19);
+    max-width: 100%;
+    height: auto;
+  }
+  
+ 
+  
+  .special-link:hover{
+    box-shadow: 20px 0px 50px 0 rgba(111, 40, 245, 0.5), 0 6px 20px 0 rgba(112, 25, 251, 0.19);
+    transition: box-shadow 2s ;
+  }
+  .special-link:visited{
+    box-shadow: 20px 0px 50px 0 rgb(144, 0, 180), 0 6px 20px 0 rgba(192, 32, 197, 0.822);
+    transition: box-shadow 2s ;
   }
   .end-div{
     height: 35vh;
@@ -417,11 +432,11 @@
       
     }
     .gio-container > h4 {
-      font-size: 20px;
+      font-size: 17px;
      
     }
     .gio-container > p {
-      font-size: 13px;
+      font-size: 15px;
     }
     .btn-mobile {
       display: block;
@@ -443,7 +458,7 @@
     }
     .gio-container-2 > ul{
       color: var(--text-color);
-      font-size:  18px;
+      font-size:  15px;
       list-style-type: circle;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
@@ -455,7 +470,7 @@
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-3 > h1 {
-      font-size: 25px;
+      font-size: 27px;
 
     }
     .gio-container-3 > h4 {
@@ -463,11 +478,11 @@
      
     }
     .gio-container-3 > p {
-      font-size: 19px;
+      font-size: 18px;
     }
     .gio-container-3 > ul{
       color: var(--text-color);
-      font-size: 18px;
+      font-size: 15px;
       list-style-type: circle;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
@@ -479,7 +494,7 @@
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-4 > h1 {
-      font-size: 29px;
+      font-size: 31px;
 
     }
     .gio-container-4 > h4 {
@@ -491,7 +506,7 @@
     }
     .gio-container-4 > ul{
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 15px;
       list-style-type: circle;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
@@ -511,7 +526,7 @@
      
     }
     .gio-container-5 > p {
-      font-size: 17px;
+      font-size: 15px;
     }
     .gio-container-5 > ul{
       color: var(--text-color);

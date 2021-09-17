@@ -16,7 +16,7 @@ function HeaderContact() {
       <h1>HOW TO CONTACT ME</h1>
       <h4>I should be available any day of the week , at any reasonable time!  </h4>
 
-      <div style={{ backgroundColor: "#161A1D" , border: "5px solid white" }}>
+      <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "5px solid white" }}>
       <form action="">
         <label for="fname" style={{color: "white" }}>EMAIL:</label>
         <input type="text" value="yupimaperson101@protonmail.com" id="myInput" size= "51"/>

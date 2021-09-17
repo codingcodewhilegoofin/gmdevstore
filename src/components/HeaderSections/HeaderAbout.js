@@ -16,7 +16,7 @@ function HeaderAbout() {
       <h1>ABOUT ME : Skills & information</h1>
       <h4> I am currently an undergrad in the computer science program at NIU. 
            Our program mainly focuses on teaching us how to understand WHY code is working and not how to just write code. 
-      <br></br>This gave me the advantage of understanding the standards, 
+      <br></br><br></br>This gave me the advantage of understanding the standards, 
            data structures, and mathematical reasoning behind most coding / computer science applications. </h4>
       <p>I have a range of experience in all listed languages. I am most comfortable with the C family but can adapt pretty easily.
       </p>
@@ -165,22 +165,23 @@ function HeaderAbout() {
         </p>
 
         <br></br>
-        <br></br>
-
-
+       
         <p>
-              During the summer of 2020 I participated in the code_orange program at NIU. 
-              <br></br>I was on a team tasked with developing a Full -stack website to host a user statistics dash board for the program. Unfortunately the program was cancelled due to COVID-19. 
+              During the summer of 2020 I participated in the code_orange program at NIU.<br></br> 
+              <br></br>I was on a team tasked with developing a Full -stack website to host a user statistics dash board for the program. Unfortunately the program was cancelled due to COVID-19.
+              <br></br> 
               <br></br>Since DFS is a financial company we were not allowed to save any work from this internship and all I have to show is a few articles referring to it. ( link bellow )
         </p>
 
-        <a href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
-          <h4> NIU code_orange program description</h4>
+        <a className='special-link' href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
+          <h4><i> NIU code_orange program description </i></h4>
         </a>
 
-        <a href="https://www.mystateline.com/news/niu-students-get-real-world-experience-developing-technology-for-discover/1495852453/">
-          <h4> Article about the program</h4>
+        <a className='special-link' href="https://www.mystateline.com/news/niu-students-get-real-world-experience-developing-technology-for-discover/1495852453/">
+          <h4><i> Article about the program </i></h4>
         </a>
+
+        <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' className="img-2" />
 
         
         </div>

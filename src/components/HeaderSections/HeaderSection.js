@@ -79,7 +79,7 @@ function HeaderSection() {
         <h4> Best way to reach me? : </h4>
         <ul>
           <li> Linkedin Dm ( Professional please )</li>
-          <li> Given email ( No I will not open your spam , nice try though)</li>
+          <li> Given email </li>
         </ul>
       </div>
 
@@ -126,7 +126,7 @@ function HeaderSection() {
         <p>I designed and developed this game completley on my own with some inspiration.<br></br><br></br> I was going for a "monkey ball" type game.
            This game although simple at first glance was extremely hard to make and has many, many bugs that I had to fix. <br></br><br></br> 
            The game is finished however and beatable.<br></br><br></br> There is a menu, main gameplay loop, and end goal. 
-           Please reach out to me if you find a bug.<br></br><br></br> Also, I plan to make more levels at some point.
+           Please reach out to me if you find a bug.<br></br> Also, I plan to make more levels at some point.
         </p>
         
         </div>

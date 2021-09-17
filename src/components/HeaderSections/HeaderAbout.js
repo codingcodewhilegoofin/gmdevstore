@@ -181,7 +181,7 @@ function HeaderAbout() {
           <h4><i> Article about the program </i></h4>
         </a>
 
-        <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' className="img-2" />
+        <img src='https://github.com/codingcodewhilegoofin/codingcodewhilegoofin/blob/main/Screenshot_20210916-192019_Discord.jpg' className="img-2" />
 
         
         </div>

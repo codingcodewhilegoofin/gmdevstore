@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.508b7619.chunk.css",
+    "main.css": "/static/css/main.52feebb9.chunk.css",
     "main.js": "/static/js/main.6add96bf.chunk.js",
     "main.js.map": "/static/js/main.6add96bf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c07da01f.js",
@@ -10,7 +10,7 @@
     "static/js/3.afb0cb97.chunk.js": "/static/js/3.afb0cb97.chunk.js",
     "static/js/3.afb0cb97.chunk.js.map": "/static/js/3.afb0cb97.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.508b7619.chunk.css.map": "/static/css/main.508b7619.chunk.css.map",
+    "static/css/main.52feebb9.chunk.css.map": "/static/css/main.52feebb9.chunk.css.map",
     "static/js/2.4dc5d0d4.chunk.js.LICENSE.txt": "/static/js/2.4dc5d0d4.chunk.js.LICENSE.txt",
     "static/media/CO.48c91519.png": "/static/media/CO.48c91519.png",
     "static/media/Giovanni J Moscato.c3bd92e0.pdf": "/static/media/Giovanni J Moscato.c3bd92e0.pdf",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.c07da01f.js",
     "static/js/2.4dc5d0d4.chunk.js",
-    "static/css/main.508b7619.chunk.css",
+    "static/css/main.52feebb9.chunk.css",
     "static/js/main.6add96bf.chunk.js"
   ]
 }

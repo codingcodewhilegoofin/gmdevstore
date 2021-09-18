@@ -6,6 +6,7 @@ import '../Buttons/Button.css';
 import '../PageCss/HeaderSection.css';
 
 import '../../icons/gio.jpg';
+import co from '../../icons/CO.png';
 
 
 function HeaderAbout() {
@@ -181,7 +182,7 @@ function HeaderAbout() {
           <h4><i> Article about the program </i></h4>
         </a>
 
-        <img src='https://github.com/codingcodewhilegoofin/codingcodewhilegoofin/blob/main/Screenshot_20210916-192019_Discord.jpg' className="img-2" />
+        <img src={co} alt={"Code Orange logo"} className="img-2" />
 
         
         </div>

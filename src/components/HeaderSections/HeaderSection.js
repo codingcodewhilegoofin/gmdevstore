@@ -71,7 +71,7 @@ function HeaderSection() {
       <div className='gio-container-3'>
         <h1>Feel free to contact me! 📨</h1>
 
-        <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' className="img-1" />
+       <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' className="img-1" /> 
         <p>
           Besides github and linkedin I want to be open and available to anyone who wants to chat!
           All other relevant contact information is available through the "email icon" or contact page.

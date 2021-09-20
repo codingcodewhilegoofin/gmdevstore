@@ -2,7 +2,6 @@
 
 -Issues with Vertical re-sizing
 
-
 -Issues with contact box :  Horizontal and Vertical 
 
 -Issues with WebGL and Repitl boxes

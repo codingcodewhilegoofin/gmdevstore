@@ -1,4 +1,22 @@
 .App {
   text-align: center;
 
+
+}
+
+@media screen and (max-height: 460px){
+  .App {
+    text-align: center;
+    background-color: black;
+  
+  }
+}
+
+
+@media screen and (max-height: 360px){
+  .App {
+    text-align: center;
+    background-color: black;
+  
+  }
 }

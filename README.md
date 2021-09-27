@@ -1,6 +1,6 @@
 # Things to update:
 
--Issues with Vertical re-sizing
+-Issue with video / background for mobile
 
 -Issues with contact box :  Horizontal and Vertical 
 

@@ -18,7 +18,6 @@
     width:99vw;
     height:100vh;
     border: 2px solid var(--bg-accent);
-
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -41,14 +40,62 @@
     color: red;
     flex-shrink: 3; 
     justify-content: center;
-    
 }
 .gio-image{
-   
     width: 15vw;
     height: 30vh;
     background-color: #F5F3F4;
+}
+
+@media screen and (max-height: 360px) {
+    :root {
+        --bg: #0B090A;
+        --bg-accent: #660708;
+        --bg-accent2: #4B0506;
+        --bg-accent3: #320304;
+        --text-color: #F5F3F4;
+        --bg-red1: #A4161A;
+        --bg-red2: #BA181B;
+        --bg-red3: #E5383B;
+        --nav-size: 60px;
+        --border-radius: 8px;
+        --speed: 500ms;
+        --bg-2: #161A1D;
+      }
     
-    
-   
+    .div-main{
+        background-color: var(--bg);
+        width:99vw;
+        height:100vh;
+        border: 2px solid var(--bg-accent);
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:  column;
+    }
+    .div-box{
+        order: 0;
+        width: 80vw;
+        height: 5vh;
+        flex-shrink: 3; 
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .div-box-text{
+        color: red;
+        flex-shrink: 3; 
+        justify-content: center;
+    }
+    .gio-image{
+        width: 15vw;
+        height: 30vh;
+        background-color: #F5F3F4;
+    }
+ 
+  
 }

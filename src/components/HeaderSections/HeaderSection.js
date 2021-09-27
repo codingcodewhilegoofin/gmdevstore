@@ -43,13 +43,13 @@ function HeaderSection() {
       <p><br></br>If you want all my information in resume format click this button or on top right navbar
       </p>
 
-
-
+      
 
      
       </div>
 
       <div className='gio-container-2'>
+       
         <h1>Details of Relevant skills & information 📊 </h1>
         <p>
           You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
@@ -159,8 +159,8 @@ function HeaderSection() {
           
           <h5> I tried to make my website desktop and mobile friendly as possible</h5>
          
-          <h3> If you're having issues on mobile try switching to desktop view! 
-            <br></br>I'm currently working to fix these bugs sorry! 
+          <h3> Major Update! : Most mobile / scaling issues should be fixed
+          
             
           </h3>
           </a>

@@ -7,6 +7,9 @@ import '../PageCss/HeaderSection.css';
 
 import '../../icons/gio.jpg';
 
+import { Link } from "react-router-dom";
+import { ReactComponent as Bitcoinsymb} from '../../icons/Bitcoin.svg';
+
 
 function HeaderSection() {
   return (
@@ -166,7 +169,19 @@ function HeaderSection() {
           </a>
         </div>
 
-
+        <div className="end-div">
+          
+          
+            <h1> NEW! : Crypto & Stock tracker
+              <br></br>
+              <br></br>
+              <Link  to="/cstrack"> 
+                <Bitcoinsymb/>  
+              </Link> 
+            </h1>
+          
+        
+        </div>
 
 
     </div>

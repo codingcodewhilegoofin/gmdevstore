@@ -7,6 +7,7 @@ import { CSSTransition } from 'react-transition-group';
 //Custom imports 
 import MagicButton from './components/Buttons/MagicButton/magicButton.js'
 import HomePage from './components/Pages/HomePage';
+import Cstrack from './components/Pages/Cstrack';
 import AboutPage from './components/Pages/AboutPage';
 import ContactPage from './components/Pages/ContactPage';
 import './App.css';
@@ -127,6 +128,9 @@ function App() {
      window.location.href = downloadres; 
      return null;
      }}/>
+
+
+    <Route path="/cstrack" component={Cstrack} />
 
     </div>
 

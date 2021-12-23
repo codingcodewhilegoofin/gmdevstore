@@ -52,8 +52,13 @@ function HeaderSection() {
       </div>
 
       <div className='gio-container-2'>
-       
+
+     
+
         <h1>Details of Relevant skills & information 📊 </h1>
+
+       
+
         <p>
           You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
           with on the about/skills page! 
@@ -72,8 +77,12 @@ function HeaderSection() {
       </div>
 
       <div className='gio-container-3'>
+
+     
+
         <h1>Feel free to contact me! 📨</h1>
 
+       
        <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' className="img-1" /> 
         <p>
           Besides github and linkedin I want to be open and available to anyone who wants to chat!
@@ -87,7 +96,12 @@ function HeaderSection() {
       </div>
 
       <div className='gio-container-4'>
+
+       
+
         <h1>Personal Projects 💻: </h1>
+
+      
         <p>
             Here are some of my favorite and most impressive projects I've aready completed.
 
@@ -134,7 +148,7 @@ function HeaderSection() {
         
         </div>
 
-        
+       
 
         <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">

@@ -66,7 +66,8 @@
     background-color: #E5383B;
   }
  
-  
+ 
+
  
 
   .gio-main {
@@ -81,14 +82,14 @@
   .gio-container {
     /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
     height: 100vh;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
-    background: rgba(0, 0, 0, 0.1);
+    
     
   }
   .gio-container > h1 {
@@ -107,7 +108,7 @@
     margin-top: 8px;
     color: var(--text-color);
     font-size: 15px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.1);
 
     
     
@@ -168,7 +169,7 @@
 
   .gio-container-2 {
     height: 100vh;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +216,7 @@
   }
   .gio-container-3 {
     height: 100vh;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,7 +262,7 @@
 
   .gio-container-4 {
     height: 100vh;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,7 +311,7 @@
 
   .gio-container-5 {
     height: 100vh;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -576,7 +577,7 @@
     .gio-container {
       /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
       height: auto;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -584,11 +585,12 @@
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
       object-fit: contain;
       background: rgba(0, 0, 0, 0.1);
+     
       
     }
     .gio-container-2 {
       height: auto;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -598,7 +600,7 @@
     }
     .gio-container-3 {
       height: auto;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -607,7 +609,7 @@
     }
     .gio-container-4 {
       height: auto;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -616,7 +618,7 @@
     }
     .gio-container-5 {
       height: auto;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -630,7 +632,7 @@
     .gio-container > h4 {
       margin-top: auto;
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -638,7 +640,7 @@
       margin-top: auto;
       color: var(--text-color);
       font-size: 13px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.1);
   
       
       
@@ -647,44 +649,46 @@
     }
     .gio-container-2 > h1 {
       font-size: 40px;
-     
+      border: 25px outset var(--bg-accent);
     }
     .gio-container-2 > p {
       margin-top: 8px;
       color: var(--bg-red2);
       font-size: 17px;
+      background: rgba(95, 66, 66, 0.178);
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-2 > ul{
     
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-2 > li {
       
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-3 > h1 {
       font-size: 50px;
-     
+      border: 25px outset var(--bg-accent3);
     }
     .gio-container-3 > p {
       margin-top: 8px;
       color: var(--bg-red2);
       font-size: 17px;
+      background: rgba(95, 66, 66, 0.178);
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-3 > ul{
     
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -696,20 +700,21 @@
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-4 > h1 {
-      font-size: 50px;
-     
+      font-size: 40px;
+      border: 25px outset var(--bg-accent2);
     }
     .gio-container-4 > p {
       margin-top: 8px;
       color: var(--bg-red2);
       font-size: 17px;
+      background: rgba(95, 66, 66, 0.178);
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-4 > ul{
     
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -722,12 +727,13 @@
     }
     .gio-container-5 > h1 {
       font-size: 50px;
-     
+      border: 25px outset var(--bg-2);
     }
     .gio-container-5 > p {
       margin-top: 8px;
       color: var(--bg-red2);
       font-size: 15px;
+      background: rgba(95, 66, 66, 0.178);
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -747,7 +753,7 @@
     }
     .end-div{
       height: auto;
-      width: 99.5%;
+      width: auto;
       border: 1px dashed rgb(255, 139, 139);
       display: flex;
       justify-content: center;
@@ -773,19 +779,19 @@
     .gio-container {
       /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
       height: auto;
-      width: 100%;
+      width:  auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
       object-fit: contain;
-      background: rgba(0, 0, 0, 0.1);
+     
       
     }
     .gio-container-2 {
       height: 200vh;
-      width: 100%;
+      width:  auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -795,7 +801,7 @@
     }
     .gio-container-3 {
       height: 200vh;
-      width: 100%;
+      width:  auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -804,7 +810,7 @@
     }
     .gio-container-4 {
       height: 200vh;
-      width: 100%;
+      width:  auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -813,7 +819,7 @@
     }
     .gio-container-5 {
       height: 220vh;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -835,7 +841,7 @@
       margin-top: auto;
       color: var(--text-color);
       font-size: 12px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.1);
   
       
       
@@ -850,6 +856,7 @@
       margin-top: 8px;
       color: var(--bg-red2);
       font-size: 12px;
+      background: rgba(0, 0, 0, 0.1);
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -945,16 +952,12 @@
     .end-div{
       height: 90vh;
       font-size: 12px;
-      width: 99.5%;
+      width: auto;
       border: 1px dashed rgb(255, 139, 139);
       display: flex;
       justify-content: center;
     }
 
-   
-    
- 
-  
   }
 
 

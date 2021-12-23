@@ -10,3 +10,10 @@
 
 -Issues with site re-direction
 
+# Ideas to add: 
+
+- Own package that randomly displays unique facts and or features of the site.
+- Package built from scratch 
+
+
+

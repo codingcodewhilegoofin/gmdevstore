@@ -11,6 +11,7 @@ import '../../icons/gio.jpg';
 import HeaderSection from'../HeaderSections/HeaderSection.js'
 import { ReactComponent as Bitcoinsymb} from '../../icons/Bitcoin.svg';
 
+//Custom Package import?
 
 
 
@@ -25,7 +26,9 @@ const Cstrack = () => {
     return (
 
         <div className="CStrack">
-            <h1> Traditional Stock & Crypto <br></br> <br></br> <Bitcoinsymb/> <br></br><br></br> Market Analysis </h1>
+            <h1> Traditional Stock & Crypto  <br></br><br></br> Market Analysis </h1>
+            <h2> Instantly compare the most important financial information all on one page </h2>
+            <p> Bitcoin, Market Index, and NFT tracker are a great instant look into market health </p>
             
             <div className="Outter">
                 <div className="Inner">
@@ -38,11 +41,15 @@ const Cstrack = () => {
                         &nbsp;by Coinlib
                     </div>
             </div>
+
+          
+          
+  
+           
             
   
           
-            <h1> Hello </h1>
-            <h1> Hello </h1>
+          
 
 
         </div>

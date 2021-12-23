@@ -10,6 +10,20 @@
     --bg-2: #161A1D;
   }
 
+h1{
+  color: var(--text-color);
+  font-size: auto;
+}
+h2{
+  color: var(--text-color);
+  font-size: auto;
+}
+p{
+  color: var(--text-color);
+  font-size: auto;
+}
+
+
 .CStrack{
     background-color: var(--bg);
     width: auto;
@@ -72,3 +86,10 @@
   text-decoration:none; 
   font-size:11px;
 }
+
+.I2{
+  display:block;
+ 
+}
+
+

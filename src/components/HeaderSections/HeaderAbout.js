@@ -24,10 +24,12 @@ function HeaderAbout() {
     
       </div>
 
+    
+
       <div className='gio-container-2'>
 
         <h1>LANGUAGES: </h1>
-        
+
         <ul>
         
         <li>C / C++:</li>
@@ -81,7 +83,11 @@ function HeaderAbout() {
 
       <div className='gio-container-3'>
         
-      <h1>MORE WEB DEV EXPERIENCE: </h1>
+       
+
+        <h1>MORE WEB DEV EXPERIENCE: </h1>
+
+       
         
         <ul>
         
@@ -131,8 +137,12 @@ function HeaderAbout() {
       </div>
 
       <div className='gio-container-4'>
-      <h1>CODE/PACKAGE MANAGEMENT: </h1>
-        
+
+       
+
+        <h1>CODE/PACKAGE MANAGEMENT: </h1>
+
+       
         <ul>
         
         <li>GITHUB:</li>
@@ -178,7 +188,9 @@ function HeaderAbout() {
           <h4><i> NIU code_orange program description </i></h4>
         </a>
 
+        
         <a className='special-link' href="https://www.mystateline.com/news/niu-students-get-real-world-experience-developing-technology-for-discover/1495852453/">
+          
           <h4><i> Article about the program </i></h4>
         </a>
 
@@ -186,6 +198,8 @@ function HeaderAbout() {
 
         
         </div>
+
+       
 
         <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">

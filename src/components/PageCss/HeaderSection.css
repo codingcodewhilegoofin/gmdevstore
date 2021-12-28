@@ -202,8 +202,9 @@
     
     color: var(--text-color);
     font-size: 20px;
-    list-style-type: circle;
-    
+    list-style-type: square;
+    border: 2px solid var(--bg-accent);
+    border-radius: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -245,10 +246,11 @@
       'Lucida Sans', Arial, sans-serif;
   }
   .gio-container-3 > ul{
-    
     color: var(--text-color);
     font-size: 20px;
-    list-style-type: circle;
+    list-style-type: square;
+    border: 2px solid var(--bg-accent);
+    border-radius: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -295,7 +297,9 @@
     
     color: var(--text-color);
     font-size: 20px;
-    list-style-type: circle;
+    list-style-type: none;
+    border: 1px solid var(--bg-accent);
+    border-radius: 10px;
     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;

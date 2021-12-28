@@ -181,8 +181,7 @@
     color: var(--text-color);
     font-size: 100px;
     font-size: 60px;
-   
-   
+    border: 25px outset var(--bg-accent);
   }
   .gio-container-2 > h4 {
     margin-top: 16px;
@@ -195,6 +194,7 @@
     margin-top: 8px;
     color: var(--bg-red2);
     font-size: 20px;
+    background: rgba(95, 66, 66, 0.178);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -227,8 +227,7 @@
     color: var(--text-color);
     font-size: 100px;
     font-size: 60px;
-   
-   
+    border: 25px outset var(--bg-accent);
   }
   .gio-container-3 > h4 {
     margin-top: 16px;
@@ -241,6 +240,7 @@
     margin-top: 8px;
     color: var(--bg-red2);
     font-size: 20px;
+    background: rgba(95, 66, 66, 0.178);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -273,9 +273,7 @@
     color: var(--text-color);
     font-size: 100px;
     font-size: 59px;
-    
-   
-   
+    border: 25px outset var(--bg-accent);
   }
   .gio-container-4 > h4 {
     margin-top: 16px;
@@ -289,6 +287,7 @@
     margin-top: 8px;
     color: var(--bg-red2);
     font-size: 19px;
+    background: rgba(95, 66, 66, 0.178);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -323,8 +322,7 @@
     font-size: 100px;
     font-size: 58px;
     background-color: #F5B7B9;
-   
-   
+    border: 25px outset var(--bg-accent);
   }
   .gio-container-5 > h4 {
     margin-top: 16px;
@@ -337,6 +335,7 @@
     margin-top: 8px;
     color: var(--bg-red2);
     font-size: 19px;
+    background: rgba(95, 66, 66, 0.178);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -349,6 +348,7 @@
     }
     .gio-container-2 > h1 {
       font-size: 60px;
+      border: 25px outset var(--bg-accent);
      
     }
     .gio-container-2 > ul{
@@ -367,6 +367,7 @@
     }
     .gio-container-3 > h1 {
       font-size: 60px;
+      border: 25px outset var(--bg-accent);
      
     }
     .gio-container-3 > ul{
@@ -385,6 +386,7 @@
     }
     .gio-container-4 > h1 {
       font-size: 60px;
+      border: 25px outset var(--bg-accent);
      
     }
     .gio-container-4 > ul{
@@ -403,6 +405,7 @@
     }
     .gio-container-5 > h1 {
       font-size: 60px;
+      border: 25px outset var(--bg-accent);
      
     }
     .gio-container-5 > ul{
@@ -453,6 +456,7 @@
     }
     .gio-container-2 > h1 {
       font-size: 20px;
+      border: 25px outset var(--bg-accent);
 
     }
     .gio-container-2 > h4 {
@@ -477,6 +481,7 @@
     }
     .gio-container-3 > h1 {
       font-size: 20px;
+      border: 25px outset var(--bg-accent);
 
     }
     .gio-container-3 > h4 {
@@ -501,6 +506,7 @@
     }
     .gio-container-4 > h1 {
       font-size: 20px;
+      border: 25px outset var(--bg-accent);
 
     }
     .gio-container-4 > h4 {
@@ -525,6 +531,7 @@
     }
     .gio-container-5 > h1 {
       font-size: 20px;
+      border: 25px outset var(--bg-accent);
 
     }
     .gio-container-5 > h4 {
@@ -850,6 +857,7 @@
     }
     .gio-container-2 > h1 {
       font-size: 30px;
+      border: 25px outset var(--bg-accent);
      
     }
     .gio-container-2 > p {
@@ -876,6 +884,7 @@
     }
     .gio-container-3 > h1 {
       font-size: 30px;
+      border: 25px outset var(--bg-accent);
      
     }
     .gio-container-3 > p {
@@ -901,6 +910,7 @@
     }
     .gio-container-4 > h1 {
       font-size: 30px;
+      border: 25px outset var(--bg-accent);
      
     }
     .gio-container-4 > p {
@@ -926,6 +936,7 @@
     }
     .gio-container-5 > h1 {
       font-size: 30px;
+      border: 25px outset var(--bg-accent);
      
     }
     .gio-container-5 > p {

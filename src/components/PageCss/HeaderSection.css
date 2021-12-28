@@ -442,7 +442,7 @@
      
     }
     .gio-container > p {
-      font-size: 15px;
+      font-size: 13.5px;
     }
     .btn-mobile {
       display: block;
@@ -452,39 +452,39 @@
       width: 100%;
     }
     .gio-container-2 > h1 {
-      font-size: 25px;
+      font-size: 20px;
 
     }
     .gio-container-2 > h4 {
-      font-size: 25px;
+      font-size: 20px;
      
     }
     .gio-container-2 > p {
-      font-size: 19px;
+      font-size: 15px;
     }
     .gio-container-2 > ul{
       color: var(--text-color);
-      font-size:  15px;
+      font-size: 15px;
       list-style-type: circle;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-2 > li {
       color: var(--text-color);
-      font-size: 18px;
+      font-size: 15px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-3 > h1 {
-      font-size: 27px;
+      font-size: 20px;
 
     }
     .gio-container-3 > h4 {
-      font-size: 25px;
+      font-size: 20px;
      
     }
     .gio-container-3 > p {
-      font-size: 18px;
+      font-size: 15px;
     }
     .gio-container-3 > ul{
       color: var(--text-color);
@@ -495,20 +495,20 @@
     }
     .gio-container-3 > li {
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 15px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-4 > h1 {
-      font-size: 31px;
+      font-size: 20px;
 
     }
     .gio-container-4 > h4 {
-      font-size: 23px;
+      font-size: 20px;
      
     }
     .gio-container-4 > p {
-      font-size: 17px;
+      font-size: 15px;
     }
     .gio-container-4 > ul{
       color: var(--text-color);
@@ -519,16 +519,16 @@
     }
     .gio-container-4 > li {
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 15px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-5 > h1 {
-      font-size: 25px;
+      font-size: 20px;
 
     }
     .gio-container-5 > h4 {
-      font-size: 25px;
+      font-size: 20px;
      
     }
     .gio-container-5 > p {
@@ -536,14 +536,14 @@
     }
     .gio-container-5 > ul{
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 15px;
       list-style-type: circle;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-5 > li {
       color: var(--text-color);
-      font-size: 20px;
+      font-size: 15px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }

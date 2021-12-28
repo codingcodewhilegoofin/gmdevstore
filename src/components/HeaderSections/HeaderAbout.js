@@ -151,10 +151,11 @@ function HeaderAbout() {
               <li>Branch management / Issue handling / AGILE methodology </li>
               <li>Githubpages / Github API experience</li>
           </ol>
+
+        </ul>
   
-        <br></br>
-        <br></br>
-        <br></br>
+     
+        <ul>
   
         <li>NPM / GRADLE :</li>
           <ol>
@@ -162,10 +163,20 @@ function HeaderAbout() {
               <li>Directory management for packages in different servers </li>
           </ol>
 
-
-      
         </ul>
 
+
+        <ul>
+
+          <li>DOCKER:</li>
+          <ol>
+              <li>Adding a dockerfile, to containerize a project</li>
+          </ol>
+
+        </ul>
+
+
+    
       </div>
 
         <div className='gio-container-5'>
@@ -199,7 +210,69 @@ function HeaderAbout() {
         
         </div>
 
-       
+        <div className='gio-container-2'>
+
+        <h1>Additional Experience </h1>
+        
+        <ul>
+        
+        <li>Advanced Programming:</li>
+          <ul>
+              <li>Some experience in Multi-Threading, Concurrent programs, Andriod applications, Semaphores/Deadlock solutions.</li>
+          </ul>
+  
+        <br></br>
+  
+        <li>MLH ( Major Leauge Hacking):
+          <ul>
+              <li>Attended 3 hackathons, Joined 1 international team ( India )</li>
+          </ul>
+        </li>
+
+        <br></br>
+
+        <li>Game Development / Unity :
+          <ul>
+              <li>Some experience in game design & development in C# ( Unity ), OpenGL Api, and Google Cardboard VR  </li>
+          </ul>
+        </li>
+
+        <br></br>
+
+        <li>Theoretical Computer Science:
+          <ul>
+              <li>Some experience with Chomsky's Hierarchy, Turing machine theory, and Finite/Pushdown Automata</li>
+          </ul>
+        </li>
+
+        <br></br>
+
+        <li> Paradigms:
+          <ul>
+              <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
+              <li> Experience in Declarative: Database   </li>
+          </ul>
+        </li>
+
+        <br></br>
+
+        <li> Crypto/FinTech:
+          <ul>
+              <li> Understanding of theoretical basics of blockchain technology  </li>
+          </ul>
+        </li>
+
+        <br></br>
+
+        <li>  
+          <ul>
+              <li>more to come...... </li>
+          </ul>
+        </li>
+  
+        </ul>
+
+      </div>
 
         <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">

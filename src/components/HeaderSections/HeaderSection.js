@@ -9,7 +9,7 @@ import '../../icons/gio.jpg';
 
 import { Link } from "react-router-dom";
 import { ReactComponent as Bitcoinsymb} from '../../icons/Bitcoin.svg';
-
+import { ReactComponent as Coffeesymb} from '../../icons/Coffee.svg';
 
 function HeaderSection() {
   return (
@@ -18,17 +18,17 @@ function HeaderSection() {
       <video src='/videos/space.mp4' autoPlay loop muted />
       <h1>YAY! 🥳 You've made it to giomoscato.com</h1>
       <h4>Who is Giovanni Moscato? </h4>
-      <p>I started programming about 4 years ago at my community college and began to grow more interest in it as I progressed through school. 
+      <p>I started programming about 4 years ago at my community college. I'm currently working on 3-4 projects! 
         <br></br>
-        <br></br>Originally I was going to school for VFX or some kind of art program. 
-        I have always had a love for art and music but I also wanted to work in the tech industry. 
+        <br></br>I just graduated from Northern Illinois University with a B.S in computer science
+        ( specifically computational programming ) and minor in mathematics.  
         <br></br>
-        <br></br>My dream career would involve combing technology and art together to create experiences that users really love. 
+        <br></br>My dream career would involve combing technology and art together to create experiences that users 
+        ( and developers ) really love. 
+        <br></br>
         <br></br>At the moment I have a decent range of experience in programming and design aspects. 
         <br></br>
-        <br></br>
-        Currently I am trying to figure out what niche of programming I'd like to focus on. 
-        Recently I have begun to explore Machine Learning and Web Dev! 
+        Currently I am trying to figure out what area of programming I'd like to specialize in. 
       </p>
       
       
@@ -42,20 +42,33 @@ function HeaderSection() {
         </Button>
       </div>
 
-     
-      <p><br></br>If you want all my information in resume format click this button or on top right navbar
+      <p><br></br>If you need my information in resume format click this button or on top right navbar
       </p>
 
-      
+    
+      </div>
 
-     
+      <div className="end-div">
+
+        
+          <div>
+          <h4> New: Please consider donating!
+            <br></br>
+            <br></br>
+            <Link  to="/cstrack"> 
+              <Coffeesymb/>  
+              <p> All proceeds will be used for personal
+                <br/> or open source project development </p>
+            </Link> 
+          </h4>
+          </div>
       </div>
 
       <div className='gio-container-2'>
 
      
 
-        <h1>Details of Relevant skills & information 📊 </h1>
+        <h1>Details of relevant skills & information 📊 </h1>
 
        
 
@@ -68,9 +81,9 @@ function HeaderSection() {
         </p>
         <h4> Quick summary of skillset : </h4>
         <ul>
-          <li>Experience in Full-Stack development / Web Design</li>
+          <li> Work experience in Full-Stack development / Web Design</li>
           <br></br>
-          <li>Some experience in C++ , Java ,Python, Unix, Assembly, and other languages</li>
+          <li>Some experience markup, programming, and scripting languages</li>
           <br></br>
           <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
         </ul>
@@ -90,8 +103,8 @@ function HeaderSection() {
         </p>
         <h4> Best way to reach me? : </h4>
         <ul>
-          <li> Linkedin Dm ( Professional please )</li>
-          <li> Given email </li>
+          <li><a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm ( Professional please )</a></li>
+          <li> giovannijmoscato@gmail.com </li>
         </ul>
       </div>
 
@@ -103,7 +116,7 @@ function HeaderSection() {
 
       
         <p>
-            Here are some of my favorite and most impressive projects I've aready completed.
+            Here are some of my favorite and most impressive projects I've aready completed or currently working on.
 
             <br></br>
             <br></br>
@@ -152,18 +165,19 @@ function HeaderSection() {
 
         <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
-          <h2> Want to know how I made this website ? ✨ </h2>
+          <h2> My website technology pipeline / stack ? ✨ </h2>
           
           <ol>
             <li> React </li>
             <li> NPM</li>
             <li> HTML/CSS/JAVA/JSX </li>
-            <li> Githubpages </li>
+            <li> Githubpages(Host server) </li>
             <li> GoogleDomains(DNS)</li>
             <li> React Router & Few other libraries</li>
             <li> Github ( source control ) </li>
           </ol>
-          <h3> Visit my github to find all the code!(please also folllow lol)
+          <h3> Please consider collaborating
+            <br/> or donating!
             <br></br>🔥 
             
           </h3>
@@ -174,17 +188,16 @@ function HeaderSection() {
           <a href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/">
           <h2> Having trouble viewing my website ? 💔 </h2>
           
-          <h5> I tried to make my website desktop and mobile friendly as possible</h5>
+          <h5> I tried to make my website <br/> desktop and mobile friendly as possible.</h5>
          
           <h3> Major Update! : Most mobile / scaling issues should be fixed
           
-            
           </h3>
+
           </a>
         </div>
 
         <div className="end-div">
-          
           
             <h1> NEW! : Crypto & Stock tracker
               <br></br>
@@ -194,10 +207,8 @@ function HeaderSection() {
               </Link> 
             </h1>
           
-        
         </div>
-
-
+        
     </div>
   );
 }

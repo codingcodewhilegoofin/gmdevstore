@@ -44,6 +44,9 @@
     display:none;
   }
   
+h4{
+  color: var(--text-color);
+}
  
   
   .special-link:hover{

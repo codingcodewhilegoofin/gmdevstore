@@ -12,8 +12,6 @@
   
   .btn {
     padding: 8px 20px;
-    
-    border-radius: 10px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -22,14 +20,12 @@
   .btn--primary {
     background-color: var(--primary);
     color: #242424;
-    border: 1px solid var(--text-color);
   }
   
   .btn--outline {
     background-color: transparent;
     color: var(--text-color);
-    padding: 8px 20px;
-  
+    padding: auto;
     transition: all 2s ease-out;
   }
   
@@ -46,9 +42,9 @@
   .btn--large:hover,
   .btn--medium:hover {
     transition: all 2s ease-in;
-    background: var(--bg);
-    color: var(--text-color);
+   
+    color: var(--bg-red1);
     transition: 1s ease-out;
-    padding: 20px 20px;
-    font-size: 25px;
+    padding: auto;
+    font-size: 20px;
   }

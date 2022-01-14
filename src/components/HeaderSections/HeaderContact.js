@@ -16,19 +16,56 @@ function HeaderContact() {
       <h1>HOW TO CONTACT ME</h1>
       <h4>I should be available any day of the week , at any reasonable time!  </h4>
 
-      <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "5px solid white" }}>
+      <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white" }}>
       <form action="">
-        <label for="fname" style={{color: "white" }}>EMAIL:</label>
-        <input type="text" value="yupimaperson101@protonmail.com" id="myInput" size= "51"/>
+        <br/>
+
+        
+        <label for="fname" style={{color: "white" }} >EMAIL:</label>
+        <br/>
+          <input type="text" value="yupimaperson101@protonmail.com" id="myInput" size= "80vw"/>
+        <br></br>
+        <br/>
+
+        <label for="pin"  style={{color: "red" }}>PHONE:</label>
+        <br/>
+          <input type="text" value="224-245-7385" id="myInput" size= "auto"/>
+        <br></br>
+        <br/>
+
+        <label for="pin"  style={{color: "pink" }}>INSTAGRAM:</label>
+        <br/>
+          <input type="text" value="https://www.instagram.com/coding_code_while_goofin/" id="myInput" size= "auto"/>
+        <br></br>
+        <br/>
+
+        <a href="https://www.buymeacoffee.com/giomoscato101">
+          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
+        </a> 
+        <br/>
+        <br/>
+
+        <br/>
+        <label for="fname" style={{color: "orange" }}>STACKOVERFLOW:</label>
+        <br/>
+          <input type="text" value="https://stackoverflow.com/users/14115291/giovanni-moscato" id="myInput" size= "auto"/>
         <br></br>
 
-        <label for="pin"  style={{color: "white" }}>PHONE:</label>
-        <input type="text" value="224-245-7385" id="myInput" size= "50"/>
+        <br/>
+        <label for="fname" style={{color: "purple"}}>GITHUB: </label>
+        <br/>
+          <input type="text" value="https://github.com/codingcodewhilegoofin" id="myInput" size= "auto"/>
         <br></br>
 
-        <label for="pin"  style={{color: "white" }}>INSTAGRAM:</label>
-        <input type="text" value="https://www.instagram.com/coding_code_while_goofin/" id="myInput" size= "45"/>
+        <br/>
+        <label for="fname" style={{color: "blue" }}>LINKEDIN:</label>
+        <br/>
+          <input type="text" value="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" id="myInput" size= "auto"/>
         <br></br>
+
+
+
+        <br/>
       </form>
       </div>
       

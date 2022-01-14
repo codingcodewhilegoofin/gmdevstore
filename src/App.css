@@ -4,6 +4,40 @@
 
 }
 
+input{
+  color: yellow;
+  background-color: black;
+}
+
+label{
+  font-size: auto;
+  transition: 4s;
+}
+label:hover{
+  transition: 1s;
+  font-size: 50px;
+}
+
+
+input[type=text] {
+  transition: .5s;
+  width: 60vw;
+  font-size: 15px;
+  
+}
+
+input[type=text]:focus-visible {
+  width: 90vw;
+  transition: .5s;
+  font-size: 10px;
+  color: purple;
+}
+
+h6{
+  color: yellow;
+}
+
+
 @media screen and (max-height: 460px){
   .App {
     text-align: center;

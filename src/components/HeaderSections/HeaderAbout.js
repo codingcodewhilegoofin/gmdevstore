@@ -24,7 +24,9 @@ function HeaderAbout() {
     
       </div>
 
-    
+      <a href="https://www.buymeacoffee.com/giomoscato101">
+        <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
+      </a> 
 
       <div className='gio-container-2'>
 
@@ -273,6 +275,7 @@ function HeaderAbout() {
         </ul>
 
       </div>
+      
 
         <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
@@ -288,7 +291,11 @@ function HeaderAbout() {
             <li> Github ( source control ) </li>
           </ol>
           <h3> Visit my github to find all the code!(please also folllow lol)
-            <br></br>🔥 
+            <br></br>🔥 <br/><br/>
+
+            <a href="https://www.buymeacoffee.com/giomoscato101">
+              <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
+            </a> 
             
           </h3>
           </a>

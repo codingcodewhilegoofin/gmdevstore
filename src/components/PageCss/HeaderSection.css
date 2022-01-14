@@ -47,6 +47,8 @@
 h4{
   color: var(--text-color);
 }
+
+
  
   
   .special-link:hover{
@@ -59,7 +61,7 @@ h4{
   }
   .end-div{
     height: 35vh;
-    width: 99.9%;
+    width: auto;
     border: 1px dashed rgb(255, 139, 139);
     display: flex;
     justify-content: center;
@@ -68,9 +70,66 @@ h4{
   .end-div:hover{
     background-color: #E5383B;
   }
- 
- 
 
+  .end-div-update{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #161A1D;
+  }
+  .end-div-update:hover{
+    background-color: #E5383B;
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+ 
+  .coffeeBtn{
+    height: auto;
+    width: auto;
+    display:flexbox;
+    justify-content: center;
+    background-color: var(--bg-red3);
+   
+  }
+  .coffeeBtn:hover{
+    height: auto;
+    width: auto;
+    display:flexbox;
+    justify-content: center;
+    background-color: white;
+    transition: all 2s ease-in;
+    transition: 1s ease-out;
+    
+  }
+
+  .coffeeBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .coffeeBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+  }
+  .coffeeBtn:hover span {
+    padding-right: 05px;
+  }
+  .coffeeBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .contactCT{
+    width: 100vw;
+    height: auto;
+  }
  
 
   .gio-main {

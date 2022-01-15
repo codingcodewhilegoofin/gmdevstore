@@ -60,7 +60,7 @@ h4{
     transition: box-shadow 2s ;
   }
   .end-div{
-    height: 35vh;
+    height: auto;
     width: auto;
     border: 1px dashed rgb(255, 139, 139);
     display: flex;
@@ -143,7 +143,7 @@ h4{
   
   .gio-container {
     /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-    height: 100vh;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -230,7 +230,7 @@ h4{
   }
 
   .gio-container-2 {
-    height: 100vh;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -278,7 +278,7 @@ h4{
       'Lucida Sans', Arial, sans-serif;
   }
   .gio-container-3 {
-    height: 100vh;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -325,7 +325,7 @@ h4{
   }
 
   .gio-container-4 {
-    height: 100vh;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -375,7 +375,7 @@ h4{
   }
 
   .gio-container-5 {
-    height: 100vh;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -489,8 +489,8 @@ h4{
         'Lucida Sans', Arial, sans-serif;
     }
     .end-div{
-      height: 50vh;
-      width: 99.5%;
+      height: auto;
+      width: auto;
       border: 1px dashed rgb(255, 139, 139);
       display: flex;
       justify-content: center;
@@ -499,7 +499,7 @@ h4{
   
   @media screen and (max-width: 768px) {
     .gio-container {
-      height: 90vh; 
+      height: auto; 
     }
     .gio-container > h1 {
       font-size: 30px;
@@ -621,8 +621,8 @@ h4{
         'Lucida Sans', Arial, sans-serif;
     }
     .end-div{
-      height: 50vh;
-      width: 99.5%;
+      height: auto;
+      width: auto;
       border: 1px dashed rgb(255, 139, 139);
       display: flex;
       justify-content: center;
@@ -1027,7 +1027,7 @@ h4{
         'Lucida Sans', Arial, sans-serif;
     }
     .end-div{
-      height: 90vh;
+      height: auto;
       font-size: 12px;
       width: auto;
       border: 1px dashed rgb(255, 139, 139);

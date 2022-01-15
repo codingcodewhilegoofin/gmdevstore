@@ -64,7 +64,7 @@ h6{
   }
   
   .navbar-nav{
-    max-width: 100%;
+    max-width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;

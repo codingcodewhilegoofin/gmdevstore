@@ -52,19 +52,7 @@ function HeaderSection() {
         <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
       </a> 
 
-      <div className="end-div-update">
-          
-          <h6> Updates to my website!
-          <br/>
-            <ol>
-             <li><p> Responsive Design issues</p></li>
-             <li><p> Help Support me donation button</p></li>
-             <li><p> Contact form updates and animation</p></li>
-            </ol>
-            <h3> Date: 1/14/2022 </h3>
-          </h6>
-
-      </div>
+      
       
       <div className='gio-container-2'>
 
@@ -162,6 +150,20 @@ function HeaderSection() {
         </p>
         
         </div>
+
+        <div className="end-div-update">
+          
+          <h6> Updates to my website!
+          <br/>
+            <ol>
+             <li><p> Responsive Design issues</p></li>
+             <li><p> Help Support me donation button</p></li>
+             <li><p> Contact form updates and animation</p></li>
+            </ol>
+            <h3> Date: 1/14/2022 </h3>
+          </h6>
+
+      </div>
 
        
 

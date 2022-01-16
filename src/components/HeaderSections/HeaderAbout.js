@@ -12,36 +12,60 @@ import co from '../../icons/CO.png';
 function HeaderAbout() {
   return (
     <div className='gio-main'>
+
       <div className='gio-container'>
       <video src='/videos/invert.mp4' autoPlay muted   />
       <h1>ABOUT ME : Skills & information</h1>
-      <h4> I am currently an undergrad in the computer science program at NIU. 
-           Our program mainly focuses on teaching us how to understand WHY code is working and not how to just write code. 
-      <br></br><br></br>This gave me the advantage of understanding the standards, 
-           data structures, and mathematical reasoning behind most coding / computer science applications. </h4>
-      <p>I have a range of experience in all listed languages. I am most comfortable with the C family but can adapt pretty easily.
+      <h4> Graduate with BS of Computer Science from Northern Illinois University on 12/12/21.
+      <br/>
+      <br/>
+          NIU focused on the understanding of the standards, 
+          data structures, and mathematical reasoning behind coding / computer science applications. 
+      </h4>
+      <p> I have a range of experience in all listed languages and technologies. I am most comfortable with the C/Java family but can adapt pretty easily.
       </p>
-    
       </div>
 
+      <div className='gio-container-2'>
+
+      <br/>
       <a href="https://www.buymeacoffee.com/giomoscato101">
         <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
       </a> 
 
-      <div className='gio-container-2'>
-
         <h1>LANGUAGES: </h1>
 
         <ul>
+
+        <br/>
         
-        <li>C / C++:</li>
-          <ul>
+          <label style={{color: 'red'}}> Programming Languages ( Compiled ): </label>
+          <li>C / C++ / C# :</li>
+            <ul>
               <li>My first programming language. Plenty of coding projects to view on my website</li>
-          </ul>
+            </ul>
   
+          <br></br>
+  
+          <li>JAVA / LaTeX :
+            <ul>
+              <li>Some experience</li>
+            </ul>
+          </li>
+
         <br></br>
-  
-        <li>JAVA / PYTHON / C# / PHP:
+
+          <li>ASSIST ASSEMBLY ( INTEL ):
+            <ul>
+              <li>Some experience </li>
+            </ul>
+          </li>
+
+        <br></br>
+
+        <label style={{color: 'red'}}> Scripting Languages ( Interpreted ) : </label>
+
+        <li>JS, JSX, Python, Ruby, PHP, Bash, PowerShell:
           <ul>
               <li>Some experience</li>
           </ul>
@@ -49,22 +73,15 @@ function HeaderAbout() {
 
         <br></br>
 
-        <li>ASSIST ASSEMBLY ( INTEL ):
-          <ul>
-              <li>Experience in high level assembly </li>
-          </ul>
-        </li>
+        <label style={{color: 'red'}}> Markdown Languages ( Interpreted ) : </label>
+          <li>HTML, CSS, Markdown:
+            <ul>
+              <li>Some experience</li>
+            </ul>
+          </li>
 
-        <br></br>
-
-        <li>HTML, CSS, JS, JSX,JSON,XML, MARKDOWN:
-          <ul>
-              <li>Experience in web development & design. Used during CodeOrange internship and Personal website ( giomoscato.com)</li>
-          </ul>
-        </li>
-
-        <br></br>
-
+        <br/>
+        <label style={{color: 'red'}}> Procedural Languages ( Relational DB ) : </label>
         <li> MySQL / SQL:
           <ul>
               <li>Queried/Created databases during my CodeOrange internship and during school through mostly SQL.</li>
@@ -73,13 +90,17 @@ function HeaderAbout() {
 
         <br></br>
 
-        <li> UNIX / BASH :
+        <label style={{color: 'red'}}>  Environments: </label>
+        <li> UNIX / BASH / LINUX:
           <ul>
-              <li>Experience with a command line, sys commands, and OS api's </li>
+              <li>Experience with a CLI, sys commands, and OS api's </li>
           </ul>
         </li>
+        <br/>
   
         </ul>
+
+        
 
       </div>
 
@@ -87,53 +108,49 @@ function HeaderAbout() {
         
        
 
-        <h1>MORE WEB DEV EXPERIENCE: </h1>
+        <h1> WEB DEV Experience 
+        </h1>
 
        
         
         <ul>
-        
-        <li>FRONTEND:</li>
-          <ol>
-              <li>React</li>
-              <li>PCF/AWS</li>
-              <li>NPM</li>
-          </ol>
+        <br/>
+        <li>FRONTEND TECHNOLOGIES / FRAMEWORKS:</li>
+        <br/>
+          <ul>
+              <li>ReactJS</li>
+              <li>RubyonRails</li>
+              <li>Standard Markdown</li>
+          </ul>
   
         <br></br>
         <br></br>
         <br></br>
   
-        <li>BACKEND:
+        <li>BACKEND TECHNOLOGIES:
           <ul>
             <br></br>
-              <li>SPRINGBOOT:</li>
-                <ol>
-                    <li>
-                        Java 
-                    </li>
-                    <li> REST/MVC</li>
-                    <li> Hibernate/H2</li>
-                </ol>
-                <br></br>
-              <li>MONGODB:</li>
-              <ol>
-                    <li>
-                        Mostly for personal projects 
-                    </li>
-                    <li> Cluster managment / Documents</li>
-                    <li> User managment/permissions</li>
-                </ol>
-              <br></br>
-              <li>EXPRESS / NODE JS</li>
-              <ol>
-                    <li>
-                        Used during CodeOrange internship 
-                    </li>
-                    <li> Used to handle dynamic http requests</li>
-                </ol>
+              <li>Ruby</li>
+              <li>NodeJS</li>
+              <li>Flask</li>
+              <li>ASP.NET</li>
+              <li>ExpressJS</li>
+              <li>Springboot</li>
+              <li>Postman/Insomia</li>
           </ul>
         </li>
+        <br/>
+
+        <li>DATABASE / CLOUD SERVICES
+          <ul>
+            <br></br>
+              <li>MongoDB</li>
+              <li>H2Hibernate</li>
+              <li>AWS</li>
+              <li>PCF</li>
+          </ul>
+        </li>
+        <br/>
 
         </ul>
       </div>
@@ -146,34 +163,40 @@ function HeaderAbout() {
 
        
         <ul>
+        <br/>
         
-        <li>GITHUB:</li>
+        <li>GITHUB/GIT:</li>
           <ol>
               <li>Github add, commit , push cycle</li>
               <li>Branch management / Issue handling / AGILE methodology </li>
               <li>Githubpages / Github API experience</li>
           </ol>
+          <br/>
 
         </ul>
   
      
         <ul>
+        <br/>
   
         <li>NPM / GRADLE :</li>
           <ol>
               <li>Update , install , and manage dev dependencies/packages and scripts</li>
               <li>Directory management for packages in different servers </li>
           </ol>
-
+          <br/>
         </ul>
 
 
         <ul>
+        <br/>
 
           <li>DOCKER:</li>
-          <ol>
+          <ul>
               <li>Adding a dockerfile, to containerize a project</li>
-          </ol>
+          </ul>
+
+          <br/>
 
         </ul>
 
@@ -277,25 +300,24 @@ function HeaderAbout() {
       </div>
       
 
-        <div className="end-div">
+      <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
-          <h2> Want to know how I made this website ? ✨ </h2>
+          <h2> My website technology pipeline / stack ? ✨ </h2>
           
           <ol>
-            <li> React </li>
+            <li> Bash/Linux/Windows( CLI/OS )</li>
+            <li> VScode( IDE )</li>
+            <li> ReactJS </li>
             <li> NPM</li>
-            <li> HTML/CSS/JAVA/JSX </li>
-            <li> Githubpages </li>
+            <li> HTML/CSS/JS/JSX </li>
+            <li> Githubpages(Host server) </li>
             <li> GoogleDomains(DNS)</li>
-            <li> React Router & Few other libraries</li>
+            <li> React Router & Few other standard libraries</li>
             <li> Github ( source control ) </li>
           </ol>
-          <h3> Visit my github to find all the code!(please also folllow lol)
-            <br></br>🔥 <br/><br/>
-
-            <a href="https://www.buymeacoffee.com/giomoscato101">
-              <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
-            </a> 
+          <h3> Please consider collaborating
+            <br/> or donating!
+            <br></br>🔥 
             
           </h3>
           </a>

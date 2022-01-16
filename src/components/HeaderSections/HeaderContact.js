@@ -80,18 +80,21 @@ function HeaderContact() {
       
     <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
-          <h2> Want to know how I made this website ? ✨ </h2>
+          <h2> My website technology pipeline / stack ? ✨ </h2>
           
           <ol>
-            <li> React </li>
+            <li> Bash/Linux/Windows( CLI/OS )</li>
+            <li> VScode( IDE )</li>
+            <li> ReactJS </li>
             <li> NPM</li>
-            <li> HTML/CSS/JAVA/JSX </li>
-            <li> Githubpages </li>
+            <li> HTML/CSS/JS/JSX </li>
+            <li> Githubpages(Host server) </li>
             <li> GoogleDomains(DNS)</li>
-            <li> React Router & Few other libraries</li>
+            <li> React Router & Few other standard libraries</li>
             <li> Github ( source control ) </li>
           </ol>
-          <h3> Visit my github to find all the code!(please also folllow lol)
+          <h3> Please consider collaborating
+            <br/> or donating!
             <br></br>🔥 
             
           </h3>

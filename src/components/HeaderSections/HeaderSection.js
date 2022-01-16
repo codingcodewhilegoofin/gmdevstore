@@ -48,15 +48,14 @@ function HeaderSection() {
     
       </div>
 
-      <a href="https://www.buymeacoffee.com/giomoscato101">
-        <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
-      </a> 
-
-      
+    
       
       <div className='gio-container-2'>
 
-     
+
+        <a href="https://www.buymeacoffee.com/giomoscato101">
+          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
+        </a> 
 
         <h1>Details of relevant skills & information 📊 </h1>
 
@@ -159,8 +158,10 @@ function HeaderSection() {
              <li><p> Responsive Design issues</p></li>
              <li><p> Help Support me donation button</p></li>
              <li><p> Contact form updates and animation</p></li>
+             <li><p> Updated content for accuracy</p></li>
+             <li><p> Content organization and readability </p></li>
             </ol>
-            <h3> Date: 1/14/2022 </h3>
+            <h3> Date: 1/16/2022 </h3>
           </h6>
 
       </div>
@@ -172,12 +173,14 @@ function HeaderSection() {
           <h2> My website technology pipeline / stack ? ✨ </h2>
           
           <ol>
-            <li> React </li>
+            <li> Bash/Linux/Windows( CLI/OS )</li>
+            <li> VScode( IDE )</li>
+            <li> ReactJS </li>
             <li> NPM</li>
-            <li> HTML/CSS/JAVA/JSX </li>
+            <li> HTML/CSS/JS/JSX </li>
             <li> Githubpages(Host server) </li>
             <li> GoogleDomains(DNS)</li>
-            <li> React Router & Few other libraries</li>
+            <li> React Router & Few other standard libraries</li>
             <li> Github ( source control ) </li>
           </ol>
           <h3> Please consider collaborating

@@ -143,7 +143,7 @@ h4{
   
   .gio-container {
     /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-    height: auto;
+    height: 100%;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -499,7 +499,7 @@ h4{
   
   @media screen and (max-width: 768px) {
     .gio-container {
-      height: auto; 
+      height: 100%;
     }
     .gio-container > h1 {
       font-size: 30px;
@@ -649,7 +649,7 @@ h4{
     }
     .gio-container {
       /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-      height: auto;
+      height: 100%;
       width: auto;
       display: flex;
       flex-direction: column;
@@ -851,7 +851,7 @@ h4{
     }
     .gio-container {
       /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-      height: auto;
+      height: 100%;
       width:  auto;
       display: flex;
       flex-direction: column;

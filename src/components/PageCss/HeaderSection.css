@@ -417,7 +417,7 @@ h4{
   @media screen and (max-width: 960px) {
     .gio-container > h1 {
       font-size: 60px;
-      margin-top: -150px;
+      margin-top: auto;
     }
     .gio-container-2 > h1 {
       font-size: 60px;
@@ -511,7 +511,7 @@ h4{
     }
     .gio-container > h1 {
       font-size: 30px;
-      margin-top: -10px;
+      margin-top: auto;
       
     }
     .gio-container > h4 {

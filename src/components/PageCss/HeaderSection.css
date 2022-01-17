@@ -47,6 +47,7 @@ h4{
 }
 
 
+
   .special-link:hover{
     box-shadow: 20px 0px 50px 0 rgba(111, 40, 245, 0.5), 0 6px 20px 0 rgba(112, 25, 251, 0.19);
     transition: box-shadow 2s ;
@@ -147,13 +148,17 @@ h4{
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
-    
-    
+  
   }
   .gio-container > h1 {
     color: var(--text-color);
     font-size: 100px;
     margin-top: -100px;
+  }
+  .gio-container > h1:hover{
+    color: black;
+    text-transform: uppercase;
+    opacity: 0.5;
   }
   .gio-container > h4 {
     margin-top: 8px;
@@ -172,6 +177,9 @@ h4{
     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+  }
+  .gio-container > p:hover{
+    color: tomato;
   }
   .hero-btns {
     margin-top: 32px;
@@ -255,6 +263,9 @@ h4{
     background: rgba(95, 66, 66, 0.178);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+  }
+  .gio-container-2 > p:hover{
+    color: tomato;
   }
   .gio-container-2 > ul{
     
@@ -411,7 +422,7 @@ h4{
     .gio-container-2 > h1 {
       font-size: 60px;
       border: 25px outset var(--bg-accent);
-     
+      
     }
     .gio-container-2 > ul{
     
@@ -491,6 +502,7 @@ h4{
       display: flex;
       justify-content: center;
     }
+    
   }
   
   @media screen and (max-width: 768px) {
@@ -655,7 +667,6 @@ h4{
       object-fit: contain;
       background: rgba(0, 0, 0, 0.1);
      
-      
     }
     .gio-container-2 {
       height: auto;
@@ -1030,7 +1041,6 @@ h4{
       display: flex;
       justify-content: center;
     }
-
   }
 
 

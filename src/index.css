@@ -61,17 +61,18 @@ h6{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    width: auto;
   }
   
   .navbar-nav{
-    max-width: auto;
+    width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * .9);
+    width: calc(var(--nav-size) * .95);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,7 +200,7 @@ h6{
     background-color: var(--bg)
   }
   .nav-item-li{
-    width: calc(var(--nav-size) * 5.4);
+    width: calc(var(--nav-size) * 5.6);
     display: flex;
     align-items: flex-start;
     justify-content: space-between; 
@@ -225,7 +226,7 @@ h6{
   }
   
   .navbar-nav{
-    max-width: 100%;
+    max-width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -384,7 +385,7 @@ h6{
   }
   
   .navbar-nav{
-    max-width: 100%;
+    max-width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -544,7 +545,7 @@ h6{
   }
   
   .navbar-nav{
-    max-width: 100%;
+    max-width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -704,7 +705,7 @@ h6{
   }
   
   .navbar-nav{
-    max-width: 100%;
+    max-width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -876,7 +877,7 @@ h6{
  
   
   .navbar-nav{
-    max-width: 100%;
+    max-width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;

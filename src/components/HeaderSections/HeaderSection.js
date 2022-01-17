@@ -70,14 +70,15 @@ function HeaderSection() {
         </p>
         <h4> Quick summary of skillset : </h4>
         <ul>
+          <br/>
           <li> Work experience in Full-Stack development / Web Design</li>
           <br></br>
           <li>Some experience markup, programming, and scripting languages</li>
           <br></br>
           <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
+          <br/>
         </ul>
       </div>
-
       <div className='gio-container-3'>
 
      
@@ -92,11 +93,12 @@ function HeaderSection() {
         </p>
         <h4> Best way to reach me? : </h4>
         <ul>
-          <li><a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm ( Professional please )</a></li>
+          <br/>
+          <li><a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm</a></li>
           <li> giovannijmoscato@gmail.com </li>
+          <br/>
         </ul>
       </div>
-
       <div className='gio-container-4'>
 
        

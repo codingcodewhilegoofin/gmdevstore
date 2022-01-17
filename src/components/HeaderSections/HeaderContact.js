@@ -14,7 +14,7 @@ function HeaderContact() {
       <div className='gio-container'>
       <video src='/videos/split.mp4' autoPlay loop muted />
       <h1>HOW TO CONTACT ME</h1>
-      <h4>I should be available any day of the week , at any reasonable time!  </h4>
+      <h4>Contact me anytime CST  </h4>
 
       <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white" }}>
       <form action="">

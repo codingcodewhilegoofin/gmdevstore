@@ -5,7 +5,7 @@
 }
 
 input{
-  color: var(--bg-red2);
+  color: purple;
   background-color: black;
 }
 
@@ -30,11 +30,11 @@ input[type=text]:focus-visible {
   width: 90vw;
   transition: .5s;
   font-size: 10px;
-  color: purple;
+  color: var(--bg-red2);
 }
 
 h6{
-  color: yellow;
+  color: purple;
 }
 
 

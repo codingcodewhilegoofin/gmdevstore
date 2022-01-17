@@ -153,7 +153,7 @@ h4{
   .gio-container > h1 {
     color: var(--text-color);
     font-size: 100px;
-    margin-top: -100px;
+    margin-top: auto;
   }
   .gio-container > h1:hover{
     color: black;

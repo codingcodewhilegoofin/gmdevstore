@@ -2,6 +2,9 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+
+
+
 ## Welcome to Giovanni Moscato's public website. This is a portfolio website to showcase my industry related skills as well as personal accomplishments. 
 
 ### This repository contains:

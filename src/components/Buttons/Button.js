@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Buttons/Button.css';
 import { Link } from 'react-router-dom';
-import '../Resume/Giovanni J Moscato.pdf';
+import '../Resume/GMResProf.pdf';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 

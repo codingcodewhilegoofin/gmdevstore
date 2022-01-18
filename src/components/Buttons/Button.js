@@ -22,8 +22,8 @@ export const Button = ({
 
   return (
     
-    <a href="https://github.com" className={`btn ${checkButtonStyle} ${checkButtonSize}`} download="GioMoscatoResume.pdf">
-      <img src="https://github.com" alt="Giovanni Moscato Resume 📝"/>
+    <a href="https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/GMResProf.pdf" className={`btn ${checkButtonStyle} ${checkButtonSize}`} download="GMResProf.pdf">
+      <img  alt="Giovanni Moscato Resume 📝"/>
     </a>
   );
 };

@@ -101,7 +101,7 @@ function App() {
       </Link>
     
       <Link className="nav-item" to="/contact">
-        <UnderText> Social & Developer Accounts </UnderText>
+        <UnderText> Social & Dev Media </UnderText>
       </Link>
     
       <Link className="nav-item" to="/download">

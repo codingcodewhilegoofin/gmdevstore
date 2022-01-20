@@ -26,7 +26,7 @@ function HeaderSection() {
         ( specifically computational programming ) and minor in mathematics.  
         <br></br>
         <br></br>My dream career would involve combing technology and art together to create experiences that users 
-        ( and developers ) really love. 
+        (and developers) really love. 
         <br></br>
         <br></br>At the moment I have a decent range of experience in programming and design aspects. 
         <br></br>
@@ -62,11 +62,12 @@ function HeaderSection() {
         <h1>Details of relevant skills & information 📊 </h1>
 
        
-
-        <p>
-          You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
-          with on the about/skills page! 
-        </p>
+        <div className='gio-container'>
+          <p>
+            You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
+            with on the about/skills page! 
+          </p>
+        </div>
         <p>
           Click the "brain" icon to learn more or scroll up! 
         </p>
@@ -103,6 +104,8 @@ function HeaderSection() {
           <br/>
         </ul>
       </div>
+
+      
       <div className='gio-container-4'>
 
        

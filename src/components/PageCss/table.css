@@ -1,25 +1,18 @@
 
-h1{
-    font-size: auto;
-    color: rgb(255, 187, 187);
-    text-transform: uppercase;
-    font-weight: 300;
-    text-align: center;
-   
-}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 table{
   background: -webkit-linear-gradient(left, #673a75, #E5383B);
-  background: linear-gradient(.1deg, var(--bg), var(--bg), var(--bg-accent3), var(--bg-accent2), var(--bg-red1) , var(--bg-red2), var(--bg-red3) , #ee7752, #e73c7e, var(--bg-red3), var(--bg-red2), var(--bg-red1), var(--bg-accent2), var(--bg-accent3), var(--bg), var(--bg),var(--text-color) );
-  background-size: 1000%;
+  background: linear-gradient( #673a75, #E5383B );
+  background-size: 10000%;
   animation: bgchange 2s ease infinite;
   font-family: 'Roboto', sans-serif;
   align-self: center;
   height: auto;
   width: auto;
-  border: solid 1px rgb(120, 0, 200);
+  border: solid 3px rgb(120, 0, 200);
   opacity: 1;
-  animation: flickerenddiv 5s linear  reverse infinite;
+  animation: flickerenddiv 10s linear  reverse infinite;
 }
 table:hover{
     animation: none;
@@ -29,26 +22,27 @@ th{
     padding-top: 20px;
     padding: auto;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     font-size: auto;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     align-self: center;
     margin-top: 10px;
-    border-right: solid 1px #ffffff;
-    border-bottom: solid 1px #000000;
+    border-right: solid 1px #ec1bff;
+    border-bottom: solid 1px #ffffff;
     animation: flickerenddiv2 10s linear   infinite;
   }
 td{
-    padding-top: 50px;
+    padding-top: 100px;
     padding: auto;
     text-align: left;
     vertical-align:top;
     font-weight: 200;
     font-size: auto;
     color: #fff;
-    border-right: solid 1px #ffffff;
+    border-right: solid 1px #ff679a;
     
+   
   }
   
   
@@ -83,37 +77,37 @@ td{
       opacity: 0.9;
     }
     10% {
-      opacity: 0.8;
+      opacity: 0.89;
     }
     15% {
-      opacity: 0.7;
+      opacity: 0.88;
     }
     25% {
-      opacity: 0.6;
+      opacity: 0.85;
     }
     30% {
       opacity: 1;
      
     }
     35% {
-      opacity: 0.45;
+      opacity: 0.55;
      
     }
     40% {
-      opacity: 0.4;
+      opacity: 0.60;
     
     }
     45% {
-      opacity: 0.5;
+      opacity: 0.70;
     }
     60% {
-      opacity: .6;
+      opacity: .75;
     }
     70% {
-      opacity: 0.7;
+      opacity: 0.88;
     }
     80% {
-      opacity: 0.8;
+      opacity: 0.89;
     }
     90% {
       opacity: 0.9;

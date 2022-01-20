@@ -34,6 +34,11 @@ function HeaderContact() {
         <br></br>
         <br/>
 
+        <a href="https://www.buymeacoffee.com/giomoscato101">
+          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
+        </a> 
+        <br/>
+
         <a href="https://www.instagram.com/giovannimoscato101/" class="fa fa-instagram"></a>
         <br/>
           <input type="text" value="https://www.instagram.com/giovannimoscato101/" id="myInput" size= "auto"/>
@@ -44,11 +49,6 @@ function HeaderContact() {
         <br/>
           <input type="text" value="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" id="myInput" size= "auto"/>
         <br></br>
-        <br/>
-
-        <a href="https://www.buymeacoffee.com/giomoscato101">
-          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
-        </a> 
         <br/>
 
         <a href="https://twitter.com/GiovanniJMosca1" class="fa fa-twitter"></a>
@@ -100,15 +100,17 @@ function HeaderContact() {
         <br></br>
         <br/>
 
-        <a href="https://www.buymeacoffee.com/giomoscato101">
-          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
-        </a> 
-        <br/>
+    
 
         <label for="fname" style={{color: "#1DA1F2" }}>BuyMeACoffe:</label>
         <br/>
           <input type="text" value="https://www.buymeacoffee.com/giomoscato101" id="myInput" size= "auto"/>
         <br></br>
+        <br/>
+
+        <a href="https://www.buymeacoffee.com/giomoscato101">
+          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
+        </a> 
         <br/>
 
     

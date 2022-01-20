@@ -4,6 +4,7 @@ import '../../App.css';
 import { Button } from '../Buttons/Button.js';
 import '../Buttons/Button.css';
 import '../PageCss/HeaderSection.css';
+import '../PageCss/table.css';
 
 import '../../icons/gio.jpg';
 
@@ -55,7 +56,7 @@ function HeaderSection() {
 
 
         <a href="https://www.buymeacoffee.com/giomoscato101">
-          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
+          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
         </a> 
 
         <h1>Details of relevant skills & information 📊 </h1>
@@ -155,19 +156,64 @@ function HeaderSection() {
         
         </div>
 
-        <div className="end-div-update">
+        <div className="gio-container-2">
+
+
+        <section  class="table" >
+  
+  
+  
+  <div class="table" align="center">
+    <table cellpadding="0" cellspacing="0" border="0">
+    <thead>
+        <tr>
+          <th>Completed Updates</th>
+          <th>Upcoming Updates</th>
+          <th>Date Last Active</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Responsive Design issues</td>
+          <td>API integration</td>
+          <td>1/15/22</td>
+         
+        </tr>
+        <tr>
+          <td>Help Support me donation button </td>
+          <td>Further Content Updates</td>
+          <td>1/15/22</td>
           
-          <h6> Updates to my website!
-          <br/>
-            <ol>
-             <li><p> Responsive Design issues</p></li>
-             <li><p> Help Support me donation button</p></li>
-             <li><p> Contact form updates and animation</p></li>
-             <li><p> Updated content for accuracy</p></li>
-             <li><p> Content organization and readability </p></li>
-            </ol>
-            <h3> Date: 1/16/2022 </h3>
-          </h6>
+        </tr>
+        <tr>
+          <td>Contact form updates and animation</td>
+          <td>Axios Requests/ HTTP Requests</td>
+          <td>1/15/22</td>
+        </tr>
+        <tr>
+          <td>Updated content for accuracy</td>
+          <td>HTML/CSS/JS Demo </td>
+          <td>1/16/22</td>
+        </tr>
+        <tr>
+          <td>Content organization and readability</td>
+          <td>Custom Financial Chart </td>
+          
+        </tr>
+        <tr>
+          <td>Contact Page & Animation Updates</td>
+          <td>SEO, Standards, and Website Rating</td>
+          <td>1/20/22</td>
+        </tr>
+       
+       
+        
+      </tbody>
+    </table>
+  </div>
+</section>
+          
+         
 
       </div>
 

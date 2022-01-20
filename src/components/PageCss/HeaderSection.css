@@ -66,6 +66,7 @@ h4{
   }
   .end-div:hover{
     background-color: #E5383B;
+    
   }
 
   .end-div-update{
@@ -74,12 +75,11 @@ h4{
     display: flex;
     justify-content: center;
     background-color: #161A1D;
+ 
   }
   .end-div-update:hover{
     background-color: #E5383B;
-    display: flex;
-    height: auto;
-    width: auto;
+   
   }
  
   .coffeeBtn{
@@ -88,6 +88,8 @@ h4{
     display:flexbox;
     justify-content: center;
     background-color: var(--bg-red3);
+    opacity: 1;
+    animation: flickerenddiv 10s linear  reverse infinite;
    
   }
   .coffeeBtn:hover{
@@ -98,6 +100,7 @@ h4{
     background-color: white;
     transition: all 2s ease-in;
     transition: 1s ease-out;
+    animation: none;
     
   }
 
@@ -126,6 +129,52 @@ h4{
   .contactCT{
     width: 100vw;
     height: auto;
+  }
+
+  .fa-instagram{
+    padding: 5px;
+    font-size: 30px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70%;
+    background: linear-gradient( 180deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C , #FD1D1D, #F56040 , #ee7752, #F77737, #FCAF45, #FFDC80 );
+    color: white;
+    border: 2px solid #660708;
+  }
+  .fa-instagram:hover{
+    font-size: 40px;
+    transition:ease-in-out;
+  }
+  .fa-linkedin{
+    padding: 5px;
+    font-size: 30px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70%;
+    background: #2867B2;
+    color: white;
+    border: 2px solid #4B0506;
+  }
+  .fa-linkedin:hover{
+    font-size: 40px;
+    transition:ease-in-out;
+  }
+  .fa-twitter{
+    padding: 5px;
+    font-size: 30px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70%;
+    background: #14171A;
+    color: #1DA1F2;
+    border: 2px solid #320304;
+  }
+  .fa-twitter:hover{
+    font-size: 40px;
+    transition:ease-in-out;
   }
  
 
@@ -233,6 +282,19 @@ h4{
       'Lucida Sans', Arial, sans-serif;
   }
 
+  .gio-container-special {
+    height: 20vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    background-color: black;
+  }
+  .gio-container-special:hover {
+    height: 50vh;
+  }
+
   .gio-container-2 {
     height: auto;
     width: auto;
@@ -248,7 +310,9 @@ h4{
     font-size: 100px;
     font-size: 60px;
     border: 25px outset var(--bg-accent);
+    animation: flickerenddiv3 15s linear infinite;
   }
+ 
   .gio-container-2 > h4 {
     margin-top: 16px;
     color: var(--text-color);
@@ -298,6 +362,7 @@ h4{
     font-size: 100px;
     font-size: 60px;
     border: 25px outset var(--bg-accent);
+    animation: flickerenddiv3 30s linear reverse infinite;
   }
   .gio-container-3 > h4 {
     margin-top: 16px;
@@ -345,6 +410,7 @@ h4{
     font-size: 100px;
     font-size: 59px;
     border: 25px outset var(--bg-accent);
+    animation: flickerenddiv3 30s linear reverse infinite;
   }
   .gio-container-4 > h4 {
     margin-top: 16px;
@@ -396,6 +462,7 @@ h4{
     font-size: 58px;
     background-color: #F5B7B9;
     border: 25px outset var(--bg-accent);
+    animation: flickerenddiv3 30s linear reverse infinite;
   }
   .gio-container-5 > h4 {
     margin-top: 16px;
@@ -806,7 +873,7 @@ h4{
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-5 > h1 {
-      font-size: 50px;
+      font-size: auto;
       border: 25px outset var(--bg-2);
     }
     .gio-container-5 > p {
@@ -1053,5 +1120,103 @@ h4{
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  @keyframes flickerenddiv {
+    0% {
+      opacity: 0.4;
+    }
+    5% {
+      opacity: 0.5;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    15% {
+      opacity: 0.85;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0.1;
+    }
+    40% {
+      opacity: 0.25;
+      height: 51px;
+      
+     
+    }
+    45% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.85;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes flickerenddiv3 {
+    0% {
+      border: inset var(--bg-accent);
+    }
+    5% {
+      border: outset var(--bg-accent);
+    }
+    10% {
+      border: inset  var(--bg-accent);
+    }
+     
+    15% {
+      border: outset var(--bg-accent);
+    }
+    25% {
+      border: inset var(--bg-accent);
+    }
+    30% {
+    
+      border: outset var(--bg-accent);
+    }
+    35% {
+      border: inset var(--bg-accent);
+     
+    }
+    40% {
+      border: outset var(--bg-accent);
+    
+    }
+    45% {
+      border: inset var(--bg-accent);
+     
+    }
+    60% {
+      border: outset var(--bg-accent);
+    }
+    70% {
+      border: inset var(--bg-accent);
+    }
+    80% {
+      border: outset var(--bg-accent);
+    }
+    90% {
+      border: inset var(--bg-accent);
+    }
+    100% {
+      border: outset var(--bg-accent);
     }
   }

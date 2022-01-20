@@ -27,7 +27,7 @@ function App() {
 
   var githublink = 'https://github.com/codingcodewhilegoofin';
   var linkedinlink = 'https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/';
-  var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/6866d59050e7d2e18ffc8743b841f269d3d55b2e/src/components/Resume/Giovanni%20J%20Moscato.pdf';
+  var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/GMResProf.pdf';
 
 
   //Send to DOM 
@@ -101,11 +101,11 @@ function App() {
       </Link>
     
       <Link className="nav-item" to="/contact">
-        <UnderText> Contact </UnderText>
+        <UnderText> Social & Developer Accounts </UnderText>
       </Link>
     
       <Link className="nav-item" to="/download">
-        <UnderText> Download Resume </UnderText> 
+        <UnderText> Resume </UnderText> 
       </Link>
 
      </UnderNav>

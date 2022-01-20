@@ -32,7 +32,7 @@ function HeaderAbout() {
 
       <br/>
       <a href="https://www.buymeacoffee.com/giomoscato101">
-        <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
+        <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
       </a> 
 
         <h1>LANGUAGES: </h1>

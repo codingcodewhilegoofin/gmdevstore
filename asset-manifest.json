@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.dbd96033.chunk.css",
-    "main.js": "/static/js/main.c07ea2fa.chunk.js",
-    "main.js.map": "/static/js/main.c07ea2fa.chunk.js.map",
+    "main.js": "/static/js/main.406f6820.chunk.js",
+    "main.js.map": "/static/js/main.406f6820.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5283475a.js",
     "runtime-main.js.map": "/static/js/runtime-main.5283475a.js.map",
     "static/js/2.fc868c24.chunk.js": "/static/js/2.fc868c24.chunk.js",
@@ -19,12 +19,15 @@
     "static/media/download.813dbc20.svg": "/static/media/download.813dbc20.svg",
     "static/media/gio.c905add7.jpg": "/static/media/gio.c905add7.jpg",
     "static/media/github.04be58c1.svg": "/static/media/github.04be58c1.svg",
-    "static/media/linkedin.c304a414.svg": "/static/media/linkedin.c304a414.svg"
+    "static/media/gtadditional.ce6be2f3.png": "/static/media/gtadditional.ce6be2f3.png",
+    "static/media/gtrating.99dd960a.png": "/static/media/gtrating.99dd960a.png",
+    "static/media/linkedin.c304a414.svg": "/static/media/linkedin.c304a414.svg",
+    "static/media/safteycheck.e0bfd92a.png": "/static/media/safteycheck.e0bfd92a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5283475a.js",
     "static/js/2.fc868c24.chunk.js",
     "static/css/main.dbd96033.chunk.css",
-    "static/js/main.c07ea2fa.chunk.js"
+    "static/js/main.406f6820.chunk.js"
   ]
 }

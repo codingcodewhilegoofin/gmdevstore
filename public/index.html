@@ -37,5 +37,40 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.onscroll = function (){
+        
+
+        function getRandomArbitrary(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
+    
+        
+        var randnum = getRandomArbitrary(0, 10); 
+        
+        if(randnum == 0)
+        {
+          alert("HUMNUMNUM HUMNUMNUM")
+        }
+        else if(randnum > 0 && randnum < 5)
+        {
+          alert("You schrumchiousdidlyumptious chicken nuggie, you're so freaking cute")
+          play();
+        }
+        else if(randnum > 5 && randnum < 10)
+        {
+          alert("Kiele is laughing rn so hard she peed her pants ")
+        }
+        else if(randnum == 10)
+        {
+          alert("Stop scrolling bitch im in control")
+        }
+        else
+        {
+          alert("Mommy?")
+        }
+      };
+    </script>
   </body>
 </html>

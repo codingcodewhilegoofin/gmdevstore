@@ -35,6 +35,8 @@ function App() {
     
     <HashRouter basename='/'> {/*Hash routing  */ }
 
+    
+
     {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */ }
     <div className ="App">
 

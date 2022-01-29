@@ -108,11 +108,8 @@ function HeaderSection() {
       
       <div className='gio-container-4'>
 
-       
-
         <h1>Personal Projects 💻: </h1>
 
-      
         <p>
             Here are some of my favorite and most impressive projects I've aready completed or currently working on.
 
@@ -159,12 +156,22 @@ function HeaderSection() {
         
         </div>
 
+        <div className='gio-container-4'>
+          <h1>Site performance & statistics</h1>
+          <p>Rating from : <a href='https://gtmetrix.com/'>GTmetrix</a></p>
+          <p>As of previous build giomoscato.com recieved a rating of </p>
+
+        </div>
+
+
+
+
+
+
+
         <div className="gio-container-2">
 
-
         <section  class="table" >
-  
-  
   
   <div class="table" align="center">
     <table cellpadding="0" cellspacing="0" border="0">
@@ -207,6 +214,11 @@ function HeaderSection() {
           <td>Contact Page & Animation Updates</td>
           <td>SEO, Standards, and Website Rating</td>
           <td>1/20/22</td>
+        </tr>
+        <tr>
+          <td>Scroll to top functionality</td>
+          <td></td>
+          <td>1/28/22</td>
         </tr>
        
        

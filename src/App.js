@@ -163,8 +163,9 @@ function NavItem(props) {
   
   return (
     <li className="nav-item"> 
+   
     <div className="icon-bg">
-      <a href="#" className="icon-button" onClick={ () => setOpen(!open)}>
+      <a href="#" className="icon-button" onClick={ () => setOpen(!open) & window.scrollTo(0,0)}>
         {props.icon}
       </a>
       </div>

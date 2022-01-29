@@ -159,8 +159,8 @@ function HeaderSection() {
         <div className='gio-container-4'>
           <h1>Site performance & statistics</h1>
           <p>Rating from : <a href='https://gtmetrix.com/'>GTmetrix</a></p>
-          <p>As of previous build giomoscato.com recieved a rating of </p>
-
+          <h2>As of previous build giomoscato.com recieved a rating of <em>B</em></h2>
+          <img src="/src/icons/analize.png" height="auto" width="auto" />
         </div>
 
 

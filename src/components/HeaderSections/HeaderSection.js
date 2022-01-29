@@ -7,6 +7,9 @@ import '../PageCss/HeaderSection.css';
 import '../PageCss/table.css';
 
 import '../../icons/gio.jpg';
+import gtrating from '../../icons/gtrating.png';
+import gtadd from '../../icons/gtadditional.png';
+import safteycheck from '../../icons/safteycheck.png';
 
 import { Link } from "react-router-dom";
 import { ReactComponent as Bitcoinsymb} from '../../icons/Bitcoin.svg';
@@ -158,9 +161,18 @@ function HeaderSection() {
 
         <div className='gio-container-4'>
           <h1>Site performance & statistics</h1>
-          <p>Rating from : <a href='https://gtmetrix.com/'>GTmetrix</a></p>
+          <p><a href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">Rating</a> from: <a href='https://gtmetrix.com/'>GTmetrix</a></p>
           <h2>As of previous build giomoscato.com recieved a rating of <em>B</em></h2>
-          <img src="/src/icons/analize.png" height="auto" width="auto" />
+          <img src={gtrating} max-width='auto' height='auto' /> 
+          <p>Some additional metrics of the site such as site structure:</p>
+          <img src={gtadd} max-width='auto' height='auto' /> 
+          <br/>
+          <p><a href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">Security Rating</a> from: <a href='https://www.ssltrust.com/'>SSL Trust</a></p>
+          <h2>As of previous build giomoscato.com recieved a rating of PASS with 93 tests completed and 0 reports of malware <em> or </em> spam </h2>
+          <img src={safteycheck} max-width='auto' height='auto' /> 
+          <br/>
+
+         
         </div>
 
 

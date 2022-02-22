@@ -18,13 +18,16 @@ import { ReactComponent as Coffeesymb} from '../../icons/Coffee.svg';
 function HeaderSection() {
 
     let specialheader;
+    let youtubesub;
     if(window.innerWidth < 400) 
     {
       specialheader =   <h1></h1>;
+      youtubesub =   <h1></h1>;
     }
     else
     {
       specialheader =   <h1>Feel free to join my discord.</h1>;
+      youtubesub =   <h1>SUB TO MY YOUTUBE?</h1>;
     }
   return (
     <div className='gio-main'>
@@ -175,6 +178,16 @@ function HeaderSection() {
         
         </div>
 
+        <div className="end-div">
+          {youtubesub}
+          <div className="end-div">
+          <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default">
+          </div>
+        </div>
+        </div>
+
+        
+
         <div className='gio-container-4'>
           <h1>Site performance & statistics</h1>
           <p><a href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">Rating</a> from: <a href='https://gtmetrix.com/'>GTmetrix</a></p>
@@ -191,12 +204,7 @@ function HeaderSection() {
          
         </div>
 
-
-
-
-
-
-
+       
         <div className="gio-container-2">
 
         <section  class="table" >

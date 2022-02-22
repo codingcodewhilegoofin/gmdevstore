@@ -28,12 +28,7 @@ function HeaderContact() {
         <br></br>
         <br/>
 
-        <label for="pin"  style={{color: "red" }}>PHONE:</label>
-        <br/>
-          <input type="text" value="224-245-7385" id="myInput" size= "auto"/>
-        <br></br>
-        <br/>
-
+     
         <a href="https://www.buymeacoffee.com/giomoscato101">
           <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
         </a> 

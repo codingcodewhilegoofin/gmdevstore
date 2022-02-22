@@ -16,6 +16,16 @@ import { ReactComponent as Bitcoinsymb} from '../../icons/Bitcoin.svg';
 import { ReactComponent as Coffeesymb} from '../../icons/Coffee.svg';
 
 function HeaderSection() {
+
+    let specialheader;
+    if(window.innerWidth < 400) 
+    {
+      specialheader =   <h1></h1>;
+    }
+    else
+    {
+      specialheader =   <h1>Feel free to join my discord.</h1>;
+    }
   return (
     <div className='gio-main'>
       <div className='gio-container'>
@@ -51,6 +61,12 @@ function HeaderSection() {
       </p>
 
     
+      </div>
+
+      <div className="end-div">
+        
+        {specialheader}
+        <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"/>
       </div>
 
     

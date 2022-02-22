@@ -484,6 +484,7 @@ p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
+  
  
   /*Horizontal Responsiveness*/
   @media screen and (max-width: 960px) {
@@ -574,7 +575,6 @@ p{
       display: flex;
       justify-content: center;
     }
-    
   }
   
   @media screen and (max-width: 768px) {
@@ -707,10 +707,10 @@ p{
       display: flex;
       justify-content: center;
     }
+   
     
   }
-
-
+  
 
   /*Vertical Responsiveness*/
   @media screen and (max-height: 900px) {
@@ -1105,8 +1105,10 @@ p{
       display: flex;
       justify-content: center;
     }
+    
   }
 
+ 
 
   @keyframes bgchange {
     0% {

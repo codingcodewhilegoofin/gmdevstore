@@ -32,7 +32,7 @@ function HeaderSection() {
   return (
     <div className='gio-main'>
       <div className='gio-container'>
-      <video src='/videos/space.mp4' autoPlay loop muted />
+      <video src='/videos/space.mp4' autoPlay loop volume = "0.1"/>
       <br/>
       <h1>YAY! 🥳 You've made it to giomoscato.com</h1>
       <h4>Who is Giovanni Moscato? </h4>

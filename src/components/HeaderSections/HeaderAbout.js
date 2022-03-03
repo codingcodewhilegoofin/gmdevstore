@@ -14,7 +14,7 @@ function HeaderAbout() {
     <div className='gio-main'>
 
       <div className='gio-container'>
-      <video src='/videos/invert.mp4' autoPlay muted   />
+      <video src='/videos/invert.mp4' autoPlay volume = "0.1"/>
       <br/>
       <h1>ABOUT ME : Skills & information</h1>
       <h4> Graduate with BS of Computer Science from Northern Illinois University on 12/12/21.<br/>

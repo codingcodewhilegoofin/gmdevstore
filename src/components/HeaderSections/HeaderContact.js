@@ -14,7 +14,7 @@ function HeaderContact() {
   return (
     <div className='gio-main'>
       <div className='gio-container'>
-      <video src='/videos/split.mp4' autoPlay loop muted />
+      <video src='/videos/split.mp4' autoPlay loop volume = "0.1" />
       <h1>HOW TO CONTACT ME</h1>
       <h4>Contact me anytime CST  </h4>
 

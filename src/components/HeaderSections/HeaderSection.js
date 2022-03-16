@@ -40,7 +40,7 @@ function HeaderSection() {
   return (
     <div className='gio-main'>
       <div className='gio-container'>
-      <video src='/videos/space.mp4' autoPlay muted volume = "0.1"/>
+      <video src='/videos/space.mp4' autoPlay loop muted />
       <br/>
       <h1>YAY! 🥳 You've made it to giomoscato.com</h1>
       <h4>Who is Giovanni Moscato? </h4>
@@ -73,19 +73,19 @@ function HeaderSection() {
     
       </div>
 
-      <div style={{border:"2px solid purple"}} className="end-div">
+      <div style={{border:"2px solid purple"}} className="end-div" >
         
         {specialheader}
-        <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"/>
+        <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='90%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"/>
       </div>
 
-    
+      <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Detail of relevant information & skills</h1>
       
       <div style={{border:"2px solid white"}} className='gio-container-2'>
         <a href="https://www.buymeacoffee.com/giomoscato101">
           <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
         </a> 
-        <h1>Details of relevant skills & information 📊 </h1>
+  
         <div className='gio-container'>
           <p>
             You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
@@ -107,11 +107,11 @@ function HeaderSection() {
         </ul>
       </div>
 
-      <h1 style={{color: "black", textTransform: "uppercase"}}>Feel free to contact me! 📨</h1>
+      <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Feel free to contact me!</h1>
       
       <div className='gio-container-3'>
        
-       <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' className="img-1" /> 
+       <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' height='auto' width='auto' /> 
         <p>
           Besides github and linkedin I want to be open and available to anyone who wants to chat!
           All other relevant contact information is available through the "email icon" or contact page.
@@ -126,7 +126,7 @@ function HeaderSection() {
         
       </div>
 
-      <h1 style={{color: "black", textTransform: "uppercase"}}>Personal  Projects 💻</h1>
+      <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Personal Projects</h1>
       
       <div style={{border:"2px solid red"}}  className='gio-container-4'>
 
@@ -158,7 +158,7 @@ function HeaderSection() {
         </p>
         </div>
 
-        <h1 style={{color: "black", textTransform: "uppercase"}}>Video Game Experience </h1>
+        <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Video Game Experience</h1>
 
         <div style={{border:"2px solid white"}} className='gio-container-5'>
         <h1>Pink Balls video game Unity & C#</h1>
@@ -193,7 +193,7 @@ function HeaderSection() {
         <a href="https://fell-hawk.itch.io/store"> 
           FellHawk-Itch.io 
         </a>
-        <img src={STORE} max-width='auto' height='auto' /> 
+        <img src={STORE} width='90%' height='auto' /> 
         <span></span>
         <div>
           <audio src={STOREmusic} 
@@ -207,6 +207,8 @@ function HeaderSection() {
           />
         </div>
       </div>
+
+     
 
         <div style={{border:"2px solid white"}} className="end-div">
           {youtubesub}
@@ -222,13 +224,13 @@ function HeaderSection() {
           <h1>Site performance & statistics</h1>
           <p><a href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">Rating</a> from: <a href='https://gtmetrix.com/'>GTmetrix</a></p>
           <h2>As of previous build giomoscato.com recieved a rating of <em>B</em></h2>
-          <img src={gtrating} max-width='auto' height='auto' /> 
+          <img src={gtrating} width='auto' height='auto' /> 
           <p>Some additional metrics of the site such as site structure:</p>
-          <img src={gtadd} max-width='auto' height='auto' /> 
+          <img src={gtadd} width='90%' height='auto' /> 
           <br/>
           <p><a href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">Security Rating</a> from: <a href='https://www.ssltrust.com/'>SSL Trust</a></p>
           <h2>As of previous build giomoscato.com recieved a rating of PASS with 93 tests completed and 0 reports of malware <em> or </em> spam </h2>
-          <img src={safteycheck} max-width='auto' height='auto' /> 
+          <img src={safteycheck} width='90%' height='auto' /> 
           <br/>
 
          

@@ -106,7 +106,6 @@ function HeaderSection() {
           <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
           <br/>
         </ul>
-        .
       </div>
 
       <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Feel free to contact me!</h1>

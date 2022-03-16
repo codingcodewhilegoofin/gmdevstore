@@ -10,8 +10,6 @@ import Cstrack from './components/Pages/Cstrack';
 import AboutPage from './components/Pages/AboutPage';
 import ContactPage from './components/Pages/ContactPage';
 import './App.css';
-import OldSite from './oldSite.js';
-import NewSite from './newSite.js';
 
 //Menu import
 import MenuButton from './components/Buttons/MenuButton/MenuButton.js';
@@ -24,17 +22,115 @@ import { ReactComponent as GithubSymbol} from './icons/github.svg';
 
 
 // Main component 
-function App() {
+function oldSite() {
 
   //Custom variables
-  //var githublink = 'https://github.com/codingcodewhilegoofin';
-  //var linkedinlink = 'https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/';
-  //var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/GMResProf.pdf';
+  var githublink = 'https://github.com/codingcodewhilegoofin';
+  var linkedinlink = 'https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/';
+  var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/GMResProf.pdf';
 
   //Send to DOM 
   return (
-    <OldSite/>
     
+    <HashRouter basename='/'> {/*Hash routing  */ }
+
+    {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */ }
+    <div className ="App">
+
+      {/*Custom Menu button */ }
+      
+     {/*Link pages */ }
+     <Navbar>
+
+  
+      <Link className="nav-item" to="/github">
+        <NavItem icon={<GithubSymbol/>} />
+      </Link>
+
+      <Link className="nav-item" to="/linkedin">
+        <NavItem icon={<LinkedinSymbol/>}/> 
+      </Link>
+
+      <Link className="nav-item" to="/">
+        <NavItem icon="💻" />
+      </Link>
+
+      <Link className="nav-item" to="/about">
+        <NavItem icon="🧠" />
+      </Link>
+    
+      <Link className="nav-item" to="/contact">
+        <NavItem icon="✉️" />
+      </Link>
+    
+      <Link className="nav-item" to="/download">
+        <NavItem icon={<DownloadSymbol/>}/> 
+      </Link>
+      
+      {/*
+      <NavItem icon={<DownloadSymbol/>}>
+        
+        <Dropdown/>
+
+      </NavItem>
+      */}
+      
+     </Navbar>
+
+     <UnderNav>
+      
+      
+      
+
+
+      <Link className="nav-item" to="/github">
+        <UnderText> Github </UnderText>
+      </Link>
+
+      <Link className="nav-item" to="/linkedin">
+        <UnderText> Linkedin </UnderText> 
+      </Link>
+
+      <Link className="nav-item" to="/">
+        <UnderText> Home </UnderText>
+      </Link>
+
+      <Link className="nav-item" to="/about">
+        <UnderText> Skills & Information </UnderText>
+      </Link>
+    
+      <Link className="nav-item" to="/contact">
+        <UnderText> Social & Dev Media </UnderText>
+      </Link>
+    
+      <Link className="nav-item" to="/download">
+        <UnderText> Resume </UnderText> 
+      </Link>
+
+     </UnderNav>
+
+    
+     
+      {/*Routes  */}
+     <Route exact path="/" component={HomePage} />
+     <Route path="/about" component={AboutPage} />
+     <Route path="/contact" component={ContactPage} />
+     <Route path='/github' component={() => { 
+     window.location.href = githublink; 
+     return null;
+     }}/>
+     <Route path='/linkedin' component={() => { 
+     window.location.href = linkedinlink; 
+     return null;
+     }}/>
+     <Route path='/download' component={() => { 
+     window.location.href = downloadres; 
+     return null;
+     }}/>
+     <Route path="/cstrack" component={Cstrack} />
+    </div>
+
+    </HashRouter>
   );
   //Endof APP() 
 }
@@ -144,4 +240,4 @@ function UnderText(props) {
   );
 }
 
-export default App;//Export the component to index.js 
+export default oldSite;//Export the component to index.js 

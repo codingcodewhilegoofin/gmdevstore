@@ -465,7 +465,7 @@ p{
     color: var(--text-color);
     font-size: 100px;
     font-size: 58px;
-    background-color: #F5B7B9;
+    
     border: 25px outset var(--bg-accent);
     animation: flickerenddiv3 30s linear reverse infinite;
   }

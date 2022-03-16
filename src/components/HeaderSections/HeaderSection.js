@@ -10,15 +10,20 @@ import '../../icons/gio.jpg';
 import gtrating from '../../icons/gtrating.png';
 import gtadd from '../../icons/gtadditional.png';
 import safteycheck from '../../icons/safteycheck.png';
+import STORE from '../../icons/8XcuzD.png';
 
 import { Link } from "react-router-dom";
 import { ReactComponent as Bitcoinsymb} from '../../icons/Bitcoin.svg';
 import { ReactComponent as Coffeesymb} from '../../icons/Coffee.svg';
 
+import STOREmusic from '../../audio/Store.ogg';
+
 function HeaderSection() {
 
     let specialheader;
     let youtubesub;
+    let musicToggle = false;
+    let Toggle;
     if(window.innerWidth < 400) 
     {
       specialheader =   <h1></h1>;
@@ -29,10 +34,13 @@ function HeaderSection() {
       specialheader =   <h1>Feel free to join my discord.</h1>;
       youtubesub =   <h1>SUB TO MY YOUTUBE?</h1>;
     }
+
+    function globalMusic() {};
+
   return (
     <div className='gio-main'>
       <div className='gio-container'>
-      <video src='/videos/space.mp4' autoPlay loop volume = "0.1"/>
+      <video src='/videos/space.mp4' autoPlay muted volume = "0.1"/>
       <br/>
       <h1>YAY! 🥳 You've made it to giomoscato.com</h1>
       <h4>Who is Giovanni Moscato? </h4>
@@ -41,8 +49,7 @@ function HeaderSection() {
         <br></br>I just graduated from Northern Illinois University with a B.S in computer science
         ( specifically computational programming ) and minor in mathematics.  
         <br></br>
-        <br></br>My dream career would involve combing technology and art together to create experiences that users 
-        (and developers) really love. 
+        <br></br>Now working as a Junior Software Developer! 
         <br></br>
         <br></br>At the moment I have a decent range of experience in programming and design aspects. 
         <br></br>
@@ -66,7 +73,7 @@ function HeaderSection() {
     
       </div>
 
-      <div className="end-div">
+      <div style={{border:"2px solid purple"}} className="end-div">
         
         {specialheader}
         <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"/>
@@ -74,16 +81,11 @@ function HeaderSection() {
 
     
       
-      <div className='gio-container-2'>
-
-
+      <div style={{border:"2px solid white"}} className='gio-container-2'>
         <a href="https://www.buymeacoffee.com/giomoscato101">
           <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
         </a> 
-
         <h1>Details of relevant skills & information 📊 </h1>
-
-       
         <div className='gio-container'>
           <p>
             You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
@@ -96,7 +98,7 @@ function HeaderSection() {
         <h4> Quick summary of skillset : </h4>
         <ul>
           <br/>
-          <li> Work experience in Full-Stack development / Web Design</li>
+          <li> Work experience in Full-Stack development / Web Design & React Framework</li>
           <br></br>
           <li>Some experience markup, programming, and scripting languages</li>
           <br></br>
@@ -105,13 +107,9 @@ function HeaderSection() {
         </ul>
       </div>
 
+      <h1 style={{color: "black", textTransform: "uppercase"}}>Feel free to contact me! 📨</h1>
       
       <div className='gio-container-3'>
-
-     
-
-        <h1>Feel free to contact me! 📨</h1>
-
        
        <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' className="img-1" /> 
         <p>
@@ -125,12 +123,14 @@ function HeaderSection() {
           <li> giovannijmoscato@gmail.com </li>
           <br/>
         </ul>
+        
       </div>
 
+      <h1 style={{color: "black", textTransform: "uppercase"}}>Personal  Projects 💻</h1>
       
-      <div className='gio-container-4'>
+      <div style={{border:"2px solid red"}}  className='gio-container-4'>
 
-        <h1>Personal Projects 💻: </h1>
+        <h1>C++: </h1>
 
         <p>
             Here are some of my favorite and most impressive projects I've aready completed or currently working on.
@@ -158,8 +158,10 @@ function HeaderSection() {
         </p>
         </div>
 
-        <div className='gio-container-5'>
-        <h1>Unity / C# video game Pink Balls: </h1>
+        <h1 style={{color: "black", textTransform: "uppercase"}}>Video Game Experience </h1>
+
+        <div style={{border:"2px solid white"}} className='gio-container-5'>
+        <h1>Pink Balls video game Unity & C#</h1>
         <p>
             The game is based on velocity. 
             <br></br>
@@ -178,7 +180,35 @@ function HeaderSection() {
         
         </div>
 
-        <div className="end-div">
+        <div style={{border:"2px solid red"}} className='gio-container-2'>
+        
+        <h1>STORE ( Musical Credits) </h1>
+        <div className='gio-container'>
+          <h4>
+            I created the soundtrack for the demo game
+            <em> STORE</em> created by 
+            <em> FellHawk Studios </em>
+          </h4>
+        </div>
+        <a href="https://fell-hawk.itch.io/store"> 
+          FellHawk-Itch.io 
+        </a>
+        <img src={STORE} max-width='auto' height='auto' /> 
+        <span></span>
+        <div>
+          <audio src={STOREmusic} 
+          type="audio/wav" 
+          controls="true" 
+          class="audio-1"
+          style={{backgroundColor:"red" , 
+          border:"2px solid black" , 
+          color:"red"
+          }}
+          />
+        </div>
+      </div>
+
+        <div style={{border:"2px solid white"}} className="end-div">
           {youtubesub}
           <div className="end-div">
           <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default">
@@ -188,7 +218,7 @@ function HeaderSection() {
 
         
 
-        <div className='gio-container-4'>
+        <div style={{border:"2px solid purple"}} className='gio-container-4'>
           <h1>Site performance & statistics</h1>
           <p><a href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">Rating</a> from: <a href='https://gtmetrix.com/'>GTmetrix</a></p>
           <h2>As of previous build giomoscato.com recieved a rating of <em>B</em></h2>
@@ -203,74 +233,9 @@ function HeaderSection() {
 
          
         </div>
+ 
 
-       
-        <div className="gio-container-2">
-
-        <section  class="table" >
-  
-  <div class="table" align="center">
-    <table cellpadding="0" cellspacing="0" border="0">
-    <thead>
-        <tr>
-          <th>Completed Updates</th>
-          <th>Upcoming Updates</th>
-          <th>Date Last Active</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Responsive Design issues</td>
-          <td>API integration</td>
-          <td>1/15/22</td>
-         
-        </tr>
-        <tr>
-          <td>Help Support me donation button </td>
-          <td>Further Content Updates</td>
-          <td>1/15/22</td>
-          
-        </tr>
-        <tr>
-          <td>Contact form updates and animation</td>
-          <td>Axios Requests/ HTTP Requests</td>
-          <td>1/15/22</td>
-        </tr>
-        <tr>
-          <td>Updated content for accuracy</td>
-          <td>HTML/CSS/JS Demo </td>
-          <td>1/16/22</td>
-        </tr>
-        <tr>
-          <td>Content organization and readability</td>
-          <td>Custom Financial Chart </td>
-          
-        </tr>
-        <tr>
-          <td>Contact Page & Animation Updates</td>
-          <td>SEO, Standards, and Website Rating</td>
-          <td>1/20/22</td>
-        </tr>
-        <tr>
-          <td>Scroll to top functionality</td>
-          <td></td>
-          <td>1/28/22</td>
-        </tr>
-       
-       
-        
-      </tbody>
-    </table>
-  </div>
-</section>
-          
-         
-
-      </div>
-
-       
-
-        <div className="end-div">
+        <div style={{border:"2px solid white"}} className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
           <h2> My website technology pipeline / stack ? ✨ </h2>
           
@@ -316,7 +281,7 @@ function HeaderSection() {
         </div>
 
 
-        <div className="end-div">
+        <div style={{border:"2px solid white"}} className="end-div">
           
             <h1> NEW! : Crypto & Stock tracker
               <br></br>

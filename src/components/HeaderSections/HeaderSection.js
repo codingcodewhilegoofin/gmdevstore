@@ -190,22 +190,22 @@ function HeaderSection() {
             <em> FellHawk Studios </em>
           </h4>
         </div>
-        <a href="https://fell-hawk.itch.io/store"> 
+        <a style={{color:"red" , fontFamily:"Exo", fontSize:"large", border:"1px solid white"}} href="https://fell-hawk.itch.io/store"> 
           FellHawk-Itch.io 
-        </a>
+        </a>.
         <img src={STORE} width='90%' height='auto' /> 
-        <span></span>
+        <span></span>.
         <div>
           <audio src={STOREmusic} 
           type="audio/wav" 
           controls="true" 
           class="audio-1"
-          style={{backgroundColor:"red" , 
-          border:"2px solid black" , 
+          style={{backgroundColor:"black" , 
+          border:"3px solid white" , 
           color:"red"
           }}
           />
-        </div>
+        </div>.
       </div>
 
      

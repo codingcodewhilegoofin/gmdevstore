@@ -106,13 +106,14 @@ function HeaderSection() {
           <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
           <br/>
         </ul>
+        .
       </div>
 
       <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Feel free to contact me!</h1>
       
       <div className='gio-container-3'>
-       
-       <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' height='auto' width='auto' /> 
+       .
+       <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' height='auto' width='40%' /> 
         <p>
           Besides github and linkedin I want to be open and available to anyone who wants to chat!
           All other relevant contact information is available through the "email icon" or contact page.
@@ -124,7 +125,7 @@ function HeaderSection() {
           <li> giovannijmoscato@gmail.com </li>
           <br/>
         </ul>
-        
+        .
       </div>
 
       <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Personal Projects</h1>
@@ -225,7 +226,7 @@ function HeaderSection() {
           <h1>Site performance & statistics</h1>
           <p><a href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">Rating</a> from: <a href='https://gtmetrix.com/'>GTmetrix</a></p>
           <h2>As of previous build giomoscato.com recieved a rating of <em>B</em></h2>
-          <img src={gtrating} width='auto' height='auto' /> 
+          <img src={gtrating} width='40%' height='auto' /> 
           <p>Some additional metrics of the site such as site structure:</p>
           <img src={gtadd} width='90%' height='auto' /> 
           <br/>

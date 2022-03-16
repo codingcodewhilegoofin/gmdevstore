@@ -53,6 +53,7 @@ function HeaderSection() {
         <br></br>
         <br></br>At the moment I have a decent range of experience in programming and design aspects. 
         <br></br>
+        <br></br>
         Currently I am trying to figure out what area of programming I'd like to specialize in. 
       </p>
       

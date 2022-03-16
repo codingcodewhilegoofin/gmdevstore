@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5319e2f.chunk.css",
-    "main.js": "/static/js/main.913ce377.chunk.js",
-    "main.js.map": "/static/js/main.913ce377.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.76884f05.js",
-    "runtime-main.js.map": "/static/js/runtime-main.76884f05.js.map",
-    "static/js/2.1ba4f478.chunk.js": "/static/js/2.1ba4f478.chunk.js",
-    "static/js/2.1ba4f478.chunk.js.map": "/static/js/2.1ba4f478.chunk.js.map",
-    "static/js/3.210fa2ef.chunk.js": "/static/js/3.210fa2ef.chunk.js",
-    "static/js/3.210fa2ef.chunk.js.map": "/static/js/3.210fa2ef.chunk.js.map",
+    "main.css": "/static/css/main.e0c0504a.chunk.css",
+    "main.js": "/static/js/main.8492bef7.chunk.js",
+    "main.js.map": "/static/js/main.8492bef7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ae5bb4fd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ae5bb4fd.js.map",
+    "static/js/2.08fc6a03.chunk.js": "/static/js/2.08fc6a03.chunk.js",
+    "static/js/2.08fc6a03.chunk.js.map": "/static/js/2.08fc6a03.chunk.js.map",
+    "static/js/3.c654c22d.chunk.js": "/static/js/3.c654c22d.chunk.js",
+    "static/js/3.c654c22d.chunk.js.map": "/static/js/3.c654c22d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b5319e2f.chunk.css.map": "/static/css/main.b5319e2f.chunk.css.map",
-    "static/js/2.1ba4f478.chunk.js.LICENSE.txt": "/static/js/2.1ba4f478.chunk.js.LICENSE.txt",
+    "static/css/main.e0c0504a.chunk.css.map": "/static/css/main.e0c0504a.chunk.css.map",
+    "static/js/2.08fc6a03.chunk.js.LICENSE.txt": "/static/js/2.08fc6a03.chunk.js.LICENSE.txt",
+    "static/media/8XcuzD.1f96aea4.png": "/static/media/8XcuzD.1f96aea4.png",
     "static/media/Bitcoin.02dcffc4.svg": "/static/media/Bitcoin.02dcffc4.svg",
     "static/media/CO.48c91519.png": "/static/media/CO.48c91519.png",
     "static/media/Coffee.48c59ad6.svg": "/static/media/Coffee.48c59ad6.svg",
     "static/media/GMResProf.91c2cfaf.pdf": "/static/media/GMResProf.91c2cfaf.pdf",
+    "static/media/Store.c01e4b86.ogg": "/static/media/Store.c01e4b86.ogg",
     "static/media/download.813dbc20.svg": "/static/media/download.813dbc20.svg",
     "static/media/gio.c905add7.jpg": "/static/media/gio.c905add7.jpg",
     "static/media/github.04be58c1.svg": "/static/media/github.04be58c1.svg",
@@ -25,9 +27,9 @@
     "static/media/safteycheck.e0bfd92a.png": "/static/media/safteycheck.e0bfd92a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.76884f05.js",
-    "static/js/2.1ba4f478.chunk.js",
-    "static/css/main.b5319e2f.chunk.css",
-    "static/js/main.913ce377.chunk.js"
+    "static/js/runtime-main.ae5bb4fd.js",
+    "static/js/2.08fc6a03.chunk.js",
+    "static/css/main.e0c0504a.chunk.css",
+    "static/js/main.8492bef7.chunk.js"
   ]
 }

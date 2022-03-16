@@ -1102,7 +1102,7 @@ p{
     .end-div{
       height: auto;
       font-size: 12px;
-      width: auto;
+      width: 94%;
       border: 1px dashed rgb(255, 139, 139);
       display: flex;
       justify-content: center;

@@ -112,7 +112,6 @@ function HeaderSection() {
       <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Feel free to contact me!</h1>
       
       <div className='gio-container-3'>
-       .
        <img src='https://avatars.githubusercontent.com/u/69764323?s=460&u=3024abfb81a275e97236859efbfe816639da5a44&v=4' height='auto' width='40%' /> 
         <p>
           Besides github and linkedin I want to be open and available to anyone who wants to chat!
@@ -125,7 +124,6 @@ function HeaderSection() {
           <li> giovannijmoscato@gmail.com </li>
           <br/>
         </ul>
-        .
       </div>
 
       <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Personal Projects</h1>

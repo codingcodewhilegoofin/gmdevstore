@@ -1,0 +1,23 @@
+h1{
+    color:red;
+}
+h2{
+    color:red;
+}
+a{
+    color:black;
+}
+a:hover{
+    color:red;
+}
+button{
+    color:red;
+    background-color:black;
+    font-size: large;
+    height: 50px;
+    width: 340px;
+}
+
+p{
+    color:blue;
+}

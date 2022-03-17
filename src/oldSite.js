@@ -22,7 +22,7 @@ import { ReactComponent as GithubSymbol} from './icons/github.svg';
 
 
 // Main component 
-function oldSite() {
+function OldSite() {
 
   //Custom variables
   var githublink = 'https://github.com/codingcodewhilegoofin';
@@ -240,4 +240,4 @@ function UnderText(props) {
   );
 }
 
-export default oldSite;//Export the component to index.js 
+export default OldSite;//Export the component to index.js 

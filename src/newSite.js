@@ -2,10 +2,10 @@ import React from 'react';
 
 
 
-function newSite() {
+function NewSite() {
     return(
         <h1>New Website</h1>
     );
 }
 
-export default newSite;
+export default NewSite;

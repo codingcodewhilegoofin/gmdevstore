@@ -21,3 +21,8 @@ button{
 p{
     color:blue;
 }
+
+code{
+    font-family:'Exo', sans-serif;
+    color: yellow;
+}

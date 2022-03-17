@@ -38,7 +38,7 @@ const ChoiceSite = (props) => {
     props.func(siteVersion);
 
   return (
-    <div className="choice">
+    <div style={{background:"black"}}>
         <h1> Welcome to Giomoscato.com
         </h1>
         <h3> I have built 2 different web experiences!
@@ -57,7 +57,7 @@ const ChoiceSite = (props) => {
              If you have a question, critisim, or concern with my code feel free to 
              <a href="https://github.com/codingcodewhilegoofin"> reach out to me.</a>
         </h2>
-        <div>
+        <div style={{background:"black"}}>
         
             <button 
                 onClick={vanillaClick }

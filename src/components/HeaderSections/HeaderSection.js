@@ -42,7 +42,7 @@ function HeaderSection() {
       <div className='gio-container'>
       <video src='/videos/space.mp4' autoPlay loop muted />
       <br/>
-      <h1>YAY! 🥳 You've made it to giomoscato.com</h1>
+      <h1>🥳 Welcome to giomoscato.com Vanilla Version</h1>
       <h4>Who is Giovanni Moscato? </h4>
       <p>I started programming about 4 years ago at my community college. I'm currently working on 3-4 projects! 
         <br></br>

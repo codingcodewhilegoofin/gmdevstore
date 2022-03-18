@@ -1,11 +1,14 @@
 h1{
     color:red;
+    font-family: 'Bungee Hairline', cursive;
 }
 h2{
     color:red;
+    font-family: 'Exo', sans-serif;
 }
 h3{
     color:white;
+    font-family: 'Exo', sans-serif;
 }
 a:hover{
     color:red;

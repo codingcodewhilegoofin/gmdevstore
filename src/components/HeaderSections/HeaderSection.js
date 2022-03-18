@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState , useEffect} from 'react';
 
 import '../../App.css';
 import { Button } from '../Buttons/Button.js';
 import '../Buttons/Button.css';
 import '../PageCss/HeaderSection.css';
-import '../PageCss/table.css';
+import '../PageCss/NewTable.css';
 
 import '../../icons/gio.jpg';
 import gtrating from '../../icons/gtrating.png';
@@ -17,25 +17,59 @@ import { ReactComponent as Bitcoinsymb} from '../../icons/Bitcoin.svg';
 import { ReactComponent as Coffeesymb} from '../../icons/Coffee.svg';
 
 import STOREmusic from '../../audio/Store.ogg';
+import Table from './Table';
 
 function HeaderSection() {
 
-    let specialheader;
-    let youtubesub;
-    let musicToggle = false;
-    let Toggle;
-    if(window.innerWidth < 400) 
-    {
-      specialheader =   <h1></h1>;
-      youtubesub =   <h1></h1>;
-    }
-    else
-    {
-      specialheader =   <h1>Feel free to join my discord.</h1>;
-      youtubesub =   <h1>SUB TO MY YOUTUBE?</h1>;
-    }
+  const baseUrl = "https://swapi.dev/api/people";
+  const [data, setData] = useState([]);
+  const [currentStatus , setStatus] = useState(false);
+  let specialheader;
+  let youtubesub;
+  let musicToggle = false;
+  let Toggle;
+  if(window.innerWidth < 400) 
+  {
+    specialheader =   <h1></h1>;
+    youtubesub =   <h1></h1>;
+  }
+  else
+  {
+    specialheader =   <h1>Feel free to join my discord.</h1>;
+    youtubesub =   <h1>SUB TO MY YOUTUBE?</h1>;
+  }
+  
+  function globalMusic() {};
 
-    function globalMusic() {};
+  useEffect(()=>{
+    fetch(baseUrl)
+    .then((response) =>{
+      if(!response.ok)
+      {
+        return Promise.reject( new Error("Response Error!"));
+      }
+      else
+      {
+        return response.json();
+      }
+    })
+    .catch ( (err) =>{
+      console.log(err);
+    })
+    .then((json) => {
+      try{
+        setData(json.results);
+        setStatus(true);
+      }
+      catch
+      {
+        return Promise.reject(new Error(`State Error!: Data: ${data} , Connection:${currentStatus}`));
+      }
+    })
+    .catch((err) =>{
+      console.log(err);
+    })  
+  },[]);
 
   return (
     <div className='gio-main'>
@@ -57,7 +91,6 @@ function HeaderSection() {
         Currently I am trying to figure out what area of programming I'd like to specialize in. 
       </p>
       
-      
       <div className='hero-btns'>
         <Button
           className='btns'
@@ -71,7 +104,6 @@ function HeaderSection() {
       <p><br></br>If you need my information in resume format click this button or on top right navbar
       </p>
 
-    
       </div>
 
       <div style={{border:"2px solid purple"}} className="end-div" >
@@ -81,18 +113,12 @@ function HeaderSection() {
       </div>
 
       <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Detail of relevant information & skills</h1>
-      
-      <div style={{border:"2px solid white"}} className='gio-container-2'>
-        <a href="https://www.buymeacoffee.com/giomoscato101">
-          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
-        </a> 
-  
-        <div className='gio-container'>
+    
+        <div className='gio-container-2'>
           <p>
             You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
             with on the about/skills page! 
           </p>
-        </div>
         <p>
           Click the "brain" icon to learn more or scroll up! 
         </p>
@@ -207,17 +233,21 @@ function HeaderSection() {
         </div>
       </div>
 
-     
+      <div style={{border:"2px solid white"}} className='gio-container-3'>
+       <h1>Polygon.io REST API</h1>
+       <h4>Endpoint request using vanilla JS displayed in custom table</h4>
+       {!currentStatus ?  <h1>Hello</h1> : <Table data={data}/>}
+      </div>
+      
+      
 
-        <div style={{border:"2px solid white"}} className="end-div">
+      <div style={{border:"2px solid white"}} className="end-div">
           {youtubesub}
-          <div className="end-div">
+        <div className="end-div">
           <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default">
           </div>
         </div>
-        </div>
-
-        
+      </div>
 
         <div style={{border:"2px solid purple"}} className='gio-container-4'>
           <h1>Site performance & statistics</h1>

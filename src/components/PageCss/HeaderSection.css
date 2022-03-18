@@ -82,6 +82,7 @@ p{
     justify-content: center;
     background-color: #161A1D;
     font-family: 'Syne Mono', monospace;
+    padding:20px;
   }
   .end-div:hover{
     background-color: #E5383B;
@@ -94,6 +95,7 @@ p{
     display: flex;
     justify-content: center;
     background-color: #161A1D;
+    padding:20px;
  
   }
   .end-div-update:hover{
@@ -109,7 +111,7 @@ p{
     background-color: var(--bg-red3);
     opacity: 1;
     animation: flickerenddiv 10s linear  reverse infinite;
-   
+    
   }
   .coffeeBtn:hover{
     height: auto;
@@ -240,7 +242,7 @@ p{
     margin-top: 8px;
     color: var(--bg-red3);
     font-size: auto;
-    background: rgba(0, 0, 0, 0.507);
+    background: rgba(0, 0, 0, 0.767);
     font-family: 'Syne Mono', monospace;
     padding:20px;
   }
@@ -327,6 +329,7 @@ p{
     border: 25px outset var(--bg-accent);
     animation: flickerenddiv3 30s linear infinite;
     font-family: 'Bungee Hairline', cursive;
+    padding:10px;
   }
  
   .gio-container-2 > h4 {
@@ -334,6 +337,7 @@ p{
     color: var(--bg-red3);
     font-size: 40px;
     font-family: 'Exo', sans-serif;
+    padding:10px;
   }
   .gio-container-2 > p {
     margin-top: 8px;
@@ -354,6 +358,7 @@ p{
     border-radius: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+    padding:20px;
   }
   .gio-container-2 > li {
     
@@ -361,6 +366,7 @@ p{
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
   }
   .gio-container-3 {
     height: auto;
@@ -383,6 +389,7 @@ p{
     color: var(--bg-red3);
     font-size: 40px;
     font-family: 'Exo', sans-serif;
+    padding:10px;
   }
   .gio-container-3 > p {
     margin-top: 8px;
@@ -399,6 +406,7 @@ p{
     border-radius: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+    padding:20px;
   }
   .gio-container-3 > li {
     
@@ -423,6 +431,7 @@ p{
     border: 25px outset var(--bg-accent);
     animation: flickerenddiv3 30s linear reverse infinite;
     font-family: 'Bungee Hairline', cursive;
+    padding:20px;
   }
   .gio-container-4 > h4 {
     margin-top: 16px;
@@ -430,6 +439,7 @@ p{
     font-size: 38px;
     background-color: black;
     font-family: 'Exo', sans-serif;
+    padding:20px;
   }
   .gio-container-4 > p {
     margin-top: 8px;
@@ -437,6 +447,7 @@ p{
     font-size: 19px;
     background: rgba(95, 66, 66, 0.178);
     font-family: 'Syne Mono', monospace;
+    padding:20px;
   }
   .gio-container-4 > ul{
     
@@ -472,12 +483,14 @@ p{
     border: 25px outset var(--bg-accent);
     animation: flickerenddiv3 30s linear reverse infinite;
     font-family: 'Bungee Hairline', cursive;
+    padding:10px;
   }
   .gio-container-5 > h4 {
     margin-top: 16px;
     color: var(--bg-red3);
     font-size: 38px;
     font-family: 'Exo', sans-serif;
+    padding:10px;
   }
   .gio-container-5 > p {
     margin-top: 8px;
@@ -485,6 +498,7 @@ p{
     font-size: 19px;
     background: rgba(95, 66, 66, 0.178);
     font-family: 'Syne Mono', monospace;
+    padding:20px;
   }
   
  

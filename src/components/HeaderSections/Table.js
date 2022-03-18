@@ -1,4 +1,4 @@
-
+import '../PageCss/NewTable.css';
 
 
 export const Table = props =>{
@@ -7,7 +7,7 @@ export const Table = props =>{
     const columns = Object.keys(props.data[0]);
 
     return(
-        <div className="NewTable">
+        <div className="tablethingdiv">
             <table className="NewTable" cellPadding="10" cellSpacing="1">
                 <thead>
                     <tr>

@@ -4,7 +4,7 @@ import '../../App.css';
 import { Button } from '../Buttons/Button.js';
 import '../Buttons/Button.css';
 import '../PageCss/HeaderSection.css';
-import '../PageCss/NewTable.css';
+
 
 import '../../icons/gio.jpg';
 import gtrating from '../../icons/gtrating.png';
@@ -18,6 +18,7 @@ import { ReactComponent as Coffeesymb} from '../../icons/Coffee.svg';
 
 import STOREmusic from '../../audio/Store.ogg';
 import Table from './Table';
+import GioTable from './GioTable.js';
 
 function HeaderSection() {
 
@@ -236,7 +237,13 @@ function HeaderSection() {
       <div style={{border:"2px solid white"}} className='gio-container-3'>
        <h1>Polygon.io REST API</h1>
        <h4>Endpoint request using vanilla JS displayed in custom table</h4>
-       {!currentStatus ?  <h1>Hello</h1> : <Table data={data}/>}
+       {!currentStatus ?  <h2>Loading... </h2> : <Table data={data}/>}
+      </div>
+
+      <div style={{border:"2px solid black"}} className='gio-container-4'>
+       <h1>Website Updates</h1>
+       <h2>Current/Previous Website updates</h2>
+       {!currentStatus ?  <h2>Loading... </h2> : <GioTable data={data}/>}
       </div>
       
       
@@ -261,8 +268,6 @@ function HeaderSection() {
           <h2>As of previous build giomoscato.com recieved a rating of PASS with 93 tests completed and 0 reports of malware <em> or </em> spam </h2>
           <img src={safteycheck} width='90%' height='auto' /> 
           <br/>
-
-         
         </div>
  
 
@@ -292,23 +297,15 @@ function HeaderSection() {
         <div className="end-div">
           <a href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/">
           <h2> Having trouble viewing my website ? 💔 </h2>
-          
           <h5> I tried to make my website <br/> desktop and mobile friendly as possible.</h5>
-         
           <h3> Major Update! : Most mobile / scaling issues should be fixed
-
             <br/> 
             <br/> 
-
             <a href="https://www.buymeacoffee.com/giomoscato101">
               <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"/>
             </a> 
-          
           </h3>
-
           </a>
-
-          
         </div>
 
 

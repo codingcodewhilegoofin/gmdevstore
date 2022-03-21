@@ -5,7 +5,7 @@
 }
 
 input{
-  color: purple;
+  color: white;
   background-color: black;
 }
 
@@ -20,16 +20,12 @@ label:hover{
 
 
 input[type=text] {
-  transition: .5s;
   width: 60vw;
   font-size: 15px;
-  
 }
 
 input[type=text]:focus-visible {
-  width: 90vw;
-  transition: .5s;
-  font-size: 10px;
+  width: 60vw;
   color: var(--bg-red2);
 }
 

@@ -6,6 +6,7 @@ import '../Buttons/Button.css';
 import '../PageCss/HeaderSection.css';
 
 
+
 import '../../icons/gio.jpg';
 import gtrating from '../../icons/gtrating.png';
 import gtadd from '../../icons/gtadditional.png';
@@ -19,6 +20,12 @@ import { ReactComponent as Coffeesymb} from '../../icons/Coffee.svg';
 import STOREmusic from '../../audio/Store.ogg';
 import Table from './Table';
 import GioTable from './GioTable.js';
+import CrudTable from './CrudTable.js';
+
+import '../PageCss/Crudtable.css';
+import '../PageCss/GioTable.css';
+import '../PageCss/NewTable.css';
+
 
 function HeaderSection() {
 
@@ -234,15 +241,21 @@ function HeaderSection() {
         </div>
       </div>
 
-      <div style={{border:"2px solid white"}} className='gio-container-3'>
+      <div style={{border:"1px solid white"}} className='gio-container-3'>
        <h1>Polygon.io REST API</h1>
        <h4>Endpoint request using vanilla JS displayed in custom table</h4>
        {!currentStatus ?  <h2>Loading... </h2> : <Table data={data}/>}
       </div>
 
-      <div style={{border:"2px solid black"}} className='gio-container-4'>
+      <div style={{border:"1px solid red"}} className='gio-container-4'>
+       <h1>CRUD Form & Table</h1>
+       <h4>Demonstration of CRUD properties</h4> 
+       {!currentStatus ?  <h2>Loading... </h2> : <CrudTable  data={data}/>}
+      </div>
+
+      <div style={{border:"1px solid purple"}} className='gio-container-5'>
        <h1>Website Updates</h1>
-       <h2>Current/Previous Website updates</h2>
+       <h4>Current/Previous Website updates</h4>
        {!currentStatus ?  <h2>Loading... </h2> : <GioTable data={data}/>}
       </div>
       

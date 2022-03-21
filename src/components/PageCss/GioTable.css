@@ -3,40 +3,40 @@
     width: 100%;
     height: 100%;
 }
-th:nth-child(odd):hover{
+.giotable > th:nth-child(odd):hover{
     color:#0353a4;
     border: 1px solid white;
 }
-th:nth-child(even):hover{
+.giotable > th:nth-child(even):hover{
     color:#0353a4;
     border: 1px solid white;
 }
-td:nth-child(even):hover{
+.giotable > td:nth-child(even):hover{
     color:#0353a4;
     border: 1px solid white;
 }
-td:nth-child(odd):hover{
+.giotable > td:nth-child(odd):hover{
     color:#0353a4;
     border: 1px solid white;
 }
 
-th{
+.giotable > th{
     background-color: #0466c8;
     border-top:none;
     font-size: large;
     border: 1px solid #001845;
    
 }
-td,th{
+.giotable > td,th{
    
     border-top: 1px solid #001233;
 }
 
-td{
+.giotable > td{
     border-top: 1px solid #33415c;
     border-right:1px solid rgb(0, 0, 0);
 }
-table{
+.giotable-table{
     color: #0466c8;
     background-color: #001233;
     border: 2px solid #001845;
@@ -53,24 +53,24 @@ table{
     overflow-x:auto;  
 }
 
-tr:nth-child(even){
+.giotable > tr:nth-child(even){
     background-color: #001233;
 }
-tr:nth-child(odd){
+.giotable > tr:nth-child(odd){
     background-color: #33415c;
 }
-th:nth-child(odd){
+.giotable > th:nth-child(odd){
     color: #979dac;
 }
-th:nth-child(even){
+.giotable > th:nth-child(even){
     color: #002855;
 }
 
-tr:hover{
+.giotable > tr:hover{
     background-color: #979dac;
     color: #002855;
     box-shadow: #0353a4 0px 0px 9px 0px;
 }
-tr{
+.giotable > tr{
     box-shadow: 0px 0px 9px 0px;
 }

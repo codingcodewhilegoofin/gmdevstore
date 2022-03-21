@@ -435,11 +435,10 @@ p{
   }
   .gio-container-4 > h4 {
     margin-top: 16px;
-    color: var(--text-color);
-    font-size: 38px;
-    background-color: black;
+    color: var(--bg-red3);
+    font-size: 40px;
     font-family: 'Exo', sans-serif;
-    padding:20px;
+    padding:10px;
   }
   .gio-container-4 > p {
     margin-top: 8px;

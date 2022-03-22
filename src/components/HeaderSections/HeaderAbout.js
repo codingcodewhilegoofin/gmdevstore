@@ -16,14 +16,14 @@ function HeaderAbout() {
       <div className='gio-container'>
       <video src='/videos/invert.mp4' autoPlay volume = "0.1"/>
       <br/>
-      <h1>ABOUT ME : Skills & information</h1>
-      <h4> Graduate with BS of Computer Science from Northern Illinois University on 12/12/21.<br/>
+      <h4>ABOUT ME : Skills & information</h4>
+      <p> Graduate with BS of Computer Science from Northern Illinois University on 12/12/21.<br/>
         <br/> Emphasis in Computational Software and <a href="#minor">minor in Mathematics</a>.
       <br/>
       <br/>
           NIU focused on the understanding of the standards, 
           data structures,<br/> & mathematical reasoning behind computer science applications. 
-      </h4>
+      </p>
       <p> I have a range of experience in all listed languages and technologies. I am most comfortable with the C/Java family but can adapt pretty easily.
       </p>
       </div>

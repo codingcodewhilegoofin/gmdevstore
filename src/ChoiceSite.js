@@ -38,7 +38,7 @@ const ChoiceSite = (props) => {
     props.func(siteVersion);
 
   return (
-    <div style={{background:"black" , textAlign:"center"}}>
+    <div className="choicediv" style={{background:"black" , textAlign:"center"}}>
         <h1> Welcome to Giomoscato.com
         </h1>
         <h3> I have built 2 different web experiences!

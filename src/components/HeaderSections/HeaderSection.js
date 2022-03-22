@@ -43,8 +43,8 @@ function HeaderSection() {
   }
   else
   {
-    specialheader =   <h1>Feel free to join my discord.</h1>;
-    youtubesub =   <h1>SUB TO MY YOUTUBE?</h1>;
+    specialheader =   <h4>Feel free to join my discord.</h4>;
+    youtubesub =   <h4>SUB TO MY YOUTUBE?</h4>;
   }
   
   function globalMusic() {};
@@ -215,7 +215,7 @@ function HeaderSection() {
 
         <div className='gio-container-2'>
         
-        <h1>STORE ( Musical Credits) </h1>
+        <h2>STORE (Musical Credits) </h2>
         <div className='gio-container'>
           <h4>
             I created the soundtrack for the demo game
@@ -223,7 +223,14 @@ function HeaderSection() {
             <em> FellHawk Studios </em>
           </h4>
         </div>
-        <a style={{color:"red" , fontFamily:"Exo", fontSize:"large", border:"1px solid white"}} href="https://fell-hawk.itch.io/store"> 
+        <a style={{
+          color:"red" , 
+          fontFamily:"Exo", 
+          fontSize:"large", 
+          border:"1px solid white",
+          padding:"10px",
+          margin:"10px"
+          }} href="https://fell-hawk.itch.io/store"> 
           FellHawk-Itch.io 
         </a>
         <img src={STORE} width='90%' height='auto' /> 
@@ -235,7 +242,9 @@ function HeaderSection() {
           class="audio-1"
           style={{backgroundColor:"black" , 
           border:"3px solid white" , 
-          color:"red"
+          color:"red",
+          padding:"5px",
+          margin:"20px"
           }}
           />
         </div>

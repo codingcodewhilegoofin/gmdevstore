@@ -1,7 +1,15 @@
+.choicediv{
+    background-color: #000000;
+    transition:background-color 2s;
+}
+.choicediv:hover{
+    background-color: #080808;
+    transition:background-color 2s;
+}
 h1{
     color:red;
     font-family: 'Bungee Hairline', cursive;
-    padding: 50px;
+    padding: 100px;
     margin: 0px;
 }
 h2{

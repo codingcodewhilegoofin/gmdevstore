@@ -6,6 +6,10 @@
     z-index: -1;
   }
  
+  li{
+    margin:5px;
+  }
+
 
   :root {
     --bg: #0B090A;
@@ -55,7 +59,7 @@ p{
  
 }
 .gradient-text {
-  background-color: #f378e9;
+  background-color: #ffffff;
   background-image: linear-gradient(100deg, var(--bg-accent3) 10%,  var(--bg-accent2) , var(--bg-accent) , var(--bg-red1), var(--bg-red2),var(--bg-red3),var(--bg-2) );
   background-size: 100%;
   -webkit-background-clip: text;
@@ -87,6 +91,8 @@ p{
     transition: border 3s;
   }
   
+  
+  
   .end-div:hover{
     border: 2px solid #BA181B;
     transition: border 3s;
@@ -113,8 +119,6 @@ p{
     justify-content: center;
     background-color: var(--bg-red3);
     opacity: 1;
-    animation: flickerenddiv 10s linear  reverse infinite;
-    
   }
   .coffeeBtn:hover{
     height: auto;
@@ -122,10 +126,6 @@ p{
     display:flexbox;
     justify-content: center;
     background-color: white;
-    transition: all 2s ease-in;
-    transition: 1s ease-out;
-    animation: none;
-    
   }
 
   .coffeeBtn span {
@@ -234,32 +234,36 @@ p{
     transition: border 3s;
   }
   .gio-container > h1 {
+    
     color: var(--text-color);
     font-size: 50px;
     margin-top: auto;
     font-family: 'Bungee Hairline', cursive;
-  }
-  .gio-container > h1:hover{
-    color: black;
     
+  }
+  .gio-container > h1:hover{  
     opacity: 0.5;
   }
   .gio-container > h4 {
-    margin-top: 8px;
+    margin: 5px;
+    padding: 10px;
     color: var(--bg-red3);
-    font-size: 32px;
+    font-size: 40px;
     font-family: 'Exo', sans-serif;
   }
+  .gio-container > h4:hover{
+    opacity: 0.5;
+  }
   .gio-container > p {
-    margin-top: 8px;
+    margin: 4px;
     color: var(--bg-red3);
     font-size: auto;
     background: rgba(0, 0, 0, 0.767);
     font-family: 'Syne Mono', monospace;
-    padding:20px;
+    padding:10px;
   }
   .gio-container > p:hover{
-    color: tomato;
+    opacity: 0.5;
   }
   .hero-btns {
     margin-top: 32px;
@@ -314,8 +318,9 @@ p{
   }
 
   .gio-container-special {
+    padding: 100px;
     height: auto;
-    width: auto;
+    width:90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,9 +330,7 @@ p{
  
 
   .gio-container-2 {
-    padding: 50px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    padding: 100px;
     height: auto;
     width: auto;
     display: flex;
@@ -345,33 +348,35 @@ p{
   }
   .gio-container-2 > h1 {
     color: var(--text-color);
-    font-size: 100px;
-    font-size: 60px;
+    font-size: 40px;
     border: 25px outset var(--bg-accent);
     animation: flickerenddiv3 30s linear infinite;
     font-family: 'Bungee Hairline', cursive;
     padding:10px;
   }
- 
   .gio-container-2 > h4 {
-    margin-top: 16px;
+    margin: 14px;
     color: var(--bg-red3);
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Exo', sans-serif;
-    padding:10px;
+    padding:5px;
+  }
+  .gio-container-2 > h4:hover{
+    opacity: 0.5;
   }
   .gio-container-2 > p {
-    margin-top: 8px;
+    margin: 8px;
     color: var(--bg-red3);
     font-size: 20px;
     background: rgba(95, 66, 66, 0.397);
     font-family: 'Syne Mono', monospace;
   }
   .gio-container-2 > p:hover{
-    color: tomato;
+    opacity: 0.5;
   }
   .gio-container-2 > ul{
-    
+    padding: 50px;
+    margin: 5px;
     color: var(--text-color);
     font-size: 20px;
     list-style-type: square;
@@ -379,15 +384,17 @@ p{
     border-radius: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
-    padding:20px;
+  }
+  .gio-container-2 > ul:hover{
+    opacity: 0.5;
   }
   .gio-container-2 > li {
-    
+    padding: 50px;
+    margin: 5px;
     color: var(--text-color);
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
-    padding: 20px;
   }
   .gio-container-3 {
     height: auto;
@@ -400,6 +407,7 @@ p{
     text-align: center;
     border: 2px solid var(--bg-2);
     transition: border 3s;
+    padding: 100px;
   }
   .gio-container-3:hover{
     border: 2px solid #BA181B;
@@ -413,14 +421,14 @@ p{
     font-family: 'Bungee Hairline', cursive;
   }
   .gio-container-3 > h4 {
-    margin-top: 16px;
+    margin: 10px;
     color: var(--bg-red3);
     font-size: 40px;
     font-family: 'Exo', sans-serif;
     padding:10px;
   }
   .gio-container-3 > p {
-    margin-top: 8px;
+    margin: 10px;
     color: var(--bg-red3);
     font-size: 20px;
     background: rgba(95, 66, 66, 0.178);
@@ -434,10 +442,10 @@ p{
     border-radius: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
-    padding:20px;
   }
   .gio-container-3 > li {
-    
+    padding: 10px;
+    margin: 10px;
     color: var(--text-color);
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -445,6 +453,7 @@ p{
   }
 
   .gio-container-4 {
+    padding: 100px;
     height: auto;
     width: auto;
     display: flex;
@@ -467,6 +476,7 @@ p{
     animation: flickerenddiv3 30s linear reverse infinite;
     font-family: 'Bungee Hairline', cursive;
     padding:20px;
+    margin: 5px;
   }
   .gio-container-4 > h4 {
     margin-top: 16px;
@@ -474,6 +484,7 @@ p{
     font-size: 40px;
     font-family: 'Exo', sans-serif;
     padding:10px;
+    margin: 5px;
   }
   .gio-container-4 > p {
     margin-top: 8px;
@@ -482,6 +493,7 @@ p{
     background: rgba(95, 66, 66, 0.178);
     font-family: 'Syne Mono', monospace;
     padding:20px;
+    margin: 10px;
   }
   .gio-container-4 > ul{
     
@@ -503,6 +515,7 @@ p{
   }
 
   .gio-container-5 {
+    padding: 100px;
     height: auto;
     width: auto;
     display: flex;
@@ -525,6 +538,7 @@ p{
     animation: flickerenddiv3 30s linear reverse infinite;
     font-family: 'Bungee Hairline', cursive;
     padding:10px;
+    margin: 5px;
   }
   .gio-container-5 > h4 {
     margin-top: 16px;
@@ -532,9 +546,10 @@ p{
     font-size: 38px;
     font-family: 'Exo', sans-serif;
     padding:10px;
+    margin: 5px;
   }
   .gio-container-5 > p {
-    margin-top: 8px;
+    margin: 8px;
     color: var(--bg-red3);
     font-size: 19px;
     background: rgba(95, 66, 66, 0.178);

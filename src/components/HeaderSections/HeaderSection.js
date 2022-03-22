@@ -114,7 +114,7 @@ function HeaderSection() {
 
       </div>
 
-      <div style={{border:"2px solid purple"}} className="end-div" >
+      <div className="end-div" >
         
         {specialheader}
         <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='90%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"/>
@@ -161,7 +161,7 @@ function HeaderSection() {
 
       <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Personal Projects</h1>
       
-      <div style={{border:"2px solid red"}}  className='gio-container-4'>
+      <div className='gio-container-4'>
 
         <h1>C++: </h1>
 
@@ -193,7 +193,7 @@ function HeaderSection() {
 
         <h1 className="gradient-text" style={{backgroundImage:"<gradient>", backgroundClip:"text",textFillColor:"transparent", textTransform: "uppercase"}}>Video Game Experience</h1>
 
-        <div style={{border:"2px solid white"}} className='gio-container-5'>
+        <div className='gio-container-5'>
         <h1>Pink Balls video game Unity & C#</h1>
         <p>
             The game is based on velocity. 
@@ -213,7 +213,7 @@ function HeaderSection() {
         
         </div>
 
-        <div style={{border:"2px solid red"}} className='gio-container-2'>
+        <div className='gio-container-2'>
         
         <h1>STORE ( Musical Credits) </h1>
         <div className='gio-container'>
@@ -241,19 +241,19 @@ function HeaderSection() {
         </div>
       </div>
 
-      <div style={{border:"1px solid white"}} className='gio-container-3'>
+      <div className='gio-container-3'>
        <h1>Polygon.io REST API</h1>
        <h4>Endpoint request using vanilla JS displayed in custom table</h4>
        {!currentStatus ?  <h2>Loading... </h2> : <Table data={data}/>}
       </div>
 
-      <div style={{border:"1px solid red"}} className='gio-container-4'>
+      <div className='gio-container-4'>
        <h1>CRUD Form & Table</h1>
        <h4>Demonstration of CRUD properties</h4> 
        {!currentStatus ?  <h2>Loading... </h2> : <CrudTable  data={data}/>}
       </div>
 
-      <div style={{border:"1px solid purple"}} className='gio-container-5'>
+      <div className='gio-container-5'>
        <h1>Website Updates</h1>
        <h4>Current/Previous Website updates</h4>
        {!currentStatus ?  <h2>Loading... </h2> : <GioTable data={data}/>}
@@ -261,7 +261,7 @@ function HeaderSection() {
       
       
 
-      <div style={{border:"2px solid white"}} className="end-div">
+      <div className="end-div">
           {youtubesub}
         <div className="end-div">
           <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default">
@@ -269,7 +269,7 @@ function HeaderSection() {
         </div>
       </div>
 
-        <div style={{border:"2px solid purple"}} className='gio-container-4'>
+        <div className='gio-container-4'>
           <h1>Site performance & statistics</h1>
           <p><a href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">Rating</a> from: <a href='https://gtmetrix.com/'>GTmetrix</a></p>
           <h2>As of previous build giomoscato.com recieved a rating of <em>B</em></h2>
@@ -284,7 +284,7 @@ function HeaderSection() {
         </div>
  
 
-        <div style={{border:"2px solid white"}} className="end-div">
+        <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
           <h2> My website technology pipeline / stack ? ✨ </h2>
           
@@ -322,7 +322,7 @@ function HeaderSection() {
         </div>
 
 
-        <div style={{border:"2px solid white"}} className="end-div">
+        <div className="end-div">
           
             <h1> NEW! : Crypto & Stock tracker
               <br></br>

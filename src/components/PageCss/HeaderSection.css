@@ -77,16 +77,19 @@ p{
   .end-div{
     height: auto;
     width: auto;
-    border: 1px dashed rgb(255, 139, 139);
     display: flex;
     justify-content: center;
     background-color: #161A1D;
     font-family: 'Syne Mono', monospace;
-    padding:20px;
+    padding:5px;
+    text-align: center;
+    border: 2px solid var(--bg-2);
+    transition: border 3s;
   }
+  
   .end-div:hover{
-    background-color: #E5383B;
-    
+    border: 2px solid #BA181B;
+    transition: border 3s;
   }
 
   .end-div-update{
@@ -99,7 +102,7 @@ p{
  
   }
   .end-div-update:hover{
-    background-color: #E5383B;
+    background-color: #320304;
    
   }
  
@@ -200,15 +203,18 @@ p{
  
 
   .gio-main {
-    border: 1.4px solid #BA181B;
-
+    border: 3px solid #BA181B;
+    transition: border 3s;
+    text-align: center;
   }
   .gio-main:hover{
-    border: 1.4px solid white;
-    transition: border 10s;
+    border: 3px solid var(--bg-2);
+    transition: border 3s;
   }
   
   .gio-container {
+    padding: auto;
+    margin: auto;
     /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
     height: 100%;
     width: auto;
@@ -218,8 +224,14 @@ p{
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
-  
-  
+    text-align: center;
+    border: 2px solid var(--bg-2);
+    transition: border 3s;
+    
+  }
+  .gio-container:hover{
+    border: 2px solid #BA181B;
+    transition: border 3s;
   }
   .gio-container > h1 {
     color: var(--text-color);
@@ -313,6 +325,9 @@ p{
  
 
   .gio-container-2 {
+    padding: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     height: auto;
     width: auto;
     display: flex;
@@ -320,7 +335,13 @@ p{
     align-items: center;
     object-fit: contain;
     background: linear-gradient(45deg, var(--bg-accent3) , var(--bg) , var(--bg-2));
-    
+    text-align: center;
+    border: 2px solid var(--bg-2);
+    transition: border 3s;
+  }
+  .gio-container-2:hover{
+    border: 2px solid #BA181B;
+    transition: border 3s;
   }
   .gio-container-2 > h1 {
     color: var(--text-color);
@@ -376,6 +397,13 @@ p{
     align-items: center;
     object-fit: contain;
     background: linear-gradient(145deg, var(--bg-accent3) , var(--bg) , var(--bg-2));
+    text-align: center;
+    border: 2px solid var(--bg-2);
+    transition: border 3s;
+  }
+  .gio-container-3:hover{
+    border: 2px solid #BA181B;
+    transition: border 3s;
   }
   .gio-container-3 > h1 {
     color: var(--text-color);
@@ -424,6 +452,13 @@ p{
     align-items: center;
     object-fit: contain;
     background: linear-gradient(300deg, var(--bg-accent3) , var(--bg) , var(--bg-2));
+    text-align: center;
+    border: 2px solid var(--bg-2);
+    transition: border 3s;
+  }
+  .gio-container-4:hover{
+    border: 2px solid #BA181B;
+    transition: border 3s;
   }
   .gio-container-4 > h1 {
     color: var(--text-color);
@@ -475,6 +510,13 @@ p{
     align-items: center;
     object-fit: contain;
     background: linear-gradient(250deg, var(--bg-accent3) , var(--bg) , var(--bg-2));
+    text-align: center;
+    border: 2px solid var(--bg-2);
+    transition: border 3s;
+  }
+  .gio-container-5:hover{
+    border: 2px solid #BA181B;
+    transition: border 3s;
   }
   .gio-container-5 > h1 {
     color: var(--text-color);

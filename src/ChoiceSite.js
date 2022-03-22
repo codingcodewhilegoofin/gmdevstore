@@ -38,14 +38,14 @@ const ChoiceSite = (props) => {
     props.func(siteVersion);
 
   return (
-    <div style={{background:"black"}}>
+    <div style={{background:"black" , textAlign:"center"}}>
         <h1> Welcome to Giomoscato.com
         </h1>
         <h3> I have built 2 different web experiences!
         </h3>
         <h3> 
             <em> Dependency+ version</em> is a web experience to display my personal portfolio in a emerging technology fashion.
-             <br/>I hope to build this web experience with VR, AR , D3.js, and other unique libraries. Its purpose is to demonstrate
+             <br/>I hope to build this web experience with <code> WebVR/WebGL/ReactVR , three.js, D3.js,</code> and other unique libraries. Its purpose is to demonstrate
              my ability to work with different dependencies and API's.
         </h3>
         <h3> 
@@ -57,7 +57,7 @@ const ChoiceSite = (props) => {
              If you have a question, critisim, or concern with my code feel free to 
              <a href="https://github.com/codingcodewhilegoofin"> reach out to me.</a>
         </h2>
-        <div style={{background:"black"}}>
+        <div style={{background:"black" , padding: "5px"}}>
         
             <button 
                 onClick={vanillaClick }

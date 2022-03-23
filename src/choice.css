@@ -1,3 +1,5 @@
+
+
 .choicediv{
     background-color: #000000;
     transition:background-color 2s;
@@ -36,16 +38,123 @@ button{
     padding: 10px;
     margin: 30px;
 }
-
 p{
     color:blue;
     padding: 10px;
     margin: 0px;
 }
-
 code{
     font-family:'Exo', sans-serif;
     color: yellow;
     padding: 10px;
     margin: 0px;
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+    .choicediv{
+        background-color: #000000;
+        transition:background-color 2s;
+    }
+    .choicediv:hover{
+        background-color: #080808;
+        transition:background-color 2s;
+    }
+    h1{
+        color:red;
+        font-family: 'Bungee Hairline', cursive;
+        padding: 100px;
+        margin: 0px;
+    }
+    h2{
+        color:red;
+        font-family: 'Exo', sans-serif;
+        padding: 20px;
+        margin: 0px;
+    }
+    h3{
+        color:white;
+        font-family: 'Exo', sans-serif;
+        padding: 20px;
+        margin: 0px;
+    }
+    a:hover{
+        color:red;
+    }
+    button{
+        color:red;
+        background-color:black;
+        font-size: large;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        margin: 30px;
+    }
+    p{
+        color:blue;
+        padding: 10px;
+        margin: 0px;
+    }
+    code{
+        font-family:'Exo', sans-serif;
+        color: yellow;
+        padding: 10px;
+        margin: 0px;
+    }
+}
+
+@media screen 
+  and (min-device-width: 1200px)  
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .choicediv{
+        background-color: #000000;
+        transition:background-color 2s;
+    }
+    .choicediv:hover{
+        background-color: #080808;
+        transition:background-color 2s;
+    }
+    h1{
+        color:red;
+        font-family: 'Bungee Hairline', cursive;
+        padding: 10px;
+        margin: 0px;
+    }
+    h2{
+        color:red;
+        font-family: 'Exo', sans-serif;
+        padding: 10px;
+        margin: 0px;
+    }
+    h3{
+        color:white;
+        font-family: 'Exo', sans-serif;
+        padding: 10px;
+        margin: 0px;
+    }
+    a:hover{
+        color:red;
+    }
+    button{
+        color:red;
+        background-color:black;
+        font-size: large;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+    p{
+        color:blue;
+        padding: 10px;
+        margin: 0px;
+    }
+    code{
+        font-family:'Exo', sans-serif;
+        color: yellow;
+        padding: 5px;
+        margin: 0px;
+    }
 }

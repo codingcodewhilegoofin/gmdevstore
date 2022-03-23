@@ -85,7 +85,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * .91);
+    width: calc(var(--nav-size) * 1.15);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,12 +200,12 @@ h6{
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
-    border: 4px solid var(--bg);
+    border: 1px solid var(--bg);
     top: 0;
     background: linear-gradient(-90deg, var(--bg), var(--bg), var(--bg-accent3), var(--bg-accent2), var(--bg-red1) , var(--bg-red2), var(--bg-red3) , #ee7752, #e73c7e, var(--bg-red3), var(--bg-red2), var(--bg-red1), var(--bg-accent2), var(--bg-accent3), var(--bg), var(--bg) );
     background-size: 1000%;
     animation: bgchange 30s ease infinite;
-    
+    width:auto;
     
   }
   .navbar-2:hover
@@ -213,11 +213,10 @@ h6{
     background-color: var(--bg)
   }
   .nav-item-li{
-    width: calc(var(--nav-size) * 5.4);
+    width: calc(var(--nav-size) * 6.79 );
     display: flex;
     align-items: flex-start;
     justify-content: space-between; 
-   
   }
   
   .navbar-nav-under-text{
@@ -247,7 +246,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 1.7);
+    width: calc(var(--nav-size) * 1.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,7 +360,7 @@ h6{
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
-    border: 3px solid var(--bg);
+    border: 1px solid var(--bg);
     top: 0;
     background: linear-gradient(-90deg, var(--bg), var(--bg), var(--bg-accent3), var(--bg-accent2), var(--bg-red1) , var(--bg-red2), var(--bg-red3) , #ee7752, #e73c7e, var(--bg-red3), var(--bg-red2), var(--bg-red1), var(--bg-accent2), var(--bg-accent3), var(--bg), var(--bg) );
     background-size: 1000%;
@@ -373,7 +372,7 @@ h6{
     background-color: var(--bg)
   }
   .nav-item-li{
-    width: calc(var(--nav-size) * 10);
+    width: calc(var(--nav-size) * 11.2);
     display: flex;
     align-items: flex-start;
     justify-content: space-between; 
@@ -382,7 +381,7 @@ h6{
   
   .navbar-nav-under-text{
     color: var(--text-color);
-    font-size: 11px;
+    font-size: auto;
     font-family: 'Exo', sans-serif;
   }
 }
@@ -407,7 +406,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 2.1);
+    width: calc(var(--nav-size) * 2.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -877,38 +876,28 @@ h6{
     background-color: var(--bg-2);
     padding: 0 1rem;
     border-bottom: var(--border);
-    border: 1px solid var(--bg);
+    border: 2px solid var(--bg);
     transition: border 2s;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
-    
-    
+    top: 0;  
   }
   .navbar:hover
   {
     transition: border 10s;
-   
-    border: 1px solid #BA181B;
-   
+    border: 2px solid #BA181B;
   }
- 
-  
   .navbar-nav{
     max-width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
-    
   }
-  
   .nav-item {
     width: calc(var(--nav-size) * 5.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
   }
   .icon-button {
     --button-size: calc(var(--nav-size) * .45);
@@ -1019,29 +1008,29 @@ h6{
     height: var(--nav-size);
     padding: 0 1rem;
     border-bottom: var(--border);
-    border: 1px solid var(--bg);
+    border: 2px solid var(--bg);
     top: 0;
     background: linear-gradient(-90deg, var(--bg), var(--bg), var(--bg-accent3), var(--bg-accent2), var(--bg-red1) , var(--bg-red2), var(--bg-red3) , #ee7752, #e73c7e, var(--bg-red3), var(--bg-red2), var(--bg-red1), var(--bg-accent2), var(--bg-accent3), var(--bg), var(--bg) );
     background-size: 1000%;
     animation: bgchange 30s ease infinite;
-    
   }
   .navbar-2:hover
   {
     background-color: var(--bg);
-    border: 1px solid white;
+    border: 2px solid white;
   }
   .nav-item-li{
-    width: calc(var(--nav-size) * 35);
+    width: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between; 
+    
    
   }
   
   .navbar-nav-under-text{
     color: var(--text-color);
-    font-size: 14px;
+    font-size: auto;
     letter-spacing: .5em;
     font-family: 'Exo', sans-serif;
   }

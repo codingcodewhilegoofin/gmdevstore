@@ -1,3 +1,4 @@
+
   video {
     object-fit: cover;
     width: 100%;
@@ -113,6 +114,7 @@ p{
   }
  
   .coffeeBtn{
+    margin:5px;
     height: auto;
     width: auto;
     display:flexbox;
@@ -151,12 +153,15 @@ p{
   }
 
   .contactCT{
-    width: 100vw;
+    width: 100%;
+    padding:10px;
+    margin:5px;
     height: auto;
   }
 
   .fa-instagram{
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
     font-size: 30px;
     width: auto;
     text-align: center;
@@ -171,7 +176,8 @@ p{
     transition:ease-in-out;
   }
   .fa-linkedin{
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
     font-size: 30px;
     width: auto;
     text-align: center;
@@ -186,7 +192,8 @@ p{
     transition:ease-in-out;
   }
   .fa-twitter{
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
     font-size: 30px;
     width: auto;
     text-align: center;
@@ -318,7 +325,8 @@ p{
   }
 
   .gio-container-special {
-    padding: 100px;
+    padding:90px;
+    margin: 5px;
     height: auto;
     width:90%;
     display: flex;
@@ -435,6 +443,8 @@ p{
     font-family: 'Syne Mono', monospace;
   }
   .gio-container-3 > ul{
+    padding: 50px;
+    margin: 5px;
     color: var(--text-color);
     font-size: 20px;
     list-style-type: square;
@@ -496,7 +506,8 @@ p{
     margin: 10px;
   }
   .gio-container-4 > ul{
-    
+    padding: 50px;
+    margin: 5px;
     color: var(--text-color);
     font-size: 20px;
     list-style-type: none;
@@ -557,10 +568,11 @@ p{
     padding:20px;
   }
   
- 
+  
   /*Horizontal Responsiveness*/
   @media screen and (max-width: 960px) {
     .gio-container > h1 {
+      color: green;
       font-size: 60px;
       margin-top: auto;
     }
@@ -651,19 +663,19 @@ p{
   
   @media screen and (max-width: 768px) {
     .gio-container {
-      height: 100%;
+      height: auto;
+      width:auto;
     }
     .gio-container > h1 {
-      font-size: 30px;
+      color: var(--text-color);
+      font-size: 99%;
       margin-top: auto;
-      
     }
     .gio-container > h4 {
-      font-size: 17px;
-     
+      font-size: auto;
     }
     .gio-container > p {
-      font-size: 13.5px;
+      font-size: auto;
     }
     .btn-mobile {
       display: block;
@@ -672,21 +684,23 @@ p{
     .btn {
       width: 100%;
     }
+    .gio-container-2{
+      padding: 0px;
+      margin: 2px;
+    }
     .gio-container-2 > h1 {
-      font-size: 20px;
+      font-size:30px;
       border: 25px outset var(--bg-accent);
-
     }
     .gio-container-2 > h4 {
       font-size: 20px;
-     
     }
     .gio-container-2 > p {
-      font-size: 15px;
+      font-size: auto;
     }
     .gio-container-2 > ul{
       color: var(--text-color);
-      font-size: 15px;
+      font-size: 20px;
       list-style-type: circle;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
@@ -697,21 +711,23 @@ p{
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
+    .gio-container-3{
+      padding: 5px;
+      margin: 3px;
+    }
     .gio-container-3 > h1 {
-      font-size: 20px;
+      font-size: 30px;
       border: 25px outset var(--bg-accent);
-
     }
     .gio-container-3 > h4 {
-      font-size: 20px;
-     
+      font-size: auto;
     }
     .gio-container-3 > p {
-      font-size: 15px;
+      font-size: 20px;
     }
     .gio-container-3 > ul{
       color: var(--text-color);
-      font-size: 15px;
+      font-size: 20px;
       list-style-type: circle;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
@@ -722,17 +738,19 @@ p{
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
+    .gio-container-4{
+      padding: 2px;
+      margin: 2px;
+    }
     .gio-container-4 > h1 {
-      font-size: 20px;
+      font-size: 30px;
       border: 25px outset var(--bg-accent);
-
     }
     .gio-container-4 > h4 {
-      font-size: 20px;
-     
+      font-size: auto;
     }
     .gio-container-4 > p {
-      font-size: 15px;
+      font-size: auto;
     }
     .gio-container-4 > ul{
       color: var(--text-color);
@@ -747,17 +765,19 @@ p{
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
+    .gio-container-5{
+      padding: 2px;
+      margin: 2px;
+    }
     .gio-container-5 > h1 {
-      font-size: 20px;
+      font-size: 30px;
       border: 25px outset var(--bg-accent);
-
     }
     .gio-container-5 > h4 {
-      font-size: 20px;
-     
+      font-size: auto;
     }
     .gio-container-5 > p {
-      font-size: 15px;
+      font-size: auto;
     }
     .gio-container-5 > ul{
       color: var(--text-color);
@@ -782,8 +802,14 @@ p{
    
     
   }
+  @media screen and (max-width: 360px) {
+    .gio-container > h1 {
+      color: var(--text-color);
+      font-size: 30px;
+      margin-top: auto;
+    }
+  }
   
-
   /*Vertical Responsiveness*/
   @media screen and (max-height: 900px) {
     .gio-main {
@@ -850,6 +876,7 @@ p{
       background: linear-gradient(250deg, var(--bg-accent3) , var(--bg) , var(--bg-2));
     }
     .gio-container > h1 {
+      color: var(--text-color);
       font-size: auto;
       margin-top: auto;
     }
@@ -994,7 +1021,7 @@ p{
     }
     .gio-container {
       /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-      height: 100%;
+      height: auto;
       width:  auto;
       display: flex;
       flex-direction: column;
@@ -1002,18 +1029,15 @@ p{
       align-items: center;
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
       object-fit: contain;
-     
-      
     }
     .gio-container-2 {
-      height: 200vh;
+      height: auto;
       width:  auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       object-fit: contain;
       background: linear-gradient(45deg, var(--bg-accent3) , var(--bg) , var(--bg-2));
-      
     }
     .gio-container-3 {
       height: 200vh;
@@ -1043,7 +1067,8 @@ p{
       background: linear-gradient(250deg, var(--bg-accent3) , var(--bg) , var(--bg-2));
     }
     .gio-container > h1 {
-      font-size: 30px;
+      color: var(--text-color);
+      font-size: auto;
       margin-top: auto;
     }
     .gio-container > h4 {
@@ -1179,7 +1204,6 @@ p{
     }
     
   }
-
  
 
   @keyframes bgchange {

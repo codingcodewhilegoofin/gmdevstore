@@ -13,48 +13,52 @@ import '../../icons/instagram.svg';
 function HeaderContact() {
   return (
     <div className='gio-main'>
-      <div className='gio-container'>
-      <video src='/videos/split.mp4' autoPlay loop volume = "0.1" />
-      <h1>HOW TO CONTACT ME</h1>
-      <h4>Contact me anytime CST  </h4>
 
-      <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white" }}>
-        <h1> Social Media</h1>
-      <form action="">
+      <div className='gio-container'>
+        <video src='/videos/split.mp4' autoPlay loop volume = "0.1" />
+        <h1>HOW TO CONTACT ME</h1>
+        <h4>Contact me anytime CST  </h4>
+      </div>
+
+      <div className='gio-container-2'>
+        <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white",padding: "0px"}}>
+          <h1> Social Media</h1>
+          <form action="">
         
-        <label for="fname" style={{color: "white" }} >EMAIL:</label>
-        <br/>
-          <input type="text" value="yupimaperson101@protonmail.com" id="myInput" size= "80vw"/>
-        <br></br>
-        <br/>
+            <label for="fname" style={{color: "white" }} >EMAIL:</label>
+            <br/>
+            <input type="text" value="yupimaperson101@protonmail.com" id="myInput" size= "80vw"/>
+            <br></br>
+            <br/>
 
      
-        <a href="https://www.buymeacoffee.com/giomoscato101">
-          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
-        </a> 
-        <br/>
+            <a href="https://www.buymeacoffee.com/giomoscato101">
+             <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
+            </a> 
+            <br/>
 
-        <a href="https://www.instagram.com/giovannimoscato101/" class="fa fa-instagram"></a>
-        <br/>
-          <input type="text" value="https://www.instagram.com/giovannimoscato101/" id="myInput" size= "auto"/>
-        <br></br>
-        <br/>
+            <a href="https://www.instagram.com/giovannimoscato101/" class="fa fa-instagram"></a>
+            <br/>
+              <input type="text" value="https://www.instagram.com/giovannimoscato101/" id="myInput" size= "auto"/>
+            <br></br>
+            <br/>
 
-        <a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" class="fa fa-linkedin"></a>
-        <br/>
-          <input type="text" value="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" id="myInput" size= "auto"/>
-        <br></br>
-        <br/>
+            <a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" class="fa fa-linkedin"></a>
+            <br/>
+              <input type="text" value="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" id="myInput" size= "auto"/>
+            <br></br>
+            <br/>
 
-        <a href="https://twitter.com/GiovanniJMosca1" class="fa fa-twitter"></a>
-        <br/>
-          <input type="text" value="https://twitter.com/GiovanniJMosca1" id="myInput" size= "auto"/>
-        <br></br>
-        <br/>
+            <a href="https://twitter.com/GiovanniJMosca1" class="fa fa-twitter"></a>
+            <br/>
+              <input type="text" value="https://twitter.com/GiovanniJMosca1" id="myInput" size= "auto"/>
+            <br></br>
+            <br/>
 
-      </form>
+          </form>
+        </div>
       </div>
-    </div>
+   
 
     
     <div className="gio-container-special">
@@ -142,10 +146,10 @@ function HeaderContact() {
             
           </h3>
           </a>
-        </div>
-
     </div>
-    
+
+    </div >
+  
   );
 }
 

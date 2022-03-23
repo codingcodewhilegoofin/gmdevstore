@@ -9,9 +9,13 @@ iframe:hover {
 input{
   color: white;
   background-color: black;
+  padding: 10px;
+  margin: 10px;
 }
 
 label{
+  padding: 10px;
+  margin: 10px;
   font-size: auto;
   transition: 4s;
 }

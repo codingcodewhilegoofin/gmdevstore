@@ -39,9 +39,9 @@ const ChoiceSite = (props) => {
 
   return (
     <div className="choicediv" style={{background:"black" , textAlign:"center"}}>
-        <h1> Welcome to Giomoscato.com
+        <h1 className="choice"> Welcome to Giomoscato.com
         </h1>
-        <h3> I have built 2 different web experiences!
+        <h3 className="choice"> I have built 2 different web experiences!
         </h3>
         <h3> 
             <em> Dependency+ version</em> is a web experience to display my personal portfolio in a emerging technology fashion.

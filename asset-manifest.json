@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea582460.chunk.css",
-    "main.js": "/static/js/main.6437124a.chunk.js",
-    "main.js.map": "/static/js/main.6437124a.chunk.js.map",
+    "main.css": "/static/css/main.88b9bc04.chunk.css",
+    "main.js": "/static/js/main.bd8d82eb.chunk.js",
+    "main.js.map": "/static/js/main.bd8d82eb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c288cf69.js",
     "runtime-main.js.map": "/static/js/runtime-main.c288cf69.js.map",
     "static/js/2.bfd53594.chunk.js": "/static/js/2.bfd53594.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.110030b1.chunk.js": "/static/js/3.110030b1.chunk.js",
     "static/js/3.110030b1.chunk.js.map": "/static/js/3.110030b1.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ea582460.chunk.css.map": "/static/css/main.ea582460.chunk.css.map",
+    "static/css/main.88b9bc04.chunk.css.map": "/static/css/main.88b9bc04.chunk.css.map",
     "static/js/2.bfd53594.chunk.js.LICENSE.txt": "/static/js/2.bfd53594.chunk.js.LICENSE.txt",
     "static/media/8XcuzD.1f96aea4.png": "/static/media/8XcuzD.1f96aea4.png",
     "static/media/Bitcoin.02dcffc4.svg": "/static/media/Bitcoin.02dcffc4.svg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.c288cf69.js",
     "static/js/2.bfd53594.chunk.js",
-    "static/css/main.ea582460.chunk.css",
-    "static/js/main.6437124a.chunk.js"
+    "static/css/main.88b9bc04.chunk.css",
+    "static/js/main.bd8d82eb.chunk.js"
   ]
 }

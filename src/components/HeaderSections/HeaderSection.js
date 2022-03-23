@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from 'react';
+import React, { useState , useEffect , useParams} from 'react';
 
 import '../../App.css';
 import { Button } from '../Buttons/Button.js';
@@ -29,13 +29,15 @@ import '../PageCss/NewTable.css';
 
 function HeaderSection() {
 
-  const baseUrl = "https://swapi.dev/api/people";
+
+  const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
   const [data, setData] = useState([]);
   const [currentStatus , setStatus] = useState(false);
   let specialheader;
   let youtubesub;
   let musicToggle = false;
   let Toggle;
+  let urlToggle = false;
   if(window.innerWidth < 400) 
   {
     specialheader =   <h1></h1>;
@@ -48,6 +50,19 @@ function HeaderSection() {
   }
   
   function globalMusic() {};
+  function urlChange(){
+    urlToggle = !urlToggle;
+    if(urlToggle)
+    {
+      setBaseUrl("https://swapi.dev/api/people");
+    }
+    else
+    {
+      setBaseUrl("https://pokeapi.co/api/v2/berry");
+    }
+  }
+
+  
 
   useEffect(()=>{
     fetch(baseUrl)
@@ -77,7 +92,7 @@ function HeaderSection() {
     .catch((err) =>{
       console.log(err);
     })  
-  },[]);
+  },[baseUrl]);
 
   return (
     <div className='gio-main'>
@@ -251,8 +266,11 @@ function HeaderSection() {
       </div>
 
       <div className='gio-container-3'>
-       <h1>Polygon.io REST API</h1>
+       <h1>API Switch</h1>
        <h4>Endpoint request using vanilla JS displayed in custom table</h4>
+       <p>You can switch between endpoints using this button!</p>
+       <p><em>It may take some time to load between button presses</em></p>
+       <button onClick={urlChange}>Change API</button>
        {!currentStatus ?  <h2>Loading... </h2> : <Table data={data}/>}
       </div>
 

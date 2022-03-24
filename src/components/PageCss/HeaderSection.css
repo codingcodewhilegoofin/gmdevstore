@@ -333,7 +333,13 @@ p{
     flex-direction: column;
     align-items: center;
     object-fit: contain;
-    background-color: black;
+    background-color: rgb(255, 83, 83);
+    border: 2px solid var(--bg-accent3);
+    transition: 3s background-color;
+  }
+  .gio-container-special:hover{
+    background-color: var(--bg-2);
+    transition: 2s background-color;
   }
  
 
@@ -567,6 +573,55 @@ p{
     font-family: 'Syne Mono', monospace;
     padding:20px;
   }
+
+  .twitterframe{
+    width:30%;
+    height:59vh;
+    min-width:auto;
+    max-width:90vw; 
+    background-color: var(--bg-2);
+    transition: 2s border;
+    border: 2px solid var(--bg-accent2);
+  }
+  .twitterframe:hover{
+    background-color: var(--bg-accent2);
+    transition: 2s background-color;
+    transition: 2s border;
+    border: 2px solid var(--bg-red3);
+  }
+  
+  .tiktokframe{
+    width:36%;
+    height:77vh;
+    min-width:auto;
+    max-width:90vw;
+    background-color: var(--bg-2);
+    transition: 2s border;
+    border: 2px solid var(--bg-accent2);
+  }
+  .tiktokframe:hover{
+    background-color: var(--bg-accent2);
+    transition: 2s background-color;
+    transition: 2s border;
+    border: 2px solid var(--bg-red3);
+  }
+
+  .instaframe{
+    align-items:center;
+    display:block;
+    width:70%;
+    height:180vh;
+    background-color: var(--bg-2);
+    transition: 2s background-color;
+    transition: 2s border;
+    border: 2px solid var(--bg-accent2);
+  }
+  .instaframe:hover{
+    background-color: var(--bg-accent2);
+    transition: 2s background-color;
+    transition: 2s border;
+    border: 2px solid var(--bg-red3);
+  }
   
   
   /*Horizontal Responsiveness*/
@@ -799,9 +854,42 @@ p{
       display: flex;
       justify-content: center;
     }
-   
+    .twitterframe{
+      width:100%;
+      height:49vh;
+      min-width:auto;
+      max-width:90vw; 
+      border: 2px solid var(--bg-accent2);
+    }
+    .tiktokframe{
+      width:100%;
+      height:77vh;
+      min-width:auto;
+      max-width:90vw;
+      border: 2px solid var(--bg-accent2);
+    }
+    .instaframe{
+      align-items:center;
+      display:block;
+      width:100%;
+      height:79vh;
+      border: 2px solid var(--bg-accent2);
+    }
+    .gio-container-special {
+      padding:20px;
+      margin: 0px;
+      height: auto;
+      background-color: rgb(255, 83, 83);
+      width:90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      object-fit: contain;
+      border: 2px solid var(--bg-accent3);
+    }
     
   }
+
   @media screen and (max-width: 360px) {
     .gio-container > h1 {
       color: var(--text-color);

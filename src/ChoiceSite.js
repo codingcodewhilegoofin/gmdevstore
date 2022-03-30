@@ -1,5 +1,5 @@
 //Standard imports 
-import React, { Component , useState} from 'react';
+import React, { Component , useState, useEffect } from 'react';
 
 import './choice.css';
 
@@ -9,32 +9,9 @@ const ChoiceSite = (props) => {
     var vanilla = false;
     var toggle = false;
     
-    
-    
-
     const [siteVersion, setSiteVersion] = useState("");
     
-
-    function vanillaClick(e){
-        e.preventDefault();
-        if(dependency == false)
-        {
-            setSiteVersion("vanilla");
-            toggle = !vanilla;
-            vanilla = toggle;
-        }
-    }
-
-    function dependencyClick(e){
-        e.preventDefault();
-        if(vanilla == false)
-        {
-            toggle = !dependency;
-            dependency = toggle;
-            setSiteVersion("dependency");
-        }
-    }
-
+    
     props.func(siteVersion);
 
   return (
@@ -60,16 +37,11 @@ const ChoiceSite = (props) => {
         <div style={{background:"black" , padding: "5px"}}>
         
             <button 
-                onClick={vanillaClick }
+                onClick={() =>  setSiteVersion("vanilla")}
             >
                 GioMoscato.com Dependency+ Version 
             </button>
         
-            <button  
-                onClick={dependencyClick}
-            >
-                GioMoscato.com Vanilla Version
-            </button>
         </div>
         <br/>
     </div>

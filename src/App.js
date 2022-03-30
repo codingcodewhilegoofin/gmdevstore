@@ -17,7 +17,8 @@ function App() {
 
   return (
     <div>
-      <ChoiceSite func={pull_data}/>
+     
+      { ( siteVersion == "vanilla") ? <div><h2>Dependency + </h2><button  onClick={() =>  setSiteVersion("depedency")} style={{fontSize:'20px'}}>Back</button></div> : <ChoiceSite func={pull_data}/>  }
       { ( siteVersion == "vanilla") ? <NewSite/> : <OldSite/> }
     </div>
     

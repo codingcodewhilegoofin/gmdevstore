@@ -7,12 +7,9 @@ body
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000;
-  transition:background-color 2s;
+  
 }
-body:hover{
-  background-color: #080808;
-  transition:background-color 2s;
-}
+
 
 
 

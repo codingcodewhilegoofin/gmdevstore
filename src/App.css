@@ -2,6 +2,27 @@
   text-align: center;
 }
 
+.DrawerBox{
+  position:absolute; 
+  top:0px;
+  right: 0px;
+  left: 60px;
+  width: 19vw;
+  height: 5vh;
+  /* Center child horizontally*/
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.DrawerBoxElement{
+  
+  
+}
+
+.MuiButton-root {
+  color: #20b2aa;
+}
+
 iframe:hover {
  color:black;
 }
@@ -39,7 +60,15 @@ h6{
   color: purple;
 }
 
-
+#canvas-container{
+  width: 100vw;
+  height: 100vh;
+}
+#bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 
 @media screen and (max-height: 460px){

@@ -1,6 +1,6 @@
 //Standard imports 
 import React, { Component , useState} from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link , Routes} from "react-router-dom";
 import { CSSTransition } from 'react-transition-group';
 
 //Custom imports 
@@ -112,6 +112,7 @@ function OldSite() {
     
      
       {/*Routes  */}
+     
      <Route exact path="/" component={HomePage} />
      <Route path="/about" component={AboutPage} />
      <Route path="/contact" component={ContactPage} />
@@ -128,7 +129,9 @@ function OldSite() {
      return null;
      }}/>
      <Route path="/cstrack" component={Cstrack} />
+    
     </div>
+  
 
     </HashRouter>
   );

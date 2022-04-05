@@ -29,7 +29,8 @@ function Box(props) {
       onClick={(event) => click(!clicked)}
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}>
-      <boxGeometry args={[1, 1, 1]} />
+      <boxGeometry args={clicked ? [1, 1, 1] : [5, 5, 1] } />
+      {hovered ?  (<boxGeometry args={clicked ? [2, 3, 2] : [4, 3, 3] } />) :  (<sphereGeometry args={clicked ? [2,8,2]:[4]}/>) }
       <meshNormalMaterial color={hovered ? 'hotpink' : 'orange'} />
     </mesh>
   )

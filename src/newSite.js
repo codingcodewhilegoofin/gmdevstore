@@ -27,8 +27,8 @@ function NewSite() {
                 <MapControls/>
                 <ambientLight intensity={2} />
                 <directionalLight color="red" position={[0, 0, 5]} />
-                <Box position={[1, 1, -5]} />
-                <Box position={[-2, 1, -20]} />
+                <Box position={[1, 0, -10]} />
+                <Box position={[1, -50, -30]} />
             </Canvas>
         </div>
     );

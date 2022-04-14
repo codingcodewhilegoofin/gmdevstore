@@ -5,12 +5,13 @@ import React, { Component , useState} from 'react';
 import Button from '@mui/material/Button';
 import { ThemeProvider, createTheme, } from '@mui/material/styles';
 
-
 // Local imports
 import './App.css';
 import OldSite from './OldSite.js';
 import NewSite from './NewSite.js';
 import ChoiceSite from './ChoiceSite.js';
+import DrawerMenu from '../src/components/Drawer/DrawerMenu';
+
 
 
 
@@ -23,14 +24,12 @@ function App() {
     setSiteVersion(data);
   }
 
-  
-
   //onClick={() =>  setSiteVersion("depedency")} style={{fontSize:'20px'}}
   //<Button variant="outlined" color="error">Error</Button>
   return (
     <div>
-      { ( siteVersion == "vanilla") ? <div style={{ padding:'0px', backgroundColor:'#242A36'}}> <Button variant="outlined" size='small' fullWidth={true}  color="error" onClick={() =>  setSiteVersion("depedency")}> Turn off Dependency+ mode </Button> </div> : <ChoiceSite func={pull_data}/>  }
-      { ( siteVersion == "vanilla") ? <NewSite/> : <OldSite/> }
+      { ( siteVersion === "vanilla") ? <div style={{ padding:'5px', backgroundColor:'#242A36',textAlign:'center'}}> <DrawerMenu/> </div> : <ChoiceSite func={pull_data}/>  }
+      { ( siteVersion === "vanilla") ? <NewSite/> : <OldSite/> }
     </div>
     
   );

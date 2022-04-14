@@ -39,7 +39,7 @@ button{
     margin: 30px;
 }
 p{
-    color:blue;
+    color:rgb(255, 255, 255);
     padding: 10px;
     margin: 0px;
 }
@@ -93,7 +93,7 @@ code{
         margin: 30px;
     }
     p{
-        color:blue;
+        color:rgb(255, 255, 255);
         padding: 10px;
         margin: 0px;
     }

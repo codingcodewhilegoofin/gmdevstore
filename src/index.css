@@ -81,7 +81,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 1.15);
+    width: calc(var(--nav-size) * .95);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +209,7 @@ h6{
     background-color: var(--bg)
   }
   .nav-item-li{
-    width: calc(var(--nav-size) * 6.79 );
+    width: calc(var(--nav-size) * 5.5 );
     display: flex;
     align-items: flex-start;
     justify-content: space-between; 

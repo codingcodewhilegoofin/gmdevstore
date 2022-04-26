@@ -40,10 +40,7 @@ label{
   font-size: auto;
   transition: 4s;
 }
-label:hover{
-  transition: 1s;
-  font-size: 40px;
-}
+
 
 
 input[type=text] {

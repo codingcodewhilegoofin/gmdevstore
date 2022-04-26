@@ -37,7 +37,7 @@ export const CrudTable = props =>{
                     <input className="specialinput" type="text" name="MostRecentUpdate" required="required" placeholder="MRU" />
                     <input className="specialinput" type="text" name="UpcomingUpdates" required="required" placeholder="Upcoming" />
                     <input className="specialinput" type="text" name="Priority" required="required" placeholder="Priority" />
-                    <button type="submit"> CREATE </button>
+                    <button  style={{color:'red'}}   type="submit"> CREATE </button>
                 </form>
             </div>
         </div>

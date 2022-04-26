@@ -12,130 +12,153 @@ import co from '../../icons/CO.png';
 function HeaderAbout() {
   return (
     <div className='gio-main'>
-
+      
       <div className='gio-container'>
-      <video src='/videos/invert.mp4' autoPlay volume = "0.1"/>
-      <br/>
-      <h4>ABOUT ME : Skills & information</h4>
-      <p> Graduate with BS of Computer Science from Northern Illinois University on 12/12/21.<br/>
-        <br/> Emphasis in Computational Software and <a href="#minor">minor in Mathematics</a>.
-      <br/>
-      <br/>
-          NIU focused on the understanding of the standards, 
-          data structures,<br/> & mathematical reasoning behind computer science applications. 
-      </p>
-      <p> I have a range of experience in all listed languages and technologies. I am most comfortable with the C/Java family but can adapt pretty easily.
-      </p>
+
+      
+
+        <div className="gio-container" >
+          <h4>ABOUT ME : Skills & information</h4>
+          <video src='/videos/invert.mp4' autoPlay volume="0.1" />
+          <p>
+            Graduate BS of Computer Science from Northern Illinois University
+          </p>
+          <p>
+            Emphasis in Computational Software and
+            <a href="#minor" style={{color: 'white',padding: '5px'}}>
+              minor in Mathematics
+            </a>.
+          </p>
+
+          <p>
+            I have a range of experience in all listed languages and technologies. 
+          </p>
+        </div>
+
       </div>
 
       <div className='gio-container-2'>
-
-      <br/>
-      
-
-        <h1>LANGUAGES: </h1>
-
-        <ul>
-
-        <br/>
         
-          <label style={{color: 'red'}}> Programming Languages ( Compiled ): </label>
-          <br/>
-          <br/>
+        <h4 >LANGUAGES: </h4>
+       
+       
+        <ul>
+        <div className="end-div" >
+          <h3 style={{ color: 'red' }}> Programming Languages - Compiled</h3>
+          </div>
+
+          <div className="gio-container" >
           <li>C / C++ / C# :</li>
-            <ul>
-            <br/>
-              <li>My first programming language. Plenty of coding projects to view on my website</li>
-            </ul>
-  
-          <br></br>
-  
+          <ul>
+            <li> My first programming language</li>
+          </ul>
+        
+
           <li>JAVA / LaTeX :
             <ul>
-              
+
               <li>Some experience</li>
             </ul>
           </li>
 
-        <br></br>
-
+          
           <li>ASSIST ASSEMBLY ( INTEL ):
             <ul>
               <li>Some experience </li>
             </ul>
           </li>
 
-        <br></br>
+          </div>
+          <br></br>
 
-        <label style={{color: 'red'}}> Scripting Languages ( Interpreted ) : </label>
+          <div className="end-div" >
+          <h3 style={{ color: 'red' }}> Scripting Languages - Interpreted</h3>
+          </div>
 
-        <li>JS, JSX, Python, Ruby, PHP, Bash, PShell:
-          <ul>
-              <li>Some experience</li>
-          </ul>
-        </li>
-
-        <br></br>
-
-        <label style={{color: 'red'}}> Markdown Languages : </label>
-          <li>HTML, CSS, Markdown:
+          <div className="gio-container" >
+          <li>JS, JSX, Python, Ruby, PHP, Bash, PShell:
             <ul>
               <li>Some experience</li>
             </ul>
           </li>
 
-        <br/>
-        <label style={{color: 'red'}}> Procedural Languages ( Relational DB ) : </label>
-        <li> MySQL / SQL:
-          <ul>
-            <br/>
+          </div>
+
+          <br></br>
+
+          <div className="end-div" >
+          <h3 style={{ color: 'red' }}> Markdown Languages </h3>
+          </div>
+
+          <div className="gio-container" >
+          <li>HTML, CSS, Markdown:
+            <ul>
+              <li>Some experience</li>
+            </ul>
+          </li>
+          </div>
+
+          <br />
+
+          <div className="end-div" >
+          <h3 style={{ color: 'red' }}> Procedural Languages</h3>
+          </div>
+
+          <div className="gio-container" >
+          <li> MySQL / SQL:
+            <ul>
+              <br />
               <li>Queried/Created databases during my CodeOrange internship through SQL.</li>
-          </ul>
-        </li>
+            </ul>
+          </li>
+          </div>
 
-        <br></br>
+          <br></br>
 
-        <label style={{color: 'red'}}>  Environments: </label>
-        <li> UNIX / BASH / LINUX:
-          <ul>
-            <br/>
+          <div className="end-div" >
+          <h3 style={{ color: 'red' }}> Environments</h3>
+          </div>
+
+          <div className="gio-container" >
+          <li> UNIX / BASH / LINUX:
+            <ul>
+              <br />
               <li>Experience with a CLI, sys commands, and OS api's </li>
-          </ul>
-        </li>
-        <br/>
-  
+            </ul>
+          </li>
+          </div>
         </ul>
-
-        
+       
 
       </div>
 
       <div className='gio-container-3'>
-        
-       
 
-        <h1> WEB DEV Experience 
-        </h1>
+      <h4> Web Dev Experience </h4>
 
-       
-        
+      
         <ul>
-        <br/>
-        <li>FRONTEND TECHNOLOGIES / FRAMEWORKS:</li>
-        <br/>
+
+          <div className="end-div" >
+          <h3 style={{ color: 'red' }}> FRONTEND TECHNOLOGIES / FRAMEWORKS</h3>
+          </div>
+         
+          <div className="gio-container" >
           <ul>
-              <li>ReactJS</li>
-              <li>RubyonRails</li>
-              <li>Standard Markdown</li>
+            <li>ReactJS</li>
+            <li>RubyonRails</li>
+            <li>Standard Markdown</li>
           </ul>
-  
-        <br></br>
-        <br></br>
-        <br></br>
-  
-        <li>BACKEND TECHNOLOGIES:
-          <ul>
-            <br></br>
+          </div>
+
+          <br></br>
+
+          <div className="end-div" >
+          <h3 style={{ color: 'red' }}> BACKEND TECHNOLOGIES</h3>
+          </div>
+
+          <div className="gio-container" >
+            <ul>
               <li>Ruby</li>
               <li>NodeJS</li>
               <li>Flask</li>
@@ -143,208 +166,248 @@ function HeaderAbout() {
               <li>ExpressJS</li>
               <li>Springboot</li>
               <li>Postman/Insomia</li>
-          </ul>
-        </li>
-        <br/>
+            </ul>
+          </div>
+         
+          <br/>
 
-        <li>DATABASE / CLOUD SERVICES
-          <ul>
-            <br></br>
+          <div className="end-div" >
+          <h3 style={{ color: 'red' }}> DATABASE / CLOUD SERVICES</h3>
+          </div>
+
+          <div className="gio-container" >
+            <ul>
               <li>MongoDB</li>
               <li>H2Hibernate</li>
               <li>AWS</li>
               <li>PCF</li>
-          </ul>
-        </li>
-        <br/>
-
+            </ul>
+          </div>
+  
         </ul>
+       
+
       </div>
 
       <div className='gio-container-4'>
 
-       
-
-        <h1>CODE/PACKAGE MANAGEMENT: </h1>
-
-       
-        <ul>
-        <br/>
+        <h4>CODE/PACKAGE MANAGMMENT</h4>
         
-        <li>GITHUB/GIT:</li>
-          <ol>
-              <li>Github add, commit , push cycle</li>
-              <br/>
-              <li>Branch management / Issue handling / AGILE methodology </li>
-              <br/>
-              <li>Githubpages</li>
-          </ol>
-          <br/>
-
-        </ul>
-  
-     
         <ul>
-        <br/>
-  
-        <li>NPM / GRADLE :</li>
+          
+          <div className="end-div" >
+          <li>GITHUB/GIT:</li>
+          </div>
+
+          <div className="gio-container" >
           <ol>
-              <li>Update , install , and manage dev dependencies/packages and scripts</li>
-              <br/>
-              <li>Directory management for packages in different servers </li>
+            <li>Github add, commit , push cycle</li>
+            
+            <li>Branch management / Issue handling / AGILE methodology </li>
+            
+            <li>Githubpages</li>
           </ol>
-          <br/>
+          </div>
+       
         </ul>
 
 
         <ul>
-        <br/>
+          <br />
+          
+          <div className="end-div" >
+          <li>NPM / GRADLE</li>
+          </div>
 
+          <div className="gio-container" >
+          <ol>
+            <li>Update , install , and manage dev dependencies/packages and scripts</li>
+           
+            <li>Directory management for packages in different servers </li>
+          </ol>
+          </div>
+          
+        </ul>
+
+
+        <ul>
+         
+          <div className="end-div" >
           <li>DOCKER:</li>
-          <ul>
-              <li>Adding a dockerfile, to containerize a project</li>
-          </ul>
+          </div>
 
-          <br/>
+          <div className="gio-container" >
+          <ul>
+            <li>Adding a dockerfile, to containerize a project</li>
+          </ul>
+          </div>
 
         </ul>
 
 
-    
+
       </div>
 
-        <div className='gio-container-5'>
-        <h1>What was Code Orange?(DFS)  </h1>
+      <div className='gio-container-5'>
+
+        <h4>What was code orange ( DFS ): </h4>
+
+        <div className="gio-container" >
         <p>
-            Tech-savvy juniors and seniors were hired by<br/> Discover and are being paid to work on and help develop new Discover technologies in the areas of mobile-software development, 
-            <br></br>web-application coding, <br/>blue-tooth development and person-to-person payment systems  
+          Tech-savvy juniors and seniors were hired by. 
+          Discover and are being paid to work on and help develop new Discover technologies in the areas of mobile-software development,
+          web-application coding, blue-tooth development and person-to-person payment systems
         </p>
 
-        <br></br>
-       
+      
         <p>
-              During the summer of 2020 I participated in the code_orange program at NIU.<br></br> 
-              <br></br>I was on a team tasked with developing a <br/> Full -stack website to host a user statistics dash board for the program. Unfortunately the program was cancelled due to COVID-19.
-              <br></br> 
-              <br></br>Since DFS is a financial company we were not allowed to save any work from this internship <br/> and all I have to show is a few articles referring to it. ( link bellow )
+          During the summer of 2020 I participated in the code_orange program at NIU.
+          I was on a team tasked with developing a Full -stack website to host a user statistics dash board for the program. Unfortunately the program was cancelled due to COVID-19.
+          Since DFS is a financial company we were not allowed to save any work from this internship  and all I have to show is a few articles referring to it. ( link bellow )
         </p>
-
-        <a className='special-link' href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
-          <h4 style={{color: 'purple', backgroundColor: 'black'}}><i> NIU code_orange program description </i></h4>
-        </a>
-
-        
-        <a className='special-link' href="https://www.mystateline.com/news/niu-students-get-real-world-experience-developing-technology-for-discover/1495852453/">
-          
-          <h4 style={{color: 'purple', backgroundColor: 'black'}}><i> Article about the program </i></h4>
-        </a>
-
-        <img src={co} alt={"Code Orange logo"} className="img-2" />
-
-        
         </div>
 
-        <div className='gio-container-2'>
+        <div className="gio-container-3" >
+        <a  href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
+          <h4 style={{ color: 'purple', backgroundColor: 'black' }}><i> NIU code_orange program description </i></h4>
+        </a>
 
-        <h1>Additional Experience </h1>
-        
+
+        <a  href="https://www.mystateline.com/news/niu-students-get-real-world-experience-developing-technology-for-discover/1495852453/">
+
+          <h4 style={{ color: 'purple', backgroundColor: 'black' }}><i> Article about the program </i></h4>
+        </a>
+
+        <img src={co} alt={"Code Orange logo"}  />
+
+        </div>
+      </div>
+
+      <div className='gio-container-2'>
+
+        <h4>Additional Experience </h4>
+
         <ul>
-          <br/>
+         
+
+          <div className="end-div" >
+          <li>Advanced Programming:</li>
+          </div>
+
+          <div className="gio-container" >
+          <ul>
+            <li>Some experience in <br />Multi-Threading,<br />Concurrent programs,<br />
+              Andriod applications,<br /> Semaphores/Deadlock solutions.</li>
+          </ul>
+
+          </div>
+
+
+          <div className="end-div" >
+          <li>MLH - MajorLeaugeHacking</li>
+          </div>
+
+          <div className="gio-container" >
+          <ul>
+            <li>Attended 5 hackathons.<br /> Joined 1 international team ( India )</li>
+          </ul>
+
+          </div>
+
+          <div className="end-div" >
+          <li>Game Dev</li>
+          </div>
+
+          <div className="gio-container" >
+            
+          <ul>
+            <li>Some experience in<br /> game design & development in Unity,<br /> OpenGL Api,<br /> and Google Cardboard VR  </li>
+          </ul>
+          </div>
+
+
         
-        <label style={{color: 'red'}}>Advanced Programming:</label>
+
+          <div className="end-div" >
+          <li>Theoretical Experience</li>
+          </div>
+
+          <div className="gio-container" >
           <ul>
-              <li>Some experience in <br/>Multi-Threading,<br/>Concurrent programs,<br/>
-               Andriod applications,<br/> Semaphores/Deadlock solutions.</li>
+            <li>Some experience with<br /> Chomsky's Hierarchy/PDA/TuringMachines,<br /> Normalization & FloatingPointError,<br /> Efficiency & Runtime</li>
           </ul>
-  
-        <br></br>
-  
-        <label style={{color: 'red'}}> MLH ( Major Leauge Hacking): </label>
+          </div>
+
+         
+
+          <div className="end-div" >
+          <li>Paradigms</li>
+          </div>
+
+          <div className="gio-container" >
           <ul>
-              <li>Attended 5 hackathons.<br/> Joined 1 international team ( India )</li>
+            <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
+            <li> Experience in Declarative: Database   </li>
           </ul>
-       
+          </div>
 
-        <br></br>
+          <div className="end-div" >
+          <li>Crypto - Web3</li>
+          </div>
 
-        <label style={{color: 'red'}}>Game Development / Unity : </label>
+          <div className="gio-container" >
           <ul>
-              <li>Some experience in<br/> game design & development in Unity,<br/> OpenGL Api,<br/> and Google Cardboard VR  </li>
+            <li> Understanding of theoretical basics of blockchain technology  </li>
           </ul>
+          </div>
 
-
-        <br></br>
-
-        <label style={{color: 'red'}}>Theoretical Computer Science: </label>
+          <div className="end-div" >
+          <li>More to come...</li>
+          </div>
           <ul>
-              <li>Some experience with<br/> Chomsky's Hierarchy/PDA/TuringMachines,<br/> Normalization & FloatingPointError,<br/> Efficiency & Runtime</li>
+           
           </ul>
-       
 
-        <br></br>
-
-        <label style={{color: 'red'}}>Paradigms:</label>
-          <ul>
-              <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
-              <li> Experience in Declarative: Database   </li>
-          </ul>
-       
-
-        <br></br>
-
-        <label style={{color: 'red'}}> Crypto/FinTech: </label>
-          <ul>
-              <li> Understanding of theoretical basics of blockchain technology  </li>
-          </ul>
-       
-
-        <br></br>
-
-        <label style={{color: 'red'}}> </label>
-          <ul>
-              <li>more to come...... </li>
-              <br/>
-          </ul>
-        
-  
         </ul>
-        <br/>
-
+        <br />
       </div>
 
 
       <div className='gio-container-4'>
 
-       
+        <h4>Minor in mathematics </h4>
 
-        <h1>MINOR IN MATHEMATICS</h1>
-
-       
         <ul>
-        <br/>
-        
-        <a id="minor"><li>GENERAL MATH EXPERIENCE</li></a>
-        <br/>
+          <br />
+
+          <div className="end-div" >
+          <a style={{color: 'white'}} id="minor"><li>GENERAL MATH EXPERIENCE</li></a>
+          </div>
+          
+          <div className="gio-container" >
           <ol>
-              <li>Calculus 1, 2, & 3</li>
-              <br/>
-              <li>Discrete mathematics, Statistics, Model building</li>
-              <br/>
-              <li>Numerical Linear Algebra & Linear Programming </li>
+            <li>Calculus 1, 2, & 3</li>
+            
+            <li>Discrete mathematics, Statistics, Model building</li>
+            
+            <li>Numerical Linear Algebra & Linear Programming </li>
           </ol>
-          <br/>
+          </div>
 
         </ul>
-        <br/>
-  
+        
       </div>
-      
+
 
       <div className="end-div">
-          <a href="https://github.com/codingcodewhilegoofin/giowebsite">
-          <h2> My website technology pipeline / stack ? ✨ </h2>
-          
-          <ol>
+        <a href="https://github.com/codingcodewhilegoofin/giowebsite">
+          <h2 style={{
+          color: 'white'
+        }}> My website technology pipeline / stack ? ✨ </h2>
+
+          <ol style={{
+          color: 'white'
+        }}>
             <li> Bash/Linux/Windows( CLI/OS )</li>
             <li> VScode( IDE )</li>
             <li> ReactJS </li>
@@ -355,26 +418,34 @@ function HeaderAbout() {
             <li> React Router & Few other standard libraries</li>
             <li> Github ( source control ) </li>
           </ol>
-          <h3> Please consider collaborating
-            <br/> or donating!
-            <br></br>🔥 
-            
-          </h3>
-          </a>
-        </div>
+          <h3 style={{
+          color: 'white'
+        }}> Please consider collaborating
+            <br /> or donating!
+            <br></br>🔥
 
-        <div className="end-div">
-          <a href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/">
-          <h2> Having trouble viewing my website ? 💔 </h2>
-          
-          <h5> I tried to make my website desktop and mobile friendly as possible</h5>
-         
-          <h3> If you're having issues on mobile try switching to desktop view! 
-            <br></br>I'm currently working to fix these bugs sorry! 
-            
           </h3>
-          </a>
-        </div>
+        </a>
+      </div>
+
+      <div className="end-div">
+        <a href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/">
+          <h2 style={{
+          color: 'white'
+        }}> Having trouble viewing my website ? 💔 </h2>
+
+          <h5 style={{
+          color: 'white'
+        }}> I tried to make my website desktop and mobile friendly as possible</h5>
+
+          <h3 style={{
+          color: 'white'
+        }}> If you're having issues on mobile try switching to desktop view!
+            <br></br>I'm currently working to fix these bugs sorry!
+
+          </h3>
+        </a>
+      </div>
 
 
     </div>

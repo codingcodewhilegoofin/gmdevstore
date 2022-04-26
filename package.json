@@ -21,6 +21,7 @@
     "react-spring": "^9.4.4",
     "react-transition-group": "^4.4.2",
     "sass": "^1.49.11",
+    "state-pool": "^0.7.1",
     "three": "^0.139.2",
     "three-stdlib": "^2.9.1",
     "web-vitals": "^0.2.4",

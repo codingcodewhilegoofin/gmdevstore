@@ -22,12 +22,12 @@ function HeaderContact() {
 
       <div className='gio-container-2'>
         <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white",padding: "0px"}}>
-          <h1> Social Media</h1>
+          <h1 style={{color: "white" }}> Social Media</h1>
           <form action="">
         
             <label for="fname" style={{color: "white" }} >EMAIL:</label>
             <br/>
-            <input type="text" value="yupimaperson101@protonmail.com" id="myInput" size= "80vw"/>
+            <input style={{color: "white" }} type="text" value="giovannijmoscato@gmail.com" id="myInput" size= "80vw"/>
             <br></br>
             <br/>
 
@@ -39,19 +39,19 @@ function HeaderContact() {
 
             <a href="https://www.instagram.com/giovannimoscato101/" class="fa fa-instagram"></a>
             <br/>
-              <input type="text" value="https://www.instagram.com/giovannimoscato101/" id="myInput" size= "auto"/>
+              <input style={{color: "white" }} type="text" value="https://www.instagram.com/giovannimoscato101/" id="myInput" size= "auto"/>
             <br></br>
             <br/>
 
             <a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" class="fa fa-linkedin"></a>
             <br/>
-              <input type="text" value="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" id="myInput" size= "auto"/>
+              <input style={{color: "white" }} type="text" value="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" id="myInput" size= "auto"/>
             <br></br>
             <br/>
 
             <a href="https://twitter.com/GiovanniJMosca1" class="fa fa-twitter"></a>
             <br/>
-              <input type="text" value="https://twitter.com/GiovanniJMosca1" id="myInput" size= "auto"/>
+              <input style={{color: "white" }} type="text" value="https://twitter.com/GiovanniJMosca1" id="myInput" size= "auto"/>
             <br></br>
             <br/>
 

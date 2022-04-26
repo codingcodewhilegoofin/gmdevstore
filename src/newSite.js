@@ -6,10 +6,10 @@ import { MapControls } from '@react-three/drei'
 
 
 
-
-
-
 function NewSite() {
+
+   let theme = false;
+
     return(
         /*
         
@@ -29,7 +29,7 @@ function NewSite() {
         */
         <div id="canvas-container" >
             <Canvas
-                style={{background:'#1C2222'}}
+                style={ !theme ? {background:"#1C2222"} : {background:"#7e98a2"}}
             > // 1: set up a Scene and a Camera
                 <MapControls/>
                 <ambientLight intensity={5} />

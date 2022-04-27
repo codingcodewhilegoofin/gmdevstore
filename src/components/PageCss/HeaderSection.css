@@ -7,9 +7,6 @@
     z-index: -1;
   }
  
-  li{
-    margin:5px;
-  }
 
 
   :root {
@@ -42,14 +39,10 @@
     height: auto;
   }
   .temp-fix{
-   
-   
     display:none;
   }
   
-h4{
-  color: var(--text-color);
-}
+
 
 p{
   font-size: auto;
@@ -721,11 +714,12 @@ p{
     }
     .gio-container > h1 {
       color: var(--text-color);
-      font-size: 35px;
+      font-size: 20px;
       margin-top: auto;
     }
     .gio-container > h4 {
       font-size: auto;
+      color: red;
     }
     .gio-container > p {
       font-size: auto;
@@ -735,26 +729,26 @@ p{
       text-decoration: none;
     }
     .btn {
-      width: 100%;
+      width: 90%;
     }
     .gio-container-2{
       padding: 0px;
-      margin: 2px;
+      margin: 1px;
     }
     .gio-container-2 > h1 {
-      font-size:30px;
-      border: 25px outset var(--bg-accent);
+      font-size:25px;
+      border: 2px outset var(--bg-accent);
     }
     .gio-container-2 > h4 {
-      font-size: auto;
+      font-size: 20px;
     }
     .gio-container-2 > p {
-      font-size: auto;
+      font-size: 15px;
     }
     .gio-container-2 > ul{
       color: var(--text-color);
       font-size: 15px;
-      padding: 30px;
+      padding: 10px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -765,23 +759,22 @@ p{
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-3{
-      padding: 5px;
-      margin: 3px;
+      padding: 1px;
     }
     .gio-container-3 > h1 {
-      font-size: 100%;
-      border: 25px outset var(--bg-accent);
+      font-size: auto;
+      border: 1px outset var(--bg-accent);
     }
     .gio-container-3 > h4 {
-      font-size:30px;
+      font-size: 20px;
     }
     .gio-container-3 > p {
-      font-size: auto;
+      font-size: 15px;
     }
     .gio-container-3 > ul{
       color: var(--text-color);
       font-size: 15px;
-      padding: 30px;
+      padding: 10px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -792,23 +785,22 @@ p{
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-4{
-      padding: 2px;
-      margin: 2px;
+      padding: 1px;
     }
     .gio-container-4 > h1 {
-      font-size: 100%;
-      border: 25px outset var(--bg-accent);
+      font-size: auto;
+      border: 1px outset var(--bg-accent);
     }
     .gio-container-4 > h4 {
-      font-size:30px;
+      font-size: 20px;
     }
     .gio-container-4 > p {
-      font-size: auto;
+      font-size: 15px;
     }
     .gio-container-4 > ul{
       color: var(--text-color);
       font-size: 15px;
-      padding: 30px;
+      padding: 10px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -819,23 +811,24 @@ p{
         'Lucida Sans', Arial, sans-serif;
     }
     .gio-container-5{
-      padding: 2px;
-      margin: 2px;
+      padding: 1px;
+     
     }
     .gio-container-5 > h1 {
       font-size: auto;
-      border: 25px outset var(--bg-accent);
+      border: 1px outset var(--bg-accent);
     }
     .gio-container-5 > h4 {
-      font-size: auto;
+      font-size: 20px;
     }
     .gio-container-5 > p {
-      font-size: auto;
+      font-size: 15px;
+      color: red;
     }
     .gio-container-5 > ul{
       color: var(--text-color);
       font-size: 15px;
-      padding: 30px;
+      padding: 10px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
     }
@@ -849,7 +842,7 @@ p{
       font-size: auto;
       height: auto;
       width: auto;
-      border: 1px solid rgb(147, 14, 255);
+      border: 1px solid rgb(118, 14, 255);
       display: flex;
       justify-content: center;
     }
@@ -857,22 +850,22 @@ p{
       width:100%;
       height:49vh;
       min-width:auto;
-      max-width:90vw; 
-      border: 2px solid var(--bg-accent2);
+      max-width:99vw; 
+      border: 1px solid var(--bg-accent2);
     }
     .tiktokframe{
       width:100%;
-      height:77vh;
+      height:80vh;
       min-width:auto;
-      max-width:90vw;
-      border: 2px solid var(--bg-accent2);
+      max-width:99vw;
+      border: 1px solid var(--bg-accent2);
     }
     .instaframe{
       align-items:center;
       display:block;
       width:100%;
       height:79vh;
-      border: 2px solid var(--bg-accent2);
+      border: 1px solid var(--bg-accent2);
     }
     .gio-container-special {
       padding:5px;
@@ -892,7 +885,7 @@ p{
   @media screen and (max-width: 360px) {
     .gio-container > h1 {
       color: var(--text-color);
-       font-size: auto;
+      font-size: 20px;
       margin-top: auto;
     }
   }

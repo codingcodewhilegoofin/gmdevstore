@@ -16,8 +16,8 @@ function HeaderContact() {
 
       <div className='gio-container'>
         <video src='/videos/split.mp4' autoPlay loop volume = "0.1" />
-        <h1>HOW TO CONTACT ME</h1>
-        <h4>Contact me anytime CST  </h4>
+        <h1 style={{color: "white" }}>HOW TO CONTACT ME</h1>
+        <h4 style={{color: "red" }}>Contact me anytime CST  </h4>
       </div>
 
       <div className='gio-container-2'>
@@ -73,43 +73,43 @@ function HeaderContact() {
 
     <div className='gio-container-2'>
       <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white" }}>
-        <h1> Developer Media </h1>
+        <h1 style={{color: "white" }}> Developer Media </h1>
         <form action="">
         
-        <label for="fname" style={{color: "white" }} >Github:</label>
+        <label  for="fname" style={{color: "white" }} >Github:</label>
         <br/>
-          <input type="text" value="https://github.com/codingcodewhilegoofin/giowebsite/settings/pages" id="myInput" size= "80vw"/>
+          <input style={{color: "white" }} type="text" value="https://github.com/codingcodewhilegoofin/giowebsite/settings/pages" id="myInput" size= "80vw"/>
         <br></br>
         <br/>
 
-        <label for="pin"  style={{color: "red" }}>StackOF:</label>
+        <label for="pin"  style={{color: "white" }} >StackOF:</label>
         <br/>
-          <input type="text" value="https://stackoverflow.com/users/14115291/giovanni-moscato" id="myInput" size= "auto"/>
+          <input style={{color: "white" }} type="text" value="https://stackoverflow.com/users/14115291/giovanni-moscato" id="myInput" size= "auto"/>
         <br></br>
         <br/>
 
-        <label for="pin"  style={{color: "pink" }}>Devpost:</label>
+        <label for="pin"  style={{color: "white" }} >Devpost:</label>
         <br/>
-          <input type="text" value="https://devpost.com/codingcodewhilegoofin?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" id="myInput" size= "auto"/>
+          <input style={{color: "white" }} type="text" value="https://devpost.com/codingcodewhilegoofin?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" id="myInput" size= "auto"/>
         <br></br>
         <br/>
 
-        <label for="fname" style={{color: "blue" }}>HackerRank:</label>
+        <label for="fname" style={{color: "white" }} >HackerRank:</label>
         <br/>
-          <input type="text" value="https://www.hackerrank.com/Yupimaperson101?hr_r=1" id="myInput" size= "auto"/>
+          <input style={{color: "white" }} type="text" value="https://www.hackerrank.com/Yupimaperson101?hr_r=1" id="myInput" size= "auto"/>
         <br></br>
         <br/>
 
     
 
-        <label for="fname" style={{color: "#1DA1F2" }}>BuyMeACoffe:</label>
+        <label for="fname" style={{color: "white" }} >BuyMeACoffe:</label>
         <br/>
-          <input type="text" value="https://www.buymeacoffee.com/giomoscato101" id="myInput" size= "auto"/>
+          <input style={{color: "white" }} type="text" value="https://www.buymeacoffee.com/giomoscato101" id="myInput" size= "auto"/>
         <br></br>
         <br/>
 
         <a href="https://www.buymeacoffee.com/giomoscato101">
-          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
+          <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
         </a> 
         <br/>
 
@@ -127,9 +127,9 @@ function HeaderContact() {
       
     <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
-          <h2> My website technology pipeline / stack ? ✨ </h2>
+          <h2 style={{color: "white" }}> My website technology pipeline / stack ? ✨ </h2>
           
-          <ol>
+          <ol style={{color: "white" }}>
             <li> Bash/Linux/Windows( CLI/OS )</li>
             <li> VScode( IDE )</li>
             <li> ReactJS </li>
@@ -140,7 +140,7 @@ function HeaderContact() {
             <li> React Router & Few other standard libraries</li>
             <li> Github ( source control ) </li>
           </ol>
-          <h3> Please consider collaborating
+          <h3 style={{color: "white" }}> Please consider collaborating
             <br/> or donating!
             <br></br>🔥 
             

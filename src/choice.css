@@ -33,13 +33,16 @@ a:hover{
     font-size:auto;
 }
 button{
-    color:red;
-    background-color:black;
+    color:rgb(255, 50, 50);
+    background-color:rgb(22, 22, 22);
     font-size: large;
     height: auto;
     width: auto;
     padding: 10px;
     margin: 30px;
+}
+button:hover{
+    background-color:rgb(158, 21, 255);
 }
 p{
     color:rgb(255, 255, 255);

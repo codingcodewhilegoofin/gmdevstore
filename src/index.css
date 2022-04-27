@@ -10,8 +10,6 @@ body
   
 }
 
-
-
 code 
 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -81,7 +79,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * .95);
+    width: calc(var(--nav-size) * .90);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +207,7 @@ h6{
     background-color: var(--bg)
   }
   .nav-item-li{
-    width: calc(var(--nav-size) * 5.5 );
+    width: calc(var(--nav-size) * 5.4 );
     display: flex;
     align-items: flex-start;
     justify-content: space-between; 
@@ -217,7 +215,7 @@ h6{
   
   .navbar-nav-under-text{
     color: var(--text-color);
-    font-size: 9px;
+    font-size: auto;
     font-family: 'Exo', sans-serif;
   }
 }

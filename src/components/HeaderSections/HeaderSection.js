@@ -238,15 +238,15 @@ function HeaderSection() {
 
       <div className='gio-container-2'>
 
-        <div className='gio-container'>
+        
         <h2 style={{color: 'red', fontSize:'auto'}}>STORE (Musical Credits) </h2>
-        <div className='gio-container'>
-          <h4 style={{color: 'white', fontSize:'20px'}}>
+        
+          <p style={{color: 'white', fontSize:'20px'}}>
             I created the soundtrack for the demo game
             <em> STORE</em> created by
             <em> FellHawk Studios </em>
-          </h4>
-        </div>
+          </p>
+        
         <a style={{
           color: "red",
           fontFamily: "Exo",
@@ -276,8 +276,7 @@ function HeaderSection() {
             }}
           />
         </div>
-        </div>
-
+   
       </div>
       
       <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase" }}>API's</h1>

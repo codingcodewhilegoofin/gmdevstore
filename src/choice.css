@@ -1,4 +1,34 @@
-
+:root {
+    --bg: #101730ff;
+    --bg-accent: #1B2524ff;
+    --bg-accent2: #243232ff;
+    --bg-accent3: #2E5252ff;
+    --text-color: #AEBEBEff;
+    --bg-red1: #EE0527ff;
+    --bg-red2: #E0012Aff;
+    --bg-red3: #E5383B;
+    --nav-size: 60px;
+    --border-radius: 8px;
+    --speed: 500ms;
+    --bg-2: #3F646Dff;
+    --oxford-blue: #101730ff;
+    --deep-space-sparkle: #3F646Dff;
+    --dark-slate-gray: #2E5252ff;
+    --outer-space-crayola: #243232ff;
+    --dark-jungle-green: #1B2524ff;
+    /* CSS HEX */
+    --medium-candy-apple-red: #E0012Aff;
+    --red-pigment: #EE0527ff;
+    --old-mauve: #5C3145ff;
+    --dark-purple: #140B2Dff;
+    --space-cadet: #212C50ff;
+    /* CSS HEX */
+    --cg-blue: #19819Fff;
+    --outer-space-crayola: #263434ff;
+    --sonic-silver: #787170ff;
+    --ash-gray: #AEBEBEff;
+    --blue-sapphire: #025B79ff;
+  }
 
 .choicediv{
     background-color: #000000;
@@ -33,8 +63,8 @@ a:hover{
     font-size:auto;
 }
 button{
-    color:rgb(255, 50, 50);
-    background-color:rgb(22, 22, 22);
+    color:var(--text-color);
+    background-color:var(--bg);
     font-size: large;
     height: auto;
     width: auto;
@@ -42,14 +72,9 @@ button{
     margin: 30px;
 }
 button:hover{
-    background-color:rgb(158, 21, 255);
+    background-color:var(--bg-accent2);
 }
-p{
-    color:rgb(255, 255, 255);
-    padding: 10px;
-    margin: 0px;
-    font-size:auto;
-}
+
 code{
     font-family:'Exo', sans-serif;
     color: yellow;

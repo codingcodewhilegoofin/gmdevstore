@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #1B2524ff;
 }
 
 .DrawerBox{
@@ -54,7 +55,7 @@ input[type=text]:focus-visible {
 }
 
 h6{
-  color: purple;
+  color: #1B2524ff;
 }
 
 #canvas-container{
@@ -72,7 +73,7 @@ h6{
 @media screen and (max-height: 460px){
   .App {
     text-align: center;
-    background-color: black;
+    background-color: #1B2524ff;
   
   }
 }
@@ -81,7 +82,7 @@ h6{
 @media screen and (max-height: 360px){
   .App {
     text-align: center;
-    background-color: black;
+    background-color: #1B2524ff;
   
   }
 }
@@ -89,7 +90,7 @@ h6{
 @media screen and (max-width: 360px){
   .App {
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #1B2524ff;
   
   }
   #canvas-container{

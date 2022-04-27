@@ -25,9 +25,9 @@ function HeaderAbout() {
           </p>
           <p>
             Emphasis in Computational Software and
-            <a href="#minor" style={{color: 'white',padding: '5px'}}>
+            <a href="minor" style={{color: 'red',padding: '5px'}}>
               minor in Mathematics
-            </a>.
+            </a>
           </p>
 
           <p>
@@ -43,17 +43,17 @@ function HeaderAbout() {
        
        
         <ul>
-        <div className="end-div" >
-          <h3 style={{ color: 'red' }}> Programming Languages - Compiled</h3>
+        <div className="end-div2" >
+          <h3 style={{ color: '#AEBEBEff' }}> Programming Languages - Compiled</h3>
           </div>
 
-          <div className="gio-container" >
+          <div >
           <li>C / C++ / C# :</li>
           <ul>
             <li> My first programming language</li>
           </ul>
         
-
+          <br></br>
           <li>JAVA / LaTeX :
             <ul>
 
@@ -61,7 +61,7 @@ function HeaderAbout() {
             </ul>
           </li>
 
-          
+          <br></br>
           <li>ASSIST ASSEMBLY ( INTEL ):
             <ul>
               <li>Some experience </li>
@@ -69,13 +69,13 @@ function HeaderAbout() {
           </li>
 
           </div>
-          <br></br>
+          
 
-          <div className="end-div" >
-          <h3 style={{ color: 'red' }}> Scripting Languages - Interpreted</h3>
+          <div className="end-div3" >
+          <h3 style={{ color: '#AEBEBEff' }}> Scripting Languages - Interpreted</h3>
           </div>
 
-          <div className="gio-container" >
+          <div  >
           <li>JS, JSX, Python, Ruby, PHP, Bash, PShell:
             <ul>
               <li>Some experience</li>
@@ -86,11 +86,11 @@ function HeaderAbout() {
 
           <br></br>
 
-          <div className="end-div" >
-          <h3 style={{ color: 'red' }}> Markdown Languages </h3>
+          <div className="end-div2" >
+          <h3 style={{ color: '#AEBEBEff' }}> Markdown Languages </h3>
           </div>
 
-          <div className="gio-container" >
+          <div  >
           <li>HTML, CSS, Markdown:
             <ul>
               <li>Some experience</li>
@@ -100,11 +100,11 @@ function HeaderAbout() {
 
           <br />
 
-          <div className="end-div" >
-          <h3 style={{ color: 'red' }}> Procedural Languages</h3>
+          <div className="end-div3" >
+          <h3 style={{ color: '#AEBEBEff' }}> Procedural Languages</h3>
           </div>
 
-          <div className="gio-container" >
+          <div  >
           <li> MySQL / SQL:
             <ul>
               <br />
@@ -115,11 +115,11 @@ function HeaderAbout() {
 
           <br></br>
 
-          <div className="end-div" >
-          <h3 style={{ color: 'red' }}> Environments</h3>
+          <div className="end-div2" >
+          <h3 style={{ color: '#AEBEBEff' }}> Environments</h3>
           </div>
 
-          <div className="gio-container" >
+          <div  >
           <li> UNIX / BASH / LINUX:
             <ul>
               <br />

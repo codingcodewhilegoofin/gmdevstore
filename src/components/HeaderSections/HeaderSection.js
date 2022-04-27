@@ -14,6 +14,10 @@ import safteycheck from '../../icons/safteycheck.png';
 import GioBanner from '../../icons/Giobanner.png';
 import GioLogo from '../../icons/GioLogo2.png';
 import STORE from '../../icons/8XcuzD.png';
+import bg1 from '../../icons/bg1.png';
+import bg2 from '../../icons/bg2.png';
+import bg3 from '../../icons/bg3.png';
+import bg4 from '../../icons/bg4.png';
 
 import { Link } from "react-router-dom";
 import { ReactComponent as Bitcoinsymb } from '../../icons/Bitcoin.svg';
@@ -95,11 +99,11 @@ function HeaderSection() {
 
   return (
     <div className='gio-main'>
-      <div className='gio-container'>
-        <video src='/videos/space.mp4' autoPlay loop muted />
+      <div className='gio-container' >
+        
         
         <h1>🥳 Welcome to giomoscato.com Vanilla Version</h1>
-        
+
         <h4>Who is Giovanni Moscato? </h4>
 
         <div className="gio-container-2" >
@@ -109,27 +113,29 @@ function HeaderSection() {
           <p>Junior Software Developer at BMO Harris Bank</p>
           <p>Range of experience in programming & design aspects</p>
         </div>
+        
+      </div>
 
-        <div className='gio-container'>
-        <div className='hero-btns'>
+      <div  >
+     
           <Button
             className='btns'
             buttonStyle='btn--outline'
             buttonSize='btn--large'
           >
-            DOWNLOAD MY RESUME 📝
+             
           </Button>
-        </div>
-        </div>
-      
+        
+
       </div>
-     
 
       <div className="end-div" >
 
         {specialheader}
         <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='90%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
       </div>
+
+     
 
       <h1 
         className="gradient-text" 
@@ -314,7 +320,7 @@ function HeaderSection() {
 
 
 
-      <div className="end-div">
+      <div className="end-div2">
         {youtubesub}
         <div className="end-div">
           <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default">
@@ -402,7 +408,7 @@ function HeaderSection() {
       <div className="end-div">
         <a href="https://github.com/codingcodewhilegoofin/giowebsite">
           <h2 style={{
-            color: 'white'
+            color: '#E0012Aff'
           }}> My website technology pipeline / stack ? ✨ </h2>
 
           <ol style={{
@@ -428,13 +434,13 @@ function HeaderSection() {
         </a>
       </div>
 
-      <div className="end-div">
+      <div className="end-div2">
         <a
 
           href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
         >
           <h2 style={{
-            color: 'white'
+            color: '#E0012Aff'
           }}>
             Having trouble viewing my website ? 💔
           </h2>
@@ -447,20 +453,20 @@ function HeaderSection() {
           </h5>
           <h3
             style={{
-              color: 'white'
+              color: '#E0012Aff'
             }}>
             Major Update! : Most mobile / scaling issues should be fixed
             <br />
             <br />
             <a href="https://www.buymeacoffee.com/giomoscato101">
-              <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=7F00FF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
-            </a>
+             <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=243232ff&font_colour=ffffff&font_family=Poppins&outline_colour=243232ff&coffee_colour=243232ff"/>
+            </a> 
           </h3>
         </a>
       </div>
 
 
-      <div className="end-div">
+      <div className="end-div3">
 
         <h1 style={{
           color: 'white'
@@ -472,6 +478,16 @@ function HeaderSection() {
           </Link>
         </h1>
 
+      </div>
+
+      <div className='gio-container-2'>
+      <h2 style={{
+            color: '#E0012Aff',
+            fontSize: 'large'
+          }}> AI genereated art, the theme for this site </h2>
+      <div className="end-div2" >
+        <img src={bg1} width='100%' height='auto' />
+      </div>
       </div>
 
     </div>

@@ -20,6 +20,7 @@ import bg2 from '../../icons/bg2.png';
 import bg3 from '../../icons/bg3.png';
 import bg4 from '../../icons/bg4.png';
 import Arrayinfo from '../../icons/Arrayinfo.png';
+import Sp from '../../icons/SP.png';
 
 import { Link } from "react-router-dom";
 import { ReactComponent as Bitcoinsymb } from '../../icons/Bitcoin.svg';
@@ -153,9 +154,17 @@ function HeaderSection() {
       
       </div>
 
-      <div className="end-div2">
+      <div className="end-div2" style={{ padding:'10px'}}>
         <Link to="/Dsa"> 
+          <h2> DSA Interactive Showcase </h2>
           <img src={Arrayinfo} width='100%' height='auto' style={{padding:'5px'}} />
+        </Link>
+      </div>
+
+      <div className="end-div" style={{ padding:'10px'}}>
+        <Link to="/Spotify"> 
+          <h2> Spotify Integration </h2>
+          <img src={Sp} width='100%' height='auto' style={{padding:'5px'}} />
         </Link>
       </div>
 
@@ -167,6 +176,7 @@ function HeaderSection() {
           textFillColor: "transparent", 
           textTransform: "uppercase",
           fontSize: "auto",
+          padding:'50px',
         }}>
           Detail of relevant information & skills
       </h1>

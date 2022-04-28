@@ -8,6 +8,7 @@ import MagicButton from './components/Buttons/MagicButton/magicButton.js'
 import HomePage from './components/Pages/HomePage';
 import Cstrack from './components/Pages/Cstrack';
 import Dsa from './components/Pages/Dsa';
+import Spotify from './components/Pages/Spotify';
 import AboutPage from './components/Pages/AboutPage';
 import ContactPage from './components/Pages/ContactPage';
 import './App.css';
@@ -131,6 +132,7 @@ function OldSite() {
      }}/>
      <Route path="/cstrack" component={Cstrack} />
      <Route path="/dsa" component={Dsa} />
+     <Route path="/spotify" component={Spotify} />
     
     </div>
   

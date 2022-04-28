@@ -14,10 +14,12 @@ import safteycheck from '../../icons/safteycheck.png';
 import GioBanner from '../../icons/Giobanner.png';
 import GioLogo from '../../icons/GioLogo2.png';
 import STORE from '../../icons/8XcuzD.png';
+import Info from '../../icons/info1.png';
 import bg1 from '../../icons/bg1.png';
 import bg2 from '../../icons/bg2.png';
 import bg3 from '../../icons/bg3.png';
 import bg4 from '../../icons/bg4.png';
+import Arrayinfo from '../../icons/Arrayinfo.png';
 
 import { Link } from "react-router-dom";
 import { ReactComponent as Bitcoinsymb } from '../../icons/Bitcoin.svg';
@@ -40,6 +42,7 @@ function HeaderSection() {
   const [data, setData] = useState([]);
   const [currentStatus, setStatus] = useState(false);
   let specialheader;
+  let specialheader2;
   let logoSection;
   let youtubesub;
   let musicToggle = false;
@@ -47,13 +50,15 @@ function HeaderSection() {
   let urlToggle = false;
   if (window.innerWidth < 600) {
     specialheader = <></>;
+    specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='90%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     logoSection = <></>;
     youtubesub = <></>;
   }
   else {
-    specialheader = <h1 style={{color:'white'}}>Feel free to join my discord.</h1>;
-    youtubesub = <h1 style={{color:'white'}}>SUB TO MY YOUTUBE?</h1>;
-    logoSection = <div className="end-div" ><img src={GioLogo} width='100%' height='auto' /></div>;
+    specialheader = <h2 style={{color:'white'}}>Feel free to join my discord</h2>;
+    specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='50%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
+    youtubesub = <h2 style={{color:'white'}}>SUB TO MY YOUTUBE?</h2>;
+    logoSection = <div className="end-div" ><img src={GioLogo} width='50%' height='auto' style={{padding:'5px'}} /></div>;
   }
 
   function globalMusic() { };
@@ -100,42 +105,59 @@ function HeaderSection() {
   return (
     <div className='gio-main'>
       <div className='gio-container' >
-        
-        
+      
         <h1>🥳 Welcome to giomoscato.com Vanilla Version</h1>
-
-        <h4>Who is Giovanni Moscato? </h4>
-
-        <div className="gio-container-2" >
-          <p> Started programming about 4 years ago</p>
-          <p>Graduated from <em>Northern Illinois University</em>.</p>
-          <p>B.S in computer science& minor in mathematics.</p>
-          <p>Junior Software Developer at BMO Harris Bank</p>
-          <p>Range of experience in programming & design aspects</p>
-        </div>
+        <img src={Info} width='100%' height='auto' style={{padding:'5px'}} />
         
       </div>
 
-      <div  >
-     
+      <div style={{padding:'5px'}}>
           <Button
             className='btns'
             buttonStyle='btn--outline'
             buttonSize='btn--large'
-          >
-             
-          </Button>
-        
-
+          ></Button>
       </div>
 
-      <div className="end-div" >
+
+      <div className='gio-container-2'>
 
         {specialheader}
         <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='90%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
       </div>
+      
 
-     
+      <div className='gio-container-2'>
+      <h2 style={{
+            color: '#E0012Aff',
+            fontSize: 'large',
+            fontWeight: 'bold',
+          }}> My other websites ! </h2>
+      
+        {specialheader2}
+
+        <h2 style={{
+            color: '#E0012Aff',
+            fontSize: 'large',
+            fontWeight: 'bold',
+          }}> I am working on a ReactNative app which hosts other projects with a team ! </h2>
+
+        <a style={{
+            color: '#E0012Aff',
+            fontSize: 'large',
+          }}
+          href="https://fullstackingdevelopment.com/"
+        >
+            fullstackingdevelopment.com
+        </a>
+      
+      </div>
+
+      <div className="end-div2">
+        <Link to="/Dsa"> 
+          <img src={Arrayinfo} width='100%' height='auto' style={{padding:'5px'}} />
+        </Link>
+      </div>
 
       <h1 
         className="gradient-text" 
@@ -171,22 +193,21 @@ function HeaderSection() {
 
       <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase" }}>Feel free to contact me!</h1>
 
-      <div className="end-div" >
-        {logoSection}
-        <img src={GioBanner} width='100%' height='auto' />
-      </div>
 
       <div className='gio-container-3'>
 
-        <p>
-          Besides github and linkedin I want to be open and available to anyone who wants to chat!
-          All other relevant contact information is available through the "email icon" or contact page.
-        </p>
-        <h4> Best way to reach me? : </h4>
+        {logoSection}
         <ul>
           <li><a style={{ color: 'white'}} href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm</a></li>
           <li> giovannijmoscato@gmail.com </li>
         </ul>
+        <p>
+          Besides github and linkedin I want to be open and available to anyone who wants to chat!
+        </p>
+        <p>All other relevant contact information is available through the "email icon" or contact page.</p>
+        <img src={GioBanner} width='90%' height='auto' style={{padding:'5px'}} />
+        <h4> Best ways to reach me </h4>
+        
       </div>
 
       <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase" }}>Personal Projects</h1>
@@ -317,7 +338,6 @@ function HeaderSection() {
       </div>
         {!currentStatus ? <h2>Loading... </h2> : <GioTable data={data} />}
       </div>
-
 
 
       <div className="end-div2">
@@ -464,7 +484,6 @@ function HeaderSection() {
           </h3>
         </a>
       </div>
-
 
       <div className="end-div3">
 

@@ -48,7 +48,7 @@ const ChoiceSite = (props) => {
                   fontSize: "auto"}}>
         
             <button
-                style={{color:'#AEBEBEff'}} 
+                style={{color:'#AEBEBEff',backgroundColor: '#101730ff'}} 
                 onClick={() =>  setSiteVersion("vanilla")}
             >
                 GioMoscato.com Dependency+ Version 

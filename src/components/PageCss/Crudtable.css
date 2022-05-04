@@ -1,13 +1,13 @@
 
 input.specialinput{
-  color: #0B090A;
-  background-color: #7251B5;
+  color: #140B2Dff;
+  background-color: #025B79ff;
   border: none;
 }
 
 input.specialinput:hover{
-  color: black;
-  background-color: #D2B7E5;
+  color: #140B2Dff;
+  background-color: #5C3145ff;
   border: none;
 }
 
@@ -17,7 +17,7 @@ input.specialinput[type=text], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: block;
-  border: 1px solid #C19EE0;
+  border: 1px solid #5C3145ff;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -33,12 +33,12 @@ input.specialinput[type=submit] {
 }
 
 input.specialinput[type=submit]:hover {
-  background-color: #DAC3E8;
+  background-color: #5C3145ff;
 }
 
 div.containercrud {
   border-radius: 5px;
-  background-color: #DEC9E9;
+ 
   padding: 20px;
   margin: auto;
   width: 80vw;

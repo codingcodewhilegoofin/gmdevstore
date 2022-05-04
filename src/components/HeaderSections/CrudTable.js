@@ -29,7 +29,7 @@ export const CrudTable = props =>{
                     )}
                 </tbody>
             </table>
-            <h2>Create entry in table</h2>
+            <h2 style={{ color: 'white' }}>Create entry in table</h2>
 
             <div className="containercrud">
                 <form >
@@ -37,7 +37,7 @@ export const CrudTable = props =>{
                     <input className="specialinput" type="text" name="MostRecentUpdate" required="required" placeholder="MRU" />
                     <input className="specialinput" type="text" name="UpcomingUpdates" required="required" placeholder="Upcoming" />
                     <input className="specialinput" type="text" name="Priority" required="required" placeholder="Priority" />
-                    <button  style={{color:'red'}}   type="submit"> CREATE </button>
+                    <button  style={{color:'#AEBEBEff',backgroundColor:'#101730ff'}}   type="submit"> CREATE </button>
                 </form>
             </div>
         </div>

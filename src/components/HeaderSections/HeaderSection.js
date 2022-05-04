@@ -19,6 +19,7 @@ import bg1 from '../../icons/bg1.png';
 import bg2 from '../../icons/bg2.png';
 import bg3 from '../../icons/bg3.png';
 import bg4 from '../../icons/bg4.png';
+import bg5 from '../../icons/bg5.png';
 import Arrayinfo from '../../icons/Arrayinfo.png';
 import Sp from '../../icons/SP.png';
 
@@ -112,7 +113,7 @@ function HeaderSection() {
         
       </div>
 
-      <div style={{padding:'5px'}}>
+      <div style={{padding:'20px'}}>
           <Button
             className='btns'
             buttonStyle='btn--outline'
@@ -156,14 +157,22 @@ function HeaderSection() {
 
       <div className="end-div2" style={{ padding:'10px'}}>
         <Link to="/Dsa"> 
-          <h2> DSA Interactive Showcase </h2>
+          <h2 style={{
+          color: '#E0012Aff',
+          fontSize: 'large',
+          backgroundColor: '#101730ff'
+        }} > DSA Interactive Showcase </h2>
           <img src={Arrayinfo} width='100%' height='auto' style={{padding:'5px'}} />
         </Link>
       </div>
 
       <div className="end-div" style={{ padding:'10px'}}>
         <Link to="/Spotify"> 
-          <h2> Spotify Integration </h2>
+          <h2 style={{
+          color: '#E0012Aff',
+          fontSize: 'large',
+          backgroundColor: '#101730ff'
+        }}> Spotify Integration </h2>
           <img src={Sp} width='100%' height='auto' style={{padding:'5px'}} />
         </Link>
       </div>
@@ -201,7 +210,7 @@ function HeaderSection() {
         </ul>
       </div>
 
-      <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase" }}>Feel free to contact me!</h1>
+      <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase",padding:'50px', }}>Feel free to contact me!</h1>
 
 
       <div className='gio-container-3'>
@@ -220,7 +229,7 @@ function HeaderSection() {
         
       </div>
 
-      <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase" }}>Personal Projects</h1>
+      <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase",padding:'50px', }}>Personal Projects</h1>
 
       <div className='gio-container-4'>
 
@@ -251,7 +260,7 @@ function HeaderSection() {
         </p>
       </div>
 
-      <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase" }}>Video Game Experience</h1>
+      <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase",padding:'50px', }}>Video Game Experience</h1>
 
       <div className='gio-container-5'>
         <h4>Pink Balls video game Unity & C#</h4>
@@ -316,7 +325,8 @@ function HeaderSection() {
    
       </div>
       
-      <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase" }}>API's</h1>
+      <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase",padding:'50px', }}>API's</h1>
+      
       <div className='gio-container-3'>
       <div className='gio-container-2'>
         <h4>API Switch</h4>
@@ -324,7 +334,7 @@ function HeaderSection() {
         <p>You can switch between endpoints using this button!</p>
         <p><em>It may take some time to load between button presses</em></p>
         <button
-          style={{ color: 'red' }}
+          style={{ color: '#AEBEBEff',backgroundColor: '#101730ff'}}
           onClick={urlChange}>
           Change API
         </button>
@@ -483,7 +493,8 @@ function HeaderSection() {
           </h5>
           <h3
             style={{
-              color: '#E0012Aff'
+              color: '#E0012Aff',
+              backgroundColor: '#101730ff'
             }}>
             Major Update! : Most mobile / scaling issues should be fixed
             <br />
@@ -510,13 +521,29 @@ function HeaderSection() {
       </div>
 
       <div className='gio-container-2'>
-      <h2 style={{
-            color: '#E0012Aff',
-            fontSize: 'large'
-          }}> AI genereated art, the theme for this site </h2>
-      <div className="end-div2" >
-        <img src={bg1} width='100%' height='auto' />
-      </div>
+        <h3 style={{
+          color: '#E0012Aff',
+          fontSize: 'large',
+          backgroundColor: '#101730ff'
+        }}> AI genereated art, the theme for this site </h3>
+       
+          <iframe src='https://app.wombo.art/'  allowfullscreen="yes" width="100%" height="500px" frameborder="0">
+          </iframe>
+        <a><h3 style={{
+          color: '#E0012Aff',
+          fontSize: 'large',
+          backgroundColor: '#101730ff'
+        }}> https://app.wombo.art/ </h3></a>
+        <div style={{
+          padding:'5px'
+        }}className="end-div2" >
+          <img src={bg1} width='100%' height='auto' />
+        </div>
+        <div style={{
+          padding:'5px'
+        }}className="end-div2" >
+          <img src={bg5} width='100%' height='auto' />
+        </div>
       </div>
 
     </div>

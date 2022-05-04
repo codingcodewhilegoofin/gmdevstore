@@ -1,4 +1,4 @@
-import '../PageCss/NewTable.css';
+import '../PageCss/GioTable.css';
 
 
 export const Table = props =>{
@@ -8,7 +8,7 @@ export const Table = props =>{
 
     return(
         <div className="tablethingdiv">
-            <table className="NewTable" cellPadding="10" cellSpacing="1">
+            <table className="GioTable" cellPadding="10" cellSpacing="1">
                 <thead>
                     <tr>
                         {columns.map( (heading) => <th>{heading}</th>)}

@@ -117,7 +117,7 @@ p{
     text-align: center;
     border: 1px solid var(--bg-1);
     transition: border 3s;
-    background-image: url("/src//icons//bg2.png");
+    background-image: url("/src//icons//bg5.png");
     background-position:top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size:cover; 

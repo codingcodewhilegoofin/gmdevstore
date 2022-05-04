@@ -109,12 +109,12 @@ const Spotify = () => {
         </li>
         </ul>
 
-        <ul style={{ color: '#AEBEBEff' }}>
-          <li> My artists name:{spotifyResonse.name}</li>
+        {!currentStatus2 ? <h2>Loading... </h2> : <ul style={{ color: '#AEBEBEff' }}>
+          <li> My artists name: {spotifyResonse.name}</li>
           <li>{spotifyResonse.external_urls.spotify}</li>
           <li> Account type: {spotifyResonse.type}</li>
           <li> Current Total Followers: {spotifyResonse.followers.total}</li>
-        </ul>
+        </ul>}
 
        
 

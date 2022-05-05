@@ -108,7 +108,7 @@ function HeaderSection() {
     <div className='gio-main'>
       <div className='gio-container' >
       
-        <h1>🥳 Welcome to giomoscato.com Vanilla Version</h1>
+        <h1 style={{color:'#E0012Aff'}}>🥳 Welcome to giomoscato.com Vanilla Version</h1>
         <img src={Info} width='100%' height='auto' style={{padding:'5px'}} />
         
       </div>
@@ -527,7 +527,7 @@ function HeaderSection() {
           backgroundColor: '#101730ff'
         }}> AI genereated art, the theme for this site </h3>
        
-          <iframe src='https://app.wombo.art/'  allowfullscreen="yes" width="100%" height="500px" frameborder="0">
+          <iframe src='https://app.wombo.art/'   allowfullscreen="yes" width="99%" height="600px" frameborder="0">
           </iframe>
         <a><h3 style={{
           color: '#E0012Aff',

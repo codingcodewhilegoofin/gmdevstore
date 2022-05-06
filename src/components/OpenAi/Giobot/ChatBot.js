@@ -4,7 +4,7 @@ import Spotify from '../../Pages/Spotify.js'
 
 
 const configuration = new Configuration({
-    apiKey:'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',
+    apiKey:'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',
 });
 
 const openai = new OpenAIApi(configuration);

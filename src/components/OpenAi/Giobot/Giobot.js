@@ -1,12 +1,12 @@
 import React,{ useState } from 'react';
 import ChatBotCard from './ChatBotCard';
 
-const message1 = 'Hello';
-const message2 = 'Hello2';
+const message1 = 'Let AI help you learn about me, search "Do they know about frameworks"';
+const message2 = 'Let AI help you learn about me, search "What scripting languages do they know"';
 
 const Giobot = () => {
     
-    const [chatBotStatus,setChatBotStatus] = useState(false)
+    const [chatBotStatus,setChatBotStatus] = useState(true)
 
     const chatbothandle = () => {
         var x = document.getElementById("chatbot");
@@ -30,10 +30,11 @@ const Giobot = () => {
         >
             <button 
             style={{
-                color:'#E0012Aff',
+                color:'#025B79ff',
                 backgroundColor:'transparent',
                 border:'none',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                textTransform: 'uppercase',
             }} 
             onClick={chatbothandle}>
                GioBot: helps you find information about gio
@@ -46,7 +47,7 @@ const Giobot = () => {
                 backgroundColor: '#3F646Dff',
                 border: '1px solid #2E5252ff',
                 width: '100%',
-                height: '100vh',
+                height: '100%',
             }}>
             
             {chatBotStatus ? 

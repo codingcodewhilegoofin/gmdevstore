@@ -2,9 +2,9 @@ import React,{ useState , useEffect } from 'react';
 import {OpenAIApi, Configuration} from 'openai';
 import Spotify from '../../Pages/Spotify.js'
 
-
+//Add key here 
 const configuration = new Configuration({
-    apiKey:'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',
+    apiKey:'',
 });
 
 const openai = new OpenAIApi(configuration);

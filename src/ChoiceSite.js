@@ -5,6 +5,22 @@ import './choice.css';
 
 
 const ChoiceSite = (props) => {
+
+    const [mainMenu, setMainMenu] = useState(true)
+
+    const menuHandle = () => {
+        var x = document.getElementById("mainmenu");
+        if (x.style.display === "none") 
+        {
+            x.style.display = "block";
+            setMainMenu(!mainMenu)
+        }
+        else 
+        {
+            x.style.display = "none";
+        }
+    }
+
     var dependency = false;
     var vanilla = false;
     var toggle = false;
@@ -16,6 +32,19 @@ const ChoiceSite = (props) => {
 
   return (
     <div className="choicediv" style={{background:"rgb(36, 42, 54)" , textAlign:"center"}}>
+        <button
+              style={{
+                  color: '#025B79ff',
+                  backgroundColor: 'transparent',
+                  border: 'none',
+                  cursor: 'pointer',
+                  textTransform: 'uppercase',
+              }}
+              onClick={menuHandle}>
+              Dependency+ Version
+          </button>
+    <div  id="mainmenu" className="choicediv" style={{background:"rgb(36, 42, 54)" , textAlign:"center"}}>
+          
           <h1
               style={{
                   color: "#AEBEBEff",
@@ -48,7 +77,11 @@ const ChoiceSite = (props) => {
                   fontSize: "auto"}}>
         
             <button
-                style={{color:'#AEBEBEff',backgroundColor: '#101730ff'}} 
+                style={{
+                    color:'#AEBEBEff',
+                    backgroundColor: '#101730ff',
+                    cursor: 'pointer',
+                }} 
                 onClick={() =>  setSiteVersion("vanilla")}
             >
                 GioMoscato.com Dependency+ Version 
@@ -56,6 +89,7 @@ const ChoiceSite = (props) => {
         
         </div>
         <br/>
+    </div>
     </div>
   );
 }

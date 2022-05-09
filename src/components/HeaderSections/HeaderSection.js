@@ -134,7 +134,7 @@ function HeaderSection() {
       <div id="mainBody" className='gio-main'>
         <div className='gio-container' >
 
-          <h1 style={{ color: '#E0012Aff' }}>🥳 Welcome to giomoscato.com Vanilla Version</h1>
+          <h1 style={{ color: '#19819Fff' }}>🥳 Welcome to giomoscato.com Vanilla Version</h1>
           <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
 
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Buttons/Button.css';
 import { Link } from 'react-router-dom';
-import '../Resume/GMResProf.pdf';
+
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
@@ -22,7 +22,7 @@ export const Button = ({
 
   return (
     
-    <a href="https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/GMResProf.pdf" className={`btn ${checkButtonStyle} ${checkButtonSize}`} download="GMResProf.pdf">
+    <a href="https://github.com/codingcodewhilegoofin/giowebsite" className={`btn ${checkButtonStyle} ${checkButtonSize}`} download="">
       <img  alt="Giovanni Moscato Resume 📝"/>
     </a>
   );

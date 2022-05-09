@@ -291,9 +291,10 @@ p{
     transition: border 3s;
   }
   .gio-container > h1 {
-    background: var(--bg-accent);
-    color: var(--bg-red1);
+    background: transparent;
+    color: var(--ash-gray);
     font-size: 50px;
+    font-weight: 900;
     margin-top: auto;
     padding: 10px;
     font-family: 'Bungee Hairline', cursive;

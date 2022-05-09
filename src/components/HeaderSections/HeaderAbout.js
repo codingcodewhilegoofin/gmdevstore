@@ -12,12 +12,9 @@ import co from '../../icons/CO.png';
 function HeaderAbout() {
   return (
     <div className='gio-main'>
-      
       <div className='gio-container'>
 
-      
-
-        <div className="gio-container" >
+        <div className="gio-container-2" >
           <h4>ABOUT ME : Skills & information</h4>
           <video src='/videos/invert.mp4' autoPlay volume="0.1" />
           <p>
@@ -139,25 +136,25 @@ function HeaderAbout() {
       
         <ul>
 
-          <div className="end-div" >
-          <h3 style={{ color: 'red' }}> FRONTEND TECHNOLOGIES / FRAMEWORKS</h3>
+          <div className="end-div3" >
+          <h3 style={{ color: '#AEBEBEff' }}> FRONTEND TECHNOLOGIES / FRAMEWORKS</h3>
           </div>
          
-          <div className="gio-container" >
+         
           <ul>
             <li>ReactJS</li>
             <li>RubyonRails</li>
             <li>Standard Markdown</li>
           </ul>
-          </div>
+         
 
           <br></br>
 
-          <div className="end-div" >
-          <h3 style={{ color: 'red' }}> BACKEND TECHNOLOGIES</h3>
+          <div className="end-div2" >
+          <h3 style={{ color: '#AEBEBEff' }}> BACKEND TECHNOLOGIES</h3>
           </div>
 
-          <div className="gio-container" >
+          
             <ul>
               <li>Ruby</li>
               <li>NodeJS</li>
@@ -167,22 +164,22 @@ function HeaderAbout() {
               <li>Springboot</li>
               <li>Postman/Insomia</li>
             </ul>
-          </div>
+         
          
           <br/>
 
-          <div className="end-div" >
-          <h3 style={{ color: 'red' }}> DATABASE / CLOUD SERVICES</h3>
+          <div className="end-div3" >
+          <h3 style={{ color: '#AEBEBEff' }}> DATABASE / CLOUD SERVICES</h3>
           </div>
 
-          <div className="gio-container" >
+        
             <ul>
               <li>MongoDB</li>
               <li>H2Hibernate</li>
               <li>AWS</li>
               <li>PCF</li>
             </ul>
-          </div>
+         
   
         </ul>
        
@@ -195,11 +192,11 @@ function HeaderAbout() {
         
         <ul>
           
-          <div className="end-div" >
-          <li>GITHUB/GIT:</li>
+          <div className="end-div2" >
+          <li >GITHUB/GIT:</li>
           </div>
 
-          <div className="gio-container" >
+          
           <ol>
             <li>Github add, commit , push cycle</li>
             
@@ -207,40 +204,39 @@ function HeaderAbout() {
             
             <li>Githubpages</li>
           </ol>
-          </div>
+          
        
         </ul>
 
 
-        <ul>
+        <ul >
           <br />
           
-          <div className="end-div" >
+          <div className="end-div3" >
           <li>NPM / GRADLE</li>
           </div>
 
-          <div className="gio-container" >
+         
           <ol>
             <li>Update , install , and manage dev dependencies/packages and scripts</li>
            
             <li>Directory management for packages in different servers </li>
           </ol>
-          </div>
+         
           
         </ul>
 
 
         <ul>
          
-          <div className="end-div" >
+          <div className="end-div2" >
           <li>DOCKER:</li>
           </div>
 
-          <div className="gio-container" >
           <ul>
             <li>Adding a dockerfile, to containerize a project</li>
           </ul>
-          </div>
+         
 
         </ul>
 
@@ -248,7 +244,7 @@ function HeaderAbout() {
 
       </div>
 
-      <div className='gio-container-5'>
+      <div className='gio-container'>
 
         <h4>What was code orange ( DFS ): </h4>
 
@@ -267,7 +263,7 @@ function HeaderAbout() {
         </p>
         </div>
 
-        <div className="gio-container-3" >
+        <div className="gio-container" >
         <a  href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
           <h4 style={{ color: 'purple', backgroundColor: 'black' }}><i> NIU code_orange program description </i></h4>
         </a>
@@ -290,78 +286,71 @@ function HeaderAbout() {
         <ul>
          
 
-          <div className="end-div" >
+          <div className="end-div2" >
           <li>Advanced Programming:</li>
           </div>
 
-          <div className="gio-container" >
+         
           <ul>
             <li>Some experience in <br />Multi-Threading,<br />Concurrent programs,<br />
               Andriod applications,<br /> Semaphores/Deadlock solutions.</li>
           </ul>
 
-          </div>
+         
 
 
-          <div className="end-div" >
+          <div className="end-div3" >
           <li>MLH - MajorLeaugeHacking</li>
           </div>
 
-          <div className="gio-container" >
+        
           <ul>
             <li>Attended 5 hackathons.<br /> Joined 1 international team ( India )</li>
           </ul>
 
-          </div>
+         
 
-          <div className="end-div" >
+          <div className="end-div2" >
           <li>Game Dev</li>
           </div>
 
-          <div className="gio-container" >
-            
+          
           <ul>
             <li>Some experience in<br /> game design & development in Unity,<br /> OpenGL Api,<br /> and Google Cardboard VR  </li>
           </ul>
-          </div>
+          
 
-
-        
-
-          <div className="end-div" >
+          <div className="end-div3" >
           <li>Theoretical Experience</li>
           </div>
 
-          <div className="gio-container" >
+          
           <ul>
             <li>Some experience with<br /> Chomsky's Hierarchy/PDA/TuringMachines,<br /> Normalization & FloatingPointError,<br /> Efficiency & Runtime</li>
           </ul>
-          </div>
+          
 
-         
-
-          <div className="end-div" >
+          <div className="end-div3" >
           <li>Paradigms</li>
           </div>
 
-          <div className="gio-container" >
+         
           <ul>
             <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
             <li> Experience in Declarative: Database   </li>
           </ul>
-          </div>
+         
 
-          <div className="end-div" >
+          <div className="end-div2" >
           <li>Crypto - Web3</li>
           </div>
 
-          <div className="gio-container" >
           <ul>
             <li> Understanding of theoretical basics of blockchain technology  </li>
           </ul>
-          </div>
+          
 
-          <div className="end-div" >
+          <div className="end-div3" >
           <li>More to come...</li>
           </div>
           <ul>
@@ -380,11 +369,11 @@ function HeaderAbout() {
         <ul>
           <br />
 
-          <div className="end-div" >
+          <div className="end-div3" >
           <a style={{color: 'white'}} id="minor"><li>GENERAL MATH EXPERIENCE</li></a>
           </div>
           
-          <div className="gio-container" >
+         
           <ol>
             <li>Calculus 1, 2, & 3</li>
             
@@ -392,7 +381,7 @@ function HeaderAbout() {
             
             <li>Numerical Linear Algebra & Linear Programming </li>
           </ol>
-          </div>
+          
 
         </ul>
         

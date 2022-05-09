@@ -96,7 +96,7 @@ p{
     font-family: 'Syne Mono', monospace;
     padding:1px;
     text-align: center;
-    border: 1px solid var(--bg-2);
+    border: 2px solid var(--bg-2);
     transition: border 3s;
     background-image: url("/src//icons//bg4.png");
     background-position: center; /* Center the image */
@@ -104,7 +104,7 @@ p{
     background-size:cover; 
   }
   .end-div:hover{
-    border: 1px solid var(--bg-accent2);
+    border: 2px solid var(--bg-accent2);
     transition: border 3s;
   }
   .end-div2{
@@ -115,7 +115,7 @@ p{
     font-family: 'Syne Mono', monospace;
     padding:1px;
     text-align: center;
-    border: 1px solid var(--bg-1);
+    border: 2px solid var(--bg-1);
     transition: border 3s;
     background-image: url("/src//icons//bg5.png");
     background-position:top; /* Center the image */
@@ -123,7 +123,7 @@ p{
     background-size:cover; 
   }
   .end-div2:hover{
-    border: 1px solid var(--bg-accent3);
+    border: 2px solid var(--bg-accent3);
     transition: border 3s;
   }
   .end-div3{
@@ -134,7 +134,7 @@ p{
     font-family: 'Syne Mono', monospace;
     padding:1px;
     text-align: center;
-    border: 1px solid var(--old-mauve);
+    border: 2px solid var(--old-mauve);
     transition: border 3s;
     background-image: url("/src//icons//bg1.png");
     background-position:top; /* Center the image */
@@ -142,7 +142,7 @@ p{
     background-size:cover; 
   }
   .end-div3:hover{
-    border: 1px solid var(--deep-space-sparkle);
+    border: 2px solid var(--deep-space-sparkle);
     transition: border 3s;
   }
 
@@ -291,7 +291,7 @@ p{
     transition: border 3s;
   }
   .gio-container > h1 {
-    background: transparent;
+    background: #101730ff;
     color: var(--ash-gray);
     font-size: 50px;
     font-weight: 900;
@@ -559,7 +559,7 @@ p{
     color: var(--text-color);
     font-size: 15px;
    
-    border: 2px solid rgb(147, 14, 255) ;
+    border: 2px solid var(--bg-accent3);
     border-radius: 10px;
     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -587,7 +587,7 @@ p{
     transition: border 3s;
   }
   .gio-container-5:hover{
-    border: 2px solid #BA181B;
+    
     transition: border 3s;
   }
   .gio-container-5 > h1 {
@@ -753,7 +753,7 @@ p{
     .end-div{
       height: auto;
       width: auto;
-      border: 1px dashed rgb(255, 139, 139);
+      border: 2px solid var(--bg-accent3);
       display: flex;
       justify-content: center;
     }
@@ -894,7 +894,7 @@ p{
       font-size: auto;
       height: auto;
       width: auto;
-      border: 1px solid rgb(118, 14, 255);
+      border: 2px solid var(--bg-accent3);
       display: flex;
       justify-content: center;
     }

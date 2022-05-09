@@ -1,5 +1,10 @@
 //Basic imports
 import React, { Component , useState} from 'react';
+import alpha from '../../icons/CStracklogo/alpha.PNG'
+import Coiblib  from '../../icons/CStracklogo/Coiblib.PNG'
+import mash from '../../icons/CStracklogo/mash.PNG'
+import OpenSea from '../../icons/CStracklogo/OpenSea.PNG'
+import poly from '../../icons/CStracklogo/poly.PNG' 
 
 //Custom IMPORTS: 
 
@@ -10,11 +15,34 @@ const Cstrack = () => {
 
         <div
             className="CStrack">
-            <div  className='gio-container'>
-            <h1> Traditional Stock & Crypto Market Analysis </h1>
-            <h4> Instantly compare the most important financial information & trends all on one page </h4>
-            <h4> Based on the concept of a fear index </h4>
+
+            <div  className='gio-container-2'>
+            <h2 style={{
+              color: '#E0012Aff',
+              fontSize: 'large',
+              backgroundColor: '#101730ff'
+            }}>  Traditional Stock & Crypto Market Analysis </h2>
+            <h4> API's provided by: </h4>
+           
             </div>
+
+            <div className='end-div3' style={{ padding: '5px' }}>
+
+                <img src={OpenSea} width='100%' height='auto' style={{ padding: '5px' }} />
+                <img src={poly} width='100%' height='auto' style={{ padding: '5px' }} />
+            </div>
+            <div className='end-div' style={{ padding: '5px' }}>
+                <img src={alpha} width='100%' height='auto' style={{ padding: '5px' }} />
+                <img src={Coiblib} width='100%' height='auto' style={{ padding: '5px' }} />
+                <img src={mash} width='100%' height='auto' style={{ padding: '5px' }} />
+         
+            </div>
+             <div  className='gio-container-2'>
+           
+            <h4> Instantly compare the most important financial information & trends all on one page </h4>
+           
+            </div>
+
             <div 
                 className="Outter">
                 <div 

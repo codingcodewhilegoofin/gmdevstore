@@ -39,20 +39,18 @@ import '../PageCss/NewTable.css';
 
 function HeaderSection() {
 
-  const [mainBody,setMainBody] = useState(true)
+  const [mainBody, setMainBody] = useState(true)
 
-    const mainBodyHandle = () => {
-        var x = document.getElementById("mainBody");
-        if (x.style.display === "none") 
-        {
-            x.style.display = "block";
-            setMainBody(!mainBody)
-        }
-        else 
-        {
-            x.style.display = "none";
-        }
+  const mainBodyHandle = () => {
+    var x = document.getElementById("mainBody");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      setMainBody(!mainBody)
     }
+    else {
+      x.style.display = "none";
+    }
+  }
 
 
   const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
@@ -72,10 +70,10 @@ function HeaderSection() {
     youtubesub = <></>;
   }
   else {
-    specialheader = <h2 style={{color:'white'}}>Feel free to join my discord</h2>;
+    specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='50%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
-    youtubesub = <h2 style={{color:'white'}}>SUB TO MY YOUTUBE?</h2>;
-    logoSection = <div className="end-div" ><img src={GioLogo} width='50%' height='auto' style={{padding:'5px'}} /></div>;
+    youtubesub = <h2 style={{ color: 'white' }}>SUB TO MY YOUTUBE?</h2>;
+    logoSection = <div className="end-div" ><img src={GioLogo} width='50%' height='auto' style={{ padding: '5px' }} /></div>;
   }
 
   function globalMusic() { };
@@ -134,7 +132,7 @@ function HeaderSection() {
       <div id="mainBody" className='gio-main'>
         <div className='gio-container' >
 
-          <h1 style={{ color: '#19819Fff' }}>🥳 Welcome to giomoscato.com Vanilla Version</h1>
+          <h1 style={{ color: '#AEBEBEff' }}>🥳 Welcome to giomoscato.com Vanilla Version</h1>
           <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
 
         </div>
@@ -155,12 +153,15 @@ function HeaderSection() {
         </div>
 
 
+        <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase", padding: '50px', }}>Personal Projects and API integration</h1>
+
+        <div className="end-div3" style={{ padding: '5px' }}>
         <div className='gio-container-2'>
           <h2 style={{
-            color: '#E0012Aff',
-            fontSize: 'large',
-            fontWeight: 'bold',
-          }}> My other websites ! </h2>
+              color: '#E0012Aff',
+              fontSize: 'large',
+              backgroundColor: '#101730ff'
+          }}> My other websites </h2>
 
           {specialheader2}
 
@@ -180,6 +181,7 @@ function HeaderSection() {
           </a>
 
         </div>
+        </div>
 
         <div className="end-div2" style={{ padding: '10px' }}>
           <Link to="/Dsa">
@@ -192,7 +194,7 @@ function HeaderSection() {
           </Link>
         </div>
 
-        <div className="end-div" style={{ padding: '10px' }}>
+        <div className="end-div2" style={{ padding: '10px' }}>
           <Link to="/Spotify">
             <h2 style={{
               color: '#E0012Aff',
@@ -203,71 +205,13 @@ function HeaderSection() {
           </Link>
         </div>
 
-        <h1
-          className="gradient-text"
-          style={{
-            backgroundImage: "<gradient>",
-            backgroundClip: "text",
-            textFillColor: "transparent",
-            textTransform: "uppercase",
-            fontSize: "auto",
-            padding: '50px',
-          }}>
-          Detail of relevant information & skills
-        </h1>
-
-        <div className='gio-container-2'>
-          <p>
-            You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
-            with on the about/skills page!
-          </p>
-          <p>
-            Click the "brain" icon to learn more or scroll up!
-          </p>
-          <h4> Quick summary of skillset : </h4>
-          <ul>
-            <br />
-            <li> Work experience in Full-Stack development / Web Design & React Framework</li>
-            <br></br>
-            <li>Some experience markup, programming, and scripting languages</li>
-            <br></br>
-            <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
-            <br />
-          </ul>
-        </div>
-
-        <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase", padding: '50px', }}>Feel free to contact me!</h1>
-
-
-        <div className='gio-container-3'>
-
-          {logoSection}
-          <ul>
-            <li><a style={{ color: 'white' }} href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm</a></li>
-            <li> giovannijmoscato@gmail.com </li>
-          </ul>
-          <p>
-            Besides github and linkedin I want to be open and available to anyone who wants to chat!
-          </p>
-          <p>All other relevant contact information is available through the "email icon" or contact page.</p>
-          <img src={GioBanner} width='90%' height='auto' style={{ padding: '5px' }} />
-          <h4> Best ways to reach me </h4>
-
-        </div>
-
-        <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase", padding: '50px', }}>Personal Projects</h1>
-
+        <div className="end-div3" style={{ padding: '5px' }}>
         <div className='gio-container-4'>
-
-
-          <p>
-            Here are some of my favorite and most impressive projects I've aready completed or currently working on.
-
-            <br></br>
-            <br></br>
-            Most of the source code is publicaly available on my github.
-          </p>
-          <h4> C++ Compiler for IEEE 754 float converter : </h4>
+          <h2 style={{
+              color: '#E0012Aff',
+              fontSize: 'large',
+              backgroundColor: '#101730ff'
+            }}>  C++ Compiler for IEEE 754 float converter </h2>
           <iframe
             height="600px"
             width="100%"
@@ -281,12 +225,73 @@ function HeaderSection() {
 
           <p>I created a IEEE 754 standard converter to convert hexadecimal ( and decimal) numbers into floating point.</p>
           <p> This is my original code and It does have a few errors here and there discussed in DOC.
-            <br></br>
-            <br></br>Just press the green RUN arrow and then click next to the orange arrow when prompted. You may enter a hexadecimal number or decimal.
+            Just press the green RUN arrow and then click next to the orange arrow when prompted. You may enter a hexadecimal number or decimal.
           </p>
         </div>
+        </div>
 
-        <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase", padding: '50px', }}>Video Game Experience</h1>
+        <div className="end-div3">
+          <h1 style={{
+            color: 'white'
+          }}> Crypto & Stock tracker API
+            <div className="gio-container-2" style={{ padding: '5px' }}>
+            <Link to="/cstrack">
+              <Bitcoinsymb />
+            </Link>
+            </div>
+          </h1>
+
+        </div>
+
+        <div className="end-div3" style={{ padding: '5px' }}>
+          <div className='gio-container-2'>
+            <h2 style={{
+              color: '#E0012Aff',
+              fontSize: 'large',
+              backgroundColor: '#101730ff'
+            }}>API Switch</h2>
+            <h2 style={{ color: 'white' }} >Endpoint request using vanilla JS displayed in custom table</h2>
+            <p>You can switch between endpoints using this button!</p>
+            <p><em>It may take some time to load between button presses</em></p>
+            <button
+              style={{ color: '#AEBEBEff', backgroundColor: '#101730ff', cursor: 'pointer' }}
+              onClick={urlChange}>
+              Change API
+            </button>
+          </div>
+
+          {!currentStatus ? <h2>Loading... </h2> : <Table data={data} />}
+        </div>
+
+        <div className="end-div2" style={{ padding: '5px' }}>
+          
+          {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
+          <div className='gio-container-2'>
+          <h2 style={{
+              color: '#E0012Aff',
+              fontSize: 'large',
+              backgroundColor: '#101730ff',
+             
+            }}>CRUD Form & Table</h2>
+            <h2 style={{ color: 'white' }}> Demonstration of CRUD properties</h2>
+          </div>
+        </div>
+
+        <div className="end-div" style={{ padding: '5px' }}>
+          <div className='gio-container-2'>
+          <h2 style={{
+              color: '#E0012Aff',
+              fontSize: 'large',
+              backgroundColor: '#101730ff',
+             
+            }}>Website Updates</h2>
+            <h2 style={{ color: 'white' }}>Current/Previous Website updates</h2>
+          </div>
+          {!currentStatus ? <h2>Loading... </h2> : <GioTable data={data} />}
+        </div>
+
+
+        <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase", padding: '50px', }}>Video Game Dev Experience</h1>
 
         <div className='gio-container-5'>
           <h4>Pink Balls video game Unity & C#</h4>
@@ -307,12 +312,10 @@ function HeaderSection() {
           </p>
 
         </div>
-
+        
+        
         <div className='gio-container-2'>
-
-
           <h2 style={{ color: 'red', fontSize: 'auto' }}>STORE (Musical Credits) </h2>
-
           <p style={{ color: 'white', fontSize: '20px' }}>
             I created the soundtrack for the demo game
             <em> STORE</em> created by
@@ -349,42 +352,10 @@ function HeaderSection() {
             />
           </div>
 
-        </div>
+       
 
-        <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase", padding: '50px', }}>API's</h1>
 
-        <div className='gio-container-3'>
-          <div className='gio-container-2'>
-            <h4>API Switch</h4>
-            <h2 style={{ color: 'white' }} >Endpoint request using vanilla JS displayed in custom table</h2>
-            <p>You can switch between endpoints using this button!</p>
-            <p><em>It may take some time to load between button presses</em></p>
-            <button
-              style={{ color: '#AEBEBEff', backgroundColor: '#101730ff' }}
-              onClick={urlChange}>
-              Change API
-            </button>
-          </div>
-
-          {!currentStatus ? <h2>Loading... </h2> : <Table data={data} />}
-        </div>
-
-        <div className='gio-container-4'>
-          <div className='gio-container-2'>
-            <h4>CRUD Form & Table</h4>
-            <h2 style={{ color: 'white' }}> Demonstration of CRUD properties</h2>
-          </div>
-          {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
-        </div>
-
-        <div className='gio-container-5'>
-          <div className='gio-container-2'>
-            <h4>Website Updates</h4>
-            <h2 style={{ color: 'white' }}>Current/Previous Website updates</h2>
-          </div>
-          {!currentStatus ? <h2>Loading... </h2> : <GioTable data={data} />}
-        </div>
-
+        
 
         <div className="end-div2">
           {youtubesub}
@@ -392,6 +363,7 @@ function HeaderSection() {
             <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default">
             </div>
           </div>
+        </div>
         </div>
 
         <div className='gio-container-4'>
@@ -470,11 +442,60 @@ function HeaderSection() {
           <br />
         </div>
 
+        <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase", padding: '50px', }}>Feel free to contact me!</h1>
+
+
+        <div className='gio-container-3'>
+
+          {logoSection}
+          <ul>
+            <li><a style={{ color: 'white' }} href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm</a></li>
+            <li> giovannijmoscato@gmail.com </li>
+          </ul>
+          <p>
+            Besides github and linkedin I want to be open and available to anyone who wants to chat!
+          </p>
+          <p>All other relevant contact information is available through the "email icon" or contact page.</p>
+          <img src={GioBanner} width='90%' height='auto' style={{ padding: '5px' }} />
+        
+        </div>
+
+        <h1
+          className="gradient-text"
+          style={{
+            backgroundImage: "<gradient>",
+            backgroundClip: "text",
+            textFillColor: "transparent",
+            textTransform: "uppercase",
+            fontSize: "auto",
+            padding: '50px',
+          }}>
+          Quick Skillset Summary
+        </h1>
+
+        <div className='gio-container-2'>
+          <p>
+            You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
+            with on the about/skills page!
+          </p>
+          <h4> Quick summary of skillset : </h4>
+          <ul>
+            <br />
+            <li> Work experience in Full-Stack development / Web Design & React Framework</li>
+            <br></br>
+            <li>Some experience markup, programming, and scripting languages</li>
+            <br></br>
+            <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
+            <br />
+          </ul>
+        </div>
+
 
         <div className="end-div">
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
-              color: '#E0012Aff'
+              color: '#E0012Aff',
+              backgroundColor: 'black'
             }}> My website technology pipeline / stack ? ✨ </h2>
 
             <ol style={{
@@ -487,7 +508,7 @@ function HeaderSection() {
               <li> HTML/CSS/JS/JSX </li>
               <li> Githubpages(Host server) </li>
               <li> GoogleDomains(DNS)</li>
-              <li> React Router & Few other standard libraries</li>
+              <li> React Router</li>
               <li> Github ( source control ) </li>
             </ol>
             <h3 style={{
@@ -530,20 +551,6 @@ function HeaderSection() {
               </a>
             </h3>
           </a>
-        </div>
-
-        <div className="end-div3">
-
-          <h1 style={{
-            color: 'white'
-          }}> NEW! : Crypto & Stock tracker
-            <br></br>
-            <br></br>
-            <Link to="/cstrack">
-              <Bitcoinsymb />
-            </Link>
-          </h1>
-
         </div>
 
         <div className='gio-container-2' style={{ padding: '5px' }}>
@@ -618,7 +625,7 @@ function HeaderSection() {
           textTransform: 'uppercase',
         }}
         onClick={mainBodyHandle}>
-        OPEN 
+        OPEN
       </button>
     </div>
   );

@@ -65,13 +65,13 @@ function HeaderSection() {
   let urlToggle = false;
   if (window.innerWidth < 600) {
     specialheader = <></>;
-    specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='90%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
+    specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     logoSection = <></>;
     youtubesub = <></>;
   }
   else {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
-    specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='50%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
+    specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     youtubesub = <h2 style={{ color: 'white' }}>SUB TO MY YOUTUBE?</h2>;
     logoSection = <div className="end-div" ><img src={GioLogo} width='50%' height='auto' style={{ padding: '5px' }} /></div>;
   }
@@ -131,8 +131,8 @@ function HeaderSection() {
       </button>
       <div id="mainBody" className='gio-main'>
         <div className='gio-container' >
-
-          <h1 style={{ color: '#AEBEBEff' }}>🥳 Welcome to giomoscato.com Vanilla Version</h1>
+          <video className="headervideo" src='/public/Videos/HeaderVid.mp4' autoPlay loop volume = "0.1" />
+          <h1 style={{ color: '#AEBEBEff' }}>🥳 Vanilla Version</h1>
           <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
 
         </div>
@@ -156,7 +156,7 @@ function HeaderSection() {
         <h1 className="gradient-text" style={{ backgroundImage: "<gradient>", backgroundClip: "text", textFillColor: "transparent", textTransform: "uppercase", padding: '50px', }}>Personal Projects and API integration</h1>
 
         <div className="end-div3" style={{ padding: '5px' }}>
-        <div className='gio-container-2'>
+        <div className='gio-container-2' style={{ width: '100%'}}>
           <h2 style={{
               color: '#E0012Aff',
               fontSize: 'large',
@@ -397,8 +397,8 @@ function HeaderSection() {
             color: 'white',
             padding: '5px'
           }}>
-            As of previous build giomoscato.com recieved a rating of
-            <em>B</em>
+            As of previous build my website recieved a rating of
+            <em> B</em>
           </h2>
 
           <img src={gtrating} width='40%' height='auto' />
@@ -434,7 +434,7 @@ function HeaderSection() {
             color: 'white',
             padding: '5px'
           }}>
-            As of previous build giomoscato.com recieved a rating of PASS with 93 tests completed and 0 reports of malware <em> or </em> spam
+            Recieved a rating of PASS with 93 tests completed and 0 reports of malware <em> or </em> spam
           </h2>
 
           <img src={safteycheck} width='90%' height='auto' />

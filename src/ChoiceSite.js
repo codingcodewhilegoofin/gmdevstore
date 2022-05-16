@@ -51,7 +51,7 @@ const ChoiceSite = (props) => {
                   backgroundColor: "#1B2524ff",
                   fontSize: "auto"
               }}>
-              Welcome to Giomoscato.com
+              Welcome 
           </h1>
         <h3 style={{color:"#AEBEBEff",
                   fontSize: "auto" }}> I have built 2 different web experiences!
@@ -84,7 +84,7 @@ const ChoiceSite = (props) => {
                 }} 
                 onClick={() =>  setSiteVersion("vanilla")}
             >
-                GioMoscato.com Dependency+ Version 
+                Go to Dependency+ Version 
             </button>
         
         </div>

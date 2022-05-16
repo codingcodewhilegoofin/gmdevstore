@@ -1,5 +1,5 @@
 //Basic imports
-import React, { Component , useState} from 'react';
+import React, { Component , useState, useEffect } from 'react';
 import alpha from '../../icons/CStracklogo/alpha.PNG'
 import Coiblib  from '../../icons/CStracklogo/Coiblib.PNG'
 import mash from '../../icons/CStracklogo/mash.PNG'
@@ -8,9 +8,27 @@ import poly from '../../icons/CStracklogo/poly.PNG'
 
 //Custom IMPORTS: 
 
-const Cstrack = () => {
 
+
+const Cstrack = () => {
     
+    const [windowSize , setWindowSize] = useState(window.innerWidth)
+    let divSection1;
+    let divSection2;
+
+    if (windowSize < 600) {
+        divSection1 = <div className='end-div3' style={{ padding: '5px' }}><img src={OpenSea} width='50%' height='auto' style={{ padding: '5px' }} /><img src={poly} width='50%' height='auto' style={{ padding: '5px' }} /></div>;
+        divSection2 = <div className='end-div' style={{ padding: '5px' }}><img src={alpha} width='33%' height='auto' style={{ padding: '5px' }} /><img src={Coiblib} width='33%' height='auto' style={{ padding: '5px' }} /><img src={mash} width='33%' height='auto' style={{ padding: '5px' }} /></div>;
+    }
+    else {
+        divSection1 = <div className='end-div3' style={{ padding: '10px' }}><img src={OpenSea} width='20%' height='auto' style={{ padding: '10px' }} /><img src={poly} width='20%' height='auto' style={{ padding: '10px' }} /></div>;
+        divSection2 = <div className='end-div' style={{ padding: '10px' }}><img src={alpha} width='15%' height='auto' style={{ padding: '10px' }} /><img src={Coiblib} width='15%' height='auto' style={{ padding: '10px' }} /><img src={mash} width='15%' height='auto' style={{ padding: '10px' }} /></div>;
+    }
+
+    useEffect(() => {
+        setWindowSize(window.innerWidth)
+    },[windowSize]);
+
     return (
 
         <div
@@ -22,21 +40,13 @@ const Cstrack = () => {
               fontSize: 'large',
               backgroundColor: '#101730ff'
             }}>  Traditional Stock & Crypto Market Analysis </h2>
-            <h4> API's provided by: </h4>
+            <h4> API's provided by </h4>
            
             </div>
 
-            <div className='end-div3' style={{ padding: '5px' }}>
-
-                <img src={OpenSea} width='100%' height='auto' style={{ padding: '5px' }} />
-                <img src={poly} width='100%' height='auto' style={{ padding: '5px' }} />
-            </div>
-            <div className='end-div' style={{ padding: '5px' }}>
-                <img src={alpha} width='100%' height='auto' style={{ padding: '5px' }} />
-                <img src={Coiblib} width='100%' height='auto' style={{ padding: '5px' }} />
-                <img src={mash} width='100%' height='auto' style={{ padding: '5px' }} />
-         
-            </div>
+            {divSection1}
+            {divSection2}
+            
              <div  className='gio-container-2'>
            
             <h4> Instantly compare the most important financial information & trends all on one page </h4>

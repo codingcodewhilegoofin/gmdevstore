@@ -1,8 +1,8 @@
 import React,{ useState } from 'react';
 import ChatBotCard from './ChatBotCard';
 
-const message1 = 'Let AI help you learn about me, search "Do they know about frameworks"';
-const message2 = 'Let AI help you learn about me, search "What scripting languages do they know"';
+const message1 = 'Let AI help you learn about me, search "Does Gio know about frameworks"';
+const message2 = 'Let AI help you learn about me, search "What scripting languages does Gio know"';
 
 const Giobot = () => {
     

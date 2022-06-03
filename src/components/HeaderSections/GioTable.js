@@ -3,22 +3,22 @@ import '../PageCss/GioTable.css';
 const data =
 [
     {
-        "Catagory":"Table Components",
-        "Most Recent Update": "Added 2 tables. One uses the SWAP API. One is this table for update documentation",
-        "Upcoming Updates": "Possibly a 3rd table",
-        "Priority": "Low"
+        "Catagory":"API's",
+        "Most Recent Update": "Open AI bot",
+        "Upcoming Updates": "Financial API, OpenAI Bot, Spotify API",
+        
     },
     {
-        "Catagory":"Structure",
-        "Most Recent Update": "Re-organized main index file in order to provide 2 different web experiences",
-        "Upcoming Updates": "Build new website!",
-        "Priority": "High"
+        "Catagory":"Structure and UI",
+        "Most Recent Update": "Integrating threeJS 3D environment",
+        "Upcoming Updates": "Develop 3D environment and research",
+       
     },
     {
-        "Catagory":"Mobile Compatibility / Responsiveness",
-        "Most Recent Update": "Fixed Table Scroll",
-        "Upcoming Updates": "Weird gaps, and sliding issues",
-        "Priority": "Medium"
+        "Catagory":"Integrated projects",
+        "Other Websites": "FullStackingDevelopment",
+        "Audrino Projects": "Upcoming",
+       
     }
 ]
 

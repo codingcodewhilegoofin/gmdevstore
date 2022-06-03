@@ -4,7 +4,7 @@ import React, { Component, useState, useEffect } from 'react';
 import '../PageCss/HeaderSection.css'
 
 const Spotify = () => {
-
+   
   const [baseUrl, setBaseUrl] = useState("https://accounts.spotify.com/api/token");
   const [spotifyArtists, setSpotifyArtists] = useState("https://api.spotify.com/v1/artists/7bSpQNOg9UsW530DuXM3X5");
   const [token, setToken] = useState([]);
@@ -15,8 +15,39 @@ const Spotify = () => {
   const client_id = 'a2e2c898d4cc403cbd5804821c0268cc';
   const client_secret = '8c41dce7a0ca4b9a89aa78f570f0e74c';
  
-
+  /**
+   *  React class lifecycle methods 
+   *  useEffect Hook:  
+   *    componentDidMount, 
+   *    componentDidUpdate, and 
+   *    componentWillUnmount combined.
+   * 
+   *  By using this Hook, you tell React that your component needs to do something after render.
+   *  
+   *  By default, it runs both after the first render and after every update.
+   * 
+   *  Just like you can use the State Hook more than once, you can also use several effects. 
+   *  This lets us separate unrelated logic into different effects.
+   * 
+   *  You can tell React to skip applying an effect if certain values haven’t changed between re-renders. 
+   *  To do so, pass an array as an optional second argument to useEffect.
+   *  React will re-run the effect even if just one of them is different.
+   * 
+   *  If you use this optimization, make sure the array includes all values from the component scope 
+   *  (such as props and state) that CHANGE OVER TIME and that are used by the effect.
+   * 
+   *  Otherwise, your code will reference STALE values from previous renders!
+   */
   useEffect(() => {
+      // Step 1 : use the Fetch API  that provides an interface for fetching resources \
+      // This is a http "request" and "response" object set. 
+      // You start with a "fetch" method
+      // Requires a path to fetch, and will return a promise, resolving to a response object
+      // You can also pass optional HEADERS and other parameters such as credientials in the 
+      // form of objects.
+
+      // Specifically this request was to Spotify API as a POST request with credientials
+      // to ask for a token to verify our application GET requests
       fetch(baseUrl,
       {
         method: 'POST',
@@ -25,20 +56,34 @@ const Spotify = () => {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
       })
+      // Step 2: After this call is made the browser will request to the server
+      // The server will return a response object to this application
+      // This object has important data available via methods such as Response.ok which 
+      // return various data types
+
+      // Specifically this response should be a token 
       .then((response) => {
 
         if (!response.ok) {
           return Promise.reject(new Error("Spotify Token Request Error"));
         }
         else {
+          // Here we return a promise that is supposed to parse the response body text to JSON
           return response.json();
         }
       })
       .catch((err) => {
         console.log("First Fetch " + err);
       })
+      // If our text was parsed correctly we can resolve and begin a new promise
       .then((json) => {
         try {
+          // Step 3: here we have obtained our data from the server and prepared it
+          // for use in our application.
+          
+          // Specifically we store this token from the response and change the UI accordingly
+          // We then return another promise of an additional fetch request known as 
+          // chaining requests.
           console.log("Current token after first fetch: " + json.access_token);
           console.log(": " + json.token_type);
           console.log(": " + json.expires_in);
@@ -85,8 +130,19 @@ const Spotify = () => {
         console.log("After 2nd Fetch Error" + err);
       })
 
+      // Step 4: at this stage all requests have been made and we recieve Responses
+      // All promises have been resolved and data is either stored or used.
+      // The use effect hook will look for changes to these data points in order to
+      // update the data
+
+      // Specifically the token was obtained and used to make GET requests through my app to 
+      // the Spotify API to retrieve data about artists. 
+      
+
   }, [baseUrl, spotifyArtists]);
 
+  // Step 5: The fetch API is done being utilized and we can reflect
+  // the response data in our UI dynamically. 
 
   return (
 

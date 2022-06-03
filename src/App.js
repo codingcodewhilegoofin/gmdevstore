@@ -12,9 +12,6 @@ import NewSite from './NewSite.js';
 import ChoiceSite from './ChoiceSite.js';
 import DrawerMenu from '../src/components/Drawer/DrawerMenu';
 
-
-
-
 function App() {
 
   const [siteVersion, setSiteVersion] = useState("");

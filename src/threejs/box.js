@@ -1,17 +1,23 @@
-import ReactDOM from 'react-dom'
+//import ReactDOM from 'react-dom'
+import * as THREE from 'three'
 import React, { useRef, useState } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame  } from '@react-three/fiber'
+import { useTexture } from "@react-three/drei"
+
 
 function Box(props) {
   
   // This reference gives us direct access to the THREE.Mesh object
   const ref = useRef()
   // Hold state for hovered and clicked events
-  const [hovered, hover] = useState(false)
+  //const [hovered, hover] = useState(false)
   const [clicked, click] = useState(false)
 
+
+ 
+
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (ref.current.rotation.x += 0.01))
+  //useFrame((state, delta) => (ref.current.rotation.z += 0.01))
   // Return the view, these are regular Threejs elements expressed in JSX
 
   return (
@@ -22,17 +28,20 @@ function Box(props) {
     <div /> or <span /> in regular ReactDOM.
     
     */
+  
     <mesh // Scence object used to hold geometry and material for 3D space
       {...props}
       ref={ref}
-      scale={clicked ? 3 : 2}
+      scale={1}
+      position={props.position}
+      /* [Math.PI / -2, 0, 0]} */
+      rotation={props.rotation}>
       onClick={(event) => click(!clicked)}
-      onPointerOver={(event) => hover(true)}
-      onPointerOut={(event) => hover(false)}>
-      <boxGeometry args={clicked ? [1, 1, 1] : [5, 5, 1] } />
-      {hovered ?  (<boxGeometry args={clicked ? [2, 3, 2] : [4, 3, 3] } />) :  (<sphereGeometry args={clicked ? [2,8,2]:[4]}/>) }
-      <meshNormalMaterial color={hovered ? 'hotpink' : 'orange'} />
+  
+      <planeBufferGeometry args={[100, 100, 25, 25]} />
+      <meshPhysicalMaterial  color="red" side={THREE.DoubleSide} />
     </mesh>
+  
   )
 }
 export default Box;

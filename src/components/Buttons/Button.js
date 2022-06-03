@@ -23,7 +23,7 @@ export const Button = ({
   return (
     
     <a href="https://github.com/codingcodewhilegoofin/giowebsite" className={`btn ${checkButtonStyle} ${checkButtonSize}`} download="">
-      <img  alt="Giovanni Moscato Resume 📝"/>
+      Giovanni Moscato Resume 📝
     </a>
   );
 };

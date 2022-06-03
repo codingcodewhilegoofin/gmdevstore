@@ -5,8 +5,6 @@ import { Button } from '../Buttons/Button.js';
 import '../Buttons/Button.css';
 import '../PageCss/HeaderSection.css';
 
-
-
 import '../../icons/gio.jpg';
 import gtrating from '../../icons/gtrating.png';
 import gtadd from '../../icons/gtadditional.png';
@@ -131,7 +129,7 @@ function HeaderSection() {
       </button>
       <div id="mainBody" className='gio-main'>
         <div className='gio-container' >
-          <video className="headervideo" src='/public/Videos/HeaderVid.mp4' autoPlay loop volume = "0.1" />
+        <video src='/public/videos/HeaderVid.mp4' autoPlay loop />
           <h1 style={{ color: '#AEBEBEff' }}>🥳 Vanilla Version</h1>
           <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
 
@@ -203,6 +201,19 @@ function HeaderSection() {
             }}> Spotify Integration </h2>
             <img src={Sp} width='100%' height='auto' style={{ padding: '5px' }} />
           </Link>
+        </div>
+        
+        <div className="end-div3" style={{ padding: '10px' }}>
+        <iframe 
+        id="ytplayer" 
+        type="text/html" 
+        width="auto" 
+        height="360" 
+        autoplay="true"  
+        src="https://www.youtube.com/embed/ZwWTUljUZLU?autoplay=1"    
+        frameborder="0"
+        >
+        </iframe>
         </div>
 
         <div className="end-div3" style={{ padding: '5px' }}>

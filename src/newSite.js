@@ -33,6 +33,8 @@ import {
 //Local:
 import Box from './threejs/box';
 
+import DrawerMenu from '../src/components/Drawer/DrawerMenu';
+
 // Main entry point for new website
 function NewSite() {
 
@@ -42,7 +44,8 @@ function NewSite() {
 
          /* A regular html div 
          */
-        <div id="canvas-container" >
+        <div id="canvas-container" style={{backgroundColor:'#1C2222'}} >
+            <DrawerMenu/>
 
              {/* Canvas:
                  We can tell the renderer information about how we want the canvas to be seen.
@@ -54,7 +57,7 @@ function NewSite() {
                  const renderer = new THREE.WebGLRenderer()
              */}
             <Canvas 
-                style={!theme ? { background: "#1C2222" } : { background: "white" }} 
+                style={!theme ? { background: "#1C2222" } : { background: "#3F646Dff" }} 
                 camera={{ position: [0, 0, 0], fov: 90 }} 
                 dpr={[1, 2]}
                 onPointerMissed={ () => {

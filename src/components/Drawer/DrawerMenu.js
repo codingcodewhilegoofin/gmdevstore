@@ -25,16 +25,16 @@ const DrawerMenu = () => {
     
   return (
     <>
-      <Button type="primary" onClick={showDrawer}>
-        Open Menu
+      <Button type="primary" onClick={showDrawer} size="small" >
+        Options 👈
       </Button>
-      <Drawer title="Options" placement="bottom" onClose={onClose} visible={visible}>
+      <Drawer title="Options" placement="left" onClose={onClose} visible={visible} >
       <Space direction="vertical" size="small" style={{ display: 'flex' }}>
         <div className="site-card-border-less-wrapper">
-          <Card size="small" hoverable title="Back to Vanilla JS version!" bordered={true} style={{ width: 200 }}>
+          <Card size="small" hoverable title="Back to regular/vanilla version!" bordered={true} style={{ width: 300 }}>
             <a href="/">
               <Button type="primary">
-                VanillaJS
+                Go 
               </Button> 
             </a>
           </Card>

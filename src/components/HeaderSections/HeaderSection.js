@@ -130,7 +130,7 @@ function HeaderSection() {
       <div id="mainBody" className='gio-main'>
         <div className='gio-container' >
         <video src='/public/videos/HeaderVid.mp4' autoPlay loop />
-          <h1 style={{ color: '#AEBEBEff' }}>🥳 Vanilla Version</h1>
+          <h1 style={{ color: '#AEBEBEff' }}>🥳 Vanilla / Regular Site Version</h1>
           <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
 
         </div>

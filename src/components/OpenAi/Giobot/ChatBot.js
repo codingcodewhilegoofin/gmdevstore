@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { OpenAIApi, Configuration } from 'openai';
 
-
 /**
  *  OpenAI has trained cutting-edge language models that are 
  *  very good at understanding and generating text.
@@ -44,7 +43,7 @@ import { OpenAIApi, Configuration } from 'openai';
 
 //Add key here 
 const configuration = new Configuration({
-    apiKey: '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',
+    apiKey: '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',
 });
 
 const openai = new OpenAIApi(configuration);

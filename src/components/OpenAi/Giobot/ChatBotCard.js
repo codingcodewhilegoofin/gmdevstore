@@ -3,8 +3,8 @@ import ChatBot from './ChatBot';
 
 const ChatBotCard = (props) => {
 
-    //let reg = '\w|\d^[^?\/%$#@!*()-{}\\\=]|\w+.|\s';
-    let reg = new RegExp('\w|\d^[^?\/%$#@!*()-{}\\\=]|\w+.|\s');
+    let reg = "[a-zA-Z0-9.\\s]+";
+    //let reg = new RegExp(`[a-zA-Z0-9.\s]+`);
 
     const [chatBotStatus, setChatBotStatus] = useState(false)
     const [userInput, setUserInput] = useState('')
@@ -13,6 +13,7 @@ const ChatBotCard = (props) => {
 
     const formHandle = (e) => {
         e.preventDefault();
+        console.log(e)
         
         let x = document.forms["botForm"]["formInput"].value;
   

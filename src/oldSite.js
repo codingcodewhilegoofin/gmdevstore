@@ -9,6 +9,7 @@ import HomePage from './components/Pages/HomePage';
 import Cstrack from './components/Pages/Cstrack';
 import Dsa from './components/Pages/Dsa';
 import Spotify from './components/Pages/Spotify';
+import NewSite from './NewSite';
 import AboutPage from './components/Pages/AboutPage';
 import ContactPage from './components/Pages/ContactPage';
 import './App.css';
@@ -117,6 +118,7 @@ function OldSite() {
         {/*Routes  */}
 
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/dependency+" component={NewSite} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path='/github' component={() => {

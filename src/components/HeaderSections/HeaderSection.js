@@ -207,7 +207,7 @@ function HeaderSection() {
         <iframe 
         id="ytplayer" 
         type="text/html" 
-        width="auto" 
+        width="80%" 
         height="360" 
         autoplay="true"  
         src="https://www.youtube.com/embed/ZwWTUljUZLU?autoplay=1"    

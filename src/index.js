@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 // Local imports
 import './index.css';
 import App from './App';
+import Start from './Start';
 
 // React will render a tree from the root element and the App component
 ReactDOM.render(

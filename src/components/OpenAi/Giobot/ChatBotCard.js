@@ -40,7 +40,7 @@ const ChatBotCard = (props) => {
     return (
         <div
             style={{
-                backgroundColor: '#101730ff',
+                backgroundColor: '#1B2524ff',
                 border: '1px solid #212C50ff',
                 height: '100%',
             }}
@@ -63,7 +63,7 @@ const ChatBotCard = (props) => {
                     style={{
                         alignSelf: 'center',
                         justifyContent: 'center',
-                        color: '#E0012Aff', padding: '5px'
+                        color: '#3F646Dff', padding: '5px'
                     }}
                     for="search">
 
@@ -82,7 +82,7 @@ const ChatBotCard = (props) => {
                     style={{
                         backgroundColor: 'transparent',
                         border: '1px solid #025B79ff',
-                        padding: '10px', color: '#E0012Aff'
+                        padding: '10px', color: '#19819Fff'
                     }}
                     id="search"
                     type="text"
@@ -119,7 +119,7 @@ const ChatBotCard = (props) => {
                     style={{
                         backgroundColor: 'transparent',
                         border: '1px solid #025B79ff',
-                        padding: '10px', color: '#E0012Aff'
+                        padding: '10px', color: '#19819Fff'
                     }}  
                     type="reset" 
                 />
@@ -128,7 +128,7 @@ const ChatBotCard = (props) => {
                     style={{
                         alignSelf: 'center',
                         justifyContent: 'center',
-                        color: '#E0012Aff',
+                        color: '#3F646Dff',
                         padding: '5px'
                     }}
                     for="search">

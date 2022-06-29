@@ -23,29 +23,37 @@ const Giobot = () => {
     
     return(
         <div
+        
             style={{
                 backgroundColor: '#101730ff',
-                border: '1px solid #212C50ff',
+                
+                display:'flex',
+                flexDirection: 'column',
+                justifyContent: 'flex-start',
             }}
         >
+            <div className="choicediv" style={{backgroundColor:"#101730ff" , textAlign:"center", width:"100%", border:"1px solid #025B79ff"}}>
             <button 
             style={{
-                color:'#025B79ff',
-                backgroundColor:'transparent',
-                border:'none',
+                color: '#025B79ff',
+                backgroundColor: 'transparent',
+                border: 'none',
                 cursor: 'pointer',
                 textTransform: 'uppercase',
-            }} 
+                fontSize: 'auto',
+            }}
             onClick={chatbothandle}>
                GioBot: helps you find information about gio
                using OpenAi
             </button>
+
+            </div>
            
             <div 
             id="chatbot"      
             style={{
                 backgroundColor: '#3F646Dff',
-                border: '1px solid #2E5252ff',
+                border: '5px solid #2E5252ff',
                 width: '100%',
                 height: '100%',
             }}>

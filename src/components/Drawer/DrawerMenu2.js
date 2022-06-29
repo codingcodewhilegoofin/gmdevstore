@@ -1,8 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { Drawer, Button, Card, Switch, Space, notification } from 'antd';
 import { store, useGlobalState } from 'state-pool';
+
 import 'antd/dist/antd.css';
 import '../../choice.css';
+import { ReactComponent as LinkedinSymbol } from '../../icons/linkedin.svg';
+import { ReactComponent as GithubSymbol } from '../../icons/github.svg';
+
+let menuResize;
+let cardResize;
+let spaceResize;
+
+if (window.innerWidth < 600) {
+  menuResize = 210;
+  cardResize = 210;
+  spaceResize = 'vertical';
+  
+}
+else {
+  menuResize = 500;
+  cardResize = 300;
+  spaceResize = 'horizontal';
+
+}
 
 
 const DrawerMenu2 = (props) => {
@@ -10,9 +30,9 @@ const DrawerMenu2 = (props) => {
   const [visible2, setVisible2] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [startScene, setStartScene] = useState(true);
-    
+
   props.func(startScene);
-  
+
 
 
   const showDrawer = () => {
@@ -79,65 +99,84 @@ const DrawerMenu2 = (props) => {
 
   }, [])
 
-  
+
   return (
     <>
       <Space direction="horizontal" size="small" style={{ display: 'flex' }}>
-        <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={showDrawer}>
+        <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff', padding: '1px' }} onClick={showDrawer}>
           MENU
         </Button>
-        <h4 style={{ color: '#19819Fff' }}>If you feel like cheating and skipping this <em>awesome</em> 3D scene, you can skip it in the menu ! 🙃</h4>
+        <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff', padding: '1px' }} onClick={SkipScene} >
+          SKIP THIS SCENE ↪️
+        </Button>
+        <h4 style={{ color: '#19819Fff', fontSize: 'smaller', }}>Check the menu or skip this <em>awesome</em> 3D scene 🙃</h4>
+
       </Space>
       <Drawer title="Options" placement="bottom" onClose={onClose} visible={visible} >
+        <Card size="small" hoverable bordered={true} style={{ width: {menuResize}, backgroundColor: '#101730ff' }}>
+          <h4 style={{ color: '#19819Fff' }}>Thank you for exploring my website 😄 </h4>
+          <h4 style={{ color: '#19819Fff' }}>😕 Press/Click HELP if you're still confused ! </h4>
 
-        <h4 style={{ color: '#19819Fff' }}>Thank you for exploring my website 😄 </h4>
-        <h4 style={{ color: '#19819Fff' }}>😕 Press/Click HELP if you're still confused ! </h4>
+          <Space direction={spaceResize} size="small" style={{ display: 'flex' }}>
+            <div className="site-card-border-less-wrapper">
+              <h4 style={{ color: '#AEBEBEff' }}>Go to main website </h4>
+              <Card size="small" hoverable bordered={true} style={{ width: {cardResize}, backgroundColor: '#19819Fff' }}>
 
-        <Space direction="vertical" size="small" style={{ display: 'flex' }}>
-          <div className="site-card-border-less-wrapper">
-
-            <Card size="small" hoverable title="Go to main website" bordered={true} style={{ width: 210, backgroundColor: '#19819Fff' }}>
-              
                 <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={SkipScene}>
                   SKIP THIS SCENE ↪️
                 </Button>
-              
-            </Card>
-          </div>
+
+              </Card>
+            </div>
 
 
-          <div className="site-card-border-less-wrapper">
-            <h4 style={{ color: '#19819Fff' }}>Do Stuff </h4>
-            <Card size="small" hoverable bordered={true} style={{ width: 250, backgroundColor: '#025B79ff' }}>
-              <Switch defaultChecked onChange={onChange} />
-            </Card>
-          </div>
+            <div className="site-card-border-less-wrapper">
+              <h4 style={{ color: '#19819Fff' }}>Do Stuff </h4>
+              <Card size="small" hoverable bordered={true} style={{ width: {cardResize}, backgroundColor: '#025B79ff' }}>
+                <Switch defaultChecked onChange={onChange} />
+              </Card>
+            </div>
 
-          <div className="site-card-border-less-wrapper">
-
-            <Card size="small" hoverable bordered={true} style={{ width: 250, backgroundColor: '#19819Fff' }}>
+            <div className="site-card-border-less-wrapper">
               <h4 style={{ color: '#AEBEBEff' }}>Help options </h4>
-              <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={showDrawer2}>
-                help me! 💔
+              <Card size="small" hoverable bordered={true} style={{ width: {cardResize}, backgroundColor: '#19819Fff' }}>
+
+                <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={showDrawer2}>
+                  help me! 💔
+                </Button>
+              </Card>
+            </div>
+
+            <div className="site-card-border-less-wrapper">
+              <h4 style={{ color: '#19819Fff' }}>Links! </h4>
+              <Card size="small" hoverable bordered={true} style={{ width: {cardResize}, backgroundColor: '#19819Fff' }}>
+                <Space direction="horizontal" size="small" style={{ display: 'flex' }}>
+
+                  <a href="https://github.com/codingcodewhilegoofin">
+                  <Card size="small" hoverable style={{ width: 50, backgroundColor: '#AEBEBEff' }}>
+                    <GithubSymbol />
+                  </Card>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/">
+                  <Card size="small" hoverable style={{ width: 60, height: 60, backgroundColor: '#243232ff' }}>
+                    <LinkedinSymbol />
+                  </Card>
+                  </a>
+
+                </Space>
+              </Card>
+            </div>
+
+            <div className="site-card-border-less-wrapper">
+
+              <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={onClose}>
+                CLOSE MENU
               </Button>
-            </Card>
-          </div>
-
-          <div className="site-card-border-less-wrapper">
-
-            <Card size="small" hoverable bordered={true} style={{ width: 250, backgroundColor: '#19819Fff' }}>
-              <h4 style={{ color: '#AEBEBEff' }}>Links! </h4>
-              <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={showDrawer2}>
-                
-              </Button>
-            </Card>
-          </div>
-
-        </Space>
-
-        <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={onClose}>
-                  CLOSE MENU
-        </Button>
+         
+            </div>
+          </Space>
+        </Card>
       </Drawer>
 
       <Drawer title="Help Menu" placement="top" onClose={onClose2} visible={visible2} >
@@ -177,29 +216,29 @@ const DrawerMenu2 = (props) => {
         <ul>
           <li>This 3D scene was assisted by Spliner3f a library that helps with 3D rendering</li>
           <li>The UI was created with Antd UI  </li>
-        
+
           <h4><a href="https://codesandbox.io/examples/package/@splinetool/r3f-spline" >Spline</a></h4>
-          <iframe src="https://codesandbox.io/examples/package/@splinetool/r3f-spline" width="100%" height="500"/>
+          <iframe src="https://codesandbox.io/examples/package/@splinetool/r3f-spline" width="100%" height="500" />
 
           <h4><a href="https://ant.design/" >Antd UI</a></h4>
-          <iframe src="https://ant.design/" width="100%" height="500"/>
-         
-          
+          <iframe src="https://ant.design/" width="100%" height="500" />
+
+
         </ul>
 
         <h1 style={{ color: 'white', backgroundColor: 'black' }}> If you still need help after this, bruh 🤦‍♂️ </h1>
 
-        <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }}  onClick={SkipScene} >
-                  SKIP THIS SCENE ↪️
+        <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={SkipScene} >
+          SKIP THIS SCENE ↪️
         </Button>
-        
+
         <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={onClose2}>
-                  BACK
+          BACK
         </Button>
 
       </Drawer>
 
-      
+
     </>
   );
 };

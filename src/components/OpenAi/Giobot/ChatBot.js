@@ -92,7 +92,7 @@ const ChatBot = (props) => {
             <h4 style={{
                 alignSelf: 'center',
                 justifyContent: 'center',
-                color: '#E0012Aff',
+                color: '#3F646Dff',
                 padding: '5px'
             }}> The reply from the AI is: </h4>
 
@@ -101,7 +101,7 @@ const ChatBot = (props) => {
                     style={{
                         alignSelf: 'center',
                         justifyContent: 'center',
-                        color: '#E0012Aff',
+                        color: '#19819Fff',
                         padding: '5px'
                     }}>
                     {`${props.userInput}: ` + chatBotReply }
@@ -110,7 +110,7 @@ const ChatBot = (props) => {
                 <p style={{
                     alignSelf: 'center',
                     justifyContent: 'center',
-                    color: '#E0012Aff',
+                    color: '#19819Fff',
                     padding: '5px'
                 }}>Wating...</p>
             }

@@ -12,6 +12,7 @@ import Spotify from './components/Pages/Spotify';
 import NewSite from './NewSite';
 import AboutPage from './components/Pages/AboutPage';
 import ContactPage from './components/Pages/ContactPage';
+import Projects from './components/Pages/Projects'
 import './App.css';
 import Giobot from './components/OpenAi/Giobot/Giobot.js'
 
@@ -61,6 +62,10 @@ function OldSite() {
             <NavItem icon="💻" />
           </Link>
 
+          <Link className="nav-item" to="/projects">
+            <NavItem icon="📁" />
+          </Link>
+
           <Link className="nav-item" to="/about">
             <NavItem icon="🧠" />
           </Link>
@@ -100,12 +105,16 @@ function OldSite() {
             <UnderText> Home </UnderText>
           </Link>
 
+          <Link className="nav-item" to="/projects">
+            <UnderText> Projects </UnderText>
+          </Link>
+
           <Link className="nav-item" to="/about">
-            <UnderText> Skills & Information </UnderText>
+            <UnderText> Skills </UnderText>
           </Link>
 
           <Link className="nav-item" to="/contact">
-            <UnderText> Social & Dev Media </UnderText>
+            <UnderText> Socials </UnderText>
           </Link>
 
           <Link className="nav-item" to="/download">
@@ -118,6 +127,7 @@ function OldSite() {
         {/*Routes  */}
 
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/projects" component={Projects} />
         <Route exact path="/dependency+" component={NewSite} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />

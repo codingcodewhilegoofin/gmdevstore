@@ -86,6 +86,7 @@ function HeaderSection() {
         <video src='/public/videos/HeaderVid.mp4' autoPlay loop />
           <h1 style={{ color: '#AEBEBEff', fontWeight:'900' }}>🥳 Vanilla / Regular Site Version</h1>
           <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
+          <a style={{ color: 'white'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
 
         </div>
 
@@ -108,6 +109,9 @@ function HeaderSection() {
           <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='90%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
         </div>
 
+        <div className='spacer'>
+        </div>
+
         <div className='gio-container-3'>
 
           {logoSection}
@@ -121,6 +125,9 @@ function HeaderSection() {
           <p>All other relevant contact information is available through the "email icon" or contact page.</p>
           <img src={GioBanner} width='90%' height='auto' style={{ padding: '5px' }} />
         
+        </div>
+
+        <div className='spacer'>
         </div>
 
 
@@ -140,6 +147,9 @@ function HeaderSection() {
             <br />
           </ul>
         </div>
+
+        <div className='spacer'>
+         </div>
 
         <div className='gio-container-4' style={{ border: '1px solid white',}}>
           <div className='gio-container-2'  style={{ border: '1px solid white',}}>
@@ -222,6 +232,9 @@ function HeaderSection() {
           <br />
           </div>
         </div>
+
+        <div className='spacer'>
+         </div>
 
 
         <div className="end-div">

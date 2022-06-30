@@ -93,7 +93,8 @@ const ChatBot = (props) => {
                 alignSelf: 'center',
                 justifyContent: 'center',
                 color: '#3F646Dff',
-                padding: '5px'
+                padding: '5px',
+                fontWeight:'900',
             }}> The reply from the AI is: </h4>
 
             {chatBotStatus ?
@@ -111,7 +112,8 @@ const ChatBot = (props) => {
                     alignSelf: 'center',
                     justifyContent: 'center',
                     color: '#19819Fff',
-                    padding: '5px'
+                    padding: '5px',
+                    fontWeight:'900',
                 }}>Wating...</p>
             }
         </div>

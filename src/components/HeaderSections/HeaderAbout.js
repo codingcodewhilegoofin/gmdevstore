@@ -16,23 +16,33 @@ function HeaderAbout() {
 
        
           <h4 style={{ color: '#243232ff', fontSize:'50px',fontWeight:'900' }}>ABOUT ME Skills & information</h4>
-         <div className="gio-container" >
-          <p style={{ color: 'white'}}>
+
+          <p style={{ color: 'white', backgroundColor: 'black' }}>
             Graduate BS of Computer Science from Northern Illinois University
           </p>
-          <p style={{ color: 'white'}}>
+
+          <div className='spacer2'>
+          </div>
+
+          <p style={{ color: 'white', backgroundColor: 'black' }}>
             Emphasis in Computational Software and
             <a href="minor" style={{color: 'red',padding: '5px'}}>
               minor in Mathematics
             </a>
           </p>
 
-          <p style={{ color: 'white'}}>
+          <div className='spacer2'>
+          </div>
+
+          <p style={{ color: 'white', backgroundColor: 'black' }}>
             I have a range of experience in all listed languages and technologies. 
           </p>
-          </div>
-        
 
+          <div className='spacer2'>
+          </div>
+      </div>
+
+      <div className='spacer'>
       </div>
 
       <div className='gio-container-2'>
@@ -42,7 +52,7 @@ function HeaderAbout() {
        
         <ul>
         <div className="end-div2" >
-          <h3 style={{ color: '#AEBEBEff' }}> Programming Languages - Compiled</h3>
+          <h3 style={{ color: '#AEBEBEff', fontWeight:'900'}}> Programming Languages - Compiled</h3>
           </div>
 
           <div >
@@ -70,7 +80,7 @@ function HeaderAbout() {
           
 
           <div className="end-div3" >
-          <h3 style={{ color: '#AEBEBEff' }}> Scripting Languages - Interpreted</h3>
+          <h3 style={{ color: '#AEBEBEff' , fontWeight:'900' }}> Scripting Languages - Interpreted</h3>
           </div>
 
           <div  >
@@ -85,7 +95,7 @@ function HeaderAbout() {
           <br></br>
 
           <div className="end-div2" >
-          <h3 style={{ color: '#AEBEBEff' }}> Markdown Languages </h3>
+          <h3 style={{ color: '#AEBEBEff' , fontWeight:'900' }}> Markdown Languages </h3>
           </div>
 
           <div  >
@@ -99,7 +109,7 @@ function HeaderAbout() {
           <br />
 
           <div className="end-div3" >
-          <h3 style={{ color: '#AEBEBEff' }}> Procedural Languages</h3>
+          <h3 style={{ color: '#AEBEBEff', fontWeight:'900' }}> Procedural Languages</h3>
           </div>
 
           <div  >
@@ -114,7 +124,7 @@ function HeaderAbout() {
           <br></br>
 
           <div className="end-div2" >
-          <h3 style={{ color: '#AEBEBEff' }}> Environments</h3>
+          <h3 style={{ color: '#AEBEBEff', fontWeight:'900' }}> Environments</h3>
           </div>
 
           <div  >
@@ -126,19 +136,18 @@ function HeaderAbout() {
           </li>
           </div>
         </ul>
-       
+      </div>
 
+      <div className='spacer'>
       </div>
 
       <div className='gio-container-3'>
-
       <h4> Web Dev Experience </h4>
 
-      
         <ul>
 
           <div className="end-div3" >
-          <h3 style={{ color: '#AEBEBEff' }}> FRONTEND TECHNOLOGIES / FRAMEWORKS</h3>
+          <h3 style={{ color: '#AEBEBEff', fontWeight:'900' }}> FRONTEND TECHNOLOGIES / FRAMEWORKS</h3>
           </div>
          
          
@@ -152,7 +161,7 @@ function HeaderAbout() {
           <br></br>
 
           <div className="end-div2" >
-          <h3 style={{ color: '#AEBEBEff' }}> BACKEND TECHNOLOGIES</h3>
+          <h3 style={{ color: '#AEBEBEff', fontWeight:'900' }}> BACKEND TECHNOLOGIES</h3>
           </div>
 
           
@@ -170,34 +179,28 @@ function HeaderAbout() {
           <br/>
 
           <div className="end-div3" >
-          <h3 style={{ color: '#AEBEBEff' }}> DATABASE / CLOUD SERVICES</h3>
+          <h3 style={{ color: '#AEBEBEff', fontWeight:'900' }}> DATABASE / CLOUD SERVICES</h3>
           </div>
 
-        
             <ul>
               <li>MongoDB</li>
               <li>H2Hibernate</li>
               <li>AWS</li>
               <li>PCF</li>
             </ul>
-         
-  
         </ul>
-       
+      </div>
 
+      <div className='spacer'>
       </div>
 
       <div className='gio-container-4'>
-
         <h4>CODE/PACKAGE MANAGMMENT</h4>
-        
         <ul>
-          
           <div className="end-div2" >
           <li >GITHUB/GIT:</li>
           </div>
 
-          
           <ol>
             <li>Github add, commit , push cycle</li>
             
@@ -205,11 +208,7 @@ function HeaderAbout() {
             
             <li>Githubpages</li>
           </ol>
-          
-       
         </ul>
-
-
         <ul >
           <br />
           
@@ -217,19 +216,14 @@ function HeaderAbout() {
           <li>NPM / GRADLE</li>
           </div>
 
-         
           <ol>
             <li>Update , install , and manage dev dependencies/packages and scripts</li>
            
             <li>Directory management for packages in different servers </li>
           </ol>
-         
-          
         </ul>
 
-
         <ul>
-         
           <div className="end-div2" >
           <li>DOCKER:</li>
           </div>
@@ -237,12 +231,10 @@ function HeaderAbout() {
           <ul>
             <li>Adding a dockerfile, to containerize a project</li>
           </ul>
-         
-
         </ul>
+      </div>
 
-
-
+      <div className='spacer'>
       </div>
 
       <div className='gio-container'>
@@ -266,13 +258,13 @@ function HeaderAbout() {
 
         <div className="gio-container" >
         <a  href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
-          <h4 style={{ color: 'purple', backgroundColor: 'black' }}><i> NIU code_orange program description </i></h4>
+          <h4 style={{ color: 'white', backgroundColor: 'black' }}><i> NIU code_orange program description </i></h4>
         </a>
 
 
         <a  href="https://www.mystateline.com/news/niu-students-get-real-world-experience-developing-technology-for-discover/1495852453/">
 
-          <h4 style={{ color: 'purple', backgroundColor: 'black' }}><i> Article about the program </i></h4>
+          <h4 style={{ color: 'white', backgroundColor: 'black' }}><i> Article about the program </i></h4>
         </a>
 
         <img src={co} alt={"Code Orange logo"}  />
@@ -280,13 +272,13 @@ function HeaderAbout() {
         </div>
       </div>
 
-      <div className='gio-container-2'>
+      <div className='spacer'>
+      </div>
 
+      <div className='gio-container-2'>
         <h4>Additional Experience </h4>
 
         <ul>
-         
-
           <div className="end-div2" >
           <li>Advanced Programming:</li>
           </div>
@@ -362,6 +354,9 @@ function HeaderAbout() {
         <br />
       </div>
 
+      <div className='spacer'>
+      </div>
+
 
       <div className='gio-container-4'>
 
@@ -386,6 +381,9 @@ function HeaderAbout() {
 
         </ul>
         
+      </div>
+
+      <div className='spacer'>
       </div>
 
 

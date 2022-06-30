@@ -65,34 +65,39 @@ const ChoiceSite = (props) => {
                         style={{
                             color: "#AEBEBEff",
                             backgroundColor: "transparent",
-                            fontSize: "auto"
+                            fontSize: "auto",
+                            fontWeight:'900',
                         }}>
                         3D Version
                     </h1>
 
                     <h3 style={{
                         color: "#AEBEBEff",
-                        fontSize: "auto"
+                        fontSize: "auto",
+                        fontWeight:'900',
                     }}>
                         <em> 3D version</em> is a web experience to display my personal portfolio in a emerging technology fashion.
                         <br />I hope to build this web experience with <code style={{ color: "#AEBEBEff" }}>Antd UI , three.js, react-three-fiber,</code> and other unique libraries.
                     </h3>
                     <h3 style={{
                         color: "#AEBEBEff",
-                        fontSize: "auto"
+                        fontSize: "auto",
+                        fontWeight:'900',
                     }}>
                         Its purpose is to demonstrate my ability to interface with different dependencies.
                     </h3>
                     <h3 style={{
                         color: "#AEBEBEff",
-                        fontSize: "auto"
+                        fontSize: "auto",
+                        fontWeight:'900',
                     }}>
                         <em> Vanilla / Regular version</em> demonstrates my pure/vanilla <code style={{ color: "#AEBEBEff" }}>HTML , CSS , JS , JSX</code> skills with the
                         react framework. <br />Other than the essential 'react-' libraries all other components and code are made by me from scratch.
                     </h3>
                     <h2 style={{
                         color: "#AEBEBEff",
-                        fontSize: "auto"
+                        fontSize: "auto",
+                        fontWeight:'900',
                     }}>  I emphasize that there are no component / css / or other fancy libraries used besides to make some essential API calls.
                     </h2>
 

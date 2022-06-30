@@ -127,8 +127,7 @@ function HeaderProjects() {
         </button>
       </div>
       <div id="mainBody" className='gio-main'>
-     
-      
+
         <div class="Iam" >
 
           <h1 style={{ color: '#AEBEBEff', fontSize:'50px',fontWeight:'900' }}>Projects</h1>
@@ -142,14 +141,19 @@ function HeaderProjects() {
               CLI and Low level based projects<br /> 
             </div>
           </b>
-          <p style={{ color: 'white'}}>Gifs by : Erica Anderson</p>
+          <a style={{ color: 'white'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
+        </div>
+
+        <div className='spacer'>
         </div>
 
         <div class="subheader1" style={{ padding: '20px',  }}>
           <h1 style={{ color: 'white', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>My other web apps</h1>
         </div>
-        
 
+        <div className='spacer2'>
+        </div>
+        
         <div className="subheader1" 
         style={{  paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px'}}>
       
@@ -177,8 +181,14 @@ function HeaderProjects() {
           </div>
         </div>
 
+        <div className='spacer'>
+        </div>
+
         <div class="subheader2" style={{padding: '20px' }}>
           <h1 style={{ color: 'white', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>API Intergrations</h1>
+        </div>
+
+        <div className='spacer2'>
         </div>
 
         <div class="subheader2body" style={{ paddingBottom: '20px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '20px' }}>
@@ -202,7 +212,7 @@ function HeaderProjects() {
             <Bitcoinsymb style={{ backgroundColor: '#AEBEBEff', padding: '5px' }} />
             </div>
             <h2 style={{
-              color: '#EE0527ff',
+              color: '#AEBEBEff',
               fontSize: 'large',
               backgroundColor: '#025B79ff',
               fontWeight: '900'
@@ -261,8 +271,14 @@ function HeaderProjects() {
 
         </div>
 
+        <div className='spacer'>
+        </div>
+
         <div class="subheader3" style={{padding: '20px' }} >
           <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>Data structures, algorithms, and more</h1>
+        </div>
+
+        <div className='spacer2'>
         </div>
 
         <div class="subheader3body" style={{ paddingBottom: '20px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '20px' }}>
@@ -303,8 +319,14 @@ function HeaderProjects() {
         </div>
         </div>
 
+        <div className='spacer'>
+        </div>
+
         <div class="subheader4" style={{padding: '20px' }}  >
           <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>Video game dev & design </h1>
+        </div>
+
+        <div className='spacer2'>
         </div>
         
         <div class="subheader4body" style={{ paddingBottom: '40px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '40px' }}>
@@ -378,8 +400,8 @@ function HeaderProjects() {
           </div>
           </div>
 
-
-
+         <div className='spacer'>
+         </div>
 
 
           <div className="end-div">
@@ -456,6 +478,8 @@ function HeaderProjects() {
               </div>
           </div>
 
+          <div className='spacer2'>
+          </div>
 
           <div class="end-div2" >
           <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900'}}>More music by me!</h1>

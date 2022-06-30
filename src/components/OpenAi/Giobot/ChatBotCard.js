@@ -129,7 +129,8 @@ const ChatBotCard = (props) => {
                         alignSelf: 'center',
                         justifyContent: 'center',
                         color: '#3F646Dff',
-                        padding: '5px'
+                        padding: '5px',
+                        fontWeight:'900',
                     }}
                     for="search">
 

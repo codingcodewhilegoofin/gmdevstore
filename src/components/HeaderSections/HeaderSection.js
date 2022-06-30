@@ -82,9 +82,9 @@ function HeaderSection() {
       </button>
       </div>
       <div id="mainBody" className='gio-main'>
-        <div className='gio-container' >
+        <div className='subheader9' >
         <video src='/public/videos/HeaderVid.mp4' autoPlay loop />
-          <h1 style={{ color: '#AEBEBEff' }}>🥳 Vanilla / Regular Site Version</h1>
+          <h1 style={{ color: '#AEBEBEff', fontWeight:'900' }}>🥳 Vanilla / Regular Site Version</h1>
           <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
 
         </div>
@@ -294,7 +294,7 @@ function HeaderSection() {
               backgroundColor: '#101730ff',
             }}
           >
-            AI genereated art, the theme for this site
+            AI genereated art, the theme for this site! I used the theme and colors from these images that are AI generated to design my site
           </h3>
 
           <iframe

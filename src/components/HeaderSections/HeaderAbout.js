@@ -12,25 +12,26 @@ import co from '../../icons/CO.png';
 function HeaderAbout() {
   return (
     <div className='gio-main'>
-      <div className='gio-container'>
+      <div className='subheader7'>
 
-        <div className="gio-container-2" >
-          <h4>ABOUT ME : Skills & information</h4>
-          <video src='/videos/invert.mp4' autoPlay volume="0.1" />
-          <p>
+       
+          <h4 style={{ color: '#243232ff', fontSize:'50px',fontWeight:'900' }}>ABOUT ME Skills & information</h4>
+         <div className="gio-container" >
+          <p style={{ color: 'white'}}>
             Graduate BS of Computer Science from Northern Illinois University
           </p>
-          <p>
+          <p style={{ color: 'white'}}>
             Emphasis in Computational Software and
             <a href="minor" style={{color: 'red',padding: '5px'}}>
               minor in Mathematics
             </a>
           </p>
 
-          <p>
+          <p style={{ color: 'white'}}>
             I have a range of experience in all listed languages and technologies. 
           </p>
-        </div>
+          </div>
+        
 
       </div>
 

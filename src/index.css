@@ -577,7 +577,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 3.8 );
+    width: calc(var(--nav-size) * 3.5 );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -723,7 +723,14 @@ h6{
 
 @media only screen and (min-width: 1200px){
   .nav-item {
-    width: calc(var(--nav-size) * 4 );
+    width: calc(var(--nav-size) * 4.2 );
+   
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .nav-item {
+    width: calc(var(--nav-size) * 3.1 );
    
   }
 }

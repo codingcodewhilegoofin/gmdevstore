@@ -6,16 +6,19 @@ import './choice.css';
 
 const ChoiceSite = (props) => {
 
-    const [mainMenu, setMainMenu] = useState(true)
+    const [mainMenu, setMainMenu] = useState(true);
+    const [toggleMenu,setToggleMenu] = useState();
 
     const menuHandle = () => {
         var x = document.getElementById("mainmenu");
         if (x.style.display === "none") {
             x.style.display = "block";
-            setMainMenu(!mainMenu)
+            setMainMenu(!mainMenu);
+            setToggleMenu('CLOSE');
         }
         else {
             x.style.display = "none";
+            setToggleMenu('OPEN');
         }
     }
 
@@ -24,6 +27,7 @@ const ChoiceSite = (props) => {
     var toggle = false;
 
     const [siteVersion, setSiteVersion] = useState("");
+  
 
 
     props.func(siteVersion);
@@ -45,11 +49,11 @@ const ChoiceSite = (props) => {
                             border: 'none',
                             cursor: 'pointer',
                             textTransform: 'uppercase',
-                            fontSize: 'auto',
+                            fontSize: 'smaller',
 
                         }}
                         onClick={menuHandle}>
-                        Close/Open tab
+                        {toggleMenu} 3D options
                     </button>
                 </div>
             </div>

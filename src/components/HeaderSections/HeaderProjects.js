@@ -131,28 +131,29 @@ function HeaderProjects() {
       
         <div class="Iam" >
 
-          <h1 style={{ color: '#AEBEBEff', fontSize:'50px'}}>Projects</h1>
+          <h1 style={{ color: '#AEBEBEff', fontSize:'50px',fontWeight:'900' }}>Projects</h1>
           <b>
-            <div class="innerIam" >
-              React Native Full Stack Web App<br />
-              Spotify API Integration<br />
-              Crypto Currency and Stock API Integration<br />
-              Financial charts and graphs<br />
-              CRUD Table's<br />
-              Data Structures & Algorithms<br /> 
+            <div class="innerIam"  style={{ backgroundColor: 'black'}}>
+              Web,VideoGame, Embeded systems development<br />
+              Spotify, Stock, OPENAI API Integrations<br />
+              Web, Game, Embeded applications development<br />
+              React & React Native Full Stack Web App's<br />
+              Data Structures & Algorithms <br />
+              CLI and Low level based projects<br /> 
             </div>
           </b>
+          <p style={{ color: 'white'}}>Gifs by : Erica Anderson</p>
         </div>
 
-        <div class="Iam" style={{ paddingTop: '30px' }}>
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px'}}>My other web apps</h1>
+        <div class="subheader1" style={{ padding: '20px',  }}>
+          <h1 style={{ color: 'white', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>My other web apps</h1>
         </div>
         
 
-        <div className="end-div4" 
-        style={{  backgroundColor:"black", paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px'}}>
+        <div className="subheader1" 
+        style={{  paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px'}}>
       
-          <div className='gio-container-2' style={{ width: '100%', backgroundColor:"black" }}>
+          <div className='gio-main' style={{ width: '100%', }}>
             
 
             {specialheader2}
@@ -161,6 +162,7 @@ function HeaderProjects() {
               color: '#AEBEBEff',
               fontSize: 'large',
               fontWeight: 'bold',
+              backgroundColor:"#243232ff",
             }}> I am working on a Full Stack ReactNative app which hosts our other projects with a team ! </h2>
 
             <a style={{
@@ -175,35 +177,35 @@ function HeaderProjects() {
           </div>
         </div>
 
-        <div class="Iam" style={{paddingTop: '30px' }}>
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px'}}>API Intergrations</h1>
+        <div class="subheader2" style={{padding: '20px' }}>
+          <h1 style={{ color: 'white', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>API Intergrations</h1>
         </div>
 
-        <div className="end-div3" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
+        <div class="subheader2body" style={{ paddingBottom: '20px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '20px' }}>
+        <div className="end-div5" >
           <Link to="/Spotify">
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#101730ff'
-            }}> Spotify API Integration </h2>
+              backgroundColor: '#243232ff'
+            }}> Spotify API Integration, click me! </h2>
             <img src={Sp} width='100%' height='auto' style={{ padding: '5px' }} />
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#101730ff'
-            }}> Click me! </h2>
+           
           </Link>
 
         </div>
 
 
-        <div className="end-div3" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
+        <div className="end-div5" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
           <Link to="/cstrack">
-            <Bitcoinsymb style={{ backgroundColor: 'white', padding: '5px' }} />
+          <div className='gio-main' style={{ border:'none' , backgroundColor:'#101730ff' }}>
+            <Bitcoinsymb style={{ backgroundColor: '#AEBEBEff', padding: '5px' }} />
+            </div>
             <h2 style={{
-              color: '#AEBEBEff',
+              color: '#EE0527ff',
               fontSize: 'large',
-              backgroundColor: '#101730ff',
+              backgroundColor: '#025B79ff',
+              fontWeight: '900'
 
             }}> Crypto & Stock tracker API's, click here ! </h2>
           </Link>
@@ -214,11 +216,12 @@ function HeaderProjects() {
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#101730ff'
+              backgroundColor: '#243232ff',
+             
             }}>API Switch</h2>
             <h2 style={{ color: 'white' }} >Endpoint request using vanilla JS displayed in custom table</h2>
-            <p>You can switch between endpoints using this button!</p>
-            <p><em>It may take some time to load between button presses</em></p>
+            <p style={{backgroundColor:'#243232ff'}}>You can switch between endpoints using this button!</p>
+            <p style={{backgroundColor:'#243232ff'}}><em>It may take some time to load between button presses</em></p>
             <button
               style={{ color: '#AEBEBEff', backgroundColor: '#101730ff', cursor: 'pointer' }}
               onClick={urlChange}>
@@ -236,19 +239,19 @@ function HeaderProjects() {
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#101730ff',
+              backgroundColor: '#243232ff',
 
             }}>CRUD Form & Table</h2>
             <h2 style={{ color: 'white' }}> Demonstration of CRUD properties</h2>
           </div>
         </div>
 
-        <div className="end-div" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
+        <div className="end-div2" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
           <div className='gio-container-2'>
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#101730ff',
+              backgroundColor: '#243232ff',
 
             }}>Website Updates</h2>
             <h2 style={{ color: 'white' }}>Current/Previous Website updates</h2>
@@ -256,16 +259,19 @@ function HeaderProjects() {
           {!currentStatus ? <h2>Loading... </h2> : <GioTable data={data} />}
         </div>
 
-        <div class="Iam" >
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px'}}>Data structures, algorithms, and more</h1>
         </div>
 
-        <div className="end-div4" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px', backgroundColor:'black' }}>
-          <div className='gio-container-4'>
+        <div class="subheader3" style={{padding: '20px' }} >
+          <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>Data structures, algorithms, and more</h1>
+        </div>
+
+        <div class="subheader3body" style={{ paddingBottom: '20px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '20px' }}>
+        <div className="end-div5" >
+          <div className='gio-container-4' style={{ backgroundColor:'transparent'}}>
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#101730ff'
+              backgroundColor: '#243232ff'
             }}>  C++ Compiler for IEEE 754 float converter </h2>
             <iframe
               height="600px"
@@ -278,41 +284,47 @@ function HeaderProjects() {
               sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
             </iframe>
 
-            <p>I created a IEEE 754 standard converter to convert hexadecimal ( and decimal) numbers into floating point.</p>
-            <p> This is my original code and It does have a few errors here and there discussed in DOC.
+            <p style={{backgroundColor:'#243232ff'}}>I created a IEEE 754 standard converter to convert hexadecimal ( and decimal) numbers into floating point.</p>
+            <p  style={{backgroundColor:'#243232ff'}}> This is my original code and It does have a few errors here and there discussed in DOC.
               Just press the green RUN arrow and then click next to the orange arrow when prompted. You may enter a hexadecimal number or decimal.
             </p>
           </div>
         </div>
 
-        <div className="end-div4" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
+        <div className="end-div5" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
           <Link to="/Dsa">
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#101730ff'
+              backgroundColor: '#243232ff'
             }} > DSA Interactive Showcase </h2>
             <img src={Arrayinfo} width='100%' height='auto' style={{ padding: '5px' }} />
           </Link>
         </div>
-
-        <div class="Iam" >
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px'}}>Video game dev & design </h1>
         </div>
 
+        <div class="subheader4" style={{padding: '20px' }}  >
+          <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>Video game dev & design </h1>
+        </div>
+        
+        <div class="subheader4body" style={{ paddingBottom: '40px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '40px' }}>
         <div className='gio-container-5'>
-          <h4>Pink Balls created with Unity & C#</h4>
-          <p>
+          <h2 style={{
+              color: '#AEBEBEff',
+              fontSize: 'large',
+              backgroundColor: '#243232ff'
+            }}>Pink Balls created with Unity & C#</h2>
+          <p style={{backgroundColor:'#243232ff'}}>
             The game is based on velocity.
             <br></br>
             <br></br>You have to keep pressing the move keys to gain enough momentum to reach the end zone! Watch out for cubes they will slow you down.
           </p>
 
-          <iframe src="https://itch.io/embed-upload/2795508?color=E5383B" allowfullscreen="" width="100%" height="1000px" frameborder="0">
+          <iframe src="https://itch.io/embed-upload/2795508?color=EEEEEE" allowfullscreen="" width="100%" height="1000px" frameborder="0">
             <a href="https://yupimaperson101.itch.io/pink-balls">Play Pink Balls on itch.io</a>
           </iframe>
 
-          <p>I designed and developed this game completley on my own with some inspiration.<br></br><br></br> I was going for a "monkey ball" type game.
+          <p style={{backgroundColor:'#243232ff'}}>I designed and developed this game completley on my own with some inspiration.<br></br><br></br> I was going for a "monkey ball" type game.
             This game although simple at first glance was extremely hard to make and has many, many bugs that I had to fix. <br></br><br></br>
             The game is finished however and beatable.<br></br><br></br> There is a menu, main gameplay loop, and end goal.
             Please reach out to me if you find a bug.<br></br> Also, I plan to make more levels at some point.
@@ -322,8 +334,13 @@ function HeaderProjects() {
 
 
         <div className='gio-container-2'>
-          <h2 style={{ color: '#AEBEBEff', fontSize: 'auto' }}>STORE video game (Musical Credits) </h2>
-          <p style={{ color: 'white', fontSize: '20px' }}>
+          <h2 style={{
+              color: '#AEBEBEff',
+              fontSize: 'large',
+              backgroundColor: '#243232ff',
+              fontWeight: '900'
+            }}>STORE video game (Musical Credits) </h2>
+          <p style={{backgroundColor:'#2E5252ff', fontSize: 'auto' }}>
             I created the soundtrack for the demo game
             <em> STORE</em> created by
             <em> FellHawk Studios </em>
@@ -333,7 +350,7 @@ function HeaderProjects() {
             color: "red",
             fontFamily: "Exo",
             fontSize: "large",
-            border: "1px solid white",
+           
             padding: "10px",
             margin: "10px"
           }} href="https://fell-hawk.itch.io/store">
@@ -359,16 +376,18 @@ function HeaderProjects() {
             />
           </div>
           </div>
+          </div>
 
 
 
 
 
           <div className="end-div">
-            <a href="https://github.com/codingcodewhilegoofin/giowebsite">
+          
+              <a href="https://github.com/codingcodewhilegoofin/giowebsite">
               <h2 style={{
                 color: '#AEBEBEff',
-                backgroundColor: 'black'
+                fontWeight: 'bold'
               }}> My website technology pipeline / stack ? ✨ </h2>
 
               <ol style={{
@@ -384,37 +403,48 @@ function HeaderProjects() {
                 <li> React Router</li>
                 <li> Github ( source control ) </li>
               </ol>
-              <h3 style={{
-                color: 'white'
+              
+            </a>
+          </div>
+          <div className="subheader5" style={{border:'2px solid #101730ff'}}>
+            <h3 style={{
+                color: 'white',
+                fontWeight: 'bold',
+               
               }}> Please consider collaborating
                 <br /> or donating!
                 <br></br>🔥
 
               </h3>
-            </a>
-          </div>
+              </div>
 
-          <div className="end-div2">
+          <div className="end-div3">
             <a
 
               href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
             >
               <h2 style={{
-                color: '#AEBEBEff'
+                color: '#AEBEBEff',
+                fontWeight: 'bold'
               }}>
                 Having trouble viewing my website ? 💔
               </h2>
               <h5
                 style={{
-                  color: 'white'
+                  color: 'white',
+                  fontWeight: 'bold'
                 }}
               >
                 I tried to make my website <br /> desktop and mobile friendly as possible.
               </h5>
-              <h3
+             
+            </a>
+            <div className="subheader6">
+            <h3
                 style={{
                   color: '#AEBEBEff',
-                  backgroundColor: '#101730ff'
+                  border: '2px solid #AEBEBEff',
+                  fontWeight: 'bold'
                 }}>
                 Major Update! : Most mobile / scaling issues should be fixed
                 <br />
@@ -423,12 +453,15 @@ function HeaderProjects() {
                   <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=243232ff&font_colour=ffffff&font_family=Poppins&outline_colour=243232ff&coffee_colour=243232ff" />
                 </a>
               </h3>
-            </a>
+              </div>
+          </div>
+
+
+          <div class="end-div2" >
+          <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900'}}>More music by me!</h1>
           </div>
 
           <div class="Iam" >
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px'}}>More music by me!</h1>
-        </div>
           <iframe
               id="ytplayer"
               type="text/html"
@@ -439,11 +472,8 @@ function HeaderProjects() {
               frameborder="0"
             >
             </iframe>
-        
-
-
-
-
+            </div>
+      
       </div>
 
 

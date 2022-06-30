@@ -14,10 +14,10 @@ function HeaderContact() {
   return (
     <div className='gio-main'>
 
-      <div className='gio-container'>
+      <div className='subheader8'>
         <video src='/videos/split.mp4' autoPlay loop volume = "0.1" />
-        <h1 style={{color: "white" }}>HOW TO CONTACT ME</h1>
-        <h4 style={{color: "red" }}>Contact me anytime CST  </h4>
+        <h1 style={{color: "#AEBEBEff", fontWeight:'900' }}>HOW TO CONTACT ME</h1>
+        <h4 style={{color: "#AEBEBEff" }}>Contact me anytime CST  </h4>
       </div>
 
       <div className='gio-container-2'>

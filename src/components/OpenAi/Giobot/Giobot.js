@@ -6,7 +6,9 @@ const message2 = 'Let AI help you learn about me, search "What scripting languag
 
 const Giobot = () => {
     
-    const [chatBotStatus,setChatBotStatus] = useState(true)
+    const [chatBotStatus,setChatBotStatus] = useState(true);
+    const [toggle,setToggle] = useState();
+
 
     const chatbothandle = () => {
         var x = document.getElementById("chatbot");
@@ -14,10 +16,12 @@ const Giobot = () => {
         {
             x.style.display = "block";
             setChatBotStatus(!chatBotStatus)
+            setToggle('CLOSE');
         }
         else 
         {
             x.style.display = "none";
+            setToggle('OPEN');
         }
     }
     
@@ -40,11 +44,10 @@ const Giobot = () => {
                 border: 'none',
                 cursor: 'pointer',
                 textTransform: 'uppercase',
-                fontSize: 'auto',
+                fontSize: 'smaller',
             }}
             onClick={chatbothandle}>
-               GioBot: helps you find information about gio
-               using OpenAi
+               {toggle} AI Gio-chatbot 
             </button>
 
             </div>

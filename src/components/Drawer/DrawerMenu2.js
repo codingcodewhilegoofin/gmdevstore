@@ -7,22 +7,7 @@ import '../../choice.css';
 import { ReactComponent as LinkedinSymbol } from '../../icons/linkedin.svg';
 import { ReactComponent as GithubSymbol } from '../../icons/github.svg';
 
-let menuResize;
-let cardResize;
-let spaceResize;
 
-if (window.innerWidth < 600) {
-  menuResize = 210;
-  cardResize = 210;
-  spaceResize = 'vertical';
-  
-}
-else {
-  menuResize = 500;
-  cardResize = 300;
-  spaceResize = 'horizontal';
-
-}
 
 
 const DrawerMenu2 = (props) => {
@@ -50,6 +35,24 @@ const DrawerMenu2 = (props) => {
   };
   const SkipScene = () => {
     setStartScene(false);
+  }
+
+  let menuResize;
+  let cardResize;
+  let spaceResize;
+  let skipButton;
+
+  if (window.innerWidth < 700) {
+    menuResize = 210;
+    cardResize = 210;
+    spaceResize = 'vertical';
+    skipButton = <></>;
+  }
+  else {
+    menuResize = 500;
+    cardResize = 300;
+    spaceResize = 'horizontal';
+    skipButton = <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={SkipScene}>SKIP THIS SCENE ↪️</Button>;
   }
 
   const [lightTheme, setLightTheme] = useState("false");
@@ -106,23 +109,23 @@ const DrawerMenu2 = (props) => {
         <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff', padding: '1px' }} onClick={showDrawer}>
           MENU
         </Button>
-        <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff', padding: '1px' }} onClick={SkipScene} >
-          SKIP THIS SCENE ↪️
-        </Button>
+
+        {skipButton}
+
         <h4 style={{ color: '#19819Fff', fontSize: 'smaller', }}>Check the menu or skip this <em>awesome</em> 3D scene 🙃</h4>
 
       </Space>
       <Drawer title="Options" placement="bottom" onClose={onClose} visible={visible} >
-        <Card size="small" hoverable bordered={true} style={{ width: {menuResize}, backgroundColor: '#101730ff' }}>
+        <Card size="small" hoverable bordered={true} style={{ width: { menuResize }, backgroundColor: '#101730ff' }}>
           <h4 style={{ color: '#19819Fff' }}>Thank you for exploring my website 😄 </h4>
           <h4 style={{ color: '#19819Fff' }}>😕 Press/Click HELP if you're still confused ! </h4>
 
           <Space direction={spaceResize} size="small" style={{ display: 'flex' }}>
             <div className="site-card-border-less-wrapper">
               <h4 style={{ color: '#AEBEBEff' }}>Go to main website </h4>
-              <Card size="small" hoverable bordered={true} style={{ width: {cardResize}, backgroundColor: '#19819Fff' }}>
+              <Card size="small" hoverable bordered={true} style={{ width: { cardResize }, backgroundColor: '#19819Fff' }}>
 
-                <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={SkipScene}>
+                <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff', padding: '1px' }} onClick={SkipScene} >
                   SKIP THIS SCENE ↪️
                 </Button>
 
@@ -132,14 +135,14 @@ const DrawerMenu2 = (props) => {
 
             <div className="site-card-border-less-wrapper">
               <h4 style={{ color: '#19819Fff' }}>Do Stuff </h4>
-              <Card size="small" hoverable bordered={true} style={{ width: {cardResize}, backgroundColor: '#025B79ff' }}>
+              <Card size="small" hoverable bordered={true} style={{ width: { cardResize }, backgroundColor: '#025B79ff' }}>
                 <Switch defaultChecked onChange={onChange} />
               </Card>
             </div>
 
             <div className="site-card-border-less-wrapper">
               <h4 style={{ color: '#AEBEBEff' }}>Help options </h4>
-              <Card size="small" hoverable bordered={true} style={{ width: {cardResize}, backgroundColor: '#19819Fff' }}>
+              <Card size="small" hoverable bordered={true} style={{ width: { cardResize }, backgroundColor: '#19819Fff' }}>
 
                 <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={showDrawer2}>
                   help me! 💔
@@ -149,19 +152,19 @@ const DrawerMenu2 = (props) => {
 
             <div className="site-card-border-less-wrapper">
               <h4 style={{ color: '#19819Fff' }}>Links! </h4>
-              <Card size="small" hoverable bordered={true} style={{ width: {cardResize}, backgroundColor: '#19819Fff' }}>
+              <Card size="small" hoverable bordered={true} style={{ width: { cardResize }, backgroundColor: '#19819Fff' }}>
                 <Space direction="horizontal" size="small" style={{ display: 'flex' }}>
 
                   <a href="https://github.com/codingcodewhilegoofin">
-                  <Card size="small" hoverable style={{ width: 50, backgroundColor: '#AEBEBEff' }}>
-                    <GithubSymbol />
-                  </Card>
+                    <Card size="small" hoverable style={{ width: 50, backgroundColor: '#AEBEBEff' }}>
+                      <GithubSymbol />
+                    </Card>
                   </a>
 
                   <a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/">
-                  <Card size="small" hoverable style={{ width: 60, height: 60, backgroundColor: '#243232ff' }}>
-                    <LinkedinSymbol />
-                  </Card>
+                    <Card size="small" hoverable style={{ width: 60, height: 60, backgroundColor: '#243232ff' }}>
+                      <LinkedinSymbol />
+                    </Card>
                   </a>
 
                 </Space>
@@ -173,7 +176,7 @@ const DrawerMenu2 = (props) => {
               <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={onClose}>
                 CLOSE MENU
               </Button>
-         
+
             </div>
           </Space>
         </Card>

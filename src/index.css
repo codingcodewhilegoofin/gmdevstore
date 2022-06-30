@@ -86,7 +86,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * .79);
+    width: calc(var(--nav-size) * .80);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,7 +249,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 1.4);
+    width: calc(var(--nav-size) * 1.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -414,7 +414,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 1.8);
+    width: calc(var(--nav-size) * 1.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -577,7 +577,7 @@ h6{
   }
   
   .nav-item {
-    width: calc(var(--nav-size) * 3.5 );
+    width: calc(var(--nav-size) * 3.6 );
     display: flex;
     align-items: center;
     justify-content: center;

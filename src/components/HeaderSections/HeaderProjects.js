@@ -59,7 +59,7 @@ function HeaderProjects() {
   }
   else {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
-    specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
+    specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="10px" width='60%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     youtubesub = <h2 style={{ color: 'white' }}>SUB TO MY YOUTUBE?</h2>;
     logoSection = <div className="end-div" ><img src={GioLogo} width='50%' height='auto' style={{ padding: '5px' }} /></div>;
   }
@@ -107,7 +107,7 @@ function HeaderProjects() {
   return (
     <div>
       <div style={{
-        backgroundColor: 'transparent',
+        backgroundColor: '#1B2524ff',
 
         display: 'flex',
         flexDirection: 'column',
@@ -148,13 +148,13 @@ function HeaderProjects() {
         </div>
 
         <div class="subheader1" style={{ padding: '20px',  }}>
-          <h1 style={{ color: 'white', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>My other web apps</h1>
+          <h1 style={{ color: 'white', fontSize:'30px',fontWeight:'900',backgroundColor:'#19819Fff'}}>My other web apps</h1>
         </div>
 
         <div className='spacer2'>
         </div>
         
-        <div className="subheader1" 
+        <div className="gio-container" 
         style={{  paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px'}}>
       
           <div className='gio-main' style={{ width: '100%', }}>
@@ -197,7 +197,7 @@ function HeaderProjects() {
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#243232ff'
+              backgroundColor: '#242a36'
             }}> Spotify API Integration, click me! </h2>
             <img src={Sp} width='100%' height='auto' style={{ padding: '5px' }} />
            
@@ -208,7 +208,7 @@ function HeaderProjects() {
 
         <div className="end-div5" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
           <Link to="/cstrack">
-          <div className='gio-main' style={{ border:'none' , backgroundColor:'#101730ff' }}>
+          <div className='gio-main' style={{ border:'none' , backgroundColor:'#242a36' }}>
             <Bitcoinsymb style={{ backgroundColor: '#AEBEBEff', padding: '5px' }} />
             </div>
             <h2 style={{
@@ -221,7 +221,7 @@ function HeaderProjects() {
           </Link>
         </div>
 
-        <div className="end-div3" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
+        <div className="gio-container" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
           <div className='gio-container-2'>
             <h2 style={{
               color: '#AEBEBEff',
@@ -242,40 +242,24 @@ function HeaderProjects() {
           {!currentStatus ? <h2>Loading... </h2> : <Table data={data} />}
         </div>
 
-        <div className="end-div2" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
-
-          {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
-          <div className='gio-container-2'>
-            <h2 style={{
+        <div className="gio-container" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
+        <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
               backgroundColor: '#243232ff',
 
             }}>CRUD Form & Table</h2>
             <h2 style={{ color: 'white' }}> Demonstration of CRUD properties</h2>
-          </div>
+          {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
+         
         </div>
-
-        <div className="end-div2" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
-          <div className='gio-container-2'>
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#243232ff',
-
-            }}>Website Updates</h2>
-            <h2 style={{ color: 'white' }}>Current/Previous Website updates</h2>
-          </div>
-          {!currentStatus ? <h2>Loading... </h2> : <GioTable data={data} />}
-        </div>
-
         </div>
 
         <div className='spacer'>
         </div>
 
         <div class="subheader3" style={{padding: '20px' }} >
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>Data structures, algorithms, and more</h1>
+          <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900',backgroundColor:'#19819Fff'}}>Data structures, algorithms, and more</h1>
         </div>
 
         <div className='spacer2'>
@@ -287,7 +271,7 @@ function HeaderProjects() {
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#243232ff'
+              backgroundColor: '#242a36'
             }}>  C++ Compiler for IEEE 754 float converter </h2>
             <iframe
               height="600px"
@@ -312,7 +296,7 @@ function HeaderProjects() {
             <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#243232ff'
+              backgroundColor: '#242a36'
             }} > DSA Interactive Showcase </h2>
             <img src={Arrayinfo} width='100%' height='auto' style={{ padding: '5px' }} />
           </Link>
@@ -334,7 +318,7 @@ function HeaderProjects() {
           <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#243232ff'
+              backgroundColor: '#242a36'
             }}>Pink Balls created with Unity & C#</h2>
           <p style={{backgroundColor:'#243232ff'}}>
             The game is based on velocity.
@@ -359,10 +343,10 @@ function HeaderProjects() {
           <h2 style={{
               color: '#AEBEBEff',
               fontSize: 'large',
-              backgroundColor: '#243232ff',
+              backgroundColor: '#242a36',
               fontWeight: '900'
             }}>STORE video game (Musical Credits) </h2>
-          <p style={{backgroundColor:'#2E5252ff', fontSize: 'auto' }}>
+          <p style={{backgroundColor:'#19819Fff', fontSize: 'auto' }}>
             I created the soundtrack for the demo game
             <em> STORE</em> created by
             <em> FellHawk Studios </em>
@@ -389,8 +373,8 @@ function HeaderProjects() {
               controls="true"
               class="audio-1"
               style={{
-                backgroundColor: "black",
-                border: "3px solid white",
+                backgroundColor: "#19819Fff",
+                border: "3px solid #19819Fff",
                 color: "red",
                 padding: "5px",
                 margin: "20px"
@@ -500,7 +484,13 @@ function HeaderProjects() {
       
       </div>
 
+      <div style={{
+        backgroundColor: '#1B2524ff',
 
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+      }}>
       <button
         style={{
           color: '#025B79ff',
@@ -513,6 +503,7 @@ function HeaderProjects() {
         onClick={mainBodyHandle}>
         OPEN
       </button>
+      </div>
 
     </div>
   );

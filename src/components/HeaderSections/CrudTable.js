@@ -13,18 +13,14 @@ export const CrudTable = props =>{
                 <thead>
                     <tr>
                         <th>Catagory</th>
-                        <th>MostRecentUpdate</th>
-                        <th>UpcomingUpdates</th>
-                        <th>Priority</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     {contacts.map((contact)=>
                      <tr>
                         <td>{contact.Catagory}</td>
-                        <td>{contact.MostRecentUpdate}</td>
-                        <td>{contact.UpcomingUpdates}</td>
-                        <td>{contact.Priority}</td>
+                    
                      </tr>
                     )}
                 </tbody>
@@ -34,9 +30,7 @@ export const CrudTable = props =>{
             <div className="containercrud">
                 <form >
                     <input className="specialinput" type="text" name="catagory" required="required" placeholder="Catagory" />
-                    <input className="specialinput" type="text" name="MostRecentUpdate" required="required" placeholder="MRU" />
-                    <input className="specialinput" type="text" name="UpcomingUpdates" required="required" placeholder="Upcoming" />
-                    <input className="specialinput" type="text" name="Priority" required="required" placeholder="Priority" />
+
                     <button  style={{color:'#AEBEBEff',backgroundColor:'#101730ff'}}   type="submit"> CREATE </button>
                 </form>
             </div>

@@ -303,10 +303,7 @@ keyframes move {
 
 .subheader2body {
 
-  background-image: url('https://media.giphy.com/media/1n912mTRT08Zn0yGqD/giphy.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #2E5252ff;
 }
 
 .subheader3 {
@@ -327,10 +324,7 @@ keyframes move {
 
 .subheader3body {
 
-  background-image: url('https://media.giphy.com/media/3Dpb6nPAPObuU46ZDe/giphy.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }
 
 .subheader4 {
@@ -351,10 +345,7 @@ keyframes move {
 
 .subheader4body {
 
-  background-image: url('https://media.giphy.com/media/3roOFtzGnGhsNwdc03/giphy.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #2E5252ff;
 }
 
 .subheader5 {
@@ -439,16 +430,17 @@ keyframes move {
 
 .spacer {
   display: block;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   border-bottom: none;
   border-top-width: 1px;
+  background-color: #243232ff;
 }
 
 .spacer2 {
   display: block;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
   border-bottom: none;
   border-top-width: 1px;
 }
@@ -542,7 +534,7 @@ keyframes move {
   font-family: 'Syne Mono', monospace;
   padding: 1px;
   text-align: center;
-  border: 1px solid var(--bg-accent);
+  
   transition: border 3s;
 
 }

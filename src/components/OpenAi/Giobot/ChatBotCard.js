@@ -3,9 +3,8 @@ import ChatBot from './ChatBot';
 
 const ChatBotCard = (props) => {
 
-    let reg = "[a-zA-Z0-9.\\s]+";
-    //let reg = new RegExp(`[a-zA-Z0-9.\s]+`);
-
+    const reg = '[a-zA-Z0-9.\\s]+';
+    //const reg = /[a-zA-Z0-9.\\s]+/mg;
     const [chatBotStatus, setChatBotStatus] = useState(false)
     const [userInput, setUserInput] = useState('')
     const [toggle, setToggle] = useState(false)
@@ -13,11 +12,30 @@ const ChatBotCard = (props) => {
 
     const formHandle = (e) => {
         e.preventDefault();
-        console.log(e)
         
-        let x = document.forms["botForm"]["formInput"].value;
-  
-        if ( x.length > 126)
+        let input = document.forms["botForm"]["formInput"].value;
+        let m;
+        const regex = /[a-zA-Z0-9.\\s]+/mg;
+
+
+        while ((m = regex.exec(input)) !== null) {
+            // This is necessary to avoid infinite loops with zero-width matches
+            if (m.index === regex.lastIndex) {
+                regex.lastIndex++;
+            }
+            
+            // The result can be accessed through the `m`-variable.
+            m.forEach((match, groupIndex) => {
+                console.log(`Found match, group ${groupIndex}: ${match}`);
+            });
+        }
+
+        console.log("Form handle: input: " + input);
+        console.log("Reg exp: " + reg);
+        
+
+        // Additional error handling ( does not matter for regex )
+        if ( input.length > 126)
         {
             setErrmssg('Shorten your question');
             setTimeout(() => {
@@ -25,7 +43,7 @@ const ChatBotCard = (props) => {
               }, 3000);
             return false;
         }
-        if ( x.length <= 1)
+        if ( input.length <= 1)
         {
             setErrmssg('Please, talk to the AI in a sentence more than 1 letter');
             setTimeout(() => {
@@ -33,7 +51,9 @@ const ChatBotCard = (props) => {
               }, 3000);
             return false;
         }
-        setUserInput(e.target[0].value);
+
+        //Set data to call api 
+        setUserInput(input);
         setToggle(true);
     }
 

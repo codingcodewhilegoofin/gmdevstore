@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.390baf7c.css",
-    "main.js": "/static/js/main.f8f76774.js",
+    "main.css": "/static/css/main.936e017c.css",
+    "main.js": "/static/js/main.5cf30a6d.js",
     "static/js/377.2343714a.chunk.js": "/static/js/377.2343714a.chunk.js",
     "static/media/info1.png": "/static/media/info1.07dd0ce23eb9dacac176.png",
     "static/media/Store.ogg": "/static/media/Store.c01e4b86a269fd180180.ogg",
@@ -22,6 +22,7 @@
     "static/media/mash.PNG": "/static/media/mash.f7a0c0692de005aab9c0.PNG",
     "static/media/safteycheck.png": "/static/media/safteycheck.e0bfd92a3d597c108bea.png",
     "static/media/instagram.svg": "/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
+    "static/media/favicon.ico": "/static/media/favicon.6f4b871dd0f8d85a2c8b.ico",
     "static/media/Bitcoin.svg": "/static/media/Bitcoin.02dcffc41c5ddce5517738167a8e8f4e.svg",
     "index.html": "/index.html",
     "static/media/OpenSea.PNG": "/static/media/OpenSea.516df4d513dc96ca68a4.PNG",
@@ -30,12 +31,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.c304a4148cde039a54532585f4d47b48.svg",
     "static/media/github.svg": "/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
     "static/media/download.svg": "/static/media/download.813dbc20743248471dbfd70d54caa81d.svg",
-    "main.390baf7c.css.map": "/static/css/main.390baf7c.css.map",
-    "main.f8f76774.js.map": "/static/js/main.f8f76774.js.map",
+    "main.936e017c.css.map": "/static/css/main.936e017c.css.map",
+    "main.5cf30a6d.js.map": "/static/js/main.5cf30a6d.js.map",
     "377.2343714a.chunk.js.map": "/static/js/377.2343714a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.390baf7c.css",
-    "static/js/main.f8f76774.js"
+    "static/css/main.936e017c.css",
+    "static/js/main.5cf30a6d.js"
   ]
 }

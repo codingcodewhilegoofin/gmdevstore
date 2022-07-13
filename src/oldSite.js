@@ -40,14 +40,14 @@ function OldSite() {
     <HashRouter basename='/'> {/*Hash routing  */}
 
       {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */}
-      <div className="App">
+      <div className="App" style={{padding: '1px'}}>
 
         <Giobot/>
 
         {/*Custom Menu button */}
 
         {/*Link pages */}
-        <Navbar>
+        <Navbar >
 
 
           <Link className="nav-item" to="/github">
@@ -89,8 +89,6 @@ function OldSite() {
         </Navbar>
 
         <UnderNav>
-
-
 
 
           <Link className="nav-item" to="/github">
@@ -161,11 +159,13 @@ function Navbar(props) {
 
 
   return (
-    <nav className="navbar">
+    <div style={{padding: '2px'}}>
+    <nav className="navbar"  >
       <ul className="navbar-nav">
         {props.children}
       </ul>
     </nav>
+    </div>
   );
 }
 function NavItem(props) {
@@ -238,13 +238,15 @@ function UnderNav(props) {
 
 
   return (
+    <div style={{padding: '2px'}}>
     <nav className="navbar-2">
       <ul className="navbar-nav">
-        <li className="nav-item-li">
+        <li className="nav-item-li" style={{ lineHeight: '50px'}}>
           {props.children}
         </li>
       </ul>
     </nav>
+    </div>
   );
 }
 function UnderText(props) {

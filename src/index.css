@@ -65,11 +65,18 @@ h6{
     height: var(--nav-size);
     background-color: var(--weirdgray);
     padding: 0 1rem;
-    border-bottom: var(--ash-gray);
+    border:1px solid var(--ash-gray);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     width: auto;
+    border-radius: 20px;
+   
+  }
+
+  .navbar:hover
+  {
+    border: 1px solid var(--bg-accent2);
   }
   
   .navbar-nav{
@@ -194,6 +201,7 @@ h6{
     height: var(--nav-size);
     padding: 0 1rem;
     border-bottom: var(--border);
+    border-radius: 20px;
     border: 1px solid var(--ash-gray);
     top: 0;
     background: linear-gradient(90deg, var(--bg), var(--bg-2), var(--bg-accent3), var(--bg-accent2), var(--weirdgray) , var(--weirdgray) , var(--ash-gray), var(--blue-sapphire), var(--dark-slate-gray), var(--bg-accent3), var(--bg-accent2), var(--bg-accent2), var(--bg-accent),  var(--bg) );

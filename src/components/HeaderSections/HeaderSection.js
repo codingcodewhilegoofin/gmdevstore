@@ -84,7 +84,7 @@ function HeaderSection() {
       <div id="mainBody" className='gio-main'>
         <div className='subheader9' >
         <video src='/public/videos/HeaderVid.mp4' autoPlay loop />
-          <h1 style={{ color: '#AEBEBEff', fontWeight:'900' }}>🥳 Vanilla / Regular Site Version</h1>
+          <h1 style={{ color: '#AEBEBEff', fontWeight:'900' }}>🥳 Ah , Yeah! Vanilla / Regular Site Version</h1>
           <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
           <a style={{ color: 'white'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
 

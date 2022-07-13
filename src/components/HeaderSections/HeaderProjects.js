@@ -19,10 +19,12 @@ import STOREmusic from '../../audio/Store.ogg';
 import Table from './Table';
 import GioTable from './GioTable.js';
 import CrudTable from './CrudTable.js';
+import ProjectCard from './ProjectCard.js';
 
 import '../PageCss/Crudtable.css';
 import '../PageCss/GioTable.css';
 import '../PageCss/NewTable.css';
+
 
 
 function HeaderProjects() {
@@ -108,7 +110,7 @@ function HeaderProjects() {
     <div>
       <div style={{
         backgroundColor: '#1B2524ff',
-
+        borderRadius: "5px",
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
@@ -147,39 +149,44 @@ function HeaderProjects() {
         <div className='spacer'>
         </div>
 
-        <div class="subheader1" style={{ padding: '20px',  }}>
-          <h1 style={{ color: 'white', fontSize:'30px',fontWeight:'900',backgroundColor:'#19819Fff'}}>My other web apps</h1>
-        </div>
+        <ProjectCard 
+          title="Other Web App's" 
+          subtitle="Fullstackingdevelopment.com"
+          description="I am working on a Full Stack React-Native app which hosts our other projects with a team !"
+         
+        >
 
         <div className='spacer2'>
         </div>
         
         <div className="gio-container" 
-        style={{  paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px'}}>
+        style={{  paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px',borderRadius: "5px", }}>
       
-          <div className='gio-main' style={{ width: '100%', }}>
-            
+          <div className='gio-container' style={{ width: '100%',borderRadius: "5px", }}>
+
+            <label></label>
 
             {specialheader2}
 
-            <h2 style={{
+            <label></label>
+
+            <a style={{
               color: '#AEBEBEff',
               fontSize: 'large',
               fontWeight: 'bold',
               backgroundColor:"#243232ff",
-            }}> I am working on a Full Stack ReactNative app which hosts our other projects with a team ! </h2>
-
-            <a style={{
-              color: '#E0012Aff',
-              fontSize: 'large',
             }}
               href="https://fullstackingdevelopment.com/"
             >
               fullstackingdevelopment.com
             </a>
 
+            <label></label>
+
           </div>
         </div>
+
+        </ProjectCard>
 
         <div className='spacer'>
         </div>

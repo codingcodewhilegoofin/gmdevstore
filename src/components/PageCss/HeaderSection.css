@@ -435,6 +435,7 @@ keyframes move {
   border-bottom: none;
   border-top-width: 1px;
   background-color: #243232ff;
+  border-radius: 5px;
 }
 
 .spacer2 {
@@ -461,6 +462,7 @@ keyframes move {
   height: auto;
   width: auto;
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   font-family: 'Syne Mono', monospace;
   padding: 1px;
@@ -480,6 +482,7 @@ keyframes move {
   height: auto;
   width: auto;
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   font-family: 'Syne Mono', monospace;
   padding: 1px;
@@ -499,6 +502,7 @@ keyframes move {
   height: auto;
   width: auto;
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   font-family: 'Syne Mono', monospace;
   padding: 1px;
@@ -517,6 +521,7 @@ keyframes move {
   height: auto;
   width: auto;
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   font-family: 'Syne Mono', monospace;
   padding: 1px;
@@ -530,6 +535,7 @@ keyframes move {
   height: auto;
   width: auto;
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   font-family: 'Syne Mono', monospace;
   padding: 1px;
@@ -663,6 +669,7 @@ keyframes move {
 
 .gio-main {
   border: 1px solid var(--ash-gray);
+  cursor: url('/src//icons/favicon.ico'), auto;
   transition: border 3s;
   text-align: center;
 }
@@ -675,6 +682,7 @@ keyframes move {
 .gio-container {
   padding: 2px;
   margin: auto;
+  border-radius: 5px;
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
   height: 100%;
   width: auto;
@@ -797,6 +805,7 @@ keyframes move {
   align-items: center;
   object-fit: contain;
   background-color: #19819Fff;
+  border-radius: 5px;
   border: 1px solid var(--bg-accent3);
   transition: 3s background-color;
 }
@@ -810,6 +819,7 @@ keyframes move {
 .gio-container-2 {
   padding: 50px;
   height: auto;
+  border-radius: 5px;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -876,6 +886,7 @@ keyframes move {
 .gio-container-3 {
   height: auto;
   width: auto;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -941,6 +952,7 @@ keyframes move {
 .gio-container-4 {
   padding: 100px;
   height: auto;
+  border-radius: 5px;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -1011,6 +1023,7 @@ keyframes move {
 .gio-container-5 {
   padding: 100px;
   height: auto;
+  border-radius: 5px;
   width: auto;
   display: flex;
   flex-direction: column;

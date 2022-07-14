@@ -79,6 +79,7 @@ p {
 }
 
 .Iam {
+  cursor: url('/src//icons/Bmocute.png'), auto;
   margin: auto;
   height: 100%;
   width: auto;
@@ -381,6 +382,7 @@ keyframes move {
 }
 
 .subheader7 {
+  cursor: url('/src//icons/Koya.png'), auto;
   margin: auto;
   height: 100%;
   width: auto;
@@ -397,6 +399,7 @@ keyframes move {
 }
 
 .subheader8 {
+  cursor: url('/src//icons/phone2.png'), auto;
   margin: auto;
   height: 100%;
   width: auto;
@@ -413,6 +416,7 @@ keyframes move {
 }
 
 .subheader9 {
+  cursor: url('/src//icons/favicon.ico'), auto;
   margin: auto;
   height: 100%;
   width: auto;
@@ -669,7 +673,6 @@ keyframes move {
 
 .gio-main {
   border: 1px solid var(--ash-gray);
-  cursor: url('/src//icons/favicon.ico'), auto;
   transition: border 3s;
   text-align: center;
 }
@@ -684,6 +687,7 @@ keyframes move {
   margin: auto;
   border-radius: 5px;
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  
   height: 100%;
   width: auto;
   display: flex;

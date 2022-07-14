@@ -143,7 +143,7 @@ function HeaderProjects() {
               CLI and Low level based projects<br /> 
             </div>
           </b>
-          <a style={{ color: 'white'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
+          <a style={{ color: 'white', cursor: 'pointer'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
         </div>
 
         <div className='spacer'>
@@ -156,15 +156,13 @@ function HeaderProjects() {
          
         >
 
-        <div className='spacer2'>
-        </div>
+       
         
-        <div className="gio-container" 
-        style={{  paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px',borderRadius: "5px", }}>
+        <div className="gio-container" style={{margin: '10px'}}>
       
-          <div className='gio-container' style={{ width: '100%',borderRadius: "5px", }}>
+          <div className="gio-container" style={{ width: '100%',borderRadius: "5px",  }}>
 
-            <label></label>
+         
 
             {specialheader2}
 

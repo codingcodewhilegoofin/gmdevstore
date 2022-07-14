@@ -59,6 +59,18 @@ h6{
   text-shadow: 0 1px 0 #161A1D, 0 2px 0 #161A1D, 0 3px 0 #161A1D, 0 4px 0 #161A1D,  0 5px 0 #161A1D, 0 6px 0 #161A1D, 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -68,9 +80,11 @@ h6{
     border:1px solid var(--ash-gray);
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    overflow: hidden;
     top: 0;
     width: auto;
     border-radius: 20px;
+   
    
   }
 
@@ -236,11 +250,18 @@ h6{
     height: var(--nav-size);
     background-color: var(--weirdgray);
     padding: 0 1rem;
-    border-bottom: var(--ash-gray);
+    
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     width: auto;
+    border-radius: 20px;
+    border:1px solid var(--ash-gray);
+  }
+
+  .navbar:hover
+  {
+    border: 1px solid var(--bg-accent2);
   }
   
   .navbar-nav{
@@ -371,6 +392,7 @@ h6{
     background-size: 1000%;
     animation: bgchange 30s ease infinite;
     width:auto;
+    border-radius: 20px;
     
   }
   .navbar-2:hover
@@ -401,11 +423,18 @@ h6{
     height: var(--nav-size);
     background-color: var(--weirdgray);
     padding: 0 1rem;
-    border-bottom: var(--ash-gray);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     width: auto;
+
+    border-radius: 20px;
+    border:1px solid var(--ash-gray);
+  }
+
+  .navbar:hover
+  {
+    border: 1px solid var(--bg-accent2);
   }
   
   .navbar-nav{
@@ -530,12 +559,14 @@ h6{
     height: var(--nav-size);
     background: linear-gradient(90deg, var(--bg), var(--bg-2), var(--bg-accent3), var(--bg-accent2), var(--weirdgray) , var(--weirdgray) , var(--ash-gray), var(--blue-sapphire), var(--dark-slate-gray), var(--bg-accent3), var(--bg-accent2), var(--bg-accent2), var(--bg-accent),  var(--bg) );
     padding: 0 1rem;
-    border-bottom: var(--border);
+    
     border: 1px solid var(--ash-gray);
     top: 0;
     background-size: 1000%;
     animation: bgchange 30s ease infinite;
     width:auto;
+    border-radius: 20px;
+    border:1px solid var(--ash-gray);
   }
   .navbar-2:hover
   {
@@ -565,10 +596,19 @@ h6{
     height: var(--nav-size);
     background-color: var(--weirdgray);
     padding: 0 1rem;
-    border-bottom: var(--ash-gray);
+   
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+
+    
+    border-radius: 20px;
+    border:1px solid var(--ash-gray);
+  }
+
+  .navbar:hover
+  {
+    border: 1px solid var(--bg-accent2);
   }
   
   .navbar-nav{
@@ -700,6 +740,8 @@ h6{
     background-size: 1000%;
     animation: bgchange 30s ease infinite;
     width:auto;
+    border-radius: 20px;
+    border:1px solid var(--ash-gray);
   }
   .navbar-2:hover
   {

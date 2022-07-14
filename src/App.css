@@ -3,6 +3,96 @@
   background-color: #243232ff
 }
 
+.modalbtn{
+  position: fixed; /* Sit on top of the page content */
+  display: sticky; /* Hidden by default */
+  width: 3%; /* Full width (cover the whole page) */
+  height: 5%; /* Full height (cover the whole page) */
+  top: 0;
+  
+  right: 0;
+  bottom: 0;
+  background-color: #242a36; 
+  border: 1px solid #212C50ff;
+  color: #19819Fff;
+  z-index: 2;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 3px;
+  padding-left: 0px;
+  padding-right: 0px;
+  cursor: pointer;
+}
+.modalbtn:hover{
+
+  background-color: #140B2Dff; /* Black background with opacity */
+  
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.718); /* Black w/ opacity */
+}
+.modalbtninner{
+  position: relative; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 4%; /* Full height (cover the whole page) */
+  padding: 0px;
+  margin: 0px;
+  border-radius: 20px;
+  background-color: transparent; /* Fallback color */ 
+  border: none;
+  color: #19819Fff;
+  cursor: pointer;
+}
+.modalbtninner:hover{
+  border: none;
+  background-color: transparent; 
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #101730ff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #E0012Aff;
+  border-radius: 4px;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.listmodal{
+  color:white;
+  padding-left: 15px;
+  padding: 10px;
+  letter-spacing:5px;
+}
+
+
+
 .DrawerBox{
   position:absolute; 
   top:0px;

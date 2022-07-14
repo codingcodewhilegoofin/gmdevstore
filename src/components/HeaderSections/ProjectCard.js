@@ -50,7 +50,7 @@ const ProjectCard = (props) => {
 
             <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%",  }}>
 
-                <div id="cardToggle" className="choicediv" style={{ background: "#19819Fff", textAlign: "center", width: '100%', border: "10px solid #101730ff", borderRadius: "5px", }}>
+                <div id="cardToggle" className="choicediv" style={{ background: "#19819Fff", textAlign: "center", width: '100%', border: "2px solid #101730ff", borderRadius: "5px", }}>
 
                     <h1
                         style={{
@@ -59,8 +59,9 @@ const ProjectCard = (props) => {
                             marginTop: "5px",
                             border: "2px solid #242a36 ",
                             borderRadius: "5px",
-                            fontSize: '17px',
+                            fontSize: '15px',
                             fontWeight: '900',
+                            margin: '10px'
                         }}>
                         {props.subtitle}
                     </h1>
@@ -69,6 +70,7 @@ const ProjectCard = (props) => {
                         color: "#AEBEBEff",
                         fontSize: "auto",
                         fontWeight: '900',
+                        
                     }}>
                         {props.description}
                     </h3>

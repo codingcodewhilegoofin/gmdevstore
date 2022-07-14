@@ -12,7 +12,8 @@ import Spotify from './components/Pages/Spotify';
 import NewSite from './NewSite';
 import AboutPage from './components/Pages/AboutPage';
 import ContactPage from './components/Pages/ContactPage';
-import Projects from './components/Pages/Projects'
+import Projects from './components/Pages/Projects';
+import StartApp from './Start';
 import './App.css';
 import Giobot from './components/OpenAi/Giobot/Giobot.js'
 
@@ -127,6 +128,7 @@ function OldSite() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/dependency+" component={NewSite} />
+        <Route exact path="/splinescene" component={StartApp} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path='/github' component={() => {
@@ -159,7 +161,7 @@ function Navbar(props) {
 
 
   return (
-    <div style={{padding: '2px'}}>
+    <div  style={{padding: '2px'}}>
     <nav className="navbar"  >
       <ul className="navbar-nav">
         {props.children}
@@ -183,55 +185,6 @@ function NavItem(props) {
       </div>
       {open && props.children}
     </li>
-  );
-}
-function Dropdown() {
-
-  const [activeMenu, setActiveMenu] = useState('main');
-  const [menuHeight, setMenuHeight] = useState(null);
-
-  function calcHeight(el) {
-    const height = el.offsetHeight;
-    setMenuHeight(height);
-  }
-
-  function DropdownItem(props) {
-    return (
-      <a href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
-        <span className="icon-button">{props.leftIcon}</span>
-        {props.children}
-        <span className="icon-right">{props.rightIcon}</span>
-      </a>
-    );
-  }
-
-
-  return (
-    <div className="dropdown" style={{ height: menuHeight }}>
-      <CSSTransition in={activeMenu === 'main'} unmountOnExit timeout={500} classNmaes="menu-primary" onEnter={calcHeight}>
-
-        <div className="menu">
-
-          <DropdownItem> Hello </DropdownItem>
-          <DropdownItem
-            leftIcon={<DownloadSymbol />}
-            rightIcon={<DownloadSymbol />}
-            goToMenu="settings">
-          </DropdownItem>
-        </div>
-      </CSSTransition>
-
-      <CSSTransition in={activeMenu === 'settings'} unmountOnExit timeout={500} classNmaes="menu-secondary">
-
-        <div className="menu">
-
-          <DropdownItem> menu2 </DropdownItem>
-          <DropdownItem goToMenu="main"> Hello </DropdownItem>
-
-
-        </div>
-      </CSSTransition>
-    </div>
   );
 }
 function UnderNav(props) {

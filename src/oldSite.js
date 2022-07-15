@@ -125,7 +125,7 @@ function OldSite() {
 
         {/*Routes  */}
 
-        <Route exact path="/home" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/dependency+" component={NewSite} />
         <Route exact path="/splinescene" component={StartApp} />

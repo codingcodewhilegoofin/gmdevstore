@@ -24,25 +24,22 @@ function App() {
 
   const [siteVersion, setSiteVersion] = useState("");
   const [startScene, setStartScene] = useState(true);
-  
-
-  useEffect(()=> {
-    if (window.location.href == 'https://giomoscato.com/#/home') {
-      setStartScene(false);
-    }
-  },[])
-  
-
   const [modal, setModal] = useState(true);
+  const [modalToggle, setModalToggle] = useState("modalbtn");
+  const [modalbg, setModalbg] = useState("modalOff");
 
   const modalHandle = () => {
     var x = document.getElementById("modalsection");
     if (x.style.display === "none") {
+      setModalToggle("modalbtnspecial");
+      setModalbg("modalOn");
       x.style.display = "block";
       setModal(!modal);
     }
     else {
       x.style.display = "none";
+      setModalToggle("modalbtn");
+      setModalbg("modalOff");
     }
   }
 
@@ -56,9 +53,6 @@ function App() {
     setStartScene(data);
   }
 
-  const homeRefresh = () => {
-    window.location.reload(false);
-  }
 
   let theme = false;
 
@@ -68,16 +62,16 @@ function App() {
   //<Button variant="outlined" color="error">Error</Button>
   return (
 
-    <div style={{ backgroundColor: "#1C2222" }}>
-      <button onClick={modalHandle} class="modalbtn">⁝</button>
+    <div className={modalbg} style={{ backgroundColor: "#1C2222" }}>
+      <button onClick={modalHandle} class={modalToggle}>⁝</button>
       <div id="modalsection" class="modal">
         <div class="modal-content">
-          <button onClick={modalHandle} class="modalbtninner">❌</button>
+          <button onClick={modalHandle} class="modalbtninner">Close❌</button>
           <h1 className="modalTitle">Menu</h1>
 
           <div className="modalBox">
             <ul>
-              <li className='listmodal'> <a onClick={homeRefresh} href='/#/home' className='listmodal'> Home 🏠</a> </li>
+              <li className='listmodal'> <a href='/#/' className='listmodal'> Home 🏠</a> </li>
               <li className='listmodal'> <a href='/#/dependency+' className='listmodal'> 3JS / R3F <img style={{ backgroundColor: '#FFFFFF', padding: '2px' }} width='25px' height='25px' src={BoxIcon} /></a> </li>
               <li className='listmodal'> <a href='/#/splinescene' className='listmodal'> 3DSplineScene <img style={{ backgroundColor: '#FFFFFF', padding: '1px', marginLeft: '10px', marginTop: '5px' }} width='100px' height='100px' src={SplineIcon} /></a> </li>
               <li className='listmodal'> <a href='/#/projects' className='listmodal'> Projects </a> </li>

@@ -249,7 +249,8 @@ h6{
 @media screen and (max-height: 460px){
   .modalbtn{
     
-    width: 5%; 
+    padding-top: 5px;
+    width: 6%; 
     height: 4%;
   }
   .App {
@@ -264,7 +265,8 @@ h6{
 
   .modalbtn{
     
-    width: 5%; 
+    padding-top: 5px;
+    width: 6%; 
     height: 4%;
   }
   .App {
@@ -276,8 +278,8 @@ h6{
 
 @media screen and (max-width: 360px){
   .modalbtn{
-    
-    width: 5%; 
+    padding-top: 5px;
+    width: 6%; 
     height: 4%;
   }
 

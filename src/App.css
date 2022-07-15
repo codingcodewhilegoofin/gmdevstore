@@ -34,7 +34,7 @@
 .modalbtn{
   position: fixed; /* Sit on top of the page content */
   display: sticky; /* Hidden by default */
-  width: 3%; /* Full width (cover the whole page) */
+  width: 4%; /* Full width (cover the whole page) */
   height: 5%; /* Full height (cover the whole page) */
   top: -1;
   right: 0;
@@ -46,7 +46,7 @@
   z-index: 2;
   margin-top: 0px;
   margin-left: 0px;
-  padding-top: 3px;
+  padding-top: 4px;
   padding-left: 0px;
   padding-right: 0px;
   cursor: pointer;

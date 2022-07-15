@@ -3,17 +3,40 @@
   background-color: #243232ff
 }
 
+.modalTitle{
+  font-weight:900;
+  letter-spacing:10px;
+  align-items: center;
+  align-self: center;
+  color: white;
+  margin-top: 10px;
+  
+}
+.modalTitle:hover{
+  color: rgb(255, 0, 0);
+}
+
+.modalBox{
+  background-color: rgba(36, 50, 50, 0.597);
+  width:100%;
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 10px;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+}
+
 .modalbtn{
   position: fixed; /* Sit on top of the page content */
   display: sticky; /* Hidden by default */
-  width: 3%; /* Full width (cover the whole page) */
+  width: 6%; /* Full width (cover the whole page) */
   height: 5%; /* Full height (cover the whole page) */
-  top: 0;
-  
+  top: -1;
   right: 0;
   bottom: 0;
-  background-color: #242a36; 
-  border: 1px solid #212C50ff;
+  left: 1;
+  background-color: #242a364f; 
+  border: 1px solid rgba(33, 44, 80, 0.241);
   color: #19819Fff;
   z-index: 2;
   margin-top: 0px;
@@ -24,13 +47,15 @@
   cursor: pointer;
 }
 .modalbtn:hover{
-
-  background-color: #140B2Dff; /* Black background with opacity */
-  
+  background-color: rgba(20, 11, 45, 0.175); /* Black background with opacity */
 }
+
 
 .modal {
   display: none; /* Hidden by default */
+  flex-direction: column;
+  align-items: center;
+ 
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -52,37 +77,28 @@
   border: none;
   color: #19819Fff;
   cursor: pointer;
+  align-items: center;
+  align-self: center;
 }
 .modalbtninner:hover{
   border: none;
   background-color: transparent; 
+  
 }
 
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #101730ff;
+  background-color: rgba(16, 23, 48, 0.669);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #E0012Aff;
-  border-radius: 4px;
+  border-radius: 10px;
   width: 80%; /* Could be more or less, depending on screen size */
+  align-items: center;
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .listmodal{
   color:white;

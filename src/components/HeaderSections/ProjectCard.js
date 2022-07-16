@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
     const [toggleMenu, setToggleMenu] = useState();
 
     const menuHandle = () => {
-        var x = document.getElementById("cardToggle");
+        var x = document.getElementById(props.cardToggleID);
         if (x.style.display === "none") {
             x.style.display = "block";
             setCardToggle(!cardToggle);
@@ -50,7 +50,7 @@ const ProjectCard = (props) => {
 
             <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%",  }}>
 
-                <div id="cardToggle" className="choicediv" style={{ background: "#19819Fff", textAlign: "center", width: '100%', border: "2px solid #101730ff", borderRadius: "5px", }}>
+                <div id={props.cardToggleID} className="choicediv" style={{ background: "#19819Fff", textAlign: "center", width: '100%', border: "2px solid #101730ff", borderRadius: "5px", }}>
 
                     <h1
                         style={{

@@ -31,6 +31,8 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ---
 ## RecentUpdates
 
+- Massive update to UI, Contents, and navigation.
+**Date: 7/15/2022**
 
 - Integrated React-ThreeFiber and Spline
 - Updated 3D environments and UI

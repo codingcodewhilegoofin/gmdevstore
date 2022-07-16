@@ -108,6 +108,7 @@ function HeaderProjects() {
 
   return (
     <div>
+
       <div style={{
         backgroundColor: '#1B2524ff',
         borderRadius: "5px",
@@ -128,365 +129,595 @@ function HeaderProjects() {
           CLOSE
         </button>
       </div>
+
       <div id="mainBody" className='gio-main'>
 
         <div class="Iam" >
 
-          <h1 style={{ color: '#AEBEBEff', fontSize:'50px',fontWeight:'900' }}>Projects</h1>
+          <h1 style={{ color: '#AEBEBEff', fontSize: '50px', fontWeight: '900' }}>Projects</h1>
           <b>
-            <div class="innerIam"  style={{ backgroundColor: 'black'}}>
+            <div class="innerIam" style={{ backgroundColor: 'black' }}>
               Web,VideoGame, Embeded systems development<br />
               Spotify, Stock, OPENAI API Integrations<br />
               Web, Game, Embeded applications development<br />
               React & React Native Full Stack Web App's<br />
               Data Structures & Algorithms <br />
-              CLI and Low level based projects<br /> 
+              CLI and Low level based projects<br />
             </div>
           </b>
-          <a style={{ color: 'white', cursor: 'pointer'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
+          <a style={{ color: 'white', cursor: 'pointer' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
         </div>
 
-        <div className='spacer'>
-        </div>
+        <h1
+          style={{
+            color: "#AEBEBEff",
+            backgroundColor: "#025B79ff",
+            marginTop: "5px",
+            border: "2px solid #242a36 ",
+            borderRadius: "5px",
+            fontSize: '15px',
+            fontWeight: '900',
+            margin: '5px'
+          }}>
+          PROJECT DIRECTORY AND Q&A
+        </h1>
 
-        <ProjectCard 
-          title="Other Web App's" 
-          subtitle="Fullstackingdevelopment.com"
-          description="I am working on a Full Stack React-Native app which hosts our other projects with a team !"
-         
+
+
+        <ProjectCard
+          title="Directory"
+          subtitle="Project Directory"
+          description="List of all projects I have made available to the public that involve coding or programming"
+          cardToggleID={"IdZero"}
         >
+          <div className="end-div5" >
+            <ol style={{ fontWeight: '900', border: '5px solid black'}}>
+              <li style={{ fontWeight: '900', border: '5px solid black'}}>Web dev based projects</li>
+              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>giomoscato.com<br/> <a style={{ color: 'white'}}>(React web app)</a></li>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>fullstackingdevelopment.com<br/> <a style={{ color: 'white'}}>(React Native / Firebase web app)</a></li>
+                <label></label>
+              
+              </ul>
 
-       
-        
-        <div className="gio-container" style={{margin: '10px'}}>
-      
-          <div className="gio-container" style={{ width: '100%',borderRadius: "5px",  }}>
+              <li style={{ fontWeight: '900', border: '5px solid white'}}>API intergration projects</li>
+              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' ,border: '5px solid #101730ff' }}>Spotify API<br/> <p style={{ color: 'white'}}>(called from giomoscato.com)</p><br/><a href="/#/Spotify" style={{ color: 'blue'}}>/Spotify</a></li>
+                <label></label>
+                <li style={{ fontWeight: '900',border: '5px solid #101730ff'  }}>Open AI API<br/> <p style={{ color: 'white'}}>(called from giomoscato.com)</p><br/><p style={{ color: 'black'}}>Used for the AI Gio-Chatbot</p><br/><p>Check the top of this website</p></li>
+                <label></label>
+                <li style={{ fontWeight: '900' ,border: '5px solid #101730ff'}}>Arduino Cloud IOT API<br/> <p style={{ color: 'white'}}>(called from giomoscato.com)</p><br/><a style={{ color: 'black'}}>Used in 3D render of Arduino Project</a><br/><a href="/#/dependency+" style={{ color: 'blue'}}>/dependency+</a></li>
+                <label></label>
+                <li style={{ fontWeight: '900',border: '5px solid #101730ff' }}>Polygon.io API<br/> <p style={{ color: 'white'}}>(called from giomoscato.com)</p><br/><p style={{ color: 'black'}}>Displays financial information</p><br/><a href="/#/cstrack+" style={{ color: 'blue'}}>/cstrack</a></li>
+                <label></label>
+                <li style={{ fontWeight: '900',border: '5px solid #101730ff' }}>SW API<br/> <p style={{ color: 'white'}}>(called from giomoscato.com)</p><p style={{ color: 'black' }}>Used for table</p></li>
+                <label></label>
+              
+              </ul>
 
-         
+              <li style={{ fontWeight: '900', border: '5px solid black'}}>3D based projects</li>
+              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>3D version of giomoscato.com<br/> <a style={{ color: 'white'}}>(Uses ThreeJS and R3F)</a></li>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>3D Introduction Scene & Menu<br/> <a style={{ color: 'white'}}>(Uses SplineJS)</a></li>
+                <label></label>
+              
+              </ul>
 
-            {specialheader2}
+              <li style={{ fontWeight: '900', border: '5px solid white'}}>Data structure & Algorithm based projects</li>
+              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' ,border: '5px solid #101730ff' }}>C++ Compiler for IEEE 754 float converter<br/> <p style={{ color: 'white'}}>(Written in C++)</p></li>
+                <label></label>
+                <li style={{ fontWeight: '900',border: '5px solid #101730ff'  }}>DSA showcase<br/><p style={{ color: 'white'}}>(Written in pure JS & JSX)</p></li>
+                <label></label>
+              </ul>
 
-            <label></label>
-
-            <a style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              fontWeight: 'bold',
-              backgroundColor:"#243232ff",
-            }}
-              href="https://fullstackingdevelopment.com/"
-            >
-              fullstackingdevelopment.com
-            </a>
-
-            <label></label>
-
+              <li style={{ fontWeight: '900', border: '5px solid black'}}>Video Games</li>
+              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>Pink Balls<br/> <a style={{ color: 'white'}}>(Used Unity, written in C#)</a></li>
+                <label></label>
+              
+              </ul>
+            </ol>
           </div>
-        </div>
 
         </ProjectCard>
 
         <div className='spacer'>
         </div>
 
-        <div class="subheader2" style={{padding: '20px' }}>
-          <h1 style={{ color: 'white', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>API Intergrations</h1>
-        </div>
 
-        <div className='spacer2'>
-        </div>
-
-        <div class="subheader2body" style={{ paddingBottom: '20px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '20px' }}>
-        <div className="end-div5" >
-          <Link to="/Spotify">
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#242a36'
-            }}> Spotify API Integration, click me! </h2>
-            <img src={Sp} width='100%' height='auto' style={{ padding: '5px' }} />
-           
-          </Link>
-
-        </div>
-
-
-        <div className="end-div5" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
-          <Link to="/cstrack">
-          <div className='gio-main' style={{ border:'none' , backgroundColor:'#242a36' }}>
-            <Bitcoinsymb style={{ backgroundColor: '#AEBEBEff', padding: '5px' }} />
-            </div>
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#025B79ff',
-              fontWeight: '900'
-
-            }}> Crypto & Stock tracker API's, click here ! </h2>
-          </Link>
-        </div>
-
-        <div className="gio-container" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
-          <div className='gio-container-2'>
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#243232ff',
-             
-            }}>API Switch</h2>
-            <h2 style={{ color: 'white' }} >Endpoint request using vanilla JS displayed in custom table</h2>
-            <p style={{backgroundColor:'#243232ff'}}>You can switch between endpoints using this button!</p>
-            <p style={{backgroundColor:'#243232ff'}}><em>It may take some time to load between button presses</em></p>
-            <button
-              style={{ color: '#AEBEBEff', backgroundColor: '#101730ff', cursor: 'pointer' }}
-              onClick={urlChange}>
-              Change API
-            </button>
-          </div>
-
-          {!currentStatus ? <h2>Loading... </h2> : <Table data={data} />}
-        </div>
-
-        <div className="gio-container" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
-        <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#243232ff',
-
-            }}>CRUD Form & Table</h2>
-            <h2 style={{ color: 'white' }}> Demonstration of CRUD properties</h2>
-          {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
-         
-        </div>
-        </div>
-
-        <div className='spacer'>
-        </div>
-
-        <div class="subheader3" style={{padding: '20px' }} >
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900',backgroundColor:'#19819Fff'}}>Data structures, algorithms, and more</h1>
-        </div>
-
-        <div className='spacer2'>
-        </div>
-
-        <div class="subheader3body" style={{ paddingBottom: '20px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '20px' }}>
-        <div className="end-div5" >
-          <div className='gio-container-4' style={{ backgroundColor:'transparent'}}>
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#242a36'
-            }}>  C++ Compiler for IEEE 754 float converter </h2>
-            <iframe
-              height="600px"
-              width="100%"
-              src="https://replit.com/@codingcodewhile/IntelligentBurdensomeAdaware?lite=true"
-              scrolling="yes"
-              frameborder="yes"
-              allowtransparency="true"
-              allowfullscreen="true"
-              sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
-            </iframe>
-
-            <p style={{backgroundColor:'#243232ff'}}>I created a IEEE 754 standard converter to convert hexadecimal ( and decimal) numbers into floating point.</p>
-            <p  style={{backgroundColor:'#243232ff'}}> This is my original code and It does have a few errors here and there discussed in DOC.
-              Just press the green RUN arrow and then click next to the orange arrow when prompted. You may enter a hexadecimal number or decimal.
-            </p>
-          </div>
-        </div>
-
-        <div className="end-div5" style={{ paddingBottom: '10px',paddingLeft: '5px',paddingRight: '5px',paddingTop: '10px' }}>
-          <Link to="/Dsa">
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#242a36'
-            }} > DSA Interactive Showcase </h2>
-            <img src={Arrayinfo} width='100%' height='auto' style={{ padding: '5px' }} />
-          </Link>
-        </div>
-        </div>
-
-        <div className='spacer'>
-        </div>
-
-        <div class="subheader4" style={{padding: '20px' }}  >
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900',backgroundColor:'black'}}>Video game dev & design </h1>
-        </div>
-
-        <div className='spacer2'>
-        </div>
-        
-        <div class="subheader4body" style={{ paddingBottom: '40px',paddingLeft: '2px',paddingRight: '2px',paddingTop: '40px' }}>
-        <div className='gio-container-5'>
-          <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#242a36'
-            }}>Pink Balls created with Unity & C#</h2>
-          <p style={{backgroundColor:'#243232ff'}}>
-            The game is based on velocity.
-            <br></br>
-            <br></br>You have to keep pressing the move keys to gain enough momentum to reach the end zone! Watch out for cubes they will slow you down.
-          </p>
-
-          <iframe src="https://itch.io/embed-upload/2795508?color=EEEEEE" allowfullscreen="" width="100%" height="1000px" frameborder="0">
-            <a href="https://yupimaperson101.itch.io/pink-balls">Play Pink Balls on itch.io</a>
-          </iframe>
-
-          <p style={{backgroundColor:'#243232ff'}}>I designed and developed this game completley on my own with some inspiration.<br></br><br></br> I was going for a "monkey ball" type game.
-            This game although simple at first glance was extremely hard to make and has many, many bugs that I had to fix. <br></br><br></br>
-            The game is finished however and beatable.<br></br><br></br> There is a menu, main gameplay loop, and end goal.
-            Please reach out to me if you find a bug.<br></br> Also, I plan to make more levels at some point.
-          </p>
-
-        </div>
-
-
-        <div className='gio-container-2'>
-          <h2 style={{
-              color: '#AEBEBEff',
-              fontSize: 'large',
-              backgroundColor: '#242a36',
-              fontWeight: '900'
-            }}>STORE video game (Musical Credits) </h2>
-          <p style={{backgroundColor:'#19819Fff', fontSize: 'auto' }}>
-            I created the soundtrack for the demo game
-            <em> STORE</em> created by
-            <em> FellHawk Studios </em>
-          </p>
-
-          <a style={{
-            color: "red",
-            fontFamily: "Exo",
-            fontSize: "large",
-           
-            padding: "10px",
-            margin: "10px"
-          }} href="https://fell-hawk.itch.io/store">
-            FellHawk-Itch.io
-          </a>
-
-
-
-          <img src={STORE} width='90%' height='auto' />
-          <span></span>
-          <div>
-            <audio src={STOREmusic}
-              type="audio/wav"
-              controls="true"
-              class="audio-1"
-              style={{
-                backgroundColor: "#19819Fff",
-                border: "3px solid #19819Fff",
-                color: "red",
-                padding: "5px",
-                margin: "20px"
-              }}
-            />
-          </div>
-          </div>
-          </div>
-
-         <div className='spacer'>
-         </div>
-
-
-          <div className="end-div">
-          
-              <a href="https://github.com/codingcodewhilegoofin/giowebsite">
-              <h2 style={{
-                color: '#AEBEBEff',
-                fontWeight: 'bold'
-              }}> My website technology pipeline / stack ? ✨ </h2>
-
-              <ol style={{
-                color: 'white'
-              }}>
-                <li> Bash/Linux/Windows( CLI/OS )</li>
-                <li> VScode( IDE )</li>
-                <li> ReactJS </li>
-                <li> NPM</li>
-                <li> HTML/CSS/JS/JSX </li>
-                <li> Githubpages(Host server) </li>
-                <li> GoogleDomains(DNS)</li>
-                <li> React Router</li>
-                <li> Github ( source control ) </li>
-              </ol>
-              
-            </a>
-          </div>
-          <div className="subheader5" style={{border:'2px solid #101730ff'}}>
-            <h3 style={{
-                color: 'white',
-                fontWeight: 'bold',
+        <ProjectCard
+          title="Q & A"
+          subtitle="Questions and answers"
+          description="More information about these projects, where to find them, and what they do."
+          cardToggleID={"Id"}
+        >
+          <div className="end-div5" >
+            <ol style={{ fontWeight: '900', border: '5px solid black'}}>
+            <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: How can I navigate this website better, i'm lost</li>
+              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>There is a spinning menu button to click on, or use the header icons</li>
                
-              }}> Please consider collaborating
-                <br /> or donating!
-                <br></br>🔥
+              </ul>
 
-              </h3>
+            <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: What the heck is this website</li>
+              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <label></label>
+                <li style={{ fontWeight: '900' }}>My personal portfolio to showcase my projects<br/> <a style={{ color: 'white'}}>This website itself is also a project so it can get confusing.</a></li>
+               
+              
+              </ul>
+
+              <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: How may projects are there total</li>
+              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>4 technically<br/> <a style={{ color: 'white'}}>Some of the projects I am working on are nested INTO this website.<br/> I know it can be a bit confusing which is why I made this Q&A.</a></li>
+               
+              </ul>
+
+              <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: Okay, which projects are part of the website ?</li>
+              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <label></label>
+                <li style={{ fontWeight: '900' }}>Any 3D scene, API call, or pure JS / JSX is built from scratch into this website<br/> <a style={{ color: 'white'}}>The 3D scenes do use libraries but I only used them to set up the environment's necessary.</a> <br/>If you're still on giomoscato.com/#/ it's probably a project built into the site or using an Iframe</li>
+               
+              
+              </ul>
+
+              <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: What is that 3D scene when I load this website?</li>
+              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <label></label>
+                <li style={{ fontWeight: '900' }}>A 3D scene created with Spline.js<br/> <a style={{ color: 'white'}}>I wanted the introduction to my portfolio to be interesting<br/> That scene is a menu basically but has some easter eggs.</a></li>
+               
+              
+              </ul>
+
+              <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: How can I see your projects without having to go to other websites</li>
+              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>Check "Project Showcase" to see them live on this website</li>
+                <label></label>
+   
+              
+              </ul>
+
+              <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: Are all your projects code - based?</li>
+              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' ,border: '5px solid #101730ff' }}>Any projects mentioned in "Project Directory" are coded by me or with a team<br/> <p style={{ color: 'white'}}>I do have non-code projects on here but they are not mentioned in the directory</p></li>
+   
+              </ul>
+
+              <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: How can I find a specific project ?</li>
+              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>Check "Project Directory" or use the Gio-Chatbot and ask it a question</li>
+                <label></label>
+   
+              
+              </ul>
+
+              <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: Most impressive project ? </li>
+              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' }}>giomoscato.com or some C++ based projects I have not yet realeased</li>
+                <label></label>
+   
+              
+              </ul>
+
+              <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: Favorite project?</li>
+              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+                <label></label>
+                <li style={{ fontWeight: '900' ,border: '5px solid #101730ff' }}>Pink balls was my first super silly game I ever made, but it was really fun<br/> It was also my first experience with 3D worlds</li>
+   
+              </ul>
+
+              
+            </ol>
+          </div>
+
+        </ProjectCard>
+
+        <div className='spacer'>
+        </div>
+
+        <h1
+          style={{
+            color: "#AEBEBEff",
+            backgroundColor: "#025B79ff",
+            marginTop: "5px",
+            border: "2px solid #242a36 ",
+            borderRadius: "5px",
+            fontSize: '15px',
+            fontWeight: '900',
+            margin: '5px'
+          }}>
+          PROJECT SHOWCASE
+        </h1>
+
+        <ProjectCard
+          title="Other Web App's"
+          subtitle="Fullstackingdevelopment.com"
+          description="I am working on a Full Stack React-Native app which hosts our other projects with a team !"
+          cardToggleID={"IdOne"}
+        >
+          <div className="gio-container" style={{ margin: '10px' }}>
+            <div className="gio-container" style={{ width: '100%', borderRadius: "5px", }}>
+              {specialheader2}
+              <label></label>
+              <a style={{
+                color: '#AEBEBEff',
+                fontSize: 'large',
+                fontWeight: 'bold',
+                backgroundColor: "#243232ff",
+              }}
+                href="https://fullstackingdevelopment.com/"
+              >
+                fullstackingdevelopment.com
+              </a>
+              <label></label>
+            </div>
+          </div>
+        </ProjectCard>
+
+        <div className='spacer'>
+        </div>
+
+        <ProjectCard
+          title="API Intergrations"
+          subtitle="Spotify API"
+          description="I intergrated the Spotify API my web app to show off my music !"
+          cardToggleID={"IdTwo"}
+        >
+
+          <div class="subheader2body" style={{ paddingBottom: '20px', paddingLeft: '2px', paddingRight: '2px', paddingTop: '20px' }}>
+            <div className="end-div5" style={{ padding: '10px' }}>
+              <Link to="/Spotify">
+                <h2 style={{
+                  color: '#AEBEBEff',
+                  fontSize: 'large',
+                  backgroundColor: '#242a36'
+                }}> Click me! </h2>
+                <img src={Sp} width='100%' height='auto' style={{ padding: '5px' }} />
+
+              </Link>
+
+            </div>
+
+            <h1
+              style={{
+                color: "#AEBEBEff",
+                backgroundColor: "#025B79ff",
+                marginTop: "5px",
+                border: "2px solid #242a36 ",
+                borderRadius: "5px",
+                fontSize: '15px',
+                fontWeight: '900',
+                margin: '5px'
+              }}>
+              Stock and Crypto API intergration
+            </h1>
+
+            <div className="end-div5" style={{ paddingBottom: '10px', paddingLeft: '5px', paddingRight: '5px', paddingTop: '10px' }}>
+
+              <Link to="/cstrack">
+                <div className='gio-main' style={{ border: 'none', backgroundColor: '#242a36' }}>
+                  <Bitcoinsymb style={{ backgroundColor: '#AEBEBEff', padding: '5px' }} />
+                </div>
+                <h2 style={{
+                  color: '#AEBEBEff',
+                  fontSize: 'large',
+                  backgroundColor: '#025B79ff',
+                  fontWeight: '900'
+
+                }}> Click here ! </h2>
+              </Link>
+            </div>
+
+            <h1
+              style={{
+                color: "#AEBEBEff",
+                backgroundColor: "#025B79ff",
+                marginTop: "5px",
+                border: "2px solid #242a36 ",
+                borderRadius: "5px",
+                fontSize: '15px',
+                fontWeight: '900',
+                margin: '5px'
+              }}>
+              Custom API call and CRUD examples
+            </h1>
+
+
+            <div className="gio-container" style={{ paddingBottom: '10px', paddingLeft: '5px', paddingRight: '5px', paddingTop: '10px' }}>
+              <div className='gio-container-2'>
+                <h2 style={{
+                  color: '#AEBEBEff',
+                  fontSize: 'large',
+                  backgroundColor: '#243232ff',
+
+                }}>API Switch</h2>
+                <h2 style={{ color: 'white' }} >Endpoint request using vanilla JS displayed in custom table</h2>
+                <p style={{ backgroundColor: '#243232ff' }}>You can switch between endpoints using this button!</p>
+                <p style={{ backgroundColor: '#243232ff' }}><em>It may take some time to load between button presses</em></p>
+                <button
+                  style={{ color: '#AEBEBEff', backgroundColor: '#101730ff', cursor: 'pointer' }}
+                  onClick={urlChange}>
+                  Change API
+                </button>
               </div>
 
-          <div className="end-div3">
-            <a
+              {!currentStatus ? <h2>Loading... </h2> : <Table data={data} />}
+            </div>
 
-              href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
-            >
+            <div className="gio-container" style={{ paddingBottom: '10px', paddingLeft: '5px', paddingRight: '5px', paddingTop: '10px' }}>
               <h2 style={{
                 color: '#AEBEBEff',
-                fontWeight: 'bold'
-              }}>
-                Having trouble viewing my website ? 💔
-              </h2>
-              <h5
-                style={{
-                  color: 'white',
-                  fontWeight: 'bold'
-                }}
-              >
-                I tried to make my website <br /> desktop and mobile friendly as possible.
-              </h5>
-             
-            </a>
-            <div className="subheader6">
-            <h3
-                style={{
-                  color: '#AEBEBEff',
-                  border: '2px solid #AEBEBEff',
-                  fontWeight: 'bold'
-                }}>
-                Major Update! : Most mobile / scaling issues should be fixed
-                <br />
-                <br />
-                <a href="https://www.buymeacoffee.com/giomoscato101">
-                  <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=243232ff&font_colour=ffffff&font_family=Poppins&outline_colour=243232ff&coffee_colour=243232ff" />
-                </a>
-              </h3>
-              </div>
+                fontSize: 'large',
+                backgroundColor: '#243232ff',
+
+              }}>CRUD Form & Table</h2>
+              <h2 style={{ color: 'white' }}> Demonstration of CRUD properties</h2>
+              {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
+
+            </div>
           </div>
+        </ProjectCard>
+
+        <div className='spacer'>
+        </div>
+
+        <ProjectCard
+          title="Data Structures, Algorithms, and more"
+          subtitle=" C++ Compiler for IEEE 754 float converter"
+          description="I wrote a CLI program in C++ , feel free to try it in this code editor!"
+          cardToggleID={"IdThree"}
+        >
 
           <div className='spacer2'>
           </div>
 
-          <div class="end-div2" >
-          <h1 style={{ color: '#AEBEBEff', fontSize:'30px',fontWeight:'900'}}>More music by me!</h1>
-          </div>
+          <div class="subheader3body" style={{ paddingBottom: '20px', paddingLeft: '2px', paddingRight: '2px', paddingTop: '20px' }}>
+            <div className="end-div5"  >
+              <div className='gio-container-4' style={{ backgroundColor: 'transparent', }}>
 
-          <div class="Iam" >
-          <iframe
-              id="ytplayer"
-              type="text/html"
-              width="80%"
-              height="360"
-              autoplay="true"
-              src="https://www.youtube.com/embed/ZwWTUljUZLU?autoplay=1"
-              frameborder="0"
-            >
-            </iframe>
+                <iframe
+                  height="600px"
+                  width="100%"
+                  src="https://replit.com/@codingcodewhile/IntelligentBurdensomeAdaware?lite=true"
+                  scrolling="yes"
+                  frameborder="yes"
+                  allowtransparency="true"
+                  allowfullscreen="true"
+                  sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
+                </iframe>
+
+                <p style={{ backgroundColor: '#243232ff' }}>I created a IEEE 754 standard converter to convert hexadecimal ( and decimal) numbers into floating point.</p>
+                <p style={{ backgroundColor: '#243232ff' }}> This is my original code and It does have a few errors here and there discussed in DOC.
+                  Just press the green RUN arrow and then click next to the orange arrow when prompted. You may enter a hexadecimal number or decimal.
+                </p>
+              </div>
             </div>
-      
+
+            <h1
+              style={{
+                color: "#AEBEBEff",
+                backgroundColor: "#025B79ff",
+                marginTop: "5px",
+                border: "2px solid #242a36 ",
+                borderRadius: "5px",
+                fontSize: '15px',
+                fontWeight: '900',
+                margin: '5px'
+              }}>
+              Practice and usage with DSA !
+            </h1>
+
+            <div className="end-div5" style={{ paddingBottom: '10px', paddingLeft: '5px', paddingRight: '5px', paddingTop: '10px' }}>
+              <Link to="/Dsa">
+                <h2 style={{
+                  color: '#AEBEBEff',
+                  fontSize: 'large',
+                  backgroundColor: '#242a36',
+                  margin: '5px'
+                }} > Click me!  </h2>
+                <img src={Arrayinfo} width='100%' height='auto' style={{ padding: '5px' }} />
+              </Link>
+            </div>
+          </div>
+        </ProjectCard>
+
+        <div className='spacer'>
+        </div>
+
+        <ProjectCard
+          title="Video game dev/design , Music, and more"
+          subtitle=" Pink Balls created with Unity & C#"
+          description="I created a small ball physics based game with Unity. Sadly it only works on Desktop"
+          cardToggleID={"IdFour"}
+        >
+
+          <div class="subheader4body" >
+            <div className='gio-container-5'>
+              <p style={{ backgroundColor: '#243232ff' }}>
+                The game is based on velocity.
+                <br></br>
+                <br></br>You have to keep pressing the move keys to gain enough momentum to reach the end zone! Watch out for cubes they will slow you down.
+              </p>
+              <iframe src="https://itch.io/embed-upload/2795508?color=EEEEEE" allowfullscreen="" width="100%" height="1000px" frameborder="0">
+                <a href="https://yupimaperson101.itch.io/pink-balls">Play Pink Balls on itch.io</a>
+              </iframe>
+              <p style={{ backgroundColor: '#243232ff' }}>I designed and developed this game completley on my own with some inspiration.<br></br><br></br> I was going for a "monkey ball" type game.
+                This game although simple at first glance was extremely hard to make and has many, many bugs that I had to fix. <br></br><br></br>
+                The game is finished however and beatable.<br></br><br></br> There is a menu, main gameplay loop, and end goal.
+                Please reach out to me if you find a bug.<br></br> Also, I plan to make more levels at some point.
+              </p>
+            </div>
+
+            <h1
+              style={{
+                color: "#AEBEBEff",
+                backgroundColor: "#025B79ff",
+                marginTop: "5px",
+                border: "2px solid #242a36 ",
+                borderRadius: "5px",
+                fontSize: '15px',
+                fontWeight: '900',
+                margin: '5px'
+              }}>
+              STORE video game (Musical Credits)
+            </h1>
+
+            <div className='gio-container-2'>
+              <h2 style={{
+                color: '#AEBEBEff',
+                fontSize: 'large',
+                backgroundColor: '#242a36',
+                fontWeight: '900'
+              }}>STORE </h2>
+              <p style={{ backgroundColor: '#19819Fff', fontSize: 'auto' }}>
+                I created the soundtrack for the demo game
+                <em> STORE</em> created by
+                <em> FellHawk Studios </em>
+              </p>
+
+              <a style={{
+                color: "red",
+                fontFamily: "Exo",
+                fontSize: "large",
+
+                padding: "10px",
+                margin: "10px"
+              }} href="https://fell-hawk.itch.io/store">
+                FellHawk-Itch.io
+              </a>
+
+              <img src={STORE} width='99%' height='auto' />
+              <span></span>
+              <div>
+                <audio src={STOREmusic}
+                  type="audio/wav"
+                  controls="true"
+                  class="audio-1"
+                  style={{
+                    backgroundColor: "#19819Fff",
+                    border: "3px solid #19819Fff",
+                    color: "red",
+                    padding: "5px",
+                    margin: "20px"
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </ProjectCard>
+
+
+        <div className='spacer'>
+        </div>
+
+        <div className="end-div" style={{ margin: '30px' }}>
+
+          <a href="https://github.com/codingcodewhilegoofin/giowebsite">
+            <h2 style={{
+              color: '#AEBEBEff',
+              fontWeight: 'bold'
+            }}> My website technology pipeline / stack ? ✨ </h2>
+
+            <ol style={{
+              color: 'white'
+            }}>
+              <li> Bash/Linux/Windows( CLI/OS )</li>
+              <li> VScode( IDE )</li>
+              <li> ReactJS </li>
+              <li> NPM</li>
+              <li> HTML/CSS/JS/JSX </li>
+              <li> Githubpages(Host server) </li>
+              <li> GoogleDomains(DNS)</li>
+              <li> React Router</li>
+              <li> Github ( source control ) </li>
+            </ol>
+
+          </a>
+        </div>
+        <div className="subheader5" style={{ border: '2px solid #101730ff' }}>
+          <h3 style={{
+            color: 'white',
+            fontWeight: 'bold',
+
+          }}> Please consider collaborating
+            <br /> or donating!
+            <br></br>🔥
+
+          </h3>
+        </div>
+
+        <div className="end-div3" style={{ margin: '20px' }}>
+          <a
+
+            href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
+          >
+            <h2 style={{
+              color: '#AEBEBEff',
+              fontWeight: 'bold'
+            }}>
+              Having trouble viewing my website ? 💔
+            </h2>
+            <h5
+              style={{
+                color: 'white',
+                fontWeight: 'bold'
+              }}
+            >
+              I tried to make my website <br /> desktop and mobile friendly as possible.
+            </h5>
+
+          </a>
+          <div className="subheader6">
+            <h3
+              style={{
+                color: '#AEBEBEff',
+                border: '2px solid #AEBEBEff',
+                fontWeight: 'bold'
+              }}>
+              Major Update! : Most mobile / scaling issues should be fixed
+              <br />
+              <br />
+              <a href="https://www.buymeacoffee.com/giomoscato101">
+                <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=243232ff&font_colour=ffffff&font_family=Poppins&outline_colour=243232ff&coffee_colour=243232ff" />
+              </a>
+            </h3>
+          </div>
+        </div>
+
+        <div className='spacer2'>
+        </div>
+
+        <div class="end-div2" style={{ margin: '30px' }} >
+          <h1 style={{ color: '#AEBEBEff', fontSize: '30px', fontWeight: '900' }}>More music by me!</h1>
+        </div>
+
+        <div class="Iam" >
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            width="80%"
+            height="360"
+            autoplay="true"
+            src="https://www.youtube.com/embed/ZwWTUljUZLU?autoplay=1"
+            frameborder="0"
+          >
+          </iframe>
+        </div>
+
       </div>
 
       <div style={{
@@ -496,18 +727,18 @@ function HeaderProjects() {
         flexDirection: 'column',
         justifyContent: 'flex-start',
       }}>
-      <button
-        style={{
-          color: '#025B79ff',
-          backgroundColor: 'transparent',
-          border: 'none',
-          cursor: 'pointer',
-          fontSize: 'smaller',
-          textTransform: 'uppercase',
-        }}
-        onClick={mainBodyHandle}>
-        OPEN
-      </button>
+        <button
+          style={{
+            color: '#025B79ff',
+            backgroundColor: 'transparent',
+            border: 'none',
+            cursor: 'pointer',
+            fontSize: 'smaller',
+            textTransform: 'uppercase',
+          }}
+          onClick={mainBodyHandle}>
+          OPEN
+        </button>
       </div>
 
     </div>

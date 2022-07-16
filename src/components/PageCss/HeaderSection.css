@@ -469,7 +469,7 @@ keyframes move {
   border-radius: 10px;
   justify-content: center;
   font-family: 'Syne Mono', monospace;
-  padding: 1px;
+  padding: 5px;
   text-align: center;
   border: 1px solid var(--bg-accent);
   transition: border 3s;
@@ -481,7 +481,6 @@ keyframes move {
   background-size: cover;
 }
 
-
 .end-div2 {
   height: auto;
   width: auto;
@@ -489,7 +488,7 @@ keyframes move {
   border-radius: 10px;
   justify-content: center;
   font-family: 'Syne Mono', monospace;
-  padding: 1px;
+  padding: 5px;
   text-align: center;
   border: 1px solid var(--bg-accent);
   transition: border 3s;
@@ -513,7 +512,7 @@ keyframes move {
   text-align: center;
   border: 1px solid var(--bg-accent);
   transition: border 3s;
-  background-image: url("/src//icons//bg1.png");
+  background-color: var(--cg-blue);
   background-position: top;
   /* Center the image */
   background-repeat: no-repeat;
@@ -675,6 +674,7 @@ keyframes move {
   border: 1px solid var(--ash-gray);
   transition: border 3s;
   text-align: center;
+  padding:10px;
 }
 
 .gio-main:hover {
@@ -821,7 +821,7 @@ keyframes move {
 
 
 .gio-container-2 {
-  padding: 50px;
+  padding: 20px;
   height: auto;
   border-radius: 5px;
   width: auto;

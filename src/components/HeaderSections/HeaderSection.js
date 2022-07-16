@@ -61,36 +61,39 @@ function HeaderSection() {
 
   return (
     <div>
-      <div style={{
-                backgroundColor: 'transparent',
 
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'flex-start',
-            }}>
-      <button
-        style={{
-          color: '#025B79ff',
-          backgroundColor: 'transparent',
-          border: 'none',
-          cursor: 'pointer',
-          fontSize: 'smaller',
-          textTransform: 'uppercase',
-        }}
-        onClick={mainBodyHandle}>
-        CLOSE
-      </button>
+      <div style={{
+        backgroundColor: 'transparent',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        
+      }}>
+        <button
+          style={{
+            color: '#025B79ff',
+            backgroundColor: 'transparent',
+            border: 'none',
+            cursor: 'pointer',
+            fontSize: 'smaller',
+            textTransform: 'uppercase',
+            paddingTop:'0px',
+            paddingBottom:'0px',
+          }}
+          onClick={mainBodyHandle}>
+          CLOSE
+        </button>
       </div>
+
       <div id="mainBody" className='gio-main'>
         <div className='subheader9' >
-        <video src='/public/videos/HeaderVid.mp4' autoPlay loop />
-          <h1 style={{ color: '#AEBEBEff', fontWeight:'900' }}>🥳 Ah , Yeah! Vanilla / Regular Site Version</h1>
-          <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
-          <a style={{ color: 'white'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
-
+          <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 giomoscato.com</h1>
         </div>
 
-        <div style={{ padding: '20px' }}>
+        <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
+        <a style={{ color: 'white'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
+
+        <div style={{ padding: '10px' , paddingTop:'30px', paddingBottom:'20px'}}>
           <Button
             className='btns'
             buttonStyle='btn--outline'
@@ -98,41 +101,41 @@ function HeaderSection() {
           ></Button>
         </div>
 
-        <div className="gio-container">
+        {/* <div className="gio-container">
           {youtubesub}
           <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default"></div>
-        </div>
+        </div> */}
 
-        <div className='gio-container-2'>
+        <div className='gio-container-2'  style={{ paddingTop: '30px', paddignBottom:'30px' }}>
 
           {specialheader}
-          <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='90%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
+          <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
         </div>
 
         <div className='spacer'>
         </div>
 
-        <div className='gio-container-3'>
+        <div className='gio-container-3'  style={{ padding: '10px' }}>
 
           {logoSection}
           <ul>
             <li><a style={{ color: 'white' }} href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm</a></li>
-            <li> giovannijmoscato@gmail.com </li>
+            <li > giovannijmoscato@gmail.com </li>
           </ul>
-          <p>
+          <p style={{ backgroundColor:'#242a36'}}>
             Besides github and linkedin I want to be open and available to anyone who wants to chat!
           </p>
-          <p>All other relevant contact information is available through the "email icon" or contact page.</p>
-          <img src={GioBanner} width='90%' height='auto' style={{ padding: '5px' }} />
-        
+          <p style={{ backgroundColor:'#242a36'}}>All other relevant contact information is available through the "email icon" or contact page.</p>
+          <img src={GioBanner} width='100%' height='auto' style={{ padding: '5px' }} />
+
         </div>
 
         <div className='spacer'>
         </div>
 
 
-        <div className='gio-container-2'>
-          <p>
+        <div className='gio-container-2' style={{ padding: '2px' }}>
+          <p style={{ backgroundColor:'#242a36'}}>
             You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
             with on the about/skills page!
           </p>
@@ -149,13 +152,13 @@ function HeaderSection() {
         </div>
 
         <div className='spacer'>
-         </div>
+        </div>
 
-        <div className='gio-container-4' style={{ border: '1px solid white',}}>
-          <div className='gio-container-2'  style={{ border: '1px solid white',}}>
+        <div className='gio-container-4' style={{ border: '1px solid white', padding:'5px' }}>
+          <div className='gio-container-2' style={{ border: '1px solid white',padding: '5px' }}>
 
-          <h4> Site rating and statistics </h4>
-           
+            <h4> Site rating and statistics </h4>
+
             <p>
               <a
                 style={{
@@ -186,55 +189,55 @@ function HeaderSection() {
             <em> B</em>
           </h2>
 
-          <img src={gtrating} width='40%' height='auto' />
+          <img src={gtrating} width='30%' height='auto' />
 
-          <div className='gio-container-2'  style={{ border: '1px solid white',}}>
-          <p>
-            Some additional metrics of the site such as site structure:
-          </p>
+          <div className='gio-container-2' style={{ border: '1px solid white',padding: '5px' }}>
+            <p>
+              Some additional metrics of the site such as site structure:
+            </p>
 
-          <img src={gtadd} width='90%' height='auto' />
+            <img src={gtadd} width='100%' height='auto' />
           </div>
           <br />
 
-          <div className='gio-container-2'  style={{ border: '1px solid white',}}>
-          <p>
-            <a
-              style={{
-                color: 'white',
-                padding: '5px'
-              }}
-              href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">
-              Security Rating
-            </a> from:
-            <a
-              style={{
-                color: 'white',
-                padding: '5px'
-              }}
-              href='https://www.ssltrust.com/'
-            >
-              SSL Trust
-            </a>
-          </p>
+          <div className='gio-container-2' style={{ border: '1px solid white', padding: '5px'}}>
+            <p>
+              <a
+                style={{
+                  color: 'white',
+                  padding: '5px'
+                }}
+                href="https://gtmetrix.com/reports/giomoscato.com/iJWuFtqv/">
+                Security Rating
+              </a> from:
+              <a
+                style={{
+                  color: 'white',
+                  padding: '5px'
+                }}
+                href='https://www.ssltrust.com/'
+              >
+                SSL Trust
+              </a>
+            </p>
 
-          
 
-          <h2 style={{
-            color: 'white',
-            padding: '5px'
-          }}>
-            Recieved a rating of PASS with 93 tests completed and 0 reports of malware <em> or </em> spam
-          </h2>
 
-          <img src={safteycheck} width='90%' height='auto' />
+            <h2 style={{
+              color: 'white',
+              padding: '5px'
+            }}>
+              Recieved a rating of PASS with 93 tests completed and 0 reports of malware <em> or </em> spam
+            </h2>
 
-          <br />
+            <img src={safteycheck} width='100%' height='auto' />
+
+            <br />
           </div>
         </div>
 
         <div className='spacer'>
-         </div>
+        </div>
 
 
         <div className="end-div">
@@ -299,7 +302,7 @@ function HeaderSection() {
           </a>
         </div>
 
-        <div className='gio-container-2' style={{ padding: '5px' }}>
+        <div className='gio-container-2' style={{ padding: '0px' }}>
           <h3
             style={{
               color: '#AEBEBEff',
@@ -316,9 +319,7 @@ function HeaderSection() {
             width="100%"
             height="600px"
             frameborder="0"
-            style={{
-              padding: '5px',
-            }}
+           
           >
           </iframe>
 

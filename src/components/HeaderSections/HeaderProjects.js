@@ -173,7 +173,7 @@ function HeaderProjects() {
           <div className="end-div5" >
             <ol style={{ fontWeight: '900', border: '5px solid black'}}>
               <li style={{ fontWeight: '900', border: '5px solid black'}}>Web dev based projects</li>
-              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' }}>giomoscato.com<br/> <a style={{ color: 'white'}}>(React web app)</a></li>
                 <label></label>
@@ -183,7 +183,7 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid white'}}>API intergration projects</li>
-              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' ,border: '5px solid #101730ff' }}>Spotify API<br/> <p style={{ color: 'white'}}>(called from giomoscato.com)</p><br/><a href="/#/Spotify" style={{ color: 'blue'}}>/Spotify</a></li>
                 <label></label>
@@ -199,7 +199,7 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid black'}}>3D based projects</li>
-              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' }}>3D version of giomoscato.com<br/> <a style={{ color: 'white'}}>(Uses ThreeJS and R3F)</a></li>
                 <label></label>
@@ -209,7 +209,7 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid white'}}>Data structure & Algorithm based projects</li>
-              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' ,border: '5px solid #101730ff' }}>C++ Compiler for IEEE 754 float converter<br/> <p style={{ color: 'white'}}>(Written in C++)</p></li>
                 <label></label>
@@ -218,7 +218,7 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid black'}}>Video Games</li>
-              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' }}>Pink Balls<br/> <a style={{ color: 'white'}}>(Used Unity, written in C#)</a></li>
                 <label></label>
@@ -240,16 +240,16 @@ function HeaderProjects() {
           cardToggleID={"Id"}
         >
           <div className="end-div5" >
-            <ol style={{ fontWeight: '900', border: '5px solid black'}}>
+            <ol style={{ fontWeight: '900', border: '5px solid black',}}>
             <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: How can I navigate this website better, i'm lost</li>
-              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
                 <label></label>
                 <li style={{ fontWeight: '900' }}>There is a spinning menu button to click on, or use the header icons</li>
                
               </ul>
 
             <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: What the heck is this website</li>
-              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px'}}>
               <label></label>
                 <li style={{ fontWeight: '900' }}>My personal portfolio to showcase my projects<br/> <a style={{ color: 'white'}}>This website itself is also a project so it can get confusing.</a></li>
                
@@ -257,14 +257,14 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: How may projects are there total</li>
-              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' }}>4 technically<br/> <a style={{ color: 'white'}}>Some of the projects I am working on are nested INTO this website.<br/> I know it can be a bit confusing which is why I made this Q&A.</a></li>
                
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: Okay, which projects are part of the website ?</li>
-              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px'}}>
               <label></label>
                 <li style={{ fontWeight: '900' }}>Any 3D scene, API call, or pure JS / JSX is built from scratch into this website<br/> <a style={{ color: 'white'}}>The 3D scenes do use libraries but I only used them to set up the environment's necessary.</a> <br/>If you're still on giomoscato.com/#/ it's probably a project built into the site or using an Iframe</li>
                
@@ -272,7 +272,7 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: What is that 3D scene when I load this website?</li>
-              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px'}}>
               <label></label>
                 <li style={{ fontWeight: '900' }}>A 3D scene created with Spline.js<br/> <a style={{ color: 'white'}}>I wanted the introduction to my portfolio to be interesting<br/> That scene is a menu basically but has some easter eggs.</a></li>
                
@@ -280,7 +280,7 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: How can I see your projects without having to go to other websites</li>
-              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' }}>Check "Project Showcase" to see them live on this website</li>
                 <label></label>
@@ -289,14 +289,14 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: Are all your projects code - based?</li>
-              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px'}}>
                 <label></label>
-                <li style={{ fontWeight: '900' ,border: '5px solid #101730ff' }}>Any projects mentioned in "Project Directory" are coded by me or with a team<br/> <p style={{ color: 'white'}}>I do have non-code projects on here but they are not mentioned in the directory</p></li>
+                <li style={{ fontWeight: '900' , }}>Any projects mentioned in "Project Directory" are coded by me or with a team<br/> <p style={{ color: 'white'}}>I do have non-code projects on here but they are not mentioned in the directory</p></li>
    
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: How can I find a specific project ?</li>
-              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' }}>Check "Project Directory" or use the Gio-Chatbot and ask it a question</li>
                 <label></label>
@@ -305,7 +305,7 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid black'}}>Q: Most impressive project ? </li>
-              <ul style={{ fontWeight: '900', border: '2px solid black'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px'}}>
                 <label></label>
                 <li style={{ fontWeight: '900' }}>giomoscato.com or some C++ based projects I have not yet realeased</li>
                 <label></label>
@@ -314,9 +314,9 @@ function HeaderProjects() {
               </ul>
 
               <li style={{ fontWeight: '900', border: '5px solid white'}}>Q: Favorite project?</li>
-              <ul style={{ fontWeight: '900', border: '2px solid white'}}>
+              <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px'}}>
                 <label></label>
-                <li style={{ fontWeight: '900' ,border: '5px solid #101730ff' }}>Pink balls was my first super silly game I ever made, but it was really fun<br/> It was also my first experience with 3D worlds</li>
+                <li style={{ fontWeight: '900' , }}>Pink balls was my first super silly game I ever made, but it was really fun<br/> It was also my first experience with 3D worlds</li>
    
               </ul>
 

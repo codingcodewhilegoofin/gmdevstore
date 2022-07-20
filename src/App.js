@@ -44,7 +44,7 @@ function App() {
   }
 
   const specialHanlde = () => {
-    window.location.href = "/";
+    setStartScene(true);
   }
 
   //Add drawer to hide return button 

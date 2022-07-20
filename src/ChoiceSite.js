@@ -7,10 +7,11 @@ import './choice.css';
 const ChoiceSite = (props) => {
 
     const [mainMenu, setMainMenu] = useState(true);
-    const [toggleMenu,setToggleMenu] = useState();
+    const [toggleMenu,setToggleMenu] = useState('CLOSE');
 
     const menuHandle = () => {
         var x = document.getElementById("mainmenu");
+       
         if (x.style.display === "none") {
             x.style.display = "block";
             setMainMenu(!mainMenu);
@@ -41,7 +42,7 @@ const ChoiceSite = (props) => {
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
             }}>
-                <div className="choicediv" style={{ backgroundColor: "#101730ff", textAlign: "center", width: "100%", border: "1px solid #025B79ff", }}>
+                <div className="chatbotBar" >
                     <button
                         style={{
                             color: '#025B79ff',
@@ -53,7 +54,7 @@ const ChoiceSite = (props) => {
 
                         }}
                         onClick={menuHandle}>
-                        {toggleMenu} 3D options
+                        <a>{toggleMenu}</a> 3D options
                     </button>
                 </div>
             </div>

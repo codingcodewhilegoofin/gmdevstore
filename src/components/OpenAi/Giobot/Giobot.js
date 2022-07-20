@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import ChatBotCard from './ChatBotCard';
+import './chat.css'
 
 const message1 = 'Let AI help you learn about me, search "Does Gio know about frameworks"';
 const message2 = 'Let AI help you learn about me, search "What scripting languages does Gio know"';
@@ -7,7 +8,7 @@ const message2 = 'Let AI help you learn about me, search "What scripting languag
 const Giobot = () => {
     
     const [chatBotStatus,setChatBotStatus] = useState(true);
-    const [toggle,setToggle] = useState();
+    const [toggle,setToggle] = useState('CLOSE');
 
 
     const chatbothandle = () => {
@@ -27,6 +28,7 @@ const Giobot = () => {
     
     return(
         <div
+            
         
             style={{
                 backgroundColor: '#101730ff',
@@ -36,7 +38,7 @@ const Giobot = () => {
                 justifyContent: 'flex-start',
             }}
         >
-            <div className="choicediv" style={{backgroundColor:"#101730ff" , textAlign:"center", width:"100%", border:"1px solid #025B79ff"}}>
+            <div className="chatbotBar" >
             <button 
             style={{
                 color: '#025B79ff',
@@ -47,7 +49,7 @@ const Giobot = () => {
                 fontSize: 'smaller',
             }}
             onClick={chatbothandle}>
-               {toggle} AI Gio-chatbot 
+               <a>{toggle}</a> AI Gio-chatbot 
             </button>
 
             </div>

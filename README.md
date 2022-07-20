@@ -31,6 +31,21 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ---
 ## RecentUpdates
 
+Need to somehow store nodes object to use globally
+Every render checks if this object is null 
+If null we need to download nodes from Spline
+Else we just use the global object
+
+Updated Menu UI 
+**Date: 7/20/2022**
+
+- Problem with mobile / desktop load time with 3D scene from Spline.com took 30,799 ms to load about 30sec.
+- Light house rating for performance was terrible at 13,000ms blocking time and 20 s untill interactive 3D scene on mobile.
+- Light house rating for perormance on desktop was slightly better at 5,740ms and took 7s to become interactive.
+
+Possible solutions: Service workers, reduce 3D elements, optimize code, skip if TTL is too long
+**Date: 7/18/2022**
+
 - Massive update to UI, Contents, and navigation.
 **Date: 7/15/2022**
 

@@ -43,6 +43,10 @@ function App() {
     }
   }
 
+  const specialHanlde = () => {
+    window.location.href = "/";
+  }
+
   //Add drawer to hide return button 
 
   const pull_data = (data) => {
@@ -55,7 +59,6 @@ function App() {
 
 
   let theme = false;
-
 
 
   //onClick={() =>  setSiteVersion("depedency")} style={{fontSize:'20px'}}
@@ -73,7 +76,7 @@ function App() {
             <ul>
               <li className='listmodal'> <a onClick={modalHandle} href='/#/' className='listmodal'> Home 🏠</a> </li>
               <li className='listmodal'> <a onClick={modalHandle} href='/#/dependency+' className='listmodal'> 3JS / R3F <img style={{ backgroundColor: '#FFFFFF', padding: '2px' }} width='25px' height='25px' src={BoxIcon} /></a> </li>
-              <li className='listmodal'> <a onClick={modalHandle} href='/#/splinescene' className='listmodal'> 3DSplineScene <img style={{ backgroundColor: '#FFFFFF', padding: '1px', marginLeft: '10px', marginTop: '5px' }} width='100px' height='100px' src={SplineIcon} /></a> </li>
+              <li onClick={specialHanlde} className='listmodal'> <a onClick={modalHandle}  className='listmodal'> 3DSplineScene <img style={{ backgroundColor: '#FFFFFF', padding: '1px', marginLeft: '10px', marginTop: '5px' }} width='100px' height='100px' src={SplineIcon} /></a> </li>
               <li className='listmodal'> <a onClick={modalHandle} href='/#/projects' className='listmodal'> Projects </a> </li>
               <li className='listmodal'> <a onClick={modalHandle} href='/#/Spotify' className='listmodal'> Spotify <img width='25px' height='25px' src={Spootify} /></a> </li>
               <li className='listmodal'> <a onClick={modalHandle} href='/#/cstrack' className='listmodal'> Stock&Crypto <img style={{ backgroundColor: '#FFFFFF', padding: '1px', marginLeft: '10px', marginTop: '5px' }} width='100px' height='100px' src={Coinlib} /></a> </li>

@@ -15,6 +15,7 @@ const DrawerMenu2 = (props) => {
   const [visible2, setVisible2] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [startScene, setStartScene] = useState(true);
+  const [fancyMode, setFancyMode] = useState(false);
 
   props.func(startScene);
 
@@ -41,24 +42,51 @@ const DrawerMenu2 = (props) => {
   let cardResize;
   let spaceResize;
   let skipButton;
+  let headerMessage;
+  let tophat;
+  let party;
+  let fancyguy;
+  let tuxguy;
+  let fancyoptions;
+  let fancymssg;
+
+  if(fancyMode == true){
+    tophat = <>🎩</>;
+    party = <>・❥・ 🎉 .·:*¨¨* ≈☆≈ *¨¨*:·.</>;
+    fancyguy = <>🧐</>;
+    tuxguy = <>🤵</>;
+    fancyoptions = <> ╰┈➤  Options ::::: 🧡 ━━━━━━━━━━━━━━ 🧡 :::::</>;
+    fancymssg= "Why hello there, how do you do.";
+  }
+  else{
+    tophat = <></>;
+    party = <></>;
+    fancyguy = <></>;
+    tuxguy = <></>;
+    fancyoptions= <>Options</>;
+    fancymssg = <></>;
+  }
 
   if (window.innerWidth < 700) {
     menuResize = 210;
     cardResize = 210;
     spaceResize = 'vertical';
     skipButton = <></>;
+    headerMessage= "Check the menu to skip 3D scene 🙃";
+     
   }
   else {
     menuResize = 500;
     cardResize = 300;
     spaceResize = 'horizontal';
     skipButton = <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff' }} onClick={SkipScene}>SKIP THIS SCENE ↪️</Button>;
+    headerMessage= "Welcome to giomoscato.com take a look around and explore there is a ton of information and easter eggs! 😁";
   }
 
   const [lightTheme, setLightTheme] = useState("false");
 
   function onChange(checked) {
-    setLightTheme(true);
+    setFancyMode(!fancyMode);
   }
 
   const openNotification = () => {
@@ -66,12 +94,12 @@ const DrawerMenu2 = (props) => {
     const args = {
       message: 'Please wait...',
       description:
-        '🔄 Loading 3D environment, can take a few seconds...',
+        '🔄 Loading 3D environment, sorry for the wait this can take a few mintutes due to having to load assets...',
       duration: 20,
       style: {
         width: 500,
-        backgroundColor: '#3F646Dff',
-        color: '#AEBEBEff',
+        backgroundColor: '#19819Fff',
+        color: '#101730ff',
       },
 
     };
@@ -80,16 +108,30 @@ const DrawerMenu2 = (props) => {
       message: 'How do I move? 🤔',
       description:
         'If you are on mobile just pinch and touch the screen. If you are on PC hold the left button to rotate, hold right button to move in the scene, and the scroll wheel to zoom in/out',
-      duration: 0,
+      duration: 90,
       onClose: setToggle(true),
       style: {
         width: 500,
-        backgroundColor: '#3F646Dff',
-        color: '#AEBEBEff',
+        backgroundColor: '#19819Fff',
+        color: '#101730ff',
+      },
+    };
+    const args3 = {
+
+      message: 'Can I just skip this? 🙃',
+      description:
+        'Yes in case its unclear click or press " SKIP THIS SCENE " button ',
+      duration: 15,
+      onClose: setToggle(true),
+      style: {
+        width: 500,
+        backgroundColor: '#19819Fff',
+        color: '#101730ff',
       },
     };
     notification.open(args);
     notification.open(args2);
+    notification.open(args3);
   };
 
   useEffect(() => {
@@ -107,17 +149,20 @@ const DrawerMenu2 = (props) => {
     <>
       <Space direction="horizontal" size="small" style={{ display: 'flex' }}>
         <Button type="primary" style={{ color: '#19819Fff', backgroundColor: '#243232ff', border: '1px solid #2E5252ff', padding: '1px' }} onClick={showDrawer}>
-          MENU
+          MENU {tuxguy}
         </Button>
 
         {skipButton}
 
-        <h4 style={{ color: '#19819Fff', fontSize: 'smaller', }}>Check the menu or skip this <em>awesome</em> 3D scene 🙃</h4>
+        <h4 style={{ color: '#19819Fff', fontSize: 'smaller', }}>{headerMessage}</h4>
 
       </Space>
-      <Drawer title="Options" placement="bottom" onClose={onClose} visible={visible} >
+    <Drawer title={fancyoptions} placement="bottom" onClose={onClose} visible={visible} >
+        
         <Card size="small" hoverable bordered={true} style={{ width: { menuResize }, backgroundColor: '#101730ff' }}>
-          <h4 style={{ color: '#19819Fff' }}>Thank you for exploring my website 😄 </h4>
+          {tophat}
+          <h4 style={{ color: '#19819Fff' }}>😄 Thank you for exploring my website{party}  </h4>
+          {tophat}
           <h4 style={{ color: '#19819Fff' }}>😕 Press/Click HELP if you're still confused ! </h4>
 
           <Space direction={spaceResize} size="small" style={{ display: 'flex' }}>
@@ -134,9 +179,9 @@ const DrawerMenu2 = (props) => {
 
 
             <div className="site-card-border-less-wrapper">
-              <h4 style={{ color: '#19819Fff' }}>Do Stuff </h4>
+              <h4 style={{ color: '#19819Fff' }}>{tophat}Fancy Mode </h4>
               <Card size="small" hoverable bordered={true} style={{ width: { cardResize }, backgroundColor: '#025B79ff' }}>
-                <Switch defaultChecked onChange={onChange} />
+                <Switch  onChange={onChange} />
               </Card>
             </div>
 
@@ -160,7 +205,7 @@ const DrawerMenu2 = (props) => {
                       <GithubSymbol />
                     </Card>
                   </a>
-
+                  {fancyguy} {fancymssg}
                   <a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/">
                     <Card size="small" hoverable style={{ width: 60, height: 60, backgroundColor: '#243232ff' }}>
                       <LinkedinSymbol />

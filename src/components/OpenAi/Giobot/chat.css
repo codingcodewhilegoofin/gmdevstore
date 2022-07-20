@@ -1,0 +1,10 @@
+.chatbotBar{
+    background-color: #101730ff;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #025B79ff;
+}
+
+.chatbotBar:hover{
+    background-color: #FFFFFF;
+}

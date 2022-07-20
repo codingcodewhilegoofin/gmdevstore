@@ -73,7 +73,7 @@
 .modalbtn:hover{
   background-color: rgba(20, 11, 45, 0.175); /* Black background with opacity */
   animation:none;
-
+  border: 1px solid blue;
 }
 .modalOn{
   

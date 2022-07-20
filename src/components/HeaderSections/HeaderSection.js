@@ -3,6 +3,8 @@ import React, { useState, useEffect, useParams } from 'react';
 import '../../App.css';
 import { Button } from '../Buttons/Button.js';
 import '../Buttons/Button.css';
+
+
 import '../PageCss/HeaderSection.css';
 
 import '../../icons/gio.jpg';

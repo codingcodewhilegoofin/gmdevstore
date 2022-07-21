@@ -35,7 +35,7 @@ export default function Start(props) {
   return (
     <div id="canvas-container" >
       <div style={{ padding: '1px', backgroundColor: '#101730ff', textAlign: 'center' }}> <DrawerMenu2 func={sceneChange} /> </div>
-
+      
       <Canvas shadows flat linear>
         
         <Suspense fallback={<Loader />}>

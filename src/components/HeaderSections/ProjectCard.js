@@ -1,10 +1,11 @@
 //Standard imports 
 import React, { useState } from 'react';
+import '../OpenAi/Giobot/chat.css'
 
 const ProjectCard = (props) => {
 
     const [cardToggle, setCardToggle] = useState(true);
-    const [toggleMenu, setToggleMenu] = useState();
+    const [toggleMenu, setToggleMenu] = useState("CLOSE");
 
     const menuHandle = () => {
         var x = document.getElementById(props.cardToggleID);
@@ -30,7 +31,7 @@ const ProjectCard = (props) => {
                 justifyContent: 'flex-start',
             }}>
 
-                <div className="choicediv" style={{ backgroundColor: "#101730ff", textAlign: "center", width: "100%", border: "2px solid #025B79ff", borderRadius: "5px", }}>
+                <div className="chatbotBar" >
                     <button
                         style={{
                             color: '#025B79ff',

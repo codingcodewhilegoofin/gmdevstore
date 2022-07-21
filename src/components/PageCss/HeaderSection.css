@@ -89,11 +89,13 @@ p {
   align-items: center;
   object-fit: contain;
   text-align: center;
-  border: 5px solid var(--bg-accent);
+  border: 5px solid #FFFFFF;
   background-image: url('https://media.giphy.com/media/UzrA4AE4CGzoC0NmeB/giphy.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .Iam b {
@@ -379,6 +381,7 @@ keyframes move {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 5px;
 }
 
 .subheader7 {
@@ -510,7 +513,7 @@ keyframes move {
   font-family: 'Syne Mono', monospace;
   padding: 1px;
   text-align: center;
-  border: 1px solid var(--bg-accent);
+  border: 2px solid var(--bg-accent);
   transition: border 3s;
   background-color: var(--cg-blue);
   background-position: top;

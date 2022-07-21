@@ -57,7 +57,7 @@ function HeaderSection() {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     youtubesub = <h2 style={{ color: 'white' }}>SUB TO MY YOUTUBE?</h2>;
-    logoSection = <div className="end-div" ><img src={GioLogo} width='50%' height='auto' style={{ padding: '5px' }} /></div>;
+    logoSection = <img src={GioLogo} width='20%' height='auto' style={{ padding: '5px' }} />;
   }
 
 
@@ -89,7 +89,7 @@ function HeaderSection() {
 
       <div id="mainBody" className='gio-main'>
         <div className='subheader9' >
-          <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 giomoscato.com</h1>
+          <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 Hello</h1>
         </div>
 
         <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
@@ -108,7 +108,7 @@ function HeaderSection() {
           <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default"></div>
         </div> */}
 
-        <div className='gio-container-2'  style={{ paddingTop: '30px', paddignBottom:'30px' }}>
+        <div className='gio-container-2'  style={{ paddingTop: '30px', paddingBottom:'30px' }}>
 
           {specialheader}
           <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
@@ -120,15 +120,16 @@ function HeaderSection() {
         <div className='gio-container-3'  style={{ padding: '10px' }}>
 
           {logoSection}
+          
+          <h4 style={{ margin: '10px' }} >
+            I'm friendly feel free to chat!
+          </h4>
+          <p style={{ backgroundColor:'#242a36'}}>All other relevant contact information is available through the "email icon" or contact page.</p>
           <ul>
             <li><a style={{ color: 'white' }} href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm</a></li>
             <li > giovannijmoscato@gmail.com </li>
           </ul>
-          <p style={{ backgroundColor:'#242a36'}}>
-            Besides github and linkedin I want to be open and available to anyone who wants to chat!
-          </p>
-          <p style={{ backgroundColor:'#242a36'}}>All other relevant contact information is available through the "email icon" or contact page.</p>
-          <img src={GioBanner} width='100%' height='auto' style={{ padding: '5px' }} />
+          <img src={GioBanner} width='85%' height='auto' style={{ padding: '5px', margin:'5px' }} />
 
         </div>
 
@@ -137,10 +138,7 @@ function HeaderSection() {
 
 
         <div className='gio-container-2' style={{ padding: '2px' }}>
-          <p style={{ backgroundColor:'#242a36'}}>
-            You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
-            with on the about/skills page!
-          </p>
+          
           <h4> Quick summary of skillset : </h4>
           <ul>
             <br />
@@ -151,13 +149,17 @@ function HeaderSection() {
             <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
             <br />
           </ul>
+          <p style={{ backgroundColor:'#242a36'}}>
+            You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
+            with on the about/skills page!
+          </p>
         </div>
 
         <div className='spacer'>
         </div>
 
         <div className='gio-container-4' style={{ border: '1px solid white', padding:'5px' }}>
-          <div className='gio-container-2' style={{ border: '1px solid white',padding: '5px' }}>
+          <div className='gio-container-2' style={{ border: '1px solid white',padding: '5px',margin: '10px' }}>
 
             <h4> Site rating and statistics </h4>
 
@@ -191,9 +193,9 @@ function HeaderSection() {
             <em> B</em>
           </h2>
 
-          <img src={gtrating} width='30%' height='auto' />
+          <img src={gtrating} width='35%' height='auto' style={{ margin: '10px' }} />
 
-          <div className='gio-container-2' style={{ border: '1px solid white',padding: '5px' }}>
+          <div className='gio-container-2' style={{ border: '1px solid white',padding: '5px',margin: '5px' }}>
             <p>
               Some additional metrics of the site such as site structure:
             </p>
@@ -202,7 +204,7 @@ function HeaderSection() {
           </div>
           <br />
 
-          <div className='gio-container-2' style={{ border: '1px solid white', padding: '5px'}}>
+          <div className='gio-container-2' style={{ border: '1px solid white', padding: '5px', margin: '5px' }}>
             <p>
               <a
                 style={{
@@ -242,11 +244,12 @@ function HeaderSection() {
         </div>
 
 
-        <div className="end-div">
+        <div className="end-div" style={{ margin: '5px'}}>
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
               color: '#AEBEBEff',
-              backgroundColor: 'black'
+              backgroundColor: 'black',
+              fontWeight: '900'
             }}> My website technology pipeline / stack ? ✨ </h2>
 
             <ol style={{
@@ -263,7 +266,8 @@ function HeaderSection() {
               <li> Github ( source control ) </li>
             </ol>
             <h3 style={{
-              color: 'white'
+              color: 'white',
+              fontWeight: '900'
             }}> Please consider collaborating
               <br /> or donating!
               <br></br>🔥
@@ -272,13 +276,15 @@ function HeaderSection() {
           </a>
         </div>
 
-        <div className="end-div2">
+        <div className="end-div2" style={{ margin: '5px'}}>
           <a
 
             href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
           >
             <h2 style={{
-              color: '#AEBEBEff'
+              color: '#AEBEBEff',
+              fontWeight:'900',
+              backgroundColor: 'black'
             }}>
               Having trouble viewing my website ? 💔
             </h2>
@@ -292,7 +298,8 @@ function HeaderSection() {
             <h3
               style={{
                 color: '#AEBEBEff',
-                backgroundColor: '#101730ff'
+                backgroundColor: '#101730ff',
+                fontWeight:'900',
               }}>
               Major Update! : Most mobile / scaling issues should be fixed
               <br />
@@ -310,6 +317,7 @@ function HeaderSection() {
               color: '#AEBEBEff',
               fontSize: 'large',
               backgroundColor: '#101730ff',
+              margin:'10px'
             }}
           >
             AI genereated art, the theme for this site! I used the theme and colors from these images that are AI generated to design my site
@@ -321,6 +329,7 @@ function HeaderSection() {
             width="100%"
             height="600px"
             frameborder="0"
+            
            
           >
           </iframe>
@@ -331,7 +340,7 @@ function HeaderSection() {
                 color: '#E0012Aff',
                 fontSize: 'large',
                 backgroundColor: '#101730ff',
-                padding: '10px',
+                margin: '10px',
               }}>
 
               https://app.wombo.art/
@@ -340,7 +349,7 @@ function HeaderSection() {
 
           <div
             style={{
-
+              margin: "10px"
             }}
             className="end-div2"
           >
@@ -353,7 +362,7 @@ function HeaderSection() {
 
           <div
             style={{
-
+              margin: "10px"
             }}
             className="end-div2"
           >

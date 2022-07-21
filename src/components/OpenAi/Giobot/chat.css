@@ -1,3 +1,16 @@
+.projectHeader{
+    background-color: #19819Fff;
+    padding: 3px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+.projectFooter{
+    background-color: black;
+    padding: 3px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
 .chatbotBar{
     background-color: #101730ff;
     text-align: center;
@@ -7,4 +20,5 @@
 
 .chatbotBar:hover{
     background-color: #FFFFFF;
+    border: 1px solid #101730ff;
 }

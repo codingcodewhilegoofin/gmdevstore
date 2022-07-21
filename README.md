@@ -31,11 +31,7 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ---
 ## RecentUpdates
 
-Need to somehow store nodes object to use globally
-Every render checks if this object is null 
-If null we need to download nodes from Spline
-Else we just use the global object
-
+First load is really slow
 Updated Menu UI 
 **Date: 7/20/2022**
 

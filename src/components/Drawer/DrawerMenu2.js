@@ -115,9 +115,10 @@ const DrawerMenu2 = (props) => {
         backgroundColor: '#19819Fff',
         color: '#101730ff',
       },
+   
     };
     const args3 = {
-
+      
       message: 'Can I just skip this? 🙃',
       description:
         'Yes in case its unclear click or press " SKIP THIS SCENE " button ',
@@ -128,6 +129,8 @@ const DrawerMenu2 = (props) => {
         backgroundColor: '#19819Fff',
         color: '#101730ff',
       },
+      placement: 'bottom',
+      bottom: 0,
     };
     notification.open(args);
     notification.open(args2);

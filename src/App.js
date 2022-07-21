@@ -41,6 +41,8 @@ function App() {
       setModalToggle("modalbtn");
       setModalbg("modalOff");
     }
+
+    window.scrollTo(0, 0);
   }
 
   const specialHanlde = () => {

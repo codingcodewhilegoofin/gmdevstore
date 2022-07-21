@@ -1283,7 +1283,7 @@ export default function Scene1({ ...props }) {
         >
           <boxBufferGeometry args={[1, 1, 1]} />
           <meshPhysicalMaterial color="white" side={THREE.FrontSide} />
-          <Html as='h1' > <p style={{ color: 'white', fontWeight: '900', backgroundColor:'black'}}>This way ⬅️ </p></Html>
+
         </mesh>
         <directionalLight
           name="Directional Light"

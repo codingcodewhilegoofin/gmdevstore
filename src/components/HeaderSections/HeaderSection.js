@@ -6,6 +6,7 @@ import '../Buttons/Button.css';
 
 
 import '../PageCss/HeaderSection.css';
+import SpotifyAPI from '../Pages/Spotify';
 
 import '../../icons/gio.jpg';
 import gtrating from '../../icons/gtrating.png';
@@ -69,7 +70,7 @@ function HeaderSection() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
-        
+
       }}>
         <button
           style={{
@@ -79,8 +80,8 @@ function HeaderSection() {
             cursor: 'pointer',
             fontSize: 'smaller',
             textTransform: 'uppercase',
-            paddingTop:'0px',
-            paddingBottom:'0px',
+            paddingTop: '0px',
+            paddingBottom: '0px',
           }}
           onClick={mainBodyHandle}>
           CLOSE
@@ -88,18 +89,31 @@ function HeaderSection() {
       </div>
 
       <div id="mainBody" className='gio-main'>
-        <div className='subheader9' >
-          <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 Hello</h1>
+
+
+        <img src={Info} width='100%' height='auto' style={{ padding: '5px', marginBottom: '5px' }} />
+
+        <div style={{ backgroundColor: 'black', padding: '5px'}}>
+        <div className='subheader9' style={{ marginTop: '30px' }} >
+          <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 Project Spotlight </h1>
+          <p style={{ color: '#AEBEBEff', backgroundColor: "black" }}>This is my favorite complete project at the moment!</p>
+          <a style={{ color: 'white' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
+          <a style={{ color: 'white', fontWeight: '700', marginTop: '20px', marginBottom: '10px' }} href='/#/Spotify'>Spotify API intergration</a>
+
         </div>
 
-        <img src={Info} width='100%' height='auto' style={{ padding: '5px' }} />
-        <a style={{ color: 'white'}} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
+        <div className='gio-container-2' style={{ marginTop: '10px', padding: 'none'  }}>
+          <SpotifyAPI/>
+        </div>
 
-        <div style={{ padding: '10px' , paddingTop:'30px', paddingBottom:'20px'}}>
+        </div>
+
+
+        <div style={{ padding: '10px', paddingTop: '30px', paddingBottom: '20px' }}>
           <Button
             className='btns'
             buttonStyle='btn--outline'
-            buttonSize='btn--large'
+            buttonSize='btn--med'
           ></Button>
         </div>
 
@@ -108,7 +122,7 @@ function HeaderSection() {
           <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default"></div>
         </div> */}
 
-        <div className='gio-container-2'  style={{ paddingTop: '30px', paddingBottom:'30px' }}>
+        <div className='gio-container-2' style={{ paddingTop: '30px', paddingBottom: '30px' }}>
 
           {specialheader}
           <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
@@ -117,19 +131,19 @@ function HeaderSection() {
         <div className='spacer'>
         </div>
 
-        <div className='gio-container-3'  style={{ padding: '10px' }}>
+        <div className='gio-container-3' style={{ padding: '10px' }}>
 
           {logoSection}
-          
+
           <h4 style={{ margin: '10px' }} >
             I'm friendly feel free to chat!
           </h4>
-          <p style={{ backgroundColor:'#242a36'}}>All other relevant contact information is available through the "email icon" or contact page.</p>
+          <p style={{ backgroundColor: '#242a36' }}>All other relevant contact information is available through the "email icon" or contact page.</p>
           <ul>
             <li><a style={{ color: 'white' }} href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm</a></li>
             <li > giovannijmoscato@gmail.com </li>
           </ul>
-          <img src={GioBanner} width='85%' height='auto' style={{ padding: '5px', margin:'5px' }} />
+          <img src={GioBanner} width='85%' height='auto' style={{ padding: '5px', margin: '5px' }} />
 
         </div>
 
@@ -138,7 +152,7 @@ function HeaderSection() {
 
 
         <div className='gio-container-2' style={{ padding: '2px' }}>
-          
+
           <h4> Quick summary of skillset : </h4>
           <ul>
             <br />
@@ -149,7 +163,7 @@ function HeaderSection() {
             <li>Some experience with database management , algorithm analysis, data structures, and memory management</li>
             <br />
           </ul>
-          <p style={{ backgroundColor:'#242a36'}}>
+          <p style={{ backgroundColor: '#242a36' }}>
             You can find more information on what technologies, languages, data structures and concepts, ectr I have experience
             with on the about/skills page!
           </p>
@@ -158,8 +172,8 @@ function HeaderSection() {
         <div className='spacer'>
         </div>
 
-        <div className='gio-container-4' style={{ border: '1px solid white', padding:'5px' }}>
-          <div className='gio-container-2' style={{ border: '1px solid white',padding: '5px',margin: '10px' }}>
+        <div className='gio-container-4' style={{ border: '1px solid white', padding: '5px' }}>
+          <div className='gio-container-2' style={{ border: '1px solid white', padding: '5px', margin: '10px' }}>
 
             <h4> Site rating and statistics </h4>
 
@@ -195,7 +209,7 @@ function HeaderSection() {
 
           <img src={gtrating} width='35%' height='auto' style={{ margin: '10px' }} />
 
-          <div className='gio-container-2' style={{ border: '1px solid white',padding: '5px',margin: '5px' }}>
+          <div className='gio-container-2' style={{ border: '1px solid white', padding: '5px', margin: '5px' }}>
             <p>
               Some additional metrics of the site such as site structure:
             </p>
@@ -244,7 +258,7 @@ function HeaderSection() {
         </div>
 
 
-        <div className="end-div" style={{ margin: '5px'}}>
+        <div className="end-div" style={{ margin: '5px' }}>
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
               color: '#AEBEBEff',
@@ -276,14 +290,14 @@ function HeaderSection() {
           </a>
         </div>
 
-        <div className="end-div2" style={{ margin: '5px'}}>
+        <div className="end-div2" style={{ margin: '5px' }}>
           <a
 
             href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
           >
             <h2 style={{
               color: '#AEBEBEff',
-              fontWeight:'900',
+              fontWeight: '900',
               backgroundColor: 'black'
             }}>
               Having trouble viewing my website ? 💔
@@ -299,7 +313,7 @@ function HeaderSection() {
               style={{
                 color: '#AEBEBEff',
                 backgroundColor: '#101730ff',
-                fontWeight:'900',
+                fontWeight: '900',
               }}>
               Major Update! : Most mobile / scaling issues should be fixed
               <br />
@@ -317,7 +331,7 @@ function HeaderSection() {
               color: '#AEBEBEff',
               fontSize: 'large',
               backgroundColor: '#101730ff',
-              margin:'10px'
+              margin: '10px'
             }}
           >
             AI genereated art, the theme for this site! I used the theme and colors from these images that are AI generated to design my site
@@ -329,8 +343,8 @@ function HeaderSection() {
             width="100%"
             height="600px"
             frameborder="0"
-            
-           
+
+
           >
           </iframe>
 

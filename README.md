@@ -31,6 +31,10 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ---
 ## RecentUpdates
 
+Ui Updates
+Spotify API intergration is complete
+**Date: 7/20/2022**
+
 First load is really slow
 Updated Menu UI 
 **Date: 7/20/2022**

@@ -17,24 +17,24 @@ function HeaderAbout() {
 
         <h4 style={{ color: '#243232ff', fontSize: '50px', fontWeight: '900' }}>ABOUT ME Skills & information</h4>
 
-        <p style={{ color: 'white', backgroundColor: '#242a36' }}>
+        <p style={{ color: 'white', backgroundColor: '#242a36', margin: '10px' }}>
           Graduate BS of Computer Science from Northern Illinois University
         </p>
 
         <div className='spacer2'>
         </div>
 
-        <p style={{ color: 'white', backgroundColor: '#242a36' }}>
+        <p style={{ color: 'white', backgroundColor: '#242a36' , margin: '10px' }}>
           Emphasis in Computational Software and
-          <a href="minor" style={{ color: 'red', padding: '5px' }}>
+          <em><a href="#minor" style={{ color: '#19819Fff', padding: '5px' }}>
             minor in Mathematics
-          </a>
+          </a></em>
         </p>
 
         <div className='spacer2'>
         </div>
 
-        <p style={{ color: 'white', backgroundColor: '#242a36' }}>
+        <p style={{ color: 'white', backgroundColor: '#242a36' , margin: '10px'}}>
           I have a range of experience in all listed languages and technologies.
         </p>
 

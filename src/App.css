@@ -36,11 +36,13 @@
   position: fixed; /* Sit on top of the page content */
   display: sticky; /* Hidden by default */
   width: 3%; /* Full width (cover the whole page) */
-  height: 5%; /* Full height (cover the whole page) */
-  top: -1;
-  right: 0;
+  height: 6%; /* Full height (cover the whole page) */
+  
+  left: 0;
   bottom: 0;
-  left: 1;
+  opacity: .6;
+  
+  
   background-color: #242a364f; 
   --borderWidth: 5px;
   color: #19819Fff;
@@ -53,7 +55,7 @@
   cursor: pointer;
   border-radius: 20px;
   font-weight: 900;
-  animation:spin 4s linear infinite;
+ 
   
 }
 .modalbtn:after {
@@ -68,7 +70,7 @@
   z-index: -1;
   animation: animatedgradient 1s ease alternate infinite;
   background-size: 600% 300%;
-  border: 1px solid red;
+  border: 1px solid ;
 }
 .modalbtn:hover{
   background-color: rgba(20, 11, 45, 0.175); /* Black background with opacity */
@@ -251,9 +253,9 @@ h6{
 @media screen and (max-height: 460px){
   .modalbtn{
     
-    padding-top: 5px;
-    width: 6%; 
-    height: 4%;
+    padding-top: 7px;
+    width: 10%; 
+    height: 10%;
   }
   .App {
     text-align: center;
@@ -267,9 +269,9 @@ h6{
 
   .modalbtn{
     
-    padding-top: 5px;
-    width: 6%; 
-    height: 4%;
+    padding-top: 7px;
+    width: 10%; 
+    height: 10%;
   }
   .App {
     text-align: center;
@@ -280,9 +282,9 @@ h6{
 
 @media screen and (max-width: 360px){
   .modalbtn{
-    padding-top: 5px;
-    width: 6%; 
-    height: 4%;
+    padding-top: 7px;
+    width: 10%; 
+    height: 10%;
   }
 
   .App {
@@ -389,15 +391,15 @@ h6{
 
 
 @-moz-keyframes spin { 
-  100% { -moz-transform: rotate(360deg); } 
+  100% { -moz-transform: rotate(30deg); } 
 }
 @-webkit-keyframes spin { 
-  100% { -webkit-transform: rotate(360deg); } 
+  100% { -webkit-transform: rotate(30deg); } 
 }
 @keyframes spin { 
   100% { 
-      -webkit-transform: rotate(360deg); 
-      transform:rotate(360deg); 
+      -webkit-transform: rotate(30deg); 
+      transform:rotate(30deg); 
   } 
 }
 

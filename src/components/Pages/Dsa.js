@@ -17,21 +17,20 @@ const Dsa = () => {
 
     const array = (e) => {
         e.preventDefault();
-        
+
         let count = 0;
         console.log(e);
 
-        for(let i = 0; i < e.target.length-6; i++ )
-        {
+        for (let i = 0; i < e.target.length - 6; i++) {
             if (!(e.target[i].value === '')) {
                 userArray.push(e.target[count].value);
             }
             count++;
         }
 
-        if ( !((e.target[0].value || e.target[1].value || e.target[2].value) === '')) {
+        if (!((e.target[0].value || e.target[1].value || e.target[2].value) === '')) {
             setArrayMessage(`Array is: ${userArray}`);
-            setMemeArray( <img src={meme} width='50%' height='auto' style={{ padding: '5px' }} /> )
+            setMemeArray(<img src={meme} width='40%' height='auto' style={{ padding: '5px' }} />)
             setTimeout(() => {
                 setArrayMessage();
             }, 8000);
@@ -40,7 +39,7 @@ const Dsa = () => {
                 setArrayMessage(`Length is: ${userArray.length}`);
             }, 4000);
             setTimeout(() => {
-                if(!(userArray[1] === '')) {
+                if (!(userArray[1] === '')) {
                     setArrayMessage(`Second element is: ${userArray.at(1)}`);
                 }
             }, 6000);
@@ -84,36 +83,42 @@ const Dsa = () => {
     }
 
     return (
-        <div className='gio-container-2' >
-            <p
-                style={{ color: 'white' }}
-            >
-                Interactive and informative JSX implementation of DSA.
-            </p>
-
-            <h4
-                style={{ color: 'white' }}
-            >
-                Data Structures & Algorithms
-            </h4>
-
-            <p
-                style={{ color: 'white' }}
-            >
-                Data Structures
-            </p>
-
-            <ul>
-                <a
+        <div className='gio-main' >
+            <div className='dsaMenu'>
+                <p
                     style={{ color: 'white' }}
-
                 >
-                    Array
-                </a>
-            </ul>
+                    Interactive and informative JSX implementation of DSA.
+                </p>
+
+                <h4>
+                    Data Structures & Algorithms
+                </h4>
+                <div className='dsaMenu3'>
+
+                    <div className='dsaMenu2'>
+                        <p>Data Structures</p>
+                        <ul style={{ listStyle: 'square' }}>
+                            <li>Array</li>
+                            <li>Array</li>
+                            <li>Array</li>
+                        </ul>
+                    </div>
+
+                    <div className='dsaMenu2'>
+                        <p>Algorithms</p>
+                        <ul style={{ listStyle: 'square' }}>
+                            <li>Linear Search</li>
+                            <li>Selection Sort</li>
+                            <li>Bubble Sort</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
 
             <h2
-                style={{ color: 'white' }}
+                style={{ color: 'white', fontWeight: 'bold', lineSpacing: '5px', margin: '5px' }}
             >
                 Array
             </h2>
@@ -135,34 +140,34 @@ const Dsa = () => {
                 >
                     {arrayMessage}
                 </h2>
-                
+
             </div>
 
-            <div  className='gio-container-2' style={{ width: '100%', }}>
+            <div className='gio-container-2' style={{ width: '100%', }}>
                 <form
                     onSubmit={array}
-                    
+
                 >
                     <label
                         for="quantity"
-                       
+
                     >
-                        <h4  style={{ color: 'white' }}>
-                        Enter 3 numbers between (1-10):
+                        <h4 style={{ color: 'white' }}>
+                            Enter 3 numbers between (1-10):
                         </h4>
                     </label>
                     <div className='gio-container' style={{
-                            flexDirection: 'row',
-                            padding: '5px',
-                            width: '100%',
-                            height: '50%',
-                            position: 'center',
-                            backgroundColor: '#101730ff'
+                        flexDirection: 'row',
+                        padding: '5px',
+                        width: '100%',
+                        height: '50%',
+                        position: 'center',
+                        backgroundColor: '#101730ff'
                     }}>
                         <input
                             type="number"
                             id="quantity1"
-                            style={{ color: 'white', padding: '5px',  }}
+                            style={{ color: 'white', padding: '5px', }}
                             name="quantity1"
                             min="1"
                             max="10"
@@ -186,17 +191,17 @@ const Dsa = () => {
                     </div>
 
                     <div style={{ width: '100%', }} >
-                       
+
                         <div className='gio-container' style={{
                             flexDirection: 'column',
-                            
+
                             position: 'center'
                         }}>
                             <div className='gio-container' style={{
                                 flexDirection: 'row',
                                 padding: '5px',
                                 width: '100%',
-                                
+
                                 position: 'center'
                             }}>
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
@@ -217,35 +222,35 @@ const Dsa = () => {
                                 height: '50%',
                                 position: 'center'
                             }}>
-                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"   />
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
                                 <label for="vehicle2" style={{ color: 'white' }}>Selection Sort </label>
                             </div>
-                            
-                        <div className='gio-container' style={{
-                            flexDirection: 'row',
-                            padding: '5px',
-                            width: '100%',
-                            height: '50%',
-                            position: 'center'
-                        }}>
-                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-                            <label for="vehicle3" style={{ color: 'white' }}>Bubble Sort</label>
+
+                            <div className='gio-container' style={{
+                                flexDirection: 'row',
+                                padding: '5px',
+                                width: '100%',
+                                height: '50%',
+                                position: 'center'
+                            }}>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+                                <label for="vehicle3" style={{ color: 'white' }}>Bubble Sort</label>
+                            </div>
+                        </div>
+                        <div style={{ padding: '10px' }}>
+                            <input
+                                type="submit"
+                                style={{ color: 'white',cursor: 'pointer' }}
+                                value="Start"
+                            />
+                            <label ></label>
+                            <input
+                                type="reset"
+                                style={{ color: 'white',cursor: 'pointer' }}
+                            />
                         </div>
                     </div>
-                    <div  style={{ padding: '10px' }}>
-                    <input
-                            type="submit"
-                            style={{ color: 'white'}}
-                            value="Start"
-                    />
-                    <label ></label>
-                    <input
-                        type="reset"
-                        style={{ color: 'white' }}
-                    />
-                    </div>
-            </div>
-        </form>
+                </form>
             </div >
         </div >
     )

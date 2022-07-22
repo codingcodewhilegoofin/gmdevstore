@@ -12,9 +12,8 @@ import co from '../../icons/CO.png';
 function HeaderAbout() {
   return (
     <div className='gio-main' >
+
       <div className='subheader7' >
-
-
         <h4 style={{ color: '#243232ff', fontSize: '50px', fontWeight: '900' }}>ABOUT ME Skills & information</h4>
 
         <p style={{ color: 'white', backgroundColor: '#242a36', margin: '10px' }}>
@@ -45,24 +44,24 @@ function HeaderAbout() {
       <div className='spacer'>
       </div>
 
-      <div className='gio-container-2' style={{ border: 'none', padding: '3px', }}>
+      <div className='gio-container-2' style={{ border: 'none', padding: '3px',  }}>
 
-        <h4 style={{ borderRadius: '20px' , fontWeight:'900'}}>LANGUAGES: </h4>
+        <h4 id="languages" name="languages" style={{ borderRadius: '20px' , fontWeight:'900'}}>LANGUAGES: </h4>
 
 
         <ul>
           <div className="end-div2" style={{ backgroundColor: 'black'}} >
-            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', }}> Programming Languages - Compiled</h3>
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor:'rgba(0, 0, 0, 0.56)'}}> Programming Languages - Compiled</h3>
           </div>
 
           <div >
-            <li>C / C++ / C# :</li>
+            <li style={{ margin: '10px' }}>C / C++ / C# :</li>
             <ul>
               <li> My first programming language</li>
             </ul>
 
-            <br></br>
-            <li>JAVA / LaTeX :
+            <label></label>
+            <li style={{ margin: '10px' }}>JAVA / LaTeX :
               <ul>
 
                 <li>Some experience</li>
@@ -70,7 +69,7 @@ function HeaderAbout() {
             </li>
 
             <br></br>
-            <li>ASSIST ASSEMBLY ( INTEL ):
+            <li style={{ margin: '10px' }}>ASSIST ASSEMBLY ( INTEL ):
               <ul>
                 <li>Some experience </li>
               </ul>
@@ -84,7 +83,7 @@ function HeaderAbout() {
           </div>
 
           <div  >
-            <li>JS, JSX, Python, Ruby, PHP, Bash, PShell:
+            <li style={{ margin: '10px' }}>JS, JSX, Python, Ruby, PHP, Bash, PShell:
               <ul>
                 <li>Some experience</li>
               </ul>
@@ -99,7 +98,7 @@ function HeaderAbout() {
           </div>
 
           <div  >
-            <li>HTML, CSS, Markdown:
+            <li style={{ margin: '10px' }}>HTML, CSS, Markdown:
               <ul>
                 <li>Some experience</li>
               </ul>
@@ -113,7 +112,7 @@ function HeaderAbout() {
           </div>
 
           <div  >
-            <li> MySQL / SQL:
+            <li style={{ margin: '10px' }}> MySQL / SQL:
               <ul>
                 <br />
                 <li>Queried/Created databases during my CodeOrange internship through SQL.</li>
@@ -124,11 +123,11 @@ function HeaderAbout() {
           <br></br>
 
           <div className="end-div2" >
-            <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> Environments</h3>
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor:'rgba(0, 0, 0, 0.56)' }}> Environments</h3>
           </div>
 
           <div  >
-            <li> UNIX / BASH / LINUX:
+            <li style={{ margin: '10px' }}> UNIX / BASH / LINUX:
               <ul>
                 <br />
                 <li>Experience with a CLI, sys commands, and OS api's </li>
@@ -151,7 +150,7 @@ function HeaderAbout() {
           </div>
 
 
-          <ul>
+          <ul style={{ margin: '10px' }}>
             <li>ReactJS</li>
             <li>RubyonRails</li>
             <li>Standard Markdown</li>
@@ -161,11 +160,11 @@ function HeaderAbout() {
           <br></br>
 
           <div className="end-div2" >
-            <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> BACKEND TECHNOLOGIES</h3>
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor:'rgba(0, 0, 0, 0.56)' }}> BACKEND TECHNOLOGIES</h3>
           </div>
 
 
-          <ul>
+          <ul style={{ margin: '10px' }}>
             <li>Ruby</li>
             <li>NodeJS</li>
             <li>Flask</li>
@@ -182,7 +181,7 @@ function HeaderAbout() {
             <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> DATABASE / CLOUD SERVICES</h3>
           </div>
 
-          <ul>
+          <ul style={{ margin: '10px' }}>
             <li>MongoDB</li>
             <li>H2Hibernate</li>
             <li>AWS</li>
@@ -201,10 +200,12 @@ function HeaderAbout() {
             <li >GITHUB/GIT:</li>
           </div>
 
-          <ol>
+          <ol style={{ margin: '10px' }}>
             <li>Github add, commit , push cycle</li>
+            <label></label>
 
             <li>Branch management / Issue handling / AGILE methodology </li>
+            <label></label>
 
             <li>Githubpages</li>
           </ol>
@@ -216,8 +217,9 @@ function HeaderAbout() {
             <li>NPM / GRADLE</li>
           </div>
 
-          <ol>
+          <ol style={{ margin: '10px' }}>
             <li>Update , install , and manage dev dependencies/packages and scripts</li>
+            <label></label>
 
             <li>Directory management for packages in different servers </li>
           </ol>
@@ -225,11 +227,11 @@ function HeaderAbout() {
 
         <ul>
           <div className="end-div2" >
-            <li>DOCKER:</li>
+            <li style={{ backgroundColor:'rgba(0, 0, 0, 0.56)'}}>DOCKER:</li>
           </div>
 
           <ul>
-            <li>Adding a dockerfile, to containerize a project</li>
+            <li style={{ margin: '10px' }}>Adding a dockerfile, to containerize a project</li>
           </ul>
         </ul>
       </div>
@@ -280,11 +282,11 @@ function HeaderAbout() {
 
         <ul>
           <div className="end-div2" style={{ background: 'black'}} >
-            <li>Advanced Programming:</li>
+            <li >Advanced Programming:</li>
           </div>
 
 
-          <ul>
+          <ul style={{ margin: '10px' }}>
             <li>Some experience in <br />Multi-Threading,<br />Concurrent programs,<br />
               Andriod applications,<br /> Semaphores/Deadlock solutions.</li>
           </ul>
@@ -297,29 +299,29 @@ function HeaderAbout() {
           </div>
 
 
-          <ul>
+          <ul style={{ margin: '10px' }}>
             <li>Attended 5 hackathons.<br /> Joined 1 international team ( India )</li>
           </ul>
 
 
 
           <div className="end-div2" >
-            <li>Game Dev</li>
+            <li style={{ backgroundColor:'rgba(0, 0, 0, 0.56)'}}>Game Dev</li>
           </div>
 
 
           <ul>
-            <li>Some experience in<br /> game design & development in Unity,<br /> OpenGL Api,<br /> and Google Cardboard VR  </li>
+            <li style={{ margin: '10px' }}>Some experience in<br /> game design & development in Unity,<br /> OpenGL Api,<br /> and Google Cardboard VR  </li>
           </ul>
 
 
           <div className="end-div3" >
-            <li>Theoretical Experience</li>
+            <li >Theoretical Experience</li>
           </div>
 
 
           <ul>
-            <li>Some experience with<br /> Chomsky's Hierarchy/PDA/TuringMachines,<br /> Normalization & FloatingPointError,<br /> Efficiency & Runtime</li>
+            <li style={{ marginTop: '10px' }}>Some experience with<br /> Chomsky's Hierarchy/PDA/TuringMachines,<br /> Normalization & FloatingPointError,<br /> Efficiency & Runtime</li>
           </ul>
 
 
@@ -328,7 +330,7 @@ function HeaderAbout() {
           </div>
 
 
-          <ul>
+          <ul style={{ marginTop: '10px' }}>
             <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
             <li> Experience in Declarative: Database   </li>
           </ul>
@@ -338,7 +340,7 @@ function HeaderAbout() {
             <li>Crypto - Web3</li>
           </div>
 
-          <ul>
+          <ul style={{ marginTop: '10px' }}>
             <li> Understanding of theoretical basics of blockchain technology  </li>
           </ul>
 
@@ -370,10 +372,12 @@ function HeaderAbout() {
           </div>
 
 
-          <ol>
+          <ol style={{ marginTop: '10px' }}>
             <li>Calculus 1, 2, & 3</li>
+            <label></label>
 
             <li>Discrete mathematics, Statistics, Model building</li>
+            <label></label>
 
             <li>Numerical Linear Algebra & Linear Programming </li>
           </ol>
@@ -387,7 +391,7 @@ function HeaderAbout() {
       </div>
 
       <div >
-        <div className="end-div" >
+        <div className="end-div" style={{margin: '30px' }} >
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
               color: 'white'
@@ -416,7 +420,7 @@ function HeaderAbout() {
           </a>
         </div>
 
-        <div className="end-div">
+        <div className="end-div" style={{margin: '30px' }}>
           <a href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/">
             <h2 style={{
               color: 'white'
@@ -435,7 +439,6 @@ function HeaderAbout() {
           </a>
         </div>
       </div>
-
 
     </div>
   );

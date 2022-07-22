@@ -31,6 +31,9 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ---
 ## RecentUpdates
 
+UI updates
+**Date: 7/22/2022**
+
 Ui Updates
 Spotify API intergration is complete
 **Date: 7/20/2022**

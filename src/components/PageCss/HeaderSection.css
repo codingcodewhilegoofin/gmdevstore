@@ -67,7 +67,50 @@ img {
   display: none;
 }
 
+.dsaMenu{
+  width: 100%;
+  background-color: #025B79ff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
+}
+.dsaMenu2{
+  width: 100%;
+  background-color: #19819Fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  margin: 5px;
+  border: 2px solid black;
+
+}
+
+.dsaMenu3{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin: 10px;
+ 
+
+}
+.dsaMenu2 > p{
+  fontWeight: 900;
+  line-spacing: 10px;
+  color: white;
+
+}
+.dsaMenu > h4 {
+  background-color: #AEBEBEff;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+}
 
 p {
   font-size: auto;
@@ -664,7 +707,8 @@ keyframes move {
   border-radius: 70%;
   background: #14171A;
   color: #1DA1F2;
-  border: 2px solid #320304;
+  border: 1px solid #320304;
+  border-radius: 10px;
 }
 
 .fa-twitter:hover {
@@ -803,17 +847,16 @@ keyframes move {
 }
 
 .gio-container-special {
-  padding: 5px;
-  margin: 5px;
+  
+  margin: 10px;
   height: auto;
   width: 99%;
   display: flex;
   flex-direction: column;
   align-items: center;
   object-fit: contain;
-  background-color: #19819Fff;
+  background-color: none;
   border-radius: 5px;
-  border: 1px solid var(--bg-accent3);
   transition: 3s background-color;
 }
 
@@ -1077,55 +1120,59 @@ keyframes move {
 }
 
 .twitterframe {
-  width: 30%;
+  align-self: center;
+ 
+  width: 100%;
   height: 59vh;
+  margin: 10px;
   min-width: auto;
   max-width: 90vw;
   background-color: var(--bg-2);
   transition: 2s border;
-  border: 1px solid var(--bg-accent2);
+  border: none;
+  background: none;
 }
 
 .twitterframe:hover {
   background-color: var(--bg-accent2);
   transition: 2s background-color;
   transition: 2s border;
-  border: 1px solid #101730ff;
+  
 }
 
 .tiktokframe {
-  width: 36%;
+  width: 50%;
   height: 77vh;
   min-width: auto;
   max-width: 90vw;
-  background-color: var(--bg-2);
+  background-color: none;
   transition: 2s border;
-  border: 1px solid var(--bg-accent2);
+  
 }
 
 .tiktokframe:hover {
   background-color: var(--bg-accent2);
   transition: 2s background-color;
   transition: 2s border;
-  border: 1px solid #101730ff;
+  
 }
 
 .instaframe {
   align-items: center;
   display: block;
-  width: 70%;
+  width: 50%;
   height: 180vh;
-  background-color: var(--bg-2);
+  background-color: none;
   transition: 2s background-color;
   transition: 2s border;
-  border: 1px solid var(--bg-accent2);
+  
 }
 
 .instaframe:hover {
   background-color: var(--bg-accent2);
   transition: 2s background-color;
   transition: 2s border;
-  border: 1px solid #101730ff;
+  
 }
 
 

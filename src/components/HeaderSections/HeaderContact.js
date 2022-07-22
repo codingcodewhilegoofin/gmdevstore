@@ -14,8 +14,8 @@ function HeaderContact() {
   return (
     <div className='gio-main' >
 
-      <div className='subheader8'>
-        <video src='/videos/split.mp4' autoPlay loop volume = "0.1" />
+      <div className='subheader8' style={{ margin: '10px' }}>
+        
         <h1 style={{color: "#AEBEBEff", fontWeight:'900' }}>HOW TO CONTACT ME</h1>
         <h4 style={{color: "#AEBEBEff" }}>Contact me anytime CST  </h4>
       </div>
@@ -23,14 +23,14 @@ function HeaderContact() {
       <div className='spacer2'>
       </div>
 
-      <div className='gio-container-2' style={{ border:'none', padding:'3px'}}>
-        <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white",paddingTop: "10px", margin:'5px'}}>
+      <div className='gio-container-2' style={{ border:'none', margin:'1px', background: 'none'}}>
+        <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white",paddingTop: "10px", margin:'5px', borderRadius: '10px' }}>
           <h1 style={{color: "white" , fontWeight: '900'}}> Social Media</h1>
           <form action="" >
         
             <label for="fname" style={{color: "white", }} >EMAIL:</label>
             <br/>
-            <input style={{color: "white" }} type="text" value="giovannijmoscato@gmail.com" id="myInput" size= "80vw"/>
+            <input style={{color: "white", borderRadius: "10px"}} type="text" value="giovannijmoscato@gmail.com" id="myInput" size= "80vw"/>
             <br></br>
             <br/>
 
@@ -42,72 +42,77 @@ function HeaderContact() {
 
             <a href="https://www.instagram.com/giovannimoscato101/" class="fa fa-instagram"></a>
             <br/>
-              <input style={{color: "white" }} type="text" value="https://www.instagram.com/giovannimoscato101/" id="myInput" size= "auto"/>
+              <input style={{color: "white", borderRadius: "10px" }} type="text" value="https://www.instagram.com/giovannimoscato101/" id="myInput" size= "auto"/>
             <br></br>
             <br/>
 
             <a href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" class="fa fa-linkedin"></a>
             <br/>
-              <input style={{color: "white" }} type="text" value="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" id="myInput" size= "auto"/>
+              <input style={{color: "white", borderRadius: "10px" }} type="text" value="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/" id="myInput" size= "auto"/>
             <br></br>
             <br/>
 
             <a href="https://twitter.com/GiovanniJMosca1" class="fa fa-twitter"></a>
             <br/>
-              <input style={{color: "white" }} type="text" value="https://twitter.com/GiovanniJMosca1" id="myInput" size= "auto"/>
+              <input style={{color: "white", borderRadius: "10px" }} type="text" value="https://twitter.com/GiovanniJMosca1" id="myInput" size= "auto"/>
             <br></br>
             <br/>
 
           </form>
         </div>
       </div>
-   
-    
-    <div className="gio-container-special" style={{ border: 'none'}}>
-      <iframe className="twitterframe" srcdoc='<blockquote class="twitter-tweet" data-theme="dark"><p lang="und" dir="ltr"><a href="https://t.co/0bebiqAqqb">https://t.co/0bebiqAqqb</a></p>&mdash; Giovanni J Moscato (@GiovanniJMosca1) <a href="https://twitter.com/GiovanniJMosca1/status/1483548367460392961?ref_src=twsrc%5Etfw">January 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> '/> 
+
+      <div className='spacer'>
     </div>
 
-    <div className="gio-container-special" style={{ border: 'none'}}>
+    
+    <div align="center" className="gio-container-special" style={{ border: 'none'  }}>
+      <iframe  className="twitterframe" srcdoc='<blockquote class="twitter-tweet" data-theme="dark"><p lang="und" dir="ltr"><a href="https://t.co/0bebiqAqqb">https://t.co/0bebiqAqqb</a></p>&mdash; Giovanni J Moscato (@GiovanniJMosca1) <a href="https://twitter.com/GiovanniJMosca1/status/1483548367460392961?ref_src=twsrc%5Etfw">January 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> '/> 
+    </div>
+
+    <div className='spacer'>
+    </div>
+
+
+    <div align="center" className="gio-container-special" style={{ border: 'none'}}>
       <iframe className="tiktokframe" srcdoc='<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@giomoscatodev/video/7054658765337152815" data-video-id="7054658765337152815" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@giomoscatodev" href="https://www.tiktok.com/@giomoscatodev">@giomoscatodev</a> New setup to work on my website!  <a title="pcgaming" target="_blank" href="https://www.tiktok.com/tag/pcgaming">#pcgaming</a>  <a title="pcgamer" target="_blank" href="https://www.tiktok.com/tag/pcgamer">#pcgamer</a> <a title="coding" target="_blank" href="https://www.tiktok.com/tag/coding">#coding</a> <a title="codingtiktok" target="_blank" href="https://www.tiktok.com/tag/codingtiktok">#codingtiktok</a> <a target="_blank" title="♬ Lo  - Official Sound Studio" href="https://www.tiktok.com/music/Lo-6699360508916534030">♬ Lo  - Official Sound Studio</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>'/> 
     </div>
 
     <div className='spacer'>
     </div>
 
-    <div className='gio-container-2' style={{ border: 'none'}}>
-      <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white" }}>
+    <div className='gio-container-2' style={{ border: 'none', background: 'none'}}>
+      <div className='contactCT' style={{ backgroundColor: "#161A1D" , border: "1px solid white", borderRadius:'10px'}}>
         <h1 style={{color: "white" }}> Developer Media </h1>
         <form action="">
         
         <label  for="fname" style={{color: "white" }} >Github:</label>
         <br/>
-          <input style={{color: "white" }} type="text" value="https://github.com/codingcodewhilegoofin/giowebsite/settings/pages" id="myInput" size= "80vw"/>
+          <input style={{color: "white", borderRadius:'10px' }} type="text" value="https://github.com/codingcodewhilegoofin/giowebsite/settings/pages" id="myInput" size= "80vw"/>
         <br></br>
         <br/>
 
         <label for="pin"  style={{color: "white" }} >StackOF:</label>
         <br/>
-          <input style={{color: "white" }} type="text" value="https://stackoverflow.com/users/14115291/giovanni-moscato" id="myInput" size= "auto"/>
+          <input style={{color: "white", borderRadius:'10px' }} type="text" value="https://stackoverflow.com/users/14115291/giovanni-moscato" id="myInput" size= "auto"/>
         <br></br>
         <br/>
 
         <label for="pin"  style={{color: "white" }} >Devpost:</label>
         <br/>
-          <input style={{color: "white" }} type="text" value="https://devpost.com/codingcodewhilegoofin?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" id="myInput" size= "auto"/>
+          <input style={{color: "white", borderRadius:'10px' }} type="text" value="https://devpost.com/codingcodewhilegoofin?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" id="myInput" size= "auto"/>
         <br></br>
         <br/>
 
         <label for="fname" style={{color: "white" }} >HackerRank:</label>
         <br/>
-          <input style={{color: "white" }} type="text" value="https://www.hackerrank.com/Yupimaperson101?hr_r=1" id="myInput" size= "auto"/>
+          <input style={{color: "white", borderRadius:'10px' }} type="text" value="https://www.hackerrank.com/Yupimaperson101?hr_r=1" id="myInput" size= "auto"/>
         <br></br>
         <br/>
 
-    
-
         <label for="fname" style={{color: "white" }} >BuyMeACoffe:</label>
         <br/>
-          <input style={{color: "white" }} type="text" value="https://www.buymeacoffee.com/giomoscato101" id="myInput" size= "auto"/>
+          <input style={{color: "white", borderRadius:'10px' }} type="text" value="https://www.buymeacoffee.com/giomoscato101" id="myInput" size= "auto"/>
         <br></br>
         <br/>
 
@@ -120,6 +125,9 @@ function HeaderContact() {
         <br/>
       </form>
       </div>
+    </div>
+
+    <div className='spacer'>
     </div>
 
     <div align="center"  className="gio-container-special" style={{ border: 'none', }}>

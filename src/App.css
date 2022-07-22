@@ -37,12 +37,9 @@
   display: sticky; /* Hidden by default */
   width: 3%; /* Full width (cover the whole page) */
   height: 6%; /* Full height (cover the whole page) */
-  
   left: 0;
   bottom: 0;
   opacity: .6;
-  
-  
   background-color: #242a364f; 
   --borderWidth: 5px;
   color: #19819Fff;
@@ -55,8 +52,6 @@
   cursor: pointer;
   border-radius: 20px;
   font-weight: 900;
- 
-  
 }
 .modalbtn:after {
   content: '';
@@ -68,7 +63,7 @@
   background: linear-gradient(60deg, #101730ff, #1B2524ff, #101730ff, #243232ff, #2E5252ff, #242a36, #19819Fff, #025B79ff);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
-  animation: animatedgradient 1s ease alternate infinite;
+  animation: animatedgradient 2s ease alternate infinite;
   background-size: 600% 300%;
   border: 1px solid ;
 }

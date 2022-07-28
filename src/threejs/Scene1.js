@@ -15,12 +15,14 @@ export default function Scene1({ ...props }) {
   props.func3(doorClick);
 
   const onTrashClick = () => {
+    
     window.location.href = "/#/";
-    setTrashClick(false);
+    window.location.reload();
   }
   const onDoorClick = () => {
+    
     window.location.href = "/#/dependency+";
-    setTrashClick(false);
+    window.location.reload();
   }
   const onShrekClick = () => {
     alert("Shrek Loves you ");

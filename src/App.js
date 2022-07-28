@@ -63,6 +63,12 @@ function App() {
     setStartScene(data);
   }
 
+  const pull_data2 = (data) => {
+    setStartScene(data);
+    setSiteVersion("dependecy+");
+    
+  }
+
 
   let theme = false;
 
@@ -94,9 +100,10 @@ function App() {
 
         </div>
       </div>
-      {(!startScene === true) ? <></> : <Start func={sceneChange} />}
-      {((!startScene === false)) ? <></> : <ChoiceSite func={pull_data} />}
-      {(!startScene === false) ? <></> : ((siteVersion === "vanilla") ? <NewSite /> : <OldSite />)}
+      
+      {(startScene === true) ? <Start func={sceneChange} /> : <></>}
+      {((startScene === false)) ? <></> : <ChoiceSite func={pull_data} func2={pull_data2} />}
+      {(startScene === false) ? <></> : ((siteVersion === "vanilla") ? <NewSite /> : <OldSite />)}
     </div>
 
   );

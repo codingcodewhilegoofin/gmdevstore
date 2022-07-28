@@ -15,7 +15,8 @@ import ContactPage from './components/Pages/ContactPage';
 import Projects from './components/Pages/Projects';
 import StartApp from './Start';
 import './App.css';
-import Giobot from './components/OpenAi/Giobot/Giobot.js'
+import Giobot from './components/OpenAi/Giobot/Giobot.js';
+import TestAPI from './components/Pages/TestAPI.js'; 
 
 //Menu import
 import MenuButton from './components/Buttons/MenuButton/MenuButton.js';
@@ -129,6 +130,8 @@ function OldSite() {
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/dependency+" component={NewSite} />
         <Route exact path="/splinescene" component={StartApp} />
+        
+        <Route exact path="/test" component={TestAPI} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path='/github' component={() => {

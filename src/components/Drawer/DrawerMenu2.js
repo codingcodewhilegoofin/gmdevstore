@@ -17,7 +17,7 @@ const DrawerMenu2 = (props) => {
   const [startScene, setStartScene] = useState(true);
   const [fancyMode, setFancyMode] = useState(false);
 
-  props.func(startScene);
+  //props.func(startScene);
 
 
 
@@ -36,6 +36,7 @@ const DrawerMenu2 = (props) => {
   };
   const SkipScene = () => {
     setStartScene(false);
+    window.location.reload();
   }
 
   let menuResize;
@@ -142,7 +143,10 @@ const DrawerMenu2 = (props) => {
 
     }
     else {
-      openNotification();
+      if(props.load){
+        openNotification();
+      }
+     
     }
 
   }, [])

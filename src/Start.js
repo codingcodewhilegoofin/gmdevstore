@@ -12,7 +12,8 @@ const Scene = React.lazy(() => import(/* webpackPrefetch: true */'./threejs/Scen
 
 export default function Start(props) {
 
-  const [startScene, setStartScene] = useState(true);
+  const [startScene, setStartScene] = useState(false);
+  
 
   const sceneChange = (data) => {
     setStartScene(data);

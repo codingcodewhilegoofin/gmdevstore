@@ -107,7 +107,7 @@ From > https://sketchfab.com
 
 > Concrete trash bin 3D scan by matousekfoto, under CC. 
 
->Shrek by Lorran freires is licensed under Creative Commons Attribution
+> Shrek by Lorran freires is licensed under Creative Commons Attribution
 # public
 # src
 

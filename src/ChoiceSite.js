@@ -7,11 +7,11 @@ import './choice.css';
 const ChoiceSite = (props) => {
 
     const [mainMenu, setMainMenu] = useState(true);
-    const [toggleMenu,setToggleMenu] = useState('CLOSE');
+    const [toggleMenu, setToggleMenu] = useState('CLOSE');
 
     const menuHandle = () => {
         var x = document.getElementById("mainmenu");
-       
+
         if (x.style.display === "none") {
             x.style.display = "block";
             setMainMenu(!mainMenu);
@@ -28,10 +28,22 @@ const ChoiceSite = (props) => {
     var toggle = false;
 
     const [siteVersion, setSiteVersion] = useState("");
-  
+    const [changeScene, setChangeScene] = useState();
+
+    const van = () => {
+
+        window.location.href = "/#/";
+        window.location.reload();
+    }
+    const dep = () => {
+
+        window.location.href = "/#/dependency+";
+        window.location.reload();
+    }
 
 
     props.func(siteVersion);
+    props.func2(changeScene);
 
     return (
         <>
@@ -67,7 +79,7 @@ const ChoiceSite = (props) => {
                             color: "#AEBEBEff",
                             backgroundColor: "transparent",
                             fontSize: "auto",
-                            fontWeight:'900',
+                            fontWeight: '900',
                         }}>
                         3D Version
                     </h1>
@@ -75,7 +87,7 @@ const ChoiceSite = (props) => {
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
-                        fontWeight:'900',
+                        fontWeight: '900',
                     }}>
                         <em> 3D version</em> is a web experience to display my personal portfolio in a emerging technology fashion.
                         <br />I hope to build this web experience with <code style={{ color: "#AEBEBEff" }}>Antd UI , three.js, react-three-fiber,</code> and other unique libraries.
@@ -83,14 +95,14 @@ const ChoiceSite = (props) => {
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
-                        fontWeight:'900',
+                        fontWeight: '900',
                     }}>
                         Its purpose is to demonstrate my ability to interface with different dependencies.
                     </h3>
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
-                        fontWeight:'900',
+                        fontWeight: '900',
                     }}>
                         <em> Vanilla / Regular version</em> demonstrates my pure/vanilla <code style={{ color: "#AEBEBEff" }}>HTML , CSS , JS , JSX</code> skills with the
                         react framework. <br />Other than the essential 'react-' libraries all other components and code are made by me from scratch.
@@ -98,7 +110,7 @@ const ChoiceSite = (props) => {
                     <h2 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
-                        fontWeight:'900',
+                        fontWeight: '900',
                     }}>  I emphasize that there are no component / css / or other fancy libraries used besides to make some essential API calls.
                     </h2>
 
@@ -111,7 +123,7 @@ const ChoiceSite = (props) => {
                             display: 'flex',
                             flexDirection: 'row',
                             justifyContent: 'center',
-                           
+
                         }}>
                             <button
                                 style={{
@@ -122,9 +134,9 @@ const ChoiceSite = (props) => {
                                     width: '50%',
                                     border: '1px solid #3F646Dff'
                                 }}
-                                onClick={() => setSiteVersion("vanilla")}
+                                onClick={dep}
                             >
-                                Go to 3D Version
+                                3D MicroController API
                             </button>
 
                             <button
@@ -136,11 +148,27 @@ const ChoiceSite = (props) => {
                                     width: '50%',
                                     border: '1px solid #3F646Dff'
                                 }}
-                                onClick={() => setSiteVersion("dependency")}
+                                onClick={() => setChangeScene(true)}
                             >
-                                Go to Regular/Vanilla Version
+                                3D HomePage
                             </button>
+
+
                         </div>
+
+                        <button
+                            style={{
+                                color: '#AEBEBEff',
+                                backgroundColor: '#1B2524ff',
+                                cursor: 'pointer',
+                                padding: '5px',
+                                width: '50%',
+                                border: '1px solid #3F646Dff'
+                            }}
+                            onClick={van}
+                        >
+                            Regular/Vanilla Version
+                        </button>
 
                     </div>
                     <br />

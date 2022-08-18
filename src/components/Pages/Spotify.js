@@ -5,8 +5,8 @@ import '../PageCss/HeaderSection.css'
 
 const Spotify = () => {
 
-  const [spotifyArtists, setSpotifyArtists] = useState("");
-  const [gmaaUrl, setgmaaUrl] = useState("https://us-central1-gmappsapi.cloudfunctions.net/gmaapi/v1/Spotify");
+  const [spotifyArtists, setSpotifyArtists] = useState("7bSpQNOg9UsW530DuXM3X5");
+  const [gmaaUrl, setgmaaUrl] = useState("https://gmapps-api-v1.gmdev.workers.dev/api/Spotify/");
   const [spotifyResonse, setspotifyResonse] = useState([]);
   const [currentStatus2, setStatus2] = useState(false);
   const [gioDataToggle, setGioDataToggle] = useState(true);
@@ -41,17 +41,16 @@ const Spotify = () => {
         const response = await fetch((gmaaUrl + spotifyArtists));
 
         if (!response.ok) {
-          const message = `An error has occured: ${response.status}`;
+          const message = `An fetching error has occured: ${response.status}`;
           throw new Error(message);
         }
 
-        console.log(response);
         
         const data =  await response.json();
         return data;
 
       } catch (error) {
-        console.log("GetSpotifAPI() failed: " + error);
+        console.log("GetSpotifAPI() failed: " , error);
       }
     }
 
@@ -120,7 +119,7 @@ const Spotify = () => {
           </li>
         </ul>
 
-        <div style={{ border: '1px solid #AEBEBEff', borderRadius: '5px', margin: '10px', backgroundColor: '#1B2524ff' }}>
+         <div style={{ border: '1px solid #AEBEBEff', borderRadius: '5px', margin: '10px', backgroundColor: '#1B2524ff' }}>
           <h1 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: '#1B2524ff' }}> Live data</h1>
           <h1 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: '#1B2524ff' }}> From my GMApps API</h1>
           {!currentStatus2 ? <h2>Loading... </h2> : <><ul style={{ color: '#AEBEBEff', padding: '4px' }}>
@@ -132,38 +131,38 @@ const Spotify = () => {
            <img style={{ marginBottom: '5px' }} src={spotifyResonse.images[0].url} height='auto' width='95%' /> 
           </>
           }
-        </div>
+        </div> 
 
         <form onSubmit={changeArtists} >
           <ul style={{ margin: '0px', alignItems: 'left' }}>
 
             <li>
-              <input type="radio" id="D" name="fav_language" value="?id=5cj0lLjcoR7YOSnhnX0Po5" />
+              <input type="radio" id="D" name="fav_language" value="5cj0lLjcoR7YOSnhnX0Po5" />
               <label style={{ color: '#AEBEBEff' }} for="html" >Doja Cat</label>
             </li>
 
             <li>
-              <input type="radio" id="G" name="fav_language" value="?id=6PfSUFtkMVoDkx4MQkzOi3" />
+              <input type="radio" id="G" name="fav_language" value="6PfSUFtkMVoDkx4MQkzOi3" />
               <label style={{ color: '#AEBEBEff' }} for="css" >100 Gecs</label>
             </li>
 
             <li>
-              <input type="radio" id="C" name="fav_language" value="?id=56dO9zeHKuU5Gvfc2kxHNw" />
+              <input type="radio" id="C" name="fav_language" value="56dO9zeHKuU5Gvfc2kxHNw" />
               <label style={{ color: '#AEBEBEff' }} for="javascript" >Chevelle</label>
             </li>
 
             <li>
-              <input type="radio" id="A" name="fav_language" value="?id=3hOdow4ZPmrby7Q1wfPLEy" />
+              <input type="radio" id="A" name="fav_language" value="3hOdow4ZPmrby7Q1wfPLEy" />
               <label style={{ color: '#AEBEBEff' }} for="javascript" >Aries</label>
             </li>
 
             <li>
-              <input type="radio" id="B" name="fav_language" value="?id=3Ri4H12KFyu98LMjSoij5V" />
+              <input type="radio" id="B" name="fav_language" value="3Ri4H12KFyu98LMjSoij5V" />
               <label style={{ color: '#AEBEBEff' }} for="javascript" >Bad Omens</label>
             </li>
 
             <li>
-              <input type="radio" id="M" name="fav_language" value="?id=7bSpQNOg9UsW530DuXM3X5" />
+              <input type="radio" id="M" name="fav_language" value="7bSpQNOg9UsW530DuXM3X5" />
               <label style={{ color: '#AEBEBEff' }} for="javascript" >Memes 2</label>
             </li>
 

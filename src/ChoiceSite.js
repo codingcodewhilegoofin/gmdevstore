@@ -7,18 +7,22 @@ import './choice.css';
 const ChoiceSite = (props) => {
 
     const [mainMenu, setMainMenu] = useState(true);
-    const [toggleMenu, setToggleMenu] = useState('CLOSE');
+    const [toggleMenu, setToggleMenu] = useState('OPEN');
+    const [mainMenuState, setmainMenuState] = useState('none');
 
     const menuHandle = () => {
         var x = document.getElementById("mainmenu");
 
-        if (x.style.display === "none") {
-            x.style.display = "block";
-            setMainMenu(!mainMenu);
+        setMainMenu(!mainMenu);
+
+        if (mainMenu) {
+            setmainMenuState('block');
+            x.style.display = mainMenuState;
             setToggleMenu('CLOSE');
         }
         else {
-            x.style.display = "none";
+            setmainMenuState('none');
+            x.style.display = mainMenuState;
             setToggleMenu('OPEN');
         }
     }
@@ -72,7 +76,7 @@ const ChoiceSite = (props) => {
             </div>
             <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%", }}>
 
-                <div id="mainmenu" className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff", }}>
+                <div id="mainmenu" className="choicediv" style={{ display:`${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff", }}>
 
                     <h1
                         style={{
@@ -81,24 +85,43 @@ const ChoiceSite = (props) => {
                             fontSize: "auto",
                             fontWeight: '900',
                         }}>
-                        3D Version
+                        3D Options
                     </h1>
+                    <p style={{
+                        color: "#AEBEBEff",
+                        fontSize: "auto",
+                        fontWeight: '700',
+                    }}>My first website using React!</p>
+
+                    
 
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
                         fontWeight: '900',
                     }}>
-                        <em> 3D version</em> is a web experience to display my personal portfolio in a emerging technology fashion.
-                        <br />I hope to build this web experience with <code style={{ color: "#AEBEBEff" }}>Antd UI , three.js, react-three-fiber,</code> and other unique libraries.
+                        <em>Choose a web experience </em> to display my personal coding portfolio in a emerging technology fashion <b> OR </b> through vanilla JS/HTML/CSS.
+   
                     </h3>
+
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
                         fontWeight: '900',
                     }}>
-                        Its purpose is to demonstrate my ability to interface with different dependencies.
+                        The 3D MicroController API is a CAD 3D interactive model that you can interact with to 
+                        change my arduino board and stats in real life ! 
                     </h3>
+
+                    <h3 style={{
+                        color: "#AEBEBEff",
+                        fontSize: "auto",
+                        fontWeight: '900',
+                    }}>
+                        Through the 3D Homepage you can also interact with my website through a 
+                        3D exploration menu with easter eggs.
+                    </h3>
+
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
@@ -107,12 +130,13 @@ const ChoiceSite = (props) => {
                         <em> Vanilla / Regular version</em> demonstrates my pure/vanilla <code style={{ color: "#AEBEBEff" }}>HTML , CSS , JS , JSX</code> skills with the
                         react framework. <br />Other than the essential 'react-' libraries all other components and code are made by me from scratch.
                     </h3>
-                    <h2 style={{
+                    <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
                         fontWeight: '900',
-                    }}>  I emphasize that there are no component / css / or other fancy libraries used besides to make some essential API calls.
-                    </h2>
+                    }}>  Material UI and Ant UI are only used for the 3D versions of my website. All other UI was created by me in an attempt to learn.
+                         I also understand this website may not be "conventional" or follow some web-standards. I did this on purpose to have creative freedom with the UI !
+                    </h3>
 
                     <a style={{ color: "#AEBEBEff" }} href="https://github.com/codingcodewhilegoofin"> Feel free to contact me</a>
                     <div style={{

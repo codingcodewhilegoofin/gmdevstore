@@ -90,6 +90,17 @@ const ChatBotCard = (props) => {
                     {props.message}
                 </label>
 
+                <label
+                    style={{
+                        alignSelf: 'center',
+                        justifyContent: 'center',
+                        color: '#3F646Dff', padding: '5px'
+                    }}
+                    for="search">
+
+                    Enter a prompt and wait for a response after clicking/tapping "Go"
+                </label>
+
                 <input
                     required
                     pattern={reg}

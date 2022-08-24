@@ -13,7 +13,8 @@ import gtrating from '../../icons/gtrating.png';
 import gtadd from '../../icons/gtadditional.png';
 import safteycheck from '../../icons/safteycheck.png';
 import GioBanner from '../../icons/Giobanner.png';
-import GioLogo from '../../icons/GioLogo2.png';
+import GioLogo from '../../icons/GioLogo123.PNG';
+import FSDlogo from '../../icons/FSDlogo.png';
 
 import Info from '../../icons/info1.png';
 import bg1 from '../../icons/bg1.png';
@@ -45,6 +46,7 @@ function HeaderSection() {
   let specialheader;
   let specialheader2;
   let logoSection;
+  let logoSection2;
   let youtubesub;
   let urlToggle = false;
 
@@ -52,6 +54,7 @@ function HeaderSection() {
     specialheader = <></>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     logoSection = <></>;
+    logoSection2 = <></>;
     youtubesub = <></>;
   }
   else {
@@ -59,6 +62,7 @@ function HeaderSection() {
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     youtubesub = <h2 style={{ color: 'white' }}>SUB TO MY YOUTUBE?</h2>;
     logoSection = <img src={GioLogo} width='20%' height='auto' style={{ padding: '5px' }} />;
+    logoSection2 = <img src={FSDlogo} width='20%' height='auto' style={{ padding: '5px' }} />;
   }
 
 
@@ -93,6 +97,34 @@ function HeaderSection() {
 
         <img src={Info} width='100%' height='auto' style={{ padding: '5px', marginBottom: '5px' }} />
 
+        <p style={{ color: '#AEBEBEff', marginTop:'20px' }}> 
+          What is this website for? Well, to showcase my web development skills and other computer science related <br/>  
+          <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='/#/projects'> <em>projects</em></a>
+
+        </p>
+
+        <p style={{ color: '#AEBEBEff', backgroundColor: "black", borderRadius: '5px', border:'1px solid white' , marginBottom:'20px' }}> 
+          I recently finished a Cloudflare worker based API called GMAApi that is currently used by this website visit the  
+          <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmapps-api-v1.gmdev.workers.dev/'> <em> Api website </em></a>
+           to try it yourself!
+
+        </p>
+
+        
+        <p style={{ color: '#AEBEBEff' }}> 
+          I am also working with other developers, check out our team site <br/>  
+          <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://fullstackingdevelopment.com/'> <em> fullstackingdevelopment.com </em></a>
+        </p>
+
+        {logoSection2}
+
+        <p style={{ color: '#AEBEBEff', backgroundColor: "black", borderRadius: '5px', border:'1px solid white', marginBottom:'20px', marginTop:'20px' }}> 
+          @ _GMDev on most social media <br/>
+          <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://linktr.ee/_GMDev'> <em> linktr.ee/_GMDev </em></a>
+        </p>
+        
+
+       
         <div style={{ backgroundColor: 'black', padding: '5px'}}>
         <div className='subheader9' style={{ marginTop: '30px' }} >
           <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 Project Spotlight </h1>
@@ -131,21 +163,7 @@ function HeaderSection() {
         <div className='spacer'>
         </div>
 
-        <div className='gio-container-3' style={{ padding: '10px' }}>
-
-          {logoSection}
-
-          <h4 style={{ margin: '10px' }} >
-            I'm friendly feel free to chat!
-          </h4>
-          <p style={{ backgroundColor: '#242a36' }}>All other relevant contact information is available through the "email icon" or contact page.</p>
-          <ul>
-            <li><a style={{ color: 'white' }} href="https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/"> Linkedin Dm</a></li>
-            <li > giovannijmoscato@gmail.com </li>
-          </ul>
-          <img src={GioBanner} width='85%' height='auto' style={{ padding: '5px', margin: '5px' }} />
-
-        </div>
+       
 
         <div className='spacer'>
         </div>

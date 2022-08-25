@@ -95,7 +95,7 @@ function HeaderSection() {
       <div id="mainBody" className='gio-main'>
 
 
-        <img src={Info} width='100%' height='auto' style={{ padding: '5px', marginBottom: '5px' }} />
+        <img src={Info} width='100%' height='auto' style={{ padding: '5px', marginBottom: '5px', border: '2px solid #19819Fff', borderRadius: '20px' }} />
 
         <p style={{ color: '#AEBEBEff', marginTop:'20px' }}> 
           What is this website for? Well, to showcase my web development skills and other computer science related <br/>  
@@ -103,7 +103,7 @@ function HeaderSection() {
 
         </p>
 
-        <p style={{ color: '#AEBEBEff', backgroundColor: "black", borderRadius: '5px', border:'1px solid white' , marginBottom:'20px' }}> 
+        <p style={{ color: '#AEBEBEff', backgroundColor: "#242a36", borderRadius: '5px', border:'1px solid #E0012Aff' , marginBottom:'20px' }}> 
           I recently finished a Cloudflare worker based API called GMAApi that is currently used by this website visit the  
           <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmapps-api-v1.gmdev.workers.dev/'> <em> Api website </em></a>
            to try it yourself!
@@ -118,7 +118,7 @@ function HeaderSection() {
 
         {logoSection2}
 
-        <p style={{ color: '#AEBEBEff', backgroundColor: "black", borderRadius: '5px', border:'1px solid white', marginBottom:'20px', marginTop:'20px' }}> 
+        <p style={{ color: '#AEBEBEff', backgroundColor: "#242a36", borderRadius: '5px', border:'1px solid  #025B79ff', marginBottom:'20px', marginTop:'20px' }}> 
           @ _GMDev on most social media <br/>
           <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://linktr.ee/_GMDev'> <em> linktr.ee/_GMDev </em></a>
         </p>

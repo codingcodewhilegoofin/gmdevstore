@@ -14,7 +14,7 @@ function HeaderAbout() {
     <div className='gio-main' >
 
       <div className='subheader7' >
-        <h4 style={{ color: '#243232ff', fontSize: '50px', fontWeight: '900' }}>ABOUT ME Skills & information</h4>
+        <h4 style={{ color: '#243232ff', fontSize: '50px', fontWeight: '900' }}>ABOUT ME</h4>
 
         <p style={{ color: 'white', backgroundColor: '#242a36', margin: '10px' }}>
           Graduate BS of Computer Science from Northern Illinois University
@@ -37,16 +37,22 @@ function HeaderAbout() {
           I have a range of experience in all listed languages and technologies.
         </p>
 
+       
+
         <div className='spacer2'>
         </div>
+
+        <h4 style={{ color: 'white', fontSize: '50px', fontWeight: '900' }}> List of my current CS knowledge and skills</h4>
       </div>
 
       <div className='spacer'>
       </div>
 
+     
+
       <div className='gio-container-2' style={{ border: 'none', padding: '3px',  }}>
 
-        <h4 id="languages" name="languages" style={{ borderRadius: '20px' , fontWeight:'900'}}>LANGUAGES: </h4>
+        <h4 id="languages" name="languages" style={{ borderRadius: '20px' , fontWeight:'900'}}>LANGUAGES & ENV's: </h4>
 
 
         <ul>
@@ -70,6 +76,13 @@ function HeaderAbout() {
 
             <br></br>
             <li style={{ margin: '10px' }}>ASSIST ASSEMBLY ( INTEL ):
+              <ul>
+                <li>Some experience </li>
+              </ul>
+            </li>
+
+            <br></br>
+            <li style={{ margin: '10px' }}>Julia:
               <ul>
                 <li>Some experience </li>
               </ul>
@@ -108,16 +121,14 @@ function HeaderAbout() {
           <br />
 
           <div className="end-div3" >
-            <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> Procedural Languages</h3>
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> Declaritive / Domain Specific</h3>
           </div>
 
           <div  >
-            <li style={{ margin: '10px' }}> MySQL / SQL:
-              <ul>
-                <br />
-                <li>Queried/Created databases during my CodeOrange internship through SQL.</li>
+            <li style={{ margin: '10px' }}> MySQL / SQL:</li>
+            <ul>
+                <li>Some experience</li>
               </ul>
-            </li>
           </div>
 
           <br></br>
@@ -127,12 +138,21 @@ function HeaderAbout() {
           </div>
 
           <div  >
-            <li style={{ margin: '10px' }}> UNIX / BASH / LINUX:
-              <ul>
-                <br />
-                <li>Experience with a CLI, sys commands, and OS api's </li>
-              </ul>
-            </li>
+            <li style={{ margin: '10px' }}> NodeJS </li>
+            <li style={{ margin: '10px' }}> Jupyter Notebook </li>
+            <li style={{ margin: '10px' }}> Vim </li>
+            
+          </div>
+
+          <div className="end-div2" style={{ background: 'black'}} >
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor:'rgba(0, 0, 0, 0.56)' }}> OS / LOW LEVEL</h3>
+          </div>
+
+          <div  >
+            <li style={{ margin: '10px' }}> Some experience with Linux / Unix </li>
+            <li style={{ margin: '10px' }}> Some experience with Syscalls </li>
+            <li style={{ margin: '10px' }}> Some experience with CLI & scripts </li>
+           
           </div>
         </ul>
       </div>
@@ -165,13 +185,10 @@ function HeaderAbout() {
 
 
           <ul style={{ margin: '10px' }}>
-            <li>Ruby</li>
             <li>NodeJS</li>
-            <li>Flask</li>
-            <li>ASP.NET</li>
             <li>ExpressJS</li>
             <li>Springboot</li>
-            <li>Postman/Insomia</li>
+            <li>Postman</li>
           </ul>
 
 
@@ -186,6 +203,7 @@ function HeaderAbout() {
             <li>H2Hibernate</li>
             <li>AWS</li>
             <li>PCF</li>
+            <li>Cloud Functions</li>
           </ul>
         </ul>
       </div>
@@ -201,27 +219,27 @@ function HeaderAbout() {
           </div>
 
           <ol style={{ margin: '10px' }}>
-            <li>Github add, commit , push cycle</li>
+            <li>Git add, commit , push cycle</li>
             <label></label>
 
             <li>Branch management / Issue handling / AGILE methodology </li>
             <label></label>
 
-            <li>Githubpages</li>
+            <li>Deployment with CI / CD</li>
           </ol>
         </ul>
         <ul >
           <br />
 
           <div className="end-div3" >
-            <li>NPM / GRADLE</li>
+            <li>Package managers / Bundlers</li>
           </div>
 
           <ol style={{ margin: '10px' }}>
-            <li>Update , install , and manage dev dependencies/packages and scripts</li>
+            <li>NPM</li>
             <label></label>
 
-            <li>Directory management for packages in different servers </li>
+            <li>Webpack </li>
           </ol>
         </ul>
 

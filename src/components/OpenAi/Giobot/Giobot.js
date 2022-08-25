@@ -40,6 +40,7 @@ const Giobot = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
+               
             }}
         >
 
@@ -68,7 +69,8 @@ const Giobot = () => {
                     border: '5px solid #2E5252ff',
                     width: '100%',
                     height: '100%',
-                    display:`${mainMenuState}`
+                    display:`${mainMenuState}`,
+                   
                 }}>
 
                 <p style={{

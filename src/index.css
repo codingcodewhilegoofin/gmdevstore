@@ -774,7 +774,7 @@ h6{
 
 @media only screen and (min-width: 1300px){
   .nav-item {
-    width: calc(var(--nav-size) * 3.6 );
+    width: calc(var(--nav-size) * 3 );
    
   }
 }

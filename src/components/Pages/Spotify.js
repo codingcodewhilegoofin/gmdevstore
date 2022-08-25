@@ -117,11 +117,14 @@ const Spotify = () => {
           <li> Then I simply display this data by going through
             its nested data
           </li>
+          <label></label>
+          <li> This was done in my new CloudFlare worker API that I created ! 
+          </li>
         </ul>
 
          <div style={{ border: '1px solid #AEBEBEff', borderRadius: '5px', margin: '10px', backgroundColor: '#1B2524ff' }}>
-          <h1 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: '#1B2524ff' }}> Live data</h1>
-          <h1 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: '#1B2524ff' }}> From my GMApps API</h1>
+          <h1 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: '#1B2524ff' }}>  Live data from CloudFlare Woker API</h1>
+         
           {!currentStatus2 ? <h2>Loading... </h2> : <><ul style={{ color: '#AEBEBEff', padding: '4px' }}>
             <li style={{ margin: '4px' }}> Artists name: {spotifyResonse.name}</li>
             <li style={{ margin: '4px' }}> Account type: {spotifyResonse.type}</li>

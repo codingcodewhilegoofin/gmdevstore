@@ -57,6 +57,7 @@ const ChoiceSite = (props) => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
+                
             }}>
                 <div className="chatbotBar" >
                     <button
@@ -67,6 +68,7 @@ const ChoiceSite = (props) => {
                             cursor: 'pointer',
                             textTransform: 'uppercase',
                             fontSize: 'smaller',
+                           
 
                         }}
                         onClick={menuHandle}>
@@ -76,7 +78,7 @@ const ChoiceSite = (props) => {
             </div>
             <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%", }}>
 
-                <div id="mainmenu" className="choicediv" style={{ display:`${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff", }}>
+                <div id="mainmenu" className="choicediv" style={{  display:`${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff", }}>
 
                     <h1
                         style={{

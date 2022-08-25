@@ -19,8 +19,8 @@ import Coinlib from '../src/icons/CStracklogo/Coiblib.PNG';
 
 function App() {
 
-  console.log(window.location.href);
-  console.log(typeof(window.location.href));
+  //console.log(window.location.href);
+  //console.log(typeof(window.location.href));
 
   const [siteVersion, setSiteVersion] = useState("");
   const [startScene, setStartScene] = useState(true);
@@ -46,11 +46,11 @@ function App() {
   }
 
   const specialHanlde = () => {
-    setStartScene(true);
+    setStartScene(false);
   }
 
   const menuTurnOffScene = () => {
-    setStartScene(false);
+    setStartScene(true);
   }
 
   //Add drawer to hide return button 

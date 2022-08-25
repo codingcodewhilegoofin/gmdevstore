@@ -33,7 +33,7 @@ function OldSite() {
 
   //Custom variables
   var githublink = 'https://github.com/codingcodewhilegoofin';
-  var linkedinlink = 'https://www.linkedin.com/in/giovanni-moscato-4a19a71b1/';
+  var linkedinlink = 'https://www.linkedin.com/in/gio-m-4a19a71b1/';
   var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/GMResProf.pdf';
 
   //Send to DOM 
@@ -42,7 +42,7 @@ function OldSite() {
     <HashRouter basename='/'> {/*Hash routing  */}
 
       {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */}
-      <div className="App" style={{padding: '1px'}}>
+      <div className="App" style={{padding: '1px' , marginTop: '20px;'}}>
 
         <Giobot/>
 

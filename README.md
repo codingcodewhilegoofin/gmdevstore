@@ -31,6 +31,19 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ---
 ## RecentUpdates
 
+
+Migrated all secrets and related API calls to CFW backend
+Fixed menu bug
+Updated homepage
+
+Todo:
+  Update website content
+  Finish OpenAI api  bot
+  Finish Financial api page 
+  Finish Arduino api page
+  
+**Date: 8/24/2022**
+
 UI updates
 **Date: 7/22/2022**
 

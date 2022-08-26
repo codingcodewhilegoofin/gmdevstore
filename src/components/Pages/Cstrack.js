@@ -105,9 +105,10 @@ const Cstrack = () => {
 
         const cryptoSearch = async (cryptoInput) => {
             try {
+              
+                const responseCrypto = await fetch((gmaapiPolyCryptoUrl + `/${cryptoInput[0]}` + `/${cryptoInput[1]}`));
 
-                const response = await fetch((gmaapiPolyCryptoUrl + `/${cryptoInput[0]}` + `/${cryptoInput[1]}`));
-                if (!response.ok) {
+                if (!responseCrypto.ok) {
                     console.log("Error in Polygon  Crypto API response");
                     setPolygonResponse({
                         symbol: 'error',
@@ -115,9 +116,8 @@ const Cstrack = () => {
                     setResponseStatusCrypto(false);
                 }
                 
-                const apiResponse = await response.json();
-
-                return apiResponse;
+                const apiResponseCrypto = await responseCrypto.json();
+                return apiResponseCrypto;
 
             } catch (error) {
                 console.log(error);
@@ -130,7 +130,6 @@ const Cstrack = () => {
         })
         cryptoSearch(cryptoInput).then(data => {
             setPolygonCrypto(data);
-            console.log(polygonCrypto);
             setResponseStatusCrypto(true);
         })
        
@@ -143,15 +142,19 @@ const Cstrack = () => {
 
     const changeStocks = (e) => {
         e.preventDefault();
+        if( (document.getElementById("Sticker").value || document.getElementById("Sdate").value || document.getElementById("Sboolean").value) === null ){
+            alert("Please enter every field ya goof");
+        }
         const userInputArray = [document.getElementById("Sticker").value, document.getElementById("Sdate").value, document.getElementById("Sboolean").value];
         setUserInput(userInputArray);
+        window.scrollBy(0, -300);
     }
 
     const changeCryptoCurrency = (e) => {
         e.preventDefault();
         const cryptoInputArray = [document.getElementById("Cticker").value, document.getElementById("Cboolean").value];
         setCryptoInput(cryptoInputArray);
-        console.log(cryptoInputArray);
+        window.scrollBy(0, -600);
     }
 
     return (
@@ -243,11 +246,11 @@ const Cstrack = () => {
                 <form onSubmit={changeStocks} >
                     <div className='gio-container' style={{ width: `${inputBox}`, background: 'none', flexDirection: 'row', padding: '5px' }}>
 
-                        <input style={{ color: "#AEBEBEff", width: `${inputBoxOne}` }} type="text" id="Sticker" />
+                        <input required style={{ color: "#AEBEBEff", width: `${inputBoxOne}` }} type="text" id="Sticker" />
                         <label></label>
-                        <input style={{ color: "#AEBEBEff", width: `${inputBoxTwo}`, }} type="date" id="Sdate" />
+                        <input required style={{ color: "#AEBEBEff", width: `${inputBoxTwo}`, }} type="date" id="Sdate" />
                         <label></label>
-                        <input style={{ color: "#AEBEBEff", width: `${inputBoxThree}`, }} type="text" id="Sboolean" />
+                        <input required style={{ color: "#AEBEBEff", width: `${inputBoxThree}`, }} type="text" id="Sboolean" />
                     </div>
 
 
@@ -285,9 +288,9 @@ const Cstrack = () => {
                 <form onSubmit={changeCryptoCurrency} >
                     <div className='gio-container' style={{ width: `${inputBox}`, background: 'none', flexDirection: 'row', padding: '5px' }}>
 
-                        <input style={{ color: "#AEBEBEff", width: `${inputBoxTwo}` }} type="text" id="Cticker" />
+                        <input required style={{ color: "#AEBEBEff", width: `${inputBoxTwo}` }} type="text" id="Cticker" />
                         <label></label>
-                        <input style={{ color: "#AEBEBEff", width: `${inputBoxOne}`, }} type="text" id="Cboolean" />
+                        <input required style={{ color: "#AEBEBEff", width: `${inputBoxOne}`, }} type="text" id="Cboolean" />
                     </div>
 
 

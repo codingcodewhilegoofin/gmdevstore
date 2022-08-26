@@ -43,12 +43,14 @@ function HeaderSection() {
   const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
   const [data, setData] = useState([]);
   const [currentStatus, setStatus] = useState(false);
+  
   let specialheader;
   let specialheader2;
   let logoSection;
   let logoSection2;
   let youtubesub;
   let urlToggle = false;
+  let infoWidth;
 
   if (window.innerWidth < 600) {
     specialheader = <></>;
@@ -56,6 +58,7 @@ function HeaderSection() {
     logoSection = <></>;
     logoSection2 = <></>;
     youtubesub = <></>;
+    let infoWidth = '100%'
   }
   else {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
@@ -63,6 +66,7 @@ function HeaderSection() {
     youtubesub = <h2 style={{ color: 'white' }}>SUB TO MY YOUTUBE?</h2>;
     logoSection = <img src={GioLogo} width='20%' height='auto' style={{ padding: '5px' }} />;
     logoSection2 = <img src={FSDlogo} width='20%' height='auto' style={{ padding: '5px' }} />;
+    let infoWidth = '80%'
   }
 
 
@@ -97,46 +101,52 @@ function HeaderSection() {
 
         <img src={Info} width='100%' height='auto' style={{ padding: '5px', marginBottom: '5px', border: '2px solid #19819Fff', borderRadius: '20px' }} />
 
-        <p style={{ color: '#AEBEBEff', marginTop:'20px' }}> 
-          What is this website for? Well, to showcase my web development skills and other computer science related <br/>  
-          <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='/#/projects'> <em>projects</em></a>
+        <div className="gio-container" style={{padding: '5px', marginBottom: '30px', marginTop: '40px' , width: `${infoWidth}`}}>
+          <p style={{ color: '#AEBEBEff', marginTop: '20px' }}>
+            What is this website for? Well, to showcase my web development skills and other computer science related <br />
+            <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='/#/projects'> <em>projects</em></a>
 
-        </p>
+          </p>
 
-        <p style={{ color: '#AEBEBEff', backgroundColor: "#242a36", borderRadius: '5px', border:'1px solid #E0012Aff' , marginBottom:'20px' }}> 
-          I recently finished a Cloudflare worker based API called GMAApi that is currently used by this website visit the  
-          <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmapps-api-v1.gmdev.workers.dev/'> <em> Api website </em></a>
-           to try it yourself!
+          <p style={{ color: '#AEBEBEff' }}>
+            I am also working with other developers, check out our team site <br />
+            <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://fullstackingdevelopment.com/'> <em> fullstackingdevelopment.com </em></a>
+          </p>
 
-        </p>
-
-        
-        <p style={{ color: '#AEBEBEff' }}> 
-          I am also working with other developers, check out our team site <br/>  
-          <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://fullstackingdevelopment.com/'> <em> fullstackingdevelopment.com </em></a>
-        </p>
-
-        {logoSection2}
-
-        <p style={{ color: '#AEBEBEff', backgroundColor: "#242a36", borderRadius: '5px', border:'1px solid  #025B79ff', marginBottom:'20px', marginTop:'20px' }}> 
-          @ _GMDev on most social media <br/>
-          <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://linktr.ee/_GMDev'> <em> linktr.ee/_GMDev </em></a>
-        </p>
-        
-
-       
-        <div style={{ backgroundColor: 'black', padding: '5px'}}>
-        <div className='subheader9' style={{ marginTop: '30px' }} >
-          <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 Project Spotlight </h1>
-          <p style={{ color: '#AEBEBEff', backgroundColor: "black" }}>This is my favorite complete project at the moment!</p>
-          <a style={{ color: 'white' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
-          <a style={{ color: 'white', fontWeight: '700', marginTop: '20px', marginBottom: '10px' }} href='/#/Spotify'>Spotify API intergration</a>
+          {logoSection2}
 
         </div>
 
-        <div className='gio-container-2' style={{ marginTop: '10px', padding: 'none'  }}>
-          <SpotifyAPI/>
+        <div className="gio-container" style={{ marginBottom: '30px', width: `${infoWidth}` }}>
+
+          <p style={{ color: '#AEBEBEff', backgroundColor: "#242a36", borderRadius: '5px', border: '1px solid #E0012Aff', marginBottom: '20px' }}>
+            I recently finished a Cloudflare worker based API called GMAApi that is currently used by this website visit the
+            <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmapps-api-v1.gmdev.workers.dev/'> <em> Api website </em></a>
+            to try it yourself!
+
+          </p>
+
+          <p style={{ color: '#AEBEBEff', backgroundColor: "#242a36", borderRadius: '5px', border: '1px solid  #025B79ff', marginBottom: '20px', marginTop: '20px' }}>
+            @ _GMDev on most social media <br />
+            <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://linktr.ee/_GMDev'> <em> linktr.ee/_GMDev </em></a>
+          </p>
+
         </div>
+
+
+
+        <div style={{ backgroundColor: 'black', padding: '5px' }}>
+          <div className='subheader9' style={{ marginTop: '30px' }} >
+            <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 Project Spotlight </h1>
+            <p style={{ color: '#AEBEBEff', backgroundColor: "black" }}>This is my favorite complete project at the moment!</p>
+            <a style={{ color: 'white' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
+            <a style={{ color: 'white', fontWeight: '700', marginTop: '20px', marginBottom: '10px' }} href='/#/Spotify'>Spotify API intergration</a>
+
+          </div>
+
+          <div className='gio-container-2' style={{ marginTop: '10px', padding: 'none' }}>
+            <SpotifyAPI />
+          </div>
 
         </div>
 
@@ -163,7 +173,7 @@ function HeaderSection() {
         <div className='spacer'>
         </div>
 
-       
+
 
         <div className='spacer'>
         </div>

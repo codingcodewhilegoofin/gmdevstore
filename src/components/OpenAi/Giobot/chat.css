@@ -12,10 +12,12 @@
 }
 
 .chatbotBar{
-    background-color: #101730ff;
+    background-color: transparent;
     text-align: center;
     width: 100%;
     border: 1px solid #025B79ff;
+    border-radius: 20px;
+    
 }
 
 .chatbotBar:hover{

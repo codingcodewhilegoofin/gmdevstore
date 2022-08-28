@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component, useState, useEffect } from 'react';
 
 import '../../App.css';
 import { Button } from '../Buttons/Button.js';
@@ -10,18 +10,46 @@ import '../../icons/instagram.svg';
 
 
 
+
 function HeaderContact() {
+
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  let twitterResize;
+
+  if (windowSize[0] < 700) {
+
+    twitterResize = '100%';
+  }
+  else {
+
+    twitterResize = '40%';
+  }
+
+  useEffect(() => {
+
+    function updateSize() {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    }
+
+    window.addEventListener('resize', updateSize);
+    //console.log(windowSize[0]);
+
+    return () => {
+      window.removeEventListener('resize', updateSize);
+    }
+  }, [windowSize])
   return (
     <div className='gio-main' >
 
-      <div className='subheader8' style={{ margin: '10px' }}>
+      <div className='subheader8' style={{ margin: '10px', borderRadius: '5px', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }}>
 
         <h1 style={{ color: "#AEBEBEff", fontWeight: '900' }}>HOW TO CONTACT ME</h1>
         <h4 style={{ color: "#AEBEBEff" }}>Contact me anytime CST  </h4>
       </div>
 
-      <a style={{ color: "white", fontWeight: '800' }} href='https://linktr.ee/_GMDev'>linktr.ee/_GMDev</a>
-  
+      <a style={{ color: "white", fontWeight: '600', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }} href='https://linktr.ee/_GMDev'>linktr.ee/_GMDev</a>
+
 
       <div className='spacer2'>
       </div>
@@ -33,31 +61,26 @@ function HeaderContact() {
 
             <label for="fname" style={{ color: "white", }} >EMAIL:</label>
             <br />
-            <input style={{ color: "white", borderRadius: "10px" }} type="text" value="Yupimaperson101@protonmail.com" id="myInput" size="80vw" />
+
+            <input style={{ color: "white", borderRadius: "10px", boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="Yupimaperson101@protonmail.com" id="myInput" size="80vw" />
             <br></br>
-            <br />
-
-
-            <a href="https://www.buymeacoffee.com/giomoscato101">
-              <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" />
-            </a>
             <br />
 
             <a href="https://www.instagram.com/_gmdev/" class="fa fa-instagram"></a>
             <br />
-            <input style={{ color: "white", borderRadius: "10px" }} type="text" value="https://www.instagram.com/_gmdev/" id="myInput" size="auto" />
+            <input style={{ color: "white", borderRadius: "10px", boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="https://www.instagram.com/_gmdev/" id="myInput" size="auto" />
             <br></br>
             <br />
 
             <a href="https://www.linkedin.com/in/gio-m-4a19a71b1/" class="fa fa-linkedin"></a>
             <br />
-            <input style={{ color: "white", borderRadius: "10px" }} type="text" value="https://www.linkedin.com/in/gio-m-4a19a71b1/" id="myInput" size="auto" />
+            <input style={{ color: "white", borderRadius: "10px", boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="https://www.linkedin.com/in/gio-m-4a19a71b1/" id="myInput" size="auto" />
             <br></br>
             <br />
 
             <a href="https://twitter.com/_GmDev" class="fa fa-twitter"></a>
             <br />
-            <input style={{ color: "white", borderRadius: "10px" }} type="text" value="https://twitter.com/_GmDev" id="myInput" size="auto" />
+            <input style={{ color: "white", borderRadius: "10px", boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="https://twitter.com/_GmDev" id="myInput" size="auto" />
             <br></br>
             <br />
 
@@ -68,9 +91,10 @@ function HeaderContact() {
       <div className='spacer'>
       </div>
 
-
-      <div align="center" className="gio-container-special" style={{ border: 'none' }}>
-        <iframe className="twitterframe" srcdoc='<blockquote class="twitter-tweet" data-theme="dark"><p lang="und" dir="ltr"><a href="https://t.co/0bebiqAqqb">https://t.co/0bebiqAqqb</a></p>&mdash; Giovanni J Moscato (@GiovanniJMosca1) <a href="https://twitter.com/_GmDev/status/1483548367460392961?ref_src=twsrc%5Etfw">January 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ' />
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+        <div align="center" className="gio-container-special"  >
+          <iframe width={`${twitterResize}`} height='500' srcdoc='<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just published Got a B.S in Computer Science was it worth it for me? <a href="https://t.co/QGXEsVV6Mk">https://t.co/QGXEsVV6Mk</a></p>&mdash; _GMDev (@_GmDev) <a href="https://twitter.com/_GmDev/status/1558184199412137985?ref_src=twsrc%5Etfw">August 12, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> ' />
+        </div>
       </div>
 
       <div className='spacer'>
@@ -91,39 +115,33 @@ function HeaderContact() {
 
             <label for="fname" style={{ color: "white" }} >Github:</label>
             <br />
-            <input style={{ color: "white", borderRadius: '10px' }} type="text" value="https://github.com/codingcodewhilegoofin/giowebsite/settings/pages" id="myInput" size="80vw" />
+            <input style={{ color: "white", borderRadius: '10px', boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="https://github.com/codingcodewhilegoofin/giowebsite/settings/pages" id="myInput" size="80vw" />
             <br></br>
             <br />
 
             <label for="pin" style={{ color: "white" }} >StackOF:</label>
             <br />
-            <input style={{ color: "white", borderRadius: '10px' }} type="text" value="https://stackoverflow.com/users/14115291/gmdev" id="myInput" size="auto" />
+            <input style={{ color: "white", borderRadius: '10px', boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="https://stackoverflow.com/users/14115291/gmdev" id="myInput" size="auto" />
             <br></br>
             <br />
 
             <label for="pin" style={{ color: "white" }} >Devpost:</label>
             <br />
-            <input style={{ color: "white", borderRadius: '10px' }} type="text" value="https://devpost.com/codingcodewhilegoofin?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" id="myInput" size="auto" />
+            <input style={{ color: "white", borderRadius: '10px', boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="https://devpost.com/codingcodewhilegoofin?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" id="myInput" size="auto" />
             <br></br>
             <br />
 
             <label for="fname" style={{ color: "white" }} >HackerRank:</label>
             <br />
-            <input style={{ color: "white", borderRadius: '10px' }} type="text" value="https://www.hackerrank.com/Yupimaperson101?hr_r=1" id="myInput" size="auto" />
+            <input style={{ color: "white", borderRadius: '10px', boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="https://www.hackerrank.com/Yupimaperson101?hr_r=1" id="myInput" size="auto" />
             <br></br>
             <br />
 
             <label for="fname" style={{ color: "white" }} >BuyMeACoffe:</label>
             <br />
-            <input style={{ color: "white", borderRadius: '10px' }} type="text" value="https://www.buymeacoffee.com/giomoscato101" id="myInput" size="auto" />
+            <input style={{ color: "white", borderRadius: '10px', boxShadow: 'rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset' }} type="text" value="https://www.buymeacoffee.com/giomoscato101" id="myInput" size="auto" />
             <br></br>
             <br />
-
-            <a href="https://www.buymeacoffee.com/giomoscato101">
-              <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=BA181B&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" />
-            </a>
-            <br />
-
 
             <br />
           </form>

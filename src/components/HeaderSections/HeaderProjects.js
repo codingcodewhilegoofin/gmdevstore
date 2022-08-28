@@ -113,7 +113,7 @@ function HeaderProjects() {
     <div>
 
       <div style={{
-        backgroundColor: '#1B2524ff',
+        backgroundColor: 'transparent',
         borderRadius: "5px",
         display: 'flex',
         flexDirection: 'column',
@@ -151,7 +151,7 @@ function HeaderProjects() {
           <a style={{ color: 'white', cursor: 'pointer' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
         </div>
 
-        <div className="projectHeader" style={{marginTop: '100px'}}>
+        <div className="projectHeader" style={{    boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center',marginTop: '100px'}}>
 
           <h1
             style={{
@@ -162,7 +162,8 @@ function HeaderProjects() {
               borderRadius: "5px",
               fontSize: '15px',
               fontWeight: '900',
-              margin: '5px'
+              margin: '5px',
+              width: '80%'
             }}>
             PROJECT DIRECTORY AND Q&A
           </h1>
@@ -176,7 +177,7 @@ function HeaderProjects() {
             description="List of all projects I have made available to the public that involve coding or programming"
             cardToggleID={"IdZero"}
           >
-            <div className="end-div5" style={{ backgroundColor: "transparent" }} >
+            <div className="end-div5" style={{ backgroundColor: "transparent"}} >
               <ol style={{ backgroundColor: "#025B79ff", fontWeight: '900', border: '3px solid black', borderRadius: "10px", }}>
                 <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>Web dev based projects</li>
                 <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid black', margin: '10px' }}>
@@ -342,7 +343,7 @@ function HeaderProjects() {
         </div>
         
 
-        <div className="projectFooter" style={{marginTop: '100px'}}>
+        <div className="projectFooter" style={{    boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px',display: 'flex', flexDirection: 'column', alignItems: 'center',marginTop: '100px'}}>
 
           <h1
             style={{
@@ -353,7 +354,8 @@ function HeaderProjects() {
               borderRadius: "5px",
               fontSize: '15px',
               fontWeight: '900',
-              margin: '5px'
+              margin: '5px',
+              width: '80%'
             }}>
             PROJECT SHOWCASE
           </h1>

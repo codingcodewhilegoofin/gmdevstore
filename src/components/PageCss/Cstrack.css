@@ -57,6 +57,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     flex-direction:  column;
+    align-items: center;
 }
 .Outter{
   height:560px; 

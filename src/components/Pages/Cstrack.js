@@ -33,6 +33,11 @@ const Cstrack = () => {
     const [polygonNft, setPolygonNft] = useState([]);
     const [nftInput, setNftInput] = useState(['cryptopunks']);
 
+    //Gov
+    const [responseStatusGov, setResponseStatusGov] = useState(false);
+    const [polygonGov, setPolygonGov] = useState([]);
+
+
 
     //https://gmapps-api-v1.gmdev.workers.dev/api/Stock/GOOGL/2022-08-23/true
     const gmaapiPolyUrl = 'https://gmapps-api-v1.gmdev.workers.dev/api/Stock';
@@ -40,6 +45,9 @@ const Cstrack = () => {
     const gmaapiPolyCryptoUrl = 'https://gmapps-api-v1.gmdev.workers.dev/api/Crypto';
     //https://gmapps-api-v1.gmdev.workers.dev/api/Nft/cryptopunks
     const gmaapiNftUrl = 'https://gmapps-api-v1.gmdev.workers.dev/api/Nft';
+    //https://gmapps-api-v1.gmdev.workers.dev/api/Gov
+    const gmaapiGovUrl = 'https://gmapps-api-v1.gmdev.workers.dev/api/Gov';
+
 
 
     let divSection1;
@@ -50,24 +58,27 @@ const Cstrack = () => {
     let inputBoxThree;
     let inputBoxNft = '100%';
     let stockMarket;
+    let pictureResize; 
 
     if (windowSize[0] < 700) {
         stockMarket = 'column';
+        pictureResize = '80%';
     }
     else {
         stockMarket = 'row';
+        pictureResize = '66.33%';
     }
 
     if (windowSize[0] < 600) {
-        divSection1 = <div className='end-div3' style={{ padding: '10px', margin: '10px' }}><img src={OpenSea} width='50%' height='auto' style={{ margin: '5px' }} /><img src={poly} width='50%' height='auto' style={{ margin: '5px' }} /></div>;
-        divSection2 = <div className='end-div3' style={{ padding: '10px', margin: '10px' }}><img src={Coiblib} width='50%' height='auto' style={{ margin: '5px' }} /><img src={GovApi} width='50%' height='auto' style={{ margin: '5px' }} /></div>;
+        divSection1 = <><img src={OpenSea} width='80%' height='auto' style={{margin:'5px'  }} /><img src={poly} width='80%' height='auto' style={{ margin:'5px' }} /></>;
+        divSection2 = <><img src={Coiblib} width='80%' height='auto' style={{margin:'5px'  }} /><img src={GovApi} width='80%' height='auto' style={{margin:'5px'  }} /></>;
         inputBox = '100%';
         inputBoxOne = '45%';
         inputBoxTwo = '40%';
         inputBoxThree = '45%';
     }
     else {
-        divSection1 = <div className="gio-container" style={{ margin: '30px' }}><div className='end-div3' style={{ padding: '1px', width: '60%', background: 'none', border: 'none' }}><img src={OpenSea} width='30%' height='100%' style={{ margin: '5px' }} /><img src={poly} width='30%' height='auto' style={{ margin: '5px' }} /><img src={Coiblib} width='30%' height='auto' style={{ margin: '5px' }} /><img src={GovApi} width='30%' height='auto' style={{ margin: '5px' }} /></div></div>;
+        divSection1 = <div className="gio-container " style={{ margin: '0px', width: '100%', alignItems: 'center', alignSelf: 'center', border: 'none', background: 'none' }}><div className='end-div3' style={{ padding: '1px', width: '80%', background: 'none', border: 'none' }}><img src={OpenSea} width='25%' height='100%' style={{ margin: '5px' }} /><img src={poly} width='25%' height='auto' style={{ margin: '5px' }} /><img src={Coiblib} width='25%' height='auto' style={{ margin: '5px' }} /><img src={GovApi} width='25%' height='auto' style={{ margin: '5px' }} /></div></div>;
         divSection2 = <></>;
         inputBox = '80%';
         inputBoxOne = '30%';
@@ -132,7 +143,20 @@ const Cstrack = () => {
             return apiResponseNft;
         }
 
+        const govSearch = async () => {
 
+            const responseGov = await fetch((gmaapiGovUrl));
+
+            if (!responseGov.ok) {
+                console.log("Error in gov API response");
+                alert("Can not find gov data from API, bad response");
+                setResponseStatusGov(false);
+            }
+
+            const apiResponseGov = await responseGov.json();
+            console.log(apiResponseGov);
+            return apiResponseGov;
+        }
 
         stockSearch(userInput).then(data => {
             setPolygonResponse(data);
@@ -174,6 +198,15 @@ const Cstrack = () => {
             window.location.reload();
         })
 
+        govSearch().then(data => {
+            setPolygonGov(data);
+            setResponseStatusGov(true);
+        }).catch(error => {
+            setResponseStatusGov(false);
+            alert("Can not find gov data from API");
+            setPolygonGov([]);
+            window.location.reload();
+        })
 
         return () => {
 
@@ -206,7 +239,6 @@ const Cstrack = () => {
     }
 
     return (
-
         <div
             className="CStrack">
 
@@ -215,40 +247,55 @@ const Cstrack = () => {
                     color: '#AEBEBEff',
                     fontSize: 'large',
                     backgroundColor: '#242a36'
-                }}>  Market health comparison from the GMAApi </h2>
-                <h4 style={{ padding: '10px', lineSpacing: '5px', borderRadius: '10px' }}> 3rd party API's provided by </h4>
+                }}>
+                    Financial Market health comparison from
+                </h2>
+                <a style={{
+                    color: '#AEBEBEff',
+                    fontSize: 'large',
+                    backgroundColor: 'transparent'
+                }} href="https://gmapps-api-v1.gmdev.workers.dev/">
+                    https://gmapps-api-v1.gmdev.workers.dev/
+                </a>
+                <h4 style={{ padding: '10px', lineSpacing: '5px', borderRadius: '10px', backgroundColor: '#19819Fff' }}>
+                    3rd party API's provided by
+                </h4>
             </div>
 
-            {divSection1}
-            {divSection2}
+            <div className='gio-container' style={{ marginBottom: '30px', background: 'none', width: `${pictureResize}`, backgroundColor: '#19819Fff', boxShadow: 'rgba(25, 129, 159, 1) 0px 20px 30px -10px' }}>
+                {divSection1}
+                {divSection2}
+            </div>
 
 
-            <div className='gio-container' style={{ margin: '10px', background: 'none', width: '100%' }}>
+            <div className='gio-container' style={{ marginBottom: '10px', background: 'none', width: '66.33%',  }}>
 
                 <h4 style={{ margin: '5px', background: 'none' }}>
                     🔥 🗑️            📉<br />
-                    Instantly compare the most important financial information & trends all on one page
+                    Current financial information & trends based on important indicators such as stocks, cryptocurrencies, and debt.
                     <br />🚀          ✨ 🌕
                 </h4>
 
             </div>
 
             {!responseStatus ? <h2>Loading... </h2> :
-                <div className='gio-container' style={{ marginBottom: '10px', width: '95%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }}>
+                <div className='gio-container' style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset', marginBottom: '10px', width: '95%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }}>
 
-                    <h4 style={{ background: 'none' }}>
-                        STOCK MARKET {currentYear}
+                    <h4 style={{ background: 'none', }}>
+                        <b>
+                            STOCK MARKET {currentYear}
+                        </b>
                     </h4>
 
                     <h4 style={{ margin: '5px', background: 'none' }}>
                         Ticker: {polygonResponse.symbol}
                     </h4>
 
-                    <h4 style={{ margin: '5px', background: 'none' }}>
+                    <h4 style={{ margin: '5px', background: 'none', color: 'green' }}>
                         High for {polygonResponse.from} : {polygonResponse.high}
                     </h4>
 
-                    <h4 style={{ margin: '5px', background: 'none' }}>
+                    <h4 style={{ margin: '5px', background: 'none', color: 'red' }}>
                         Low for {polygonResponse.from} : {polygonResponse.low}
                     </h4>
 
@@ -256,21 +303,23 @@ const Cstrack = () => {
             }
 
             {!responseStatusCrypto ? <h2>Loading... </h2> :
-                <div className='gio-container' style={{ marginBottom: '10px', width: '95%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }}>
+                <div className='gio-container' style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset', marginBottom: '10px', width: '95%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }}>
 
                     <h4 style={{ background: 'none' }}>
-                        CRYPTO MARKET {currentYear}
+                        <b>
+                            CRYPTO MARKET {currentYear}
+                        </b>
                     </h4>
 
                     <h4 style={{ margin: '5px', background: 'none' }}>
                         Ticker: {polygonCrypto.ticker}
                     </h4>
 
-                    <h4 style={{ margin: '5px', background: 'none' }}>
+                    <h4 style={{ margin: '5px', background: 'none', color: 'green' }}>
                         High : {polygonCrypto.results[0].h}
                     </h4>
 
-                    <h4 style={{ margin: '5px', background: 'none' }}>
+                    <h4 style={{ margin: '5px', background: 'none', color: 'red' }}>
                         Low : {polygonCrypto.results[0].l}
                     </h4>
 
@@ -278,7 +327,7 @@ const Cstrack = () => {
             }
 
             {!responseStatusNft ? <h2>Loading ... </h2> :
-                <div className='gio-container' style={{ marginBottom: '10px', width: '95%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }}>
+                <div className='gio-container' style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset', marginBottom: '10px', width: '95%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }}>
 
                     <h4 style={{ margin: '5px', background: 'none' }}>
                         <img src={polygonNft.collection.image_url} width='100%' height='auto' />
@@ -286,15 +335,17 @@ const Cstrack = () => {
 
                     <div className='gio-container' style={{ marginBottom: '10px', width: '90%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }} >
                         <h4 style={{ background: 'none' }}>
-                            NFT COLLECTION {currentYear}
+                            <b>
+                                NFT COLLECTION {currentYear}
+                            </b>
                         </h4>
 
                         <h4 style={{ margin: '5px', background: 'none' }}>
-                            Collection Name:<br/> {polygonNft.collection.name}
+                            Collection Name:<br /> {polygonNft.collection.name}
                         </h4>
 
-                        <h4 style={{ margin: '5px', background: 'none' }}>
-                            Twitter Name:<br/> {polygonNft.collection.twitter_username}
+                        <h4 style={{ margin: '5px', background: 'none', color: 'lightblue' }}>
+                            Twitter Name:<br /> {polygonNft.collection.twitter_username}
                         </h4>
                     </div>
 
@@ -302,11 +353,11 @@ const Cstrack = () => {
                         <img src={polygonNft.collection.banner_image_url} width='100%' height='auto' />
                     </h4>
 
-                    <h4 style={{ margin: '5px', background: 'none' }}>
+                    <h4 style={{ margin: '10px', backgroundColor: 'black', color: 'white' }}>
                         About: {polygonNft.collection.description}
                     </h4>
 
-                    <div className='gio-container' style={{ marginBottom: '10px', width: '90%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }} >
+                    <div className='gio-container' style={{boxShadow: 'rgba(25, 129, 159, 0.4) -5px 5px, rgba(25, 129, 159, 0.3) -10px 10px, rgba(25, 129, 159, 0.2) -15px 15px, rgba(25, 129, 159, 0.1) -20px 20px, rgba(25, 129, 159, 0.05) -25px 25px', marginBottom: '50px', width: '90%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }} >
 
                         <h4 style={{ margin: '5px', background: 'none' }}>
                             Volume: {polygonNft.collection.stats.total_volume}
@@ -320,6 +371,30 @@ const Cstrack = () => {
                             Seven day change : {polygonNft.collection.stats.seven_day_change}
                         </h4>
                     </div>
+
+                </div>
+            }
+
+            {!responseStatusGov ? <h2>Loading... </h2> :
+                <div className='gio-container' style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset', marginBottom: '10px', width: '95%', background: 'none', flexDirection: `${stockMarket}`, flexWrap: 'wrap' }}>
+
+                    <h4 style={{ background: 'none', color: 'red' }}>
+                        <b>
+                            USA DEBT
+                        </b>
+                    </h4>
+
+                    <h4 style={{ margin: '5px', background: 'none', color: 'red' }}>
+                        Total Debt {currentYear - 1}: {polygonGov.data[0].debt_outstanding_amt}
+                    </h4>
+
+                    <h4 style={{ margin: '5px', background: 'none' }}>
+                        Total Debt {currentYear - 10}: {polygonGov.data[9].debt_outstanding_amt}
+                    </h4>
+
+                    <h4 style={{ margin: '5px', background: 'none' }}>
+                        Debt increase {currentYear - 10} - {currentYear - 1}:  {parseInt(polygonGov.data[0].debt_outstanding_amt - polygonGov.data[9].debt_outstanding_amt)}
+                    </h4>
 
                 </div>
             }

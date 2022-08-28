@@ -40,6 +40,10 @@ const Giobot = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
+                alignItems: 'center',
+                marginTop: '0px',
+                margin: '8px', 
+                borderRadius: '20px'
                
             }}
         >

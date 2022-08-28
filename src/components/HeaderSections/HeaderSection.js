@@ -43,7 +43,7 @@ function HeaderSection() {
   const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
   const [data, setData] = useState([]);
   const [currentStatus, setStatus] = useState(false);
-  
+
   let specialheader;
   let specialheader2;
   let logoSection;
@@ -101,7 +101,7 @@ function HeaderSection() {
 
         <img src={Info} width='100%' height='auto' style={{ padding: '5px', marginBottom: '5px', border: '2px solid #19819Fff', borderRadius: '20px' }} />
 
-        <div className="gio-container" style={{padding: '5px', marginBottom: '30px', marginTop: '40px' , width: `${infoWidth}`}}>
+        <div className="gio-container" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '5px', marginBottom: '30px', marginTop: '40px', width: `${infoWidth}` }}>
           <p style={{ color: '#AEBEBEff', marginTop: '20px' }}>
             What is this website for? Well, to showcase my web development skills and other computer science related <br />
             <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='/#/projects'> <em>projects</em></a>
@@ -117,7 +117,7 @@ function HeaderSection() {
 
         </div>
 
-        <div className="gio-container" style={{ marginBottom: '30px', width: `${infoWidth}` }}>
+        <div className="gio-container" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) -2px 5px 5px', marginBottom: '30px', width: `${infoWidth}` }}>
 
           <p style={{ color: '#AEBEBEff', backgroundColor: "#242a36", borderRadius: '5px', border: '1px solid #E0012Aff', marginBottom: '20px' }}>
             I recently finished a Cloudflare worker based API called GMAApi that is currently used by this website visit the
@@ -135,9 +135,9 @@ function HeaderSection() {
 
 
 
-        <div style={{ backgroundColor: 'black', padding: '5px' }}>
+        <div style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 5px 20px 5px', backgroundColor: 'black', padding: '5px' }}>
           <div className='subheader9' style={{ marginTop: '30px' }} >
-            <h1 style={{ color: '#AEBEBEff', fontWeight: '900' }}>🥳 Project Spotlight </h1>
+            <h1 style={{ color: '#AEBEBEff', fontWeight: '900', background: 'rgba(0, 0, 0, .8)' }}>🥳 Project Spotlight </h1>
             <p style={{ color: '#AEBEBEff', backgroundColor: "black" }}>This is my favorite complete project at the moment!</p>
             <a style={{ color: 'white' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
             <a style={{ color: 'white', fontWeight: '700', marginTop: '20px', marginBottom: '10px' }} href='/#/Spotify'>Spotify API intergration</a>
@@ -150,13 +150,14 @@ function HeaderSection() {
 
         </div>
 
-
-        <div style={{ padding: '10px', paddingTop: '30px', paddingBottom: '20px' }}>
-          <Button
-            className='btns'
-            buttonStyle='btn--outline'
-            buttonSize='btn--med'
-          ></Button>
+        <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column', margin: '10px'}}>
+          <div style={{ alignSelf: 'center', width: '100%', margin: '10px', boxShadow: 'rgba(0, 0, 0, 0.5) -2px 10px 5px', padding: '10px', paddingTop: '30px', paddingBottom: '20px' }}>
+            <Button
+              className='btns'
+              buttonStyle='btn--outline'
+              buttonSize='btn--med'
+            ></Button>
+          </div>
         </div>
 
         {/* <div className="gio-container">
@@ -164,22 +165,19 @@ function HeaderSection() {
           <div class="g-ytsubscribe" data-channelid="UCKzykl0XjPKWtr4U3cszSAw" data-layout="full" data-theme="dark" data-count="default"></div>
         </div> */}
 
-        <div className='gio-container-2' style={{ paddingTop: '30px', paddingBottom: '30px' }}>
+        <div className='gio-container-2' style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 5px 15px 5px', paddingTop: '10px', paddingBottom: '0px' }}>
 
           {specialheader}
-          <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
+          <iframe src="https://discord.com/widget?id=944377004193611817&theme=dark"  padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
         </div>
 
         <div className='spacer'>
         </div>
 
-
-
         <div className='spacer'>
         </div>
 
-
-        <div className='gio-container-2' style={{ padding: '2px' }}>
+        <div className='gio-container-2' style={{ boxShadow: 'rgba(0, 0, 0, 0.5) -2px 10px 5px', padding: '2px' }}>
 
           <h4> Quick summary of skillset : </h4>
           <ul>
@@ -286,7 +284,7 @@ function HeaderSection() {
         </div>
 
 
-        <div className="end-div" style={{ margin: '5px' }}>
+        <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginBottom: '30px' }}>
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
               color: '#AEBEBEff',
@@ -318,7 +316,7 @@ function HeaderSection() {
           </a>
         </div>
 
-        <div className="end-div2" style={{ margin: '5px' }}>
+        <div className="end-div2" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginBottom: '30px' }}>
           <a
 
             href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
@@ -353,7 +351,7 @@ function HeaderSection() {
           </a>
         </div>
 
-        <div className='gio-container-2' style={{ padding: '0px' }}>
+        <div className='gio-container-2' style={{ padding: '0px', marginBottom: '30px' }}>
           <h3
             style={{
               color: '#AEBEBEff',

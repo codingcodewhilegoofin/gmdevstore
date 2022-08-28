@@ -57,6 +57,12 @@ const ChoiceSite = (props) => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
+                alignItems: 'center',
+                marginBottom: '0px', 
+                marginLeft: '8px', 
+                marginRight: '8px', 
+                borderRadius: '20px',
+                
                 
             }}>
                 <div className="chatbotBar" >
@@ -68,6 +74,7 @@ const ChoiceSite = (props) => {
                             cursor: 'pointer',
                             textTransform: 'uppercase',
                             fontSize: 'smaller',
+                            
                            
 
                         }}

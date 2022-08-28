@@ -11,19 +11,19 @@ import co from '../../icons/CO.png';
 
 function HeaderAbout() {
   return (
-    <div className='gio-main' >
+    <div className='gio-main' style={{ borderRadius: '20px', marginTop: '20px' }} >
 
-      <div className='subheader7' >
-        <h4 style={{ color: '#243232ff', fontSize: '50px', fontWeight: '900' }}>ABOUT ME</h4>
+      <div className='subheader7' style={{ borderRadius: '20px', marginTop: '20px' }} >
+        <h4 style={{ color: 'white', fontSize: '50px', fontWeight: '900' }}>ABOUT ME</h4>
 
-        <p style={{ color: 'white', backgroundColor: '#242a36', margin: '10px' }}>
+        <p style={{ color: 'white', background: 'rgba(0,0,0, 0.8)', margin: '10px', borderRadius: '20px' }}>
           Graduate BS of Computer Science from Northern Illinois University
         </p>
 
         <div className='spacer2'>
         </div>
 
-        <p style={{ color: 'white', backgroundColor: '#242a36' , margin: '10px' }}>
+        <p style={{ color: 'white', background: 'rgba(0,0,0, 0.8)', backgroundColor: '#242a36', margin: '10px', borderRadius: '20px' }}>
           Emphasis in Computational Software and
           <em><a href="#minor" style={{ color: '#19819Fff', padding: '5px' }}>
             minor in Mathematics
@@ -33,11 +33,11 @@ function HeaderAbout() {
         <div className='spacer2'>
         </div>
 
-        <p style={{ color: 'white', backgroundColor: '#242a36' , margin: '10px'}}>
+        <p style={{ color: 'white', background: 'rgba(0,0,0, 0.8)', backgroundColor: '#242a36', margin: '10px', borderRadius: '20px' }}>
           I have a range of experience in all listed languages and technologies.
         </p>
 
-       
+
 
         <div className='spacer2'>
         </div>
@@ -48,16 +48,16 @@ function HeaderAbout() {
       <div className='spacer'>
       </div>
 
-     
-
-      <div className='gio-container-2' style={{ border: 'none', padding: '3px',  }}>
-
-        <h4 id="languages" name="languages" style={{ borderRadius: '20px' , fontWeight:'900'}}>LANGUAGES & ENV's: </h4>
 
 
-        <ul>
-          <div className="end-div2" style={{ backgroundColor: 'black'}} >
-            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor:'rgba(0, 0, 0, 0.56)'}}> Programming Languages - Compiled</h3>
+      <div className='gio-container-2' style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
+
+        <h4 id="languages" name="languages" style={{ borderRadius: '20px', fontWeight: '900' }}>LANGUAGES & ENV's: </h4>
+
+
+        <ul style={{ background: 'rgba(0,0,0,.8)' }}>
+          <div className="end-div2" style={{ backgroundColor: 'black' }} >
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: 'rgba(0, 0, 0, 0.56)' }}> Programming Languages - Compiled</h3>
           </div>
 
           <div >
@@ -106,7 +106,7 @@ function HeaderAbout() {
 
           <br></br>
 
-          <div className="end-div2" style={{ background: 'black'}} >
+          <div className="end-div2" style={{ background: 'white' }} >
             <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> Markdown Languages </h3>
           </div>
 
@@ -127,32 +127,32 @@ function HeaderAbout() {
           <div  >
             <li style={{ margin: '10px' }}> MySQL / SQL:</li>
             <ul>
-                <li>Some experience</li>
-              </ul>
+              <li>Some experience</li>
+            </ul>
           </div>
 
           <br></br>
 
           <div className="end-div2" >
-            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor:'rgba(0, 0, 0, 0.56)' }}> Environments</h3>
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: 'rgba(0, 0, 0, 0.56)' }}> Environments</h3>
           </div>
 
           <div  >
             <li style={{ margin: '10px' }}> NodeJS </li>
             <li style={{ margin: '10px' }}> Jupyter Notebook </li>
             <li style={{ margin: '10px' }}> Vim </li>
-            
+
           </div>
 
-          <div className="end-div2" style={{ background: 'black'}} >
-            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor:'rgba(0, 0, 0, 0.56)' }}> OS / LOW LEVEL</h3>
+          <div className="end-div2" style={{ background: 'white' }} >
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', }}> OS / LOW LEVEL</h3>
           </div>
 
           <div  >
             <li style={{ margin: '10px' }}> Some experience with Linux / Unix </li>
             <li style={{ margin: '10px' }}> Some experience with Syscalls </li>
             <li style={{ margin: '10px' }}> Some experience with CLI & scripts </li>
-           
+
           </div>
         </ul>
       </div>
@@ -160,10 +160,10 @@ function HeaderAbout() {
       <div className='spacer'>
       </div>
 
-      <div className='gio-container-3' style={{ border: 'none', padding: '3px', }}>
-        <h4 style={{ borderRadius: '20px' , fontWeight:'900'}}> Web Dev Experience </h4>
+      <div className='gio-container-3' style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
+        <h4 style={{ borderRadius: '20px', fontWeight: '900' }}> Web Dev Experience </h4>
 
-        <ul>
+        <ul style={{ background: 'rgba(0,0,0,.8)' }}>
 
           <div className="end-div3" >
             <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> FRONTEND TECHNOLOGIES / FRAMEWORKS</h3>
@@ -180,7 +180,7 @@ function HeaderAbout() {
           <br></br>
 
           <div className="end-div2" >
-            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor:'rgba(0, 0, 0, 0.56)' }}> BACKEND TECHNOLOGIES</h3>
+            <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: 'rgba(0, 0, 0, 0.56)' }}> BACKEND TECHNOLOGIES</h3>
           </div>
 
 
@@ -211,10 +211,10 @@ function HeaderAbout() {
       <div className='spacer'>
       </div>
 
-      <div className='gio-container-4' style={{ border: 'none', padding: '3px', }}>
-        <h4 style={{borderRadius: '20px' , fontWeight:'900'}}>CODE/PACKAGE MANAGMMENT</h4>
-        <ul>
-          <div className="end-div2" style={{ background: 'black'}} >
+      <div className='gio-container-4' style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
+        <h4 style={{ borderRadius: '20px', fontWeight: '900' }}>CODE/PACKAGE MANAGMMENT</h4>
+        <ul style={{ background: 'rgba(0,0,0,.8)' }}>
+          <div className="end-div2" style={{ background: 'white' }} >
             <li >GITHUB/GIT:</li>
           </div>
 
@@ -228,7 +228,7 @@ function HeaderAbout() {
             <li>Deployment with CI / CD</li>
           </ol>
         </ul>
-        <ul >
+        <ul style={{ background: 'rgba(0,0,0,.8)' }}>
           <br />
 
           <div className="end-div3" >
@@ -243,9 +243,9 @@ function HeaderAbout() {
           </ol>
         </ul>
 
-        <ul>
+        <ul style={{ background: 'rgba(0,0,0,.8)' }}>
           <div className="end-div2" >
-            <li style={{ backgroundColor:'rgba(0, 0, 0, 0.56)'}}>DOCKER:</li>
+            <li style={{ backgroundColor: 'rgba(0, 0, 0, 0.56)' }}>DOCKER:</li>
           </div>
 
           <ul>
@@ -257,12 +257,12 @@ function HeaderAbout() {
       <div className='spacer'>
       </div>
 
-      <div className='gio-container' style={{ border: 'none', padding: '10px', }}>
+      <div className='gio-container' style={{ background: 'rgba(0,0,0,.8)', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '10px', }}>
 
-        <h4 style={{ backgroundColor: '#242a36' }}>What was code orange ( DFS ): </h4>
+        <h4 style={{ backgroundColor: 'black' }}>What was code orange ( DFS ): </h4>
 
         <div className="gio-container" style={{ padding: '10px', }} >
-          <p>
+          <p >
             Tech-savvy juniors and seniors were hired by.
             Discover and are being paid to work on and help develop new Discover technologies in the areas of mobile-software development,
             web-application coding, blue-tooth development and person-to-person payment systems
@@ -277,7 +277,7 @@ function HeaderAbout() {
         </div>
 
         <div className="gio-container" style={{ border: 'none', }} >
-          <a href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
+          <a style={{ borderRadius: '20px', }} href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
             <h4 style={{ color: 'white', backgroundColor: '#242a36', padding: '10px', margin: '10px' }}><i> NIU code_orange program description </i></h4>
           </a>
 
@@ -295,121 +295,116 @@ function HeaderAbout() {
       <div className='spacer'>
       </div>
 
-      <div className='gio-container-2' style={{ border: 'none', padding: '3px', }}>
-        <h4 style={{borderRadius: '20px', fontWeight:'900'}}>Additional Experience </h4>
+      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+        <div className='gio-container-2' style={{width:'99%', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
+          <h4 style={{ borderRadius: '20px', fontWeight: '900' }}>Additional Experience </h4>
 
-        <ul>
-          <div className="end-div2" style={{ background: 'black'}} >
-            <li >Advanced Programming:</li>
-          </div>
+          <ul style={{ background: 'rgba(0,0,0,.8)' }}>
+            <div className="end-div2" style={{ background: 'white' }} >
+              <li >Advanced Programming:</li>
+            </div>
 
 
-          <ul style={{ margin: '10px' }}>
-            <li>Some experience in <br />Multi-Threading,<br />Concurrent programs,<br />
-              Andriod applications,<br /> Semaphores/Deadlock solutions.</li>
+            <ul style={{ margin: '10px' }}>
+              <li>Some experience in <br />Multi-Threading,<br />Concurrent programs,<br />
+                Andriod applications,<br /> Semaphores/Deadlock solutions.</li>
+            </ul>
+
+
+
+
+            <div className="end-div3" >
+              <li>MLH - MajorLeaugeHacking</li>
+            </div>
+
+
+            <ul style={{ margin: '10px' }}>
+              <li>Attended 5 hackathons.<br /> Joined 1 international team ( India )</li>
+            </ul>
+
+
+
+            <div className="end-div2" >
+              <li style={{ backgroundColor: 'rgba(0, 0, 0, 0.56)' }}>Game Dev</li>
+            </div>
+
+
+            <ul>
+              <li style={{ margin: '10px' }}>Some experience in<br /> game design & development in Unity,<br /> OpenGL Api,<br /> and Google Cardboard VR  </li>
+            </ul>
+
+
+            <div className="end-div3" >
+              <li >Theoretical Experience</li>
+            </div>
+
+
+            <ul>
+              <li style={{ marginTop: '10px' }}>Some experience with<br /> Chomsky's Hierarchy/PDA/TuringMachines,<br /> Normalization & FloatingPointError,<br /> Efficiency & Runtime</li>
+            </ul>
+
+
+            <div className="end-div3" >
+              <li>Paradigms</li>
+            </div>
+
+
+            <ul style={{ marginTop: '10px' }}>
+              <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
+              <li> Experience in Declarative: Database   </li>
+            </ul>
+
+
+            <div className="end-div2" style={{ background: 'white' }} >
+              <li>Crypto - Web3</li>
+            </div>
+
+            <ul style={{ marginTop: '10px' }}>
+              <li> Understanding of theoretical basics of blockchain technology  </li>
+            </ul>
+
+
+            <div className="end-div3" >
+              <li>More to come...</li>
+            </div>
+            <ul>
+
+            </ul>
+
           </ul>
-
-
-
-
-          <div className="end-div3" >
-            <li>MLH - MajorLeaugeHacking</li>
-          </div>
-
-
-          <ul style={{ margin: '10px' }}>
-            <li>Attended 5 hackathons.<br /> Joined 1 international team ( India )</li>
-          </ul>
-
-
-
-          <div className="end-div2" >
-            <li style={{ backgroundColor:'rgba(0, 0, 0, 0.56)'}}>Game Dev</li>
-          </div>
-
-
-          <ul>
-            <li style={{ margin: '10px' }}>Some experience in<br /> game design & development in Unity,<br /> OpenGL Api,<br /> and Google Cardboard VR  </li>
-          </ul>
-
-
-          <div className="end-div3" >
-            <li >Theoretical Experience</li>
-          </div>
-
-
-          <ul>
-            <li style={{ marginTop: '10px' }}>Some experience with<br /> Chomsky's Hierarchy/PDA/TuringMachines,<br /> Normalization & FloatingPointError,<br /> Efficiency & Runtime</li>
-          </ul>
-
-
-          <div className="end-div3" >
-            <li>Paradigms</li>
-          </div>
-
-
-          <ul style={{ marginTop: '10px' }}>
-            <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
-            <li> Experience in Declarative: Database   </li>
-          </ul>
-
-
-          <div className="end-div2" style={{ background: 'black'}} >
-            <li>Crypto - Web3</li>
-          </div>
-
-          <ul style={{ marginTop: '10px' }}>
-            <li> Understanding of theoretical basics of blockchain technology  </li>
-          </ul>
-
-
-          <div className="end-div3" >
-            <li>More to come...</li>
-          </div>
-          <ul>
-
-          </ul>
-
-        </ul>
-        <br />
+          <br />
+        </div>
       </div>
 
       <div className='spacer'>
       </div>
 
+      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+        <div className='gio-container-4' style={{ width: '85%', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
+          <h4 style={{ borderRadius: '20px', fontWeight: '900' }}>Minor in mathematics </h4>
+          <ul style={{ background: 'rgba(0,0,0,.8)' }}>
+            <br />
+            <div className="end-div3" >
+              <a style={{ color: 'white' }} id="minor"><li>GENERAL MATH EXPERIENCE</li></a>
+            </div>
+            <ol style={{ marginTop: '10px' }}>
+              <li>Calculus 1, 2, & 3</li>
+              <label></label>
 
-      <div className='gio-container-4' style={{ border: 'none', padding: '3px', }}>
+              <li>Discrete mathematics, Statistics, Model building</li>
+              <label></label>
 
-        <h4 style={{borderRadius: '20px', fontWeight:'900'}}>Minor in mathematics </h4>
-
-        <ul>
-          <br />
-
-          <div className="end-div3" >
-            <a style={{ color: 'white' }} id="minor"><li>GENERAL MATH EXPERIENCE</li></a>
-          </div>
-
-
-          <ol style={{ marginTop: '10px' }}>
-            <li>Calculus 1, 2, & 3</li>
-            <label></label>
-
-            <li>Discrete mathematics, Statistics, Model building</li>
-            <label></label>
-
-            <li>Numerical Linear Algebra & Linear Programming </li>
-          </ol>
-
-
-        </ul>
-
+              <li>Numerical Linear Algebra & Linear Programming </li>
+            </ol>
+          </ul>
+        </div>
       </div>
 
       <div className='spacer'>
       </div>
 
       <div >
-        <div className="end-div" style={{margin: '30px' }} >
+        <div className="end-div" style={{ margin: '30px' }} >
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
               color: 'white'
@@ -438,7 +433,7 @@ function HeaderAbout() {
           </a>
         </div>
 
-        <div className="end-div" style={{margin: '30px' }}>
+        <div className="end-div" style={{ margin: '30px' }}>
           <a href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/">
             <h2 style={{
               color: 'white'

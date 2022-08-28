@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #243232ff;
+  background-color: transparent;
  
 }
 
@@ -12,6 +12,8 @@
   color: #19819Fff;
   margin-top: 10px;
   animation: fadeIn 6s linear;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
 }
 
 .modalBox{
@@ -23,10 +25,12 @@
   align-self: center;
   border-radius: 10px;
   animation: fadeIn 8s linear;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .modalBox:hover{
   background-color: rgba(0, 0, 0, 0.597);
   border: 1px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .modalbtnspecial{
  display:none;
@@ -52,6 +56,7 @@
   cursor: pointer;
   border-radius: 20px;
   font-weight: 900;
+
 }
 .modalbtn:after {
   content: '';
@@ -99,29 +104,31 @@
   background-color: rgba(0, 0, 0, 0.936); /* Black w/ opacity */
   animation: fadeIn 2s linear alternate;
   animation: blowUpContent 1s  linear ;
-
+  
 }
 .modalbtninner{
   position: relative; /* Sit on top of the page content */
   width: 100%; /* Full width (cover the whole page) */
-  height: 4%; /* Full height (cover the whole page) */
+  height: 25%; /* Full height (cover the whole page) */
   padding: 0px;
   margin: 0px;
   border-radius: 20px;
   letter-spacing:5px;
   background-color: transparent; /* Fallback color */ 
-  color: red;
+  color: white;
   border:none;
   cursor: pointer;
   align-items: center;
   align-self: center;
   animation: fadeIn 4s linear;
-
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
 }
 .modalbtninner:hover{
   border: none;
-  background-color: transparent; 
-  
+  background-color: white;
+  color: black; 
+
 }
 
 
@@ -130,8 +137,8 @@
   background-color: rgba(0, 0, 0, 0.669);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #E0012Aff;
-  border-radius: 10px;
+  border: 1px solid #19819Fff;
+  border-radius: 20px;
   width: 80%; /* Could be more or less, depending on screen size */
   align-items: center;
   content: '';
@@ -139,7 +146,11 @@
   border-radius: calc(2 * var(--borderWidth));
   animation: animatedgradient 30s ease infinite alternate; ;
   background-size: 600% 600%;
-  
+
+}
+.modal-content:hover{
+  border: 1px solid black;
+  background: transparent;
 }
 
 
@@ -150,11 +161,11 @@
   padding: 10px;
   letter-spacing:5px;
   margin: 10px;
-  
-
+ 
 }
 .listmodal:nth-child(1):hover{
   background:none;
+   
  
 }
 .listmodal:hover{

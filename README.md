@@ -31,6 +31,13 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ---
 ## RecentUpdates
 
+  Massive UI update
+  
+Todo:
+  Finish OpenAI api  bot
+  Finish Arduino api page
+  Bug: Fix financial api issue with weekend's pulling Stock data from non-stock days ( disable functions when its a weekend)
+**Date: 8/24/2022**
 
 Migrated all secrets and related API calls to CFW backend
 Fixed menu bug

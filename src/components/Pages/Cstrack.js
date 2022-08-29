@@ -107,7 +107,7 @@ const Cstrack = () => {
             const response = await fetch((gmaapiPolyUrl + `/${userInput[0]}` + `/${userInput[1]}` + `/${userInput[2]}`));
             if (!response.ok) {
                 console.log("Error in Polygon API response");
-                alert("Can not find stock , date, or value from API");
+               
                 setResponseStatus(false);
             }
 
@@ -121,7 +121,7 @@ const Cstrack = () => {
 
             if (!responseCrypto.ok) {
                 console.log("Error in Polygon  Crypto API response");
-                alert("Can not find crypto ticker , or value from API");
+                
                 setResponseStatusCrypto(false);
             }
 
@@ -135,7 +135,7 @@ const Cstrack = () => {
 
             if (!responseNft.ok) {
                 console.log("Error in Polygon  Crypto API response");
-                alert("Can not find nft collection from API, bad response");
+                
                 setResponseStatusNft(false);
             }
 
@@ -149,7 +149,7 @@ const Cstrack = () => {
 
             if (!responseGov.ok) {
                 console.log("Error in gov API response");
-                alert("Can not find gov data from API, bad response");
+               
                 setResponseStatusGov(false);
             }
 
@@ -165,10 +165,10 @@ const Cstrack = () => {
             setResponseStatus(false);
             console.log(error);
             console.log("Error in Polygon API response");
-            alert("Can not find stock , date, or value from API");
+           
             setPolygonResponse([]);
             setUserInput(['GOOGL', `${date}`, 'true']);
-            window.location.reload();
+           
 
         })
 
@@ -179,10 +179,10 @@ const Cstrack = () => {
             setResponseStatusCrypto(false);
             console.log(error);
             console.log("Error in Polygon  Crypto API response");
-            alert("Can not find crypto ticker , or value from API");
+         
             setPolygonCrypto([]);
             setCryptoInput(['X:BTCUSD', 'true']);
-            window.location.reload();
+           
         })
 
         nftSearch(nftInput).then(data => {
@@ -192,10 +192,10 @@ const Cstrack = () => {
             setResponseStatusNft(false);
             console.log(error);
             console.log("Error in Polygon  Nft API response");
-            alert("Can not find collection from API");
+          
             setPolygonNft([]);
             setNftInput(['cryptopunks']);
-            window.location.reload();
+            
         })
 
         govSearch().then(data => {
@@ -203,9 +203,9 @@ const Cstrack = () => {
             setResponseStatusGov(true);
         }).catch(error => {
             setResponseStatusGov(false);
-            alert("Can not find gov data from API");
+           
             setPolygonGov([]);
-            window.location.reload();
+            
         })
 
         return () => {
@@ -272,7 +272,8 @@ const Cstrack = () => {
 
                 <h4 style={{ margin: '5px', background: 'none' }}>
                     🔥 🗑️            📉<br />
-                    Current financial information & trends based on important indicators such as stocks, cryptocurrencies, and debt.
+                    Current financial information & trends based on important indicators such as stocks, cryptocurrencies, and debt. 
+                    Some financial information not available on weekends.
                     <br />🚀          ✨ 🌕
                 </h4>
 

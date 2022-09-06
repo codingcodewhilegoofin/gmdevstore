@@ -1,9 +1,8 @@
-import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Html, useProgress, Preload, BakeShadows, AdaptiveDpr,  } from '@react-three/drei'
 //import Scene from './threejs/Scene1'
 //Standard imports 
-import React, { Component, useState } from 'react';
+import React, { Component, useState, Suspense } from 'react';
 import './App.css';
 import DrawerMenu2 from '../src/components/Drawer/DrawerMenu2';
 

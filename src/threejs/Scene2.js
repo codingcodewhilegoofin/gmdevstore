@@ -1,6 +1,6 @@
 import React, { Component, useState, Suspense } from 'react';
 import useSpline from '@splinetool/r3f-spline';
-import * as THREE from 'three'
+
 import { PerspectiveCamera, OrthographicCamera, Preload, BakeShadows, meshBounds, AdaptiveDpr, Float, Html, useProgress } from '@react-three/drei';
 
 export default function Scene2({ ...props }) {
@@ -17,7 +17,7 @@ export default function Scene2({ ...props }) {
       <color attach="background" args={['#000000']} />
       <fog attach="fog" args={['#fefefe', 2000, 2000]} />
       <group {...props} dispose={null}>
-        <group name="Shibuu" position={[1248, -373, -1132]} rotation={[-2.74, -0.47, -2.95]}>
+        <group name="Shibuu" position={[1248, -373, -1132]} rotation={[-2.74, -0.47, -2.95]} >
           <mesh
             name="Plane"
             geometry={nodes.Plane.geometry}
@@ -38,6 +38,10 @@ export default function Scene2({ ...props }) {
           position={[181, 73, 135]}
           rotation={[0, Math.PI, 0]}
           scale={[0.12, 0.14, 0.2]}
+          onClick={() => {  
+            window.location.href = "https://fullstackingdevelopment.com/";
+           
+          }}
         />
         <mesh
           name="giomoscato.com.png"
@@ -712,6 +716,7 @@ export default function Scene2({ ...props }) {
               castShadow
               receiveShadow
               position={[0.02, 7.31, 0.33]}
+             
             />
           </mesh>
         </group>
@@ -772,6 +777,10 @@ export default function Scene2({ ...props }) {
             position={[-1575.7, 30, 0]}
             rotation={[-Math.PI / 2, 0, 0]}
             scale={100}
+            onClick={() => {  
+              window.location.href = "/#/";
+             
+            }}
           />
           <mesh
             name="Button_two0011"
@@ -1033,7 +1042,7 @@ export default function Scene2({ ...props }) {
             receiveShadow
           />
         </group>
-      
+
         <directionalLight
           name="Directional Light"
           castShadow
@@ -1048,7 +1057,9 @@ export default function Scene2({ ...props }) {
           shadow-camera-bottom={-581.072}
           position={[-1525.61, 1195.48, 1597.86]}
         />
-       
+
+
+
         <hemisphereLight name="Default Ambient Light" intensity={0.49} position={[0, 1, 0]} />
       </group>
     </>

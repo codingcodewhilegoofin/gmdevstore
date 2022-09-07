@@ -6,8 +6,10 @@ import '../../choice.css';
 
 
 
-const DrawerMenu = () => {
+const DrawerMenu = (...arduino) => {
   const [visible, setVisible] = useState(false);
+
+  console.log(arduino);
 
   const showDrawer = () => {
     setVisible(true);
@@ -22,13 +24,16 @@ const DrawerMenu = () => {
   function onChange(checked) {
     setLightTheme(true);
   }
+
+  //Arduino Status : {arduino[0].ledStatus.value.toUpperCase()} , {arduino[0].ledStatus.status} , {arduino[0].ledStatus.name} 
     
   return (
     <>
       <Button type="primary" onClick={showDrawer} size="small" >
-        Options 👈
+        Options 👈 
       </Button>
-      <Drawer title="Options" placement="left" onClose={onClose} visible={visible} >
+     
+      <Drawer title="Options" placement="top" onClose={onClose} visible={visible} >
       <Space direction="vertical" size="small" style={{ display: 'flex' }}>
         <div className="site-card-border-less-wrapper">
           <Card size="small" hoverable title="Back to regular/vanilla version!" bordered={true} style={{ width: 300 }}>

@@ -1,9 +1,12 @@
-import React, { Component, useState, Suspense } from 'react';
+import React, { Component, useState, Suspense, useEffect } from 'react';
 import useSpline from '@splinetool/r3f-spline';
+import ArduinoUIMenu from './arduinoUIMenu';
 
 import { PerspectiveCamera, OrthographicCamera, Preload, BakeShadows, meshBounds, AdaptiveDpr, Float, Html, useProgress } from '@react-three/drei';
 
 export default function Scene2({ ...props }) {
+
+  const [arduinoUI, setArduinoUI] = useState(false);
 
   function Loader() {
     const { progress, errors } = useProgress();
@@ -12,10 +15,24 @@ export default function Scene2({ ...props }) {
 
   const { nodes, materials } = useSpline('https://prod.spline.design/TLG5AexNXgBZPKUV/scene.splinecode');
 
+  useEffect(() => {
+    if (arduinoUI) {
+      alert("Hi")
+    }
+
+    return () => {
+
+    }
+  }, [arduinoUI])
+
+
   return (
     <>
-      <color attach="background" args={['#000000']} />
-      <fog attach="fog" args={['#fefefe', 2000, 2000]} />
+      <Html fullscreen  distanceFactor={100}  >
+        {arduinoUI ? <></> : <></>}
+      </Html>
+      <color attach="background" args={['#243232ff']} />
+      <fog attach="fog" args={['#2E5252ff', 2000, 2000]} />
       <group {...props} dispose={null}>
         <group name="Shibuu" position={[1248, -373, -1132]} rotation={[-2.74, -0.47, -2.95]} >
           <mesh
@@ -27,6 +44,7 @@ export default function Scene2({ ...props }) {
             position={[1023, 554, -271]}
             rotation={[0.28, 3.05, 0]}
             scale={[0.4, 0.45, 0.4]}
+            onClick={() => alert("My first 3D model created in blender... supposed to be a dog lol ")}
           />
         </group>
         <mesh
@@ -38,9 +56,9 @@ export default function Scene2({ ...props }) {
           position={[181, 73, 135]}
           rotation={[0, Math.PI, 0]}
           scale={[0.12, 0.14, 0.2]}
-          onClick={() => {  
+          onClick={() => {
             window.location.href = "https://fullstackingdevelopment.com/";
-           
+
           }}
         />
         <mesh
@@ -52,12 +70,14 @@ export default function Scene2({ ...props }) {
           position={[576, 159, -509]}
           rotation={[0, -Math.PI / 2, 0]}
           scale={[0.43, 0.22, 0.2]}
+          onClick={() => alert("The website you're on!")}
         />
         <group
           name="uploads_files_2257883_dumpster_obj"
           position={[-720, -558, -715]}
           rotation={[0, 1.01, 0]}
           scale={10}
+          onClick={() => alert("Trash just like my code!")}
         >
           <mesh
             name="Dumpster"
@@ -105,6 +125,7 @@ export default function Scene2({ ...props }) {
             material={nodes.Object001.material}
             castShadow
             receiveShadow
+            onClick={() => alert("My mouse!")}
           />
         </group>
         <group name="arduino-nano" position={[10.76, 15.8, 66.83]} rotation={[0.02, 0, Math.PI / 2]} scale={0.01}>
@@ -115,6 +136,7 @@ export default function Scene2({ ...props }) {
               material={nodes.Arduino_Nano.material}
               castShadow
               receiveShadow
+              onClick={() => setArduinoUI(!arduinoUI)}
             >
               <mesh
                 name="ID649"
@@ -716,7 +738,7 @@ export default function Scene2({ ...props }) {
               castShadow
               receiveShadow
               position={[0.02, 7.31, 0.33]}
-             
+
             />
           </mesh>
         </group>
@@ -725,6 +747,7 @@ export default function Scene2({ ...props }) {
           position={[220.41, 189.61, 257.35]}
           rotation={[-Math.PI, -0.83, -Math.PI]}
           scale={[0.25, 0.25, 0.2]}
+          onClick={() => alert("My desk!")}
         >
           <mesh
             name="Cube"
@@ -777,9 +800,9 @@ export default function Scene2({ ...props }) {
             position={[-1575.7, 30, 0]}
             rotation={[-Math.PI / 2, 0, 0]}
             scale={100}
-            onClick={() => {  
+            onClick={() => {
               window.location.href = "/#/";
-             
+
             }}
           />
           <mesh
@@ -820,6 +843,7 @@ export default function Scene2({ ...props }) {
             material={nodes['Big Buttons.001'].material}
             castShadow
             receiveShadow
+            onClick={() => alert("My keyboard !")}
           />
           <mesh
             name="Small Buttons.001"
@@ -846,6 +870,7 @@ export default function Scene2({ ...props }) {
             position={[0.45, 347.72, -16.46]}
             rotation={[-Math.PI / 2, 0, 0]}
             scale={100}
+            onClick={() => alert("Wish I had pewdiepies chair")}
           />
           <mesh
             name="Plane004"
@@ -1057,8 +1082,6 @@ export default function Scene2({ ...props }) {
           shadow-camera-bottom={-581.072}
           position={[-1525.61, 1195.48, 1597.86]}
         />
-
-
 
         <hemisphereLight name="Default Ambient Light" intensity={0.49} position={[0, 1, 0]} />
       </group>

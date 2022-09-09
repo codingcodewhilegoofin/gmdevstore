@@ -25,6 +25,7 @@ export default function NewSite(...props) {
   const arduinoUrlBase = 'https://gmapps-api-v1.gmdev.workers.dev/api/Arduino/';
 
   const [colorArduino, setColorArduino] = useState('white');
+  const [colorArduino2, setColorArduino2] = useState('white');
   const [colorArduinoStatus, setColorArduinoStatus] = useState('white');
   const [ArduinoStatusData, setArduinoStatusData] = useState([{
     
@@ -53,11 +54,39 @@ export default function NewSite(...props) {
       });
 
       turnArduinoOn().then(data => {
-        setColorArduino('blue')
+        setColorArduino('blue');
+        setColorArduino2('grey');
       })
 
     } catch (error) {
       console.log("Arduino Turn On Error" + error);
+    }
+  }
+
+  const onClickTurnOffLED = () => {
+    try {
+      async function turnArduinoOff() {
+
+        const response = await fetch((arduinoUrlBase + 'ToggleOFF'));
+
+        if (!response.ok) {
+          const message = `A fetching error has occured: ${response.status}`;
+          throw new Error(message);
+        }
+        console.log("Response is ", response);
+      }
+
+      turnArduinoOff().catch(error => {
+        console.log("Error" + error.message);
+      });
+
+      turnArduinoOff().then(data => {
+        setColorArduino2('blue');
+        setColorArduino('grey');
+      })
+
+    } catch (error) {
+      console.log("Arduino Turn Off Error" + error);
     }
   }
 
@@ -115,6 +144,7 @@ export default function NewSite(...props) {
         shadows
         flat
         linear
+        color='#2E5252ff'
       >
 
         <Suspense fallback={<Loader />}>
@@ -137,6 +167,7 @@ export default function NewSite(...props) {
           >
             <circleBufferGeometry args={[10, 10, 10]} />
             <meshPhysicalMaterial color="blue" side={THREE.DoubleSide} />
+            
           </mesh>
 
           <mesh
@@ -146,7 +177,7 @@ export default function NewSite(...props) {
             position={[-60, 10, 100]}
             rotation={[0, 0, 0]}
             scale={.5}
-            onClick={() => alert('btn2')}
+            onClick={() => onClickTurnOffLED()}
           >
             <circleBufferGeometry args={[10, 10, 10]} />
             <meshPhysicalMaterial color="blue" side={THREE.DoubleSide} />
@@ -185,7 +216,7 @@ export default function NewSite(...props) {
             scale={.5}
           >
             <boxBufferGeometry args={[10, 10, 10]} />
-            <meshPhysicalMaterial color="white" side={THREE.DoubleSide} />
+            <meshPhysicalMaterial color={colorArduino2} side={THREE.DoubleSide} />
           </mesh>
 
           <mesh
@@ -209,7 +240,7 @@ export default function NewSite(...props) {
             scale={5}
           >
             <boxBufferGeometry args={[1000, 1000, 6000]} />
-            <meshPhysicalMaterial color="black" side={THREE.DoubleSide} />
+            <meshPhysicalMaterial color="white" side={THREE.DoubleSide} />
           </mesh>
 
           <mesh
@@ -221,7 +252,7 @@ export default function NewSite(...props) {
             scale={5}
           >
             <boxBufferGeometry args={[1000, 1000, 6000]} />
-            <meshPhysicalMaterial color="black" side={THREE.DoubleSide} />
+            <meshPhysicalMaterial color="white" side={THREE.DoubleSide} />
           </mesh>
 
           <mesh
@@ -233,7 +264,7 @@ export default function NewSite(...props) {
             scale={5}
           >
             <boxBufferGeometry args={[1000, 1000, 6000]} />
-            <meshPhysicalMaterial color="black" side={THREE.DoubleSide} />
+            <meshPhysicalMaterial color="lightblue" side={THREE.DoubleSide} />
           </mesh>
 
 
@@ -252,7 +283,7 @@ export default function NewSite(...props) {
               scale={5}
             >
               <boxBufferGeometry args={[1000, 1000, 6000]} />
-              <meshPhysicalMaterial color="black" side={THREE.DoubleSide} />
+              <meshPhysicalMaterial color="lightblue" side={THREE.DoubleSide} />
             </mesh>
 
           </Float>
@@ -272,7 +303,7 @@ export default function NewSite(...props) {
               scale={5}
             >
               <boxBufferGeometry args={[1000, 1000, 6000]} />
-              <meshPhysicalMaterial color="black" side={THREE.DoubleSide} />
+              <meshPhysicalMaterial color="lightblue" side={THREE.DoubleSide} />
             </mesh>
 
           </Float>

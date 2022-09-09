@@ -12,7 +12,7 @@ import GovApi from '../../icons/govapi.png'
 const Cstrack = () => {
 
     let tempDate = new Date();
-    let date = tempDate.getFullYear() + '-0' + (tempDate.getMonth() + 1) + '-' + (tempDate.getDate() - 1);
+    //let date = tempDate.getFullYear() + '-0' + (tempDate.getMonth() + 1) + '-0' + (tempDate.getDate() - 1);
     let currentYear = tempDate.getFullYear();
     //console.log(date);
 
@@ -21,7 +21,7 @@ const Cstrack = () => {
     //Stocks
     const [responseStatus, setResponseStatus] = useState(false);
     const [polygonResponse, setPolygonResponse] = useState([]);
-    const [userInput, setUserInput] = useState(['GOOGL', `${date}`, 'true']);
+    const [userInput, setUserInput] = useState(['GOOGL', '2022-09-08', 'true']);
 
     //Crypto
     const [responseStatusCrypto, setResponseStatusCrypto] = useState(false);
@@ -165,11 +165,6 @@ const Cstrack = () => {
             setResponseStatus(false);
             console.log(error);
             console.log("Error in Polygon API response");
-           
-            setPolygonResponse([]);
-            setUserInput(['GOOGL', `${date}`, 'true']);
-           
-
         })
 
         cryptoSearch(cryptoInput).then(data => {
@@ -179,10 +174,6 @@ const Cstrack = () => {
             setResponseStatusCrypto(false);
             console.log(error);
             console.log("Error in Polygon  Crypto API response");
-         
-            setPolygonCrypto([]);
-            setCryptoInput(['X:BTCUSD', 'true']);
-           
         })
 
         nftSearch(nftInput).then(data => {
@@ -192,10 +183,6 @@ const Cstrack = () => {
             setResponseStatusNft(false);
             console.log(error);
             console.log("Error in Polygon  Nft API response");
-          
-            setPolygonNft([]);
-            setNftInput(['cryptopunks']);
-            
         })
 
         govSearch().then(data => {
@@ -203,9 +190,6 @@ const Cstrack = () => {
             setResponseStatusGov(true);
         }).catch(error => {
             setResponseStatusGov(false);
-           
-            setPolygonGov([]);
-            
         })
 
         return () => {

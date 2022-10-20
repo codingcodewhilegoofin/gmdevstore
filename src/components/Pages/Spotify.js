@@ -6,7 +6,7 @@ import '../PageCss/HeaderSection.css'
 const Spotify = () => {
 
   const [spotifyArtists, setSpotifyArtists] = useState("7bSpQNOg9UsW530DuXM3X5");
-  const [gmaaUrl, setgmaaUrl] = useState("https://gmapps-api-v1.gmdev.workers.dev/api/Spotify/");
+  const [gmaaUrl, setgmaaUrl] = useState("https://gmdevapi.com/api/Spotify/");
   const [spotifyResonse, setspotifyResonse] = useState([]);
   const [currentStatus2, setStatus2] = useState(false);
   const [gioDataToggle, setGioDataToggle] = useState(true);
@@ -125,15 +125,23 @@ const Spotify = () => {
          <div style={{ border: '1px solid #AEBEBEff', borderRadius: '5px', margin: '10px', backgroundColor: '#1B2524ff' }}>
           <h1 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: '#1B2524ff' }}>  Live data from CloudFlare Woker API</h1>
          
-          {!currentStatus2 ? <h2>Loading... </h2> : <><ul style={{ color: '#AEBEBEff', padding: '4px' }}>
-            <li style={{ margin: '4px' }}> Artists name: {spotifyResonse.name}</li>
-            <li style={{ margin: '4px' }}> Account type: {spotifyResonse.type}</li>
-            <li style={{ margin: '4px' }}> Current Total Followers: {spotifyResonse.followers.total}</li> 
-            <li style={{ margin: '4px' }}> Genres: {spotifyResonse.genres[0]} ,{spotifyResonse.genres[1]} ,{spotifyResonse.genres[2]}</li>
+          { !currentStatus2 ? 
+          
+          <h2>Loading... </h2> 
+          
+          : 
+          
+          <>
+          <ul style={{ color: '#AEBEBEff', padding: '4px' }}>
+            <li style={{ margin: '4px' }}> Artists name: {spotifyResonse?.name}</li>
+            <li style={{ margin: '4px' }}> Account type: {spotifyResonse?.type}</li>
+            <li style={{ margin: '4px' }}> Current Total Followers: {spotifyResonse?.followers?.total}</li> 
+            <li style={{ margin: '4px' }}> Genres: {spotifyResonse?.genres[0]} ,{spotifyResonse?.genres[1]} ,{spotifyResonse?.genres[2]}</li>
           </ul>
-           <img style={{ marginBottom: '5px' }} src={spotifyResonse.images[0].url} height='auto' width='95%' /> 
+           <img style={{ marginBottom: '5px' }} src={spotifyResonse?.images[0]?.url} height='auto' width='95%' /> 
           </>
           }
+
         </div> 
 
         <form onSubmit={changeArtists} >

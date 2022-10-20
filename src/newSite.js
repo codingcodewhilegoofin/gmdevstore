@@ -22,7 +22,7 @@ export default function NewSite(...props) {
     )
   }
 
-  const arduinoUrlBase = 'https://gmapps-api-v1.gmdev.workers.dev/api/Arduino/';
+  const arduinoUrlBase = 'https://gmdevapi.com/api/Arduino/';
 
   const [colorArduino, setColorArduino] = useState('white');
   const [colorArduino2, setColorArduino2] = useState('white');

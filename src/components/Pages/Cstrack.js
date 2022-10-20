@@ -40,13 +40,13 @@ const Cstrack = () => {
 
 
     //https://gmapps-api-v1.gmdev.workers.dev/api/Stock/GOOGL/2022-08-23/true
-    const gmaapiPolyUrl = 'https://gmapps-api-v1.gmdev.workers.dev/api/Stock';
+    const gmaapiPolyUrl = 'https://gmdevapi.com/api/Stock';
     //https://gmapps-api-v1.gmdev.workers.dev/api/Crypto/:cryptoticker/:adjusted
-    const gmaapiPolyCryptoUrl = 'https://gmapps-api-v1.gmdev.workers.dev/api/Crypto';
+    const gmaapiPolyCryptoUrl = 'https://gmdevapi.com/api/Crypto';
     //https://gmapps-api-v1.gmdev.workers.dev/api/Nft/cryptopunks
-    const gmaapiNftUrl = 'https://gmapps-api-v1.gmdev.workers.dev/api/Nft';
+    const gmaapiNftUrl = 'https://gmdevapi.com/api/Nft';
     //https://gmapps-api-v1.gmdev.workers.dev/api/Gov
-    const gmaapiGovUrl = 'https://gmapps-api-v1.gmdev.workers.dev/api/Gov';
+    const gmaapiGovUrl = 'https://gmdevapi.com/api/Gov';
 
 
 

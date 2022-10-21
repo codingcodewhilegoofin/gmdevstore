@@ -66,15 +66,10 @@ function App() {
   const pull_data2 = (data) => {
     setStartScene(data);
     setSiteVersion("dependecy+");
-    
   }
-
 
   let theme = false;
 
-
-  //onClick={() =>  setSiteVersion("depedency")} style={{fontSize:'20px'}}
-  //<Button variant="outlined" color="error">Error</Button>
   return (
 
     <div className={modalbg} style={{ backgroundColor: "#1C2222" }}>
@@ -105,7 +100,6 @@ function App() {
       {((startScene === false)) ? <></> : <ChoiceSite func={pull_data} func2={pull_data2} />}
       {(startScene === false) ? <></> : ((siteVersion === "vanilla") ? <NewSite /> : <OldSite />)}
     </div>
-
   );
 }
 export default App;//Export the component to index.js 

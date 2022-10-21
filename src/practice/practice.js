@@ -32,7 +32,6 @@ const Practice = () => {
     closure();
 
 
-
     const test = {
         name: "giotest",
         testType: 1,

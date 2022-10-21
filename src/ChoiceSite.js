@@ -1,8 +1,6 @@
 //Standard imports 
 import React, { Component, useState, useEffect } from 'react';
-
 import './choice.css';
-
 
 const ChoiceSite = (props) => {
 
@@ -45,7 +43,6 @@ const ChoiceSite = (props) => {
         window.location.reload();
     }
 
-
     props.func(siteVersion);
     props.func2(changeScene);
 
@@ -53,18 +50,16 @@ const ChoiceSite = (props) => {
         <>
             <div style={{
                 backgroundColor: '#101730ff',
-
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
                 alignItems: 'center',
-                marginBottom: '0px', 
-                marginLeft: '8px', 
-                marginRight: '8px', 
+                marginBottom: '0px',
+                marginLeft: '8px',
+                marginRight: '8px',
                 borderRadius: '20px',
-                
-                
             }}>
+
                 <div className="chatbotBar" >
                     <button
                         style={{
@@ -74,18 +69,16 @@ const ChoiceSite = (props) => {
                             cursor: 'pointer',
                             textTransform: 'uppercase',
                             fontSize: 'smaller',
-                            
-                           
-
                         }}
                         onClick={menuHandle}>
                         <a>{toggleMenu}</a> 3D options
                     </button>
                 </div>
             </div>
+
             <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%", }}>
 
-                <div id="mainmenu" className="choicediv" style={{  display:`${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff", }}>
+                <div id="mainmenu" className="choicediv" style={{ display: `${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff", }}>
 
                     <h1
                         style={{
@@ -96,21 +89,15 @@ const ChoiceSite = (props) => {
                         }}>
                         3D Options
                     </h1>
-                    <p style={{
-                        color: "#AEBEBEff",
-                        fontSize: "auto",
-                        fontWeight: '700',
-                    }}>My first website using React!</p>
 
-                    
-
+                   
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
                         fontWeight: '900',
                     }}>
-                        <em>Choose a web experience </em> to display my personal coding portfolio in a emerging technology fashion <b> OR </b> through vanilla JS/HTML/CSS.
-   
+                        The 3D MicroController API is an interactive model of my office and Arduino project that
+                        you can controll a live circuit with! It sends a HTTP request to my api server !
                     </h3>
 
                     <h3 style={{
@@ -118,16 +105,7 @@ const ChoiceSite = (props) => {
                         fontSize: "auto",
                         fontWeight: '900',
                     }}>
-                        The 3D MicroController API is a CAD 3D interactive model that you can interact with to 
-                        change my arduino board and stats in real life ! 
-                    </h3>
-
-                    <h3 style={{
-                        color: "#AEBEBEff",
-                        fontSize: "auto",
-                        fontWeight: '900',
-                    }}>
-                        Through the 3D Homepage you can also interact with my website through a 
+                        Through the 3D Homepage you can also interact with my website through a
                         3D exploration menu with easter eggs.
                     </h3>
 
@@ -137,27 +115,31 @@ const ChoiceSite = (props) => {
                         fontWeight: '900',
                     }}>
                         <em> Vanilla / Regular version</em> demonstrates my pure/vanilla <code style={{ color: "#AEBEBEff" }}>HTML , CSS , JS , JSX</code> skills with the
-                        react framework. <br />Other than the essential 'react-' libraries all other components and code are made by me from scratch.
+                        react framework. <br />Other than the essential 'react-' libraries all other components and code are made by me from scratch. 
                     </h3>
+                    
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
                         fontWeight: '900',
                     }}>  Material UI and Ant UI are only used for the 3D versions of my website. All other UI was created by me in an attempt to learn.
-                         I also understand this website may not be "conventional" or follow some web-standards. I did this on purpose to have creative freedom with the UI !
+                        <br/>I also understand this website may not be "conventional" or follow some web-standards. I did this on purpose to have creative freedom with the UI !
                     </h3>
 
                     <a style={{ color: "#AEBEBEff" }} href="https://github.com/codingcodewhilegoofin"> Feel free to contact me</a>
+
                     <div style={{
                         background: "transparent", padding: "1px",
                         fontSize: "auto"
                     }}>
+
                         <div style={{
                             display: 'flex',
                             flexDirection: 'row',
                             justifyContent: 'center',
 
                         }}>
+
                             <button
                                 style={{
                                     color: '#AEBEBEff',
@@ -169,7 +151,7 @@ const ChoiceSite = (props) => {
                                 }}
                                 onClick={dep}
                             >
-                                3D MicroController API
+                                3D MicroController UI
                             </button>
 
                             <button
@@ -183,7 +165,7 @@ const ChoiceSite = (props) => {
                                 }}
                                 onClick={() => setChangeScene(true)}
                             >
-                                3D HomePage
+                                3D "HomePage"
                             </button>
 
 
@@ -200,10 +182,11 @@ const ChoiceSite = (props) => {
                             }}
                             onClick={van}
                         >
-                            Regular/Vanilla Version
+                            Regular/Vanilla Version "Homepage"
                         </button>
 
                     </div>
+
                     <br />
                 </div>
             </div>

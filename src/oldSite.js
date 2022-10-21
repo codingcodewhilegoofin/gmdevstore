@@ -28,14 +28,12 @@ import { ReactComponent as DownloadSymbol } from './icons/download.svg';
 import { ReactComponent as LinkedinSymbol } from './icons/linkedin.svg';
 import { ReactComponent as GithubSymbol } from './icons/github.svg';
 
-
 // Main component 
 function OldSite() {
-
   //Custom variables
   var githublink = 'https://github.com/codingcodewhilegoofin';
   var linkedinlink = 'https://www.linkedin.com/in/gio-m-4a19a71b1/';
-  var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/GMResProf.pdf';
+  var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/Gio%20M%20Res%20public.pdf';
 
   //Send to DOM 
   return (
@@ -47,12 +45,7 @@ function OldSite() {
 
         <Giobot/>
 
-        {/*Custom Menu button */}
-
-        {/*Link pages */}
         <Navbar >
-
-
           <Link className="nav-item" to="/github">
             <NavItem icon={<GithubSymbol />} />
           </Link>
@@ -80,20 +73,9 @@ function OldSite() {
           <Link className="nav-item" to="/download">
             <NavItem icon={<DownloadSymbol />} />
           </Link>
-
-          {/*
-      <NavItem icon={<DownloadSymbol/>}>
-        
-        <Dropdown/>
-
-      </NavItem>
-      */}
-
         </Navbar>
 
         <UnderNav>
-
-
           <Link className="nav-item" to="/github">
             <UnderText> Github </UnderText>
           </Link>
@@ -121,21 +103,21 @@ function OldSite() {
           <Link className="nav-item" to="/download">
             <UnderText> Resume </UnderText>
           </Link>
-
         </UnderNav>
 
-
         {/*Routes  */}
-
         <Route exact path="/" component={HomePage} />
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/dependency+" component={NewSite} />
         <Route exact path="/splinescene" component={StartApp} />
         <Route exact path="/practice" component={Practice} />
-        
         <Route exact path="/test" component={TestAPI} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/cstrack" component={Cstrack} />
+        <Route path="/dsa" component={Dsa} />
+        <Route path="/spotify" component={Spotify} />
+
         <Route path='/github' component={() => {
           window.location.href = githublink;
           return null;
@@ -148,22 +130,15 @@ function OldSite() {
           window.location.href = downloadres;
           return null;
         }} />
-        <Route path="/cstrack" component={Cstrack} />
-        <Route path="/dsa" component={Dsa} />
-        <Route path="/spotify" component={Spotify} />
 
       </div>
 
-
     </HashRouter>
   );
-  //Endof APP() 
 }
-
 
 //Custom functions for navbar
 function Navbar(props) {
-
 
   return (
     <div  style={{padding: '2px'}}>
@@ -177,12 +152,10 @@ function Navbar(props) {
 }
 function NavItem(props) {
 
-  //    value function            default = false
   const [open, setOpen] = useState(false);
 
   return (
     <li className="nav-item">
-
       <div className="icon-bg">
         <a href="#" className="icon-button" onClick={() => setOpen(!open) & window.scrollTo(0, 0)}>
           {props.icon}
@@ -193,7 +166,6 @@ function NavItem(props) {
   );
 }
 function UnderNav(props) {
-
 
   return (
     <div style={{padding: '2px'}}>
@@ -209,14 +181,10 @@ function UnderNav(props) {
 }
 function UnderText(props) {
 
-
   return (
-
     <h6 className="navbar-nav-under-text">
       {props.children}
     </h6>
-
-
   );
 }
 

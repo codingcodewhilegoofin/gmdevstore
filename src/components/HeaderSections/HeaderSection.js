@@ -56,6 +56,8 @@ function HeaderSection() {
   let cardWidth;
   let cardPadding;
   let linkTreeWidth;
+  let cardWidthSupport;
+  let homepageSVGWidth;
 
   if (window.innerWidth < 600) {
     specialheader = <></>;
@@ -70,8 +72,10 @@ function HeaderSection() {
     qrwidth = '100%'
     cardOrientation = 'column';
     cardWidth = '100%';
+    cardWidthSupport = '100%';
     cardPadding = '0px';
     linkTreeWidth = '100%';
+    homepageSVGWidth = '100%';
   }
   else {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
@@ -86,6 +90,8 @@ function HeaderSection() {
     cardWidth = '48%';
     cardPadding = '50px';
     linkTreeWidth = '33%';
+    cardWidthSupport = '60%';
+    homepageSVGWidth = '60%';
 
     gmdevstorevar = <img src={gmdevstorelogo} width='50%' height='auto' style={{ padding: '5px' }} />
     gmdevwebsitelogovar = <img src={gmdevwebsitelogo} width='50%' height='auto' style={{ padding: '5px' }} />
@@ -94,6 +100,8 @@ function HeaderSection() {
 
   return (
     <div>
+
+      <h2 style={{ color: 'white', fontSize: 'x-large' }}>Gio Moscato.com</h2>
 
       <div style={{
         backgroundColor: 'transparent',
@@ -120,12 +128,12 @@ function HeaderSection() {
 
       <div id="mainBody" className='gio-main'>
 
-        <img src={Info} width='100%' height='auto' style={{ padding: '5px', marginBottom: '5px', border: '2px solid #19819Fff', borderRadius: '50px' }} />
+        <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '50px', width: `${homepageSVGWidth}` }} />
 
         <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: `${cardPadding}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '0px', marginTop: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
-            <p style={{ color: '#AEBEBEff', marginTop: '20px' }}>
+            <p style={{ color: '#AEBEBEff', margin: '20px' }}>
               This is a personal portfolio react web app showcase my web development <br />skills and other computer science related <br />
               <button style={{ border: '1px solid white', borderRadius: '25px' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='/#/projects'> <em>projects</em>
@@ -136,7 +144,7 @@ function HeaderSection() {
 
             {gmdevwebsitelogovar}
 
-            <p style={{ color: '#AEBEBEff' }}>
+            <p style={{ color: '#AEBEBEff', margin: '20px' }}>
               Check out my api built with CloudFlare workers ! <br />
               <button style={{ border: '1px solid white', borderRadius: '25px' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevapi.com/'> <em> gmdevapi.com </em></a>
@@ -150,7 +158,7 @@ function HeaderSection() {
           </div>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '0px', marginRight: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
-            <p style={{ color: '#AEBEBEff' }}>
+            <p style={{ color: '#AEBEBEff', margin: '20px' }}>
               Hire me ! <br />
               <button style={{ border: '1px solid white', borderRadius: '25px' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevstore.com/'> <em> gmdevstore.com </em></a>
@@ -159,7 +167,7 @@ function HeaderSection() {
 
             {gmdevstorevar}
 
-            <p style={{ color: '#AEBEBEff' }}>
+            <p style={{ color: '#AEBEBEff', margin: '20px' }}>
               I am also working with other developers, check out our team site <br />
               <button style={{ border: '1px solid white', borderRadius: '25px' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://fullstackingdevelopment.com/'> <em> fullstackingdevelopment.com </em></a>
@@ -172,7 +180,7 @@ function HeaderSection() {
         </div>
 
         <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '50px', marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
-          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '50px', marginRight: '0px', width: '90%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
+          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
             <h2 style={{ color: 'white' }}>
               Need a webapp built for your brand or portfolio ? <br />
               <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevstore.com/'> <em> gmdevstore.com </em></a>
@@ -186,7 +194,7 @@ function HeaderSection() {
           </div>
 
 
-          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '50px', marginRight: '0px', width: '90%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
+          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
 
             <h2 style={{ color: 'white' }}>
               Support me if you can  <br />
@@ -380,8 +388,8 @@ function HeaderSection() {
           >
           </iframe>
 
-          <button src = ' https://app.wombo.art/' style={{backgroundColor: 'red' , borderRadius: '5px'}}>
-            <a style={{color: 'white' }}>
+          <button src=' https://app.wombo.art/' style={{ backgroundColor: 'red', borderRadius: '5px' }}>
+            <a style={{ color: 'white' }}>
               app.wombo.art.com
             </a>
           </button>

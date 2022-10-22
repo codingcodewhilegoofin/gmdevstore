@@ -42,6 +42,8 @@ function HeaderContact() {
   return (
     <div className='gio-main' >
 
+      <h2 style={{ color: 'white', fontSize: 'x-large' }}>Gio Moscato.com</h2>
+
       <div className='subheader8' style={{ margin: '10px', borderRadius: '5px', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }}>
 
         <h1 style={{ color: "#AEBEBEff", fontWeight: '900' }}>HOW TO CONTACT ME</h1>

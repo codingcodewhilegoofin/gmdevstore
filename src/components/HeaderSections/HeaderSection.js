@@ -145,7 +145,7 @@ function HeaderSection() {
             {gmdevwebsitelogovar}
 
             <p style={{ color: '#AEBEBEff', margin: '20px', fontSize:'x-large' }}>
-              Check out my api built with CloudFlare workers ! <br />
+              Check out my api built with CloudFlare workers! <br />
               <button style={{ border: '1px solid white', borderRadius: '25px', backgroundColor: '#242a36' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevapi.com/'> <em> gmdevapi.com </em></a>
               </button>
@@ -159,7 +159,7 @@ function HeaderSection() {
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '0px', marginRight: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
             <p style={{ color: '#AEBEBEff', margin: '20px', fontSize:'x-large' }}>
-              Hire me ! <br />
+              Hire me! <br />
               <button style={{ border: '1px solid white', borderRadius: '25px', backgroundColor: '#242a36' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevstore.com/'> <em> gmdevstore.com </em></a>
               </button>
@@ -180,7 +180,7 @@ function HeaderSection() {
         </div>
 
         <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '50px', marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
-          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
+          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '25px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
             <h2 style={{ color: 'white', fontSize:'x-large' }}>
               Need a webapp built for your brand or portfolio ? <br />
               <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevstore.com/'> <em> gmdevstore.com </em></a>
@@ -194,7 +194,7 @@ function HeaderSection() {
           </div>
 
 
-          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
+          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '20px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
 
             <h2 style={{ color: 'white', fontSize:'x-large' }}>
               Support me if you can  <br />

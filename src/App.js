@@ -72,14 +72,15 @@ function App() {
 
   return (
 
-    <div className={modalbg} style={{ backgroundColor: "#1C2222" }}>
+    <div className={modalbg} style={{ backgroundColor: "#1C2222", textAlign:'center' }}>
       <button onClick={modalHandle} class={modalToggle}>⁝</button>
       <div id="modalsection" class="modal">
         <div class="modal-content">
-          <button onClick={modalHandle} class="modalbtninner">Close❌</button>
-          <h1 className="modalTitle">Menu</h1>
+          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign:'center', width:'33%',}}>Close❌</button>
+          <h2 style={{ color: 'white', fontSize: 'x-large', textALign:'center', marginTop:'5px' }}>Gio Moscato.com</h2>
+          <h1 className="modalTitle" style={{ textAlign: 'left'}}>Menu </h1>
 
-          <div className="modalBox">
+          <div className="modalBox" style={{textAlign:'left'}}>
             <ul>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/' className='listmodal'> Home 🏠</a> </li>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/dependency+' className='listmodal'> 3JS / R3F <img style={{ backgroundColor: '#FFFFFF', padding: '2px' }} width='25px' height='25px' src={BoxIcon} /></a> </li>

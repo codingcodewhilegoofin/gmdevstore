@@ -13,6 +13,8 @@ function HeaderAbout() {
   return (
     <div className='gio-main' style={{ borderRadius: '20px', marginTop: '20px' }} >
 
+      <h2 style={{ color: 'white', fontSize: 'x-large' }}>Gio Moscato.com</h2>
+
       <div className='subheader7' style={{ borderRadius: '20px', marginTop: '20px' }} >
         <h4 style={{ color: 'white', fontSize: '50px', fontWeight: '900' }}>ABOUT ME</h4>
 
@@ -296,7 +298,7 @@ function HeaderAbout() {
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-        <div className='gio-container-2' style={{width:'99%', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
+        <div className='gio-container-2' style={{ width: '99%', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
           <h4 style={{ borderRadius: '20px', fontWeight: '900' }}>Additional Experience </h4>
 
           <ul style={{ background: 'rgba(0,0,0,.8)' }}>

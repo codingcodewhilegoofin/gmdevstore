@@ -29,9 +29,11 @@ const ProjectCard = (props) => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
-                width: '80%',
+                width: '70%',
+                borderRadius: '20px',
                 marginBottom: '10px',
-                boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset',
+                border:'none'
+               
             }}>
 
                 <div className="chatbotBar" >
@@ -43,7 +45,7 @@ const ProjectCard = (props) => {
                             cursor: 'pointer',
                             textTransform: 'uppercase',
                             fontSize: 'smaller',
-                            
+                           
                         }}
                         onClick={menuHandle}>
                         {toggleMenu} {props.title}

@@ -25,8 +25,6 @@ import '../PageCss/Crudtable.css';
 import '../PageCss/GioTable.css';
 import '../PageCss/NewTable.css';
 
-
-
 function HeaderProjects() {
 
   const [mainBody, setMainBody] = useState(true)
@@ -42,7 +40,6 @@ function HeaderProjects() {
     }
   }
 
-
   const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
   const [data, setData] = useState([]);
   const [currentStatus, setStatus] = useState(false);
@@ -54,6 +51,7 @@ function HeaderProjects() {
   let musicToggle = false;
   let Toggle;
   let urlToggle = false;
+
   if (window.innerWidth < 600) {
     specialheader = <></>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
@@ -79,7 +77,6 @@ function HeaderProjects() {
       setBaseUrl("https://pokeapi.co/api/v2/berry");
     }
   }
-
 
   useEffect(() => {
     fetch(baseUrl)
@@ -112,6 +109,8 @@ function HeaderProjects() {
   return (
     <div>
 
+      <h2 style={{ color: 'white', fontSize: 'x-large' }}>Gio Moscato.com</h2>
+
       <div style={{
         backgroundColor: 'transparent',
         borderRadius: "5px",
@@ -135,7 +134,7 @@ function HeaderProjects() {
 
       <div id="mainBody" className='gio-main'>
 
-        <div class="Iam" style={{marginTop: '50px'}}>
+        <div class="Iam" style={{ marginTop: '50px', width: '80%' }}>
 
           <h1 style={{ color: '#AEBEBEff', fontSize: '50px', fontWeight: '900' }}>Projects</h1>
           <b>
@@ -151,199 +150,201 @@ function HeaderProjects() {
           <a style={{ color: 'white', cursor: 'pointer' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
         </div>
 
-        <div className="projectHeader" style={{    boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center',marginTop: '100px'}}>
+        <div className='gio-container' style={{ background: 'transparent', flexDirection: 'column', width: '100%', alignSelf: 'center', alignItems: 'center', border: 'none', paddingTop: '5px' }}>
+          <div className="projectHeader" style={{ boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '100px', width: '85%' }}>
 
-          <h1
-            style={{
-              color: "#AEBEBEff",
-              backgroundColor: "#025B79ff",
-              marginTop: "5px",
-              border: "2px solid #242a36 ",
-              borderRadius: "5px",
-              fontSize: '15px',
-              fontWeight: '900',
-              margin: '5px',
-              width: '80%'
-            }}>
-            PROJECT DIRECTORY AND Q&A
-          </h1>
+            <h1
+              style={{
+                color: "#AEBEBEff",
+                backgroundColor: "#025B79ff",
+                marginTop: "5px",
+                border: "2px solid #242a36 ",
+                borderRadius: "5px",
+                fontSize: '15px',
+                fontWeight: '900',
+                margin: '5px',
+                width: '100%'
+              }}>
+              PROJECT DIRECTORY AND Q&A
+            </h1>
 
-          <div className='spacer'>
-          </div>
-
-          <ProjectCard
-            title="Directory"
-            subtitle="Project Directory"
-            description="List of all projects I have made available to the public that involve coding or programming"
-            cardToggleID={"IdZero"}
-          >
-            <div className="end-div5" style={{ backgroundColor: "transparent"}} >
-              <ol style={{ backgroundColor: "#025B79ff", fontWeight: '900', border: '3px solid black', borderRadius: "10px", }}>
-                <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>Web dev based projects</li>
-                <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid black', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ color: '#EE0527ff', fontWeight: '700' }}>giomoscato.com<br /> <a style={{ color: 'white' }}>(React web app)</a></li>
-                  <label></label>
-                  <li style={{ color: '#EE0527ff', fontWeight: '700' }}>fullstackingdevelopment.com<br /> <a style={{ color: 'white' }}>(React web app)</a></li>
-                  <label></label>
-                  <li style={{ color: '#EE0527ff', fontWeight: '700' }}>gmapps-api-v1.gmdev.workers.dev<br /> <a style={{ color: 'white' }}>(CloudFlare Worker API JS)</a></li>
-                  <label></label>
-
-                </ul>
-
-                <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '5px solid white', margin: '5px' }}>API intergration projects</li>
-                <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>Spotify API<br /> <p style={{ color: 'white' }}>(called from gmapps-api-v1)</p><br /><a href="/#/Spotify" style={{ color: '#19819Fff' }}>/Spotify</a></li>
-                  <label></label>
-                  <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Open AI API<br /> <p style={{ color: 'white' }}>(called from gmapps-api-v1)</p><br /><p style={{ color: 'white' }}>Used for the AI Gio-Chatbot</p><br /><p style={{ color: '#19819Fff' }}>Check the top of this website</p></li>
-                  <label></label>
-                  <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Financial API's<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><br /><p style={{ color: 'white' }}>Used to display financial data</p><br /><a href="/#/cstrack" style={{ color: '#19819Fff' }}>/cstrack</a></li>
-                  <label></label>
-                  <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Arduino Cloud IOT API<br /> <p style={{ color: 'white' }}>(called from gmapps-api-v1)</p><br /><a style={{ color: 'white' }}>Used in 3D render of Arduino Project</a><br /><a href="/#/dependency+" style={{ color: '#19819Fff' }}>/dependency+</a></li>
-                  <label></label>
-                  <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Polygon.io API<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><br /><p style={{ color: 'white' }}>Displays financial information</p><br /><a href="/#/cstrack+" style={{ color: '#19819Fff' }}>/cstrack</a></li>
-                  <label></label>
-                  <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>SW API<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><p style={{ color: 'white' }}>Used for table</p></li>
-                  <label></label>
-
-                </ul>
-
-                <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>3D based projects</li>
-                <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ color: '#EE0527ff', fontWeight: '700' }}>3D version of giomoscato.com<br /> <a style={{ color: 'white' }}>(Uses ThreeJS and R3F)</a></li>
-                  <label></label>
-                  <li style={{ color: '#EE0527ff', fontWeight: '700' }}>3D Introduction Scene & Menu<br /> <a style={{ color: 'white' }}>(Uses SplineJS)</a></li>
-                  <label></label>
-
-                </ul>
-
-                <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '5px solid white', margin: '5px' }}>Data structure & Algorithm based projects</li>
-                <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ padding: '5px', margin: '5px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>C++ Compiler for IEEE 754 float converter<br /> <p style={{ color: 'white' }}>(Written in C++)</p></li>
-                  <label></label>
-                  <li style={{ margin: '5px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>DSA showcase<br /><p style={{ color: 'white' }}>(Written in pure JS & JSX)</p></li>
-                  <label></label>
-                </ul>
-
-                <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>Video Games</li>
-                <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ color: '#EE0527ff', fontWeight: '700', fontWeight: '900' }}>Pink Balls<br /> <a style={{ color: 'white' }}>(Used Unity, written in C#)</a></li>
-                  <label></label>
-
-                </ul>
-              </ol>
+            <div className='spacer'>
             </div>
 
-          </ProjectCard>
+            <ProjectCard
+              title="Directory"
+              subtitle="Project Directory"
+              description="List of all projects I have made available to the public that involve coding or programming"
+              cardToggleID={"IdZero"}
+            >
+              <div className="end-div5" style={{ backgroundColor: "transparent" }} >
+                <ol style={{ backgroundColor: "#025B79ff", fontWeight: '900', border: '3px solid black', borderRadius: "10px", }}>
+                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>Web dev based projects</li>
+                  <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid black', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ color: '#EE0527ff', fontWeight: '700' }}>giomoscato.com<br /> <a style={{ color: 'white' }}>(React web app)</a></li>
+                    <label></label>
+                    <li style={{ color: '#EE0527ff', fontWeight: '700' }}>fullstackingdevelopment.com<br /> <a style={{ color: 'white' }}>(React web app)</a></li>
+                    <label></label>
+                    <li style={{ color: '#EE0527ff', fontWeight: '700' }}>gmapps-api-v1.gmdev.workers.dev<br /> <a style={{ color: 'white' }}>(CloudFlare Worker API JS)</a></li>
+                    <label></label>
 
-          <div className='spacer'>
-          </div>
+                  </ul>
 
+                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '5px solid white', margin: '5px' }}>API intergration projects</li>
+                  <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>Spotify API<br /> <p style={{ color: 'white' }}>(called from gmapps-api-v1)</p><br /><a href="/#/Spotify" style={{ color: '#19819Fff' }}>/Spotify</a></li>
+                    <label></label>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Open AI API<br /> <p style={{ color: 'white' }}>(called from gmapps-api-v1)</p><br /><p style={{ color: 'white' }}>Used for the AI Gio-Chatbot</p><br /><p style={{ color: '#19819Fff' }}>Check the top of this website</p></li>
+                    <label></label>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Financial API's<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><br /><p style={{ color: 'white' }}>Used to display financial data</p><br /><a href="/#/cstrack" style={{ color: '#19819Fff' }}>/cstrack</a></li>
+                    <label></label>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Arduino Cloud IOT API<br /> <p style={{ color: 'white' }}>(called from gmapps-api-v1)</p><br /><a style={{ color: 'white' }}>Used in 3D render of Arduino Project</a><br /><a href="/#/dependency+" style={{ color: '#19819Fff' }}>/dependency+</a></li>
+                    <label></label>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Polygon.io API<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><br /><p style={{ color: 'white' }}>Displays financial information</p><br /><a href="/#/cstrack+" style={{ color: '#19819Fff' }}>/cstrack</a></li>
+                    <label></label>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>SW API<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><p style={{ color: 'white' }}>Used for table</p></li>
+                    <label></label>
 
-          <ProjectCard
-            title="Q & A"
-            subtitle="Questions and answers"
-            description="More information about these projects, where to find them, and what they do."
-            cardToggleID={"Id"}
-          >
-            <div className="end-div5" >
-              <ol style={{ fontWeight: '900', border: '5px solid black', }}>
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: How can I navigate this website better, i'm lost</li>
-                <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900' }}>There is a spinning menu button to click on, or use the header icons</li>
+                  </ul>
 
-                </ul>
+                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>3D based projects</li>
+                  <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ color: '#EE0527ff', fontWeight: '700' }}>3D version of giomoscato.com<br /> <a style={{ color: 'white' }}>(Uses ThreeJS and R3F)</a></li>
+                    <label></label>
+                    <li style={{ color: '#EE0527ff', fontWeight: '700' }}>3D Introduction Scene & Menu<br /> <a style={{ color: 'white' }}>(Uses SplineJS)</a></li>
+                    <label></label>
 
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: What the heck is this website</li>
-                <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900' }}>My personal portfolio to showcase my projects<br /> <a style={{ color: 'white' }}>This website itself is also a project so it can get confusing.</a></li>
+                  </ul>
 
+                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '5px solid white', margin: '5px' }}>Data structure & Algorithm based projects</li>
+                  <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ padding: '5px', margin: '5px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>C++ Compiler for IEEE 754 float converter<br /> <p style={{ color: 'white' }}>(Written in C++)</p></li>
+                    <label></label>
+                    <li style={{ margin: '5px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>DSA showcase<br /><p style={{ color: 'white' }}>(Written in pure JS & JSX)</p></li>
+                    <label></label>
+                  </ul>
 
-                </ul>
+                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>Video Games</li>
+                  <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ color: '#EE0527ff', fontWeight: '700', fontWeight: '900' }}>Pink Balls<br /> <a style={{ color: 'white' }}>(Used Unity, written in C#)</a></li>
+                    <label></label>
 
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: How may projects are there total</li>
-                <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900' }}>4 technically<br /> <a style={{ color: 'white' }}>Some of the projects I am working on are nested INTO this website.<br /> I know it can be a bit confusing which is why I made this Q&A.</a></li>
+                  </ul>
+                </ol>
+              </div>
 
-                </ul>
+            </ProjectCard>
 
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: Okay, which projects are part of the website ?</li>
-                <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900' }}>Any 3D scene, API call, or pure JS / JSX is built from scratch into this website<br /> <a style={{ color: 'white' }}>The 3D scenes do use libraries but I only used them to set up the environment's necessary.</a> <br />If you're still on giomoscato.com/#/ it's probably a project built into the site or using an Iframe</li>
-
-
-                </ul>
-
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: What is that 3D scene when I load this website?</li>
-                <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900' }}>A 3D scene created with Spline.js<br /> <a style={{ color: 'white' }}>I wanted the introduction to my portfolio to be interesting<br /> That scene is a menu basically but has some easter eggs.</a></li>
-
-
-                </ul>
-
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: How can I see your projects without having to go to other websites</li>
-                <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900' }}>Check "Project Showcase" to see them live on this website</li>
-                  <label></label>
-
-
-                </ul>
-
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: Are all your projects code - based?</li>
-                <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900', }}>Any projects mentioned in "Project Directory" are coded by me or with a team<br /> <p style={{ color: 'white' }}>I do have non-code projects on here but they are not mentioned in the directory</p></li>
-
-                </ul>
-
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: How can I find a specific project ?</li>
-                <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900' }}>Check "Project Directory" or use the Gio-Chatbot and ask it a question</li>
-                  <label></label>
-
-
-                </ul>
-
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: Most impressive project ? </li>
-                <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900' }}>giomoscato.com or some C++ based projects I have not yet realeased</li>
-                  <label></label>
-
-
-                </ul>
-
-                <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: Favorite project?</li>
-                <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
-                  <label></label>
-                  <li style={{ fontWeight: '900', }}>Pink balls was my first super silly game I ever made, but it was really fun<br /> It was also my first experience with 3D worlds</li>
-
-                </ul>
-
-
-              </ol>
+            <div className='spacer'>
             </div>
 
-          </ProjectCard>
 
+            <ProjectCard
+              title="Q & A"
+              subtitle="Questions and answers"
+              description="More information about these projects, where to find them, and what they do."
+              cardToggleID={"Id"}
+            >
+              <div className="end-div5" >
+                <ol style={{ fontWeight: '900', border: '5px solid black', }}>
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: How can I navigate this website better, i'm lost</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900' }}>There is a spinning menu button to click on, or use the header icons</li>
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: What the heck is this website</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900' }}>My personal portfolio to showcase my projects<br /> <a style={{ color: 'white' }}>This website itself is also a project so it can get confusing.</a></li>
+
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: How may projects are there total</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900' }}>4 technically<br /> <a style={{ color: 'white' }}>Some of the projects I am working on are nested INTO this website.<br /> I know it can be a bit confusing which is why I made this Q&A.</a></li>
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: Okay, which projects are part of the website ?</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900' }}>Any 3D scene, API call, or pure JS / JSX is built from scratch into this website<br /> <a style={{ color: 'white' }}>The 3D scenes do use libraries but I only used them to set up the environment's necessary.</a> <br />If you're still on giomoscato.com/#/ it's probably a project built into the site or using an Iframe</li>
+
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: What is that 3D scene when I load this website?</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900' }}>A 3D scene created with Spline.js<br /> <a style={{ color: 'white' }}>I wanted the introduction to my portfolio to be interesting<br /> That scene is a menu basically but has some easter eggs.</a></li>
+
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: How can I see your projects without having to go to other websites</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900' }}>Check "Project Showcase" to see them live on this website</li>
+                    <label></label>
+
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: Are all your projects code - based?</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900', }}>Any projects mentioned in "Project Directory" are coded by me or with a team<br /> <p style={{ color: 'white' }}>I do have non-code projects on here but they are not mentioned in the directory</p></li>
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: How can I find a specific project ?</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900' }}>Check "Project Directory" or use the Gio-Chatbot and ask it a question</li>
+                    <label></label>
+
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid black' }}>Q: Most impressive project ? </li>
+                  <ul style={{ fontWeight: '900', border: '2px solid black', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900' }}>giomoscato.com or some C++ based projects I have not yet realeased</li>
+                    <label></label>
+
+
+                  </ul>
+
+                  <li style={{ backgroundColor: "white", fontWeight: '900', border: '5px solid white' }}>Q: Favorite project?</li>
+                  <ul style={{ fontWeight: '900', border: '2px solid white', margin: '10px' }}>
+                    <label></label>
+                    <li style={{ fontWeight: '900', }}>Pink balls was my first super silly game I ever made, but it was really fun<br /> It was also my first experience with 3D worlds</li>
+
+                  </ul>
+
+
+                </ol>
+              </div>
+
+            </ProjectCard>
+
+          </div>
         </div>
 
         <div className='spacer'>
         </div>
-        
 
-        <div className="projectFooter" style={{    boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px',display: 'flex', flexDirection: 'column', alignItems: 'center',marginTop: '100px'}}>
+
+        <div className="projectFooter" style={{ boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '100px' }}>
 
           <h1
             style={{
@@ -402,18 +403,18 @@ function HeaderProjects() {
                     margin: '10px'
                   }}>
                   gmapps-api-v1.gmdev
-                  </h1>
+                </h1>
 
-                  <h3 style={{
-                        color: "#AEBEBEff",
-                        fontSize: "auto",
-                        fontWeight: '900',
-                        
-                    }}>
-                        This is a CloudFlare worker built with JS and bundled with webpack. 
-                        It serves lots of endpoints for anyone to use. I use it in my personal projects
-                        to secure API keys and call other API's.
-                    </h3>
+                <h3 style={{
+                  color: "#AEBEBEff",
+                  fontSize: "auto",
+                  fontWeight: '900',
+
+                }}>
+                  This is a CloudFlare worker built with JS and bundled with webpack.
+                  It serves lots of endpoints for anyone to use. I use it in my personal projects
+                  to secure API keys and call other API's.
+                </h3>
 
 
                 {specialheader3}
@@ -688,100 +689,7 @@ function HeaderProjects() {
 
         </div>
 
-        <div className="end-div" style={{ margin: '30px' }}>
 
-          <a href="https://github.com/codingcodewhilegoofin/giowebsite">
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontWeight: 'bold'
-            }}> My website technology pipeline / stack ? ✨ </h2>
-
-            <ol style={{
-              color: 'white'
-            }}>
-              <li> Bash/Linux/Windows( CLI/OS )</li>
-              <li> VScode( IDE )</li>
-              <li> ReactJS </li>
-              <li> NPM</li>
-              <li> HTML/CSS/JS/JSX </li>
-              <li> Githubpages(Host server) </li>
-              <li> GoogleDomains(DNS)</li>
-              <li> React Router</li>
-              <li> Github ( source control ) </li>
-            </ol>
-
-          </a>
-        </div>
-        <div className="subheader5" style={{ border: '2px solid #101730ff' }}>
-          <h3 style={{
-            color: 'white',
-            fontWeight: 'bold',
-
-          }}> Please consider collaborating
-            <br /> or donating!
-            <br></br>🔥
-
-          </h3>
-        </div>
-
-        <div className="end-div3" style={{ margin: '20px', borderRadius: '10apx' }}>
-          <a
-
-            href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
-          >
-            <h2 style={{
-              color: '#AEBEBEff',
-              fontWeight: 'bold'
-            }}>
-              Having trouble viewing my website ? 💔
-            </h2>
-            <h5
-              style={{
-                color: 'white',
-                fontWeight: 'bold'
-              }}
-            >
-              I tried to make my website <br /> desktop and mobile friendly as possible.
-            </h5>
-
-          </a>
-          <div className="subheader6" style={{ border: '2px solid white', borderRadius: '10px' }}>
-            <h3
-              style={{
-                color: '#AEBEBEff',
-
-                fontWeight: 'bold',
-
-              }}>
-              Major Update! : Most mobile / scaling issues should be fixed
-              <br />
-              <br />
-              <a href="https://www.buymeacoffee.com/giomoscato101">
-                <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=243232ff&font_colour=ffffff&font_family=Poppins&outline_colour=243232ff&coffee_colour=243232ff" />
-              </a>
-            </h3>
-          </div>
-        </div>
-
-        <div className='spacer2'>
-        </div>
-
-        <div class="end-div2" style={{ margin: '50px' }} >
-          <h1 style={{ color: '#AEBEBEff', fontSize: '30px', fontWeight: '900' }}>More music by me!</h1>
-        </div>
-
-        <div class="Iam" >
-          <iframe
-            id="ytplayer"
-            type="text/html"
-            width="80%"
-            height="360"
-            autoplay="true"
-            src="https://www.youtube.com/embed/ZwWTUljUZLU?autoplay=1"
-            frameborder="0"
-          >
-          </iframe>
-        </div>
 
       </div>
 
@@ -806,7 +714,108 @@ function HeaderProjects() {
         </button>
       </div>
 
-    </div>
+      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'row', margin: '10px' }}>
+
+        <div className="end-div" style={{ margin: '30px', width: '45%', borderRadius: '30px' }}>
+
+          <a href="https://github.com/codingcodewhilegoofin/giowebsite">
+            <h2 style={{
+              color: '#AEBEBEff',
+              fontWeight: 'bold'
+            }}> My website technology pipeline / stack ? ✨ </h2>
+
+            <ol style={{
+              color: 'white'
+            }}>
+              <li> Bash/Linux/Windows( CLI/OS )</li>
+              <li> VScode( IDE )</li>
+              <li> ReactJS </li>
+              <li> NPM</li>
+              <li> HTML/CSS/JS/JSX </li>
+              <li> Githubpages(Host server) </li>
+              <li> GoogleDomains(DNS)</li>
+              <li> React Router</li>
+              <li> Github ( source control ) </li>
+            </ol>
+
+          </a>
+        </div>
+
+        <div className="subheader5" style={{ border: '2px solid #101730ff', width: '50%', paddingTop: '100px', paddingBottom: '100px', borderRadius: '30px' }}>
+          <h3 style={{
+            color: 'white',
+            fontWeight: 'bold',
+
+          }}> Please consider collaborating
+            <br /> or donating!
+            <br></br>🔥
+
+          </h3>
+        </div>
+
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', margin: '10px', }}>
+
+        <div className="end-div5" style={{ margin: '20px', borderRadius: '30px', width: '80%', paddingTop: '50px', paddingBottom: '50px' }}>
+          <a
+
+            href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
+          >
+            <h2 style={{
+              color: '#AEBEBEff',
+              fontWeight: 'bold'
+            }}>
+              Having trouble viewing my website ? 💔
+            </h2>
+            <h5
+              style={{
+                color: 'white',
+                fontWeight: 'bold'
+              }}
+            >
+              I tried to make my website <br /> desktop and mobile friendly as possible.
+            </h5>
+
+          </a>
+          <div className="subheader6" style={{ border: '2px solid white', borderRadius: '10px', margin: '5px' }}>
+            <h3
+              style={{
+                color: '#AEBEBEff',
+
+                fontWeight: 'bold',
+
+              }}>
+              Major Update! : Most mobile / scaling issues should be fixed
+              <br />
+              <br />
+              <a href="https://www.buymeacoffee.com/giomoscato101">
+                <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=243232ff&font_colour=ffffff&font_family=Poppins&outline_colour=243232ff&coffee_colour=243232ff" />
+              </a>
+            </h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'row', margin: '10px', width: '100%' }}>
+        <div class="Iam" style={{ width: '75%', paddingTop: '50px', paddingBottom: '50px' }} >
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="360"
+
+            autoplay="true"
+            src="https://www.youtube.com/embed/ZwWTUljUZLU?autoplay=1"
+            frameborder="0"
+          >
+          </iframe>
+        </div>
+      </div>
+
+
+    </div >
   );
 }
 export default HeaderProjects;

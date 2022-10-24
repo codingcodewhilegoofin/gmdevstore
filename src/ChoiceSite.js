@@ -58,6 +58,7 @@ const ChoiceSite = (props) => {
                 marginLeft: '8px',
                 marginRight: '8px',
                 borderRadius: '20px',
+                fontSize:'x-large'
             }}>
 
                 <div className="chatbotBar" >

@@ -1,5 +1,5 @@
 //Standard imports 
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { HashRouter, Route, Link, Routes } from "react-router-dom";
 import { CSSTransition } from 'react-transition-group';
 
@@ -16,7 +16,7 @@ import Projects from './components/Pages/Projects';
 import StartApp from './Start';
 import './App.css';
 import Giobot from './components/OpenAi/Giobot/Giobot.js';
-import TestAPI from './components/Pages/TestAPI.js'; 
+import TestAPI from './components/Pages/TestAPI.js';
 import Practice from './practice/practice';
 
 //Menu import
@@ -31,9 +31,33 @@ import { ReactComponent as GithubSymbol } from './icons/github.svg';
 // Main component 
 function OldSite() {
   //Custom variables
-  var githublink = 'https://github.com/codingcodewhilegoofin';
-  var linkedinlink = 'https://www.linkedin.com/in/gio-m-4a19a71b1/';
-  var downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/Gio%20M%20Res%20public.pdf';
+  let githublink = 'https://github.com/codingcodewhilegoofin';
+  let linkedinlink = 'https://www.linkedin.com/in/gio-m-4a19a71b1/';
+  let downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/Gio%20M%20Res%20public.pdf';
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+
+    function updateSize() {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    }
+
+    window.addEventListener('resize', updateSize);
+    //console.log(windowSize[0]);
+
+    return () => {
+      window.removeEventListener('resize', updateSize);
+    }
+  }, [windowSize])
+
+  let mobileNav;
+
+  if (windowSize[0] < 800) {
+    mobileNav = 'column';
+  }
+  else {
+    mobileNav = 'row';
+  }
 
   //Send to DOM 
   return (
@@ -41,69 +65,94 @@ function OldSite() {
     <HashRouter basename='/'> {/*Hash routing  */}
 
       {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */}
-      <div className="App" style={{padding: '1px' , marginTop: '20px;'}}>
+      <div className="App" style={{ padding: '1px', marginTop: '20px;' }}>
 
-        <Giobot/>
+        <Giobot />
 
-        <Navbar >
-          <Link className="nav-item" to="/github">
-            <NavItem icon={<GithubSymbol />} />
-          </Link>
+        <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: `${mobileNav}`, textAlign: 'center', alignItems: 'center' }}>
+          <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
+            <div className="end-div5" style={{ padding: '0px', width: '80%', flexDirection: 'row', textAlign: 'center', alignItems: 'center', backgroundColor: '#242a36' }}>
+              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
 
-          <Link className="nav-item" to="/linkedin">
-            <NavItem icon={<LinkedinSymbol />} />
-          </Link>
+                <Link style={{ margin: '10px', }} className="nav-item" to="/github">
+                  <NavItem icon={<GithubSymbol />}> </NavItem>
 
-          <Link className="nav-item" to="/">
-            <NavItem icon="💻" />
-          </Link>
+                </Link>
 
-          <Link className="nav-item" to="/projects">
-            <NavItem icon="📁" />
-          </Link>
+                <Link style={{ margin: '10px', }} className="nav-item" to="/linkedin">
+                  <NavItem icon={<LinkedinSymbol />} />
+                </Link>
 
-          <Link className="nav-item" to="/about">
-            <NavItem icon="🧠" />
-          </Link>
+                <Link style={{ fontSize: 'x-large', margin: '10px', }} className="nav-item" to="/">
+                  <NavItem icon="💻" />
+                </Link>
+              </div>
 
-          <Link className="nav-item" to="/contact">
-            <NavItem icon="✉️" />
-          </Link>
+              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
 
-          <Link className="nav-item" to="/download">
-            <NavItem icon={<DownloadSymbol />} />
-          </Link>
-        </Navbar>
+                <Link style={{ fontSize: 'x-large', margin: '10px', }} className="nav-item" to="/projects">
+                  <NavItem icon="📁" />
+                </Link>
 
-        <UnderNav>
-          <Link className="nav-item" to="/github">
-            <UnderText> Github </UnderText>
-          </Link>
+                <Link style={{ fontSize: 'x-large', margin: '10px', }} className="nav-item" to="/about">
+                  <NavItem icon="🧠" />
+                </Link>
 
-          <Link className="nav-item" to="/linkedin">
-            <UnderText> Linkedin </UnderText>
-          </Link>
+                <Link style={{ fontSize: 'x-large', margin: '10px', }} className="nav-item" to="/contact">
+                  <NavItem icon="✉️" />
+                </Link>
 
-          <Link className="nav-item" to="/">
-            <UnderText> Home </UnderText>
-          </Link>
+              </div>
 
-          <Link className="nav-item" to="/projects">
-            <UnderText> Projects </UnderText>
-          </Link>
+              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
+                <Link style={{ margin: '10px', }} className="nav-item" to="/download">
+                  <NavItem icon={<DownloadSymbol />} />
+                </Link>
+              </div>
+            </div>
+          </div>
 
-          <Link className="nav-item" to="/about">
-            <UnderText> Skills </UnderText>
-          </Link>
+          <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', }}>
+            <div className="end-div5" style={{ padding: '0px', width: '80%', flexDirection: 'row', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', }}>
+              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
 
-          <Link className="nav-item" to="/contact">
-            <UnderText> Socials </UnderText>
-          </Link>
+                <Link style={{ margin: '10px', }} className="nav-item" to="/github">
+                  <UnderText> Github </UnderText>
+                </Link>
 
-          <Link className="nav-item" to="/download">
-            <UnderText> Resume </UnderText>
-          </Link>
-        </UnderNav>
+                <Link style={{ margin: '10px', }} className="nav-item" to="/linkedin">
+                  <UnderText> Linkedin </UnderText>
+                </Link>
+
+                <Link style={{ margin: '10px', }} className="nav-item" to="/">
+                  <UnderText> Home </UnderText>
+                </Link>
+              </div>
+
+              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
+
+                <Link style={{ margin: '10px', }} className="nav-item" to="/projects">
+                  <UnderText> Projects </UnderText>
+                </Link>
+
+                <Link style={{ margin: '10px', }} className="nav-item" to="/about">
+                  <UnderText> Skills </UnderText>
+                </Link>
+
+                <Link style={{ margin: '10px', }} className="nav-item" to="/contact">
+                  <UnderText> Socials </UnderText>
+                </Link>
+
+              </div>
+
+              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
+                <Link style={{ margin: '10px', }} className="nav-item" to="/download">
+                  <UnderText> Resume </UnderText>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/*Routes  */}
         <Route exact path="/" component={HomePage} />
@@ -141,12 +190,12 @@ function OldSite() {
 function Navbar(props) {
 
   return (
-    <div  style={{padding: '2px'}}>
-    <nav className="navbar"  >
-      <ul className="navbar-nav">
-        {props.children}
-      </ul>
-    </nav>
+    <div style={{ padding: '2px' }}>
+      <nav className="navbar"  >
+        <ul className="navbar-nav">
+          {props.children}
+        </ul>
+      </nav>
     </div>
   );
 }
@@ -168,14 +217,14 @@ function NavItem(props) {
 function UnderNav(props) {
 
   return (
-    <div style={{padding: '2px'}}>
-    <nav className="navbar-2">
-      <ul className="navbar-nav">
-        <li className="nav-item-li" style={{ lineHeight: '50px'}}>
-          {props.children}
-        </li>
-      </ul>
-    </nav>
+    <div style={{ padding: '2px' }}>
+      <nav className="navbar-2">
+        <ul className="navbar-nav">
+          <li className="nav-item-li" style={{ lineHeight: '50px' }}>
+            {props.children}
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }

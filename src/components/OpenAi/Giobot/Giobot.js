@@ -43,7 +43,8 @@ const Giobot = () => {
                 alignItems: 'center',
                 marginTop: '0px',
                 margin: '8px', 
-                borderRadius: '20px'
+                borderRadius: '20px', 
+                fontSize: 'x-large',
                
             }}
         >

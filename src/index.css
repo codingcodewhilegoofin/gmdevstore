@@ -74,7 +74,7 @@ h6 {
 /* Extra small devices (phones, 600px and down) */
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 0px) {
   .navbar {
     height: var(--nav-size);
     background-color: var(--weirdgray);

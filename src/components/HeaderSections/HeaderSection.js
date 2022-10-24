@@ -40,6 +40,21 @@ function HeaderSection() {
   const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
   const [data, setData] = useState([]);
   const [currentStatus, setStatus] = useState(false);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+
+    function updateSize() {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    }
+
+    window.addEventListener('resize', updateSize);
+    //console.log(windowSize[0]);
+
+    return () => {
+      window.removeEventListener('resize', updateSize);
+    }
+  }, [windowSize])
 
   let specialheader;
   let specialheader2;
@@ -59,7 +74,7 @@ function HeaderSection() {
   let cardWidthSupport;
   let homepageSVGWidth;
 
-  if (window.innerWidth < 600) {
+  if (windowSize[0] < 600) {
     specialheader = <></>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     logoSection = <></>;
@@ -77,7 +92,8 @@ function HeaderSection() {
     linkTreeWidth = '100%';
     homepageSVGWidth = '100%';
   }
-  else {
+  else 
+  {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     youtubesub = <h2 style={{ color: 'white' }}>SUB TO MY YOUTUBE?</h2>;

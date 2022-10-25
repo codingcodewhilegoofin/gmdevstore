@@ -84,6 +84,9 @@ function OldSite() {
     showDownloadRes = true;
   }
 
+  const [showMenu, setshowMenu] = useState(false);
+  
+
   //Send to DOM 
   return (
 
@@ -94,98 +97,127 @@ function OldSite() {
 
         <Giobot />
 
-        <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: `${mobileNav}`, textAlign: 'center', alignItems: 'center' }}>
-          <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
-            <div
-              className="end-div5"
-              style={{
-                padding: '0px',
-                width: '80%',
-                flexDirection: 'row',
-                textAlign: 'center',
-                alignItems: 'center',
-                background: 'linear-gradient(-45deg, #101730ff, #1b2524ff, #243232ff, #2e5252ff, #242a36, #025b79ff, #19819fff)',
-                backgroundSize: '400% 400%',
-                animation: 'bgchange 30s ease-in-out infinite'
-              }}
-            >
-              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
+        <div onClick={() => setshowMenu(!showMenu)} className="end-div5" style={{ padding: '1px', width: '100%', flexDirection: `${mobileNav}`, textAlign: 'center', alignItems: 'center' }}>
+          <button
+            style={{
+              color: '#19819fff',
+              backgroundColor: '#1b2524ff',
+              cursor: 'pointer',
+              textTransform: 'uppercase',
+              fontSize: 'x-large',
+              border: '1px solid #19819fff',
+              borderRadius: '10px',
+            }}>
 
+            {!showMenu ?
+              <>
+                < div style={{ animation: 'wiggle 2s ease-in-out infinite' }}>
+                  👉
+                </div>
+                😘 Custom Menu
+              </>
+              :
 
-                <Link className="nav-item" to="/github">
-                  <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                    <p style={{ color: 'white', fontSize: `${fontSize}` }}> Github</p>
-                    <NavItem icon={<GithubSymbol />} > </NavItem>
-                  </div>
-                </Link>
-
-
-                <Link className="nav-item" to="/linkedin">
-                  <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                    <p style={{ color: 'white', fontSize: `${fontSize}` }}> Linkedin</p>
-                    <NavItem icon={<LinkedinSymbol />} />
-                  </div>
-                </Link>
-
-                <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/">
-                  <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                    <p style={{ color: 'white', fontSize: `${fontSize}` }}> Home</p>
-                    <NavItem icon="💻" />
-                  </div>
-                </Link>
+              <div style={{ animation: 'pulse 2s ease-in-out infinite' }}>
+                ☰
               </div>
+            }
+          </button>
+        </div>
 
-              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
+        {!showMenu ? <></> :
+          <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: `${mobileNav}`, textAlign: 'center', alignItems: 'center' }}>
+            <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
+              <div
+                className="end-div5"
+                style={{
+                  padding: '0px',
+                  width: '80%',
+                  flexDirection: 'row',
+                  textAlign: 'center',
+                  alignItems: 'center',
+                  background: 'linear-gradient(-45deg, #101730ff, #1b2524ff, #243232ff, #2e5252ff, #242a36, #025b79ff, #19819fff)',
+                  backgroundSize: '400% 400%',
+                  animation: 'bgchange 30s ease-in-out infinite'
+                }}
+              >
+                <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
 
-                <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/projects">
-                  <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                    <p style={{ color: 'white', fontSize: `${fontSize}` }}> Projects</p>
-                    <NavItem icon="📁" />
-                  </div>
-                </Link>
 
-                <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/about">
-                  <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                    <p style={{ color: 'white', fontSize: `${fontSize}` }}> About</p>
-                    <NavItem style={{ color: 'white', fontSize: `${fontSize}` }} icon="🧠" />
-                  </div>
-                </Link>
+                  <Link className="nav-item" to="/github">
+                    <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', marginTop: '5px' }}>
+                      <p style={{ color: 'white', fontSize: `${fontSize}` }}> Github</p>
+                      <NavItem icon={<GithubSymbol />} > </NavItem>
+                    </div>
+                  </Link>
 
-                <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/contact">
-                  <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                    <p style={{ color: 'white', fontSize: `${fontSize}` }}> Contact</p>
-                    <NavItem style={{ color: 'white', fontSize: `${fontSize}` }} icon="✉️" />
-                  </div>
-                </Link>
 
-                {showDownloadRes ? <></> :
-                 
+                  <Link className="nav-item" to="/linkedin">
+                    <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', marginTop: '5px' }}>
+                      <p style={{ color: 'white', fontSize: `${fontSize}` }}> Linkedin</p>
+                      <NavItem icon={<LinkedinSymbol />} />
+                    </div>
+                  </Link>
+
+                  <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/">
+                    <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', marginTop: '5px' }}>
+                      <p style={{ color: 'white', fontSize: `${fontSize}` }}> Home</p>
+                      <NavItem icon="💻" />
+                    </div>
+                  </Link>
+                </div>
+
+                <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
+
+                  <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/projects">
+                    <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', marginTop: '5px' }}>
+                      <p style={{ color: 'white', fontSize: `${fontSize}` }}> Projects</p>
+                      <NavItem icon="📁" />
+                    </div>
+                  </Link>
+
+                  <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/about">
+                    <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', marginTop: '5px' }}>
+                      <p style={{ color: 'white', fontSize: `${fontSize}` }}> About</p>
+                      <NavItem style={{ color: 'white', fontSize: `${fontSize}` }} icon="🧠" />
+                    </div>
+                  </Link>
+
+                  <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/contact">
+                    <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', marginTop: '5px' }}>
+                      <p style={{ color: 'white', fontSize: `${fontSize}` }}> Contact</p>
+                      <NavItem style={{ color: 'white', fontSize: `${fontSize}` }} icon="✉️" />
+                    </div>
+                  </Link>
+
+                  {showDownloadRes ? <></> :
+
+                    <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/download">
+                      <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', marginTop: '5px' }}>
+                        <p style={{ color: 'white', fontSize: `${fontSize}` }}> Resume</p>
+                        <NavItem icon={<DownloadSymbol />} />
+                      </div>
+                    </Link>
+
+                  }
+
+                </div>
+
+                {!showDownloadRes ? <></> :
+                  <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
                     <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/download">
                       <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
                         <p style={{ color: 'white', fontSize: `${fontSize}` }}> Resume</p>
                         <NavItem icon={<DownloadSymbol />} />
                       </div>
                     </Link>
-             
+                  </div>
                 }
 
               </div>
-
-              {!showDownloadRes ? <></> :
-                <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
-                  <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/download">
-                    <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                      <p style={{ color: 'white', fontSize: `${fontSize}` }}> Resume</p>
-                      <NavItem icon={<DownloadSymbol />} />
-                    </div>
-                  </Link>
-                </div>
-              }
-
             </div>
           </div>
-
-        </div>
+        }
 
         {/*Routes  */}
         <Route exact path="/" component={HomePage} />
@@ -215,7 +247,7 @@ function OldSite() {
 
       </div>
 
-    </HashRouter>
+    </HashRouter >
   );
 }
 

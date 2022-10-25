@@ -73,8 +73,12 @@ h6 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 0px) {
   .navbar {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: bgchange 15s ease infinite;
+
     height: var(--nav-size);
-    background-color: var(--weirdgray);
+   
     padding: 0 1rem;
     border: 1px solid var(--ash-gray);
     position: -webkit-sticky; /* Safari */
@@ -84,6 +88,7 @@ h6 {
     width: auto;
     border-radius: 20px;
     margin: 0px;
+
   }
   .navbar:hover {
     border: 1px solid var(--bg-accent2);
@@ -93,17 +98,17 @@ h6 {
     height: 100%;
     display: flex;
     justify-content: flex-end;
-   
+    
   }
   .nav-item {
-    width: calc(var(--nav-size) * 1);
+    width: calc(var(--nav-size) * 1.5);
     display: flex;
     align-items: center;
     justify-content: center;
-  
+    
   }
   .icon-button {
-    --button-size: calc(var(--nav-size) * 0.3);
+    --button-size: calc(var(--nav-size) * 0.35);
     width: var(--button-size);
     height: var(--button-size);
     background-color: var(--blue-sapphire);
@@ -111,7 +116,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     transition: filter 300ms;
     transition: background-color red 2s;
     transition: transform 10s;
@@ -273,7 +278,7 @@ h6 {
     justify-content: center;
   }
   .icon-button {
-    --button-size: calc(var(--nav-size) * 0.80);
+    --button-size: calc(var(--nav-size) * 0.8);
     width: var(--button-size);
     height: var(--button-size);
     background-color: var(--blue-sapphire);
@@ -288,7 +293,7 @@ h6 {
   }
   .icon-button:hover {
     filter: brightness(1);
-    
+
     transform: rotate(30deg);
   }
   .icon-bg {
@@ -307,7 +312,6 @@ h6 {
   }
   .icon-bg:hover {
     filter: brightness(1.2);
-
   }
   .icon-button svg {
     fill: var(--text-color);
@@ -414,7 +418,7 @@ h6 {
     font-family: 'Exo', sans-serif;
     transition: filter 300ms;
     transition-timing-function: ease-out;
-    filter: brightness(.5);
+    filter: brightness(0.5);
   }
   .navbar-nav-under-text:hover {
     color: #ffffff;
@@ -425,7 +429,7 @@ h6 {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .navbar {
     height: var(--nav-size);
     background-color: var(--weirdgray);
@@ -438,26 +442,23 @@ h6 {
     border-radius: 20px;
     border: 1px solid var(--ash-gray);
   }
-
   .navbar:hover {
     border: 1px solid var(--bg-accent2);
   }
-
   .navbar-nav {
     max-width: auto;
     height: 100%;
     display: flex;
     justify-content: flex-end;
   }
-
   .nav-item {
-    width: calc(var(--nav-size) * 1);
+    width: calc(var(--nav-size) * 4);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .icon-button {
-    --button-size: calc(var(--nav-size) * 0.6);
+    --button-size: calc(var(--nav-size) * 1);
     width: var(--button-size);
     height: var(--button-size);
     background-color: var(--blue-sapphire);
@@ -472,13 +473,13 @@ h6 {
   }
   .icon-button:hover {
     filter: brightness(1);
-    
+
     transform: rotate(30deg);
   }
   .icon-bg {
-    --button-size: calc(var(--nav-size) * 1.5);
-    width: calc(var(--button-size) * .5);
-    height: calc(var(--button-size) * .5);
+    --button-size: calc(var(--nav-size) * 2);
+    width: calc(var(--button-size) * 0.6);
+    height: calc(var(--button-size) * 0.6);
     background-color: var(--cg-blue);
 
     border-radius: 50%;
@@ -491,7 +492,6 @@ h6 {
   }
   .icon-bg:hover {
     filter: brightness(1.2);
-   
   }
   .icon-button svg {
     fill: var(--text-color);
@@ -596,11 +596,20 @@ h6 {
 
   .navbar-nav-under-text {
     color: var(--ash-gray);
-    font-size: x-largea;
+    font-size: large;
     font-family: 'Exo', sans-serif;
   }
   .navbar-nav-under-text:hover {
     color: #ffffff;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav-item {
+    width: calc(var(--nav-size) * 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

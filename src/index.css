@@ -630,13 +630,11 @@ h6 {
     transform: rotate(90deg);
   }
   25% {
-    transform: rotate(95deg);
+    transform: rotate(65deg);
   }
-  50% {
-    transform: rotate(90deg);
-  }
+  
   75% {
-    transform: rotate(85deg);
+    transform: rotate(105deg);
   }
   100% {
     transform: rotate(90deg);

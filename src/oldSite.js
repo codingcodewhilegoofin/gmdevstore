@@ -57,26 +57,31 @@ function OldSite() {
   let mobileNav;
   let fontSize;
   let iconSize;
+  let showDownloadRes;
 
   if (windowSize[0] < 500) {
     mobileNav = 'column';
     fontSize = 'small';
     iconSize = 'small';
+    showDownloadRes = false;
   }
-  else if(windowSize[0] < 600){
+  else if (windowSize[0] < 600) {
     mobileNav = 'column';
     fontSize = 'medium';
     iconSize = 'medium';
+    showDownloadRes = false;
   }
-  else if(windowSize[0] < 800){
+  else if (windowSize[0] < 800) {
     mobileNav = 'row';
     fontSize = 'large';
     iconSize = 'x-large';
+    showDownloadRes = true;
   }
-  else{
+  else {
     mobileNav = 'row';
     fontSize = 'x-large';
     iconSize = 'xx-large';
+    showDownloadRes = true;
   }
 
   //Send to DOM 
@@ -91,19 +96,19 @@ function OldSite() {
 
         <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: `${mobileNav}`, textAlign: 'center', alignItems: 'center' }}>
           <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
-            <div 
-              className="end-div5" 
-              style={{ 
-                padding: '0px', 
-                width: '80%', 
-                flexDirection: 'row', 
-                textAlign: 'center', 
-                alignItems: 'center',  
-                background: 'linear-gradient(-45deg, #101730ff, #1b2524ff, #243232ff, #2e5252ff, #242a36, #025b79ff, #19819fff)', 
-                backgroundSize: '400% 400%', 
+            <div
+              className="end-div5"
+              style={{
+                padding: '0px',
+                width: '80%',
+                flexDirection: 'row',
+                textAlign: 'center',
+                alignItems: 'center',
+                background: 'linear-gradient(-45deg, #101730ff, #1b2524ff, #243232ff, #2e5252ff, #242a36, #025b79ff, #19819fff)',
+                backgroundSize: '400% 400%',
                 animation: 'bgchange 30s ease-in-out infinite'
-                }}
-                >
+              }}
+            >
               <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
 
 
@@ -142,7 +147,7 @@ function OldSite() {
                 <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/about">
                   <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
                     <p style={{ color: 'white', fontSize: `${fontSize}` }}> About</p>
-                    <NavItem  style={{ color: 'white', fontSize: `${fontSize}` }}icon="🧠" />
+                    <NavItem style={{ color: 'white', fontSize: `${fontSize}` }} icon="🧠" />
                   </div>
                 </Link>
 
@@ -153,16 +158,30 @@ function OldSite() {
                   </div>
                 </Link>
 
+                {showDownloadRes ? <></> :
+                 
+                    <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/download">
+                      <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
+                        <p style={{ color: 'white', fontSize: `${fontSize}` }}> Resume</p>
+                        <NavItem icon={<DownloadSymbol />} />
+                      </div>
+                    </Link>
+             
+                }
+
               </div>
 
-              <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
-                <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/download">
-                  <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                    <p style={{ color: 'white', fontSize: `${fontSize}` }}> Projects</p>
-                    <NavItem icon={<DownloadSymbol />} />
-                  </div>
-                </Link>
-              </div>
+              {!showDownloadRes ? <></> :
+                <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
+                  <Link style={{ fontSize: `${iconSize}` }} className="nav-item" to="/download">
+                    <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
+                      <p style={{ color: 'white', fontSize: `${fontSize}` }}> Resume</p>
+                      <NavItem icon={<DownloadSymbol />} />
+                    </div>
+                  </Link>
+                </div>
+              }
+
             </div>
           </div>
 

@@ -664,3 +664,28 @@ h6 {
     color: red;
   }
 }
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(36, 42, 54, 1);
+    border-radius: 50px;
+    border-radius: 5px;
+    
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(36, 42, 54, 0);
+    border-radius: 50px;
+    
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(238, 5, 39, 0);
+    border-radius: 50px;
+    border-radius: 5px;
+    border: 1px solid #ee0527ff;
+  }
+}

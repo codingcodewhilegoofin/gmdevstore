@@ -118,7 +118,7 @@ function OldSite() {
               </>
               :
 
-              <div style={{ animation: 'pulse 2s ease-in-out infinite' }}>
+              <div style={{ animation: 'pulse 3s ease-in-out infinite' }}>
                 ☰
               </div>
             }
@@ -136,9 +136,8 @@ function OldSite() {
                   flexDirection: 'row',
                   textAlign: 'center',
                   alignItems: 'center',
-                  background: 'linear-gradient(-45deg, #101730ff, #1b2524ff, #243232ff, #2e5252ff, #242a36, #025b79ff, #19819fff)',
-                  backgroundSize: '400% 400%',
-                  animation: 'bgchange 30s ease-in-out infinite'
+                  border: '1px solid white',
+                  animation: 'pulse2 3s ease-in-out infinite',
                 }}
               >
                 <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >

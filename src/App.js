@@ -1,5 +1,5 @@
 //Standard imports 
-import React, { Component, useState , useEffect } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 
 //MUI imports
 import Button from '@mui/material/Button';
@@ -72,19 +72,23 @@ function App() {
 
   return (
 
-    <div className={modalbg} style={{ backgroundColor: "#1C2222", textAlign:'center' }}>
-      <button onClick={modalHandle} class={modalToggle}>⁝</button>
+    <div className={modalbg} style={{ backgroundColor: "#1C2222", textAlign: 'center', padding: '1px' }}>
+
+      <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
+        <button onClick={modalHandle} class={modalToggle}>☰</button>
+      </div>
+
       <div id="modalsection" class="modal">
         <div class="modal-content">
-          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign:'center', width:'33%',}}>Close❌</button>
-          <h2 style={{ color: 'white', fontSize: 'x-large', textALign:'center', marginTop:'5px' }}>Gio Moscato.com</h2>
-          <h1 className="modalTitle" style={{ textAlign: 'left'}}>Menu </h1>
+          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign: 'center', width: '33%', }}>Close❌</button>
+          <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}>Gio Moscato.com</h2>
+          <h1 className="modalTitle" style={{ textAlign: 'left' }}>Menu </h1>
 
-          <div className="modalBox" style={{textAlign:'left'}}>
+          <div className="modalBox" style={{ textAlign: 'left' }}>
             <ul>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/' className='listmodal'> Home 🏠</a> </li>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/dependency+' className='listmodal'> 3JS / R3F <img style={{ backgroundColor: '#FFFFFF', padding: '2px' }} width='25px' height='25px' src={BoxIcon} /></a> </li>
-              <li onClick={specialHanlde}    className='listmodal'> <a onClick={modalHandle}  className='listmodal'> 3DSplineScene <img style={{ backgroundColor: '#FFFFFF', padding: '1px', marginLeft: '10px', marginTop: '5px' }} width='100px' height='100px' src={SplineIcon} /></a> </li>
+              <li onClick={specialHanlde} className='listmodal'> <a onClick={modalHandle} className='listmodal'> 3DSplineScene <img style={{ backgroundColor: '#FFFFFF', padding: '1px', marginLeft: '10px', marginTop: '5px' }} width='100px' height='100px' src={SplineIcon} /></a> </li>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/projects' className='listmodal'> Projects </a> </li>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/Spotify' className='listmodal'> Spotify <img width='25px' height='25px' src={Spootify} /></a> </li>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/Dsa' className='listmodal' > DSA </a> </li>
@@ -96,7 +100,7 @@ function App() {
 
         </div>
       </div>
-      
+
       {(startScene === true) ? <Start func={sceneChange} /> : <></>}
       {((startScene === false)) ? <></> : <ChoiceSite func={pull_data} func2={pull_data2} />}
       {(startScene === false) ? <></> : ((siteVersion === "vanilla") ? <NewSite /> : <OldSite />)}

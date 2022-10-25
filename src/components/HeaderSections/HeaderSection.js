@@ -48,6 +48,8 @@ function HeaderSection() {
       setWindowSize([window.innerWidth, window.innerHeight]);
     }
 
+    updateSize();
+
     window.addEventListener('resize', updateSize);
     //console.log(windowSize[0]);
 
@@ -73,6 +75,7 @@ function HeaderSection() {
   let linkTreeWidth;
   let cardWidthSupport;
   let homepageSVGWidth;
+  let cardMargin;
 
   if (windowSize[0] < 600) {
     specialheader = <></>;
@@ -91,6 +94,7 @@ function HeaderSection() {
     cardPadding = '0px';
     linkTreeWidth = '100%';
     homepageSVGWidth = '100%';
+    cardMargin = '10px';
   }
   else 
   {
@@ -108,6 +112,7 @@ function HeaderSection() {
     linkTreeWidth = '33%';
     cardWidthSupport = '60%';
     homepageSVGWidth = '60%';
+    cardMargin = '20px';
 
     gmdevstorevar = <img src={gmdevstorelogo} width='50%' height='auto' style={{ padding: '5px' }} />
     gmdevwebsitelogovar = <img src={gmdevwebsitelogo} width='50%' height='auto' style={{ padding: '5px' }} />
@@ -144,9 +149,9 @@ function HeaderSection() {
 
       <div id="mainBody" className='gio-main'>
 
-        <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '50px', width: `${homepageSVGWidth}` }} />
+        <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '30px', width: `${homepageSVGWidth}`, marginTop: '5px' }} />
 
-        <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: `${cardPadding}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
+        <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: `${cardPadding}`, marginLeft:`${cardMargin}`, marginRight:`${cardMargin}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '0px', marginTop: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
             <p style={{ color: '#AEBEBEff', margin: '20px', fontSize:'x-large' }}>
@@ -170,7 +175,7 @@ function HeaderSection() {
             {gmdevapivar}
           </div>
 
-          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '35px', marginRight: '0px', width: '6%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
+          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '35px', marginRight: '0px', width: '3%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
           </div>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '0px', marginRight: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
@@ -195,7 +200,7 @@ function HeaderSection() {
           </div>
         </div>
 
-        <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
+        <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginLeft:`${cardMargin}`, marginRight:`${cardMargin}`, padding: '0px', marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '2px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
             <h2 style={{ color: 'white', fontSize:'x-large' }}>
               Need a webapp built for your brand or portfolio ? <br />

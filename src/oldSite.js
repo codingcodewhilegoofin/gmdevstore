@@ -36,11 +36,15 @@ function OldSite() {
   let downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/Gio%20M%20Res%20public.pdf';
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
+
+
   useEffect(() => {
 
     function updateSize() {
       setWindowSize([window.innerWidth, window.innerHeight]);
     }
+
+    updateSize();
 
     window.addEventListener('resize', updateSize);
     //console.log(windowSize[0]);
@@ -83,22 +87,22 @@ function OldSite() {
                   <NavItem icon={<LinkedinSymbol />} />
                 </Link>
 
-                <Link style={{ fontSize: 'x-large', margin: '10px', }} className="nav-item" to="/">
+                <Link style={{ fontSize: 'large', margin: '10px', }} className="nav-item" to="/">
                   <NavItem icon="💻" />
                 </Link>
               </div>
 
               <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
 
-                <Link style={{ fontSize: 'x-large', margin: '10px', }} className="nav-item" to="/projects">
+                <Link style={{ fontSize: 'large', margin: '10px', }} className="nav-item" to="/projects">
                   <NavItem icon="📁" />
                 </Link>
 
-                <Link style={{ fontSize: 'x-large', margin: '10px', }} className="nav-item" to="/about">
+                <Link style={{ fontSize: 'large', margin: '10px', }} className="nav-item" to="/about">
                   <NavItem icon="🧠" />
                 </Link>
 
-                <Link style={{ fontSize: 'x-large', margin: '10px', }} className="nav-item" to="/contact">
+                <Link style={{ fontSize: 'large', margin: '10px', }} className="nav-item" to="/contact">
                   <NavItem icon="✉️" />
                 </Link>
 

@@ -103,7 +103,7 @@ h6 {
   
   }
   .icon-button {
-    --button-size: calc(var(--nav-size) * 0.7);
+    --button-size: calc(var(--nav-size) * 0.3);
     width: var(--button-size);
     height: var(--button-size);
     background-color: var(--blue-sapphire);
@@ -122,9 +122,9 @@ h6 {
     transform: rotate(30deg);
   }
   .icon-bg {
-    --button-size: calc(var(--nav-size) * 0.5);
-    width: calc(var(--button-size) * 1.7);
-    height: calc(var(--button-size) * 1.7);
+    --button-size: calc(var(--nav-size) * 0.4);
+    width: calc(var(--button-size) * 1.2);
+    height: calc(var(--button-size) * 1.2);
     background-color: var(--cg-blue);
 
     border-radius: 50%;
@@ -234,7 +234,7 @@ h6 {
     color: white;
     margin: 5px;
     padding: 5px;
-    font-size: large;
+    font-size: medium;
     font-family: 'Exo', sans-serif;
   }
   .navbar-nav-under-text:hover {

@@ -39,17 +39,16 @@
 .modalbtn{
   position: fixed; /* Sit on top of the page content */
   display: sticky; /* Hidden by default */
-  width: 4%; /* Full width (cover the whole page) */
+  width: 6%; /* Full width (cover the whole page) */
   height: 6%; /* Full height (cover the whole page) */
-  
+  textAlign: center; 
   bottom: 0;
-  opacity: .6;
+  opacity: .7;
   background-color: #242a364f; 
   --borderWidth: 5px;
   color: #19819Fff;
   z-index: 9999;
-  margin-top: 0px;
-  margin-left: 0px;
+
   padding-top: 3px;
   padding-left: 0px;
   padding-right: 0px;
@@ -66,11 +65,11 @@
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
   background: linear-gradient(60deg, #101730ff, #1B2524ff, #101730ff, #243232ff, #2E5252ff, #242a36, #19819Fff, #025B79ff);
-  border-radius: calc(10 * var(--borderWidth));
+  border-radius: calc(0 * var(--borderWidth));
   z-index: -1;
   animation: animatedgradient 2s ease alternate infinite;
   background-size: 600% 300%;
-  border: 2px solid ;
+  border: 3px solid ;
 }
 .modalbtn:hover{
   background-color: rgba(20, 11, 45, 0.175); /* Black background with opacity */

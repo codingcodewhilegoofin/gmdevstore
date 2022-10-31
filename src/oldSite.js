@@ -105,7 +105,8 @@ function OldSite() {
               cursor: 'pointer',
               textTransform: 'uppercase',
               fontSize: 'x-large',
-              border: '1px solid #19819fff',
+              /* border: '1px solid #19819fff', */
+              border: '2px dashed purple', 
               borderRadius: '10px',
             }}>
 

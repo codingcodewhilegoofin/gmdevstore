@@ -72,7 +72,9 @@ function App() {
 
   return (
 
-    <div className={modalbg} style={{ backgroundColor: "#1C2222", textAlign: 'center', padding: '1px' }}>
+    <div className={modalbg} style={{ /* backgroundColor: "#1C2222" */ backgroundColor: "black", textAlign: 'center', padding: '1px' }}>
+
+      <h1 style={{ color: 'white' }}>⚰️🩸🔮 Spooky Time !  🍫🩸</h1>
 
       <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
         <button onClick={modalHandle} class={modalToggle}>☰</button>

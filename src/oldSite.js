@@ -93,7 +93,7 @@ function OldSite() {
     <HashRouter basename='/'> {/*Hash routing  */}
 
       {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */}
-      <div className="App" style={{ padding: '1px', marginTop: '20px;' }}>
+      <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor:'black' }}>
 
         <Giobot />
 
@@ -101,7 +101,8 @@ function OldSite() {
           <button
             style={{
               color: '#19819fff',
-              backgroundColor: '#1b2524ff',
+              /* backgroundColor: '#1b2524ff', */
+              backgroundColor: 'black',
               cursor: 'pointer',
               textTransform: 'uppercase',
               fontSize: 'x-large',

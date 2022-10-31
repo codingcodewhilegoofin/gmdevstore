@@ -562,7 +562,7 @@ function HeaderSection() {
         </div>
       </div>
 
-      <h1>👻 🎃</h1>
+      <h1 style={{ color: 'white'}}>👻 Happy Haloween 🎃</h1>
 
     </div>
   );

@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.09950308.css",
-    "main.js": "/static/js/main.fe20cad0.js",
+    "main.js": "/static/js/main.cec41244.js",
     "static/js/457.15462f82.chunk.js": "/static/js/457.15462f82.chunk.js",
     "static/js/701.9e956264.chunk.js": "/static/js/701.9e956264.chunk.js",
     "static/js/377.2343714a.chunk.js": "/static/js/377.2343714a.chunk.js",
     "static/js/909.e411bf00.chunk.js": "/static/js/909.e411bf00.chunk.js",
     "static/js/815.c5e7086d.chunk.js": "/static/js/815.c5e7086d.chunk.js",
+    "static/media/the-spell-dark-magic-background-music-ob-lix-8009.mp3": "/static/media/the-spell-dark-magic-background-music-ob-lix-8009.c8fe5776e7bdafa20d1e.mp3",
+    "static/media/that-halloween-story-20692.mp3": "/static/media/that-halloween-story-20692.b8b11a7f17150656a066.mp3",
     "static/media/info1.png": "/static/media/info1.07dd0ce23eb9dacac176.png",
+    "static/media/halloween-spooky-trap-121797.mp3": "/static/media/halloween-spooky-trap-121797.e02239dfaa1801b0f944.mp3",
     "static/media/Store.ogg": "/static/media/Store.c01e4b86a269fd180180.ogg",
     "static/media/gio.jpg": "/static/media/gio.c905add7329e76f745e4.jpg",
     "static/media/bg5.png": "/static/media/bg5.ca4218547b93d320efda.png",
@@ -46,7 +49,7 @@
     "static/media/3Dicon.svg": "/static/media/3Dicon.c3b0b390f7376d896a181894a13885b3.svg",
     "static/media/download.svg": "/static/media/download.813dbc20743248471dbfd70d54caa81d.svg",
     "main.09950308.css.map": "/static/css/main.09950308.css.map",
-    "main.fe20cad0.js.map": "/static/js/main.fe20cad0.js.map",
+    "main.cec41244.js.map": "/static/js/main.cec41244.js.map",
     "457.15462f82.chunk.js.map": "/static/js/457.15462f82.chunk.js.map",
     "701.9e956264.chunk.js.map": "/static/js/701.9e956264.chunk.js.map",
     "377.2343714a.chunk.js.map": "/static/js/377.2343714a.chunk.js.map",
@@ -55,6 +58,6 @@
   },
   "entrypoints": [
     "static/css/main.09950308.css",
-    "static/js/main.fe20cad0.js"
+    "static/js/main.cec41244.js"
   ]
 }

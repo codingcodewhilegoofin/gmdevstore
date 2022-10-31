@@ -76,6 +76,7 @@ function HeaderSection() {
   let cardWidthSupport;
   let homepageSVGWidth;
   let cardMargin;
+  let fontMobile;
 
   if (windowSize[0] < 600) {
     specialheader = <></>;
@@ -95,6 +96,7 @@ function HeaderSection() {
     linkTreeWidth = '100%';
     homepageSVGWidth = '100%';
     cardMargin = '10px';
+    fontMobile = 'medium';
   }
   else {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
@@ -112,6 +114,7 @@ function HeaderSection() {
     cardWidthSupport = '60%';
     homepageSVGWidth = '60%';
     cardMargin = '20px';
+    fontMobile = 'x-large';
 
     gmdevstorevar = <img src={gmdevstorelogo} width='50%' height='auto' style={{ padding: '5px' }} />
     gmdevwebsitelogovar = <img src={gmdevwebsitelogo} width='50%' height='auto' style={{ padding: '5px' }} />
@@ -153,7 +156,7 @@ function HeaderSection() {
         <div className="end-div5" style={{ background: 'linear-gradient(12deg, #101730ff, #1b2524ff, #243232ff, #2e5252ff, #242a36, #025b79ff, #19819fff)', boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: `${cardPadding}`, marginLeft: `${cardMargin}`, marginRight: `${cardMargin}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '0px', marginTop: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
-            <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: 'x-large' }}>
+            <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
               This is a personal portfolio react web app showcase my web development <br />skills and other computer science related <br />
               <button style={{ border: '1px solid white', borderRadius: '25px', backgroundColor: '#242a36' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='/#/projects'> <em>projects</em>
@@ -164,7 +167,7 @@ function HeaderSection() {
 
             {gmdevwebsitelogovar}
 
-            <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: 'x-large' }}>
+            <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
               Check out my api built with CloudFlare workers! <br />
               <button style={{ border: '1px solid white', borderRadius: '25px', backgroundColor: '#242a36' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevapi.com/'> <em> gmdevapi.com </em></a>
@@ -178,7 +181,7 @@ function HeaderSection() {
           </div>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '0px', marginRight: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
-            <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: 'x-large' }}>
+            <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
               Hire me! <br />
               <button style={{ border: '1px solid white', borderRadius: '25px', backgroundColor: '#242a36' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevstore.com/'> <em> gmdevstore.com </em></a>
@@ -187,7 +190,7 @@ function HeaderSection() {
 
             {gmdevstorevar}
 
-            <p style={{ color: '#AEBEBEff', margin: '20px', }}>
+            <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
               Check out our team site <br />
               <button style={{ border: '1px solid white', borderRadius: '25px', backgroundColor: '#242a36', width: '60%' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://fullstackingdevelopment.com/'> <em> fullstackingdevelopment.com </em></a>
@@ -201,7 +204,7 @@ function HeaderSection() {
 
         <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginLeft: `${cardMargin}`, marginRight: `${cardMargin}`, padding: '0px', marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '2px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
-            <h2 style={{ color: 'white', fontSize: 'x-large' }}>
+            <h2 style={{ color: 'white', fontSize: `${fontMobile}` }}>
               Need a webapp built for your brand or portfolio ? <br />
               <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://gmdevstore.com/'> <em> gmdevstore.com </em></a>
             </h2>
@@ -216,7 +219,7 @@ function HeaderSection() {
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '2px', marginBottom: '50px', marginRight: '0px', width: `${cardWidthSupport}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
 
-            <h2 style={{ color: 'white', fontSize: 'x-large' }}>
+            <h2 style={{ color: 'white', fontSize: `${fontMobile}` }}>
               Support me if you can  <br />
               <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://cash.app/$gmdevstore'> <em> Cashapp @$gmdevstore</em></a>
             </h2>
@@ -239,7 +242,7 @@ function HeaderSection() {
         <div style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 5px 20px 5px', backgroundColor: 'black', padding: '5px', }}>
           <div className='subheader9' style={{ marginTop: '30px' }} >
             <h1 style={{ color: '#AEBEBEff', fontWeight: '900', background: 'rgba(0, 0, 0, .8)', fontSize: 'x-large' }}>🥳 Project Spotlight </h1>
-            <p style={{ color: '#AEBEBEff', backgroundColor: "black", fontSize: 'x-large' }}>This is my favorite complete project at the moment!</p>
+
             <a style={{ color: 'white', fontSize: 'x-large' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
 
             <button style={{ border: '1px solid white', borderRadius: '25px', fontSize: 'x-large' }}>
@@ -327,9 +330,9 @@ function HeaderSection() {
         <div className='gio-container-4' style={{ border: '1px solid white', padding: '0px' }}>
           <div className='gio-container-2' style={{ border: '1px solid white', padding: '0px', margin: '0px' }}>
 
-            <h4 style={{ fontSize: 'x-large' }}> Site rating and statistics </h4>
+            <h4 style={{ fontSize: `${fontMobile}` }}> Site rating and statistics </h4>
 
-            <p style={{ fontSize: 'x-large' }}>
+            <p style={{ fontSize: `${fontMobile}` }}>
               <a
                 style={{
                   color: 'white',
@@ -366,7 +369,7 @@ function HeaderSection() {
           <img src={gtrating} width='35%' height='auto' style={{ margin: '10px' }} />
 
           <div className='gio-container-2' style={{ border: '1px solid white', padding: '5px', margin: '0px', fontSize: 'x-large' }}>
-            <p style={{ fontSize: 'x-large' }}>
+            <p style={{ fontSize: `${fontMobile}` }}>
               Some additional metrics of the site such as site structure:
             </p>
 
@@ -375,7 +378,7 @@ function HeaderSection() {
           <br />
 
           <div className='gio-container-2' style={{ border: '1px solid white', padding: '5px', margin: '5px', fontSize: 'x-large' }}>
-            <p style={{ fontSize: 'x-large' }}>
+            <p style={{ fontSize: `${fontMobile}` }}>
               <a
                 style={{
                   color: 'white',
@@ -422,7 +425,7 @@ function HeaderSection() {
                 backgroundColor: 'black',
                 margin: '10px',
                 borderRadius: '20px',
-                fontSize: 'x-large'
+                fontSize: `${fontMobile}`
               }}
             >
               AI genereated art, the theme for this site! I used the theme and colors from these images that are AI generated to design my site
@@ -487,18 +490,20 @@ function HeaderSection() {
         OPEN
       </button>
 
-      <div className='gio-container' style={{ background: 'transparent', flexDirection: 'row', padding: '2px', width: '100%', alignSelf: 'center', alignItems: 'center', border: 'none' }}>
+      <div className='gio-container' style={{ background: 'transparent', flexDirection: `${cardOrientation}`, padding: '2px', width: '100%', alignSelf: 'center', alignItems: 'center', border: 'none' }}>
 
-        <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', margin: '5px' }}>
+        <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginTop: '5px', }}>
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
               color: '#AEBEBEff',
-              backgroundColor: 'black',
-              fontWeight: '900'
+              background: 'rgba(0, 0, 0, 0.6)',
+              fontWeight: '900',
+              marginBottom: '5px'
             }}> My website technology pipeline / stack ? ✨ </h2>
 
             <ol style={{
-              color: 'white'
+              color: '#AEBEBEff',
+              background: 'rgba(0, 0, 0, 0.8)',
             }}>
               <li> Bash/Linux/Windows( CLI/OS )</li>
               <li> VScode</li>
@@ -511,8 +516,9 @@ function HeaderSection() {
               <li> Github </li>
             </ol>
             <h3 style={{
-              color: 'white',
-              fontWeight: '900'
+              color: '#AEBEBEff',
+              fontWeight: '900',
+              background: 'rgba(0, 0, 0, 0.9)',
             }}> Please consider collaborating
               <br /> or donating!
               <br></br>🔥
@@ -521,40 +527,32 @@ function HeaderSection() {
           </a>
         </div>
 
-        <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', width: '6%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
+        <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', width: '4%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
         </div>
 
-        <div className="end-div2" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', margin: '5px', padding: '10px' }}>
+        <div className="end-div2" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginTop: '15px', marginBottom: '100px', padding: '10px' }}>
           <a
 
             href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
           >
             <h2 style={{
-              color: '#AEBEBEff',
+              color: 'red',
               fontWeight: '900',
-              backgroundColor: 'black',
-              marginTop: '10px',
+              background: 'rgba(0, 0, 0, 0.7)'
             }}>
               Having trouble viewing my website ? 💔
             </h2>
-            <h4
-              style={{
-                fontSize: '20px',
-                backgroundColor: 'white',
-                marginTop: '10px',
-              }}
-            >
-              I tried to make my website <br /> desktop and mobile friendly as possible.
-            </h4>
+
             <h3
               style={{
                 color: '#AEBEBEff',
-                backgroundColor: '#101730ff',
+                background: 'rgba(0, 0, 0, 0.7)',
                 fontWeight: '900',
-                marginBottom: '10px',
+
               }}>
               Major Update! : New card format
               <br />
+              If you find any mobile or platform specific issues, please let me know
               <br />
               <a href="https://www.buymeacoffee.com/giomoscato101">
                 <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=243232ff&font_colour=ffffff&font_family=Poppins&outline_colour=243232ff&coffee_colour=243232ff" />
@@ -563,6 +561,8 @@ function HeaderSection() {
           </a>
         </div>
       </div>
+
+      <h1>👻 🎃</h1>
 
     </div>
   );

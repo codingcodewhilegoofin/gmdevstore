@@ -85,7 +85,7 @@ function OldSite() {
   }
 
   const [showMenu, setshowMenu] = useState(false);
-  
+
 
   //Send to DOM 
   return (
@@ -111,10 +111,30 @@ function OldSite() {
 
             {!showMenu ?
               <>
-                < div style={{ animation: 'wiggle 2s ease-in-out infinite' }}>
+                <div style={{  paddingLeft: '95%', fontSize: 'xx-large', }}>🕸️</div>
+
+                {/*   < div style={{ animation: 'wiggle 2s ease-in-out infinite' }}>
                   👉
+                </div> */}
+
+                <div style={{ animation: 'ghost 10s ease-in-out infinite' }}> 👻</div>
+
+
+                <div style={{ display: 'inline-block' }}>
+                  <h2 style={{ color: 'white' }}>
+                    Cust
+                    <div style={{ animation: 'pulse 3s ease-in-out infinite', display: 'inline' }}>
+                      ☠️
+                    </div>
+                    m
+                  </h2>
+                  <h2 style={{ color: 'orange' }}>
+                    <div style={{ animation: 'pumkin 3s ease-in-out infinite', display: 'inline' }}>🎃</div>
+                    {' '} Menu
+                  </h2>
                 </div>
-                😘 Custom Menu
+
+
               </>
               :
 

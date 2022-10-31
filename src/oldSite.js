@@ -140,7 +140,7 @@ function OldSite() {
               </>
               :
 
-              <div style={{ animation: 'pulse 3s ease-in-out infinite' }}>
+              <div style={{ /* animation: 'ghost 3s ease-in-out infinite' */color: 'orange' }}>
                 ☰
               </div>
             }
@@ -159,7 +159,7 @@ function OldSite() {
                   textAlign: 'center',
                   alignItems: 'center',
                   border: '1px solid white',
-                  animation: 'pulse2 3s ease-in-out infinite',
+                  animation: 'pulseHaloween 3s ease-in-out infinite',
                 }}
               >
                 <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >

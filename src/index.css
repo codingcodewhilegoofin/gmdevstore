@@ -730,6 +730,31 @@ h6 {
   }
 }
 
+@keyframes pulseHaloween {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(230, 126, 34, 1);
+    border-radius: 50px;
+    border-radius: 5px;
+    
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(230, 126, 34, 0);
+    border-radius: 50px;
+    
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(230, 126, 34, 0);
+    border-radius: 50px;
+    border-radius: 5px;
+    border: 1px solid orange;
+  }
+}
+
 @keyframes pumkin {
   0% {
     transform: scale(3);

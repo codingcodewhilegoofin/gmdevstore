@@ -13,6 +13,7 @@ import GioLogo from '../../icons/GioLogo123.PNG';
 import gmdevstorelogo from '../../icons/gmdevstorelogo.jpg';
 import gmdevwebsitelogo from '../../icons/gmdevwebsitelogo.jpg';
 import gmdevapilogo from '../../icons/gmdevapilogo.jpg';
+import haloweenlogo from '../../icons/Haloween.png';
 import CashappQR from '../../icons/cashappqr.png'
 import FSDlogo from '../../icons/FSDlogo.png';
 import Info from '../../icons/info1.png';
@@ -65,6 +66,7 @@ function HeaderSection() {
   let gmdevstorevar;
   let gmdevapivar;
   let gmdevwebsitelogovar;
+  let haloweenlogovar;
   let qrwidth;
   let youtubesub;
   let urlToggle = false;
@@ -86,6 +88,7 @@ function HeaderSection() {
     gmdevstorevar = <></>;
     gmdevapivar = <></>;
     gmdevwebsitelogovar = <></>;
+    haloweenlogovar = <></>;
     youtubesub = <></>;
     let infoWidth = '100%'
     qrwidth = '100%'
@@ -118,13 +121,14 @@ function HeaderSection() {
 
     gmdevstorevar = <img src={gmdevstorelogo} width='50%' height='auto' style={{ padding: '5px' }} />
     gmdevwebsitelogovar = <img src={gmdevwebsitelogo} width='50%' height='auto' style={{ padding: '5px' }} />
+    haloweenlogovar = <img src={haloweenlogo} width='50%' height='auto' style={{ padding: '5px' }} />;
     gmdevapivar = <img src={gmdevapilogo} width='50%' height='auto' style={{ padding: '5px' }} />
   }
 
   return (
     <div>
 
-      <h2 style={{ color: 'white', fontSize: 'x-large' }}>Gio Moscato.com</h2>
+      <h2 style={{ color: 'white', fontSize: 'x-large' }}>🕯️🌕Gio Moscato.com 😈</h2>
 
       <div style={{
         backgroundColor: 'transparent',
@@ -165,7 +169,7 @@ function HeaderSection() {
 
             </p>
 
-            {gmdevwebsitelogovar}
+            {haloweenlogovar}
 
             <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
               Check out my api built with CloudFlare workers! <br />
@@ -562,7 +566,7 @@ function HeaderSection() {
         </div>
       </div>
 
-      <h1 style={{ color: 'white'}}>👻 Happy Haloween 🎃</h1>
+      <h1 style={{ color: 'white'}}>👻 Happy Halloween 🎃</h1>
 
     </div>
   );

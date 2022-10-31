@@ -232,6 +232,13 @@ function OldSite() {
                         <NavItem icon={<DownloadSymbol />} />
                       </div>
                     </Link>
+
+                    <a style={{ fontSize: `${iconSize}` }} className="nav-item" href="http://www.staggeringbeauty.com/">
+                      <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
+                        <p style={{ color: 'red', fontSize: `${fontSize}` }}> ?</p>
+                        <NavItem href="http://www.staggeringbeauty.com/" icon={<> 😈</>} />
+                      </div>
+                    </a>
                   </div>
                 }
 

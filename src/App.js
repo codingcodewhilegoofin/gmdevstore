@@ -17,6 +17,7 @@ import BoxIcon from '../src/icons/3Dicon.svg';
 import SplineIcon from '../src/icons/Splinelogo.png';
 import Coinlib from '../src/icons/CStracklogo/Coiblib.PNG';
 
+
 function App() {
 
   //console.log(window.location.href);
@@ -70,6 +71,7 @@ function App() {
 
   let theme = false;
 
+
   return (
 
     <div className={modalbg} style={{ /* backgroundColor: "#1C2222" */ backgroundColor: "black", textAlign: 'center', padding: '1px' }}>
@@ -82,9 +84,9 @@ function App() {
 
       <div id="modalsection" class="modal">
         <div class="modal-content">
-          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign: 'center', width: '33%', }}>Close❌</button>
-          <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}>Gio Moscato.com</h2>
-          <h1 className="modalTitle" style={{ textAlign: 'left' }}>Menu </h1>
+          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign: 'center', width: '33%', }}>! 🕷️ !</button>
+          <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}>ScaryMoscato.com</h2>
+          <h1 className="modalTitle" style={{ textAlign: 'left', color: 'red' }}>Spooky🧛Menu </h1>
 
           <div className="modalBox" style={{ textAlign: 'left' }}>
             <ul>

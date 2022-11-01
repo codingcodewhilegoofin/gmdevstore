@@ -16,9 +16,7 @@ import Spootify from '../src/icons/spootify.png';
 import BoxIcon from '../src/icons/3Dicon.svg';
 import SplineIcon from '../src/icons/Splinelogo.png';
 import Coinlib from '../src/icons/CStracklogo/Coiblib.PNG';
-import SpookyMusic1 from './audio/halloween-spooky-trap-121797.mp3';
-import SpookyMusic2 from './audio/that-halloween-story-20692.mp3';
-import SpookyMusic3 from './audio/the-spell-dark-magic-background-music-ob-lix-8009.mp3';
+
 
 
 function App() {
@@ -74,7 +72,7 @@ function App() {
 
   let theme = false;
 
-  let songChoice;
+  /* let songChoice;
 
   if( Math.floor(Math.random() * 100) > 66 ){
     songChoice = SpookyMusic1;
@@ -84,16 +82,16 @@ function App() {
   }
   else{
     songChoice = SpookyMusic3;
-  }
+  } */
 
 
   return (
 
-    <div className={modalbg} style={{ /* backgroundColor: "#1C2222" */ backgroundColor: "black", textAlign: 'center', padding: '1px' }}>
+    <div className={modalbg} style={{ /* backgroundColor: "#1C2222" */ backgroundColor: "#9b673c", textAlign: 'center', padding: '1px' }}>
 
-      <h3 style={{ color: 'white' }}>⚰️🩸🔮 Spooky Time !  🍫🩸</h3>
+      <h3 style={{ color: 'white' }}>🍂 GobbleGobble !  🦃</h3>
 
-      <audio 
+      {/*      <audio 
         src={songChoice}
         type="audio/ogg"
         controls="true"
@@ -108,7 +106,7 @@ function App() {
           margin: "20px",
           borderRadius: "50px"
         }}
-      />
+      /> */}
 
       <div className="end-div5" style={{ padding: '5px', width: '100%', flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
         <button onClick={modalHandle} class={modalToggle}>☰</button>
@@ -116,9 +114,9 @@ function App() {
 
       <div id="modalsection" class="modal">
         <div class="modal-content">
-          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign: 'center', width: '33%', }}>! 🕷️ !</button>
-          <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}>ScaryMoscato.com</h2>
-          <h1 className="modalTitle" style={{ textAlign: 'left', color: 'red' }}>Spooky🧛Menu </h1>
+          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign: 'center', width: '33%', }}> 🤑 </button>
+          <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}>ShopTillYouDrop.com</h2>
+          <h1 className="modalTitle" style={{ textAlign: 'left', color: 'white' }}>BlackFriday🛍️Menu </h1>
 
           <div className="modalBox" style={{ textAlign: 'left' }}>
             <ul>

@@ -49,7 +49,7 @@ function HeaderSection() {
       setWindowSize([window.innerWidth, window.innerHeight]);
     }
 
-    updateSize();
+   
 
     window.addEventListener('resize', updateSize);
     //console.log(windowSize[0]);
@@ -128,7 +128,7 @@ function HeaderSection() {
   return (
     <div>
 
-      <h2 style={{ color: 'white', fontSize: 'x-large' }}>🕯️🌕Gio Moscato.com 😈</h2>
+      <h2 style={{ color: 'white', fontSize: 'x-large' }}>🙏Gio Moscato.com 🍁</h2>
 
       <div style={{
         backgroundColor: 'transparent',
@@ -169,7 +169,7 @@ function HeaderSection() {
 
             </p>
 
-            {haloweenlogovar}
+            {gmdevwebsitelogovar}
 
             <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
               Check out my api built with CloudFlare workers! <br />
@@ -566,7 +566,7 @@ function HeaderSection() {
         </div>
       </div>
 
-      <h3 style={{ color: 'white'}}>👻 Happy Halloween 🎃</h3>
+      <h3 style={{ color: 'white'}}>Enjoy the Turkey 🤤</h3>
 
     </div>
   );

@@ -44,7 +44,7 @@ function OldSite() {
       setWindowSize([window.innerWidth, window.innerHeight]);
     }
 
-    updateSize();
+   
 
     window.addEventListener('resize', updateSize);
     //console.log(windowSize[0]);
@@ -93,7 +93,7 @@ function OldSite() {
     <HashRouter basename='/'> {/*Hash routing  */}
 
       {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */}
-      <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor:'black' }}>
+      <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor:'#9b673c' }}>
 
         <Giobot />
 
@@ -102,36 +102,35 @@ function OldSite() {
             style={{
               color: '#19819fff',
               /* backgroundColor: '#1b2524ff', */
-              backgroundColor: 'black',
+              backgroundColor: '#A91622',
               cursor: 'pointer',
               textTransform: 'uppercase',
               fontSize: 'x-large',
               /* border: '1px solid #19819fff', */
-              border: '2px dashed purple', 
+              border: '2px dashed white', 
               borderRadius: '10px',
             }}>
 
             {!showMenu ?
               <>
-                <div style={{  paddingLeft: '95%', fontSize: 'xx-large', }}>🕸️</div>
+                <div style={{ animation: 'leaf 10s ease-in-out infinite' , paddingLeft: '95%', fontSize: 'xx-large', }}>🍂</div>
 
                 {/*   < div style={{ animation: 'wiggle 2s ease-in-out infinite' }}>
                   👉
                 </div> */}
 
-                <div style={{ animation: 'ghost 10s ease-in-out infinite' }}> 👻</div>
-
-
+                <div style={{ animation: 'turkey 10s ease-in-out ' }}> 🦃</div>
+               
                 <div style={{ display: 'inline-block' }}>
-                  <h2 style={{ color: 'white' }}>
+                  <h2 style={{ color: 'white', fontWeight: 'bold' }}>
                     Cust
-                    <div style={{ animation: 'pulse 3s ease-in-out infinite', display: 'inline' }}>
-                      ☠️
+                    <div style={{ animation: 'coffeePulse 3s ease-in-out infinite', display: 'inline' }}>
+                    ☕
                     </div>
                     m
                   </h2>
-                  <h2 style={{ color: 'orange' }}>
-                    <div style={{ animation: 'pumkin 3s ease-in-out infinite', display: 'inline' }}>🎃</div>
+                  <h2 style={{ color: 'black', fontWeight: 'bold' }}>
+                    <div style={{ animation: 'football 3s ease-in-out infinite', display: 'inline' }}>🏈</div>
                     {' '} Menu
                   </h2>
                 </div>
@@ -140,7 +139,7 @@ function OldSite() {
               </>
               :
 
-              <div style={{ /* animation: 'ghost 3s ease-in-out infinite' */color: 'orange' }}>
+              <div style={{ /* animation: 'ghost 3s ease-in-out infinite' */color: '#ffba08' }}>
                 ☰
               </div>
             }
@@ -158,8 +157,8 @@ function OldSite() {
                   flexDirection: 'row',
                   textAlign: 'center',
                   alignItems: 'center',
-                  border: '1px solid white',
-                  animation: 'pulseHaloween 3s ease-in-out infinite',
+                  border: '1px solid #472d30',
+                  animation: 'pulseThanksgiving 3s ease-in-out infinite',
                 }}
               >
                 <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
@@ -235,8 +234,8 @@ function OldSite() {
 
                     <a style={{ fontSize: `${iconSize}` }} className="nav-item" href="http://www.staggeringbeauty.com/">
                       <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                        <p style={{ color: 'red', fontSize: `${fontSize}` }}> ?</p>
-                        <NavItem href="http://www.staggeringbeauty.com/" icon={<> 😈</>} />
+                        <p style={{ color: 'black', fontSize: `${fontSize}` }}> ?</p>
+                        <NavItem href="https://www.amazon.com/blackfriday" icon={<> 🏴</>} />
                       </div>
                     </a>
                   </div>

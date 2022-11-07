@@ -58,30 +58,35 @@ function OldSite() {
   let fontSize;
   let iconSize;
   let showDownloadRes;
+  let leafAnimation;
 
   if (windowSize[0] < 500) {
     mobileNav = 'column';
     fontSize = 'small';
     iconSize = 'small';
     showDownloadRes = false;
+    leafAnimation = '';
   }
   else if (windowSize[0] < 600) {
     mobileNav = 'column';
     fontSize = 'medium';
     iconSize = 'medium';
     showDownloadRes = false;
+    leafAnimation = '';
   }
   else if (windowSize[0] < 800) {
     mobileNav = 'row';
     fontSize = 'large';
     iconSize = 'x-large';
     showDownloadRes = true;
+    leafAnimation = '';
   }
   else {
     mobileNav = 'row';
     fontSize = 'x-large';
     iconSize = 'xx-large';
     showDownloadRes = true;
+    leafAnimation = 'leaf 10s ease-in-out infinite';
   }
 
   const [showMenu, setshowMenu] = useState(false);
@@ -113,7 +118,7 @@ function OldSite() {
 
             {!showMenu ?
               <>
-                <div style={{ animation: 'leaf 10s ease-in-out infinite' , paddingLeft: '95%', fontSize: 'xx-large', }}>🍂</div>
+                <div style={{ animation: `${leafAnimation}` , paddingLeft: '95%', fontSize: 'xx-large', }}>🍂</div>
 
                 {/*   < div style={{ animation: 'wiggle 2s ease-in-out infinite' }}>
                   👉

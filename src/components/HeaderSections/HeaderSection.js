@@ -49,8 +49,6 @@ function HeaderSection() {
       setWindowSize([window.innerWidth, window.innerHeight]);
     }
 
-   
-
     window.addEventListener('resize', updateSize);
     //console.log(windowSize[0]);
 
@@ -79,6 +77,7 @@ function HeaderSection() {
   let homepageSVGWidth;
   let cardMargin;
   let fontMobile;
+  let artSectionWidth;
 
   if (windowSize[0] < 600) {
     specialheader = <></>;
@@ -100,6 +99,7 @@ function HeaderSection() {
     homepageSVGWidth = '100%';
     cardMargin = '10px';
     fontMobile = 'medium';
+    artSectionWidth = '100%';
   }
   else {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
@@ -118,6 +118,7 @@ function HeaderSection() {
     homepageSVGWidth = '60%';
     cardMargin = '20px';
     fontMobile = 'x-large';
+    artSectionWidth = '80%';
 
     gmdevstorevar = <img src={gmdevstorelogo} width='50%' height='auto' style={{ padding: '5px' }} />
     gmdevwebsitelogovar = <img src={gmdevwebsitelogo} width='50%' height='auto' style={{ padding: '5px' }} />
@@ -421,7 +422,7 @@ function HeaderSection() {
         </div>
 
         <div className='gio-container' style={{ background: 'transparent', flexDirection: 'column', padding: '0px', width: '100%', alignSelf: 'center', alignItems: 'center', border: 'none' }}>
-          <div className='gio-container-2' style={{ padding: '0px', marginBottom: '30px', width: `${cardWidthSupport}` }}>
+          <div className='gio-container-2' style={{ padding: '0px', marginBottom: '30px', width: `${artSectionWidth}` }}>
             <h3
               style={{
                 color: 'white',

@@ -43,6 +43,23 @@ function HeaderProjects() {
   const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
   const [data, setData] = useState([]);
   const [currentStatus, setStatus] = useState(false);
+
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+
+    function updateSize() {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    }
+
+    window.addEventListener('resize', updateSize);
+    //console.log(windowSize[0]);
+
+    return () => {
+      window.removeEventListener('resize', updateSize);
+    }
+  }, [windowSize])
+
   let specialheader;
   let specialheader2;
   let specialheader3;
@@ -52,12 +69,19 @@ function HeaderProjects() {
   let Toggle;
   let urlToggle = false;
 
-  if (window.innerWidth < 600) {
+
+  if (windowSize[0] < 500) {
     specialheader = <></>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     specialheader3 = <iframe src="https://gmapps-api-v1.gmdev.workers.dev/" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     logoSection = <></>;
     youtubesub = <></>;
+  }
+  else if (windowSize[0] < 600) {
+
+  }
+  else if (windowSize[0] < 800) {
+
   }
   else {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;

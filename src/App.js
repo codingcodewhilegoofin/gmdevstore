@@ -35,6 +35,7 @@ function App() {
     if (x.style.display === "none") {
       setModalToggle("modalbtnspecial");
       setModalbg("modalOn");
+      window.scrollTo(0, 0);
       x.style.display = "block";
       setModal(!modal);
     }
@@ -44,7 +45,6 @@ function App() {
       setModalbg("modalOff");
     }
 
-    window.scrollTo(0, 0);
   }
 
   const specialHanlde = () => {
@@ -115,8 +115,8 @@ function App() {
       <div id="modalsection" class="modal">
         <div class="modal-content">
           <button onClick={modalHandle} class="modalbtninner" style={{ textAlign: 'center', width: '33%', }}> 🤑 </button>
-          <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}>ShopTillYouDrop.com</h2>
-          <h1 className="modalTitle" style={{ textAlign: 'left', color: 'white' }}>BlackFriday🛍️Menu </h1>
+          <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}> ❤️Thnxgivin</h2>
+          <h1 className="modalTitle" style={{ textAlign: 'left', color: 'white' }}>🛍️Menu </h1>
 
           <div className="modalBox" style={{ textAlign: 'left' }}>
             <ul>

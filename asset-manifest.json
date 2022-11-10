@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.82df5d8b.css",
-    "main.js": "/static/js/main.26f53497.js",
+    "main.js": "/static/js/main.e7ea4fe7.js",
     "static/js/457.15462f82.chunk.js": "/static/js/457.15462f82.chunk.js",
     "static/js/701.9e956264.chunk.js": "/static/js/701.9e956264.chunk.js",
     "static/js/377.2343714a.chunk.js": "/static/js/377.2343714a.chunk.js",
@@ -33,8 +33,12 @@
     "static/media/gtadditional.png": "/static/media/gtadditional.ce6be2f3b41bcd0b93d9.png",
     "static/media/mash.PNG": "/static/media/mash.f7a0c0692de005aab9c0.PNG",
     "static/media/safteycheck.png": "/static/media/safteycheck.e0bfd92a3d597c108bea.png",
+    "static/media/devicon2.png": "/static/media/devicon2.f9d169e80e84e333a6d1.png",
+    "static/media/devicon3.png": "/static/media/devicon3.b93118fdef59ab2b4a64.png",
+    "static/media/devicon4.png": "/static/media/devicon4.548810bebe5d78e705dc.png",
     "static/media/instagram.svg": "/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/favicon.ico": "/static/media/favicon.6f4b871dd0f8d85a2c8b.ico",
+    "static/media/devicon1.png": "/static/media/devicon1.924aefcd21dab990e435.png",
     "static/media/govapi.png": "/static/media/govapi.5f107dca1528f49773c3.png",
     "static/media/Bitcoin.svg": "/static/media/Bitcoin.02dcffc41c5ddce5517738167a8e8f4e.svg",
     "index.html": "/index.html",
@@ -46,7 +50,7 @@
     "static/media/3Dicon.svg": "/static/media/3Dicon.c3b0b390f7376d896a181894a13885b3.svg",
     "static/media/download.svg": "/static/media/download.813dbc20743248471dbfd70d54caa81d.svg",
     "main.82df5d8b.css.map": "/static/css/main.82df5d8b.css.map",
-    "main.26f53497.js.map": "/static/js/main.26f53497.js.map",
+    "main.e7ea4fe7.js.map": "/static/js/main.e7ea4fe7.js.map",
     "457.15462f82.chunk.js.map": "/static/js/457.15462f82.chunk.js.map",
     "701.9e956264.chunk.js.map": "/static/js/701.9e956264.chunk.js.map",
     "377.2343714a.chunk.js.map": "/static/js/377.2343714a.chunk.js.map",
@@ -55,6 +59,6 @@
   },
   "entrypoints": [
     "static/css/main.82df5d8b.css",
-    "static/js/main.26f53497.js"
+    "static/js/main.e7ea4fe7.js"
   ]
 }

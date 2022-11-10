@@ -180,7 +180,7 @@ function HeaderSection() {
 
       <div id="mainBody" className='gio-main'>
 
-        <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '30px', width: `${homepageSVGWidth}`, marginTop: '5px' }} />
+      {/*   <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '30px', width: `${homepageSVGWidth}`, marginTop: '5px' }} /> */}
 
         <div className='gio-container' style={{ marginTop: '50px', background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
           <ul style={{ background: 'black', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>

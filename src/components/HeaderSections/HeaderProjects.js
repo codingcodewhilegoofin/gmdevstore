@@ -73,6 +73,8 @@ function HeaderProjects() {
   let FontSizeLarge;
   let FontSizeMedium;
   let FlexDirectionFooter;
+  let FooterSize;
+  let FooterSpacer;
 
 
   if (windowSize[0] < 500) {
@@ -86,6 +88,8 @@ function HeaderProjects() {
     FontSizeLarge = '60px';
     FontSizeMedium = 'medium';
     FlexDirectionFooter = 'column';
+    FooterSize = '100%';
+    FooterSpacer = '0%';
   }
   else if (windowSize[0] < 600) {
     ProjectsBanner = '90%';
@@ -93,6 +97,8 @@ function HeaderProjects() {
     FontSizeLarge = '80px';
     FontSizeMedium = 'large';
     FlexDirectionFooter = 'column';
+    FooterSize = '100%';
+    FooterSpacer = '0%';
   }
   else if (windowSize[0] < 800) {
     ProjectsBanner = '90%';
@@ -100,12 +106,16 @@ function HeaderProjects() {
     FontSizeLarge = '50px';
     FontSizeMedium = 'large';
     FlexDirectionFooter = 'column';
+    FooterSize = '45%';
+    FooterSpacer = '10%';
   }
   else {
     ProjectsBanner = '80%';
     CardMarginTop = '50px';
     FontSizeLarge = '100px';
     FontSizeMedium = 'x-large';
+    FooterSize = '45%';
+    FooterSpacer = '10%';
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="10px" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     specialheader3 = <iframe src="https://gmdevapi.com" padding="10px" width='100%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
@@ -197,8 +207,8 @@ function HeaderProjects() {
           <a style={{ color: 'white', cursor: 'pointer' }} href='https://giphy.com/ericaofanderson'>Gifs by : Erica Anderson</a>
         </div>
 
-        <div className='gio-container' style={{ paddingBottom:'25px',boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px',background: 'transparent', flexDirection: 'column', width: `${ProjectsBanner}`, alignSelf: 'center', alignItems: 'center', border: 'none', paddingTop: '5px' }}>
-          <div className="projectHeader" style={{ boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: `${CardMarginTop}`, width: `${ProjectsBanner}` }}>
+        <div className='gio-container' style={{ paddingBottom: '25px', boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', background: 'transparent', flexDirection: 'column', width: `${ProjectsBanner}`, alignSelf: 'center', alignItems: 'center', border: 'none', paddingTop: '5px' }}>
+          <div className="projectHeader" style={{ boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: `${CardMarginTop}`, width: `${ProjectsBanner}`, background:'white',  }}>
 
             <h1
               style={{
@@ -207,7 +217,7 @@ function HeaderProjects() {
                 marginTop: "5px",
                 border: "2px solid #242a36 ",
                 borderRadius: "5px",
-                fontSize: '15px',
+                fontSize: `${FontSizeMedium}`,
                 fontWeight: '900',
                 margin: '5px',
                 width: `${ProjectsBanner}`
@@ -227,31 +237,31 @@ function HeaderProjects() {
               <>
                 <ol style={{ backgroundColor: "#025B79ff", fontWeight: '900', border: '3px solid black', borderRadius: "10px", }}>
                   <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>Web dev / fullstack based projects</li>
-                  <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid black', margin: '10px' }}>
+                  <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
                     <label></label>
-                    <li style={{ color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>giomoscato.com<br /> <a style={{ color: 'white' }}>(React web app)</a></li>
+                    <li style={{ color: '#19819Fff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>giomoscato.com<br /> <a style={{ color: 'white' }}>(React web app)</a></li>
                     <label></label>
-                    <li style={{ color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>fullstackingdevelopment.com<br /> <a style={{ color: 'white' }}>(React web app)</a></li>
+                    <li style={{ color: '#19819Fff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>fullstackingdevelopment.com<br /> <a style={{ color: 'white' }}>(React web app)</a></li>
                     <label></label>
-                    <li style={{ color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>gmdevapi.com<br /> <a style={{ color: 'white' }}>(CloudFlare Worker API JS)</a></li>
+                    <li style={{ color: '#19819Fff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>gmdevapi.com<br /> <a style={{ color: 'white' }}>(CloudFlare Worker API JS)</a></li>
                     <label></label>
 
                   </ul>
 
-                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '5px solid white', margin: '5px' }}>API integrated projects</li>
+                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>API integrated projects</li>
                   <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
                     <label></label>
-                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>Spotify API<br /> <p style={{ color: 'white' }}>(called from gmdevapi.com)</p><br /><a href="/#/Spotify" style={{ color: '#19819Fff' }}>/Spotify</a></li>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#19819Fff', fontWeight: '700', border: '2px solid #19819Fff' }}>Spotify API<br /> <p style={{ color: 'white' }}>(called from gmdevapi.com)</p><br /><a href="/#/Spotify" style={{ color: '#19819Fff' }}>/Spotify</a></li>
                     <label></label>
-                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Open AI API<br /> <p style={{ color: 'white' }}>(called from gmdevapi.com)</p><br /><p style={{ color: 'white' }}>Used for the AI Gio-Chatbot</p><br /><p style={{ color: '#19819Fff' }}>Check the top of this website</p></li>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#19819Fff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Open AI API<br /> <p style={{ color: 'white' }}>(called from gmdevapi.com)</p><br /><p style={{ color: 'white' }}>Used for the AI Gio-Chatbot</p><br /><p style={{ color: '#19819Fff' }}>Check the top of this website</p></li>
                     <label></label>
-                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Financial API's<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><br /><p style={{ color: 'white' }}>Used to display financial data</p><br /><a href="/#/cstrack" style={{ color: '#19819Fff' }}>/cstrack</a></li>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#19819Fff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Financial API's<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><br /><p style={{ color: 'white' }}>Used to display financial data</p><br /><a href="/#/cstrack" style={{ color: '#19819Fff' }}>/cstrack</a></li>
                     <label></label>
-                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Arduino Cloud IOT API<br /> <p style={{ color: 'white' }}>(called from gmdevapi.com)</p><br /><a style={{ color: 'white' }}>Used in 3D render of Arduino Project</a><br /><a href="/#/dependency+" style={{ color: '#19819Fff' }}>/dependency+</a></li>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#19819Fff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Arduino Cloud IOT API<br /> <p style={{ color: 'white' }}>(called from gmdevapi.com)</p><br /><a style={{ color: 'white' }}>Used in 3D render of Arduino Project</a><br /><a href="/#/dependency+" style={{ color: '#19819Fff' }}>/dependency+</a></li>
                     <label></label>
-                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Polygon.io API<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><br /><p style={{ color: 'white' }}>Displays financial information</p><br /><a href="/#/cstrack+" style={{ color: '#19819Fff' }}>/cstrack</a></li>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#19819Fff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>Polygon.io API<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><br /><p style={{ color: 'white' }}>Displays financial information</p><br /><a href="/#/cstrack+" style={{ color: '#19819Fff' }}>/cstrack</a></li>
                     <label></label>
-                    <li style={{ margin: '2px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>SW API<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><p style={{ color: 'white' }}>Used for table</p></li>
+                    <li style={{ margin: '2px', borderRadius: "20px", color: '#19819Fff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff' }}>SW API<br /> <p style={{ color: 'white' }}>(called from giomoscato.com)</p><p style={{ color: 'white' }}>Used for table</p></li>
                     <label></label>
 
                   </ul>
@@ -259,26 +269,26 @@ function HeaderProjects() {
                   <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>3D based projects</li>
                   <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
                     <label></label>
-                    <li style={{ color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>3D version of giomoscato.com<br /> <a style={{ color: 'white' }}>(Uses ThreeJS and R3F)</a></li>
+                    <li style={{ color: '#19819Fff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>3D version of giomoscato.com<br /> <a style={{ color: 'white' }}>(Uses ThreeJS and R3F)</a></li>
                     <label></label>
-                    <li style={{ color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>3D Introduction Scene & Menu<br /> <a style={{ color: 'white' }}>(Uses SplineJS)</a></li>
+                    <li style={{ color: '#19819Fff', fontWeight: '700', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>3D Introduction Scene & Menu<br /> <a style={{ color: 'white' }}>(Uses SplineJS)</a></li>
                     <label></label>
 
                   </ul>
 
-                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '5px solid white', margin: '5px' }}>Data structure & Algorithm based projects</li>
+                  <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>Data structure & Algorithm based projects</li>
                   <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
                     <label></label>
-                    <li style={{ padding: '5px', margin: '5px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>C++ Compiler for IEEE 754 float converter<br /> <p style={{ color: 'white' }}>(Written in C++)</p></li>
+                    <li style={{ padding: '5px', margin: '5px', borderRadius: "20px", color: '#19819Fff', fontWeight: '700', border: '2px solid #19819Fff' }}>C++ Compiler for IEEE 754 float converter<br /> <p style={{ color: 'white' }}>(Written in C++)</p></li>
                     <label></label>
-                    <li style={{ margin: '5px', borderRadius: "20px", color: '#EE0527ff', fontWeight: '700', border: '2px solid #19819Fff' }}>DSA showcase<br /><p style={{ color: 'white' }}>(Written in pure JS & JSX)</p></li>
+                    <li style={{ margin: '5px', borderRadius: "20px", color: '#19819Fff', fontWeight: '700', border: '2px solid #19819Fff' }}>DSA showcase<br /><p style={{ color: 'white' }}>(Written in pure JS & JSX)</p></li>
                     <label></label>
                   </ul>
 
                   <li style={{ borderRadius: "10px", backgroundColor: "white", fontWeight: '900', border: '2px solid black', margin: '5px' }}>Video Games</li>
                   <ul style={{ borderRadius: "10px", backgroundColor: "black", fontWeight: '900', border: '2px solid #19819Fff', margin: '10px' }}>
                     <label></label>
-                    <li style={{ color: '#EE0527ff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>Pink Balls<br /> <a style={{ color: 'white' }}>(Used Unity, written in C#)</a></li>
+                    <li style={{ color: '#19819Fff', fontWeight: '700', fontWeight: '900', border: '2px solid #19819Fff', margin: '5px', borderRadius: "20px", }}>Pink Balls<br /> <a style={{ color: 'white' }}>(Used Unity, written in C#)</a></li>
                     <label></label>
 
                   </ul>
@@ -398,7 +408,7 @@ function HeaderProjects() {
         <div className='spacer'>
         </div>
 
-        <div className='gio-container' style={{ paddingBottom:'25px',boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', background: 'transparent', flexDirection: 'column', width: `${ProjectsBanner}`, alignSelf: 'center', alignItems: 'center', border: 'none', paddingTop: '5px' }}>
+        <div className='gio-container' style={{ paddingBottom: '25px', boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', background: 'transparent', flexDirection: 'column', width: `${ProjectsBanner}`, alignSelf: 'center', alignItems: 'center', border: 'none', paddingTop: '5px' }}>
           <div className="projectFooter" style={{ boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '100px', width: `${ProjectsBanner}`, }}>
 
             <h1
@@ -408,7 +418,7 @@ function HeaderProjects() {
                 marginTop: "5px",
                 border: "2px solid #242a36 ",
                 borderRadius: "5px",
-                fontSize: '15px',
+                fontSize: `${FontSizeMedium}`,
                 fontWeight: '900',
                 margin: '5px',
                 width: `${ProjectsBanner}`
@@ -538,22 +548,22 @@ function HeaderProjects() {
                 <div style={{ paddingBottom: '10px', paddingLeft: '5px', paddingRight: '5px', paddingTop: '10px' }}>
 
                   <Link to="/cstrack">
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                    <div className='gio-main' style={{ width: '50%',border: 'none', backgroundColor: 'black',  borderRadius: '55px' }}>
-                      <Bitcoinsymb style={{ backgroundColor: '#AEBEBEff', border: '1px solid black', borderRadius: '50px' }} />
-                    </div>
-                   
-                    <div style={{ paddingTop: '10px', width: '50%'}}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                      <div className='gio-main' style={{ width: '50%', border: 'none', backgroundColor: 'black', borderRadius: '55px' }}>
+                        <Bitcoinsymb style={{ backgroundColor: '#AEBEBEff', border: '1px solid black', borderRadius: '50px' }} />
+                      </div>
 
-                      <h2 style={{
-                        color: '#AEBEBEff',
-                        fontSize: `${FontSizeMedium}`,
-                        backgroundColor: '#242a36',
-                        fontWeight: '900',
-                        paddingTop: '5px'
+                      <div style={{ paddingTop: '10px', width: '50%' }}>
 
-                      }}> Click here ! </h2>
-                    </div>
+                        <h2 style={{
+                          color: '#AEBEBEff',
+                          fontSize: `${FontSizeMedium}`,
+                          backgroundColor: '#242a36',
+                          fontWeight: '900',
+                          paddingTop: '5px'
+
+                        }}> Click here ! </h2>
+                      </div>
                     </div>
                   </Link>
                 </div>
@@ -573,7 +583,7 @@ function HeaderProjects() {
                 </h1>
 
 
-                <div className="gio-container" style={{  }}>
+                <div className="gio-container" style={{}}>
                   <div className='gio-container-2'>
                     <h2 style={{
                       color: '#AEBEBEff',
@@ -582,7 +592,7 @@ function HeaderProjects() {
                       padding: '10px',
 
                     }}>API Switch</h2>
-                    <h2 style={{ color: 'white',fontSize: `${FontSizeMedium}`, }} >Endpoint request using vanilla JS displayed in custom table</h2>
+                    <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }} >Endpoint request using vanilla JS displayed in custom table</h2>
                     <p style={{ backgroundColor: '#243232ff' }}>You can switch between endpoints using this button!</p>
                     <p style={{ backgroundColor: '#243232ff' }}><em>It may take some time to load between button presses</em></p>
                     <button
@@ -602,7 +612,7 @@ function HeaderProjects() {
                     backgroundColor: '#243232ff',
 
                   }}>CRUD Form & Table</h2>
-                  <h2 style={{ color: 'white',fontSize: `${FontSizeMedium}`, }}> Demonstration of CRUD properties</h2>
+                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> Demonstration of CRUD properties</h2>
                   {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
 
                 </div>
@@ -682,8 +692,8 @@ function HeaderProjects() {
               cardToggleID={"IdFour"}
             >
 
-              <div class="subheader4body" style={{ padding: 'none', margin: 'none'}}>
-                <div className='gio-container' style={{ background: 'none', padding: 'none', margin: 'none'}}>
+              <div class="subheader4body" style={{ padding: 'none', margin: 'none' }}>
+                <div className='gio-container' style={{ background: 'none', padding: 'none', margin: 'none' }}>
                   <p style={{ backgroundColor: '#243232ff' }}>
                     The game is based on velocity.
                     <br></br>
@@ -717,7 +727,7 @@ function HeaderProjects() {
                   <h2 style={{
                     color: '#AEBEBEff',
                     fontSize: `${FontSizeLarge}`,
-                   
+
                     fontWeight: '900',
                     padding: '5px'
                   }}>STORE </h2>
@@ -732,7 +742,7 @@ function HeaderProjects() {
                     fontFamily: "Exo",
                     fontSize: `${FontSizeLarge}`,
 
-                    
+
                   }} href="https://fell-hawk.itch.io/store">
                     FellHawk-Itch.io
                   </a>
@@ -764,8 +774,8 @@ function HeaderProjects() {
       </div>
 
       <div style={{
-        backgroundColor: '#1B2524ff',
-       
+        backgroundColor: 'transparent',
+
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
@@ -773,7 +783,7 @@ function HeaderProjects() {
         <button
           style={{
             color: '#025B79ff',
-            backgroundColor: 'transparent',
+            background: 'transparent',
             border: 'none',
             cursor: 'pointer',
             fontSize: `${FontSizeMedium}`,
@@ -786,11 +796,11 @@ function HeaderProjects() {
 
       <div style={{ display: 'flex', alignItems: 'center', flexDirection: `${FlexDirectionFooter}`, margin: '10px' }}>
 
-      <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', margin: '5px', background:'black' , borderRadius: "30px"}}>
+        <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', margin: '5px', background: 'black', borderRadius: "30px" , width: `${FooterSize}`}}>
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
               color: '#AEBEBEff',
-          
+
               fontWeight: '900',
               marginBottom: '5px'
             }}> My website technology pipeline / stack ? ✨ </h2>
@@ -812,7 +822,7 @@ function HeaderProjects() {
             <h3 style={{
               color: '#AEBEBEff',
               fontWeight: '900',
-           
+
             }}> Please consider collaborating
               <br /> or donating!
               <br></br>🔥
@@ -821,7 +831,12 @@ function HeaderProjects() {
           </a>
         </div>
 
-        <div className="subheader5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', border: '2px solid #101730ff', width: '100%', paddingTop: '100px', paddingBottom: '100px', borderRadius: '30px' }}>
+        <div style={{ width: `${FooterSpacer}` }}>
+
+        </div>
+
+
+        <div className="subheader5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', border: '2px solid #101730ff', width: `${FooterSize}`, paddingTop: '100px', paddingBottom: '100px', borderRadius: '30px' }}>
           <h3 style={{
             color: 'white',
             fontWeight: 'bold',
@@ -858,6 +873,8 @@ function HeaderProjects() {
             </h5>
 
           </a>
+
+
           <div className="subheader6" style={{ border: '2px solid white', borderRadius: '10px', margin: '5px' }}>
             <h3
               style={{
@@ -878,20 +895,20 @@ function HeaderProjects() {
 
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'row',  width: '100%' }}>
-        
-          <iframe
-            id="ytplayer"
-            type="text/html"
-            width="100%"
-            height="360"
+      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'row', width: '100%' }}>
 
-            autoplay="true"
-            src="https://www.youtube.com/embed/ZwWTUljUZLU?autoplay=1"
-            frameborder="0"
-          >
-          </iframe>
-        
+        <iframe
+          id="ytplayer"
+          type="text/html"
+          width="100%"
+          height="360"
+
+          autoplay="true"
+          src="https://www.youtube.com/embed/ZwWTUljUZLU?autoplay=1"
+          frameborder="0"
+        >
+        </iframe>
+
       </div>
 
 

@@ -22,6 +22,10 @@ import bg5 from '../../icons/bg5.png';
 import '../PageCss/Crudtable.css';
 import '../PageCss/GioTable.css';
 import '../PageCss/NewTable.css';
+import DevIcon from '../../icons/devicon1.png';
+import DevIcon2 from '../../icons/devicon2.png';
+import DevIcon3 from '../../icons/devicon3.png';
+import DevIcon4 from '../../icons/devicon4.png';
 
 function HeaderSection() {
 
@@ -78,6 +82,12 @@ function HeaderSection() {
   let cardMargin;
   let fontMobile;
   let artSectionWidth;
+  let ProjectCardWidth;
+  let HeaderCardWidth;
+  let FontSizeLarge;
+  let FontSizeMedium;
+  let StatsCard;
+  let StatsCardHeader;
 
   if (windowSize[0] < 600) {
     specialheader = <></>;
@@ -100,6 +110,12 @@ function HeaderSection() {
     cardMargin = '10px';
     fontMobile = 'medium';
     artSectionWidth = '100%';
+    ProjectCardWidth = '100%';
+    HeaderCardWidth = '100%';
+    FontSizeLarge = '60px';
+    FontSizeMedium = 'medium';
+    StatsCard = '100%';
+    StatsCardHeader = '100%';
   }
   else {
     specialheader = <h2 style={{ color: 'white' }}>Feel free to join my discord</h2>;
@@ -119,11 +135,18 @@ function HeaderSection() {
     cardMargin = '20px';
     fontMobile = 'x-large';
     artSectionWidth = '80%';
+    FontSizeLarge = '100px';
+    FontSizeMedium = 'x-large';
+    StatsCard = '33%';
+    StatsCardHeader = '50%';
 
     gmdevstorevar = <img src={gmdevstorelogo} width='50%' height='auto' style={{ padding: '5px' }} />
     gmdevwebsitelogovar = <img src={gmdevwebsitelogo} width='50%' height='auto' style={{ padding: '5px' }} />
     haloweenlogovar = <img src={haloweenlogo} width='50%' height='auto' style={{ padding: '5px' }} />;
     gmdevapivar = <img src={gmdevapilogo} width='50%' height='auto' style={{ padding: '5px' }} />
+
+    ProjectCardWidth = '80%';
+    HeaderCardWidth = '95%';
   }
 
   return (
@@ -157,6 +180,44 @@ function HeaderSection() {
       <div id="mainBody" className='gio-main'>
 
         <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '30px', width: `${homepageSVGWidth}`, marginTop: '5px' }} />
+
+        <div className='gio-container' style={{ marginTop: '50px', background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
+          <ul style={{ background: 'black', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+            <div className="end-div2" style={{ border: '10px solid black', borderRadius: '5px', background: 'white', marginBottom: '20px', width: `${StatsCardHeader}`, boxShadow: 'rgba(25, 129, 159, 0.9) 6px 2px 10px 0px, rgba(25, 129, 159, 0.9) -6px -2px 10px 0px ' }} >
+              <h3 style={{ color: 'black', fontWeight: '900', fontSize: `${FontSizeLarge}` }}> Stats</h3>
+            </div>
+
+            <div style={{ width: `${StatsCard}` }}>
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Developer Level</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Juinor</li>
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon2} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Specialization</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> TBD</li>
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon3} width='30px' height='30px' style={{ marginRight: '10px',background: 'none'}}></img>Active Projects</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> 3</li>
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon4} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Years Experience</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> 5</li>
+              </div>
+
+            </div>
+
+          </ul>
+        </div>
 
         <div className="end-div5" style={{ background: 'linear-gradient(12deg, #101730ff, #1b2524ff, #243232ff, #2e5252ff, #242a36, #025b79ff, #19819fff)', boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: `${cardPadding}`, marginLeft: `${cardMargin}`, marginRight: `${cardMargin}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
 
@@ -567,7 +628,7 @@ function HeaderSection() {
         </div>
       </div>
 
-      <h3 style={{ color: 'white'}}>Enjoy the Turkey 🤤</h3>
+      <h3 style={{ color: 'white' }}>Enjoy the Turkey 🤤</h3>
 
     </div>
   );

@@ -218,131 +218,142 @@ function HeaderAbout() {
           <div className='spacer'>
           </div>
 
-          <div className='gio-container-3' style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
-            <h4 style={{ borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}` }}> Web Dev Experience </h4>
+          <div className='gio-container-3' style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
+            <h4 style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}`, fontWeight: '900' }}> Web Dev Experience </h4>
 
-            <ul style={{ background: 'rgba(0,0,0,.8)' }}>
+            <ul style={{ background: 'rgba(0,0,0,.8)', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
 
-              <div className="end-div3" >
+              <div className="end-div3" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                 <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> FRONTEND TECHNOLOGIES / FRAMEWORKS</h3>
               </div>
 
-
-              <ul style={{ margin: '10px' }}>
-                <li>ReactJS</li>
-                <li>RubyonRails</li>
-                <li>Standard Markdown</li>
-              </ul>
+              <div style={{ width: `${HeaderCardWidth}` }}>
+                <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                  <li>ReactJS</li>
+                  <li>RubyonRails</li>
+                  <li>Standard Markdown</li>
+                </ul>
+              </div>
 
 
               <br></br>
 
-              <div className="end-div2" style={{ background: 'black' }} >
+              <div className="end-div2" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }} >
                 <h3 style={{ color: '#AEBEBEff', fontWeight: '900', backgroundColor: 'rgba(0, 0, 0, 0.56)' }}> BACKEND TECHNOLOGIES</h3>
               </div>
 
 
-              <ul style={{ margin: '10px' }}>
-                <li>NodeJS</li>
-                <li>ExpressJS</li>
-                <li>Springboot</li>
-                <li>Postman</li>
-              </ul>
+              <div style={{ width: `${HeaderCardWidth}` }}>
+                <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                  <li>NodeJS</li>
+                  <li>ExpressJS</li>
+                  <li>Springboot</li>
+                  <li>Postman</li>
+                </ul>
+              </div>
 
 
               <br />
 
-              <div className="end-div3" >
+              <div className="end-div3" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                 <h3 style={{ color: '#AEBEBEff', fontWeight: '900' }}> DATABASE / CLOUD SERVICES</h3>
               </div>
 
-              <ul style={{ margin: '10px' }}>
-                <li>MongoDB</li>
-                <li>H2Hibernate</li>
-                <li>AWS</li>
-                <li>PCF</li>
-                <li>Cloud Functions</li>
-              </ul>
+              <div style={{ width: `${HeaderCardWidth}` }}>
+                <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                  <li>MongoDB / MySQL</li>
+                  <li>H2Hibernate</li>
+                  <li>AWS</li>
+                  <li>Cloud Functions</li>
+                </ul>
+              </div>
             </ul>
           </div>
 
           <div className='spacer'>
           </div>
 
-          <div className='gio-container-4' style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
-            <h4 style={{ borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}` }}>CODE/PACKAGE<br /> MANAGMMENT</h4>
-            <ul style={{ background: 'rgba(0,0,0,.8)' }}>
-              <div className="end-div2" style={{ background: 'white' }} >
-                <li >GITHUB/GIT:</li>
+          <div className='gio-container-4' style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
+
+            <h4 style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}`, fontWeight: '900' }}>CODE/PACKAGE<br /> MANAGMMENT</h4>
+
+            <ul style={{ background: 'rgba(0,0,0,.8)', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+              <div className="end-div2" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }} >
+                <li >Git: Atlassian / Github</li>
               </div>
 
-              <ol style={{ margin: '10px' }}>
-                <li>Git add, commit , push cycle</li>
-                <label></label>
+              <div style={{ width: `${HeaderCardWidth}` }}>
+                <ol style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                  <li>Git add, commit , push cycle</li>
+                  <label></label>
 
-                <li>Branch management / Issue handling / AGILE methodology </li>
-                <label></label>
+                  <li> Jira / Github sprint & agile experience </li>
+                  <label></label>
 
-                <li>Deployment with CI / CD</li>
-              </ol>
+                  <li>Devops CI/CD cycle experience</li>
+                </ol>
+              </div>
             </ul>
-            <ul style={{ background: 'rgba(0,0,0,.8)' }}>
+            <ul style={{ background: 'rgba(0,0,0,.8)', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
               <br />
 
-              <div className="end-div3" >
-                <li>Package managers / Bundlers</li>
+              <div className="end-div3" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
+                <li>Package / Bundlers</li>
               </div>
 
-              <ol style={{ margin: '10px' }}>
-                <li>NPM</li>
-                <label></label>
+              <div style={{ width: `${HeaderCardWidth}` }}>
+                <ol style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                  <li>NPM</li>
+                  <label></label>
 
-                <li>Webpack </li>
-              </ol>
+                  <li>Webpack </li>
+                </ol>
+              </div>
             </ul>
 
-            <ul style={{ background: 'rgba(0,0,0,.8)' }}>
-              <div className="end-div2" style={{ background: 'black' }}>
-                <li style={{ backgroundColor: 'rgba(0, 0, 0, 0.56)' }}>DOCKER:</li>
+            <ul style={{ background: 'rgba(0,0,0,.8)', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+              <div className="end-div2" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
+                <li style={{ backgroundColor: 'rgba(0, 0, 0, 0.56)' }}>Containerizing</li>
               </div>
 
-              <ul>
-                <li style={{ margin: '10px' }}>Adding a dockerfile, to containerize a project</li>
-              </ul>
+              <div style={{ width: `${HeaderCardWidth}` }}>
+                <ul>
+                  <li style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>Docker practice</li>
+                </ul>
+              </div>
             </ul>
           </div>
 
           <div className='spacer'>
           </div>
 
-          <div className='gio-container' style={{ borderRadius: '20px', background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
+          <div className='gio-container' style={{ borderRadius: '20px', background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
 
-            <h4 style={{ backgroundColor: 'black', fontSize: `${FontSizeLarge}`, color: 'orange' }}>Code orange  internship<br />( DFS ) </h4>
+            <h4 style={{ background: 'white', borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}`, fontWeight: '900', color: 'orange' }}>Code orange  internship<br />( DFS ) </h4>
 
-            <div className="gio-container" style={{ padding: '3px', background: "white" }} >
-              <p style={{ color: 'orange', background: 'black' }}>
+            <div className="gio-container" style={{ padding: '3px', background: "white", width: `${HeaderCardWidth}` }} >
+              <p style={{ color: 'orange', background: 'white', fontSize: `${FontSizeMedium}` }}>
                 Tech-savvy juniors and seniors were hired by.
                 Discover and are being paid to work on and help develop new Discover technologies in the areas of mobile-software development,
                 web-application coding, blue-tooth development and person-to-person payment systems
               </p>
 
 
-              <p style={{ color: 'orange', background: 'black' }}>
+              <p style={{ color: 'orange', background: 'white', fontSize: `${FontSizeMedium}` }}>
                 During the summer of 2020 I participated in the code_orange program at NIU.
                 I was on a team tasked with developing a Full -stack website to host a user statistics dash board for the program. Unfortunately the program was cancelled due to COVID-19.
                 Since DFS is a financial company we were not allowed to save any work from this internship  and all I have to show is a few articles referring to it. ( link bellow )
               </p>
             </div>
 
-            <div className="gio-container" style={{ border: 'none', background: 'none' }} >
+            <div className="gio-container" style={{ border: 'none', background: 'none', width: `${HeaderCardWidth}` }} >
               <a style={{ borderRadius: '20px', }} href="https://newsroom.niu.edu/2018/11/01/niu-discover-mark-launch-of-on-campus-code_orange-program/">
-                <h4 style={{ color: 'white', backgroundColor: '#242a36', padding: '10px', margin: '10px' }}><i> NIU code_orange program description </i></h4>
+                <h4 style={{ color: 'white', backgroundColor: '#242a36', padding: '10px', margin: '10px', fontSize: `${FontSizeMedium}` }}><i> NIU code_orange program description </i></h4>
               </a>
-
 
               <a href="https://www.mystateline.com/news/niu-students-get-real-world-experience-developing-technology-for-discover/1495852453/">
 
-                <h4 style={{ color: 'white', backgroundColor: '#242a36', padding: '10px', margin: '10px' }}><i> Article about the program </i></h4>
+                <h4 style={{ color: 'white', backgroundColor: '#242a36', padding: '10px', margin: '10px', fontSize: `${FontSizeMedium}` }}><i> Article about the program </i></h4>
               </a>
 
               <img style={{ color: 'white', backgroundColor: '#242a36', padding: '2px', margin: '10px', borderRadius: '50px' }} src={co} alt={"Code Orange logo"} />
@@ -353,76 +364,78 @@ function HeaderAbout() {
           <div className='spacer'>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            <div className='gio-container-2' style={{ width: '99%', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
-              <h4 style={{ borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}` }}>Additional Experience </h4>
+          <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', width: `${ProjectCardWidth}` }}>
+            <div className='gio-container-2' style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
+              <h4 style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}`, fontWeight: '900' }}>Additional Experience </h4>
 
-              <ul style={{ background: 'rgba(0,0,0,.8)' }}>
-                <div className="end-div2" style={{ background: 'white' }} >
+              <ul style={{ background: 'rgba(0,0,0,.8)', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+                <div className="end-div2" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }} >
                   <li >Advanced Programming:</li>
                 </div>
 
+                <div style={{ width: `${HeaderCardWidth}` }}>
+                  <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                    <li>Some experience in <br />Multi-Threading,<br />Concurrent programs,<br />
+                      Andriod applications,<br /> Semaphores/Deadlock solutions.</li>
+                  </ul>
+                </div>
 
-                <ul style={{ margin: '10px' }}>
-                  <li>Some experience in <br />Multi-Threading,<br />Concurrent programs,<br />
-                    Andriod applications,<br /> Semaphores/Deadlock solutions.</li>
-                </ul>
 
 
 
-
-                <div className="end-div3" >
+                <div className="end-div3" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                   <li>MLH - MajorLeaugeHacking</li>
                 </div>
 
+                <div style={{ width: `${HeaderCardWidth}` }}>
+                  <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                    <li>Attended 5 hackathons.<br /> Joined 1 international team ( India )</li>
+                  </ul>
+                </div>
 
-                <ul style={{ margin: '10px' }}>
-                  <li>Attended 5 hackathons.<br /> Joined 1 international team ( India )</li>
-                </ul>
 
-
-
-                <div className="end-div2" style={{ background: 'black' }}>
+                <div className="end-div2" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                   <li style={{ backgroundColor: 'rgba(0, 0, 0, 0.56)' }}>Game Dev</li>
                 </div>
 
+                <div style={{ width: `${HeaderCardWidth}` }}>
+                  <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                    <li style={{ margin: '10px' }}>Some experience in<br /> game design & development in Unity,<br /> OpenGL Api,<br /> and Google Cardboard VR  </li>
+                  </ul>
+                </div>
 
-                <ul>
-                  <li style={{ margin: '10px' }}>Some experience in<br /> game design & development in Unity,<br /> OpenGL Api,<br /> and Google Cardboard VR  </li>
-                </ul>
-
-
-                <div className="end-div3" >
+                <div className="end-div3" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                   <li >Theoretical Experience</li>
                 </div>
 
+                <div style={{ width: `${HeaderCardWidth}` }}>
+                  <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                    <li style={{ marginTop: '10px' }}>Some experience with<br /> Chomsky's Hierarchy/PDA/TuringMachines,<br /> Normalization & FloatingPointError,<br /> Efficiency & Runtime</li>
+                  </ul>
+                </div>
 
-                <ul>
-                  <li style={{ marginTop: '10px' }}>Some experience with<br /> Chomsky's Hierarchy/PDA/TuringMachines,<br /> Normalization & FloatingPointError,<br /> Efficiency & Runtime</li>
-                </ul>
-
-
-                <div className="end-div3" >
+                <div className="end-div3" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                   <li>Paradigms</li>
                 </div>
 
+                <div style={{ width: `${HeaderCardWidth}` }}>
+                  <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                    <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
+                    <li> Experience in Declarative: Database   </li>
+                  </ul>
+                </div>
 
-                <ul style={{ marginTop: '10px' }}>
-                  <li> Experience in Imperative:  OOP, Scripts, Procedural Languages   </li>
-                  <li> Experience in Declarative: Database   </li>
-                </ul>
-
-
-                <div className="end-div2" style={{ background: 'white' }} >
+                <div className="end-div2" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                   <li>Crypto - Web3</li>
                 </div>
 
-                <ul style={{ marginTop: '10px' }}>
-                  <li> Understanding of theoretical basics of blockchain technology  </li>
-                </ul>
+                <div style={{ width: `${HeaderCardWidth}` }}>
+                  <ul style={{ margin: '10px', color: 'white', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', backgroundColor: 'transparent' }}>
+                    <li> Understanding of theoretical basics of blockchain technology  </li>
+                  </ul>
+                </div>
 
-
-                <div className="end-div3" >
+                <div className="end-div3" style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                   <li>More to come...</li>
                 </div>
                 <ul>
@@ -437,10 +450,10 @@ function HeaderAbout() {
           <div className='spacer'>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            <div className='gio-container-4' style={{ width: '85%', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
-              <h4 style={{ borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}` }}>Minor in mathematics </h4>
-              <ul style={{ background: 'rgba(0,0,0,.8)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', width: `${ProjectCardWidth}` }}>
+            <div className='gio-container-4' style={{  width: `${ProjectCardWidth}`, boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', }}>
+              <h4 style={{ boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', borderRadius: '20px', fontWeight: '900', fontSize: `${FontSizeLarge}`, fontWeight: '900' }}>Minor in mathematics </h4>
+              <ul style={{ background: 'black', marginBottom: '20px', width: `${ProjectCardWidth}`, boxShadow: 'rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ' }}>
                 <br />
                 <div className="end-div3" >
                   <a style={{ color: 'white' }} id="minor"><li>GENERAL MATH EXPERIENCE</li></a>

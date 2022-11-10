@@ -112,8 +112,8 @@ function OldSite() {
               textTransform: 'uppercase',
               fontSize: 'x-large',
               /* border: '1px solid #19819fff', */
-              border: '2px dashed white', 
               borderRadius: '10px',
+              boxShadow: 'rgba(0, 0, 0, 0.9) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.9) 0px -3px 0px inset',
             }}>
 
             {!showMenu ?
@@ -126,7 +126,7 @@ function OldSite() {
 
                 <div style={{ animation: 'turkey 10s ease-in-out ' }}> 🦃</div>
                
-                <div style={{ display: 'inline-block' }}>
+                <div style={{ display: 'inline-block', boxShadow: 'rgba(225, 255, 255, 0.9) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }}>
                   <h2 style={{ color: 'white', fontWeight: 'bold' }}>
                     Cust
                     <div style={{ animation: 'coffeePulse 3s ease-in-out infinite', display: 'inline' }}>
@@ -164,6 +164,7 @@ function OldSite() {
                   alignItems: 'center',
                   border: '1px solid #472d30',
                   animation: 'pulseThanksgiving 3s ease-in-out infinite',
+                  
                 }}
               >
                 <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >

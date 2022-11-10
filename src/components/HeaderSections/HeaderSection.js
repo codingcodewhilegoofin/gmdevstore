@@ -180,25 +180,30 @@ function HeaderSection() {
 
       <div id="mainBody" className='gio-main'>
 
-      {/*   <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '30px', width: `${homepageSVGWidth}`, marginTop: '5px' }} /> */}
+        {/*   <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '30px', width: `${homepageSVGWidth}`, marginTop: '5px' }} /> */}
 
-        <div className='gio-container' style={{ marginTop: '50px', background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
+        <div className='gio-container' style={{ background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
           <ul style={{ background: 'black', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
             <div className="end-div2" style={{ border: '10px solid black', borderRadius: '5px', background: 'white', marginBottom: '20px', width: `${StatsCardHeader}`, boxShadow: 'rgba(25, 129, 159, 0.9) 6px 2px 10px 0px, rgba(25, 129, 159, 0.9) -6px -2px 10px 0px ' }} >
-              <h3 style={{ color: 'black', fontWeight: '900', fontSize: `${FontSizeLarge}` }}> Stats</h3>
+              <h3 style={{ color: 'black', fontWeight: '900', fontSize: `${FontSizeLarge}` }}>
+                < div style={{ animation: 'wiggle 20s ease-in-out infinite' }}>
+                📊
+                </div>
+                Stats
+              </h3>
             </div>
 
             <div style={{ width: `${StatsCard}` }}>
 
-              <div style={{ textAlign:'center', alignItems : 'center',background: 'white', display: 'flex', flexDirection: 'column', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ textAlign:'center',fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIconHat} width='30px' height='30px' style={{ marginRight: '10px', }}></img>B.S In CS from NIU</li>
+              <div style={{ textAlign: 'center', alignItems: 'center', background: 'white', display: 'flex', flexDirection: 'column', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ textAlign: 'center', fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIconHat} width='30px' height='30px' style={{ marginRight: '25px', }}></img>B.S In CS from NIU</li>
 
               </div>
 
               <label></label>
 
               <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Developer Level</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Dev Level</li>
                 <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Juinor</li>
               </div>
 
@@ -228,7 +233,7 @@ function HeaderSection() {
           </ul>
         </div>
 
-        <div className="end-div5" style={{ background: 'linear-gradient(12deg, #101730ff, #1b2524ff, #243232ff, #2e5252ff, #242a36, #025b79ff, #19819fff)', boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: `${cardPadding}`, marginLeft: `${cardMargin}`, marginRight: `${cardMargin}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
+        <div className="end-div5" style={{ background: 'transparent', padding: `${cardPadding}`, marginLeft: `${cardMargin}`, marginRight: `${cardMargin}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '0px', marginTop: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
             <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
@@ -252,7 +257,7 @@ function HeaderSection() {
             {gmdevapivar}
           </div>
 
-          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '35px', marginRight: '0px', width: '3%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
+          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '35px', marginRight: '0px', width: '3%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', background: 'black' }}>
           </div>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '0px', marginRight: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
@@ -570,15 +575,17 @@ function HeaderSection() {
         <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginTop: '5px', }}>
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
-              color: '#AEBEBEff',
-              background: 'rgba(0, 0, 0, 0.6)',
+              color: 'white',
+              background: 'rgba(0, 0, 0, 0.2)',
               fontWeight: '900',
-              marginBottom: '5px'
+              marginBottom: '5px',
+              borderRadius: ' 50px'
             }}> My website technology pipeline / stack ? ✨ </h2>
 
             <ol style={{
-              color: '#AEBEBEff',
-              background: 'rgba(0, 0, 0, 0.8)',
+              color: 'white',
+              background: 'rgba(0, 0, 0, 0.6)',
+              borderRadius: ' 25px'
             }}>
               <li> Bash/Linux/Windows( CLI/OS )</li>
               <li> VScode</li>
@@ -591,9 +598,10 @@ function HeaderSection() {
               <li> Github </li>
             </ol>
             <h3 style={{
-              color: '#AEBEBEff',
+              color: 'white',
               fontWeight: '900',
-              background: 'rgba(0, 0, 0, 0.9)',
+              background: 'rgba(0, 0, 0, 0.2)',
+              borderRadius: ' 50px'
             }}> Please consider collaborating
               <br /> or donating!
               <br></br>🔥
@@ -611,19 +619,20 @@ function HeaderSection() {
             href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
           >
             <h2 style={{
-              color: 'red',
+              color: 'white',
               fontWeight: '900',
-              background: 'rgba(0, 0, 0, 0.7)'
+              background: 'rgba(0, 0, 0, 0.2)',
+              borderRadius: ' 50px'
             }}>
               Having trouble viewing my website ? 💔
             </h2>
 
             <h3
               style={{
-                color: '#AEBEBEff',
-                background: 'rgba(0, 0, 0, 0.7)',
+                color: 'white',
+                background: 'rgba(0, 0, 0, 0.4)',
                 fontWeight: '900',
-
+                borderRadius: ' 50px'
               }}>
               Major Update! : New card format
               <br />

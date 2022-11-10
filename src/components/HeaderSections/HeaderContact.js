@@ -9,22 +9,51 @@ import '../../icons/gio.jpg';
 import '../../icons/instagram.svg';
 
 
-
-
 function HeaderContact() {
 
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   let twitterResize;
+  let FontSizeLarge;
+  let FontSizeMedium;
+  let ProjectCardWidth;
+  let HeaderCardWidth;
+  let CardWidth;
+  let cardOrientation;
 
-  if (windowSize[0] < 700) {
-
+  if (windowSize[0] < 500) {
+    FontSizeLarge = '40px';
+    FontSizeMedium = 'medium';
+    ProjectCardWidth = '100%';
+    HeaderCardWidth = '100%';
     twitterResize = '100%';
+    cardOrientation = 'column';
+  }
+  else if (windowSize[0] < 600) {
+    FontSizeLarge = '50px';
+    FontSizeMedium = 'large';
+    ProjectCardWidth = '100%';
+    HeaderCardWidth = '100%';
+    twitterResize = '100%';
+    cardOrientation = 'column';
+  }
+  else if (windowSize[0] < 800) {
+    FontSizeLarge = '50px';
+    FontSizeMedium = 'large';
+    ProjectCardWidth = '90%';
+    HeaderCardWidth = '90%';
+    twitterResize = '40%';
+    cardOrientation = 'row';
   }
   else {
-
+    FontSizeLarge = '50px';
+    FontSizeMedium = 'x-large';
+    ProjectCardWidth = '80%';
+    HeaderCardWidth = '95%';
     twitterResize = '40%';
+    cardOrientation = 'row';
   }
+
 
   useEffect(() => {
 
@@ -39,18 +68,18 @@ function HeaderContact() {
       window.removeEventListener('resize', updateSize);
     }
   }, [windowSize])
+
   return (
     <div className='gio-main' >
 
       <h2 style={{ color: 'white', fontSize: 'x-large' }}>Gio Moscato.com</h2>
 
-      <div className='subheader8' style={{ margin: '10px', borderRadius: '5px', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }}>
+      <div className='subheader8' style={{ width: `${HeaderCardWidth}`, borderRadius: '5px', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }}>
 
-        <h1 style={{ color: "#AEBEBEff", fontWeight: '900' }}>HOW TO CONTACT ME</h1>
-        <h4 style={{ color: "#AEBEBEff" }}>Contact me anytime CST  </h4>
+        <h1 style={{ color: "white", fontWeight: '900', fontSize: `${FontSizeLarge}` }}>HOW TO CONTACT ME</h1>
+        <h4 style={{ color: "#AEBEBEff", fontSize: `${FontSizeMedium}` }}>Contact me anytime CST  </h4>
+        <a style={{ color: "white", fontWeight: '600', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.9) 0px 7px 13px -3px, rgba(255, 255, 255, 0.9) 0px -3px 0px inset', fontSize: `${FontSizeLarge}` }} href='https://linktr.ee/_GMDev'>linktr.ee/_GMDev</a>
       </div>
-
-      <a style={{ color: "white", fontWeight: '600', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }} href='https://linktr.ee/_GMDev'>linktr.ee/_GMDev</a>
 
 
       <div className='spacer2'>
@@ -103,9 +132,6 @@ function HeaderContact() {
       </div>
 
 
-      <div align="center" className="gio-container-special" style={{ border: 'none' }}>
-        <iframe className="tiktokframe" srcdoc='<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@giomoscatodev/video/7054658765337152815" data-video-id="7054658765337152815" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@giomoscatodev" href="https://www.tiktok.com/@giomoscatodev">@giomoscatodev</a> New setup to work on my website!  <a title="pcgaming" target="_blank" href="https://www.tiktok.com/tag/pcgaming">#pcgaming</a>  <a title="pcgamer" target="_blank" href="https://www.tiktok.com/tag/pcgamer">#pcgamer</a> <a title="coding" target="_blank" href="https://www.tiktok.com/tag/coding">#coding</a> <a title="codingtiktok" target="_blank" href="https://www.tiktok.com/tag/codingtiktok">#codingtiktok</a> <a target="_blank" title="♬ Lo  - Official Sound Studio" href="https://www.tiktok.com/music/Lo-6699360508916534030">♬ Lo  - Official Sound Studio</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>' />
-      </div>
 
       <div className='spacer'>
       </div>
@@ -160,27 +186,80 @@ function HeaderContact() {
       <div className='spacer'>
       </div>
 
-      <div className="end-div">
-        <a href="https://github.com/codingcodewhilegoofin/giowebsite">
-          <h2 style={{ color: "white" }}> My website technology pipeline / stack ? ✨ </h2>
+      <div className='gio-container' style={{ background: 'transparent', flexDirection: `${cardOrientation}`, padding: '2px', width: '100%', alignSelf: 'center', alignItems: 'center', border: 'none' }}>
 
-          <ol style={{ color: "white" }}>
-            <li> Bash/Linux/Windows( CLI/OS )</li>
-            <li> VScode( IDE )</li>
-            <li> ReactJS </li>
-            <li> NPM</li>
-            <li> HTML/CSS/JS/JSX </li>
-            <li> Githubpages(Host server) </li>
-            <li> GoogleDomains(DNS)</li>
-            <li> React Router & Few other standard libraries</li>
-            <li> Github ( source control ) </li>
-          </ol>
-          <h3 style={{ color: "white" }}> Please consider collaborating
-            <br /> or donating!
-            <br></br>🔥
+        <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginTop: '5px', }}>
+          <a href="https://github.com/codingcodewhilegoofin/giowebsite">
+            <h2 style={{
+              color: 'white',
+              background: 'rgba(0, 0, 0, 0.2)',
+              fontWeight: '900',
+              marginBottom: '5px',
+              borderRadius: ' 50px'
+            }}> My website technology pipeline / stack ? ✨ </h2>
 
-          </h3>
-        </a>
+            <ol style={{
+              color: 'white',
+              background: 'rgba(0, 0, 0, 0.6)',
+              borderRadius: ' 25px'
+            }}>
+              <li> Bash/Linux/Windows( CLI/OS )</li>
+              <li> VScode</li>
+              <li> ReactJS </li>
+              <li> NPM</li>
+              <li> HTML/CSS/JS/JSX </li>
+              <li> Githubpages </li>
+              <li> GoogleDomains</li>
+              <li> CloudFlare Pages</li>
+              <li> Github </li>
+            </ol>
+            <h3 style={{
+              color: 'white',
+              fontWeight: '900',
+              background: 'rgba(0, 0, 0, 0.2)',
+              borderRadius: ' 50px'
+            }}> Please consider collaborating
+              <br /> or donating!
+              <br></br>🔥
+
+            </h3>
+          </a>
+        </div>
+
+        <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', width: '4%', flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
+        </div>
+
+        <div className="end-div2" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', marginTop: '15px', marginBottom: '100px', padding: '10px' }}>
+          <a
+
+            href="https://browserhow.com/how-to-view-full-desktop-site-on-chrome-android-phone/"
+          >
+            <h2 style={{
+              color: 'white',
+              fontWeight: '900',
+              background: 'rgba(0, 0, 0, 0.2)',
+              borderRadius: ' 50px'
+            }}>
+              Having trouble viewing my website ? 💔
+            </h2>
+
+            <h3
+              style={{
+                color: 'white',
+                background: 'rgba(0, 0, 0, 0.4)',
+                fontWeight: '900',
+                borderRadius: ' 50px'
+              }}>
+              Major Update! : New card format
+              <br />
+              If you find any mobile or platform specific issues, please let me know
+              <br />
+              <a href="https://www.buymeacoffee.com/giomoscato101">
+                <img className="coffeeBtn" src="https://img.buymeacoffee.com/button-api/?text=Help support me&emoji=💕&slug=giomoscato101&button_colour=243232ff&font_colour=ffffff&font_family=Poppins&outline_colour=243232ff&coffee_colour=243232ff" />
+              </a>
+            </h3>
+          </a>
+        </div>
       </div>
 
     </div >

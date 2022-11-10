@@ -26,6 +26,7 @@ import DevIcon from '../../icons/devicon1.png';
 import DevIcon2 from '../../icons/devicon2.png';
 import DevIcon3 from '../../icons/devicon3.png';
 import DevIcon4 from '../../icons/devicon4.png';
+import DevIconHat from '../../icons/deviconhat.png';
 
 function HeaderSection() {
 
@@ -188,6 +189,14 @@ function HeaderSection() {
             </div>
 
             <div style={{ width: `${StatsCard}` }}>
+
+              <div style={{ textAlign:'center', alignItems : 'center',background: 'white', display: 'flex', flexDirection: 'column', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ textAlign:'center',fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIconHat} width='30px' height='30px' style={{ marginRight: '10px', }}></img>B.S In CS from NIU</li>
+
+              </div>
+
+              <label></label>
+
               <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
                 <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Developer Level</li>
                 <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Juinor</li>
@@ -203,7 +212,7 @@ function HeaderSection() {
               <label></label>
 
               <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon3} width='30px' height='30px' style={{ marginRight: '10px',background: 'none'}}></img>Active Projects</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon3} width='30px' height='30px' style={{ marginRight: '10px', background: 'none' }}></img>Active Projects</li>
                 <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> 3</li>
               </div>
 

@@ -1,6 +1,18 @@
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+<div display="flex" alignItems="center" alignSelf="center">
+  <p display="flex" alignItems="center" alignSelf="center">
+    <h1> giomoscato.com </h1>
+  </p>
+</div>
 
-# giomoscato.com 
+
+![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)
+![standard-readme compliant](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+[![git](https://badgen.net/badge/icon/git?icon=git&label)](https://git-scm.com)
+[![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
+[![Npm](https://badgen.net/badge/icon/npm?icon=npm&label)](https://https://npmjs.com/)
+
+https://twitter.com/_GmDev
+[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com)
 
 ## Welcome to my public website! 
 This is a portfolio website to showcase projects as well as web dev skills. 
@@ -8,8 +20,8 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ### This repository contains:
 
 1. My website 
-2. Links to other websites and projects
-3. Two 3D environments
+2. Endpoints to my own Cloudflare API and MongoDB database
+3. Two 3D environments made with ReactThreeFiber ( Three.js)
 
 ---
 ## Table of Contents
@@ -31,77 +43,92 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ---
 ## RecentUpdates
 
-  Massive UI update
-  
-Todo:
-  Finish OpenAI api  bot
-  Finish Arduino api page
+- [ ] SEO optimization
+- [X] Update Cards for monetization
+- [X] Finish Website Design & Mobile resizability
+- [X] Holiday Theme update
+- [ ] Finish OpenAI api bot
+- [ ] Finish Arduino api page
+- [ ] Contact page update
+- [ ] DSA page update
+- [ ] Finish CRUD Table
+- [ ] Final Code refactor , organization , documentation
+
+**Date: 11/11/2022**
+
   Bug: Fix financial api issue with weekend's pulling Stock data from non-stock days ( disable functions when its a weekend)
+
 **Date: 8/24/2022**
 
-Migrated all secrets and related API calls to CFW backend
-Fixed menu bug
-Updated homepage
+- [X] Migrated all secrets and related API calls to CFW backend
+- [X] Fixed menu bug
+- [X] Updated homepage
 
 Todo:
-  Update website content
-  Finish OpenAI api  bot
-  Finish Financial api page 
-  Finish Arduino api page
+  - [X] Update website content
+  - [X] Finish Financial api page
+  - [X] Finish Spotify api page 
+
   
 **Date: 8/24/2022**
 
-UI updates
+- [X] UI updates
 **Date: 7/22/2022**
 
-Ui Updates
-Spotify API intergration is complete
+- [X] Spotify API intergration is complete
 **Date: 7/20/2022**
 
-First load is really slow
-Updated Menu UI 
+- [X] First load is really slow
+- [X] Updated Menu UI 
 **Date: 7/20/2022**
 
-- Problem with mobile / desktop load time with 3D scene from Spline.com took 30,799 ms to load about 30sec.
+- [X]  Problem with mobile / desktop load time with 3D scene from Spline.com took 30,799 ms to load about 30sec.
 - Light house rating for performance was terrible at 13,000ms blocking time and 20 s untill interactive 3D scene on mobile.
 - Light house rating for perormance on desktop was slightly better at 5,740ms and took 7s to become interactive.
 
 Possible solutions: Service workers, reduce 3D elements, optimize code, skip if TTL is too long
 **Date: 7/18/2022**
 
-- Massive update to UI, Contents, and navigation.
+- [X] Massive update to UI, Contents, and navigation.
 **Date: 7/15/2022**
 
-- Integrated React-ThreeFiber and Spline
-- Updated 3D environments and UI
-- Reorganizing website structure
-- Readme documentation
-
-**Date: 6/24/2022**
+- [X]  Integrated React-ThreeFiber and Spline
+- [X] Updated 3D environments and UI
+- [X]  Reorganizing website structure
+- [X]  Readme documentation
 
 
 
 ## Goals:
 
-1. Understand web basics. HTTP, HTML , CSS, JS, JSX, webAPI's & more.
-2. Create a portfolio to host projects
+1. Understand network & web dev concepts. HTTP, HTML , CSS, JS, JSX, webAPI's & more.
+2. Create a web dev portfolio to showcase projects
 3. Help others understand the web development and coding process
 4. Document my work
 5. Gain an understanding of complex concepts such as DSA, 3D rendering, IOT, and network calls.
-5. Gain a deeper understanding of react 
-6. Contribute to the github community
+5. Gain a deeper understanding of react and its ecosystem
+6. Learn the git process
+7. Learn how to build and deploy a modern webapp
 
 ## Build
 	npm install
 	npm start
 
-Special alias I wrote to speed up git and deploy cycle. Great for 1 developer but hinders git update standards.
+Special alias/script I wrote to speed up git and deploy cycle. Great for 1 developer but hinders git update standards.
+
+Essentially just git cycle followed by "deploy": "npm run build && gh-pages -d build"
 
 	alias GRG='git add . ; git commit -m "updated"; git push ; npm run deploy'
 
 	GRG
 
+Then deployed to github pages and routed through CloudFlare. 
+
 # webresources
+>https://gmdevapi.com
+
+>https://shields.io/
+
 >https://docs.pmnd.rs/react-three-fiber/getting-started/introduction
 
 >https://reactjs.org/
@@ -122,22 +149,27 @@ Special alias I wrote to speed up git and deploy cycle. Great for 1 developer bu
 
 >https://www.wombo.art/
 # credits
-From > https://sketchfab.com
+Gifs From > https://giphy.com/ericaofanderson
+> Erica Anderson @ericaofanderson
+
+3D assets From > https://sketchfab.com
 > Provence House 3D scan ZenFone AR by mano1creative, under CC. 
 
 > Concrete trash bin 3D scan by matousekfoto, under CC. 
 
 > Shrek by Lorran freires is licensed under Creative Commons Attribution
 # public
+Contains assests and main HTML needed for public facing web applications
 # src
-
+Standard entry point of application. Main function invoked here
 ## icons
-
+Picure and Icon assests
 ## components
-
+Contains all components for the webapp
 # Pages
-
+Contains entry point for each view or page
 # extra
+---
 # packages
 >"dependencies": {
     "@emotion/react": "^11.8.2",
@@ -166,15 +198,24 @@ From > https://sketchfab.com
     "three": "^0.139.2",
     "three-stdlib": "^2.9.1",
     "web-vitals": "^0.2.4"
-  },
+  }
 ---
 # RelatedProjects
+Team project 
 > https://fullstackingdevelopment.com/
 
+My api 
+> https://gmdevapi.com/
 
+My store 
+> https://gmdevstore.com/
+
+---
 # Maintainers
 **Giovanni Moscato**
 [Yupimaperson101@protonmail.com](Yupimaperson101@protonmail.com)
+
+> `  @_GMDev `
 
 ### Contributing
 **NA**
@@ -193,3 +234,4 @@ From > https://sketchfab.com
 If your README is compliant with Standard-Readme and you're on GitHub, it would be great if you could add the badge. This allows people to link back to this Spec, and helps adoption of the README. The badge is **not required**.
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+

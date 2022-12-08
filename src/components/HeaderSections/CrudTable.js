@@ -21,7 +21,7 @@ export const CrudTable = props => {
         btnListDirection = 'column';
     }
     else {
-        mainDivSize = '80%';
+        mainDivSize = '100%';
         tableSize = '100%';
         editBtnSize = '33%';
         btnListDirection = 'row';
@@ -49,8 +49,7 @@ export const CrudTable = props => {
         }
 
         window.addEventListener('resize', updateSize);
-        console.log(windowSize[0]);
-
+       
         return () => {
             window.removeEventListener('resize', updateSize);
         }
@@ -58,38 +57,40 @@ export const CrudTable = props => {
 
     return (
         <>
-            <div className="tablethingdiv2" style={{ width: `${mainDivSize}` }}>
+            <div className="tablethingdiv2" style={{ width: `${mainDivSize}`, border: '1px solid white' }}>
                 <table style={{ width: `${tableSize}`, border: 'none' }}>
                     <thead style={{ border: 'none' }}>
-                        <tr style={{ border: 'none'}}>
-                            <th style={{ padding: '5px', border: 'none' }}>Table Options</th>
-                            <th style={{ paddingLeft: '5px',borderRight: '2px solid black', }}>Catagory</th>
-                            <th style={{ paddingLeft: '5px',borderRight: '2px solid black', }}>MostRecentUpdate</th>
-                            <th style={{ paddingLeft: '5px',borderRight: '2px solid black', }}>UpcomingUpdates</th>
-                            <th style={{ paddingLeft: '5px',borderRight: '2px solid black', }}>Priority</th>
+                        <tr style={{ border: 'none' }}>
+                            <th style={{ padding: '5px', border: '2px solid white', }}>Table Options</th>
+                            <th style={{ padding: '5px', borderRight: '2px solid black', }}>Name</th>
+                            <th style={{ padding: '5px', borderRight: '2px solid black', }}>Message</th>
+                            <th style={{ padding: '5px', borderRight: '2px solid black', }}>Social</th>
+                            <th style={{ padding: '5px', borderRight: '2px solid black', }}>Plug</th>
                         </tr>
                     </thead>
                     <tbody style={{ border: 'none' }}>
                         {contacts.map((contact) =>
                             <tr style={{ border: 'none' }}>
-                                <td style={{ border: 'none' }}>
-                                    <div className='gio-container-2' style={{ flexDirection: `${btnListDirection}`, padding: '0px', margin: '0px' }}>
+                                <td style={{  border: '2px solid white' }}>
+                                    <div className='gio-container-2' style={{ flexDirection: `${btnListDirection}`, padding: '0px', margin: '0px', border: '2px solid white' }}>
                                         <button onClick={() => onClickCreate()} style={{ width: `${editBtnSize}`, margin: '1px', backgroundColor: 'white' }}> 🆕 </button>
-                                        <button onClick={() => onClickEdit()} style={{ width: `${editBtnSize}`, margin: '1px' , backgroundColor: 'green' }}> ✏️ </button>
+                                        <button onClick={() => onClickEdit()} style={{ width: `${editBtnSize}`, margin: '1px', backgroundColor: 'green' }}> ✏️ </button>
                                         <button onClick={() => onClickDelete()} style={{ width: `${editBtnSize}`, margin: '1px', backgroundColor: 'red' }}> 💣 </button>
                                     </div>
 
                                 </td>
-                                <td style={{ borderRight: '2px solid black', padding: '5px' }}>
+                                <td style={{ borderRight: '2px solid black', padding: '25px' }}>
                                     {contact.Catagory}
                                 </td>
-                                <td style={{ borderRight: '2px solid black', padding: '5px' }}>
-                                    {contact.MostRecentUpdate}
+                                <td style={{ borderRight: '2px solid black', padding: '25px',backgroundColor: 'black', color: 'red' }}>
+                                    <h3 syle={{ color: 'red', fontWeight: '900',}}>
+                                        {contact.MostRecentUpdate}
+                                    </h3>
                                 </td>
-                                <td style={{ borderRight: '2px solid black', padding: '5px' }}>
+                                <td style={{ borderRight: '2px solid black', padding: '25px' }}>
                                     {contact.UpcomingUpdates}
                                 </td>
-                                <td style={{ borderRight: '2px solid black', padding: '5px' }}>
+                                <td style={{ borderRight: '2px solid black', padding: '25px' }}>
                                     {contact.Priority}
                                 </td>
                             </tr>
@@ -98,13 +99,31 @@ export const CrudTable = props => {
                 </table>
             </div>
 
-            <div className={editWindow ? "gio-container" : ""} style={{width: `${mainDivSize}`, margin: '5px', border: 'none'}}>
+            <div className={editWindow ? "gio-container" : ""} style={{ width: `${mainDivSize}`, margin: '5px', border: 'none', background: 'none' }}>
 
-                {editWindow ? <> <div style={{ width: "100%", height: "100%", backgroundColor: 'black', padding: '10px' }}> <p style={{ color: 'white' }}>Create record</p><input type="text" style={{ border: 'none', }} /> </div></> : <></>}
+                {editWindow ?
+                    <>
+                        <div style={{ width: "100%", height: "100%", backgroundColor: 'black', padding: '10px' }}>
+                            <p style={{ color: 'white' }}>Create record</p>
+                            <input type="text" style={{ border: 'none', width: `${mainDivSize}`, backgroundColor: 'white', borderRadius: '10px' }} />
+                        </div>
+                    </>
+                    :
+                    <></>
+                }
             </div>
-            <div className={editWindow2 ? "gio-container" : ""} style={{width: `${mainDivSize}`, margin: '5px', border: 'none' }}>
 
-                {editWindow2 ? <> <div style={{ width: "100%", height: "100%", backgroundColor: 'black', padding: '10px' }}> <p style={{ color: 'white' }}> Edit record </p> <input type="text" style={{ border: 'none' }} /> </div></> : <></>}
+            <div className={editWindow2 ? "gio-container" : ""} style={{ width: `${mainDivSize}`, margin: '5px', border: 'none', background: 'none' }}>
+
+                {editWindow2 ?
+                    <>
+                        <div style={{ width: "100%", height: "100%", backgroundColor: 'black', padding: '10px' }}>
+                            <p style={{ color: 'white' }}> Edit record </p>
+                            <input type="text" style={{ border: 'none', width: `${mainDivSize}`, backgroundColor: 'white', borderRadius: '10px' }} />
+                        </div></>
+                    :
+                    <></>
+                }
             </div>
         </>
     )

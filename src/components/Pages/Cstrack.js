@@ -229,8 +229,8 @@ const Cstrack = () => {
             <div className='gio-container-2' style={{ margin: '10px' }}>
                 <h2 style={{
                     color: '#AEBEBEff',
-                    fontSize: 'large',
-                    backgroundColor: '#242a36'
+                    fontSize: 'x-large',
+                    
                 }}>
                     Financial Market health comparison from
                 </h2>
@@ -238,8 +238,8 @@ const Cstrack = () => {
                     color: '#AEBEBEff',
                     fontSize: 'large',
                     backgroundColor: 'transparent'
-                }} href="https://gmapps-api-v1.gmdev.workers.dev/">
-                    https://gmapps-api-v1.gmdev.workers.dev/
+                }} href="https://gmdevapi.com">
+                    gmdevapi.com
                 </a>
                 <h4 style={{ padding: '10px', lineSpacing: '5px', borderRadius: '10px', backgroundColor: '#19819Fff' }}>
                     3rd party API's provided by

@@ -153,7 +153,7 @@ function HeaderSection() {
   return (
     <div>
 
-      <h2 style={{ color: 'white', fontSize: 'x-large' }}>🙏Gio Moscato.com 🍁</h2>
+      <h2 style={{ color: 'black', fontSize: 'x-large' }}>Gio Moscato.com 🎅</h2>
 
       <div style={{
         backgroundColor: 'transparent',
@@ -189,14 +189,14 @@ function HeaderSection() {
                 < div style={{ animation: 'wiggle 20s ease-in-out infinite' }}>
                 📊
                 </div>
-                Stats
+                Quick Stats
               </h3>
             </div>
 
             <div style={{ width: `${StatsCard}` }}>
 
               <div style={{ textAlign: 'center', alignItems: 'center', background: 'white', display: 'flex', flexDirection: 'column', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ textAlign: 'center', fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIconHat} width='30px' height='30px' style={{ marginRight: '25px', }}></img>B.S In CS from NIU</li>
+                <li style={{ textAlign: 'center', fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '20px' }}><img src={DevIconHat} width='30px' height='30px' style={{ marginRight: '25px', }}></img>B.S In CS from NIU</li>
 
               </div>
 
@@ -210,8 +210,8 @@ function HeaderSection() {
               <label></label>
 
               <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon2} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Specialization</li>
-                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> TBD</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '20px' }}><img src={DevIcon2} width='30px' height='30px' style={{ marginRight: '0px', }}></img>Specialization</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Software Developer</li>
               </div>
 
               <label></label>
@@ -307,7 +307,7 @@ function HeaderSection() {
             <img src={CashappQR} height='auto' style={{ padding: '0px', width: `${qrwidth}` }} />
           </div>
 
-          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '0px', marginBottom: '0px', marginRight: '0px', width: `${linkTreeWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
+          <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '20px', marginRight: '0px', width: `${linkTreeWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black', border: '1px solid white' }}>
 
             <h2 style={{ color: 'white' }}>
               LINK TREE  <br />
@@ -646,7 +646,7 @@ function HeaderSection() {
         </div>
       </div>
 
-      <h3 style={{ color: 'white' }}>Enjoy the Turkey 🤤</h3>
+      <h3 style={{ color: 'black' }}>Happy Holidays! 🎁</h3>
 
     </div>
   );

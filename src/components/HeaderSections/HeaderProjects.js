@@ -40,7 +40,7 @@ function HeaderProjects() {
     }
   }
 
-  const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
+  const [baseUrl, setBaseUrl] = useState("https://swapi.tech/api/starships");
   const [data, setData] = useState([]);
   const [currentStatus, setStatus] = useState(false);
 
@@ -128,7 +128,7 @@ function HeaderProjects() {
   function urlChange() {
     urlToggle = !urlToggle;
     if (urlToggle) {
-      setBaseUrl("https://swapi.dev/api/people");
+      setBaseUrl("https://swapi.tech/api/people");
     }
     else {
       setBaseUrl("https://pokeapi.co/api/v2/berry");
@@ -208,7 +208,7 @@ function HeaderProjects() {
         </div>
 
         <div className='gio-container' style={{ paddingBottom: '25px', boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', background: 'transparent', flexDirection: 'column', width: `${ProjectsBanner}`, alignSelf: 'center', alignItems: 'center', border: 'none', paddingTop: '5px' }}>
-          <div className="projectHeader" style={{ boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: `${CardMarginTop}`, width: `${ProjectsBanner}`, background:'white',  }}>
+          <div className="projectHeader" style={{ boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: `${CardMarginTop}`, width: `${ProjectsBanner}`, background: 'white', }}>
 
             <h1
               style={{
@@ -583,37 +583,49 @@ function HeaderProjects() {
                 </h1>
 
 
-                <div className="gio-container" style={{}}>
-                  <div className='gio-container-2'>
+                <div className="gio-container" style={{ background: 'none' }}>
+                  <div className='gio-container-2' style={{ width: '100%', }}>
                     <h2 style={{
                       color: '#AEBEBEff',
                       fontSize: `${FontSizeLarge}`,
-                      backgroundColor: '#243232ff',
+                      background: 'none',
                       padding: '10px',
 
                     }}>API Switch</h2>
                     <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }} >Endpoint request using vanilla JS displayed in custom table</h2>
-                    <p style={{ backgroundColor: '#243232ff' }}>You can switch between endpoints using this button!</p>
-                    <p style={{ backgroundColor: '#243232ff' }}><em>It may take some time to load between button presses</em></p>
-                    <button
-                      style={{ color: '#AEBEBEff', backgroundColor: '#101730ff', cursor: 'pointer' }}
-                      onClick={urlChange}>
-                      Change API
-                    </button>
+                    <div style={{ backgroundColor: '#243232ff' }}>
+                      <h3 style={{ fontSize: `${FontSizeMedium}`}}>You can switch between
+                        <h1 style={{
+                          color: 'yellow',
+                          fontSize: `${FontSizeMedium}`,
+                          background: 'none',
+                          padding: '10px',
+                        }}
+                        >
+                          swapi & pokeapi</h1> endpoints using this button!</h3>
+                      <h3 ><em>It may take some time to load between button presses</em></h3>
+                      <button
+                        style={{ color: '#AEBEBEff', backgroundColor: '#101730ff', cursor: 'pointer' }}
+                        onClick={urlChange}>
+                        Change API
+                      </button>
+                    </div>
                   </div>
 
                   {!currentStatus ? <h2>Loading... </h2> : <Table data={data} />}
                 </div>
 
-                <div className="gio-container" style={{ paddingBottom: '10px', paddingLeft: '5px', paddingRight: '5px', paddingTop: '10px', background: 'black' }}>
+                <div className="gio-container" style={{ paddingBottom: '5px', paddingLeft: '10px', paddingRight: '10px', paddingTop: '20px', background: 'black', boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px' }}>
                   <h2 style={{
                     color: '#AEBEBEff',
                     fontSize: `${FontSizeLarge}`,
-                    backgroundColor: '#243232ff',
 
-                  }}>CRUD Form & Table</h2>
-                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> Demonstration of CRUD properties</h2>
+
+                  }}>CRUD example  </h2>
+                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> This is a demonstration of CRUD properties. The data is created or altered in gmdevapi.com via HTTPS requests , and sent to my <b style={{color:"green"}}>Mongo Database</b></h2>
+                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> This means you can <b>create</b> , <b style={{color:"lightgreen"}}>edit</b>, or <b style={{color:"red"}}>delete</b> data in my database! Feel free to leave your social media and dev project links here</h2>
                   {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
+                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> This table and HTTP connections are made from scratch and can be found in my source code under <code>CrudTable.js</code></h2>
 
                 </div>
               </div>
@@ -796,7 +808,7 @@ function HeaderProjects() {
 
       <div style={{ display: 'flex', alignItems: 'center', flexDirection: `${FlexDirectionFooter}`, margin: '10px' }}>
 
-        <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', margin: '5px', background: 'black', borderRadius: "30px" , width: `${FooterSize}`}}>
+        <div className="end-div" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', margin: '5px', background: 'black', borderRadius: "30px", width: `${FooterSize}` }}>
           <a href="https://github.com/codingcodewhilegoofin/giowebsite">
             <h2 style={{
               color: '#AEBEBEff',

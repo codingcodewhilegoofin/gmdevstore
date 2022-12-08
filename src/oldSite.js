@@ -17,7 +17,7 @@ import StartApp from './Start';
 import './App.css';
 import Giobot from './components/OpenAi/Giobot/Giobot.js';
 import TestAPI from './components/Pages/TestAPI.js';
-import Practice from './practice/practice';
+import Practice from './practiceSource/practice';
 
 //Menu import
 import MenuButton from './components/Buttons/MenuButton/MenuButton.js';
@@ -98,7 +98,7 @@ function OldSite() {
     <HashRouter basename='/'> {/*Hash routing  */}
 
       {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */}
-      <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor:'#9b673c' }}>
+      <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor:'white' }}>
 
         <Giobot />
 
@@ -107,35 +107,37 @@ function OldSite() {
             style={{
               color: '#19819fff',
               /* backgroundColor: '#1b2524ff', */
-              backgroundColor: '#A91622',
+              backgroundColor: 'green',
               cursor: 'pointer',
               textTransform: 'uppercase',
               fontSize: 'x-large',
-              /* border: '1px solid #19819fff', */
+              border: '2px solid red', 
               borderRadius: '10px',
               boxShadow: 'rgba(0, 0, 0, 0.9) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.9) 0px -3px 0px inset',
             }}>
 
             {!showMenu ?
               <>
-                <div style={{ animation: `${leafAnimation}` , paddingLeft: '95%', fontSize: 'xx-large', }}>🍂</div>
+                <div style={{ animation: `${leafAnimation}` , paddingLeft: '95%', fontSize: 'xx-large', }}>❄️</div>
+                <div style={{ animation: `${leafAnimation}` , paddingRight: '95%', fontSize: 'xx-large', }}>❄️</div>
+                <div style={{ animation: `${leafAnimation}` , paddingLeft: '5%', fontSize: 'xx-large', }}>❄️</div>
 
                 {/*   < div style={{ animation: 'wiggle 2s ease-in-out infinite' }}>
                   👉
                 </div> */}
 
-                <div style={{ animation: 'turkey 10s ease-in-out ' }}> 🦃</div>
+                <div style={{ animation: 'turkey 10s ease-in-out ' }}> ☃️</div>
                
                 <div style={{ display: 'inline-block', boxShadow: 'rgba(225, 255, 255, 0.9) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }}>
                   <h2 style={{ color: 'white', fontWeight: 'bold' }}>
                     Cust
                     <div style={{ animation: 'coffeePulse 3s ease-in-out infinite', display: 'inline' }}>
-                    ☕
+                    🥛
                     </div>
                     m
                   </h2>
-                  <h2 style={{ color: 'black', fontWeight: 'bold' }}>
-                    <div style={{ animation: 'football 3s ease-in-out infinite', display: 'inline' }}>🏈</div>
+                  <h2 style={{ color: 'white', fontWeight: 'bold' }}>
+                    <div style={{ animation: 'football 3s ease-in-out infinite', display: 'inline' }}>🍪</div>
                     {' '} Menu
                   </h2>
                 </div>
@@ -144,7 +146,7 @@ function OldSite() {
               </>
               :
 
-              <div style={{ /* animation: 'ghost 3s ease-in-out infinite' */color: '#ffba08' }}>
+              <div style={{ /* animation: 'ghost 3s ease-in-out infinite' */color: 'red' }}>
                 ☰
               </div>
             }
@@ -162,8 +164,8 @@ function OldSite() {
                   flexDirection: 'row',
                   textAlign: 'center',
                   alignItems: 'center',
-                  border: '1px solid #472d30',
-                  animation: 'pulseThanksgiving 3s ease-in-out infinite',
+                  border: '1px solid red',
+                  animation: 'pulse2 3s ease-in-out infinite',
                   
                 }}
               >
@@ -240,8 +242,8 @@ function OldSite() {
 
                     <a style={{ fontSize: `${iconSize}` }} className="nav-item" href="http://www.staggeringbeauty.com/">
                       <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                        <p style={{ color: 'black', fontSize: `${fontSize}` }}> ?</p>
-                        <NavItem href="https://www.amazon.com/blackfriday" icon={<> 🏴</>} />
+                        <p style={{ color: 'red', fontSize: `${fontSize}` }}> ?</p>
+                        <NavItem href="https://www.chicago.gov/city/en/depts/dca/supp_info/tree0.html" icon={<> ❄️</>} />
                       </div>
                     </a>
                   </div>

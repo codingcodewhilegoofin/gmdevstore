@@ -83,8 +83,19 @@ img {
   justify-content: center;
   padding: 35px;
   margin: 5px;
-  border: 2px solid black;
+  border: 2px solid white;
 
+  
+}
+
+.dsaMenu2 > ul {
+ 
+}
+
+
+.dsaMenu2 > ul > li{
+ 
+  padding: 10px;
 }
 
 .dsaMenu3{
@@ -92,10 +103,9 @@ img {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  width: 90%;
+  width: 70%;
   margin: 10px;
  
-
 }
 .dsaMenu2 > p{
   fontWeight: 900;
@@ -718,14 +728,14 @@ keyframes move {
 
 
 .gio-main {
-  border: 1px solid var(--ash-gray);
+  
   transition: border 3s;
   text-align: center;
   padding:2px;
 }
 
 .gio-main:hover {
-  border: 1px solid var(--dark-slate-gray);
+
   transition: border 3s;
 }
 

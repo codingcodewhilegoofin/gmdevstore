@@ -118,46 +118,7 @@ const Practice = () => {
 
     return (
         <>
-            <div>
-                <p style={{ display: 'inline-block', padding: '10px' }}> Regular Function</p>
-                <input style={{ padding: '10px' }} type="checkbox" onClick={(e) => setRegFunction(e.target.checked)}></input>
-            </div>
-            <div>
-                <p style={{ display: 'inline-block', padding: '10px' }}> Single Line Function</p>
-                <input style={{ padding: '10px' }} type="checkbox" onClick={modalHandle}></input>
-            </div>
-            {regFunction ?
-                <>
-                    <div>
-                        {functionType.map((type) => {
-
-
-                            return (
-                                <GeneralFunction key={type.key} name={type.name} description={type.description} examples={type.examples[0]} />
-                            )
-                        })}
-                    </div>
-                </>
-
-                :
-
-                <>
-
-                </>
-            }
-
-            {singleLineFunction ?
-                <>
-                    
-                </>
-
-                :
-
-                <>
-                    <h1> wut</h1>
-                </>
-            }
-
+            
         </>
     );
 }

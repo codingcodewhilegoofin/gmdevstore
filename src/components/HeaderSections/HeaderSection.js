@@ -182,56 +182,7 @@ function HeaderSection() {
 
         {/*   <img src={Info} height='auto' style={{ padding: '0px', marginBottom: '0px', border: '2px solid #19819Fff', borderRadius: '30px', width: `${homepageSVGWidth}`, marginTop: '5px' }} /> */}
 
-        <div className='gio-container' style={{ background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}` }}>
-          <ul style={{ background: 'black', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
-            <div className="end-div2" style={{ border: '10px solid black', borderRadius: '5px', background: 'white', marginBottom: '20px', width: `${StatsCardHeader}`, boxShadow: 'rgba(25, 129, 159, 0.9) 6px 2px 10px 0px, rgba(25, 129, 159, 0.9) -6px -2px 10px 0px ' }} >
-              <h3 style={{ color: 'black', fontWeight: '900', fontSize: `${FontSizeLarge}` }}>
-                < div style={{ animation: 'wiggle 20s ease-in-out infinite' }}>
-                📊
-                </div>
-                Quick Stats
-              </h3>
-            </div>
-
-            <div style={{ width: `${StatsCard}` }}>
-
-              <div style={{ textAlign: 'center', alignItems: 'center', background: 'white', display: 'flex', flexDirection: 'column', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ textAlign: 'center', fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '20px' }}><img src={DevIconHat} width='30px' height='30px' style={{ marginRight: '25px', }}></img>B.S In CS from NIU</li>
-
-              </div>
-
-              <label></label>
-
-              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Dev Level</li>
-                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Juinor</li>
-              </div>
-
-              <label></label>
-
-              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '20px' }}><img src={DevIcon2} width='30px' height='30px' style={{ marginRight: '0px', }}></img>Specialization</li>
-                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Software Developer</li>
-              </div>
-
-              <label></label>
-
-              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon3} width='30px' height='30px' style={{ marginRight: '10px', background: 'none' }}></img>Active Projects</li>
-                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> 3</li>
-              </div>
-
-              <label></label>
-
-              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
-                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon4} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Years Experience</li>
-                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> 5</li>
-              </div>
-
-            </div>
-
-          </ul>
-        </div>
+       
 
         <div className="end-div5" style={{ background: 'transparent', padding: `${cardPadding}`, marginLeft: `${cardMargin}`, marginRight: `${cardMargin}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
 
@@ -316,6 +267,104 @@ function HeaderSection() {
 
           </div>
 
+        </div>
+
+        <div className='gio-container' style={{ background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}`, marginTop: '10px', marginBottom: '10px' }}>
+          <ul style={{ background: 'black', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+            <div className="end-div2" style={{ border: '10px solid black', borderRadius: '5px', background: 'white', marginBottom: '20px', width: `${StatsCardHeader}`, boxShadow: 'rgba(25, 129, 159, 0.9) 6px 2px 10px 0px, rgba(25, 129, 159, 0.9) -6px -2px 10px 0px ' }} >
+              <h3 style={{ color: 'black', fontWeight: '900', fontSize: `${FontSizeMedium}` }}>
+                
+                Web app information
+              </h3>
+            </div>
+
+            <div style={{ alignItems: 'center', display: 'flex', flexDirection: "column", justifyContent: 'space-between' }}> 
+
+            <div style={{ width: `${StatsCard}` }}>
+
+              <div style={{ textAlign: 'center', alignItems: 'center', background: 'white', display: 'flex', flexDirection: 'column', border: '2px solid #19819Fff', margin: '0px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', paddingLeft: '25px', paddingRight: '25px'}}>
+                <h3 style={{ color: 'black', fontWeight: 'bold' }}>All components , files, animations, styling, and code was written by me from scratch using the </h3>
+                <li style={{ textAlign: 'center', fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'lightblue', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '20px' }}>React Framework</li>
+
+              </div>
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '50px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}>All art work , code, and backend was also made from scratch ! Except for 3D models and company logos</li>
+
+              </div>
+             
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '20px' }}>This web app connects to over 6 API's managed by my personal gmdevapi ! </li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Check projects tab to learn more.</li>
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '50px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}>It took me 3 years to finish this website. I started from scratch and barely knew CSS / HTML ! </li>
+
+              </div>
+            </div>
+            
+
+          </ul>
+        </div>
+
+        <div className='gio-container' style={{ background: 'black', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', border: 'none', padding: '3px', width: `${ProjectCardWidth}`, marginTop: '10px', marginBottom: '10px'}}>
+          <ul style={{ background: 'black', width: '95%', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+            <div className="end-div2" style={{ border: '10px solid black', borderRadius: '5px', background: 'white', marginBottom: '20px', width: `${StatsCardHeader}`, boxShadow: 'rgba(25, 129, 159, 0.9) 6px 2px 10px 0px, rgba(25, 129, 159, 0.9) -6px -2px 10px 0px ' }} >
+              <h3 style={{ color: 'black', fontWeight: '900', fontSize: `${FontSizeMedium}` }}>
+                < div style={{ animation: 'wiggle 20s ease-in-out infinite' }}>
+                📊
+                </div>
+                Quick Stats
+              </h3>
+            </div>
+
+            <div style={{ width: `${StatsCard}`,  }}>
+
+              <div style={{ textAlign: 'center', alignItems: 'center', background: 'white', display: 'flex', flexDirection: 'column', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ textAlign: 'center', fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '20px' }}><img src={DevIconHat} width='30px' height='30px' style={{ marginRight: '25px', }}></img>B.S In CS from NIU</li>
+
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Dev Level</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Juinor</li>
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '20px' }}><img src={DevIcon2} width='30px' height='30px' style={{ marginRight: '0px', }}></img>Specialization</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> Software Developer</li>
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon3} width='30px' height='30px' style={{ marginRight: '10px', background: 'none' }}></img>Active Projects</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> 3</li>
+              </div>
+
+              <label></label>
+
+              <div style={{ background: 'white', display: 'flex', flexDirection: 'row', border: '2px solid #19819Fff', margin: '10px', color: 'black', boxShadow: 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(25, 129, 159, 0.8) -6px -2px 16px 0px', borderRadius: '20px', }}>
+                <li style={{ fontSize: `${FontSizeMedium}`, border: '1px solid black', margin: '3px', color: 'white', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 1)', borderRadius: '50px' }}><img src={DevIcon4} width='30px' height='30px' style={{ marginRight: '10px', }}></img>Years Experience</li>
+                <li style={{ fontSize: `${FontSizeMedium}`, margin: '0px', color: 'black', padding: '10px', borderRadius: '50px' }}> 5</li>
+              </div>
+
+            </div>
+
+          </ul>
         </div>
 
 

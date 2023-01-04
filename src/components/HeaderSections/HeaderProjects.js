@@ -80,7 +80,7 @@ function HeaderProjects() {
   if (windowSize[0] < 500) {
     specialheader = <></>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
-    specialheader3 = <iframe src="https://gmdevapi.com" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
+    specialheader3 = <iframe padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     logoSection = <></>;
     youtubesub = <></>;
     ProjectsBanner = '100%';
@@ -222,7 +222,7 @@ function HeaderProjects() {
                 margin: '5px',
                 width: `${ProjectsBanner}`
               }}>
-              PROJECT DIRECTORY AND Q&A
+              PORTFOLIO DIRECTORY AND Q&A
             </h1>
 
             <div className='spacer'>
@@ -423,7 +423,7 @@ function HeaderProjects() {
                 margin: '5px',
                 width: `${ProjectsBanner}`
               }}>
-              PROJECT SHOWCASE
+              PORTFOLIO SHOWCASE
             </h1>
 
             <div className='spacer'>
@@ -431,13 +431,21 @@ function HeaderProjects() {
 
             <ProjectCard
               title="Other Web App's"
-              subtitle="Fullstackingdevelopment.com"
-              description="I am working on a Full Stack React-Native app which hosts our other projects with a team !"
+              subtitle="Web Applications"
+              description="A web application is application software that is accessed using a web browser. Web applications are delivered on the World Wide Web to users with an active network connection."
               cardToggleID={"IdOne"}
             >
               <div className="gio-container" style={{ margin: '10px', background: 'none' }}>
                 <div className="gio-container" style={{ width: '100%', borderRadius: "5px", background: 'black' }}>
-                  {specialheader2}
+                  <h3 style={{
+                    color: "#AEBEBEff",
+                    fontSize: `${FontSizeMedium}`,
+                    fontWeight: '900',
+                    padding: '5px'
+
+                  }}>
+                    FSD.com is a react based web app to connect people to our personal projects.
+                  </h3>
                   <label></label>
                   <a style={{
                     color: '#AEBEBEff',
@@ -457,20 +465,7 @@ function HeaderProjects() {
               <div className="gio-container" style={{ margin: '10px', background: 'black' }}>
                 <div className="gio-container" style={{ width: '100%', borderRadius: "5px", background: 'black' }}>
 
-                  <h1
-                    style={{
-                      color: "#AEBEBEff",
-                      backgroundColor: "#025B79ff",
-                      marginTop: "5px",
-                      border: "2px solid #242a36 ",
-                      borderRadius: "5px",
-                      fontSize: `${FontSizeMedium}`,
-                      fontWeight: '900',
-                      margin: '10px',
-                      padding: '5px'
-                    }}>
-                    gmdevapi.com
-                  </h1>
+
 
                   <h3 style={{
                     color: "#AEBEBEff",
@@ -479,13 +474,13 @@ function HeaderProjects() {
                     padding: '5px'
 
                   }}>
-                    This is a CloudFlare worker built with JS and bundled with webpack.
-                    It serves lots of endpoints for anyone to use. I use it in my personal projects
-                    to secure API keys and call other API's.
+                    Gmdevapi.com is a CloudFlare worker built TailwindCss and React framework.
+                    It hosts enpoints for any public application to call via HTTP request.
+                    It acts as a middle-layer between my website and 3rd party API's.
                   </h3>
 
 
-                  {specialheader3}
+
                   <label></label>
                   <a style={{
                     color: '#AEBEBEff',
@@ -508,7 +503,7 @@ function HeaderProjects() {
 
 
             <ProjectCard
-              title="API Intergrations"
+              title="3rd Pary API Intergrations"
               subtitle="Spotify API"
               description="I intergrated the Spotify API my web app to show off my music !"
               cardToggleID={"IdTwo"}
@@ -594,7 +589,7 @@ function HeaderProjects() {
                     }}>API Switch</h2>
                     <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }} >Endpoint request using vanilla JS displayed in custom table</h2>
                     <div style={{ backgroundColor: '#243232ff' }}>
-                      <h3 style={{ fontSize: `${FontSizeMedium}`}}>You can switch between
+                      <h3 style={{ fontSize: `${FontSizeMedium}` }}>You can switch between
                         <h1 style={{
                           color: 'yellow',
                           fontSize: `${FontSizeMedium}`,
@@ -622,9 +617,9 @@ function HeaderProjects() {
 
 
                   }}>CRUD example  </h2>
-                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> This is a demonstration of CRUD properties. The data is created or altered in gmdevapi.com via HTTPS requests , and sent to my <b style={{color:"green"}}>Mongo Database</b></h2>
-                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> This means you can <b>create</b> , <b style={{color:"lightgreen"}}>edit</b>, or <b style={{color:"red"}}>delete</b> data in my database! Feel free to leave your social media and dev project links here</h2>
-                  {!currentStatus ? <h2>Loading... </h2> : <CrudTable data={data} />}
+                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> This is a demonstration of CRUD properties. The data is created or altered in gmdevapi.com via HTTPS requests , and sent to my <b style={{ color: "green" }}>Mongo Database</b></h2>
+                  <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> This means you can <b>create</b> , <b style={{ color: "lightgreen" }}>edit</b>, or <b style={{ color: "red" }}>delete</b> data in my database! Feel free to leave your social media and dev project links here</h2>
+                  {!currentStatus ? <h2>Loading... </h2> : <CrudTable />}
                   <h2 style={{ color: 'white', fontSize: `${FontSizeMedium}`, }}> This table and HTTP connections are made from scratch and can be found in my source code under <code>CrudTable.js</code></h2>
 
                 </div>

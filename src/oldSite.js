@@ -28,31 +28,34 @@ import { ReactComponent as DownloadSymbol } from './icons/download.svg';
 import { ReactComponent as LinkedinSymbol } from './icons/linkedin.svg';
 import { ReactComponent as GithubSymbol } from './icons/github.svg';
 
+
 // Main component 
 function OldSite() {
   //Custom variables
   let githublink = 'https://github.com/codingcodewhilegoofin';
   let linkedinlink = 'https://www.linkedin.com/in/gio-m-4a19a71b1/';
   let downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/Gio%20M%20Res%20public.pdf';
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
-
-
+  const [windowSize, setWindowSize] = useState(window.innerWidth, window.innerHeight);
+ 
 
   useEffect(() => {
 
     function updateSize() {
       setWindowSize([window.innerWidth, window.innerHeight]);
     }
-
-   
-
+  
     window.addEventListener('resize', updateSize);
+    window.addEventListener('scroll', updateSize);
+
     //console.log(windowSize[0]);
 
     return () => {
       window.removeEventListener('resize', updateSize);
+      window.removeEventListener('scroll', updateSize);
     }
   }, [windowSize])
+
+
 
   let mobileNav;
   let fontSize;
@@ -67,14 +70,14 @@ function OldSite() {
     showDownloadRes = false;
     leafAnimation = '';
   }
-  else if (windowSize[0] < 600) {
+  else if (windowSize[0] < 800) {
     mobileNav = 'column';
     fontSize = 'medium';
     iconSize = 'medium';
     showDownloadRes = false;
     leafAnimation = '';
   }
-  else if (windowSize[0] < 800) {
+  else if (windowSize[0] < 1000) {
     mobileNav = 'row';
     fontSize = 'large';
     iconSize = 'x-large';
@@ -100,8 +103,9 @@ function OldSite() {
       {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */}
       <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor:'white' }}>
 
-        <Giobot />
+        {/* <Giobot /> */}
 
+  
         <div onClick={() => setshowMenu(!showMenu)} className="end-div5" style={{ padding: '1px', width: '100%', flexDirection: `${mobileNav}`, textAlign: 'center', alignItems: 'center' }}>
           <button
             style={{

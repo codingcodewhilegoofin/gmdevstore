@@ -77,9 +77,9 @@ const ChoiceSite = (props) => {
                 </div>
             </div>
 
-            <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%", }}>
+            <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%", borderRadius: "50px",}}>
 
-                <div id="mainmenu" className="choicediv" style={{ display: `${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff", }}>
+                <div id="mainmenu" className="choicediv" style={{ display: `${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff",borderRadius: "20px", marginTop: '5px'}}>
 
                     <h1
                         style={{

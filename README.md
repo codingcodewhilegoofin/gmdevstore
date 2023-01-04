@@ -47,12 +47,15 @@ This is a portfolio website to showcase projects as well as web dev skills.
 - [X] Update Cards for monetization
 - [X] Finish Website Design & Mobile resizability
 - [X] Holiday Theme update
-- [ ] Finish OpenAI api bot
-- [ ] Finish Arduino api page
-- [ ] Contact page update
-- [ ] DSA page update
-- [ ] Finish CRUD Table
-- [ ] Final Code refactor , organization , documentation
+- [x] Finish Arduino api page
+- [x] Contact page update
+- [x] DSA page update
+- [x] Finish CRUD Table
+- [x] Final Code refactor , organization , documentation
+
+**Date: 1/4/2023**
+
+  Major content finished. Bug Fixes & Content updates continue.
 
 **Date: 11/11/2022**
 
@@ -148,6 +151,20 @@ Then deployed to github pages and routed through CloudFlare.
 >https://openai.com/api/
 
 >https://www.wombo.art/
+
+>https://www.cloudflare.com/
+
+>https://polygon.io/
+
+>https://www.treasurydirect.gov/
+
+>https://opensea.io/
+
+>https://www.mongodb.com/
+
+>https://ant.design/
+
+>https://mui.com/core/
 # credits
 Gifs From > https://giphy.com/ericaofanderson
 > Erica Anderson @ericaofanderson

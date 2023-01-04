@@ -2,7 +2,7 @@ import '../PageCss/GioTable.css';
 
 
 export const Table = props =>{
-    console.log(props);
+    //console.log(props);
 
     const columns = Object.keys(props.data[0]);
 

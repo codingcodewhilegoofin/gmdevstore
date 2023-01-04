@@ -26,6 +26,7 @@ function App() {
 
   const [siteVersion, setSiteVersion] = useState("");
   const [startScene, setStartScene] = useState(true);
+  const [loadingScreen, setLoadingScreen] = useState(false);
   const [modal, setModal] = useState(true);
   const [modalToggle, setModalToggle] = useState("modalbtn");
   const [modalbg, setModalbg] = useState("modalOff");
@@ -84,10 +85,23 @@ function App() {
     songChoice = SpookyMusic3;
   } */
 
+  const loadingScreenSequence = () => {
+    setLoadingScreen(true);
+    setTimeout(() => { setLoadingScreen(false);}, 3000);
+  }
+
+
+
 
   return (
-
     <div className={modalbg} style={{ /* backgroundColor: "#1C2222" */ backgroundColor: "white", textAlign: 'center', padding: '1px' }}>
+
+      {loadingScreen ?
+
+        <><div style={{ width: '100%', height: '100%', background: 'black'}}><h2 style={{ color: 'white', fontSize: 'xx-large'}}> Loading.... Scroll to fix resize bug </h2></div></>
+        :
+        <></>
+      }
 
       <h3 style={{ color: 'black' }}>🎄 Jingle Bells , Batman smells  🦇</h3>
 
@@ -120,7 +134,7 @@ function App() {
 
           <div className="modalBox" style={{ textAlign: 'left' }}>
             <ul>
-              <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/' className='listmodal'> Home 🏠</a> </li>
+              <li onClick={()=>{menuTurnOffScene(); loadingScreenSequence();}} className='listmodal'> <a onClick={modalHandle} href='/#/' className='listmodal'> Home 🏠</a> </li>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/dependency+' className='listmodal'> 3JS / R3F <img style={{ backgroundColor: '#FFFFFF', padding: '2px' }} width='25px' height='25px' src={BoxIcon} /></a> </li>
               <li onClick={specialHanlde} className='listmodal'> <a onClick={modalHandle} className='listmodal'> 3DSplineScene <img style={{ backgroundColor: '#FFFFFF', padding: '1px', marginLeft: '10px', marginTop: '5px' }} width='100px' height='100px' src={SplineIcon} /></a> </li>
               <li onClick={menuTurnOffScene} className='listmodal'> <a onClick={modalHandle} href='/#/projects' className='listmodal'> Projects </a> </li>
@@ -139,6 +153,8 @@ function App() {
       {((startScene === false)) ? <></> : <ChoiceSite func={pull_data} func2={pull_data2} />}
       {(startScene === false) ? <></> : ((siteVersion === "vanilla") ? <NewSite /> : <OldSite />)}
     </div>
+
+
   );
 }
 export default App;//Export the component to index.js 

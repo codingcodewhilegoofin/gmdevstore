@@ -72,8 +72,6 @@ function HeaderContact() {
   return (
     <div className='gio-main' >
 
-      <h2 style={{ color: 'white', fontSize: 'x-large' }}>Gio Moscato.com</h2>
-
       <div className='subheader8' style={{ width: `${HeaderCardWidth}`, borderRadius: '5px', boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }}>
 
         <h1 style={{ color: "white", fontWeight: '900', fontSize: `${FontSizeLarge}` }}>HOW TO CONTACT ME</h1>

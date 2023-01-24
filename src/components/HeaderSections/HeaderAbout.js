@@ -60,7 +60,7 @@ function HeaderAbout() {
   }
   return (
     <>
-      <h2 style={{ color: 'white', fontSize: 'x-large' }}>Gio Moscato.com</h2>
+      
 
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 

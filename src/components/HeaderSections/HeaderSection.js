@@ -153,10 +153,8 @@ function HeaderSection() {
   return (
     <div>
 
-      <h2 style={{ color: 'black', fontSize: 'x-large' }}>Gio Moscato.com 🎅</h2>
-
       <div style={{
-        backgroundColor: 'transparent',
+        backgroundColor: '#242a36',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
@@ -172,6 +170,7 @@ function HeaderSection() {
             textTransform: 'uppercase',
             paddingTop: '0px',
             paddingBottom: '0px',
+            fontSize:'large'
           }}
           onClick={mainBodyHandle}>
           CLOSE
@@ -184,7 +183,7 @@ function HeaderSection() {
 
        
 
-        <div className="end-div5" style={{ background: 'transparent', padding: `${cardPadding}`, marginLeft: `${cardMargin}`, marginRight: `${cardMargin}`, marginBottom: '50px', marginTop: '50px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
+        <div className="end-div5" style={{ background: 'transparent', padding: `${cardPadding}`, marginLeft: `${cardMargin}`, marginRight: `${cardMargin}`, marginBottom: '50px', marginTop: '5px', width: `${infoWidth}`, flexDirection: `${cardOrientation}`, textAlign: 'center', alignItems: 'center' }}>
 
           <div className="end-div5" style={{ boxShadow: 'rgba(0, 0, 0, 0.5) 2px 20px 5px', padding: '10px', marginBottom: '0px', marginTop: '0px', width: `${cardWidth}`, flexDirection: 'column', textAlign: 'center', alignItems: 'center', backgroundColor: 'black' }}>
             <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
@@ -222,7 +221,7 @@ function HeaderSection() {
             {gmdevstorevar}
 
             <p style={{ color: '#AEBEBEff', margin: '20px', fontSize: `${fontMobile}` }}>
-              Check out our team site <br />
+              Check out our <br />team site <br />
               <button style={{ border: '1px solid white', borderRadius: '25px', backgroundColor: '#242a36', width: '60%' }}>
                 <a style={{ color: '#AEBEBEff', fontWeight: '700' }} href='https://fullstackingdevelopment.com/'> <em> fullstackingdevelopment.com </em></a>
               </button>
@@ -695,7 +694,7 @@ function HeaderSection() {
         </div>
       </div>
 
-      <h3 style={{ color: 'black' }}>Happy Holidays! 🎁</h3>
+      {/* <h3 style={{ color: 'black' }}>Happy Holidays! 🎁</h3> */}
 
     </div>
   );

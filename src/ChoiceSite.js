@@ -1,6 +1,7 @@
 //Standard imports 
 import React, { Component, useState, useEffect } from 'react';
 import './choice.css';
+import schematic from '../src/icons/ard schematic 2.png';
 
 const ChoiceSite = (props) => {
 
@@ -49,7 +50,7 @@ const ChoiceSite = (props) => {
     return (
         <>
             <div style={{
-                backgroundColor: '#101730ff',
+                backgroundColor: '#1b2524ff',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-start',
@@ -58,7 +59,7 @@ const ChoiceSite = (props) => {
                 marginLeft: '8px',
                 marginRight: '8px',
                 borderRadius: '20px',
-                fontSize:'x-large'
+                fontSize: 'x-large'
             }}>
 
                 <div className="chatbotBar" >
@@ -77,13 +78,13 @@ const ChoiceSite = (props) => {
                 </div>
             </div>
 
-            <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%", borderRadius: "50px",}}>
+            <div className="choicediv" style={{ background: "rgb(36, 42, 54)", textAlign: "center", width: "100%", borderRadius: "0px 0px 20px 20px", }}>
 
-                <div id="mainmenu" className="choicediv" style={{ display: `${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: "10px solid #101730ff",borderRadius: "20px", marginTop: '5px'}}>
+                <div id="mainmenu" className="choicediv" style={{ display: `${mainMenuState}`, background: "rgb(36, 42, 54)", textAlign: "center", width: '100%', border: '2px solid red', borderRadius: "0px 0px 20px 20px", marginTop: '5px' }}>
 
                     <h1
                         style={{
-                            color: "#AEBEBEff",
+                            color: "white",
                             backgroundColor: "transparent",
                             fontSize: "auto",
                             fontWeight: '900',
@@ -91,7 +92,7 @@ const ChoiceSite = (props) => {
                         3D Options
                     </h1>
 
-                   
+
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
@@ -116,15 +117,15 @@ const ChoiceSite = (props) => {
                         fontWeight: '900',
                     }}>
                         <em> Vanilla / Regular version</em> demonstrates my pure/vanilla <code style={{ color: "#AEBEBEff" }}>HTML , CSS , JS , JSX</code> skills with the
-                        react framework. <br />Other than the essential 'react-' libraries all other components and code are made by me from scratch. 
+                        react framework. <br />Other than the essential 'react-' libraries all other components and code are made by me from scratch.
                     </h3>
-                    
+
                     <h3 style={{
                         color: "#AEBEBEff",
                         fontSize: "auto",
                         fontWeight: '900',
                     }}>  Material UI and Ant UI are only used for the 3D versions of my website. All other UI was created by me in an attempt to learn.
-                        <br/>I also understand this website may not be "conventional" or follow some web-standards. I did this on purpose to have creative freedom with the UI !
+                        <br />I also understand this website may not be "conventional" or follow some web-standards. I did this on purpose to have creative freedom with the UI !
                     </h3>
 
                     <a style={{ color: "#AEBEBEff" }} href="https://github.com/codingcodewhilegoofin"> Feel free to contact me</a>
@@ -141,19 +142,7 @@ const ChoiceSite = (props) => {
 
                         }}>
 
-                            <button
-                                style={{
-                                    color: '#AEBEBEff',
-                                    backgroundColor: '#1B2524ff',
-                                    cursor: 'pointer',
-                                    padding: '5px',
-                                    width: '50%',
-                                    border: '1px solid #3F646Dff'
-                                }}
-                                onClick={dep}
-                            >
-                                3D MicroController UI
-                            </button>
+                           
 
                             <button
                                 style={{
@@ -162,7 +151,24 @@ const ChoiceSite = (props) => {
                                     cursor: 'pointer',
                                     padding: '5px',
                                     width: '50%',
-                                    border: '1px solid #3F646Dff'
+                                    border: '1px solid red'
+                                }}
+                                onClick={dep}
+                            >
+                                3D MicroController UI
+
+                            </button>
+
+
+
+                            <button
+                                style={{
+                                    color: '#AEBEBEff',
+                                    backgroundColor: '#1B2524ff',
+                                    cursor: 'pointer',
+                                    padding: '5px',
+                                    width: '50%',
+                                    border: '1px solid #19819fff'
                                 }}
                                 onClick={() => setChangeScene(true)}
                             >
@@ -187,6 +193,16 @@ const ChoiceSite = (props) => {
                         </button>
 
                     </div>
+
+                    <img src={schematic} width='90%' height='auto' style={{ border: '2px solid red',backgroundColor: 'transparent', padding: '5px', marginTop: '5px'}} />
+
+                    <h3 style={{
+                        color: "#AEBEBEff",
+                        fontSize: "auto",
+                        fontWeight: '900',
+                    }}>
+                        MicroController schematic
+                    </h3>
 
                     <br />
                 </div>

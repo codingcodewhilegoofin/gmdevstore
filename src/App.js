@@ -94,7 +94,7 @@ function App() {
 
 
   return (
-    <div className={modalbg} style={{ /* backgroundColor: "#1C2222" */ backgroundColor: "white", textAlign: 'center', padding: '1px' }}>
+    <div className={modalbg} style={{  backgroundColor: "#242a36", textAlign: 'center', padding: '2px', }}>
 
       {loadingScreen ?
 
@@ -103,7 +103,7 @@ function App() {
         <></>
       }
 
-      <h3 style={{ color: 'black' }}>🎄 Jingle Bells , Batman smells  🦇</h3>
+      {/* <h3 style={{ color: 'black' }}>🎄 Jingle Bells , Batman smells  🦇</h3> */}
 
       {/*      <audio 
         src={songChoice}
@@ -128,8 +128,8 @@ function App() {
 
       <div id="modalsection" class="modal">
         <div class="modal-content">
-          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign: 'center', width: '33%', }}> ❄️ </button>
-          <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}> ☃️ Christmas time !</h2>
+          <button onClick={modalHandle} class="modalbtninner" style={{ textAlign: 'center', width: '33%', }}> ❌ </button>
+{/*           <h2 style={{ color: 'white', fontSize: 'x-large', textALign: 'center', marginTop: '5px' }}> ☃️ Christmas time !</h2> */}
           <h1 className="modalTitle" style={{ textAlign: 'left', color: 'white' }}>Menu </h1>
 
           <div className="modalBox" style={{ textAlign: 'left' }}>

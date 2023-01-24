@@ -33,17 +33,17 @@ import { ReactComponent as GithubSymbol } from './icons/github.svg';
 function OldSite() {
   //Custom variables
   let githublink = 'https://github.com/codingcodewhilegoofin';
-  let linkedinlink = 'https://www.linkedin.com/in/gio-m-4a19a71b1/';
+  let linkedinlink = 'https://www.linkedin.com/in/giovanni-m-4a19a71b1/';
   let downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/Gio%20M%20Res%20public.pdf';
   const [windowSize, setWindowSize] = useState(window.innerWidth, window.innerHeight);
- 
+
 
   useEffect(() => {
 
     function updateSize() {
       setWindowSize([window.innerWidth, window.innerHeight]);
     }
-  
+
     window.addEventListener('resize', updateSize);
     window.addEventListener('scroll', updateSize);
 
@@ -101,47 +101,49 @@ function OldSite() {
     <HashRouter basename='/'> {/*Hash routing  */}
 
       {/* ALL CODE HERE WILL RENDER ON EVERY PAGE */}
-      <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor:'white' }}>
+      <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor: '#242a36' }}>
 
         {/* <Giobot /> */}
+        <h2 style={{ color: 'white', fontSize: 'xx-large', fontFamily:'monospace' }}>Giomoscato.com </h2>
 
-  
         <div onClick={() => setshowMenu(!showMenu)} className="end-div5" style={{ padding: '1px', width: '100%', flexDirection: `${mobileNav}`, textAlign: 'center', alignItems: 'center' }}>
           <button
             style={{
               color: '#19819fff',
-              /* backgroundColor: '#1b2524ff', */
-              backgroundColor: 'green',
+              backgroundColor: '#243232ff',
               cursor: 'pointer',
               textTransform: 'uppercase',
               fontSize: 'x-large',
-              border: '2px solid red', 
+
               borderRadius: '10px',
               boxShadow: 'rgba(0, 0, 0, 0.9) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.9) 0px -3px 0px inset',
             }}>
 
+              
+
+            < div style={{ animation: 'wiggle 2s ease-in-out infinite' }}>
+              👉
+            </div>
+
             {!showMenu ?
               <>
-                <div style={{ animation: `${leafAnimation}` , paddingLeft: '95%', fontSize: 'xx-large', }}>❄️</div>
+                {/* <div style={{ animation: `${leafAnimation}` , paddingLeft: '95%', fontSize: 'xx-large', }}>❄️</div>
                 <div style={{ animation: `${leafAnimation}` , paddingRight: '95%', fontSize: 'xx-large', }}>❄️</div>
                 <div style={{ animation: `${leafAnimation}` , paddingLeft: '5%', fontSize: 'xx-large', }}>❄️</div>
+ */}
+                
+                {/*  <div style={{ animation: 'turkey 10s ease-in-out ' }}> ☃️</div> */}
 
-                {/*   < div style={{ animation: 'wiggle 2s ease-in-out infinite' }}>
-                  👉
-                </div> */}
-
-                <div style={{ animation: 'turkey 10s ease-in-out ' }}> ☃️</div>
-               
                 <div style={{ display: 'inline-block', boxShadow: 'rgba(225, 255, 255, 0.9) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset', }}>
                   <h2 style={{ color: 'white', fontWeight: 'bold' }}>
                     Cust
                     <div style={{ animation: 'coffeePulse 3s ease-in-out infinite', display: 'inline' }}>
-                    🥛
+                      😋
                     </div>
                     m
                   </h2>
                   <h2 style={{ color: 'white', fontWeight: 'bold' }}>
-                    <div style={{ animation: 'football 3s ease-in-out infinite', display: 'inline' }}>🍪</div>
+                    <div style={{ animation: 'football 3s ease-in-out infinite', display: 'inline' }}>💩</div>
                     {' '} Menu
                   </h2>
                 </div>
@@ -150,7 +152,7 @@ function OldSite() {
               </>
               :
 
-              <div style={{ /* animation: 'ghost 3s ease-in-out infinite' */color: 'red' }}>
+              <div style={{ color: 'white' }}>
                 ☰
               </div>
             }
@@ -168,9 +170,9 @@ function OldSite() {
                   flexDirection: 'row',
                   textAlign: 'center',
                   alignItems: 'center',
-                  border: '1px solid red',
-                  animation: 'pulse2 3s ease-in-out infinite',
-                  
+                  border: '1px solid white',
+                  animation: 'pulse 3s ease-in-out infinite',
+
                 }}
               >
                 <div style={{ margin: '15px', flexDirection: `${mobileNav}`, width: '33%', flexWrap: 'wrap', alignItems: 'center', alignSelf: 'center' }} >
@@ -244,12 +246,7 @@ function OldSite() {
                       </div>
                     </Link>
 
-                    <a style={{ fontSize: `${iconSize}` }} className="nav-item" href="http://www.staggeringbeauty.com/">
-                      <div style={{ flexDirection: 'row', flexWrap: 'wrap', alignSelf: 'center', }}>
-                        <p style={{ color: 'red', fontSize: `${fontSize}` }}> ?</p>
-                        <NavItem href="https://www.chicago.gov/city/en/depts/dca/supp_info/tree0.html" icon={<> ❄️</>} />
-                      </div>
-                    </a>
+
                   </div>
                 }
 

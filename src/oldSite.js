@@ -104,7 +104,7 @@ function OldSite() {
       <div className="App" style={{ padding: '1px', marginTop: '20px;', backgroundColor: '#242a36' }}>
 
         {/* <Giobot /> */}
-        <h2 style={{ color: 'white', fontSize: 'xx-large', fontFamily:'monospace' }}>GioMoscato.com </h2>
+        <h2 style={{ color: 'red', fontSize: 'xx-large', fontFamily:'monospace' }}>GioMoscato.com </h2>
 
         <div onClick={() => setshowMenu(!showMenu)} className="end-div5" style={{ padding: '1px', width: '100%', flexDirection: `${mobileNav}`, textAlign: 'center', alignItems: 'center' }}>
           <button

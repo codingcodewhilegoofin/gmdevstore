@@ -46,21 +46,26 @@ function HeaderSection() {
   const [baseUrl, setBaseUrl] = useState("https://swapi.dev/api/starships");
   const [data, setData] = useState([]);
   const [currentStatus, setStatus] = useState(false);
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [windowSize, setWindowSize] = useState(false);
 
   useEffect(() => {
 
-    function updateSize() {
-      setWindowSize([window.innerWidth, window.innerHeight]);
+    //Initialize 
+    const mq = window.matchMedia("(max-width: 600px)");
+    setWindowSize(mq.matches);
+
+    //Update
+    function updateSize(e) {
+      setWindowSize(e.matches);
+      console.log(mq.matches);
     }
 
-    window.addEventListener('resize', updateSize);
-    //console.log(windowSize[0]);
-
-    return () => {
-      window.removeEventListener('resize', updateSize);
+    mq.addEventListener('change', updateSize)
+ 
+    return function clean() {
+      mq.removeEventListener('change', updateSize);
     }
-  }, [windowSize])
+  }, [])
 
   let specialheader;
   let specialheader2;
@@ -90,7 +95,7 @@ function HeaderSection() {
   let StatsCard;
   let StatsCardHeader;
 
-  if (windowSize[0] < 600) {
+  if (windowSize) {
     specialheader = <></>;
     specialheader2 = <iframe src="https://fullstackingdevelopment.com/" padding="auto" width='99%' height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />;
     logoSection = <></>;

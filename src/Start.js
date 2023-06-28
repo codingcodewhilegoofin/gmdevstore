@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Html, useProgress, Preload, BakeShadows, AdaptiveDpr,  } from '@react-three/drei'
-import React, { Component, useState, Suspense } from 'react';
+import React, { useState, Suspense } from 'react';
 import './App.css';
 import DrawerMenu2 from '../src/components/Drawer/DrawerMenu2';
 

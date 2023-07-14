@@ -1,6 +1,8 @@
 //Standard imports 
 import React, { Component, useState, useEffect } from 'react';
 import './choice.css';
+
+//Icons
 import schematic from '../src/icons/ard schematic 2.png';
 
 const ChoiceSite = (props) => {
@@ -26,20 +28,18 @@ const ChoiceSite = (props) => {
         }
     }
 
-    var dependency = false;
-    var vanilla = false;
-    var toggle = false;
+    //var dependency = false;
+    //var vanilla = false;
+    //var toggle = false;
 
     const [siteVersion, setSiteVersion] = useState("");
     const [changeScene, setChangeScene] = useState();
 
     const van = () => {
-
         window.location.href = "/#/";
         window.location.reload();
     }
     const dep = () => {
-
         window.location.href = "/#/dependency+";
         window.location.reload();
     }

@@ -1,10 +1,10 @@
 //Standard imports 
 import React, { Component, useState, useEffect } from 'react';
 import { HashRouter, Route, Link, Routes } from "react-router-dom";
-import { CSSTransition } from 'react-transition-group';
+//import { CSSTransition } from 'react-transition-group';
 
 //Custom imports 
-import MagicButton from './components/Buttons/MagicButton/magicButton.js'
+//import MagicButton from './components/Buttons/MagicButton/magicButton.js'
 import HomePage from './components/Pages/HomePage';
 import Cstrack from './components/Pages/Cstrack';
 import Dsa from './components/Pages/Dsa';
@@ -15,12 +15,12 @@ import ContactPage from './components/Pages/ContactPage';
 import Projects from './components/Pages/Projects';
 import StartApp from './Start';
 import './App.css';
-import Giobot from './components/OpenAi/Giobot/Giobot.js';
+//import Giobot from './components/OpenAi/Giobot/Giobot.js';
 import TestAPI from './components/Pages/TestAPI.js';
 import Practice from './practiceSource/practice';
 
 //Menu import
-import MenuButton from './components/Buttons/MenuButton/MenuButton.js';
+//import MenuButton from './components/Buttons/MenuButton/MenuButton.js';
 
 //Icons
 import { ReactComponent as DownloadSymbol } from './icons/download.svg';
@@ -35,8 +35,9 @@ function OldSite() {
   let githublink = 'https://github.com/codingcodewhilegoofin';
   let linkedinlink = 'https://www.linkedin.com/in/giovanni-m-4a19a71b1/';
   let downloadres = 'https://github.com/codingcodewhilegoofin/giowebsite/blob/main/src/components/Resume/Gio%20M%20Res%20public.pdf';
-  const [windowSize, setWindowSize] = useState(window.innerWidth, window.innerHeight);
 
+
+  const [windowSize, setWindowSize] = useState(window.innerWidth, window.innerHeight);
 
   useEffect(() => {
 
@@ -54,7 +55,6 @@ function OldSite() {
       window.removeEventListener('scroll', updateSize);
     }
   }, [windowSize])
-
 
 
   let mobileNav;

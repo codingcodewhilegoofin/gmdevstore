@@ -44,6 +44,7 @@ This is a portfolio website to showcase projects as well as web dev skills.
 ## RecentUpdates
 
 - [ ] SEO optimization
+- [ ] Menu double click error (App.js)
 - [X] Update Cards for monetization
 - [X] Finish Website Design & Mobile resizability
 - [X] Holiday Theme update

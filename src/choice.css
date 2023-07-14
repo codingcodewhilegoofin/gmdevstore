@@ -34,8 +34,6 @@
 .choicediv{
     background-color: #000000;
     transition:background-color 2s;
-   
-
 }
 .choicediv:hover{
     background-color: #FFFFFF;

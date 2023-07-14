@@ -1,6 +1,6 @@
 {
-  "name": "giomoscatoweb",
-  "homepage": "https://giomoscato.com",
+  "name": "gmdevstore",
+  "homepage": "https://gmdevstore.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

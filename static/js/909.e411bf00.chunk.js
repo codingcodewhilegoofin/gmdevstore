@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgiomoscatoweb=self.webpackChunkgiomoscatoweb||[]).push([[909],{2909:function(e,o,a){a.r(o);var t=a(184);o.default=function(e){return(0,t.jsx)("group",{name:"20170707201828",position:[486.29,-43.26,3],rotation:[-Math.PI/2,0,0],scale:20,children:(0,t.jsx)("mesh",{name:"1",geometry:e.nodes[1].geometry,material:e.nodes[1].material,castShadow:!0,receiveShadow:!0,position:[0,0,3]})})}}}]);
-//# sourceMappingURL=909.e411bf00.chunk.js.map

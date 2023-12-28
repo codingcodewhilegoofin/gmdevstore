@@ -1,0 +1,119 @@
+:root {
+    --bg: #101730ff;
+    --bg-accent: #1B2524ff;
+    --bg-accent2: #243232ff;
+    --bg-accent3: #2E5252ff;
+    --text-color: #AEBEBEff;
+    --bg-red1: #EE0527ff;
+    --bg-red2: #E0012Aff;
+    --bg-red3: #E5383B;
+    --nav-size: 60px;
+    --border-radius: 8px;
+    --speed: 500ms;
+    --bg-2: #3F646Dff;
+    --oxford-blue: #101730ff;
+    --deep-space-sparkle: #3F646Dff;
+    --dark-slate-gray: #2E5252ff;
+    --outer-space-crayola: #243232ff;
+    --dark-jungle-green: #1B2524ff;
+    /* CSS HEX */
+    --medium-candy-apple-red: #E0012Aff;
+    --red-pigment: #EE0527ff;
+    --old-mauve: #5C3145ff;
+    --dark-purple: #140B2Dff;
+    --space-cadet: #212C50ff;
+    /* CSS HEX */
+    --cg-blue: #19819Fff;
+    --outer-space-crayola: #263434ff;
+    --sonic-silver: #787170ff;
+    --ash-gray: #AEBEBEff;
+    --blue-sapphire: #025B79ff;
+  }
+
+.div-main{
+    background-color: var(--bg);
+    width:99vw;
+    height:100vh;
+    border: 2px solid var(--bg-accent);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:  column;
+}
+.div-box{
+    order: 0;
+    width: 80vw;
+    height: 5vh;
+    flex-shrink: 3; 
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.div-box-text{
+    color: red;
+    flex-shrink: 3; 
+    justify-content: center;
+}
+.gio-image{
+    width: 15vw;
+    height: 30vh;
+    background-color: #F5F3F4;
+}
+
+@media screen and (max-height: 360px) {
+    :root {
+        --bg: #0B090A;
+        --bg-accent: #660708;
+        --bg-accent2: #4B0506;
+        --bg-accent3: #320304;
+        --text-color: #F5F3F4;
+        --bg-red1: #A4161A;
+        --bg-red2: #BA181B;
+        --bg-red3: #E5383B;
+        --nav-size: 60px;
+        --border-radius: 8px;
+        --speed: 500ms;
+        --bg-2: #161A1D;
+        --purp: rgb(142, 21, 255);
+      }
+    
+    .div-main{
+        background-color: var(--bg);
+        width:99vw;
+        height:100vh;
+        border: 2px solid var(--bg-accent);
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:  column;
+    }
+    .div-box{
+        order: 0;
+        width: 80vw;
+        height: 5vh;
+        flex-shrink: 3; 
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .div-box-text{
+        color: red;
+        flex-shrink: 3; 
+        justify-content: center;
+    }
+    .gio-image{
+        width: 15vw;
+        height: 30vh;
+        background-color: #F5F3F4;
+    }
+ 
+  
+}

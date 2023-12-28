@@ -1,0 +1,31 @@
+.projectHeader{
+    background-color: #19819Fff;
+    padding: 3px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+.projectFooter{
+    background-color: black;
+    padding: 3px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+
+.chatbotBar{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 2px solid #025B79ff;
+    background-color: black;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.chatbotBar:hover{
+    background-color: #FFFFFF;
+    border: 2px solid #101730ff;
+    color: red;
+}
+

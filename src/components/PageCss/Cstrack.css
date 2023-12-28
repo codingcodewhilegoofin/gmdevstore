@@ -1,0 +1,116 @@
+:root {
+  --bg: #101730ff;
+  --bg-accent: #1B2524ff;
+  --bg-accent2: #243232ff;
+  --bg-accent3: #2E5252ff;
+  --text-color: #AEBEBEff;
+  --bg-red1: #EE0527ff;
+  --bg-red2: #E0012Aff;
+  --bg-red3: #E5383B;
+  --nav-size: 60px;
+  --border-radius: 8px;
+  --speed: 500ms;
+  --bg-2: #3F646Dff;
+  --oxford-blue: #101730ff;
+  --deep-space-sparkle: #3F646Dff;
+  --dark-slate-gray: #2E5252ff;
+  --outer-space-crayola: #243232ff;
+  --dark-jungle-green: #1B2524ff;
+  /* CSS HEX */
+  --medium-candy-apple-red: #E0012Aff;
+  --red-pigment: #EE0527ff;
+  --old-mauve: #5C3145ff;
+  --dark-purple: #140B2Dff;
+  --space-cadet: #212C50ff;
+  /* CSS HEX */
+  --cg-blue: #19819Fff;
+  --outer-space-crayola: #263434ff;
+  --sonic-silver: #787170ff;
+  --ash-gray: #AEBEBEff;
+  --blue-sapphire: #025B79ff;
+}
+
+h1{
+  color: var(--text-color);
+  font-size: auto;
+}
+h2{
+  color: var(--text-color);
+  font-size: auto;
+}
+p{
+  color: var(--text-color);
+  font-size: auto;
+}
+
+
+.CStrack{
+    background-color: var(--bg);
+    width: auto;
+    height: auto;
+    border: 2px solid var(--bg-accent);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:  column;
+    align-items: center;
+}
+.Outter{
+  height:560px; 
+  background-color: #1D2330; 
+  overflow:hidden; 
+  box-sizing: border-box; 
+  border: 1px solid #282E3B; 
+  border-radius: 4px; 
+  text-align: right; 
+  line-height:14px; 
+  font-size: 12px; 
+  font-feature-settings: normal; 
+  text-size-adjust: 100%; 
+  box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;
+  padding: 0px;
+  margin: 0px; 
+  width: 100%;
+ 
+}
+.Inner{
+  height:540px; 
+  padding:0px; 
+  margin:0px; 
+  width: 100%;
+}
+.I{
+  border:0;
+  margin:0;
+  padding:0;
+  line-height:14px;
+ 
+}
+.Bottom{
+  color: #626B7F; 
+  line-height: 14px; 
+  font-weight: 400; 
+  font-size: 11px; 
+  box-sizing: border-box; 
+  padding: 2px 6px; 
+  width: 100%; 
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+ 
+}
+.Tag{
+  font-weight: 500; 
+  color: #626B7F; 
+  text-decoration:none; 
+  font-size:11px;
+}
+
+.I2{
+  display:block;
+ 
+}
+
+

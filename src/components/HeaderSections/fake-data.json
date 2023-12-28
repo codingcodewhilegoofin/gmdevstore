@@ -1,0 +1,21 @@
+
+[
+    {
+        "Catagory":"Table Components",
+        "MostRecentUpdate": "Added 2 tables. One uses the SWAP API. One is this table for update documentation",
+        "UpcomingUpdates": "Possibly a 3rd table",
+        "Priority": "Low"
+    },
+    {
+        "Catagory":"Structure",
+        "MostRecentUpdate": "Re-organized main index file in order to provide 2 different web experiences",
+        "UpcomingUpdates": "Build new website!",
+        "Priority": "High"
+    },
+    {
+        "Catagory":"Mobile Compatibility / Responsiveness",
+        "MostRecentUpdate": "Fixed Table Scroll",
+        "UpcomingUpdates": "Weird gaps, and sliding issues",
+        "Priority": "Medium"
+    }
+]

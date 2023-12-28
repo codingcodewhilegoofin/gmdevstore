@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0B090A" />
+    <meta
+      name="Gmdevstore.com"
+      content="Personal Portfolio Website created with React.js, hosted on Cloudflare / GH pages , and 
+      integrates with other 3rd party API's via gmdevapi.com"
+    />
+    <meta 
+      name="Gmdevstore.com" 
+      property="website" 
+      content="Personal Portfolio Website created with React.js, hosted on Cloudflare / GH pages , and 
+      integrates with other 3rd party API's via gmdevapi.com"
+    >
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="favicon.ico" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="favicon.ico" sizes="16x16" href="/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Hairline&family=Exo:wght@100&family=Hubballi&family=Press+Start+2P&family=Syne+Mono&display=swap" rel="stylesheet"> 
+    
+    <title>_gmdevstore.com</title> 
+
+  </head>
+
+  <body>
+
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- // Entry point of React application -->
+    <div id="root"></div>
+    
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script>
+        window.onSpotifyWebPlaybackSDKReady = () => {
+            const token = 'BQCqvFco0mXDFwyx-Qt1bRkCEWWMnZwEag7qLBSAFXriHqcAs29JFGmPnSOzvomioVTi26rqhSUj7dsqbNjhigThutSQaes0XlX3_IuT7R8ld0jDhIvFxIfaezGCaIturZdfejKg1kZKJxLSwBBvzP_SS03mZB3pQg';
+            const player = new Spotify.Player({
+                name: 'Web Playback SDK Quick Start Player',
+                getOAuthToken: cb => { cb(token); },
+                volume: 0.5
+            });
+
+            // Ready
+            player.addListener('ready', ({ device_id }) => {
+                console.log('Ready with Device ID', device_id);
+            });
+
+            // Not Ready
+            player.addListener('not_ready', ({ device_id }) => {
+                console.log('Device ID has gone offline', device_id);
+            });
+
+            player.addListener('initialization_error', ({ message }) => {
+                console.error(message);
+            });
+
+            player.addListener('authentication_error', ({ message }) => {
+                console.error(message);
+            });
+
+            player.addListener('account_error', ({ message }) => {
+                console.error(message);
+            });
+
+        }
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js"></script>
+   
+  </body>
+</html>

@@ -1,0 +1,210 @@
+:root {
+    --bg: #101730ff;
+    --bg-accent: #1B2524ff;
+    --bg-accent2: #243232ff;
+    --bg-accent3: #2E5252ff;
+    --text-color: #AEBEBEff;
+    --bg-red1: #EE0527ff;
+    --bg-red2: #E0012Aff;
+    --bg-red3: #E5383B;
+    --nav-size: 60px;
+    --border-radius: 8px;
+    --speed: 500ms;
+    --bg-2: #3F646Dff;
+    --oxford-blue: #101730ff;
+    --deep-space-sparkle: #3F646Dff;
+    --dark-slate-gray: #2E5252ff;
+    --outer-space-crayola: #243232ff;
+    --dark-jungle-green: #1B2524ff;
+    /* CSS HEX */
+    --medium-candy-apple-red: #E0012Aff;
+    --red-pigment: #EE0527ff;
+    --old-mauve: #5C3145ff;
+    --dark-purple: #140B2Dff;
+    --space-cadet: #212C50ff;
+    /* CSS HEX */
+    --cg-blue: #19819Fff;
+    --outer-space-crayola: #263434ff;
+    --sonic-silver: #787170ff;
+    --ash-gray: #AEBEBEff;
+    --blue-sapphire: #025B79ff;
+    --graything:#242a36;
+  }
+
+.choicediv{
+    background-color: #000000;
+    transition:background-color 2s;
+}
+.choicediv:hover{
+    background-color: #FFFFFF;
+    transition:background-color 2s;
+}
+h1{
+    color:red;
+    font-family: 'Bungee Hairline', cursive;
+    font-size: auto;
+    margin: 0px;
+}
+h2{
+    color:red;
+    font-family: 'Exo', sans-serif;
+    padding: 20px;
+    font-size:auto;
+    margin: 0px;
+}
+h3{
+    color:white;
+    font-family: 'Exo', sans-serif;
+    padding: 20px;
+    font-size:auto;
+    margin: 0px;
+}
+a:hover{
+    color:red;
+    font-size:auto;
+}
+button{
+    color:var(--text-color);
+    background-color:var(--bg);
+    font-size: large;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 30px;
+}
+button:hover{
+    background-color:var(--bg-accent2);
+}
+
+code{
+    font-family:'Exo', sans-serif;
+    color: #AEBEBEff;
+    padding: 10px;
+    margin: 0px;
+    font-size:auto;
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+    .choicediv{
+        background-color: #000000;
+        transition:background-color 2s;
+       
+       
+    }
+    .choicediv:hover{
+        background-color: #080808;
+        transition:background-color 2s;
+    }
+    h1{
+        color:red;
+        font-family: 'Bungee Hairline', cursive;
+       
+        font-size:auto;
+        margin: 0px;
+    }
+    h2{
+        color:red;
+        font-family: 'Exo', sans-serif;
+        padding: 20px;
+        margin: 0px;
+        font-size:auto;
+    }
+    h3{
+        color:white;
+        font-family: 'Exo', sans-serif;
+        padding: 20px;
+        margin: 0px;
+        font-size:auto;
+    }
+    a:hover{
+        color:red;
+        font-size:auto;
+    }
+    button{
+        color:red;
+        background-color:black;
+        font-size: large;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        margin: 30px;
+    }
+    p{
+        color:rgb(255, 255, 255);
+        padding: 10px;
+        margin: 0px;
+        font-size:auto;
+    }
+    code{
+        font-family:'Exo', sans-serif;
+        color: yellow;
+        padding: 10px;
+        margin: 0px;
+        font-size:auto;
+    }
+}
+
+@media screen 
+  and (min-device-width: 1200px)  
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .choicediv{
+        background-color: #000000;
+        transition:background-color 2s;
+        
+        
+    }
+    .choicediv:hover{
+        background-color: #080808;
+        transition:background-color 2s;
+    }
+    h1{
+        color:red;
+        font-family: 'Bungee Hairline', cursive;
+        padding: 10px;
+        margin: 0px;
+        font-size:auto;
+    }
+    h2{
+        color:red;
+        font-family: 'Exo', sans-serif;
+        padding: 10px;
+        margin: 0px;
+        font-size:auto;
+    }
+    h3{
+        color:white;
+        font-family: 'Exo', sans-serif;
+        padding: 10px;
+        margin: 0px;
+        font-size:auto;
+    }
+    a:hover{
+        color:red;
+        font-size:auto;
+    }
+    button{
+        color:red;
+        background-color:black;
+        font-size: large;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+        font-size:auto;
+    }
+    p{
+        color:blue;
+        padding: 10px;
+        margin: 0px;
+        font-size:auto;
+    }
+    code{
+        font-family:'Exo', sans-serif;
+        color: yellow;
+        padding: 5px;
+        margin: 0px;
+    }
+}

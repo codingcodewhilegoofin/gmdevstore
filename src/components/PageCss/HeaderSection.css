@@ -436,7 +436,7 @@ p {
   align-items: center;
   object-fit: contain;
   text-align: center;
-  background-image: url('../../icons//gifs/darkwave1.gif');
+
   background-size:cover;
   background-repeat:no-repeat;
   background-position:top;

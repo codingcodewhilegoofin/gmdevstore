@@ -35,8 +35,6 @@ import darkaiart1 from "../../icons/darkaiart.jpg";
 import darkaiart2 from "../../icons/darkaiart2.jpg";
 import darkaiart3 from "../../icons/darkaiart3.jpg";
 import darkaiart4 from "../../icons/darkaiart4.jpg";
-import darkwave1 from "../../icons/gifs/darkwave1.gif";
-import darkwave2 from "../../icons/gifs/darkwave2.gif";
 import uniLogo from "../../icons/NIU.png";
 import uni2Logo from "../../icons/ECClogo.jpg";
 
@@ -292,7 +290,7 @@ function HeaderSection() {
           <div
             className="end-div5"
             style={{
-              backgroundImage: `url(${darkwave1})`,
+              backgroundImage: `url(${darkaiart1})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               borderRadius: "20px",
@@ -414,7 +412,7 @@ function HeaderSection() {
           <div
             className="end-div5"
             style={{
-              backgroundImage: `url(${darkwave2})`,
+              backgroundImage: `url(${darkaiart2})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               borderRadius: "25px",
@@ -536,7 +534,7 @@ function HeaderSection() {
         <div
           className="end-div5"
           style={{
-            backgroundImage: `url(${darkwave1})`,
+            backgroundImage: `url(${darkaiart2})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             borderRadius: "20px",
@@ -1892,7 +1890,7 @@ function HeaderSection() {
         <div
           className="gio-container"
           style={{
-            backgroundImage: `url(${darkwave2})`,
+            backgroundImage: `url(${darkaiart2})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             borderRadius: "10px",
@@ -2103,7 +2101,7 @@ function HeaderSection() {
         <div
           className="gio-container"
           style={{
-            backgroundImage: `url(${darkwave1})`,
+            backgroundImage: `url(${darkaiart2})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             borderRadius: "10px",
@@ -2598,7 +2596,7 @@ function HeaderSection() {
             <div
               className="gio-container"
               style={{
-                backgroundImage: `url(${darkwave1})`,
+                backgroundImage: `url(${darkaiart2})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 borderRadius: "0px",

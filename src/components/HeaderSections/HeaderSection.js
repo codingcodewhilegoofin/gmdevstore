@@ -114,8 +114,10 @@ function HeaderSection() {
   let tutorWidth;
   let gapWidth;
   let developerWidth;
+  let fontSizeServices;
 
   if (windowSize) {
+    fontSizeServices = "x-large";
     tutorWidth = "100%";
     gapWidth = "0%";
     developerWidth = "100%";
@@ -159,6 +161,7 @@ function HeaderSection() {
     StatsCard = "100%";
     StatsCardHeader = "100%";
   } else {
+    fontSizeServices = "x-large";
     tutorWidth = "35%";
     gapWidth = "6%";
     developerWidth = "59%";
@@ -319,7 +322,7 @@ function HeaderSection() {
                 style={{
                   color: "#AEBEBEff",
                   fontWeight: "bold",
-                  margin: "20px",
+                  margin: "10px",
                   fontSize: "x-large",
                   background: "rgba(0, 0, 0, 0.3)",
                   boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
@@ -328,8 +331,7 @@ function HeaderSection() {
                 }}
               >
                 Social media handle
-                <br/>
-               
+                <br />
                 <b style={{ fontSize: "xx-large", fontFamily: "monospace" }}>
                   @codedumpsterfire🔥
                 </b>
@@ -339,7 +341,8 @@ function HeaderSection() {
                 style={{
                   color: "#AEBEBEff",
                   fontWeight: "bold",
-                  margin: "20px",
+                  margin: "10px",
+                  padding: "5px",
                   fontSize: "x-large",
                   background: "rgba(0, 0, 0, 0.3)",
                   boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
@@ -347,10 +350,11 @@ function HeaderSection() {
                   whiteSpace: "break-spaces",
                 }}
               >
-                I have been coding for over 5 years 2 professionally. Experience
-                includes creating web sites, games, and art! You can find more
-                of my projects bellow.
+                I have been coding for over 5 years 2 professionally.
                 <br />
+                <br />
+                Experience includes creating web sites, games, and art! You can
+                find more of my projects bellow.
               </p>
 
               <button
@@ -450,7 +454,7 @@ function HeaderSection() {
                   style={{
                     color: "#AEBEBEff",
                     fontWeight: 900,
-                    margin: "20px",
+                    margin: "10px",
                     fontSize: "x-large",
                   }}
                 >
@@ -467,8 +471,6 @@ function HeaderSection() {
                     background: "rgba(0, 0, 0, 0.2)",
                     boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                     backdropFilter: "blur( 20px )",
-                    paddingLeft: `${buttonPadding}`,
-                    paddingRight: `${buttonPadding}`,
                   }}
                 >
                   <a
@@ -499,7 +501,7 @@ function HeaderSection() {
                 <p
                   style={{
                     color: "#AEBEBEff",
-                    margin: "20px",
+                    margin: "10px",
                     fontSize: "x-large",
                     textAlign: "center",
                     overflow: "hidden",
@@ -522,7 +524,14 @@ function HeaderSection() {
                     style={{ color: "#AEBEBEff", fontWeight: "700" }}
                     href="https://gmdevelectronics.wixsite.com/blog"
                   >
-                    <em> gmdevelectronics.wixsite.com/blog </em>
+                    <em>
+                      {" "}
+                      gmdevelectronics
+                      <br />
+                      .wixsite.com
+                      <br />
+                      /blog{" "}
+                    </em>
                   </a>
                 </button>
               </div>
@@ -552,9 +561,8 @@ function HeaderSection() {
               color: "white",
               fontWeight: 900,
               padding: "10px",
-              fontSize: "xxx-large",
-              border: "2px solid white",
-              padding: "5px",
+              fontSize: "xx-large",
+              padding: "10px",
               margin: "5px",
             }}
           >
@@ -622,7 +630,7 @@ function HeaderSection() {
                     textTransform: "uppercase",
                     fontFamily: "monospace",
                     border: "3px solid white",
-                    padding: "20px",
+                    padding: "0px",
                     borderRadius: "0px",
                     opacity: "1",
                     background: "rgba(0, 0, 0, 0.5 )",
@@ -631,7 +639,7 @@ function HeaderSection() {
                   <li> ☁️ Cloud services</li>
                   <li> 📚 C.S Fundamentals </li>
                   <li> Advanced mathematics </li>
-                  <li> 💻 Web development/design📱</li>
+                  <li> Web development & design</li>
                   <li> Embeded systems & electronics</li>
                   <li> 🔓 Ethical "hacking"</li>
                   <li> 🕹️ Video games & more!</li>
@@ -659,7 +667,7 @@ function HeaderSection() {
                     textTransform: "uppercase",
                     fontFamily: "monospace",
                     border: "3px solid white",
-                    padding: "20px",
+                    padding: "0px",
                     borderRadius: "0px",
                     opacity: "1",
                     background: "rgba(0, 0, 0, 0.5 )",
@@ -680,7 +688,7 @@ function HeaderSection() {
           <div
             className="end-div5"
             style={{
-              padding: "10px",
+              padding: "5px",
               marginBottom: "10px",
               marginTop: "20px",
               width: "100%",
@@ -690,7 +698,7 @@ function HeaderSection() {
             <div
               className="end-div5"
               style={{
-                padding: "5px",
+                padding: "0px",
                 width: "100%",
                 flexDirection: `${cardOrientation}`,
                 textAlign: "center",
@@ -724,7 +732,7 @@ function HeaderSection() {
                   >
                     {tutoringToggle ? <>🔼</> : <>🔽</>}
                   </button>
-                  1 on 1 Tutoring
+                  <br />1 on 1 Tutoring
                 </h2>
 
                 {tutoringToggle ? (
@@ -738,11 +746,13 @@ function HeaderSection() {
                         background: "rgba(255, 255, 255, 0.1)",
                         boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                         backdropFilter: "blur( 20px )",
+                        border: "1px solid white",
+                        marginTop: "20px",
                       }}
                     >
                       <h3
                         style={{
-                          border: "2px solid black",
+                          border: "1px solid white",
                           color: "white",
                           padding: "5px",
                           fontSize: "x-large",
@@ -755,6 +765,7 @@ function HeaderSection() {
                       <ol
                         style={{
                           color: "#aebebeff",
+                          fontSize: `${fontSizeServices}`,
                           background: "rgba(0, 0, 0, 0.7)",
                           boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                           backdropFilter: "blur( 20px )",
@@ -765,8 +776,8 @@ function HeaderSection() {
                             padding: "5px",
                           }}
                         >
-                          Graduated with a B.S in computer science & advanced
-                          mathematics.
+                          Graduated with a B.S in computer science
+                          <br /> & advanced mathematics.
                         </li>
                         <li
                           style={{
@@ -777,7 +788,7 @@ function HeaderSection() {
                           <b style={{ color: "lightblue", padding: "10px" }}>
                             BMO Financial Corporation
                           </b>
-                          &
+                          <br />&
                           <b style={{ color: "orange", padding: "10px" }}>
                             Discover Financial Services
                           </b>
@@ -787,19 +798,20 @@ function HeaderSection() {
                             padding: "5px",
                           }}
                         >
-                          Knowledge on maintaining large projects, complex
-                          coding concepts, and agile teams.
+                          Knowledge on maintaining large projects, <br />{" "}
+                          complex coding concepts, and agile teams.
                         </li>
                       </ol>
 
                       <h3
                         style={{
-                          border: "2px solid black",
+                          border: "2px solid white",
                           color: "white",
                           padding: "5px",
                           fontSize: "x-large",
                           backgroundColor: "black",
-                          margin: "10px",
+                          marginTop: "20px",
+                          margin: "5px",
                         }}
                       >
                         Consultation
@@ -811,17 +823,32 @@ function HeaderSection() {
                           background: "rgba(255, 255, 255, 0.4)",
                           boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                           backdropFilter: "blur( 20px )",
+                          padding: "0px",
+                          margin: "0px",
+                          marginBottom: "20px",
                         }}
                       >
                         <a
-                          style={{ color: "black", fontWeight: "900" }}
+                          style={{
+                            color: "black",
+                            fontWeight: "900",
+                            fontSize: `${fontSizeServices}`,
+                          }}
                           href="https://gmdevstore.com/"
                         >
                           <em>
-                            $<b style={{ color: "lightgreen" }}>50</b> 1hr
-                            consultation deposit for tutoring. If you are
-                            interested in tutoring please find more details
-                            here.
+                            $
+                            <b
+                              style={{
+                                color: "lightgreen",
+                                fontSize: "xx-large",
+                              }}
+                            >
+                              50
+                            </b>{" "}
+                            1hr consultation deposit for tutoring. For more
+                            information please fill out details here in intake
+                            form!
                           </em>
                         </a>
                       </button>
@@ -829,11 +856,12 @@ function HeaderSection() {
 
                     <h3
                       style={{
-                        border: "2px solid black",
+                        border: "2px solid white",
                         color: "white",
                         padding: "5px",
                         fontSize: "x-large",
                         backgroundColor: "black",
+                        marginTop: "20px",
                       }}
                     >
                       Comparison
@@ -845,6 +873,7 @@ function HeaderSection() {
                         background: "rgba(0, 0, 0, 0.7)",
                         boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                         backdropFilter: "blur( 20px )",
+                        fontSize: `${fontSizeServices}`,
                       }}
                     >
                       <li
@@ -923,6 +952,7 @@ function HeaderSection() {
                   >
                     {webdevToggle ? <>🔼</> : <>🔽</>}
                   </button>
+                  <br />
                   Web development & design
                 </h2>
 
@@ -930,11 +960,12 @@ function HeaderSection() {
                   <>
                     <h3
                       style={{
-                        border: "2px solid black",
+                        border: "2px solid white",
                         color: "white",
                         padding: "5px",
                         fontSize: "x-large",
                         backgroundColor: "black",
+                        marginTop: "20px",
                       }}
                     >
                       Why hire a developer or designer?
@@ -946,6 +977,7 @@ function HeaderSection() {
                         background: "rgba(0, 0, 0, 0.7)",
                         boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                         backdropFilter: "blur( 20px )",
+                        fontSize: `${fontSizeServices}`,
                       }}
                     >
                       <li style={{ padding: "5px" }}>
@@ -1003,6 +1035,7 @@ function HeaderSection() {
                           background: "rgba(0, 0, 0, 0.7)",
                           boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                           backdropFilter: "blur( 20px )",
+                          fontSize: `${fontSizeServices}`,
                         }}
                       >
                         <li style={{ padding: "5px" }}>
@@ -1027,6 +1060,10 @@ function HeaderSection() {
                           background: "rgba(255, 255, 255, 0.4)",
                           boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                           backdropFilter: "blur( 20px )",
+                          marginBottom: "20px",
+                          padding: "0px",
+                          margin: "0px",
+                          fontSize: `${fontSizeServices}`,
                         }}
                       >
                         <a
@@ -1034,16 +1071,25 @@ function HeaderSection() {
                           href="https://gmdevstore.com/"
                         >
                           <em>
-                            $<b style={{ color: "lightgreen" }}>200</b> 2hr
-                            consultation deposit for web sites/apps. Find more
-                            detials here.
+                            $
+                            <b
+                              style={{
+                                fontSize: "xx-large",
+                                color: "lightgreen",
+                              }}
+                            >
+                              200
+                            </b>{" "}
+                            2 hr consultation deposit for building web
+                            sites/apps. <br /> Find more detials here by filling
+                            out intake form!
                           </em>
                         </a>
                       </button>
                     </p>
                     <h3
                       style={{
-                        border: "2px solid black",
+                        border: "2px solid white",
                         color: "white",
                         padding: "5px",
                         fontSize: "x-large",
@@ -1059,6 +1105,7 @@ function HeaderSection() {
                         background: "rgba(0, 0, 0, 0.7)",
                         boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                         backdropFilter: "blur( 20px )",
+                        fontSize: `${fontSizeServices}`,
                       }}
                     >
                       <li
@@ -1125,7 +1172,9 @@ function HeaderSection() {
                           <ol>
                             <li>
                               Pros: Professional Quality, Time Efficiency,
-                              Customization,Technical Expertise.
+                              Customization,
+                              <br />
+                              Technical Expertise.
                             </li>
 
                             <li>Cons: Cost, Dependency.</li>
@@ -1216,7 +1265,7 @@ function HeaderSection() {
                 }}
               />
               <h2 style={{ color: "white", fontSize: "x-large" }}>
-                Find all my information here <br />
+                Contact me directly here <br />
               </h2>
               <a
                 style={{
@@ -1224,7 +1273,7 @@ function HeaderSection() {
                   fontWeight: "900",
                   border: "1px solid white",
                   padding: "5px",
-                  fontSize: "xx-largeF",
+                  fontSize: "large",
                 }}
                 href="https://linktr.ee/codedumpsterfire"
               >
@@ -1278,7 +1327,7 @@ function HeaderSection() {
               <h2
                 style={{ color: "white", fontSize: "large", fontWeight: "900" }}
               >
-                Services intake form
+                Intake form
               </h2>
 
               <form
@@ -1305,7 +1354,7 @@ function HeaderSection() {
                       fontWeight: "900",
                     }}
                   >
-                    Send your contact information and service request details.
+                    Send your contact information and request details.
                   </h2>
 
                   <label
@@ -1387,17 +1436,20 @@ function HeaderSection() {
                       color: "white",
                       fontSize: "large",
                       fontWeight: "900",
+                      padding: "0px",
+                      margin: "0px",
                     }}
                   >
-                    Choose a consultation service
+                    Choose a consultation type
                   </label>
 
                   <div
                     style={{
                       flexDirection: "column",
                       border: "1px solid white",
-                      padding: "5px",
-                      margin: "10px",
+                      padding: "0px",
+                      marginTop: "5px",
+                      marginBottom: "5px",
                     }}
                   >
                     <label
@@ -1405,6 +1457,8 @@ function HeaderSection() {
                         color: "white",
                         fontSize: "large",
                         fontWeight: "900",
+                        marginTop: "10px",
+                        margin: "0px",
                       }}
                     >
                       Tutoring
@@ -1412,11 +1466,14 @@ function HeaderSection() {
                     <input
                       style={{
                         color: "white",
-                        fontSize: "large",
+                        fontSize: "x-large",
                         fontWeight: "900",
                         backgroundColor: "transparent",
                         border: "1px solid white",
+                        marginTop: "10px",
                         margin: "0px",
+                        width: "20px",
+                        height: "16px",
                       }}
                       type="checkbox"
                       name="Tutoring"
@@ -1427,14 +1484,15 @@ function HeaderSection() {
 
                     {tutoringForm ? (
                       <>
-                        <div
+                        <ul
                           style={{
                             backgroundColor: "black",
                             flexDirection: "column",
-                            padding: "50px",
+                            padding: "10px",
+                            margin: "5px",
                           }}
                         >
-                          <div>
+                          <li>
                             <label
                               style={{
                                 color: "white",
@@ -1442,143 +1500,183 @@ function HeaderSection() {
                                 fontWeight: "900",
                               }}
                             >
-                              Cloud
+                              CLOUD
                             </label>
                             <input
                               style={{
                                 color: "white",
-                                fontSize: "large",
+                                fontSize: "x-large",
                                 fontWeight: "900",
                                 backgroundColor: "transparent",
                                 border: "1px solid white",
+                                marginTop: "10px",
                                 margin: "0px",
+                                width: "20px",
+                                height: "16px",
                               }}
                               type="checkbox"
                               name="Tutor_CloudServices"
                             />
-                          </div>
+                          </li>
 
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              C.S Fundamentals
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_CSfundamentals"
-                            />
-                          </div>
+                          <li>
+                            <dl>
+                              <dt>
+                                <label
+                                  style={{
+                                    color: "white",
+                                    fontSize: "large",
+                                    fontWeight: "900",
+                                  }}
+                                >
+                                  C.S FUNDAMENTALS
+                                </label>
+                                <input
+                                  style={{
+                                    color: "white",
+                                    fontSize: "x-large",
+                                    fontWeight: "900",
+                                    backgroundColor: "transparent",
+                                    border: "1px solid white",
+                                    marginTop: "20px",
+                                    margin: "0px",
+                                    width: "20px",
+                                    height: "16px",
+                                  }}
+                                  type="checkbox"
+                                  name="Tutor_CSfundamentals"
+                                />
+                              </dt>
+                            </dl>
+                          </li>
 
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              Advanced mathematics
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_Math"
-                            />
-                          </div>
+                          <li>
+                            <dl>
+                              <dt>
+                                <label
+                                  style={{
+                                    color: "white",
+                                    fontSize: "large",
+                                    fontWeight: "900",
+                                  }}
+                                >
+                                  ADVANCED MATh
+                                </label>
+                                <input
+                                  style={{
+                                    color: "white",
+                                    fontSize: "x-large",
+                                    fontWeight: "900",
+                                    backgroundColor: "transparent",
+                                    border: "1px solid white",
+                                    marginTop: "20px",
+                                    margin: "0px",
+                                    width: "20px",
+                                    height: "16px",
+                                  }}
+                                  type="checkbox"
+                                  name="Tutor_Math"
+                                />
+                              </dt>
+                            </dl>
+                          </li>
 
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              WEB DEVELOPMENT/DESIGN
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_Webdev&design"
-                            />
-                          </div>
+                          <li>
+                            <dl>
+                              <dt>
+                                <label
+                                  style={{
+                                    color: "white",
+                                    fontSize: "large",
+                                    fontWeight: "900",
+                                    margin: "0px",
+                                    padding: "0px",
+                                  }}
+                                >
+                                  WEB DEVELOPMENT/DESIGN
+                                </label>
+                                <input
+                                  style={{
+                                    color: "white",
+                                    fontSize: "x-large",
+                                    fontWeight: "900",
+                                    backgroundColor: "transparent",
+                                    border: "1px solid white",
+                                    marginTop: "20px",
+                                    margin: "0px",
+                                    width: "30px",
+                                    height: "16px",
+                                  }}
+                                  type="checkbox"
+                                  name="Tutor_Webdev&design"
+                                />
+                              </dt>
+                            </dl>
+                          </li>
 
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              EMBEDED SYSTEMS & ELECTRONICS
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_embededSystems"
-                            />
-                          </div>
+                          <li>
+                            <dl>
+                              <dt>
+                                <label
+                                  style={{
+                                    color: "white",
+                                    fontSize: "large",
+                                    fontWeight: "900",
+                                  }}
+                                >
+                                  EMBEDED/ELECTRONICS
+                                </label>
+                                <input
+                                  style={{
+                                    color: "white",
+                                    fontSize: "x-large",
+                                    fontWeight: "900",
+                                    backgroundColor: "transparent",
+                                    border: "1px solid white",
+                                    marginTop: "20px",
+                                    margin: "0px",
+                                    width: "20px",
+                                    height: "16px",
+                                  }}
+                                  type="checkbox"
+                                  name="Tutor_embededSystems"
+                                />
+                              </dt>
+                            </dl>
+                          </li>
 
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              ETHICAL "HACKING"
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_hacking"
-                            />
-                          </div>
+                          <li>
+                            <dl>
+                              <dt>
+                                <label
+                                  style={{
+                                    color: "white",
+                                    fontSize: "large",
+                                    fontWeight: "900",
+                                  }}
+                                >
+                                  ETHICAL "HACKING"
+                                </label>
+                                <input
+                                  style={{
+                                    color: "white",
+                                    fontSize: "x-large",
+                                    fontWeight: "900",
+                                    backgroundColor: "transparent",
+                                    border: "1px solid white",
+                                    marginTop: "20px",
+                                    margin: "0px",
+                                    width: "20px",
+                                    height: "16px",
+                                  }}
+                                  type="checkbox"
+                                  name="Tutor_hacking"
+                                />
+                              </dt>
+                            </dl>
+                          </li>
 
-                          <div>
+                          <li>
                             <label
                               style={{
                                 color: "white",
@@ -1591,17 +1689,20 @@ function HeaderSection() {
                             <input
                               style={{
                                 color: "white",
-                                fontSize: "large",
+                                fontSize: "x-large",
                                 fontWeight: "900",
                                 backgroundColor: "transparent",
                                 border: "1px solid white",
+                                marginTop: "20px",
                                 margin: "0px",
+                                width: "20px",
+                                height: "16px",
                               }}
                               type="checkbox"
                               name="Tutor_videogames"
                             />
-                          </div>
-                        </div>
+                          </li>
+                        </ul>
                       </>
                     ) : (
                       <></>
@@ -1612,6 +1713,8 @@ function HeaderSection() {
                         color: "white",
                         fontSize: "large",
                         fontWeight: "900",
+                        marginTop: "10px",
+                        margin: "0px",
                       }}
                     >
                       <br />
@@ -1620,11 +1723,14 @@ function HeaderSection() {
                     <input
                       style={{
                         color: "white",
-                        fontSize: "large",
+                        fontSize: "x-large",
                         fontWeight: "900",
                         backgroundColor: "transparent",
                         border: "1px solid white",
+                        marginTop: "10px",
                         margin: "0px",
+                        width: "20px",
+                        height: "16px",
                       }}
                       type="checkbox"
                       name="Webdev"
@@ -1635,11 +1741,12 @@ function HeaderSection() {
 
                     {webdevForm ? (
                       <>
-                        <div
+                        <ul
                           style={{
                             backgroundColor: "black",
                             flexDirection: "column",
-                            padding: "50px",
+                            padding: "10px",
+                            margin: "5px",
                           }}
                         >
                           <div>
@@ -1650,16 +1757,19 @@ function HeaderSection() {
                                 fontWeight: "900",
                               }}
                             >
-                              Cloud services
+                              CLOUD
                             </label>
                             <input
                               style={{
                                 color: "white",
-                                fontSize: "large",
+                                fontSize: "x-large",
                                 fontWeight: "900",
                                 backgroundColor: "transparent",
                                 border: "1px solid white",
+                                marginTop: "10px",
                                 margin: "0px",
+                                width: "20px",
+                                height: "16px",
                               }}
                               type="checkbox"
                               name="Web_cloudServices"
@@ -1674,16 +1784,19 @@ function HeaderSection() {
                                 fontWeight: "900",
                               }}
                             >
-                              Web & mobile design / development
+                              WEB/MOBILE
                             </label>
                             <input
                               style={{
                                 color: "white",
-                                fontSize: "large",
+                                fontSize: "x-large",
                                 fontWeight: "900",
                                 backgroundColor: "transparent",
                                 border: "1px solid white",
+                                marginTop: "10px",
                                 margin: "0px",
+                                width: "20px",
+                                height: "16px",
                               }}
                               type="checkbox"
                               name="Web_websiteDev&Design"
@@ -1698,16 +1811,19 @@ function HeaderSection() {
                                 fontWeight: "900",
                               }}
                             >
-                              Security
+                              SECURITY
                             </label>
                             <input
                               style={{
                                 color: "white",
-                                fontSize: "large",
+                                fontSize: "x-large",
                                 fontWeight: "900",
                                 backgroundColor: "transparent",
                                 border: "1px solid white",
+                                marginTop: "10px",
                                 margin: "0px",
+                                width: "20px",
+                                height: "16px",
                               }}
                               type="checkbox"
                               name="Web_Security"
@@ -1727,11 +1843,14 @@ function HeaderSection() {
                             <input
                               style={{
                                 color: "white",
-                                fontSize: "large",
+                                fontSize: "x-large",
                                 fontWeight: "900",
                                 backgroundColor: "transparent",
                                 border: "1px solid white",
+                                marginTop: "10px",
                                 margin: "0px",
+                                width: "20px",
+                                height: "16px",
                               }}
                               type="checkbox"
                               name="Web_AI/ML"
@@ -1746,22 +1865,25 @@ function HeaderSection() {
                                 fontWeight: "900",
                               }}
                             >
-                              Networking
+                              NETWORKING
                             </label>
                             <input
                               style={{
                                 color: "white",
-                                fontSize: "large",
+                                fontSize: "x-large",
                                 fontWeight: "900",
                                 backgroundColor: "transparent",
                                 border: "1px solid white",
+                                marginTop: "10px",
                                 margin: "0px",
+                                width: "20px",
+                                height: "16px",
                               }}
                               type="checkbox"
                               name="Web_Networking"
                             />
                           </div>
-                        </div>
+                        </ul>
                       </>
                     ) : (
                       <></>
@@ -1772,6 +1894,8 @@ function HeaderSection() {
                         color: "white",
                         fontSize: "large",
                         fontWeight: "900",
+                        marginTop: "10px",
+                        margin: "0px",
                       }}
                     >
                       <br />
@@ -1788,7 +1912,6 @@ function HeaderSection() {
                       }}
                       type="checkbox"
                       name="Other_services"
-                      
                     />
                   </div>
 
@@ -1797,6 +1920,8 @@ function HeaderSection() {
                       color: "white",
                       fontSize: "large",
                       fontWeight: "900",
+                      marginTop: "0px",
+                      margin: "0px",
                     }}
                   >
                     More details
@@ -1823,9 +1948,12 @@ function HeaderSection() {
                     color: "white",
                     fontSize: "large",
                     fontWeight: "900",
+                    padding: "0px",
+                    margin: "0px",
                   }}
                 >
-                  Best consultation day and time for you
+                  Best consultation <br />
+                  day & time for you
                 </label>
                 <input
                   style={{
@@ -1862,13 +1990,15 @@ function HeaderSection() {
                     color: "white",
                     fontSize: "large",
                     fontWeight: "900",
-                    backgroundColor: "transparent",
-                    border: "3px solid black",
-                    margin: "5px",
+                    backgroundColor: "black",
+                    border: "3px solid white",
+                    marginTop: "20px",
+                    marginBottom: "20px",
+                    margin: "0px",
                     cursor: "pointer",
                   }}
                 >
-                  Send to gmdevstore@protonmail.com
+                  Click here to email form to <br /> gmdevstore@protonmail.com
                 </button>
               </form>
 
@@ -1883,7 +2013,6 @@ function HeaderSection() {
             </div>
           </div>
           {/** Intake form  */}
-
         </div>
         {/**Cashapp tab */}
 
@@ -1921,8 +2050,8 @@ function HeaderSection() {
                 borderRadius: "10px",
                 background: "black",
                 marginBottom: "20px",
-                marginTop: "10px",
-                width: "98%",
+                marginTop: "20px",
+                width: "95%",
                 textAlign: "left",
                 boxShadow:
                   "rgba(25, 129, 159, 0.9) 6px 2px 10px 0px, rgba(25, 129, 159, 0.9) -6px -2px 10px 0px ",
@@ -1933,6 +2062,7 @@ function HeaderSection() {
                   color: "white",
                   fontWeight: "900",
                   fontSize: `x-large`,
+                  padding: "5px",
                 }}
               >
                 Site information
@@ -2014,7 +2144,8 @@ function HeaderSection() {
                   }}
                 >
                   All art work , source code, and music was also made from
-                  scratch ! Except for some 3D models, gif's, and logos which are cited.
+                  scratch ! Except for some 3D models, gif's, and logos which
+                  are cited.
                 </div>
               </div>
 
@@ -2133,7 +2264,7 @@ function HeaderSection() {
                 background: "white",
                 marginBottom: "20px",
                 width: "98%",
-                border: "5px solid #EE0527ff",
+                border: "2px solid #EE0527ff",
               }}
             >
               <h3
@@ -2178,12 +2309,8 @@ function HeaderSection() {
                     width: `${statsCardSize}`,
                   }}
                 >
-                  <img
-                    src={uniLogo}
-                    width="35px"
-                    height="35px"
-                    style={{ marginRight: "25px" }}
-                  ></img>
+                  <img src={uniLogo} width="35px" height="35px"></img>
+                  <br />
                   B.S In CS from NIU
                 </div>
 
@@ -2204,8 +2331,9 @@ function HeaderSection() {
                     src={uni2Logo}
                     width="35px"
                     height="35px"
-                    style={{ marginRight: "25px" }}
+                    style={{}}
                   ></img>
+                  <br />
                   A.S from ECC
                 </div>
               </div>
@@ -2240,6 +2368,7 @@ function HeaderSection() {
                     height="30px"
                     style={{ marginRight: "10px" }}
                   ></img>
+                  <br />
                   Developer Title
                 </div>
                 <div
@@ -2252,7 +2381,6 @@ function HeaderSection() {
                     textAlign: "left",
                   }}
                 >
-                  
                   Junior Full Stack Developer
                 </div>
               </div>
@@ -2334,8 +2462,13 @@ function HeaderSection() {
                     src={DevIcon3}
                     width="30px"
                     height="30px"
-                    style={{ marginRight: "10px", background: "none" }}
+                    style={{
+                      marginRight: "10px",
+                      marginLeft: "10px",
+                      background: "none",
+                    }}
                   ></img>
+                  <br />
                   Active Projects
                 </div>
                 <div
@@ -2417,14 +2550,14 @@ function HeaderSection() {
           >
             <h1
               style={{
-                color: "black",
+                color: "white",
                 fontWeight: "900",
-                background: "rgba(255, 255, 255, .9)",
-                fontSize: "xx-large",
-                margin: "10px",
+                fontFamily: "monospace",
+                fontSize: "xxx-large",
+                marginTop: "30px",
               }}
             >
-              🥳 Project Spotlight{" "}
+              Project Spotlight
             </h1>
 
             <a
@@ -2572,7 +2705,7 @@ function HeaderSection() {
               style={{
                 color: "#19819Fff",
                 fontWeight: "900",
-                fontSize: "auto",
+                fontSize: "xx-large",
                 backgroundColor: "#101730ff",
                 margin: "10px",
                 borderRadius: "0px",
@@ -2587,7 +2720,11 @@ function HeaderSection() {
               <br />
               <button
                 src=" https://app.wombo.art/"
-                style={{ backgroundColor: "#2E5252ff", borderRadius: "5px" }}
+                style={{
+                  backgroundColor: "#2E5252ff",
+                  borderRadius: "5px",
+                  fontSize: "x-large",
+                }}
               >
                 <a style={{ color: "white" }}>app.wombo.art.com</a>
               </button>
@@ -2607,54 +2744,90 @@ function HeaderSection() {
                 border: " 1px solid white",
               }}
             >
-              <img
-                src={bg1}
-                style={{
-                  width: "25%",
-                  height: "50%",
-                  padding: "10px",
-                  boxShadow: "none",
-                }}
-              />
+              {windowSize ? (
+                <>
+                  <img
+                    src={bg1}
+                    style={{
+                      width: "50%",
+                      height: "100%",
+                      padding: "2px",
+                      boxShadow: "none",
+                    }}
+                  />
 
-              <img
-                src={bg5}
-                style={{
-                  width: "25%",
-                  height: "50%",
-                  padding: "10px",
-                  boxShadow: "none",
-                }}
-              />
+                  <img
+                    src={bg5}
+                    style={{
+                      width: "50%",
+                      height: "100%",
+                      padding: "2px",
+                      boxShadow: "none",
+                    }}
+                  />
+                </>
+              ) : (
+                <>
+                  <img
+                    src={bg1}
+                    style={{
+                      width: "25%",
+                      height: "50%",
+                      padding: "10px",
+                      boxShadow: "none",
+                    }}
+                  />
 
-              <img
-                src={darkaiart1}
-                style={{
-                  width: "25%",
-                  height: "50%",
-                  padding: "10px",
-                  boxShadow: "none",
-                }}
-              />
+                  <img
+                    src={bg5}
+                    style={{
+                      width: "25%",
+                      height: "50%",
+                      padding: "10px",
+                      boxShadow: "none",
+                    }}
+                  />
 
-              <img
-                src={darkaiart3}
-                style={{
-                  width: "25%",
-                  height: "50%",
-                  padding: "10px",
-                  boxShadow: "none",
-                }}
-              />
+                  <img
+                    src={darkaiart1}
+                    style={{
+                      width: "25%",
+                      height: "50%",
+                      padding: "10px",
+                      boxShadow: "none",
+                    }}
+                  />
+
+                  <img
+                    src={darkaiart3}
+                    style={{
+                      width: "25%",
+                      height: "50%",
+                      padding: "10px",
+                      boxShadow: "none",
+                    }}
+                  />
+                </>
+              )}
             </div>
 
-            <iframe
-              src="https://app.wombo.art/"
-              allowfullscreen="yes"
-              width="100%"
-              height="1000px"
-              frameborder="0"
-            ></iframe>
+            {windowSize ? (
+              <iframe
+                src="https://app.wombo.art/"
+                allowfullscreen="yes"
+                width="100%"
+                height="1200px"
+                frameborder="0"
+              ></iframe>
+            ) : (
+              <iframe
+                src="https://app.wombo.art/"
+                allowfullscreen="yes"
+                width="100%"
+                height="1000px"
+                frameborder="0"
+              ></iframe>
+            )}
           </div>
         </div>
       </div>
@@ -2705,7 +2878,7 @@ function HeaderSection() {
                   fontWeight: "900",
                   background: "rgba(0, 0, 0, 0.8)",
                   borderRadius: " 0px",
-                  width: "59%",
+                  width: "80%",
                 }}
               >
                 Technologies
@@ -2715,7 +2888,7 @@ function HeaderSection() {
                 style={{
                   color: "black",
                   borderRadius: " 0px",
-                  fontSize: "auto",
+                  fontSize: "large",
                 }}
               >
                 <li> Bash/Linux/Windows( CLI/OS )</li>
@@ -2776,7 +2949,7 @@ function HeaderSection() {
                   fontWeight: "900",
                   background: "rgba(255, 255, 255, 0.2)",
                   borderRadius: " 0px",
-                  width: "33%",
+                  width: "50%",
                 }}
               >
                 Updates
@@ -2794,7 +2967,6 @@ function HeaderSection() {
                 Major Update! : Migrating the website and updating look/feel
                 <br />
                 If you find any issues or bugs let me know!
-            
               </h3>
             </a>
           </div>

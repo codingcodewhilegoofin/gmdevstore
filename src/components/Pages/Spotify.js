@@ -99,7 +99,7 @@ const Spotify = () => {
   return (
 
     <div >
-      <div className="gio-container-1" style={{ padding: '5px' }}>
+      <div className="gio-container-1" style={{ padding: '5px', fontSize:"x-large" }}>
 
         <ul style={{ color: '#AEBEBEff', textAlign:"center" }}>
           <li>I first registered my website and used the client_secret
@@ -131,19 +131,23 @@ const Spotify = () => {
           : 
           
           <>
-          <ul style={{ color: '#AEBEBEff', padding: '0px', textAlign:"center" }}>
-            <li style={{ margin: '4px' }}> Artists name: {spotifyResonse?.name}</li>
-            <li style={{ margin: '4px' }}> Account type: {spotifyResonse?.type}</li>
-            <li style={{ margin: '4px' }}> Current Total Followers: {spotifyResonse?.followers?.total}</li> 
-            <li style={{ margin: '4px' }}> Genres: {spotifyResonse?.genres[0]} ,{spotifyResonse?.genres[1]} ,{spotifyResonse?.genres[2]}</li>
+          <ul style={{ color: '#AEBEBEff', padding: '0px', textAlign:"center" , margin:"50px" , border:"1px solid lightgreen" }}>
+            <li style={{ margin: '0px' }}> Artists name: {spotifyResonse?.name.toUpperCase()}</li>
+            <li style={{ margin: '4px' }}> Account type: {spotifyResonse?.type.toUpperCase()}</li>
+            <li style={{ margin: '4px' }}> Current Total Followers: <b style={{color:"lightgreen"}}>{spotifyResonse?.followers?.total}</b></li> 
+            <div style={{ margin: '4px', border:"1px solid white", margin:"20px" }}> Genres: 
+            <br/><b style={{color:"lightgreen"}}>{spotifyResonse?.genres[0]?.toUpperCase()}</b>
+            <br/><b style={{color:"lightgreen"}}>{spotifyResonse?.genres[1]?.toUpperCase()}</b>
+            <br/><b style={{color:"lightgreen"}}>{spotifyResonse?.genres[2]?.toUpperCase()}</b>
+            </div>
           </ul>
-           <img style={{ marginBottom: '5px' }} src={spotifyResonse?.images[0]?.url} height='auto' width='95%' /> 
+           <img style={{ margin: '10px', padding:"2px" }} src={spotifyResonse?.images[0]?.url} height='50%' width='50%' /> 
           </>
           }
 
         </div> 
 
-        <form onSubmit={changeArtists} style={{ padding: '5px' }} >
+        <form onSubmit={changeArtists} style={{ padding: '5px', fontSize:"x-large" }} >
           <ul style={{ padding: '5px', alignItems: 'center', textAlign:"center" }}>
 
             <li style={{ color: '#AEBEBEff', padding:"5px" }}>
@@ -187,13 +191,15 @@ const Spotify = () => {
               background: 'none',
               cursor: 'pointer',
               fontWeight: 'bold',
-              border: ' 1px solid white'
+              border: ' 1px solid white',
+              padding:"25px"
             }} type="submit" value="Change artist">
           </input>
         </form>
 
-        <form style={{ padding: '30px' }}>
+        <form style={{ padding: '20px' }}>
           <label style={{ color: '#AEBEBEff' }}>Show my spotify data</label>
+          <br/>
           <input style={{ backgroundColor: "red" }} onClick={showData} type="checkbox" name="gioBox"></input>
         </form>
 

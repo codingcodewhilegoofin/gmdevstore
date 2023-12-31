@@ -66,6 +66,7 @@ function OldSite() {
   let paddingType;
   let marginType;
   let picSize;
+  let moreButtonWidth;
 
   if (windowSize) {
     mobileNav = "column";
@@ -77,7 +78,8 @@ function OldSite() {
     leafAnimation = "";
     paddingType = "0px";
     marginType = "0px";
-    picSize = "33%";
+    picSize = "85%";
+    moreButtonWidth = "65%";
   } else {
     picSize = "75%";
     mobileNav = "row";
@@ -89,6 +91,7 @@ function OldSite() {
     leafAnimation = "leaf 10s ease-in-out infinite";
     paddingType = "6px";
     marginType = "6px";
+    moreButtonWidth = "90%";
   }
 
   const [showMenu, setshowMenu] = useState(false);
@@ -274,11 +277,11 @@ function OldSite() {
                         <p
                           style={{
                             color: "white",
-                            fontSize: `${fontSize}`,
+                            fontSize: "auto",
                             textTransform: "uppercase",
                             fontFamily: "monospace",
                             border: "3px solid white",
-                            padding: "20px",
+                            padding: "10px",
                             borderRadius: "10px",
                             opacity: "1",
                             background: "rgba(0, 0, 0, 0.5 )",
@@ -287,7 +290,8 @@ function OldSite() {
                           Gmdevstore is a full stack web site portfolio offering
                           tutoring & web design/development services. 
                           <br/>
-                          Learn current & future tech skills. Build amazing apps with me!
+                          <br/>
+                          Learn current & future tech skills.
                         </p>
 
                         <div
@@ -320,7 +324,7 @@ function OldSite() {
                               textTransform: "uppercase",
                               fontFamily: "monospace",
                               border: "3px solid white",
-                              padding: "20px",
+                              padding: "30px",
                               borderRadius: "0px",
                               opacity: "1",
                               background: "rgba(0, 0, 0, 0.5 )",
@@ -328,13 +332,13 @@ function OldSite() {
                           >
                             <li> ☁️ Cloud services</li>
                             <li> 📚 Fundamentals </li>
-                            <li> 💻 Web & Mobile development/design📱</li>
+                            <li> 💻📱 Web & Mobile <br/> development/design</li>
                             <li> 🛡️ Security</li>
                             <li> 🤖 AI/ML</li>
                             <li> 🌐 Networking</li>
                             <li> Embeded systems & electronics</li>
                             <li> 🔓 Ethical "hacking"</li>
-                            <li> 🕹️ Video games & more!</li>
+                            <li> 🕹️ Video games</li>
                           </ul>
                         </div>
                       </div>
@@ -382,14 +386,14 @@ function OldSite() {
                       color: "#19819fff",
                       cursor: "pointer",
                       textTransform: "uppercase",
-                      fontSize: "large",
+                      fontSize: "auto",
                       opacity: ".9",
                       borderRadius: "15px",
                       background: "rgba(238, 5, 39, 0.15)",
                       boxShadow: `0 8px 32px 0 rgba( 238, 5, 39, 0.37 )`,
                       backdropFilter: "blur( 2px )",
-                      border: `1px solid rgba( 255, 255, 255, 0.18 )`,
-                      width: "50%",
+                      border: `2px solid rgba( 255, 255, 255, 0.18 )`,
+                      width: `${moreButtonWidth}`,
                     }}
                   >
                     <div
@@ -424,7 +428,7 @@ function OldSite() {
                             style={{
                               color: "white",
                               fontWeight: "bold",
-                              fontSize: "x-large",
+                              fontSize: "auto",
                               animation: "coffeePulse 3s ease-in-out infinite",
                               display: "inline",
                             }}

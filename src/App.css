@@ -40,7 +40,7 @@
   position: fixed; /* Sit on top of the page content */
   display: sticky; /* Hidden by default */
   width: 25%; /* Full width (cover the whole page) */
-  height: 4%; /* Full height (cover the whole page) */
+  height: 5%; /* Full height (cover the whole page) */
   textAlign: center; 
   bottom: 0;
   opacity: .6;

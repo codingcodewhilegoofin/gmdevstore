@@ -86,19 +86,30 @@ function HeaderContact() {
           padding: "10px",
         }}
       >
-        <a
+        <h3 style={{ color: "white", fontWeight: "900", padding: "25px" }}>
+          Free consultation for tutoring
+          <br />
+          Free custom website development / design
+          <br />
+          <br />
+          *Limited to static sites only*
+        </h3>
+        <div
           style={{
+            width:"100%",
             cursor: "pointer",
             color: "white",
             fontWeight: "600",
             boxShadow:
-              "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.9) 0px 7px 13px -3px, rgba(255, 255, 255, 0.9) 0px -3px 0px inset",
+              "rgba(0, 0, 0, 0.4) 0px 2px 5px, rgba(255, 255, 255, 0.9) 0px 7px 13px -3px, rgba(255, 255, 255, 0.9) 0px -3px 0px inset",
             fontSize: `${FontSizeLarge}`,
           }}
-          href="https://linktr.ee/codedumpsterfire"
         >
-          linktr.ee/codedumpsterfire
-        </a>
+          <a href="https://linktr.ee/codedumpsterfire" style={{color:"white"}}>
+            linktr.ee/ <br/>
+            codedumpsterfire
+          </a>
+        </div>
       </div>
 
       <div className="spacer2"></div>
@@ -258,7 +269,8 @@ function HeaderContact() {
                 }}
               />
 
-              <br/>
+              <br />
+              <br />
 
               <label for="fname" style={{ color: "white", padding: "0px" }}>
                 Youtube
@@ -284,577 +296,52 @@ function HeaderContact() {
 
         <div className="spacer2"></div>
         <div className="spacer2"></div>
-        
+
         {/** Intake form  */}
         <div
+          style={{
+            opacity: "1",
+            backdropFilter: "blur( 20px )",
+          }}
+        >
+          <div
+            className="end-div5"
             style={{
-              opacity: "1",
-              borderRadius: "10px",
-              boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-              backdropFilter: "blur( 10.5px )",
-              border: `1px solid rgba( 255, 255, 255, 0.18 )`,
-              padding: "0px",
-              marginBottom: "15px",
+              width: `${cardWidthSupport}`,
+              height: "100%",
+              flexDirection: `${cardOrientation}`,
+              textAlign: "center",
+              alignItems: "center",
+              opacity: ".9",
+              background: "rgba(175, 191, 200, 0.2)",
+              backdropFilter: "blur( 5px )",
             }}
           >
-            <div
-              className="end-div5"
+            <form
+              action="https://formsubmit.co/gmdevstore@protonmail.com"
+              method="POST"
               style={{
-                margin: "0px",
                 padding: "0px",
-                width: `${cardWidthSupport}`,
-                flexDirection: `${cardOrientation}`,
-                textAlign: "center",
-                alignItems: "center",
-                border: "1px solid white",
-                opacity: ".9",
-                borderRadius: "10px",
-                background: "rgba(175, 191, 200, 0.2)",
-                backdropFilter: "blur( 5px )",
+                borderRadius: "0px",
+                background: "transparent",
+                opacity: ".8",
               }}
             >
-              <h2
-                style={{ color: "white", fontSize: "large", fontWeight: "900" }}
-              >
-                Services intake form
-              </h2>
-
-              <form
-                action="https://formsubmit.co/gmdevstore@protonmail.com"
-                method="POST"
+              <div
                 style={{
-                  padding: "0px",
-                  border: "1px solid white",
-                  borderRadius: "10px",
-                  background: "transparent",
-                  opacity: ".8",
+                  flexDirection: "column",
+                  padding: "5px",
                 }}
               >
-                <div
+                <h2
                   style={{
-                    flexDirection: "column",
-                    padding: "5px",
+                    color: "white",
+                    fontSize: "large",
+                    fontWeight: "900",
                   }}
                 >
-                  <h2
-                    style={{
-                      color: "white",
-                      fontSize: "large",
-                      fontWeight: "900",
-                    }}
-                  >
-                    Send your contact information and service request details.
-                  </h2>
-
-                  <label
-                    style={{
-                      color: "white",
-                      fontSize: "large",
-                      fontWeight: "900",
-                    }}
-                  >
-                    Firstname
-                  </label>
-                  <input
-                    style={{
-                      color: "white",
-                      fontSize: "large",
-                      fontWeight: "900",
-                      backgroundColor: "transparent",
-                      border: "1px solid white",
-                      margin: "5px",
-                      width: "90%",
-                    }}
-                    type="text"
-                    name="Firstname"
-                    required
-                  />
-
-                  <label
-                    style={{
-                      color: "white",
-                      fontSize: "large",
-                      fontWeight: "900",
-                    }}
-                  >
-                    Lastname
-                  </label>
-                  <input
-                    style={{
-                      color: "white",
-                      fontSize: "large",
-                      fontWeight: "900",
-                      backgroundColor: "transparent",
-                      border: "1px solid white",
-                      margin: "5px",
-                      width: "90%",
-                    }}
-                    type="text"
-                    name="LastName"
-                    required
-                  />
-
-                  <div>
-                    <label
-                      style={{
-                        color: "white",
-                        fontSize: "large",
-                        fontWeight: "900",
-                      }}
-                    >
-                      Email
-                    </label>
-                    <input
-                      style={{
-                        color: "white",
-                        fontSize: "large",
-                        fontWeight: "900",
-                        backgroundColor: "transparent",
-                        border: "1px solid white",
-                        margin: "10px",
-                        width: "90%",
-                      }}
-                      type="email"
-                      name="email"
-                      required
-                    />
-                  </div>
-
-                  <label
-                    style={{
-                      color: "white",
-                      fontSize: "large",
-                      fontWeight: "900",
-                    }}
-                  >
-                    Choose a consultation service
-                  </label>
-
-                  <div
-                    style={{
-                      flexDirection: "column",
-                      border: "1px solid white",
-                      padding: "5px",
-                      margin: "10px",
-                    }}
-                  >
-                    <label
-                      style={{
-                        color: "white",
-                        fontSize: "large",
-                        fontWeight: "900",
-                      }}
-                    >
-                      Tutoring
-                    </label>
-                    <input
-                      style={{
-                        color: "white",
-                        fontSize: "large",
-                        fontWeight: "900",
-                        backgroundColor: "transparent",
-                        border: "1px solid white",
-                        margin: "0px",
-                      }}
-                      type="checkbox"
-                      name="Tutoring"
-                      onClick={() => {
-                        setTutoringForm(!tutoringForm);
-                      }}
-                    />
-
-                    {tutoringForm ? (
-                      <>
-                        <div
-                          style={{
-                            backgroundColor: "black",
-                            flexDirection: "column",
-                            padding: "50px",
-                          }}
-                        >
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              Cloud
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_CloudServices"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              C.S Fundamentals
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_CSfundamentals"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              Advanced mathematics
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_Math"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              WEB DEVELOPMENT/DESIGN
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_Webdev&design"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              EMBEDED SYSTEMS & ELECTRONICS
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_embededSystems"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              ETHICAL "HACKING"
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_hacking"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              VIDEO GAMES
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Tutor_videogames"
-                            />
-                          </div>
-                        </div>
-                      </>
-                    ) : (
-                      <></>
-                    )}
-
-                    <label
-                      style={{
-                        color: "white",
-                        fontSize: "large",
-                        fontWeight: "900",
-                      }}
-                    >
-                      <br />
-                      Web development/design
-                    </label>
-                    <input
-                      style={{
-                        color: "white",
-                        fontSize: "large",
-                        fontWeight: "900",
-                        backgroundColor: "transparent",
-                        border: "1px solid white",
-                        margin: "0px",
-                      }}
-                      type="checkbox"
-                      name="Webdev"
-                      onClick={() => {
-                        setWebdevForm(!webdevForm);
-                      }}
-                    />
-
-                    {webdevForm ? (
-                      <>
-                        <div
-                          style={{
-                            backgroundColor: "black",
-                            flexDirection: "column",
-                            padding: "50px",
-                          }}
-                        >
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              Cloud services
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Web_cloudServices"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              Web & mobile design / development
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Web_websiteDev&Design"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              Security
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Web_Security"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              AI/ML
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Web_AI/ML"
-                            />
-                          </div>
-
-                          <div>
-                            <label
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                              }}
-                            >
-                              Networking
-                            </label>
-                            <input
-                              style={{
-                                color: "white",
-                                fontSize: "large",
-                                fontWeight: "900",
-                                backgroundColor: "transparent",
-                                border: "1px solid white",
-                                margin: "0px",
-                              }}
-                              type="checkbox"
-                              name="Web_Networking"
-                            />
-                          </div>
-                        </div>
-                      </>
-                    ) : (
-                      <></>
-                    )}
-
-                    <label
-                      style={{
-                        color: "white",
-                        fontSize: "large",
-                        fontWeight: "900",
-                      }}
-                    >
-                      <br />
-                      Other....
-                    </label>
-                    <input
-                      style={{
-                        color: "white",
-                        fontSize: "large",
-                        fontWeight: "900",
-                        backgroundColor: "transparent",
-                        border: "1px solid white",
-                        margin: "0px",
-                      }}
-                      type="checkbox"
-                      name="Other_services"
-                      
-                    />
-                  </div>
-
-                  <label
-                    style={{
-                      color: "white",
-                      fontSize: "large",
-                      fontWeight: "900",
-                    }}
-                  >
-                    More details
-                  </label>
-                  <input
-                    style={{
-                      color: "white",
-                      fontSize: "large",
-                      fontWeight: "900",
-                      backgroundColor: "transparent",
-                      border: "1px solid white",
-                      margin: "5px",
-                      width: "90%",
-                    }}
-                    type="text"
-                    name="AdditionalDetails"
-                    maxlength="350"
-                    required
-                  />
-                </div>
+                  Send your contact information and request details.
+                </h2>
 
                 <label
                   style={{
@@ -863,7 +350,7 @@ function HeaderContact() {
                     fontWeight: "900",
                   }}
                 >
-                  Best consultation day and time for you
+                  Firstname
                 </label>
                 <input
                   style={{
@@ -875,10 +362,20 @@ function HeaderContact() {
                     margin: "5px",
                     width: "90%",
                   }}
-                  type="date"
-                  name="UserRequested_ConsultationDate"
+                  type="text"
+                  name="Firstname"
                   required
                 />
+
+                <label
+                  style={{
+                    color: "white",
+                    fontSize: "large",
+                    fontWeight: "900",
+                  }}
+                >
+                  Lastname
+                </label>
                 <input
                   style={{
                     color: "white",
@@ -889,28 +386,609 @@ function HeaderContact() {
                     margin: "5px",
                     width: "90%",
                   }}
-                  type="time"
-                  name="UserRequested_ConsultationTime"
+                  type="text"
+                  name="LastName"
                   required
                 />
 
-                <button
-                  type="submit"
+                <div>
+                  <label
+                    style={{
+                      color: "white",
+                      fontSize: "large",
+                      fontWeight: "900",
+                    }}
+                  >
+                    Email
+                  </label>
+                  <input
+                    style={{
+                      color: "white",
+                      fontSize: "large",
+                      fontWeight: "900",
+                      backgroundColor: "transparent",
+                      border: "1px solid white",
+                      margin: "10px",
+                      width: "90%",
+                    }}
+                    type="email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <label
+                  style={{
+                    color: "white",
+                    fontSize: "large",
+                    fontWeight: "900",
+                    padding: "0px",
+                    margin: "0px",
+                  }}
+                >
+                  Choose a consultation type
+                </label>
+
+                <div
+                  style={{
+                    flexDirection: "column",
+                    border: "1px solid white",
+                    padding: "0px",
+                    marginTop: "5px",
+                    marginBottom: "5px",
+                  }}
+                >
+                  <label
+                    style={{
+                      color: "white",
+                      fontSize: "large",
+                      fontWeight: "900",
+                      marginTop: "10px",
+                      margin: "0px",
+                    }}
+                  >
+                    Tutoring
+                  </label>
+                  <input
+                    style={{
+                      color: "white",
+                      fontSize: "x-large",
+                      fontWeight: "900",
+                      backgroundColor: "transparent",
+                      border: "1px solid white",
+                      marginTop: "10px",
+                      margin: "0px",
+                      width: "20px",
+                      height: "16px",
+                    }}
+                    type="checkbox"
+                    name="Tutoring"
+                    onClick={() => {
+                      setTutoringForm(!tutoringForm);
+                    }}
+                  />
+
+                  {tutoringForm ? (
+                    <>
+                      <ul
+                        style={{
+                          backgroundColor: "black",
+                          flexDirection: "column",
+                          padding: "10px",
+                          margin: "5px",
+                        }}
+                      >
+                        <li>
+                          <label
+                            style={{
+                              color: "white",
+                              fontSize: "large",
+                              fontWeight: "900",
+                            }}
+                          >
+                            CLOUD
+                          </label>
+                          <input
+                            style={{
+                              color: "white",
+                              fontSize: "x-large",
+                              fontWeight: "900",
+                              backgroundColor: "transparent",
+                              border: "1px solid white",
+                              marginTop: "10px",
+                              margin: "0px",
+                              width: "20px",
+                              height: "16px",
+                            }}
+                            type="checkbox"
+                            name="Tutor_CloudServices"
+                          />
+                        </li>
+
+                        <li>
+                          <dl>
+                            <dt>
+                              <label
+                                style={{
+                                  color: "white",
+                                  fontSize: "large",
+                                  fontWeight: "900",
+                                }}
+                              >
+                                C.S FUNDAMENTALS
+                              </label>
+                              <input
+                                style={{
+                                  color: "white",
+                                  fontSize: "x-large",
+                                  fontWeight: "900",
+                                  backgroundColor: "transparent",
+                                  border: "1px solid white",
+                                  marginTop: "20px",
+                                  margin: "0px",
+                                  width: "20px",
+                                  height: "16px",
+                                }}
+                                type="checkbox"
+                                name="Tutor_CSfundamentals"
+                              />
+                            </dt>
+                          </dl>
+                        </li>
+
+                        <li>
+                          <dl>
+                            <dt>
+                              <label
+                                style={{
+                                  color: "white",
+                                  fontSize: "large",
+                                  fontWeight: "900",
+                                }}
+                              >
+                                ADVANCED MATh
+                              </label>
+                              <input
+                                style={{
+                                  color: "white",
+                                  fontSize: "x-large",
+                                  fontWeight: "900",
+                                  backgroundColor: "transparent",
+                                  border: "1px solid white",
+                                  marginTop: "20px",
+                                  margin: "0px",
+                                  width: "20px",
+                                  height: "16px",
+                                }}
+                                type="checkbox"
+                                name="Tutor_Math"
+                              />
+                            </dt>
+                          </dl>
+                        </li>
+
+                        <li>
+                          <dl>
+                            <dt>
+                              <label
+                                style={{
+                                  color: "white",
+                                  fontSize: "large",
+                                  fontWeight: "900",
+                                  margin: "0px",
+                                  padding: "0px",
+                                }}
+                              >
+                                WEB DEVELOPMENT/DESIGN
+                              </label>
+                              <input
+                                style={{
+                                  color: "white",
+                                  fontSize: "x-large",
+                                  fontWeight: "900",
+                                  backgroundColor: "transparent",
+                                  border: "1px solid white",
+                                  marginTop: "20px",
+                                  margin: "0px",
+                                  width: "30px",
+                                  height: "16px",
+                                }}
+                                type="checkbox"
+                                name="Tutor_Webdev&design"
+                              />
+                            </dt>
+                          </dl>
+                        </li>
+
+                        <li>
+                          <dl>
+                            <dt>
+                              <label
+                                style={{
+                                  color: "white",
+                                  fontSize: "large",
+                                  fontWeight: "900",
+                                }}
+                              >
+                                EMBEDED/ELECTRONICS
+                              </label>
+                              <input
+                                style={{
+                                  color: "white",
+                                  fontSize: "x-large",
+                                  fontWeight: "900",
+                                  backgroundColor: "transparent",
+                                  border: "1px solid white",
+                                  marginTop: "20px",
+                                  margin: "0px",
+                                  width: "20px",
+                                  height: "16px",
+                                }}
+                                type="checkbox"
+                                name="Tutor_embededSystems"
+                              />
+                            </dt>
+                          </dl>
+                        </li>
+
+                        <li>
+                          <dl>
+                            <dt>
+                              <label
+                                style={{
+                                  color: "white",
+                                  fontSize: "large",
+                                  fontWeight: "900",
+                                }}
+                              >
+                                ETHICAL "HACKING"
+                              </label>
+                              <input
+                                style={{
+                                  color: "white",
+                                  fontSize: "x-large",
+                                  fontWeight: "900",
+                                  backgroundColor: "transparent",
+                                  border: "1px solid white",
+                                  marginTop: "20px",
+                                  margin: "0px",
+                                  width: "20px",
+                                  height: "16px",
+                                }}
+                                type="checkbox"
+                                name="Tutor_hacking"
+                              />
+                            </dt>
+                          </dl>
+                        </li>
+
+                        <li>
+                          <label
+                            style={{
+                              color: "white",
+                              fontSize: "large",
+                              fontWeight: "900",
+                            }}
+                          >
+                            VIDEO GAMES
+                          </label>
+                          <input
+                            style={{
+                              color: "white",
+                              fontSize: "x-large",
+                              fontWeight: "900",
+                              backgroundColor: "transparent",
+                              border: "1px solid white",
+                              marginTop: "20px",
+                              margin: "0px",
+                              width: "20px",
+                              height: "16px",
+                            }}
+                            type="checkbox"
+                            name="Tutor_videogames"
+                          />
+                        </li>
+                      </ul>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+
+                  <label
+                    style={{
+                      color: "white",
+                      fontSize: "large",
+                      fontWeight: "900",
+                      marginTop: "10px",
+                      margin: "0px",
+                    }}
+                  >
+                    <br />
+                    Web development/design
+                  </label>
+                  <input
+                    style={{
+                      color: "white",
+                      fontSize: "x-large",
+                      fontWeight: "900",
+                      backgroundColor: "transparent",
+                      border: "1px solid white",
+                      marginTop: "10px",
+                      margin: "0px",
+                      width: "20px",
+                      height: "16px",
+                    }}
+                    type="checkbox"
+                    name="Webdev"
+                    onClick={() => {
+                      setWebdevForm(!webdevForm);
+                    }}
+                  />
+
+                  {webdevForm ? (
+                    <>
+                      <ul
+                        style={{
+                          backgroundColor: "black",
+                          flexDirection: "column",
+                          padding: "10px",
+                          margin: "5px",
+                        }}
+                      >
+                        <div>
+                          <label
+                            style={{
+                              color: "white",
+                              fontSize: "large",
+                              fontWeight: "900",
+                            }}
+                          >
+                            CLOUD
+                          </label>
+                          <input
+                            style={{
+                              color: "white",
+                              fontSize: "x-large",
+                              fontWeight: "900",
+                              backgroundColor: "transparent",
+                              border: "1px solid white",
+                              marginTop: "10px",
+                              margin: "0px",
+                              width: "20px",
+                              height: "16px",
+                            }}
+                            type="checkbox"
+                            name="Web_cloudServices"
+                          />
+                        </div>
+
+                        <div>
+                          <label
+                            style={{
+                              color: "white",
+                              fontSize: "large",
+                              fontWeight: "900",
+                            }}
+                          >
+                            WEB/MOBILE
+                          </label>
+                          <input
+                            style={{
+                              color: "white",
+                              fontSize: "x-large",
+                              fontWeight: "900",
+                              backgroundColor: "transparent",
+                              border: "1px solid white",
+                              marginTop: "10px",
+                              margin: "0px",
+                              width: "20px",
+                              height: "16px",
+                            }}
+                            type="checkbox"
+                            name="Web_websiteDev&Design"
+                          />
+                        </div>
+
+                        <div>
+                          <label
+                            style={{
+                              color: "white",
+                              fontSize: "large",
+                              fontWeight: "900",
+                            }}
+                          >
+                            SECURITY
+                          </label>
+                          <input
+                            style={{
+                              color: "white",
+                              fontSize: "x-large",
+                              fontWeight: "900",
+                              backgroundColor: "transparent",
+                              border: "1px solid white",
+                              marginTop: "10px",
+                              margin: "0px",
+                              width: "20px",
+                              height: "16px",
+                            }}
+                            type="checkbox"
+                            name="Web_Security"
+                          />
+                        </div>
+
+                        <div>
+                          <label
+                            style={{
+                              color: "white",
+                              fontSize: "large",
+                              fontWeight: "900",
+                            }}
+                          >
+                            AI/ML
+                          </label>
+                          <input
+                            style={{
+                              color: "white",
+                              fontSize: "x-large",
+                              fontWeight: "900",
+                              backgroundColor: "transparent",
+                              border: "1px solid white",
+                              marginTop: "10px",
+                              margin: "0px",
+                              width: "20px",
+                              height: "16px",
+                            }}
+                            type="checkbox"
+                            name="Web_AI/ML"
+                          />
+                        </div>
+
+                        <div>
+                          <label
+                            style={{
+                              color: "white",
+                              fontSize: "large",
+                              fontWeight: "900",
+                            }}
+                          >
+                            NETWORKING
+                          </label>
+                          <input
+                            style={{
+                              color: "white",
+                              fontSize: "x-large",
+                              fontWeight: "900",
+                              backgroundColor: "transparent",
+                              border: "1px solid white",
+                              marginTop: "10px",
+                              margin: "0px",
+                              width: "20px",
+                              height: "16px",
+                            }}
+                            type="checkbox"
+                            name="Web_Networking"
+                          />
+                        </div>
+                      </ul>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+
+                  <label
+                    style={{
+                      color: "white",
+                      fontSize: "large",
+                      fontWeight: "900",
+                      marginTop: "10px",
+                      margin: "0px",
+                    }}
+                  >
+                    <br />
+                    Other....
+                  </label>
+                  <input
+                    style={{
+                      color: "white",
+                      fontSize: "large",
+                      fontWeight: "900",
+                      backgroundColor: "transparent",
+                      border: "1px solid white",
+                      margin: "0px",
+                    }}
+                    type="checkbox"
+                    name="Other_services"
+                  />
+                </div>
+
+                <label
+                  style={{
+                    color: "white",
+                    fontSize: "large",
+                    fontWeight: "900",
+                    marginTop: "0px",
+                    margin: "0px",
+                  }}
+                >
+                  More details
+                </label>
+                <input
                   style={{
                     color: "white",
                     fontSize: "large",
                     fontWeight: "900",
                     backgroundColor: "transparent",
-                    border: "3px solid black",
+                    border: "1px solid white",
                     margin: "5px",
-                    cursor: "pointer",
+                    width: "90%",
                   }}
-                >
-                  Send to gmdevstore@protonmail.com
-                </button>
-              </form>
+                  type="text"
+                  name="AdditionalDetails"
+                  maxlength="350"
+                  required
+                />
+              </div>
 
-              {/* <img
+              <label
+                style={{
+                  color: "white",
+                  fontSize: "large",
+                  fontWeight: "900",
+                  padding: "0px",
+                  margin: "0px",
+                }}
+              >
+                Best consultation <br />
+                day & time for you
+              </label>
+              <input
+                style={{
+                  color: "white",
+                  fontSize: "large",
+                  fontWeight: "900",
+                  backgroundColor: "transparent",
+                  border: "1px solid white",
+                  margin: "5px",
+                  width: "90%",
+                }}
+                type="date"
+                name="UserRequested_ConsultationDate"
+                required
+              />
+              <input
+                style={{
+                  color: "white",
+                  fontSize: "large",
+                  fontWeight: "900",
+                  backgroundColor: "transparent",
+                  border: "1px solid white",
+                  margin: "5px",
+                  width: "90%",
+                }}
+                type="time"
+                name="UserRequested_ConsultationTime"
+                required
+              />
+
+              <button
+                type="submit"
+                style={{
+                  color: "white",
+                  fontSize: "large",
+                  fontWeight: "900",
+                  backgroundColor: "black",
+                  border: "3px solid white",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                  margin: "0px",
+                  cursor: "pointer",
+                }}
+              >
+                Click here to email form to <br /> gmdevstore@protonmail.com
+              </button>
+            </form>
+
+            {/* <img
                 src={CashappQR}
                 height="auto"
                 width="auto"
@@ -918,9 +996,9 @@ function HeaderContact() {
                   padding: "10px",
                 }}
               />  */}
-            </div>
           </div>
-          {/** Intake form  */}
+        </div>
+        {/** Intake form  */}
       </div>
     </div>
   );

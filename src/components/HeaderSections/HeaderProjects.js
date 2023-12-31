@@ -237,26 +237,32 @@ function HeaderProjects() {
           >
             Projects
           </h1>
-          <b>
-            <div class="innerIam" style={{ backgroundColor: "black" }}>
-              Web,VideoGame, Embeded systems development
-              <br />
-              Spotify, Stock, OpenAi API Integrations
-              <br />
-              Web, Game, Embeded applications development
-              <br />
-              React & CloudFlare & Full Stack Web App's
-              <br />
-              Data Structures & Algorithms <br />
-              CLI and Low level based projects
-              <br />
-            </div>
-          </b>
+
+          {windowSize ? (
+            <></>
+          ) : (
+            <b>
+              <div class="innerIam" style={{ backgroundColor: "black" }}>
+                Web,VideoGame, Embeded systems development
+                <br />
+                Spotify, Stock, OpenAi API Integrations
+                <br />
+                Web, Game, Embeded applications development
+                <br />
+                React & CloudFlare & Full Stack Web App's
+                <br />
+                Data Structures & Algorithms <br />
+                CLI and Low level based projects
+                <br />
+              </div>
+            </b>
+          )}
+
           <a
             style={{ color: "white", cursor: "pointer" }}
             href="https://giphy.com/ericaofanderson"
           >
-            Gifs by : Erica Anderson
+            Gifs by : @ericaofanderson & @pislices
           </a>
         </div>
 
@@ -310,8 +316,6 @@ function HeaderProjects() {
               description="A web application is application software that is accessed using a web browser. Web applications are delivered on the World Wide Web to users with an active network connection."
               cardToggleID={"IdOne"}
             >
-              
-
               <div
                 className="gio-container"
                 style={{ margin: "5px", background: "black" }}
@@ -944,7 +948,7 @@ function HeaderProjects() {
                       gmdevstore.com
                       <br /> <a style={{ color: "white" }}>(React web app)</a>
                     </li>
-                    
+
                     <label></label>
                     <li
                       style={{
@@ -1004,7 +1008,7 @@ function HeaderProjects() {
                         /Spotify
                       </a>
                     </li>
-                   
+
                     <label></label>
                     <li
                       style={{
@@ -1622,8 +1626,6 @@ function HeaderProjects() {
           OPEN
         </button>
       </div>
-
-     
     </div>
   );
 }

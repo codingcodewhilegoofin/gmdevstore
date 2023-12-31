@@ -94,7 +94,7 @@ function HeaderAbout() {
               </h4>
             </div>
 
-            <label></label>
+         
 
             <div
               style={{
@@ -108,8 +108,6 @@ function HeaderAbout() {
               <p
                 style={{
                   color: "white",
-                  background: "rgba(0,0,0, 0.9)",
-                  padding: "10px",
                   borderRadius: "20px",
                   fontSize: `${FontSizeMedium}`,
                 }}
@@ -123,7 +121,6 @@ function HeaderAbout() {
               <p
                 style={{
                   color: "white",
-                  backgroundColor: "rgba(0,0,0, 0.8)",
                   padding: "30px",
                   borderRadius: "20px",
                   fontSize: `${FontSizeMedium}`,
@@ -157,9 +154,6 @@ function HeaderAbout() {
 
               <div className="spacer2"></div>
             </div>
-
-            
-            <label></label>
 
             <div
               style={{

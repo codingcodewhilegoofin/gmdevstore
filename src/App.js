@@ -132,7 +132,7 @@ function App() {
       }
 
       {/* Seasonal art */}
-      <h3 style={{ color: 'white' }}>🎄 Jingle Bells , Batman smells  🦇</h3> 
+      <h3 style={{ color: 'white' }}>Happy new years!</h3> 
 
       {/*      <audio 
         src={songChoice}
@@ -163,7 +163,7 @@ function App() {
         <button 
           onClick={modalHandle} 
           class={modalToggle}>
-            Menu
+            
         </button>
       </div>
 

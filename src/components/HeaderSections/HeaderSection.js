@@ -293,7 +293,7 @@ function HeaderSection() {
           <div
             className="end-div5"
             style={{
-              backgroundImage: `url(${darkaiart1})`,
+              backgroundImage: `url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmViMmxtcjdld2x4bzg2NnpnNjJvMWdxMjBobnQ5eGl4cTJ4emttbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vBVnubR6dXEbCmbkfb/giphy-downsized-large.gif")`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               borderRadius: "20px",
@@ -323,7 +323,7 @@ function HeaderSection() {
                   color: "#AEBEBEff",
                   fontWeight: "bold",
                   margin: "10px",
-                  fontSize: "x-large",
+                  fontSize: "large",
                   background: "rgba(0, 0, 0, 0.3)",
                   boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                   backdropFilter: "blur( 20px )",
@@ -335,6 +335,7 @@ function HeaderSection() {
                 <b style={{ fontSize: "xx-large", fontFamily: "monospace" }}>
                   @codedumpsterfire🔥
                 </b>
+
               </p>
 
               <p
@@ -416,7 +417,7 @@ function HeaderSection() {
           <div
             className="end-div5"
             style={{
-              backgroundImage: `url(${darkaiart2})`,
+              backgroundImage: `url("https://media.giphy.com/media/7d3S8Gv81uo901pRlq/giphy-downsized-large.gif")`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               borderRadius: "25px",
@@ -543,11 +544,11 @@ function HeaderSection() {
         <div
           className="end-div5"
           style={{
-            backgroundImage: `url(${darkaiart2})`,
+            backgroundImage: `url("https://media.giphy.com/media/5dEj41p0rklNyep13J/giphy-downsized-large.gif")`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             borderRadius: "20px",
-            padding: "10px",
+            padding: "0px",
             marginBottom: "10px",
             marginTop: "20px",
             width: "100%",
@@ -556,6 +557,11 @@ function HeaderSection() {
             alignItems: "center",
           }}
         >
+          <div
+            style={{
+              backdropFilter: "blur( 20px ) grayscale(.2) ",
+            }}
+          >
           <h1
             style={{
               color: "white",
@@ -1189,6 +1195,7 @@ function HeaderSection() {
               </div>
             </div>
           </div>
+          </div>
         </div>
         {/*Services tab */}
 
@@ -1196,7 +1203,8 @@ function HeaderSection() {
         <div
           className="end-div5"
           style={{
-            backgroundImage: `url(${darkaiart4})`,
+            borderRadius:"0px",
+            backgroundImage: `url("https://media.giphy.com/media/7Ojh5EjFbh45WlOYPx/giphy-downsized-large.gif")`,
             padding: "0px",
             margin: "5px",
             marginBottom: "50px",
@@ -1205,39 +1213,35 @@ function HeaderSection() {
             flexDirection: `${cardOrientation}`,
             textAlign: "center",
             alignItems: "center",
+       
           }}
         >
           <div
             style={{
+              borderRadius:"0px",
               opacity: "1",
-              borderRadius: "15px",
               background: "rgba(238, 5, 39, 0.15)",
-              boxShadow: `0 8px 32px 0 rgba( 238, 5, 39, 0.37 )`,
-              backdropFilter: "blur( 5px )",
-              border: `1px solid rgba( 255, 255, 255, 0.18 )`,
+              backdropFilter: "blur( 20px )",
               padding: "0px",
               flexDirection: `${cardOrientation}`,
               textAlign: "center",
               alignItems: "center",
-              margin: "5px",
-              marginBottom: "20px",
+              width:"100%"
             }}
           >
             <div
               className="end-div5"
               style={{
+                borderRadius:"0px",
                 margin: "0px",
-                padding: "10px",
+                padding: "30px",
                 width: "100%",
                 flexDirection: "column",
                 textAlign: "center",
                 alignItems: "center",
-                border: "1px solid white",
                 opacity: ".9",
                 background: "rgba(238, 5, 39, 0.15)",
-                boxShadow: `0 8px 32px 0 rgba( 238, 5, 39, 0.37 )`,
                 backdropFilter: "blur( 5px )",
-                border: `1px solid rgba( 255, 255, 255, 0.18 )`,
               }}
             >
               <a
@@ -1258,10 +1262,10 @@ function HeaderSection() {
 
               <img
                 src={CashappQR}
-                height="auto"
-                width="auto"
+                height="465px"
+                width="465px"
                 style={{
-                  border: "5px solid lightgreen",
+                  border: "3px solid lightgreen",
                 }}
               />
               <h2 style={{ color: "white", fontSize: "x-large" }}>
@@ -1282,61 +1286,33 @@ function HeaderSection() {
             </div>
           </div>
 
-          <div
-            className="end-div5"
-            style={{
-              boxShadow: "rgba(0, 0, 0, 0.5) 2px 20px 5px",
-              padding: "0px",
-              marginBottom: "0px",
-              marginRight: "0px",
-              width: "6%",
-              flexDirection: `${cardOrientation}`,
-              textAlign: "center",
-              alignItems: "center",
-              backgroundColor: "black",
-            }}
-          ></div>
           {/** Intake form  */}
           <div
             style={{
               opacity: "1",
-              borderRadius: "10px",
-              boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-              backdropFilter: "blur( 10.5px )",
-              border: `1px solid rgba( 255, 255, 255, 0.18 )`,
-              padding: "0px",
-              marginBottom: "15px",
+              backdropFilter: "blur( 20px )",
             }}
           >
             <div
               className="end-div5"
               style={{
-                margin: "0px",
-                padding: "0px",
                 width: `${cardWidthSupport}`,
+                height:"100%",
                 flexDirection: `${cardOrientation}`,
                 textAlign: "center",
                 alignItems: "center",
-                border: "1px solid white",
                 opacity: ".9",
-                borderRadius: "10px",
                 background: "rgba(175, 191, 200, 0.2)",
                 backdropFilter: "blur( 5px )",
               }}
             >
-              <h2
-                style={{ color: "white", fontSize: "large", fontWeight: "900" }}
-              >
-                Intake form
-              </h2>
-
+            
               <form
                 action="https://formsubmit.co/gmdevstore@protonmail.com"
                 method="POST"
                 style={{
                   padding: "0px",
-                  border: "1px solid white",
-                  borderRadius: "10px",
+                  borderRadius: "0px",
                   background: "transparent",
                   opacity: ".8",
                 }}

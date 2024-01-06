@@ -95,7 +95,7 @@ const DrawerMenu2 = (props) => {
     const args = {
       message: 'Please wait...',
       description:
-        '🔄 Loading 3D environment, sorry for the wait this can take a few mintutes due to having to load assets...',
+        '🔄 Loading 3D environment, sorry for the wait this can take a few minutes due to having to load assets...',
       duration: 20,
       style: {
         width: 500,

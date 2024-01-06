@@ -43,7 +43,7 @@ export default function NewSite(...props) {
         const response = await fetch((arduinoUrlBase + 'ToggleON'));
 
         if (!response.ok) {
-          const message = `A fetching error has occured: ${response.status}`;
+          const message = `A fetching error has occurred: ${response.status}`;
           throw new Error(message);
         }
         console.log("Response is ", response);
@@ -70,7 +70,7 @@ export default function NewSite(...props) {
         const response = await fetch((arduinoUrlBase + 'ToggleOFF'));
 
         if (!response.ok) {
-          const message = `A fetching error has occured: ${response.status}`;
+          const message = `A fetching error has occurred: ${response.status}`;
           throw new Error(message);
         }
         console.log("Response is ", response);
@@ -97,7 +97,7 @@ export default function NewSite(...props) {
       const response = await fetch((arduinoUrlBase + 'STATUS'));
 
       if (!response.ok) {
-        const message = `A fetching error has occured: ${response.status}`;
+        const message = `A fetching error has occurred: ${response.status}`;
         throw new Error(message);
       }
       console.log("Response is ", response);

@@ -115,9 +115,11 @@ function HeaderSection() {
   let gapWidth;
   let developerWidth;
   let fontSizeServices;
+  let fontSizePriceTag;
 
   if (windowSize) {
-    fontSizeServices = "x-large";
+    fontSizePriceTag = "medium";
+    fontSizeServices = "small";
     tutorWidth = "100%";
     gapWidth = "0%";
     developerWidth = "100%";
@@ -161,7 +163,8 @@ function HeaderSection() {
     StatsCard = "100%";
     StatsCardHeader = "100%";
   } else {
-    fontSizeServices = "x-large";
+    fontSizePriceTag = "x-large";
+    fontSizeServices = "large";
     tutorWidth = "35%";
     gapWidth = "6%";
     developerWidth = "59%";
@@ -335,7 +338,6 @@ function HeaderSection() {
                 <b style={{ fontSize: "xx-large", fontFamily: "monospace" }}>
                   @codedumpsterfire🔥
                 </b>
-
               </p>
 
               <p
@@ -344,14 +346,15 @@ function HeaderSection() {
                   fontWeight: "bold",
                   margin: "10px",
                   padding: "5px",
-                  fontSize: "x-large",
+                  fontSize: "medium",
                   background: "rgba(0, 0, 0, 0.3)",
                   boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                   backdropFilter: "blur( 20px )",
                   whiteSpace: "break-spaces",
                 }}
               >
-                I have been coding for over 5 years 2 professionally.
+                Over 5 years experience. 
+                2 years professionally.
                 <br />
                 <br />
                 Experience includes creating web sites, games, and art! You can
@@ -456,7 +459,7 @@ function HeaderSection() {
                     color: "#AEBEBEff",
                     fontWeight: 900,
                     margin: "10px",
-                    fontSize: "x-large",
+                    fontSize: "large",
                   }}
                 >
                   _gmdevstore.com gets 3rd party data from my custom built API
@@ -503,7 +506,7 @@ function HeaderSection() {
                   style={{
                     color: "#AEBEBEff",
                     margin: "10px",
-                    fontSize: "x-large",
+                    fontSize: "large",
                     textAlign: "center",
                     overflow: "hidden",
                     textOverflow: "ellipsism",
@@ -562,252 +565,527 @@ function HeaderSection() {
               backdropFilter: "blur( 20px ) grayscale(.2) ",
             }}
           >
-          <h1
-            style={{
-              color: "white",
-              fontWeight: 900,
-              padding: "10px",
-              fontSize: "xx-large",
-              padding: "10px",
-              margin: "5px",
-            }}
-          >
-            <button
-              style={{
-                backgroundColor: "white",
-                border: "none",
-                padding: "5px",
-              }}
-              onClick={() => {
-                setWebevToggle(!webdevToggle);
-                setTutoringToggle(!tutoringToggle);
-                setTutoringList(!tutoringList);
-                setWebdevList(!webdevList);
-              }}
-            >
-              {webdevToggle && tutoringToggle ? <>🔼</> : <>🔽</>}
-            </button>
-            Services
-          </h1>
-          {/*Services tab */}
-
-          <div>
-            <div
+            <h1
               style={{
                 color: "white",
-                fontSize: `x-large`,
-                textTransform: "uppercase",
-                fontFamily: "monospace",
-                border: "3px solid white",
-                padding: "20px",
-                borderRadius: "10px",
-                opacity: ".9",
-                background: "rgba(0, 0, 0, 0.5 )",
-                marginTop: "10px",
+                fontWeight: 900,
+                padding: "10px",
+                fontSize: "xx-large",
+                padding: "10px",
+                margin: "5px",
               }}
             >
-              <h2
-                style={{
-                  color: "white",
-                  fontSize: "large",
-                }}
-              >
-                Each tutoring session or website is unique and will vary in
-                cost, time, and complexity. Please see information about
-                consultation prices and how to request/pay below.
-              </h2>
-              Tutoring
               <button
                 style={{
-                  backgroundColor: "transparent",
+                  backgroundColor: "white",
+                  border: "none",
                   padding: "5px",
                 }}
                 onClick={() => {
+                  setWebevToggle(!webdevToggle);
+                  setTutoringToggle(!tutoringToggle);
                   setTutoringList(!tutoringList);
-                }}
-              >
-                {tutoringList ? <>🔼</> : <>🔽</>}
-              </button>
-              {tutoringList ? (
-                <ul
-                  style={{
-                    color: "white",
-                    fontSize: `x-large`,
-                    textTransform: "uppercase",
-                    fontFamily: "monospace",
-                    border: "3px solid white",
-                    padding: "0px",
-                    borderRadius: "0px",
-                    opacity: "1",
-                    background: "rgba(0, 0, 0, 0.5 )",
-                  }}
-                >
-                  <li> ☁️ Cloud services</li>
-                  <li> 📚 C.S Fundamentals </li>
-                  <li> Advanced mathematics </li>
-                  <li> Web development & design</li>
-                  <li> Embeded systems & electronics</li>
-                  <li> 🔓 Ethical "hacking"</li>
-                  <li> 🕹️ Video games & more!</li>
-                </ul>
-              ) : (
-                <></>
-              )}
-              Development
-              <button
-                style={{
-                  backgroundColor: "transparent",
-                  padding: "5px",
-                }}
-                onClick={() => {
                   setWebdevList(!webdevList);
                 }}
               >
-                {webdevList ? <>🔼</> : <>🔽</>}
+                {webdevToggle && tutoringToggle ? <>🔼</> : <>🔽</>}
               </button>
-              {webdevList ? (
-                <ul
-                  style={{
-                    color: "white",
-                    fontSize: `x-large`,
-                    textTransform: "uppercase",
-                    fontFamily: "monospace",
-                    border: "3px solid white",
-                    padding: "0px",
-                    borderRadius: "0px",
-                    opacity: "1",
-                    background: "rgba(0, 0, 0, 0.5 )",
-                  }}
-                >
-                  <li> ☁️ Cloud services</li>
-                  <li> 💻 Web & Mobile development/design📱</li>
-                  <li> 🛡️ Security</li>
-                  <li> 🤖 AI/ML</li>
-                  <li> 🌐 Networking</li>
-                </ul>
-              ) : (
-                <></>
-              )}
-            </div>
-          </div>
+              Services
+            </h1>
+            {/*Services tab */}
 
-          <div
-            className="end-div5"
-            style={{
-              padding: "5px",
-              marginBottom: "10px",
-              marginTop: "20px",
-              width: "100%",
-              flexDirection: "row",
-            }}
-          >
-            <div
-              className="end-div5"
-              style={{
-                padding: "0px",
-                width: "100%",
-                flexDirection: `${cardOrientation}`,
-                textAlign: "center",
-                alignItems: "center",
-              }}
-            >
-              {/*1 on 1 tutoring tab */}
-
+            <div>
               <div
                 style={{
-                  margin: "0px",
-                  width: `${tutorWidth}`,
+                  color: "white",
+                  fontSize: `x-large`,
+                  textTransform: "uppercase",
+                  fontFamily: "monospace",
+                  border: "3px solid white",
+                  padding: "20px",
+                  borderRadius: "10px",
+                  opacity: ".9",
+                  background: "rgba(0, 0, 0, 0.5 )",
+                  marginTop: "10px",
                 }}
               >
                 <h2
                   style={{
                     color: "white",
-                    fontSize: "xx-large",
-                    fontWeight: "bold",
-                    border: "1px solid white",
+                    fontSize: "large",
                   }}
                 >
-                  <button
+                  Each tutoring session or website is unique and will vary in
+                  cost, time, and complexity. Please see information about
+                  consultation prices and how to request/pay below.
+                </h2>
+                Tutoring
+                <button
+                  style={{
+                    backgroundColor: "transparent",
+                    padding: "5px",
+                  }}
+                  onClick={() => {
+                    setTutoringList(!tutoringList);
+                  }}
+                >
+                  {tutoringList ? <>🔼</> : <>🔽</>}
+                </button>
+                {tutoringList ? (
+                  <ul
                     style={{
-                      backgroundColor: "transparent",
-                      padding: "5px",
-                    }}
-                    onClick={() => {
-                      setTutoringToggle(!tutoringToggle);
+                      color: "white",
+                      fontSize: `x-large`,
+                      textTransform: "uppercase",
+                      fontFamily: "monospace",
+                      border: "3px solid white",
+                      padding: "0px",
+                      borderRadius: "0px",
+                      opacity: "1",
+                      background: "rgba(0, 0, 0, 0.5 )",
                     }}
                   >
-                    {tutoringToggle ? <>🔼</> : <>🔽</>}
-                  </button>
-                  <br />1 on 1 Tutoring
-                </h2>
+                    <li> ☁️ Cloud services</li>
+                    <li> 📚 C.S Fundamentals </li>
+                    <li> Advanced mathematics </li>
+                    <li> Web development & design</li>
+                    <li> Embedded systems & electronics</li>
+                    <li> 🔓 Ethical "hacking"</li>
+                    <li> 🕹️ Video games & more!</li>
+                  </ul>
+                ) : (
+                  <></>
+                )}
+                Development
+                <button
+                  style={{
+                    backgroundColor: "transparent",
+                    padding: "5px",
+                  }}
+                  onClick={() => {
+                    setWebdevList(!webdevList);
+                  }}
+                >
+                  {webdevList ? <>🔼</> : <>🔽</>}
+                </button>
+                {webdevList ? (
+                  <ul
+                    style={{
+                      color: "white",
+                      fontSize: `x-large`,
+                      textTransform: "uppercase",
+                      fontFamily: "monospace",
+                      border: "3px solid white",
+                      padding: "0px",
+                      borderRadius: "0px",
+                      opacity: "1",
+                      background: "rgba(0, 0, 0, 0.5 )",
+                    }}
+                  >
+                    <li> ☁️ Cloud services</li>
+                    <li> 💻 Web & Mobile development/design📱</li>
+                    <li> 🛡️ Security</li>
+                    <li> 🤖 AI/ML</li>
+                    <li> 🌐 Networking</li>
+                  </ul>
+                ) : (
+                  <></>
+                )}
+              </div>
+            </div>
 
-                {tutoringToggle ? (
-                  <>
-                    <p
+            <div
+              className="end-div5"
+              style={{
+                padding: "5px",
+                marginBottom: "10px",
+                marginTop: "20px",
+                width: "100%",
+                flexDirection: "row",
+              }}
+            >
+              <div
+                className="end-div5"
+                style={{
+                  padding: "0px",
+                  width: "100%",
+                  flexDirection: `${cardOrientation}`,
+                  textAlign: "center",
+                  alignItems: "center",
+                }}
+              >
+                {/*1 on 1 tutoring tab */}
+
+                <div
+                  style={{
+                    margin: "0px",
+                    width: `${tutorWidth}`,
+                  }}
+                >
+                  <h2
+                    style={{
+                      color: "white",
+                      fontSize: "xx-large",
+                      fontWeight: "bold",
+                      border: "1px solid white",
+                    }}
+                  >
+                    <button
                       style={{
-                        color: "white",
-                        padding: "0px",
-                        margin: "0px",
-                        fontSize: "medium",
-                        background: "rgba(255, 255, 255, 0.1)",
-                        boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-                        backdropFilter: "blur( 20px )",
-                        border: "1px solid white",
-                        marginTop: "20px",
+                        backgroundColor: "transparent",
+                        padding: "5px",
+                      }}
+                      onClick={() => {
+                        setTutoringToggle(!tutoringToggle);
                       }}
                     >
+                      {tutoringToggle ? <>🔼</> : <>🔽</>}
+                    </button>
+                    <br />1 on 1 Tutoring
+                  </h2>
+
+                  {tutoringToggle ? (
+                    <>
+                      <p
+                        style={{
+                          color: "white",
+                          padding: "0px",
+                          margin: "0px",
+                          fontSize: "medium",
+                          background: "rgba(255, 255, 255, 0.1)",
+                          boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
+                          backdropFilter: "blur( 20px )",
+                          border: "1px solid white",
+                          marginTop: "20px",
+                        }}
+                      >
+                        <h3
+                          style={{
+                            border: "1px solid white",
+                            color: "white",
+                            padding: "5px",
+                            fontSize: "x-large",
+                            backgroundColor: "black",
+                          }}
+                        >
+                          Tutoring qualifications
+                        </h3>
+
+                        <ol
+                          style={{
+                            color: "#aebebeff",
+                            fontSize: `${fontSizeServices}`,
+                            background: "rgba(0, 0, 0, 0.7)",
+                            boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
+                            backdropFilter: "blur( 20px )",
+                          }}
+                        >
+                          <li
+                            style={{
+                              padding: "5px",
+                              textAlign: "left",
+                            }}
+                          >
+                            Graduated with a B.S in computer science & advanced
+                            mathematics.
+                          </li>
+                          <li
+                            style={{
+                              padding: "5px",
+                              textAlign: "center",
+                            }}
+                          >
+                            Employed at large corporate fin tech banks such as
+                            <br />
+                            <b
+                              style={{
+                                color: "lightblue",
+                                padding: "10px",
+                                textAlign: "center",
+                              }}
+                            >
+                              BMO Financial Corporation
+                            </b>
+                            <br />&
+                            <b
+                              style={{
+                                color: "orange",
+                                padding: "10px",
+                                textAlign: "center",
+                              }}
+                            >
+                              Discover Financial Services
+                            </b>
+                          </li>
+                          <li
+                            style={{
+                              padding: "5px",
+                              textAlign: "left",
+                            }}
+                          >
+                            Knowledge on maintaining large projects, complex
+                            coding concepts, and agile teams.
+                          </li>
+                        </ol>
+
+                        <h3
+                          style={{
+                            border: "2px solid white",
+                            color: "white",
+                            padding: "5px",
+                            fontSize: "x-large",
+                            backgroundColor: "black",
+                            marginTop: "20px",
+                            margin: "5px",
+                          }}
+                        >
+                          Consultation 
+                        </h3>
+
+                        <button
+                          style={{
+                            border: "3px solid #263434ff",
+                            background: "rgba(255, 255, 255, 0.4)",
+                            boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
+                            backdropFilter: "blur( 20px )",
+                            padding: "0px",
+                            margin: "0px",
+                            marginBottom: "20px",
+                            textAlign: "left",
+                          }}
+                        >
+                          <a
+                            style={{
+                              color: "black",
+                              fontWeight: "900",
+                              fontSize: `${fontSizeServices}`,
+                            }}
+                            href="https://gmdevstore.com/"
+                          >
+                            <em>
+                              {" "}
+                              ${" "}
+                              <b
+                                style={{
+                                  color: "lightgreen",
+                                  fontSize: `${fontSizePriceTag}`,
+                                }}
+                              >
+                                50
+                              </b>{" "}
+                              1hr consultation deposit for tutoring. For more
+                              information please fill out details here in intake
+                              form!
+                            </em>
+                          </a>
+                        </button>
+                      </p>
+
                       <h3
                         style={{
-                          border: "1px solid white",
+                          border: "2px solid white",
+                          color: "white",
+                          padding: "5px",
+                          fontSize: "x-large",
+                          backgroundColor: "black",
+                          marginTop: "20px",
+                        }}
+                      >
+                        Comparison
+                      </h3>
+
+                      <ol
+                        style={{
+                          color: "#aebebeff",
+                          background: "rgba(0, 0, 0, 0.7)",
+                          boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
+                          backdropFilter: "blur( 20px )",
+                          fontSize: `${fontSizeServices}`,
+                          textAlign: "left",
+                        }}
+                      >
+                        <li
+                          style={{
+                            padding: "5px",
+                          }}
+                        >
+                          Intermediate Tutors: Tutors with a moderate level of
+                          experience and proficiency may charge between $40 to
+                          $60 per hour.
+                        </li>
+                        <li
+                          style={{
+                            padding: "5px",
+                          }}
+                        >
+                          Experienced Tutors: Tutors with several years of
+                          experience, possibly with a strong background in
+                          teaching, may charge $60 to $100 or more per hour.
+                        </li>
+                        <li
+                          style={{
+                            padding: "5px",
+                          }}
+                        >
+                          Specialized Tutors: Tutors who specialize in in-demand
+                          technologies or niche areas may command higher rates.
+                          Rates for tutors with expertise in popular programming
+                          languages, frameworks, or emerging technologies could
+                          range from $80 to $150 per hour or more.
+                        </li>
+                      </ol>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+                </div>
+
+                <div
+                  className="end-div5"
+                  style={{
+                    padding: "0px",
+                    marginBottom: "35px",
+                    marginRight: "0px",
+                    width: `${gapWidth}`,
+                    flexDirection: "column",
+                    textAlign: "center",
+                    alignItems: "center",
+                    background: "black",
+                  }}
+                ></div>
+
+                {/*Web dev tutor tab */}
+                <div
+                  style={{
+                    margin: "0px",
+                    width: `${developerWidth}`,
+                  }}
+                >
+                  <h2
+                    style={{
+                      color: "white",
+                      fontSize: "xx-large",
+                      fontWeight: "bold",
+                      border: "1px solid white",
+                    }}
+                  >
+                    <button
+                      style={{
+                        backgroundColor: "transparent",
+                        padding: "5px",
+                      }}
+                      onClick={() => {
+                        setWebevToggle(!webdevToggle);
+                      }}
+                    >
+                      {webdevToggle ? <>🔼</> : <>🔽</>}
+                    </button>
+                    <br />
+                    Web development & design
+                  </h2>
+
+                  {webdevToggle ? (
+                    <>
+                      <h3
+                        style={{
+                          border: "2px solid white",
+                          color: "white",
+                          padding: "5px",
+                          fontSize: "x-large",
+                          backgroundColor: "black",
+                          marginTop: "20px",
+                        }}
+                      >
+                        Why hire a developer or designer?
+                      </h3>
+
+                      <ol
+                        style={{
+                          color: "#aebebeff",
+                          background: "rgba(0, 0, 0, 0.7)",
+                          boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
+                          backdropFilter: "blur( 20px )",
+                          fontSize: `${fontSizeServices}`,
+                          textAlign: "left",
+                        }}
+                      >
+                        <li style={{ padding: "5px" }}>
+                          <b>Align your brand identity</b>. This includes
+                          choosing appropriate colors, fonts, and imagery to
+                          create a consistent and memorable brand experience for
+                          your audience.
+                        </li>
+                        <li style={{ padding: "5px" }}>
+                          <b>Saves you time </b>and allows you to focus on your
+                          core business activities. Rely on experts to handle
+                          the technical aspects.
+                        </li>
+                        <li style={{ padding: "5px" }}>
+                          Will implement{" "}
+                          <b>latest technologies and design trends</b>.
+                        </li>
+                        <li style={{ padding: "5px" }}>
+                          Ongoing <b>support</b> & bug fixes
+                        </li>
+                        <li style={{ padding: "5px" }}>
+                          While there are DIY website-building tools available,
+                          hiring a professional can make a significant
+                          difference in the quality, functionality, and success
+                          of your online presence.
+                        </li>
+                      </ol>
+
+                      <h3
+                        style={{
+                          border: "2px solid black",
                           color: "white",
                           padding: "5px",
                           fontSize: "x-large",
                           backgroundColor: "black",
                         }}
                       >
-                        Tutoring qualifications
+                        Qualifications
                       </h3>
 
-                      <ol
+                      <p
                         style={{
-                          color: "#aebebeff",
-                          fontSize: `${fontSizeServices}`,
-                          background: "rgba(0, 0, 0, 0.7)",
+                          color: "white",
+                          padding: "1px",
+                          margin: "0px",
+                          fontSize: "medium",
+                          background: "rgba(255, 255, 255, 0.1)",
                           boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                           backdropFilter: "blur( 20px )",
+                          textAlign: "left",
                         }}
                       >
-                        <li
+                        <ol
                           style={{
-                            padding: "5px",
+                            color: "#aebebeff",
+                            background: "rgba(0, 0, 0, 0.7)",
+                            boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
+                            backdropFilter: "blur( 20px )",
+                            fontSize: `${fontSizeServices}`,
                           }}
                         >
-                          Graduated with a B.S in computer science
-                          <br /> & advanced mathematics.
-                        </li>
-                        <li
-                          style={{
-                            padding: "5px",
-                          }}
-                        >
-                          Employed at large corporate fin tech banks such as
-                          <b style={{ color: "lightblue", padding: "10px" }}>
-                            BMO Financial Corporation
-                          </b>
-                          <br />&
-                          <b style={{ color: "orange", padding: "10px" }}>
-                            Discover Financial Services
-                          </b>
-                        </li>
-                        <li
-                          style={{
-                            padding: "5px",
-                          }}
-                        >
-                          Knowledge on maintaining large projects, <br />{" "}
-                          complex coding concepts, and agile teams.
-                        </li>
-                      </ol>
+                          <li style={{ padding: "5px" }}>
+                            Experience in complex web & cloud based sites.
+                            Including a large book of records modernization
+                            project.
+                          </li>
+                          <li style={{ padding: "5px" }}>
+                            Over 2 years professional experience with building
+                            full stack web sites.
+                          </li>
+                          <li style={{ padding: "5px" }}>
+                            Created unique UI's and brand materials for various
+                            web sites.
+                            <br />
+                            Websites remained user friendly and followed
+                            accessibility standards.
+                          </li>
+                        </ol>
+                      </p>
 
                       <h3
                         style={{
@@ -829,246 +1107,7 @@ function HeaderSection() {
                           background: "rgba(255, 255, 255, 0.4)",
                           boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
                           backdropFilter: "blur( 20px )",
-                          padding: "0px",
-                          margin: "0px",
-                          marginBottom: "20px",
-                        }}
-                      >
-                        <a
-                          style={{
-                            color: "black",
-                            fontWeight: "900",
-                            fontSize: `${fontSizeServices}`,
-                          }}
-                          href="https://gmdevstore.com/"
-                        >
-                          <em>
-                            $
-                            <b
-                              style={{
-                                color: "lightgreen",
-                                fontSize: "xx-large",
-                              }}
-                            >
-                              50
-                            </b>{" "}
-                            1hr consultation deposit for tutoring. For more
-                            information please fill out details here in intake
-                            form!
-                          </em>
-                        </a>
-                      </button>
-                    </p>
 
-                    <h3
-                      style={{
-                        border: "2px solid white",
-                        color: "white",
-                        padding: "5px",
-                        fontSize: "x-large",
-                        backgroundColor: "black",
-                        marginTop: "20px",
-                      }}
-                    >
-                      Comparison
-                    </h3>
-
-                    <ol
-                      style={{
-                        color: "#aebebeff",
-                        background: "rgba(0, 0, 0, 0.7)",
-                        boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-                        backdropFilter: "blur( 20px )",
-                        fontSize: `${fontSizeServices}`,
-                      }}
-                    >
-                      <li
-                        style={{
-                          padding: "5px",
-                        }}
-                      >
-                        Intermediate Tutors: Tutors with a moderate level of
-                        experience and proficiency may charge between $40 to $60
-                        per hour.
-                      </li>
-                      <li
-                        style={{
-                          padding: "5px",
-                        }}
-                      >
-                        Experienced Tutors: Tutors with several years of
-                        experience, possibly with a strong background in
-                        teaching, may charge $60 to $100 or more per hour.
-                      </li>
-                      <li
-                        style={{
-                          padding: "5px",
-                        }}
-                      >
-                        Specialized Tutors: Tutors who specialize in in-demand
-                        technologies or niche areas may command higher rates.
-                        Rates for tutors with expertise in popular programming
-                        languages, frameworks, or emerging technologies could
-                        range from $80 to $150 per hour or more.
-                      </li>
-                    </ol>
-                  </>
-                ) : (
-                  <></>
-                )}
-              </div>
-
-              <div
-                className="end-div5"
-                style={{
-                  padding: "0px",
-                  marginBottom: "35px",
-                  marginRight: "0px",
-                  width: `${gapWidth}`,
-                  flexDirection: "column",
-                  textAlign: "center",
-                  alignItems: "center",
-                  background: "black",
-                }}
-              ></div>
-
-              {/*Web dev tutor tab */}
-              <div
-                style={{
-                  margin: "0px",
-                  width: `${developerWidth}`,
-                }}
-              >
-                <h2
-                  style={{
-                    color: "white",
-                    fontSize: "xx-large",
-                    fontWeight: "bold",
-                    border: "1px solid white",
-                  }}
-                >
-                  <button
-                    style={{
-                      backgroundColor: "transparent",
-                      padding: "5px",
-                    }}
-                    onClick={() => {
-                      setWebevToggle(!webdevToggle);
-                    }}
-                  >
-                    {webdevToggle ? <>🔼</> : <>🔽</>}
-                  </button>
-                  <br />
-                  Web development & design
-                </h2>
-
-                {webdevToggle ? (
-                  <>
-                    <h3
-                      style={{
-                        border: "2px solid white",
-                        color: "white",
-                        padding: "5px",
-                        fontSize: "x-large",
-                        backgroundColor: "black",
-                        marginTop: "20px",
-                      }}
-                    >
-                      Why hire a developer or designer?
-                    </h3>
-
-                    <ol
-                      style={{
-                        color: "#aebebeff",
-                        background: "rgba(0, 0, 0, 0.7)",
-                        boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-                        backdropFilter: "blur( 20px )",
-                        fontSize: `${fontSizeServices}`,
-                      }}
-                    >
-                      <li style={{ padding: "5px" }}>
-                        <b>Align your brand identity</b>. This includes choosing
-                        appropriate colors, fonts, and imagery to create a
-                        consistent and memorable brand experience for your
-                        audience.
-                      </li>
-                      <li style={{ padding: "5px" }}>
-                        <b>Saves you time </b>and allows you to focus on your
-                        core business activities. Rely on experts to handle the
-                        technical aspects.
-                      </li>
-                      <li style={{ padding: "5px" }}>
-                        Will implement{" "}
-                        <b>latest technologies and design trends</b>.
-                      </li>
-                      <li style={{ padding: "5px" }}>
-                        Ongoing <b>support</b> & bug fixes
-                      </li>
-                      <li style={{ padding: "5px" }}>
-                        While there are DIY website-building tools available,
-                        hiring a professional can make a significant difference
-                        in the quality, functionality, and success of your
-                        online presence.
-                      </li>
-                    </ol>
-
-                    <h3
-                      style={{
-                        border: "2px solid black",
-                        color: "white",
-                        padding: "5px",
-                        fontSize: "x-large",
-                        backgroundColor: "black",
-                      }}
-                    >
-                      Qualifications
-                    </h3>
-
-                    <p
-                      style={{
-                        color: "white",
-                        padding: "1px",
-                        margin: "0px",
-                        fontSize: "medium",
-                        background: "rgba(255, 255, 255, 0.1)",
-                        boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-                        backdropFilter: "blur( 20px )",
-                      }}
-                    >
-                      <ol
-                        style={{
-                          color: "#aebebeff",
-                          background: "rgba(0, 0, 0, 0.7)",
-                          boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-                          backdropFilter: "blur( 20px )",
-                          fontSize: `${fontSizeServices}`,
-                        }}
-                      >
-                        <li style={{ padding: "5px" }}>
-                          Experience in complex web & cloud based sites.
-                          Including a large book of records modernization
-                          project.
-                        </li>
-                        <li style={{ padding: "5px" }}>
-                          Over 2 years professional experience with building
-                          full stack web sites.
-                        </li>
-                        <li style={{ padding: "5px" }}>
-                          Created unique UI's and brand materials for various
-                          web sites. Websites remained user friendly and
-                          followed accessibility standards.
-                        </li>
-                      </ol>
-
-                      <button
-                        style={{
-                          border: "3px solid #263434ff",
-                          background: "rgba(255, 255, 255, 0.4)",
-                          boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-                          backdropFilter: "blur( 20px )",
-                          marginBottom: "20px",
-                          padding: "0px",
-                          margin: "0px",
                           fontSize: `${fontSizeServices}`,
                         }}
                       >
@@ -1077,124 +1116,147 @@ function HeaderSection() {
                           href="https://gmdevstore.com/"
                         >
                           <em>
-                            $
+                            {" "}
+                            ${" "}
                             <b
                               style={{
-                                fontSize: "xx-large",
+                                fontSize: `${fontSizePriceTag}`,
                                 color: "lightgreen",
                               }}
                             >
                               200
                             </b>{" "}
                             2 hr consultation deposit for building web
-                            sites/apps. <br /> Find more detials here by filling
+                            sites/apps. <br /> Find more details here by filling
                             out intake form!
                           </em>
                         </a>
                       </button>
-                    </p>
-                    <h3
-                      style={{
-                        border: "2px solid white",
-                        color: "white",
-                        padding: "5px",
-                        fontSize: "x-large",
-                        backgroundColor: "black",
-                      }}
-                    >
-                      Comparison
-                    </h3>
-
-                    <ol
-                      style={{
-                        color: "#aebebeff",
-                        background: "rgba(0, 0, 0, 0.7)",
-                        boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
-                        backdropFilter: "blur( 20px )",
-                        fontSize: `${fontSizeServices}`,
-                      }}
-                    >
-                      <li
+                      <h3
                         style={{
+                          border: "2px solid white",
+                          color: "white",
                           padding: "5px",
+                          fontSize: "x-large",
+                          backgroundColor: "black",
                         }}
                       >
-                        For simpler projects, a freelance web developer may
-                        charge a fixed fee, which can range from a few hundred
-                        to several thousand dollars.
-                      </li>
-                      <li
+                        Comparison
+                      </h3>
+
+                      <ol
                         style={{
-                          padding: "5px",
+                          color: "#aebebeff",
+                          background: "rgba(0, 0, 0, 0.7)",
+                          boxShadow: `0 8px 32px 0 rgba( 225, 225, 225, 0.37 )`,
+                          backdropFilter: "blur( 20px )",
+                          fontSize: `${fontSizeServices}`,
+                          textAlign: "left",
                         }}
                       >
-                        Development agencies typically charge higher rates
-                        compared to individual freelancers due to the collective
-                        expertise they bring to a project. Agency rates can
-                        range from $100 to $200 or more per hour.
-                      </li>
-                      <li
-                        style={{
-                          padding: "5px",
-                        }}
-                      >
-                        <div>
-                          <h2
-                            style={{
-                              color: "white",
-                            }}
-                          >
-                            <b> Building a Website Yourself</b>
-                          </h2>
-                          <ol>
-                            <li>
-                              Pros: Cost Savings, personal control, learning
-                              opportunities, Quick Start.
-                            </li>
+                        <li
+                          style={{
+                            padding: "5px",
+                          }}
+                        >
+                          For simpler projects, a freelance web developer may
+                          charge a fixed fee, which can range from a few hundred
+                          to several thousand dollars.
+                        </li>
+                        <li
+                          style={{
+                            padding: "5px",
+                          }}
+                        >
+                          Development agencies typically charge higher rates
+                          compared to individual freelancers due to the
+                          collective expertise they bring to a project. Agency
+                          rates can range from $100 to $200 or more per hour.
+                        </li>
+                        <li
+                          style={{
+                            padding: "5px",
+                          }}
+                        >
+                          <div>
+                            <h2
+                              style={{
+                                color: "white",
+                              }}
+                            >
+                              <b>
+                                <em> Building a Website Yourself</em>
+                              </b>
+                            </h2>
+                            <ol>
+                              <li
+                                style={{
+                                  padding: "5px",
+                                }}
+                              >
+                                Pros: Cost Savings, personal control, learning
+                                opportunities, Quick Start.
+                              </li>
 
-                            <br />
-
-                            <li>
-                              Cons: Limited Customization, Time-Consuming,
-                              Quality Concerns.
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li
-                        style={{
-                          padding: "5px",
-                        }}
-                      >
-                        <div>
-                          <h2
-                            style={{
-                              color: "white",
-                            }}
-                          >
-                            <b> Hiring a Web Developer:</b>
-                          </h2>
-
-                          <ol>
-                            <li>
-                              Pros: Professional Quality, Time Efficiency,
-                              Customization,
                               <br />
-                              Technical Expertise.
-                            </li>
 
-                            <li>Cons: Cost, Dependency.</li>
-                          </ol>
-                        </div>
-                      </li>
-                    </ol>
-                  </>
-                ) : (
-                  <></>
-                )}
+                              <li
+                                style={{
+                                  padding: "5px",
+                                }}
+                              >
+                                Cons: Limited Customization, Time-Consuming,
+                                Quality Concerns.
+                              </li>
+                            </ol>
+                          </div>
+                        </li>
+                        <li
+                          style={{
+                            padding: "5px",
+                          }}
+                        >
+                          <div>
+                            <h2
+                              style={{
+                                color: "white",
+                              }}
+                            >
+                              <b>
+                                <em> Hiring a Web Developer:</em>{" "}
+                              </b>
+                            </h2>
+
+                            <ol>
+                              <li
+                                style={{
+                                  padding: "5px",
+                                }}
+                              >
+                                Pros: Professional Quality, Time Efficiency,
+                                Customization,
+                                <br />
+                                Technical Expertise.
+                              </li>
+
+                              <li
+                                style={{
+                                  padding: "5px",
+                                }}
+                              >
+                                Cons: Cost, Dependency.
+                              </li>
+                            </ol>
+                          </div>
+                        </li>
+                      </ol>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
         {/*Services tab */}
@@ -1203,7 +1265,7 @@ function HeaderSection() {
         <div
           className="end-div5"
           style={{
-            borderRadius:"0px",
+            borderRadius: "0px",
             backgroundImage: `url("https://media.giphy.com/media/7Ojh5EjFbh45WlOYPx/giphy-downsized-large.gif")`,
             padding: "0px",
             margin: "5px",
@@ -1213,12 +1275,11 @@ function HeaderSection() {
             flexDirection: `${cardOrientation}`,
             textAlign: "center",
             alignItems: "center",
-       
           }}
         >
           <div
             style={{
-              borderRadius:"0px",
+              borderRadius: "0px",
               opacity: "1",
               background: "rgba(238, 5, 39, 0.15)",
               backdropFilter: "blur( 20px )",
@@ -1226,13 +1287,13 @@ function HeaderSection() {
               flexDirection: `${cardOrientation}`,
               textAlign: "center",
               alignItems: "center",
-              width:"100%"
+              width: "100%",
             }}
           >
             <div
               className="end-div5"
               style={{
-                borderRadius:"0px",
+                borderRadius: "0px",
                 margin: "0px",
                 padding: "30px",
                 width: "100%",
@@ -1297,7 +1358,7 @@ function HeaderSection() {
               className="end-div5"
               style={{
                 width: `${cardWidthSupport}`,
-                height:"100%",
+                height: "100%",
                 flexDirection: `${cardOrientation}`,
                 textAlign: "center",
                 alignItems: "center",
@@ -1306,7 +1367,6 @@ function HeaderSection() {
                 backdropFilter: "blur( 5px )",
               }}
             >
-            
               <form
                 action="https://formsubmit.co/gmdevstore@protonmail.com"
                 method="POST"
@@ -1536,7 +1596,7 @@ function HeaderSection() {
                                     fontWeight: "900",
                                   }}
                                 >
-                                  ADVANCED MATh
+                                  ADVANCED MATH
                                 </label>
                                 <input
                                   style={{
@@ -2865,6 +2925,7 @@ function HeaderSection() {
                   color: "black",
                   borderRadius: " 0px",
                   fontSize: "large",
+                  textAlign: "left",
                 }}
               >
                 <li> Bash/Linux/Windows( CLI/OS )</li>
@@ -2938,11 +2999,15 @@ function HeaderSection() {
                   fontWeight: "900",
                   borderRadius: "0px",
                   margin: "5px",
+                  textAlign: "left",
                 }}
               >
-                Major Update! : Migrating the website and updating look/feel
+                Major Update! : Migrating the website and updating look/feel If
+                you find any issues or bugs let me know!
                 <br />
-                If you find any issues or bugs let me know!
+                <br />
+                Site quality updates: Spelling errors, text size, text format,
+                anchors, readablity.
               </h3>
             </a>
           </div>

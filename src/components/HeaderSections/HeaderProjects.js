@@ -243,11 +243,11 @@ function HeaderProjects() {
           ) : (
             <b>
               <div class="innerIam" style={{ backgroundColor: "black" }}>
-                Web,VideoGame, Embeded systems development
+                Web,VideoGame, Embedded systems development
                 <br />
                 Spotify, Stock, OpenAi API Integrations
                 <br />
-                Web, Game, Embeded applications development
+                Web, Game, Embedded applications development
                 <br />
                 React & CloudFlare & Full Stack Web App's
                 <br />
@@ -337,7 +337,7 @@ function HeaderProjects() {
                     }}
                   >
                     Gmdevapi.com is a CloudFlare worker built TailwindCss and
-                    React framework. It hosts enpoints for any public
+                    React framework. It hosts endpoints for any public
                     application to call via HTTP request. It acts as a
                     middle-layer between my website and 3rd party API's.
                   </h3>
@@ -363,7 +363,7 @@ function HeaderProjects() {
             <div className="spacer"></div>
 
             <ProjectCard
-              title="3rd Pary API Intergrations"
+              title="3rd Party API Integrations"
               subtitle="Spotify API"
               description="Spotify API integrated stats and art. Including my personal music."
               cardToggleID={"IdTwo"}
@@ -767,14 +767,14 @@ function HeaderProjects() {
                   <p
                     style={{ backgroundColor: "#243232ff", textAlign: "left" }}
                   >
-                    I designed and developed this game completley on my own with
+                    I designed and developed this game completely on my own with
                     some inspiration.<br></br>
                     <br></br> I was going for a "monkey ball" type game. This
                     game although simple at first glance was extremely hard to
                     make and has many, many bugs that I had to fix. <br></br>
                     <br></br>
                     The game is finished however and beatable.<br></br>
-                    <br></br> There is a menu, main gameplay loop, and end goal.
+                    <br></br> There is a menu, main game play loop, and end goal.
                     Please reach out to me if you find a bug.<br></br> Also, I
                     plan to make more levels at some point.
                   </p>

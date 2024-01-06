@@ -448,7 +448,7 @@ const Dsa = () => {
                 <img src={DScheat} width='100%' height='auto' style={{ padding: '1px', marginBottom: '5px' }} />
 
                 <h4 style={{ color: 'white', backgroundColor: 'black', fontSize: 'large' }}>
-                    All DS follow 4 basic operations. <br/><b>Access, Searching, Inserting, and Deletion</b>.<br/> Some perform better than others. This is judged by Time & Space complexity. We test the lower bound of each DS to find worst & average cases. The notation to describe this is reffered to as <br/>BIG O.
+                    All DS follow 4 basic operations. <br/><b>Access, Searching, Inserting, and Deletion</b>.<br/> Some perform better than others. This is judged by Time & Space complexity. We test the lower bound of each DS to find worst & average cases. The notation to describe this is referred to as <br/>BIG O.
                 </h4>
 
                 <img src={DSsearch} width='100%' height='auto' style={{ padding: '1px', marginBottom: '5px'  }} />

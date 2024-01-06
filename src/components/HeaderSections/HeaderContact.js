@@ -87,16 +87,25 @@ function HeaderContact() {
         }}
       >
         <h3 style={{ color: "white", fontWeight: "900", padding: "25px" }}>
-          Free consultation for tutoring
+          Free consultation for tutoring for limited time.
           <br />
-          Free custom website development / design
+          Free custom website development / design with full price consultation.
           <br />
           <br />
-          *Limited to static sites only*
+          <em style={{fontSize:"small"}}>*Limited to website builders or custom static sites*</em>
         </h3>
+
+        <h3 style={{ color: "white", fontWeight: "900", padding: "5px" }}>
+          Learn more here:
+          <br />
+          <a href="#"> Learn Computer Science </a>
+          <br />
+          <a href="#"> Service Descriptions </a>
+        </h3>
+
         <div
           style={{
-            width:"100%",
+            width: "100%",
             cursor: "pointer",
             color: "white",
             fontWeight: "600",
@@ -105,8 +114,11 @@ function HeaderContact() {
             fontSize: `${FontSizeLarge}`,
           }}
         >
-          <a href="https://linktr.ee/codedumpsterfire" style={{color:"white"}}>
-            linktr.ee/ <br/>
+          <a
+            href="https://linktr.ee/codedumpsterfire"
+            style={{ color: "white" }}
+          >
+            linktr.ee/ <br />
             codedumpsterfire
           </a>
         </div>
@@ -546,7 +558,7 @@ function HeaderContact() {
                                   fontWeight: "900",
                                 }}
                               >
-                                ADVANCED MATh
+                                ADVANCED MATH
                               </label>
                               <input
                                 style={{

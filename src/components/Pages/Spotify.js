@@ -41,7 +41,7 @@ const Spotify = () => {
         const response = await fetch((gmaaUrl + spotifyArtists));
 
         if (!response.ok) {
-          const message = `An fetching error has occured: ${response.status}`;
+          const message = `An fetching error has occurred: ${response.status}`;
           throw new Error(message);
         }
 
@@ -50,7 +50,7 @@ const Spotify = () => {
         return data;
 
       } catch (error) {
-        console.log("GetSpotifAPI() failed: " , error);
+        console.log("GetSpotifyAPI() failed: " , error);
       }
     }
 
@@ -103,7 +103,7 @@ const Spotify = () => {
 
         <ul style={{ color: '#AEBEBEff', textAlign:"center" }}>
           <li>I first registered my website and used the client_secret
-            credientials OAuth method to verify it for token recieving</li>
+            credentials OAuth method to verify it for token receiving</li>
           <label></label>
           <li>I then use a fetch request to ask Spotify API for a
             auth token

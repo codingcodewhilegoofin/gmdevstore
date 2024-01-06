@@ -41,11 +41,12 @@ This is a portfolio website to showcase projects as well as web dev skills. (als
 ---
 ## RecentUpdates
 
+- [X] Spelling mistakes 
 - [X] Migrate site & update look 
 - [ ] SEO optimization
 - [ ] Menu double click error (App.js)
 - [X] Update Cards for monetization
-- [X] Finish Website Design & Mobile resizability
+- [X] Finish Website Design & Mobile resize-ability
 - [X] Holiday Theme update
 - [x] Finish Arduino api page
 - [x] Contact page update
@@ -82,7 +83,7 @@ Todo:
 - [X] UI updates
 **Date: 7/22/2022**
 
-- [X] Spotify API intergration is complete
+- [X] Spotify API integration is complete
 **Date: 7/20/2022**
 
 - [X] First load is really slow
@@ -91,7 +92,7 @@ Todo:
 
 - [X]  Problem with mobile / desktop load time with 3D scene from Spline.com took 30,799 ms to load about 30sec.
 - Light house rating for performance was terrible at 13,000ms blocking time and 20 s until interactive 3D scene on mobile.
-- Light house rating for perormance on desktop was slightly better at 5,740ms and took 7s to become interactive.
+- Light house rating for performance on desktop was slightly better at 5,740ms and took 7s to become interactive.
 
 Possible solutions: Service workers, reduce 3D elements, optimize code, skip if TTL is too long
 **Date: 7/18/2022**
@@ -180,11 +181,11 @@ Gifs From > https://giphy.com/ericaofanderson
 
 > Shrek by Lorran freires is licensed under Creative Commons Attribution
 # public
-Contains assests and main HTML needed for public facing web applications
+Contains assets and main HTML needed for public facing web applications
 # src
 Standard entry point of application. Main function invoked here
 ## icons
-Picture and Icon assests
+Picture and Icon assets
 ## components
 Contains all components for the webapp
 # Pages

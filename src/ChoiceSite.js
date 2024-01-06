@@ -168,7 +168,7 @@ const ChoiceSite = (props) => {
             }}
           >
             The 3D MicroController API is an interactive model of my office and
-            Arduino project that you can controll a live circuit with! It sends
+            Arduino project that you can control a live circuit with! It sends
             a HTTP request to my api server !
           </h3>
 

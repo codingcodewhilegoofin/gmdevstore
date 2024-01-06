@@ -405,7 +405,7 @@ function HeaderAbout() {
               >
                 <h3 style={{ color: "#AEBEBEff", fontWeight: "900" }}>
                   {" "}
-                  Declaritive / Domain Specific
+                  Declarative / Domain Specific
                 </h3>
               </div>
 
@@ -506,7 +506,7 @@ function HeaderAbout() {
                   </li>
                   <li style={{ margin: "10px" }}>
                     {" "}
-                    Some experience with Syscalls{" "}
+                    Some experience with Sys-calls{" "}
                   </li>
                   <li style={{ margin: "10px" }}>
                     {" "}
@@ -688,7 +688,7 @@ function HeaderAbout() {
               }}
             >
               CODE/PACKAGE
-              <br /> MANAGMMENT
+              <br /> MANAGEMENT
             </h4>
 
             <ul
@@ -1028,7 +1028,7 @@ function HeaderAbout() {
                       <br />
                       Concurrent programs,
                       <br />
-                      Andriod applications,
+                      Android applications,
                       <br /> Semaphores/Deadlock solutions.
                     </li>
                   </ul>
@@ -1044,7 +1044,7 @@ function HeaderAbout() {
                       "rgba(255, 255, 255, 0.9) 6px 2px 1px 0px, rgba(25, 129, 159, 0.9) -6px -2px 1px 0px ",
                   }}
                 >
-                  <li>MLH - MajorLeaugeHacking</li>
+                  <li>MLH - MajorLeagueHacking</li>
                 </div>
 
                 <div style={{ width: `${HeaderCardWidth}` }}>

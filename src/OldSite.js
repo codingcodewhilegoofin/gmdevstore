@@ -287,11 +287,17 @@ function OldSite() {
                             background: "rgba(0, 0, 0, 0.5 )",
                           }}
                         >
-                          Gmdevstore is a full stack web site portfolio offering
-                          tutoring & web design/development services. 
+                          Gmdevstore is a full stack web site portfolio.
+                          <br />
+                          Now offering tutoring & web design/development
+                          services.
+                          <br />
+                          <br />
+                          Learn more here: 
                           <br/>
+                          <a href="#"> Learn Computer Science </a>
                           <br/>
-                          Learn current & future tech skills.
+                          <a href="#"> Service Descriptions </a>
                         </p>
 
                         <div
@@ -324,21 +330,24 @@ function OldSite() {
                               textTransform: "uppercase",
                               fontFamily: "monospace",
                               border: "3px solid white",
-                              padding: "30px",
+                              padding: "50px",
                               borderRadius: "0px",
                               opacity: "1",
                               background: "rgba(0, 0, 0, 0.5 )",
+                              textAlign: "left"
                             }}
                           >
-                            <li> ☁️ Cloud services</li>
-                            <li> 📚 Fundamentals </li>
-                            <li> 💻📱 Web & Mobile <br/> development/design</li>
-                            <li> 🛡️ Security</li>
-                            <li> 🤖 AI/ML</li>
-                            <li> 🌐 Networking</li>
-                            <li> Embeded systems & electronics</li>
-                            <li> 🔓 Ethical "hacking"</li>
-                            <li> 🕹️ Video games</li>
+                            <li style={{marginBottom: "10px"}}> ☁️ Cloud services</li>
+                            <li style={{marginBottom: "10px"}}> 📚 Fundamentals </li>
+                            <li style={{marginBottom: "10px"}}>
+                              💻 Web & Mobile  development/design 📱
+                            </li>
+                            <li style={{marginBottom: "10px"}}> 🛡️ Security</li>
+                            <li style={{marginBottom: "10px"}}> 🤖 AI/ML</li>
+                            <li style={{marginBottom: "10px"}}> 🌐 Networking</li>
+                            <li style={{marginBottom: "10px"}}> Embedded systems & electronics</li>
+                            <li style={{marginBottom: "10px"}}> 🔓 Ethical "hacking"</li>
+                            <li style={{marginBottom: "10px"}}> 🕹️ Video games</li>
                           </ul>
                         </div>
                       </div>
@@ -369,14 +378,12 @@ function OldSite() {
                   }}
                 >
                   {!showMenu ? (
-                    
-                      <img
-                        src={TechSpiral}
-                        width={picSize}
-                        height="auto"
-                        style={{ padding: "3px" }}
-                      />
-                   
+                    <img
+                      src={TechSpiral}
+                      width={picSize}
+                      height="auto"
+                      style={{ padding: "3px" }}
+                    />
                   ) : (
                     <></>
                   )}
@@ -777,7 +784,6 @@ function OldSite() {
         <Route path="/cstrack" component={Cstrack} />
         <Route path="/dsa" component={Dsa} />
         <Route path="/spotify" component={Spotify} />
-
 
         <Route
           path="/github"

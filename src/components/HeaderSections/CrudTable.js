@@ -80,7 +80,7 @@ export const CrudTable = (props) => {
         const response = await fetch(getMongoData);
 
         if (!response.ok) {
-          const message = `An fetching error has occured: ${response.status}`;
+          const message = `An fetching error has occurred: ${response.status}`;
           throw new Error(message);
         }
 
@@ -218,7 +218,7 @@ export const CrudTable = (props) => {
         );
 
         if (!response.ok) {
-          const message = `An fetching error has occured: ${response.status}`;
+          const message = `An fetching error has occurred: ${response.status}`;
           throw new Error(message);
         }
 
@@ -274,7 +274,7 @@ export const CrudTable = (props) => {
         const response = await fetch(deleteMongoData + deleteId);
 
         if (!response.ok) {
-          const message = `An fetching error has occured: ${response.status}`;
+          const message = `An fetching error has occurred: ${response.status}`;
           throw new Error(message);
         }
 

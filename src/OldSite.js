@@ -15,7 +15,8 @@ import ContactPage from "./components/Pages/ContactPage";
 import Projects from "./components/Pages/Projects";
 import StartApp from "./Start";
 import "./App.css";
-import TestAPI from "./components/Pages/TestAPI.js";
+import Learn from "./components/Pages/LearnComputerScience.js";
+import Services from "./components/Pages/ServiceDescriptions.js";
 
 import AiartGif from "./icons/gifs/Backgroundwave.gif";
 import TechSpiral from "./icons/TeachSpiral.png";
@@ -36,6 +37,35 @@ function OldSite() {
   let linkedinlink = "";
   let downloadres = "";
 
+  //If user has already visited page
+  const [userHasVisited, setUserHasVisited] = useState(false);
+  const [showMenu, setshowMenu] = useState(false);
+
+  localStorage.setItem("defaultMenuShow", true);
+
+  useEffect(() => {
+    if (localStorage.getItem("UserHasVisitedSite_gmdevstore")) {
+      localStorage.setItem("Visited_>_1", true);
+    }
+
+    if (!localStorage.getItem("UserHasVisitedSite_gmdevstore")) {
+      localStorage.setItem("UserHasVisitedSite_gmdevstore", true);
+    }
+
+    if (
+      localStorage.getItem("UserHasVisitedSite_gmdevstore") &&
+      localStorage.getItem("Visited_>_1")
+    ) {
+      localStorage.setItem("defaultMenuShow", false);
+      setMainMenuToggle(false);
+      setWelcomeBackMesage("Welcome back to ");
+    }
+  }, [userHasVisited]);
+
+  const [mainMenuToggle, setMainMenuToggle] = useState(
+    localStorage.getItem("defaultMenuShow")
+  );
+  const [welcomeBackMesage, setWelcomeBackMesage] = useState("");
   const [windowSize, setWindowSize] = useState(false);
 
   useEffect(() => {
@@ -93,9 +123,6 @@ function OldSite() {
     marginType = "6px";
     moreButtonWidth = "90%";
   }
-
-  const [showMenu, setshowMenu] = useState(false);
-  const [mainMenuToggle, setMainMenuToggle] = useState(true);
 
   //Send to DOM
   return (
@@ -205,7 +232,26 @@ function OldSite() {
                                   cursor: "pointer",
                                 }}
                               >
-                                open
+                                {welcomeBackMesage.length === 0 ? (
+                                  <p
+                                    style={{
+                                      animation:
+                                        "animatedgradient2 2s ease-in-out infinite",
+                                        textDecoration:"underline"
+                                    }}
+                                  >
+                                    open menu
+                                  </p>
+                                ) : (
+                                  <p
+                                    style={{
+                                      animation:
+                                        "animatedgradient2 2s ease-in-out infinite",
+                                    }}
+                                  >
+                                    {welcomeBackMesage}
+                                  </p>
+                                )}
                               </h3>
                             </>
                           )}
@@ -293,11 +339,11 @@ function OldSite() {
                           services.
                           <br />
                           <br />
-                          Learn more here: 
-                          <br/>
-                          <a href="#"> Learn Computer Science </a>
-                          <br/>
-                          <a href="#"> Service Descriptions </a>
+                          Learn more here:
+                          <br />
+                          <a href="/#/learn"> Learn Computer Science </a>
+                          <br />
+                          <a href="/#/services"> Service Descriptions </a>
                         </p>
 
                         <div
@@ -334,20 +380,41 @@ function OldSite() {
                               borderRadius: "0px",
                               opacity: "1",
                               background: "rgba(0, 0, 0, 0.5 )",
-                              textAlign: "left"
+                              textAlign: "left",
                             }}
                           >
-                            <li style={{marginBottom: "10px"}}> ☁️ Cloud services</li>
-                            <li style={{marginBottom: "10px"}}> 📚 Fundamentals </li>
-                            <li style={{marginBottom: "10px"}}>
-                              💻 Web & Mobile  development/design 📱
+                            <li style={{ marginBottom: "10px" }}>
+                              {" "}
+                              ☁️ Cloud services
                             </li>
-                            <li style={{marginBottom: "10px"}}> 🛡️ Security</li>
-                            <li style={{marginBottom: "10px"}}> 🤖 AI/ML</li>
-                            <li style={{marginBottom: "10px"}}> 🌐 Networking</li>
-                            <li style={{marginBottom: "10px"}}> Embedded systems & electronics</li>
-                            <li style={{marginBottom: "10px"}}> 🔓 Ethical "hacking"</li>
-                            <li style={{marginBottom: "10px"}}> 🕹️ Video games</li>
+                            <li style={{ marginBottom: "10px" }}>
+                              {" "}
+                              📚 Fundamentals{" "}
+                            </li>
+                            <li style={{ marginBottom: "10px" }}>
+                              💻 Web & Mobile development/design 📱
+                            </li>
+                            <li style={{ marginBottom: "10px" }}>
+                              {" "}
+                              🛡️ Security
+                            </li>
+                            <li style={{ marginBottom: "10px" }}> 🤖 AI/ML</li>
+                            <li style={{ marginBottom: "10px" }}>
+                              {" "}
+                              🌐 Networking
+                            </li>
+                            <li style={{ marginBottom: "10px" }}>
+                              {" "}
+                              Embedded systems & electronics
+                            </li>
+                            <li style={{ marginBottom: "10px" }}>
+                              {" "}
+                              🔓 Ethical "hacking"
+                            </li>
+                            <li style={{ marginBottom: "10px" }}>
+                              {" "}
+                              🕹️ Video games
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -778,12 +845,13 @@ function OldSite() {
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/dependency+" component={NewSite} />
         <Route exact path="/splinescene" component={StartApp} />
-        <Route exact path="/test" component={TestAPI} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/cstrack" component={Cstrack} />
         <Route path="/dsa" component={Dsa} />
         <Route path="/spotify" component={Spotify} />
+        <Route path="/learn" component={Learn} />
+        <Route path="/services" component={Services} />
 
         <Route
           path="/github"

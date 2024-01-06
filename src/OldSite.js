@@ -237,7 +237,7 @@ function OldSite() {
                                     style={{
                                       animation:
                                         "animatedgradient2 2s ease-in-out infinite",
-                                        textDecoration:"underline"
+                                      textDecoration: "underline",
                                     }}
                                   >
                                     open menu
@@ -479,7 +479,14 @@ function OldSite() {
                     >
                       {showMenu ? (
                         <>
-                          <h2>Close menu ❌</h2>
+                          <h2
+                            onClick={() => {
+                              setMainMenuToggle(!mainMenuToggle);
+                              setshowMenu(!showMenu);
+                            }}
+                          >
+                            Close menu ❌
+                          </h2>
                         </>
                       ) : (
                         "👉"

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgmdevstore=self.webpackChunkgmdevstore||[]).push([[778],{8778:(e,s,a)=>{a.r(s),a.d(s,{default:()=>t});var o=a(579);const t=e=>(0,o.jsx)("group",{name:"20170707201828",position:[486.29,-43.26,3],rotation:[-Math.PI/2,0,0],scale:20,children:(0,o.jsx)("mesh",{name:"1",geometry:e.nodes[1].geometry,material:e.nodes[1].material,castShadow:!0,receiveShadow:!0,position:[0,0,3]})})}}]);
+//# sourceMappingURL=778.9cd80969.chunk.js.map

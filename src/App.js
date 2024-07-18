@@ -126,7 +126,7 @@ function App() {
       
 
       {/* Seasonal art */}
-      <h3 style={{ color: "white" }}>Happy new years!</h3>
+      <h3 style={{ color: "white" }}> Happy summer!! ☀️</h3>
 
       {/*      <audio 
         src={songChoice}

@@ -231,9 +231,9 @@ Custom API used in this project
 
 ---
 # Maintainers
->Github: [codedumpsterfire](https://github.com/codedumpsterfire)
+>Github: [codedumpsterfire](https://github.com/gmdevgithub)
 
-> Social: linktree - codedumpsterfire
+> Social: linktree - gmdevgithub
 
 ---
 

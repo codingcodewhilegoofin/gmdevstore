@@ -22,7 +22,7 @@ export const Button = ({
 
   return (
     
-    <a href="https://github.com/codedumpsterfire" className={`btn ${checkButtonStyle} ${checkButtonSize}`} download="">
+    <a href="https://github.com/gmdevgithub" className={`btn ${checkButtonStyle} ${checkButtonSize}`} download="">
       Resume 📝
     </a>
   );

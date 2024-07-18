@@ -115,11 +115,11 @@ function HeaderContact() {
           }}
         >
           <a
-            href="https://linktr.ee/codedumpsterfire"
+            href="https://linktr.ee/_GMDev"
             style={{ color: "white" }}
           >
             linktr.ee/ <br />
-            codedumpsterfire
+            _GMDev
           </a>
         </div>
       </div>
@@ -182,7 +182,7 @@ function HeaderContact() {
               }}
             >
               <a
-                href="https://www.instagram.com/codedumpsterfire"
+                href="https://www.instagram.com/"
                 class="fa fa-instagram"
               ></a>
               <input
@@ -193,7 +193,7 @@ function HeaderContact() {
                     "rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset",
                 }}
                 type="text"
-                value="https://www.instagram.com/codedumpsterfire"
+                value="N/A yet"
                 id="instaID"
                 size="auto"
                 onClick={() => {
@@ -209,7 +209,7 @@ function HeaderContact() {
               }}
             >
               <a
-                href="https://twitter.com/codetrashfire"
+                href="https://twitter.com"
                 class="fa fa-twitter"
               ></a>
               <input
@@ -220,7 +220,7 @@ function HeaderContact() {
                     "rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset",
                 }}
                 type="text"
-                value="https://twitter.com/codetrashfire"
+                value="N/A yet"
                 id="twitterID"
                 size="auto"
                 onClick={() => {
@@ -273,7 +273,7 @@ function HeaderContact() {
                     "rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset",
                 }}
                 type="text"
-                value="https://github.com/codedumpsterfire"
+                value="https://github.com/gmdevgithub"
                 id="githubID"
                 size="auto"
                 onClick={() => {
@@ -295,7 +295,7 @@ function HeaderContact() {
                     "rgba(25, 129, 159, 1) 0px 2px 4px, rgba(25, 129, 159, .5) 0px 7px 13px -3px, rgba(25, 129, 159, 1) 0px 3px 0px inset",
                 }}
                 type="text"
-                value="@_codedumpsterfire"
+                value="N/A"
                 id="youtubeID"
                 size="auto"
                 onClick={() => {

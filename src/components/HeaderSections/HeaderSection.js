@@ -14,7 +14,7 @@ import gmdevstorelogo from "../../icons/gmdevstorelogo.jpg";
 import gmdevwebsitelogo from "../../icons/gmdevwebsitelogo.jpg";
 import gmdevapilogo from "../../icons/gmdevapilogo.jpg";
 import haloweenlogo from "../../icons/Haloween.png";
-import CashappQR from "../../icons/cashappqr.jpg";
+import CashappQR from "../../icons/cashappqr.png";
 import FSDlogo from "../../icons/FSDlogo.png";
 import Info from "../../icons/info1.png";
 import bg1 from "../../icons/bg1.png";
@@ -116,6 +116,12 @@ function HeaderSection() {
   let developerWidth;
   let fontSizeServices;
   let fontSizePriceTag;
+  let tempDate = new Date();
+  let workStartDate = 2022;
+  let startedCollege = 2018;
+  let currentYear = tempDate.getFullYear();
+  let yearsExperience = (tempDate.getFullYear() - workStartDate );
+  let totalYearsExperience = (tempDate.getFullYear() - startedCollege );
 
   if (windowSize) {
     fontSizePriceTag = "medium";
@@ -336,7 +342,7 @@ function HeaderSection() {
                 Social media handle
                 <br />
                 <b style={{ fontSize: "xx-large", fontFamily: "monospace" }}>
-                  @codedumpsterfire🔥
+                  @_gmdev
                 </b>
               </p>
 
@@ -353,8 +359,7 @@ function HeaderSection() {
                   whiteSpace: "break-spaces",
                 }}
               >
-                Over 5 years experience. 
-                2 years professionally.
+                Over {totalYearsExperience} years experience. {yearsExperience} years professional experience.
                 <br />
                 <br />
                 Experience includes creating web sites, games, and art! You can
@@ -792,11 +797,11 @@ function HeaderSection() {
                           <li
                             style={{
                               padding: "5px",
-                              textAlign: "center",
+                              textAlign: "left",
                             }}
                           >
-                            Employed at large corporate fin tech banks such as
-                            <br />
+                            Employed at large corporate banks such as
+                       
                             <b
                               style={{
                                 color: "lightblue",
@@ -806,7 +811,7 @@ function HeaderSection() {
                             >
                               BMO Financial Corporation
                             </b>
-                            <br />&
+                           &
                             <b
                               style={{
                                 color: "orange",
@@ -839,7 +844,7 @@ function HeaderSection() {
                             margin: "5px",
                           }}
                         >
-                          Consultation 
+                          Consultation
                         </h3>
 
                         <button
@@ -1262,6 +1267,7 @@ function HeaderSection() {
         {/*Services tab */}
 
         {/**Cashapp tab */}
+
         <div
           className="end-div5"
           style={{
@@ -1279,30 +1285,23 @@ function HeaderSection() {
         >
           <div
             style={{
-              borderRadius: "0px",
-              opacity: "1",
-              background: "rgba(238, 5, 39, 0.15)",
-              backdropFilter: "blur( 20px )",
-              padding: "0px",
-              flexDirection: `${cardOrientation}`,
-              textAlign: "center",
-              alignItems: "center",
-              width: "100%",
+             width:"100%",
+             background: "rgba(238, 50, 90, 0.15)",
+             backdropFilter: "blur( 20px )",
             }}
           >
             <div
               className="end-div5"
               style={{
                 borderRadius: "0px",
-                margin: "0px",
-                padding: "30px",
+                padding: "50px",
                 width: "100%",
                 flexDirection: "column",
                 textAlign: "center",
                 alignItems: "center",
-                opacity: ".9",
-                background: "rgba(238, 5, 39, 0.15)",
-                backdropFilter: "blur( 5px )",
+                opacity: "1",
+                background: "rgba(238, 50, 90, 0.15)",
+                backdropFilter: "blur( 20px )",
               }}
             >
               <a
@@ -1313,10 +1312,15 @@ function HeaderSection() {
                 }}
                 href="https://cash.app/$codedumpsterfire"
               >
-                <em> Cashapp @$codedumpsterfire</em>
+                <em> Cashapp </em>
               </a>
+
               <h2
-                style={{ color: "white", fontSize: "x-large", padding: "10px" }}
+                style={{
+                  color: "white",
+                  fontSize: "x-large",
+                  padding: "10px",
+                }}
               >
                 Consultation payments can be made through cashapp
               </h2>
@@ -1340,10 +1344,11 @@ function HeaderSection() {
                   padding: "5px",
                   fontSize: "large",
                 }}
-                href="https://linktr.ee/codedumpsterfire"
+                href="https://linktr.ee/_GMDev"
               >
-                <em> linktr.ee/codedumpsterfire</em>
+                <em> https://linktr.ee/_GMDev</em>
               </a>
+
             </div>
           </div>
 
@@ -1352,6 +1357,7 @@ function HeaderSection() {
             style={{
               opacity: "1",
               backdropFilter: "blur( 20px )",
+              padding: "30px",
             }}
           >
             <div
@@ -2037,19 +2043,12 @@ function HeaderSection() {
                   Click here to email form to <br /> gmdevstore@protonmail.com
                 </button>
               </form>
-
-              {/* <img
-                src={CashappQR}
-                height="auto"
-                width="auto"
-                style={{
-                  padding: "10px",
-                }}
-              />  */}
             </div>
           </div>
+
           {/** Intake form  */}
         </div>
+
         {/**Cashapp tab */}
 
         <div
@@ -2417,7 +2416,7 @@ function HeaderSection() {
                     textAlign: "left",
                   }}
                 >
-                  Junior Full Stack Developer
+                  Full Stack Developer
                 </div>
               </div>
 
@@ -2563,7 +2562,7 @@ function HeaderSection() {
                     textAlign: "left",
                   }}
                 >
-                  5 total
+                  {totalYearsExperience} total
                 </div>
               </div>
             </div>

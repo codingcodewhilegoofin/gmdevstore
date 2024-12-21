@@ -9,7 +9,7 @@ import HomePage from './components/Pages/HomePage';
 import Cstrack from './components/Pages/Cstrack';
 import Dsa from './components/Pages/Dsa';
 import Spotify from './components/Pages/Spotify';
-import NewSite from './NewSite';
+import NewSite from './NewSite.js';
 import AboutPage from './components/Pages/AboutPage';
 import ContactPage from './components/Pages/ContactPage';
 import Projects from './components/Pages/Projects';

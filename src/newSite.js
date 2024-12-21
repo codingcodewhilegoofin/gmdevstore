@@ -2,7 +2,7 @@ import { Canvas } from '@react-three/fiber'
 import React, { Component, useState, Suspense, useEffect } from 'react';
 import './App.css';
 import * as THREE from 'three'
-import DrawerMenu from '../src/components/Drawer/DrawerMenu';
+import DrawerMenu from './components/Drawer/DrawerMenu';
 import { useGLTF, Detailed, Sparkles, Sky, SpotLight, Bounds, OrbitControls, PerspectiveCamera, OrthographicCamera, Preload, BakeShadows, meshBounds, AdaptiveDpr, Float, Html, useProgress, useBounds } from '@react-three/drei';
 const Scene2 = React.lazy(() => import(/* webpackPrefetch: true */'./threejs/Scene2'));
 

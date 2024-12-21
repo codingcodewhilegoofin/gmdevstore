@@ -119,16 +119,42 @@ Possible solutions: Service workers, reduce 3D elements, optimize code, skip if 
 7. Learn how to build and deploy a modern webapp
 
 ## Build
-	npm install
-	npm start
-
 Special alias/script I wrote to speed up git and deploy cycle. Great for 1 developer but hinders git update standards.
 
-Essentially just git cycle followed by "deploy": "npm run build && gh-pages -d build"
 
-	alias GRG='git add . ; git commit -m "updated"; git push ; npm run deploy'
+The application is built using the following steps:
 
-	GRG
+1. **Install Dependencies**: First, ensure all dependencies are installed. This can be done by running:
+    ```sh
+    npm install
+    ```
+
+2. **Build the Application**: To build the application, run the following command:
+    ```sh
+    npm run build
+    ```
+    This will create a [build](http://_vscodecontentref_/0) directory containing the compiled files ready for deployment.
+
+3. **Deployment**: The contents of the [build](http://_vscodecontentref_/1) directory can be deployed to a web server. The [build](http://_vscodecontentref_/2) directory includes:
+    - `index.html`: The main HTML file.
+    - `asset-manifest.json`: A manifest file for the assets.
+    - `static/`: A directory containing static assets like JavaScript, CSS, and images.
+    - Other files and directories necessary for the application to run.
+
+The build process uses tools like Webpack or similar bundlers to compile and bundle the source code from the [src](http://_vscodecontentref_/3) directory into optimized files for production.
+
+Make sure to configure the build scripts in the [package.json](http://_vscodecontentref_/4) file as needed.
+
+## Web app structure
+
+| Directory       | Description                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| `build/`        | Contains the built/compiled files for deployment.                           |
+| `public/`       | Contains public assets and files that are served directly.                  |
+| `src/`          | Contains the source code of the application.                                |
+| `src/audio/`    | Contains audio files used in the application.                               |
+| `src/components/` | Contains React components used in the application.                        |
+| `src/icons/`    | Contains icon files used in the application.                                |
 
 
 
@@ -192,35 +218,74 @@ Contains all components for the webapp
 Contains entry point for each view or page
 # extra
 ---
-# packages
->"dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
-    "@mui/material": "^5.5.3",
-    "@react-three/drei": "^9.1.2",
-    "@react-three/fiber": "^8.0.8",
-    "@splinetool/loader": "^0.9.69",
-    "@splinetool/r3f-spline": "^1.0.1",
-    "@splinetool/react-spline": "^2.2.1",
-    "@splinetool/runtime": "^0.9.69",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/user-event": "^12.8.3",
-    "antd": "^4.19.3",
-    "gh-pages": "^3.2.3",
-    "github-card": "^1.2.1",
-    "openai": "^2.0.5",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "^5.0.0",
-    "react-spring": "^9.4.4",
-    "react-transition-group": "^4.4.2",
-    "sass": "^1.49.11",
-    "state-pool": "^0.7.1",
-    "three": "^0.139.2",
-    "three-stdlib": "^2.9.1",
-    "web-vitals": "^0.2.4"
-  }
+# Packages
+| Package                      | Version   | Description                                                                 |
+|------------------------------|-----------|-----------------------------------------------------------------------------|
+| `@emotion/react`             | `^11.8.2` | Library for writing CSS styles with JavaScript.                             |
+| `@emotion/styled`            | `^11.8.1` | Styled components for Emotion.                                              |
+| `@mui/material`              | `^5.5.3`  | Material-UI components for React.                                           |
+| `@react-three/drei`          | `^9.1.2`  | Helper components for `react-three-fiber`.                                  |
+| `@react-three/fiber`         | `^8.0.8`  | React renderer for Three.js.                                                |
+| `@splinetool/loader`         | `^0.9.69` | Spline tool loader.                                                         |
+| `@splinetool/r3f-spline`     | `^1.0.1`  | Spline integration with `react-three-fiber`.                                |
+| `@splinetool/react-spline`   | `^2.2.1`  | React integration for Spline.                                               |
+| `@splinetool/runtime`        | `^0.9.69` | Runtime for Spline.                                                         |
+| `@testing-library/jest-dom`  | `^5.16.1` | Custom jest matchers for testing DOM nodes.                                 |
+| `@testing-library/user-event`| `^12.8.3` | Simulates user events for testing.                                          |
+| `antd`                       | `^4.19.3` | Ant Design components for React.                                            |
+| `gh-pages`                   | `^6.1.1`  | Publish files to a `gh-pages` branch on GitHub.                             |
+| `github-card`                | `^1.2.1`  | GitHub profile card component.                                              |
+| `openai`                     | `^4.52.7` | OpenAI API client.                                                          |
+| `react`                      | `^18.0.0` | React library.                                                              |
+| `react-dom`                  | `^18.0.0` | React DOM library.                                                          |
+| `react-router-dom`           | `^5.3.0`  | React router for DOM.                                                       |
+| `react-scripts`              | `^3.0.1`  | Scripts and configuration for Create React App.                             |
+| `react-spring`               | `^9.4.4`  | Spring-physics based animation library for React.                           |
+| `react-transition-group`     | `^4.4.2`  | Animation library for React.                                                |
+| `sass`                       | `^1.49.11`| CSS preprocessor.                                                           |
+| `state-pool`                 | `^0.7.1`  | State management library.                                                   |
+| `three`                      | `^0.139.2`| JavaScript 3D library.                                                      |
+| `three-stdlib`               | `^2.9.1`  | Standard library for Three.js.                                              |
+| `web-vitals`                 | `^0.2.4`  | Library for measuring web vitals.   
+
+The highest version of Node.js needed to run these packages is `18.x.x`, as specified by the `react` and `react-dom` dependencies. Node.js is required to run these packages because it provides the runtime environment for executing JavaScript code outside of a browser, which is essential for building, testing, and deploying the application.
+
+- Ensure all dependencies are up-to-date by running `npm outdated` and `npm update`.
+- Check for compatibility issues between dependencies, especially major version changes.
+---
+
+# CI/CD
+1. **Set Up GitHub Repository**
+    - Create a GitHub repository for your project if you haven't already.
+    - Push your local project to the GitHub repository.
+
+2. **Configure GitHub Actions**
+    - Create a `.github/workflows` directory in your project root.
+    - Add a workflow file (e.g., `deploy.yml`) to define the CI/CD pipeline.
+
+    3. **Set Up Cloudflare Pages**
+    - Log in to your Cloudflare account and navigate to the Pages section.
+    - Create a new project and connect it to your GitHub repository.
+    - Configure the build settings:
+        - **Build command**: `npm run build`
+        - **Build output directory**: `build`
+
+4. **Configure GitHub Secrets**
+    - In your GitHub repository, go to `Settings` > `Secrets` > `Actions`.
+    - Add the following secrets:
+        - `CLOUDFLARE_API_TOKEN`: Your Cloudflare API token.
+        - `CLOUDFLARE_ACCOUNT_ID`: Your Cloudflare account ID.
+        - `CLOUDFLARE_PROJECT_NAME`: Your Cloudflare Pages project name.
+
+5. **Push Changes to GitHub**
+    - Commit and push any changes to the `main` branch of your GitHub repository.
+    - The GitHub Actions workflow will automatically run, building and deploying your application to Cloudflare Pages.
+
+6. **Monitor Deployment**
+    - Monitor the GitHub Actions workflow for any build or deployment errors.
+    - Verify that your application is successfully deployed to Cloudflare Pages.
+
+
 ---
 # RelatedProjects
 
@@ -245,4 +310,5 @@ Custom API used in this project
 If your README is compliant with Standard-Readme and you're on GitHub, it would be great if you could add the badge. This allows people to link back to this Spec, and helps adoption of the README. The badge is **not required**.
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+
 

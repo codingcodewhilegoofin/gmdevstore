@@ -12,14 +12,21 @@
 [![Npm](https://badgen.net/badge/icon/npm?icon=npm&label)](https://https://npmjs.com/)
 
 
-## Welcome to my public portfolio website! 
-This is a portfolio website to showcase projects as well as web dev skills. (also maybe plug some things)
+## Welcome to my first full stack web app
+I build this website with a few goals in mind. The tech stack i used was decentralized so that I could create my own DB instance, API, and website. 
+Unfortunanetly, due to Mongo DB decomissioning a previously free easy to use service, part of this stie will stop working in 2025. 
+I plan to keep this site up as a fun reminder of my hard work on my first full stack app. However, assume this site is dead and may stop working at any point in time. My public API (gmdevapi.com) will soon change DB as I had mentioned. It will remain functional but certian calls may not work anymore as listed here. 
 
-### This repository contains:
+### Goals achieved in this project: 
 
-1. My website 
-2. Integration with a custom Cloudflare API & more 
-3. Two 3D environments made with ReactThreeFiber ( Three.js)
+1. Understand network & web dev concepts. HTTP, HTML , CSS, JS, JSX, webAPI's & more.
+2. Create a full stack app to showcase projects
+3. Help others understand the web development and coding process
+4. Document my work
+5. Gain an understanding of complex concepts such as DSA, 3D rendering, IOT, and network calls.
+5. Gain a deeper understanding of the react library 
+6. Learn the git process
+7. Learn how to build and deploy a modern webapp
 
 ---
 ## Table of Contents
